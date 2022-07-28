@@ -1,0 +1,20 @@
+//     @keyframes bounce {
+//     0%, 20%, 50%, 100% {
+//         transform: translateY($start);
+//     }
+//     40% {
+//         transform: translateY($lenght);
+//     }
+//     60% {
+//         transform: translateY(calc($lenght / 2));
+//     }
+// }
+
+// Animazione fluttuazione bottom-up
+@mixin float($distance, $duration, $direction) {
+    @keyframes float {
+    
+    }
+} 
+
+// Animazione fluttuazione diagonale
