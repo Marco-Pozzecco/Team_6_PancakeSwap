@@ -1,0 +1,10 @@
+// Mixin inlcude float-bottom-up
+@mixin float-anim ($duration, $direction) {
+    @if ($direction == "nord") {
+        animation-name: float-bottom-up;
+    } @else if ($direction == "diagonal-NW") {
+        animation-name: float-diagonal-NW;
+    }
+    animation-duration: $duration;
+    animation-iteration-count: infinite;
+}
