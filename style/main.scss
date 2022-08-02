@@ -1,8 +1,15 @@
+// Built in
+@use "sass:map";
+@use "sass:list";
+
+// Dichiarazioni import
 @import url(https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,900;1,800;1,900&display=swap);
 @import "abstracts/animations";
 @import "abstracts/mixins";
+@import "abstracts/variables";
+
 // Animation
-@include float(100px, 'diagonal-NW');
+@include float(100px, 'NW');
 
 $font-stack: Kanit, serif;
 
@@ -22,5 +29,6 @@ body {
     height: 100px;
     width: 100px;
     background-color: blue;
-    @include float-anim(5s, 'diagonal-NW');
+    @include float-anim(5s, 'NW');
+    @include mq("phone");
 }
