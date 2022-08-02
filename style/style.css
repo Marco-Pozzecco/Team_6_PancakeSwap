@@ -1,6 +1,40 @@
 @import url(https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,900;1,800;1,900&display=swap);
+@keyframes float-NW {
+  0% {
+    transform: translatex(0px) translatey(0px);
+  }
+  50% {
+    transform: translatex(-100px) translatey(100px);
+  }
+  100% {
+    transform: translatex(0px) translatey(0px);
+  }
+}
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: Kanit, serif;
   font-size: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.blue-square {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  animation-name: float-NW;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@media screen and (min-width: 1440px) {
+  .blue-square {
+    height: 80px;
+    width: 80px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
