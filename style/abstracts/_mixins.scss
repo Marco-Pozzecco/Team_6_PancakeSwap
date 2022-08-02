@@ -1,18 +1,20 @@
-// Mixin inlcude float-bottom-up
+// Mixin include float-bottom-up
+// Il mixin ammette come durata un valore in secondi, o derivati (ad. es. ms), mentre ammette come direzione un punto cardinale (N, S, O, W, NE, NW ... )
 @mixin float-anim ($duration, $direction) {
     animation-name: unquote("float-" + $direction);
     animation-duration: $duration;
     animation-iteration-count: infinite;
 };
 
-// Media queries 
+// Media queries mixin
+// Ammette come valore una stringa indicante il nome del breakpoint (vedi: _variables/breakpoints)
 @mixin mq($type) {
     $breakpoints-keys : map.keys($breakpoints);
-    @if (map.get($breakpoints, $type) == 'phone') {
+    @if ($type == 'phone') {
         @media screen and (max-width: map.get($breakpoints, $type)) {
-            
+            @content;
         } 
-    } @else if (map.get($breakpoints, $type) == 'desktop-wide') {
+    } @else if ($type == 'desktop-wide') {
         @media screen and (min-width: map.get($breakpoints, $type)) {
             @content;
         } 
