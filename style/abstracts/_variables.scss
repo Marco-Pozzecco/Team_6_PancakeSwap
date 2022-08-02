@@ -49,3 +49,15 @@ $bg-gradient: linear-gradient (139.73deg, rgb(49, 61, 92) 0%, rgb(61, 42, 84) 10
 $input-color-dk:rgb(55, 47, 71);
 
 
+// Breakpoint per il mixin mq
+$breakpoints : (
+    "phone":        376px,
+    "phone-wide":   480px,
+    "phablet":      560px,
+    "tablet-small": 640px,
+    "tablet":       768px,
+    "laptop":       1024px,
+    "desktop":      1248px,
+    "desktop-wide": 1440px
+);
+
