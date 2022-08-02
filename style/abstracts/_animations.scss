@@ -1,6 +1,6 @@
-// Animazione fluttuazione bottom-up
-@mixin float ($distance, $direction) {
-    @if ($direction == "nord" ) {
+// Animazione fluttuazione
+@mixin float ($distance, $direction : 'N') {
+    @if ($direction == "N" ) {
         @keyframes float-bottom-up {
             0% {
                 transform: translateY(0);
@@ -12,11 +12,89 @@
                 transform: translateY(0);
             }
         }
-    } @else if ($direction == "diagonal-NW") {
+    } @else if ($direction == "S" ) {
+        @keyframes float-bottom-up {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-$distance);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    }  @else if ($direction == "W" ) {
+        @keyframes float-bottom-up {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(-$distance);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+    }  @else if ($direction == "E" ) {
+        @keyframes float-bottom-up {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX($distance);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+    } @else if ($direction == "NW") {
         @keyframes float-diagonal-NW {
-            0%       { transform: translatex(0px) translatey(0px); }
-            50%      { transform: translatex(-$distance) translatey(-$distance); }
-            100%     { transform: translatex(0px) translatey(0px); }
+            0% { 
+                transform: translatex(0px) translatey(0px); 
+            }
+            50% {
+                transform: translatex(-$distance) translatey($distance); 
+            }
+            100% {
+                transform: translatex(0px) translatey(0px); 
+            }
+        }
+    } @else if ($direction == "NE") {
+        @keyframes float-diagonal-NW {
+            0% { 
+                transform: translatex(0px) translatey(0px); 
+            }
+            50% {
+                transform: translatex($distance) translatey($distance); 
+            }
+            100% {
+                transform: translatex(0px) translatey(0px); 
+            }
+        }
+    } @else if ($direction == "SW") {
+        @keyframes float-diagonal-NW {
+            0% { 
+                transform: translatex(0px) translatey(0px); 
+            }
+            50% {
+                transform: translatex(-$distance) translatey(-$distance); 
+            }
+            100% {
+                transform: translatex(0px) translatey(0px); 
+            }
+        } 
+    } @else if ($direction == "SE") {
+        @keyframes float-diagonal-NW {
+            0% { 
+                transform: translatex(0px) translatey(0px); 
+            }
+            50% {
+                transform: translatex($distance) translatey(-$distance); 
+            }
+            100% {
+                transform: translatex(0px) translatey(0px); 
+            }
         }
     }
 }
