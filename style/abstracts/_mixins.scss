@@ -1,3 +1,10 @@
+// Use rules
+@use "sass:map";
+@use "sass:list";
+
+// Import rules
+@import "variables";
+
 // Mixin include float-bottom-up
 // Il mixin ammette come durata un valore in secondi, o derivati (ad. es. ms), mentre ammette come direzione un punto cardinale (N, S, O, W, NE, NW ... )
 @mixin float-anim ($duration, $direction) {
@@ -46,25 +53,25 @@
     }
 }
 
-// Dimension setter
-@mixin set-dimension ($heigth, $width) {
-    height: $heigth;
-    width: $width;
-}
+// // Dimension setter
+// @mixin set-dimension ($heigth, $width) {
+//     height: $heigth;
+//     width: $width;
+// }
 
-//  
-@mixin box-shadow () {
+// //  
+// @mixin box-shadow () {
 
-}
+// }
 
-// Gradient imposta un gradiente in relazione a due colori 
-@mixin linear-gradient ($color1, $color2, $deg) {
-    background-color: linear-gradient(calc($deg * 1deg), $color1, $color2);
-}
+// // Gradient imposta un gradiente in relazione a due colori 
+// @mixin linear-gradient ($color1, $color2, $deg) {
+//     background-color: linear-gradient(calc($deg * 1deg), $color1, $color2);
+// }
 
-// Prende colore da parent e lo scurisce o schiarisce
-@mixin hover() {
-    &::hover {
-        color: ;
-    }
-}
+// // Prende colore da parent e lo scurisce o schiarisce
+// @mixin hover() {
+//     &::hover {
+//         color: ;
+//     }
+// }
