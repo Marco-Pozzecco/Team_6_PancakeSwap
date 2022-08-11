@@ -1,0 +1,252 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;   
+}
+
+
+body {
+    width: 100vw;
+    height: 500vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color:rgb(48, 47, 49);
+    padding:  50px;
+}
+
+
+button {
+    font-size: 16px;
+    padding: 0 24px;
+    border-radius: 16px;
+    height: 1;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.65;
+    }
+
+/* /* ############################################################ */
+/* DA BUTTON-TRADE.CSS X IL LAYOUT DEL BOTTONE: LIVE/FINISHED  */
+
+.box-button-V2V1 {
+    background-color: rgb(55, 47, 71);
+    border: 1px solid rgb(38, 33, 48);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.button-V1 {
+    background-color: rgb(184, 173, 210);
+    color:  rgb(39, 38, 44);
+    border: none;
+    padding: 0 16px;
+    height: 32px;
+
+}
+
+.link-V2 {
+    text-decoration: none;
+    color:  rgb(184, 173, 210);
+    padding: 0 16px;
+}
+
+.link-V2:hover {
+   opacity: 0.65;
+}
+
+
+/* ############################################################ */ */
+.linea {
+    height: 1px;
+    width: 90%;
+    background-color: white;
+}
+
+.linea-corta{
+    height: 1px;
+    width: 50%;
+    background-color: white;
+}
+
+/* ------------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+
+
+
+/* ---Bottoni scelta per visualizzazione a Griglia o a Lista-------------- */
+
+.box-buttons-grid-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-grid-view {
+    background-color: transparent;
+    fill: rgb(102, 97, 113);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    padding: 0;   
+}
+
+
+.btn-list-view {
+background-color: transparent;
+fill: rgb(31, 199, 212); /*cambiare il colore nell svg nell HTML*/
+border: 1px solid black;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 32px;
+height: 32px;
+padding: 0;
+}
+
+
+
+/* Staked Only - Check-Box (ON/OFF Button) */
+
+
+.main-box-button-on-off {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+/* -------- */
+.box-button-on-off {
+    background-color: rgb(55, 47, 71);
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 20px;
+    width: 36px;
+    border-radius: 24px;
+}
+.box-button-on-off:hover>.on-off-dot {
+    border: 1px solid rgb(172, 34, 172);
+    box-shadow:  0px 0px 0px 3px rgba(211, 108, 211, 0.4);    
+}
+
+.box-button-on-off:hover > .on-off-dot {
+    border: 1px solid rgb(172, 34, 172);
+    box-shadow:  0px 0px 0px 3px rgba(211, 108, 211, 0.4);    
+}
+/* -- */
+/* -- */
+.box-button-on-off:active {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgb(31, 199, 212);
+}
+
+.box-button-on-off:focus .on-off-dot {
+    border: 1px solid rgb(172, 34, 172);
+    box-shadow:  0px 0px 0px 3px rgba(211, 108, 211, 0.4);    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgb(31, 199, 212);
+
+}
+/* ---------- */
+
+
+
+.on-off-input-check {
+    visibility: hidden;
+    position: absolute;
+    
+}
+
+.on-off-dot {
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: rgb(39, 38, 44);;
+    border-radius: 50%;
+    contain: content;
+    height: 100%;
+    width: 50%;
+}
+
+.box-button-on-off-text {
+    color: white;  
+    margin: 0 0 0 8px;
+    font-size: 16px;
+    font-weight: 600;
+} 
+
+/* --Bottone semi-trasparente (Harvest) che appare nella sezione che esce dopo che si clicca su una sezione della griglia/lista------------------------------------------------- */
+.button-semi-trasp-dark {
+    background-color:  rgb(60, 55, 66);;
+    border: 1px solid rgb(60, 55, 66);;
+    color:  rgb(102, 97, 113);
+    cursor: not-allowed;
+}
+.button-semi-trasp-dark:hover {
+    opacity: initial;
+}
+
+
+
+
+
+
+
+/* ----Farm --> POOLS------------------------------------------------------------------- */
+
+/* --Bottone per tornare in alto, all inizio della lista ------------------------- */
+.to-top-button {
+    background-color: transparent;
+    color: rgb(31, 199, 212);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    height: 48px;
+    padding: 0 24px;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

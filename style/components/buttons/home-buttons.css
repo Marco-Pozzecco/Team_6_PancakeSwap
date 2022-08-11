@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color:darkslateblue
+}
+
+
+/* ----BOTTONI-------------------- */
+button {
+    font-weight: 600;
+    height: 48px;
+    font-size: 16px;
+    padding: 0 24px;
+    border-radius: 16px;
+
+}
+
+button:hover {
+opacity: 0.65;
+}
+
+/* -------BOTTONE VERDE ACQUA-------------------------- */
+.button-aquagreen {
+    background-color: rgb(31, 199, 212);
+    border: none;
+    color: white;
+}
+
+
+
+
+/* ------BOTTONE CON SOLO IN BORDO----------------------------------------- */
+.button-onlyborder {
+    background-color: transparent;
+    border: 2px solid  rgb(31, 199, 212);
+    color:  rgb(31, 199, 212);
+
+}

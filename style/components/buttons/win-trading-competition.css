@@ -1,0 +1,228 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;   
+}
+
+
+body {
+    width: 100vw;
+    height: 400vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color:rgb(48, 47, 49);
+    padding:  50px;
+}
+
+
+button {
+    font-size: 16px;
+    padding: 0 24px;
+    border-radius: 16px;
+    height: 1;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.65;
+        }
+    
+}
+
+ &:hover {
+    opacity: 0.65;
+    }
+/* ########################################################## */
+/* ########################################################## */
+
+
+
+.button-label {
+    background-color: rgb(56, 50, 65);
+    color: rgb(184, 173, 210);
+    border: none;
+    border-radius: 16px 16px 0 0;
+    padding: 8px;
+}
+.initial-btn-lbl{
+    background-color: rgb(184, 173, 210);
+    color: rgb(39, 38, 44);
+}
+
+.button-label:hover {
+    opacity:unset;
+}
+
+.ticket-button {
+    background: linear-gradient(#7645d9 0%, rgb(69, 42, 122) 100%); 
+    border: none;
+    color: white;
+    letter-spacing: 0.05rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    width: 240px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
