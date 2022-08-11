@@ -24,3 +24,47 @@
         }
     }
 };
+
+// Flex mixin
+// Ammette come valori flex-direction (row, col...), l'allineamento principale ed l'allineamento rispetto l'asse secondario
+@mixin flex ($flex-direction: row, $main-alignment: center, $sub-alignment: center) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $main-alignment;
+    align-items: $sub-alignment;
+}
+
+// Radious setter
+// Setta un border-radius pari alla dimensione passata come argomento, ammette una stringa che indica quali bordi riceveranno il radius
+@mixin radious-set ($dimension, $corner: 'all-corners') {
+    @if ($corner == 'all-corners') {
+        border-radius: $dimension;
+    } @else if ($corner == "bottom-corners") {
+        border-radius: 0 0 $dimension $dimension;
+    } @else if ($corner == "top-corners") {
+        border-radius: $dimension $dimension 0 0;
+    }
+}
+
+// Dimension setter
+@mixin set-dimension ($heigth, $width) {
+    height: $heigth;
+    width: $width;
+}
+
+//  
+@mixin box-shadow () {
+
+}
+
+// Gradient imposta un gradiente in relazione a due colori 
+@mixin linear-gradient ($color1, $color2, $deg) {
+    background-color: linear-gradient(calc($deg * 1deg), $color1, $color2);
+}
+
+// Prende colore da parent e lo scurisce o schiarisce
+@mixin hover() {
+    &::hover {
+        color: ;
+    }
+}

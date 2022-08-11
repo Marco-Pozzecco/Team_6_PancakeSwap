@@ -10,6 +10,7 @@
 
 // Animations
 @include float(100px, 'NW');
+@include float(100px, 'N');
 
 $font-stack: Kanit, serif;
 
@@ -30,7 +31,7 @@ body {
     width: 100px;
     background-color: blue;
     @include float-anim(5s, 'NW');
-    @include mq('desktop-wide') {
+    @include mq('laptop') {
         & {
             height: 80px;
             width: 80px;
