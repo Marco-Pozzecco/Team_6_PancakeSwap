@@ -629,6 +629,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 .win-prizes {
   background-color: greenyellow;
   height: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (min-width: 1024px) and (max-width: 1247px) {
   .win-prizes .prizes-wrapper {
@@ -1356,6 +1360,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 .win-prizes {
   background-color: greenyellow;
   height: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (min-width: 1024px) and (max-width: 1247px) {
   .win-prizes .prizes-wrapper {

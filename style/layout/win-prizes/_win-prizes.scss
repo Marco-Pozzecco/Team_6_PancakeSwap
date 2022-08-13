@@ -7,12 +7,11 @@
 
 
 .win-prizes {
-    // Rules
     background-color: greenyellow;
     height: 800px;
+    @include flex();
     @include mq('laptop') {
         .prizes-wrapper {
-            // Rules
             @include flex(column);
             height: auto;
             width: 90%;
