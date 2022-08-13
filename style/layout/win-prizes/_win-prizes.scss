@@ -4,7 +4,7 @@
 // Import rules
 @import "../../abstracts/mixins";
 @import "../../abstracts/colors";
-
+@import "../../abstracts/animations";
 
 .win-prizes {
     background-color: greenyellow;
@@ -16,8 +16,7 @@
             height: auto;
             width: 90%;
             background-color: rgba(8, 6, 11, 0.6);
-            -webkit-backdrop-filter: blur(12px);
-            backdrop-filter: blur(12px);
+            @include css3-prefix(backdrop-filter, blur(12px));
             border-radius: 72px;
             padding: 40px;
             & h2 {
