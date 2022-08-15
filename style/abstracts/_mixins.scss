@@ -14,22 +14,40 @@
 };
 
 // Media queries mixin
-// Ammette come valore una stringa indicante il nome del breakpoint (vedi: _variables/breakpoints)
-@mixin mq($type) {
+// Ammette come parametri una stringa indicante il nome del breakpoint (vedi: _variables/breakpoints)
+// Il secondo parametro è opzionale, estende la media query dal primo al secondo parametro indicato
+@mixin mq($mq1,$mq2: 0) {
     $breakpoints-keys : map.keys($breakpoints);
-    @if ($type == 'phone') {
-        @media screen and (max-width: map.get($breakpoints, $type)) {
-            @content;
-        } 
-    } @else if ($type == 'desktop-wide') {
-        @media screen and (min-width: map.get($breakpoints, $type)) {
-            @content;
-        } 
+    @if ($mq2 == 0) {
+        @if ($mq1 == 'phone') {
+            @media screen and (max-width: map.get($breakpoints, $mq1)) {
+                @content;
+            } 
+        } @else if ($mq1 == 'desktop-wide') {
+            @media screen and (min-width: map.get($breakpoints, $mq1)) {
+                @content;
+            } 
+        } @else {
+            @media screen and (min-width: map.get($breakpoints, $mq1)) and (max-width: calc( map.get($breakpoints, list.nth( $breakpoints-keys, list.index($breakpoints-keys, $mq1) + 1) ) - 1px)) {
+                @content;
+            }
+        }
     } @else {
-        @media screen and (min-width: map.get($breakpoints, $type)) and (max-width: calc( map.get($breakpoints, list.nth( $breakpoints-keys, list.index($breakpoints-keys, $type) + 1) ) - 1px)) {
-            @content;
+        @if ($mq1 == 'phone') {
+            @media screen and (max-width: map.get($breakpoints, $mq2)) {
+                @content;
+            }
+        } @else if ($mq2 == 'desktop-wide') {
+            @media screen and (min-width: map.get($breakpoints, $mq1)) {
+                @content;
+            }
+        } @else {
+            @media screen and (min-width: map.get($breakpoints, $mq1)) and (max-width: calc( map.get($breakpoints, list.nth( $breakpoints-keys, list.index($breakpoints-keys, $mq2) + 1) ) - 1px)) {
+                @content;
+            }
         }
     }
+    
 };
 
 // Flex mixin
