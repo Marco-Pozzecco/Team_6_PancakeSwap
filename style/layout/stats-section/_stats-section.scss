@@ -1,20 +1,10 @@
-<<<<<<< HEAD
-// body {
-//     background-color: blue;
-//     color: white;
-// }
-=======
+
 // Use rules
 @use "../../components/buttons/buttons";
 
 // Import rules
 @import "../../abstracts/mixins";
 @import "../../abstracts/colors";
-// @import "../../abstracts/animations";
+@import "../../abstracts/animations";
 
 
-body {
-    background-color: blue;
-    color: white;
-}
->>>>>>> c9a90be91bad36f8212cd10ddc20be73d1a686bc
