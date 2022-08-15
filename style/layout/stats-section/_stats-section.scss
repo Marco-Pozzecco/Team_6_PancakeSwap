@@ -8,17 +8,22 @@
 @import "../../abstracts/animations";
 
 
+
 // @include flex();
 
 
 
 
 .stat-section {
+    @include mq('laptop');
     width: 100%;
     height: auto;
-    background-color: rgba(127, 255, 212, 0.306);
+    background-color: rgba(192, 234, 220, 0.2);
+    padding: 48px 0;
+
         .wrapper-stat {
             @include flex(column);
+            
         }
 }
 

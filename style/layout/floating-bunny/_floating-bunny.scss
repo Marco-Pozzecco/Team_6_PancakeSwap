@@ -7,7 +7,7 @@
 @import "../../abstracts/animations";
 
 .floating-bunny {
-<<<<<<< HEAD
+
     @include mq('laptop');
     @include flex();
     width: 100vw;
@@ -52,10 +52,4 @@
     z-index: -10;
 }
 
-
-
-
-=======
-    color: $h2text-color;
->>>>>>> c9a90be91bad36f8212cd10ddc20be73d1a686bc
 }
