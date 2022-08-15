@@ -1,0 +1,1532 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,900;1,800;1,900&display=swap);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.linea {
+  height: 1px;
+  width: 90%;
+  background-color: white;
+}
+
+.linea-corta {
+  height: 1px;
+  width: 50%;
+  background-color: white;
+}
+
+body {
+  width: 100vw;
+  height: 400vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(48, 47, 49);
+  padding: 50px;
+}
+
+button {
+  font-size: 16px;
+  padding: 0 24px;
+  border-radius: 16px;
+  height: 1;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.65;
+}
+
+/* -------BOTTONE VERDE ACQUA----------- */
+.button-aquagreen {
+  background-color: rgb(31, 199, 212);
+  border: none;
+  color: white;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.button-aquagreen:active {
+  transform: translateY(2px);
+}
+
+/* ------BOTTONE CON SOLO IN BORDO------- */
+.button-onlyborder {
+  background-color: transparent;
+  border: 2px solid rgb(31, 199, 212);
+  color: rgb(31, 199, 212);
+  height: 48px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.button-onlyborder:active {
+  transform: translateY(1px);
+}
+
+/* ---BOTTONE HWMY DEL GRAFICO(Hour,Week,Month,Year)---------- */
+.div-hwmy {
+  background-color: rgb(53, 53, 71);
+  border: 1px solid rgb(82, 75, 99);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+}
+
+.div-hwmy .button-hwmy {
+  background-color: transparent;
+  border: none;
+  color: white;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  font-weight: 600;
+}
+
+.div-hwmy .button-hwmy:active {
+  transform: translateY(2px);
+}
+
+.div-hwmy .button-hwmy:first-child {
+  background-color: rgb(31, 199, 212);
+}
+
+.button-1W, .button-1M, .button-1Y {
+  background-color: transparent;
+  color: white;
+}
+
+/* ---BOTTONE SEMI TRASPARENTE-------------------- */
+.button-semitransparent {
+  background-color: rgba(31, 200, 212, 0.65);
+  color: white;
+  border: none;
+  height: 32px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --BOTTONE QUADRATO TRASPARENTE (per convertire , ampliare, etc..)--------- */
+.button-converter {
+  background-color: transparent;
+  color: rgb(31, 199, 212);
+  border: none;
+  width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+.button-converter:active {
+  transform: translateY(2px);
+}
+
+/* Bottoni nel div-SWAP(a sinistra)-- */
+/* --bottone in alto a sinistra sbarrato----------------- */
+.button-won-graph {
+  background-color: transparent;
+  color: rgb(184, 173, 210);
+  border: none;
+  text-decoration: line-through;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.button-won-graph:hover {
+  opacity: 0.65;
+}
+
+.button-won-graph:active {
+  transform: translateY(2px);
+}
+
+/* blocco bottoni nel div Swap--------------------------------------------*/
+/* "DIV" dei 3 bottoni  in alto a destara[〇〇〇] */
+.swap-box-3b {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.swap-box-3b .button-sb1, .swap-box-3b .button-sb2, .swap-box-3b .button-sb3 {
+  background-color: transparent;
+  color: rgb(184, 173, 210);
+  border: none;
+  border-radius: 50%;
+  padding: 0 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+}
+
+.swap-box-3b .button-sb1:hover, .swap-box-3b .button-sb1:hover, .swap-box-3b .button-sb1:hover, .swap-box-3b .button-sb2:hover, .swap-box-3b .button-sb2:hover, .swap-box-3b .button-sb2:hover, .swap-box-3b .button-sb3:hover, .swap-box-3b .button-sb3:hover, .swap-box-3b .button-sb3:hover {
+  opacity: 0.65;
+}
+
+.swap-box-3b .button-sb1:active, .swap-box-3b .button-sb2:active, .swap-box-3b .button-sb3:active {
+  transform: translateY(2px);
+}
+
+/* --Bottoni scelta valute BNB, CAKE, etc------------------------------------------------- */
+.currency-btn {
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 600;
+  height: 32px;
+  padding: 0 0.5rem;
+  border: none;
+}
+
+.currency-btn:hover {
+  opacity: 0.65;
+}
+
+.currency-btn:active {
+  transform: translateY(2px);
+}
+
+.currency-btn .currency-btn-content-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* --Bottone rotondo semi-trasparente per convertire----- */
+.button-converter-smt {
+  background-color: rgb(55, 47, 71);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px -2px 0px inset;
+  color: rgb(31, 199, 212);
+  border: none;
+  padding: 11px 14px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-converter-smt:hover {
+  background-color: rgb(31, 199, 212);
+  color: rgb(255, 255, 255);
+}
+
+.button-converter-smt:active {
+  transform: translateY(2px);
+}
+
+.button-converter-smt .hover-arrow {
+  display: none;
+}
+
+/* ---BOTTONI TRADE LIMIT - MARKET......................... */
+/* Bottone nel container LIMIT, il terzo, price market */
+.btn-limit-market {
+  background-color: transparent;
+  border: 1px solid rgb(102, 97, 113);
+  color: rgb(102, 97, 113);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: 20px;
+  cursor: not-allowed;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.btn-limit-market > svg {
+  margin-right: 0.5rem;
+}
+
+/*Bottone: FAKE SWITCH. -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+che si trova sotto al div Limit = V2 e V1(old)
+「 presente con un effetto diverso anche nella pagina: Earn → Farms.
+(Questo non ha l effetto switch--- */
+.box-button-fake-switch-big {
+  background-color: rgb(55, 47, 71);
+  border: 1px solid rgb(38, 33, 48);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0.2px;
+}
+
+.box-button-fake-switch-big .button-fake-switch-big {
+  background-color: rgb(184, 173, 210);
+  color: rgb(39, 38, 44);
+  border: none;
+  padding: 0 16px;
+  font-weight: 600;
+  height: 32px;
+}
+
+.box-button-fake-switch-big .button-fake-switch-big:active {
+  transform: translateY(2px);
+}
+
+.box-button-fake-switch-big .link-fake-switch-big {
+  text-decoration: none;
+  color: rgb(184, 173, 210);
+  padding: 0 16px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.box-button-fake-switch-big .link-fake-switch-big:hover {
+  opacity: 0.65;
+}
+
+.box-button-fake-switch-big .link-fake-switch-big:active {
+  transform: translateY(2px);
+}
+
+/* ---Bottoni scelta per visualizzazione a Griglia o a Lista-------------- */
+.box-buttons-grid-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-buttons-grid-list .btn-grid-view {
+  background-color: transparent;
+  fill: rgb(102, 97, 113);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+}
+
+.box-buttons-grid-list .btn-grid-view:active {
+  transform: translateY(2px);
+}
+
+.box-buttons-grid-list .btn-list-view {
+  background-color: transparent;
+  fill: rgb(31, 199, 212); /*cambiare il colore nell svg nell HTML*/
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+}
+
+.box-buttons-grid-list .btn-list-view:active {
+  transform: translateY(2px);
+}
+
+/* BUTTON SWITCH SMALL  -- Check-Box - Staked Only - (ON/OFF Button) */
+.main-box-button-switch-small {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  /* ---HOVER----- */
+  /* ---HOVER----- */
+  /* ---HOVER----- */
+  /* ---HOVER----- */
+}
+
+.main-box-button-switch-small .box-button-switch-small {
+  background-color: rgb(55, 47, 71);
+  padding: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 20px;
+  width: 36px;
+  border-radius: 24px;
+}
+
+.main-box-button-switch-small .box-button-switch-small .on-off-dot {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(39, 38, 44);
+  border-radius: 50%;
+  contain: content;
+  height: 100%;
+  width: 50%;
+}
+
+.main-box-button-switch-small .box-button-switch-small .on-off-dot .on-off-input-check {
+  visibility: hidden;
+  position: absolute;
+}
+
+.main-box-button-switch-small .box-button-switch-small:hover > .on-off-dot {
+  border: 1px solid rgb(172, 34, 172);
+  box-shadow: 0px 0px 0px 3px rgba(211, 108, 211, 0.4);
+}
+
+.main-box-button-switch-small .box-button-switch-small:hover > .on-off-dot {
+  border: 1px solid rgb(172, 34, 172);
+  box-shadow: 0px 0px 0px 3px rgba(211, 108, 211, 0.4);
+}
+
+.main-box-button-switch-small .box-button-switch-small:active {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgb(31, 199, 212);
+}
+
+.main-box-button-switch-small .box-button-switch-small:focus .on-off-dot {
+  border: 1px solid rgb(172, 34, 172);
+  box-shadow: 0px 0px 0px 3px rgba(211, 108, 211, 0.4);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgb(31, 199, 212);
+}
+
+.main-box-button-switch-small .box-button-switch-small-text {
+  color: white;
+  margin: 0 0 0 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* -- BOTTONE SWITCH BIG --- con effetto switch originale-- */
+.box-button-switch-big {
+  background-color: rgb(55, 47, 71);
+  border: 1px solid rgb(38, 33, 48);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.box-button-switch-big .button-switch-big {
+  background-color: rgb(184, 173, 210);
+  color: rgb(39, 38, 44);
+  border: none;
+  padding: 0 16px;
+  height: 32px;
+}
+
+.box-button-switch-big .button-switch-big:active {
+  transform: translateY(2px);
+}
+
+.box-button-switch-big .link-switch-big {
+  text-decoration: none;
+  color: rgb(39, 38, 44);
+  padding: 0 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.box-button-switch-big .link-switch-big:hover {
+  opacity: 0.65;
+}
+
+.box-button-switch-big .link-switch-big:active {
+  transform: translateY(2px);
+}
+
+.box-button-switch-big .lsb2 {
+  color: rgb(184, 173, 210);
+}
+
+/* BOTTONE SEMI TRASPARENTE-2 --- (HARVEST)
+che appare nella sezione che esce dopo che si clicca su una sezione della griglia/lista in Trade → Farm---- */
+.button-semi-trasp-dark {
+  background-color: rgb(60, 55, 66);
+  border: 1px solid rgb(60, 55, 66);
+  color: rgb(102, 97, 113);
+  cursor: not-allowed;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.button-semi-trasp-dark:hover {
+  opacity: initial;
+}
+
+/* ----Farm → POOLS---- */
+/* --Bottone per tornare in alto, all inizio della lista ------------------------- */
+.to-top-button {
+  background-color: transparent;
+  color: rgb(31, 199, 212);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  height: 48px;
+  padding: 0 24px;
+  border: none;
+}
+
+.to-top-button:hover {
+  opacity: 0.65;
+}
+
+/*WIN ..............................................*/
+/* ----WIN → TRADING COMPETITION---- */
+/*--BOTTONI ETICHETTE -------*/
+.button-label {
+  background-color: rgb(56, 50, 65);
+  color: rgb(184, 173, 210);
+  border: none;
+  border-radius: 16px 16px 0 0;
+  padding: 8px;
+}
+
+.button-label .button-label:hover {
+  opacity: unset;
+}
+
+.initial-btn-lbl {
+  background-color: rgb(184, 173, 210);
+  color: rgb(39, 38, 44);
+}
+
+/*BOTTONE DROPDOWN DETAILS TRASPARENTE*/
+.button-dropdown-trsp {
+  color: rgb(31, 199, 212);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0 24px;
+  height: 48px;
+  background-color: transparent;
+  border: none;
+}
+
+.button-dropdown-trsp:hover {
+  opacity: 0.65;
+}
+
+.button-dropdown-trsp:active {
+  transform: translateY(2px);
+}
+
+.bddt2 {
+  display: none;
+}
+
+/* ----WIN → PREDICTION (BETA)---- */
+/*ETICHETTE Sovrapposte*/
+.box-labels-overlap {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  position: relative;
+}
+
+.box-labels-overlap .button-label-overlap {
+  background-color: rgb(39, 38, 44);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 24px 24px 0 0;
+  height: 48px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.box-labels-overlap .button-label-overlap:first-child {
+  z-index: 1;
+  position: absolute;
+}
+
+.box-labels-overlap .button-label-overlap:hover {
+  opacity: inherit;
+}
+
+.box-labels-overlap .button-label-overlap .blol-icon {
+  margin-right: 10px;
+}
+
+.box-labels-overlap .blol-1 {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+}
+
+.box-labels-overlap .blol-2 {
+  position: absolute;
+  z-index: 0;
+  margin-left: 100px;
+  background-color: rgb(55, 47, 71);
+  opacity: 0.65;
+}
+
+/* ----WIN → LOTTERY---- */
+.ticket-button {
+  background: linear-gradient(#7645d9 0%, rgb(69, 42, 122) 100%);
+  border: none;
+  color: white;
+  letter-spacing: 0.05rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  width: 240px;
+}
+
+/* text color + "need help" */
+/* text input color */
+/* Text color gradient */
+/* cards background color */
+/* text color  */
+/* nav bar color */
+/* website background color */
+/* text input color */
+.win-prizes {
+  background-color: greenyellow;
+  height: 800px;
+}
+@media screen and (min-width: 1024px) and (max-width: 1247px) {
+  .win-prizes .prizes-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 90%;
+    background-color: rgba(8, 6, 11, 0.6);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    border-radius: 72px;
+    padding: 40px;
+  }
+  .win-prizes .prizes-wrapper h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  .win-prizes .prizes-wrapper h2 span {
+    color: rgb(154, 106, 255);
+  }
+  .win-prizes .prizes-wrapper p {
+    color: rgb(184, 173, 210);
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 16px;
+    margin: 0;
+  }
+  .win-prizes .prizes-wrapper p.last {
+    margin-bottom: 40px;
+  }
+  .win-prizes .prizes-wrapper .card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .win-prizes .prizes-wrapper .card-container .card {
+    margin: 0 10px;
+    width: 30%;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  .win-prizes .prizes-wrapper .card-container .card .card-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .win-prizes .prizes-wrapper .card-container .card h3 {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .win-prizes .prizes-wrapper .card-container .card h2 {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .win-prizes .prizes-wrapper .card-container .card p {
+    font-size: 12px;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .win-prizes .prizes-wrapper .card-container .card-lottery {
+    background-color: rgb(255, 178, 55);
+  }
+  .win-prizes .prizes-wrapper .card-container .card-lottery h3 {
+    color: rgb(40, 13, 95);
+  }
+  .win-prizes .prizes-wrapper .card-container .card-lottery h2 {
+    color: rgb(40, 13, 95);
+  }
+  .win-prizes .prizes-wrapper .card-container .card-lottery p {
+    color: rgb(40, 13, 95);
+  }
+  .win-prizes .prizes-wrapper .card-container .card-prediction {
+    background-color: rgb(154, 106, 255);
+  }
+  .win-prizes .prizes-wrapper .card-container .card-prediction h3 {
+    color: white;
+  }
+  .win-prizes .prizes-wrapper .card-container .card-prediction h2 {
+    color: rgb(255, 178, 55);
+  }
+  .win-prizes .prizes-wrapper .card-container .card-prediction p {
+    color: white;
+  }
+}
+
+body {
+  background-color: blue;
+  color: white;
+}
+
+/* text color + "need help" */
+/* text input color */
+/* Text color gradient */
+/* cards background color */
+/* text color  */
+/* nav bar color */
+/* website background color */
+/* text input color */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.linea {
+  height: 1px;
+  width: 90%;
+  background-color: white;
+}
+
+.linea-corta {
+  height: 1px;
+  width: 50%;
+  background-color: white;
+}
+
+body {
+  width: 100vw;
+  height: 400vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(48, 47, 49);
+  padding: 50px;
+}
+
+button {
+  font-size: 16px;
+  padding: 0 24px;
+  border-radius: 16px;
+  height: 1;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.65;
+}
+
+/* -------BOTTONE VERDE ACQUA----------- */
+.button-aquagreen {
+  background-color: rgb(31, 199, 212);
+  border: none;
+  color: white;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.button-aquagreen:active {
+  transform: translateY(2px);
+}
+
+/* ------BOTTONE CON SOLO IN BORDO------- */
+.button-onlyborder {
+  background-color: transparent;
+  border: 2px solid rgb(31, 199, 212);
+  color: rgb(31, 199, 212);
+  height: 48px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.button-onlyborder:active {
+  transform: translateY(1px);
+}
+
+/* ---BOTTONE HWMY DEL GRAFICO(Hour,Week,Month,Year)---------- */
+.div-hwmy {
+  background-color: rgb(53, 53, 71);
+  border: 1px solid rgb(82, 75, 99);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+}
+
+.div-hwmy .button-hwmy {
+  background-color: transparent;
+  border: none;
+  color: white;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  font-weight: 600;
+}
+
+.div-hwmy .button-hwmy:active {
+  transform: translateY(2px);
+}
+
+.div-hwmy .button-hwmy:first-child {
+  background-color: rgb(31, 199, 212);
+}
+
+.button-1W, .button-1M, .button-1Y {
+  background-color: transparent;
+  color: white;
+}
+
+/* ---BOTTONE SEMI TRASPARENTE-------------------- */
+.button-semitransparent {
+  background-color: rgba(31, 200, 212, 0.65);
+  color: white;
+  border: none;
+  height: 32px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --BOTTONE QUADRATO TRASPARENTE (per convertire , ampliare, etc..)--------- */
+.button-converter {
+  background-color: transparent;
+  color: rgb(31, 199, 212);
+  border: none;
+  width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+.button-converter:active {
+  transform: translateY(2px);
+}
+
+/* Bottoni nel div-SWAP(a sinistra)-- */
+/* --bottone in alto a sinistra sbarrato----------------- */
+.button-won-graph {
+  background-color: transparent;
+  color: rgb(184, 173, 210);
+  border: none;
+  text-decoration: line-through;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.button-won-graph:hover {
+  opacity: 0.65;
+}
+
+.button-won-graph:active {
+  transform: translateY(2px);
+}
+
+/* blocco bottoni nel div Swap--------------------------------------------*/
+/* "DIV" dei 3 bottoni  in alto a destara[〇〇〇] */
+.swap-box-3b {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.swap-box-3b .button-sb1, .swap-box-3b .button-sb2, .swap-box-3b .button-sb3 {
+  background-color: transparent;
+  color: rgb(184, 173, 210);
+  border: none;
+  border-radius: 50%;
+  padding: 0 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+}
+
+.swap-box-3b .button-sb1:hover, .swap-box-3b .button-sb1:hover, .swap-box-3b .button-sb1:hover, .swap-box-3b .button-sb2:hover, .swap-box-3b .button-sb2:hover, .swap-box-3b .button-sb2:hover, .swap-box-3b .button-sb3:hover, .swap-box-3b .button-sb3:hover, .swap-box-3b .button-sb3:hover {
+  opacity: 0.65;
+}
+
+.swap-box-3b .button-sb1:active, .swap-box-3b .button-sb2:active, .swap-box-3b .button-sb3:active {
+  transform: translateY(2px);
+}
+
+/* --Bottoni scelta valute BNB, CAKE, etc------------------------------------------------- */
+.currency-btn {
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 600;
+  height: 32px;
+  padding: 0 0.5rem;
+  border: none;
+}
+
+.currency-btn:hover {
+  opacity: 0.65;
+}
+
+.currency-btn:active {
+  transform: translateY(2px);
+}
+
+.currency-btn .currency-btn-content-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* --Bottone rotondo semi-trasparente per convertire----- */
+.button-converter-smt {
+  background-color: rgb(55, 47, 71);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px -2px 0px inset;
+  color: rgb(31, 199, 212);
+  border: none;
+  padding: 11px 14px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-converter-smt:hover {
+  background-color: rgb(31, 199, 212);
+  color: rgb(255, 255, 255);
+}
+
+.button-converter-smt:active {
+  transform: translateY(2px);
+}
+
+.button-converter-smt .hover-arrow {
+  display: none;
+}
+
+/* ---BOTTONI TRADE LIMIT - MARKET......................... */
+/* Bottone nel container LIMIT, il terzo, price market */
+.btn-limit-market {
+  background-color: transparent;
+  border: 1px solid rgb(102, 97, 113);
+  color: rgb(102, 97, 113);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: 20px;
+  cursor: not-allowed;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.btn-limit-market > svg {
+  margin-right: 0.5rem;
+}
+
+/*Bottone: FAKE SWITCH. -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+che si trova sotto al div Limit = V2 e V1(old)
+「 presente con un effetto diverso anche nella pagina: Earn → Farms.
+(Questo non ha l effetto switch--- */
+.box-button-fake-switch-big {
+  background-color: rgb(55, 47, 71);
+  border: 1px solid rgb(38, 33, 48);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0.2px;
+}
+
+.box-button-fake-switch-big .button-fake-switch-big {
+  background-color: rgb(184, 173, 210);
+  color: rgb(39, 38, 44);
+  border: none;
+  padding: 0 16px;
+  font-weight: 600;
+  height: 32px;
+}
+
+.box-button-fake-switch-big .button-fake-switch-big:active {
+  transform: translateY(2px);
+}
+
+.box-button-fake-switch-big .link-fake-switch-big {
+  text-decoration: none;
+  color: rgb(184, 173, 210);
+  padding: 0 16px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.box-button-fake-switch-big .link-fake-switch-big:hover {
+  opacity: 0.65;
+}
+
+.box-button-fake-switch-big .link-fake-switch-big:active {
+  transform: translateY(2px);
+}
+
+/* ---Bottoni scelta per visualizzazione a Griglia o a Lista-------------- */
+.box-buttons-grid-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-buttons-grid-list .btn-grid-view {
+  background-color: transparent;
+  fill: rgb(102, 97, 113);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+}
+
+.box-buttons-grid-list .btn-grid-view:active {
+  transform: translateY(2px);
+}
+
+.box-buttons-grid-list .btn-list-view {
+  background-color: transparent;
+  fill: rgb(31, 199, 212); /*cambiare il colore nell svg nell HTML*/
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+}
+
+.box-buttons-grid-list .btn-list-view:active {
+  transform: translateY(2px);
+}
+
+/* BUTTON SWITCH SMALL  -- Check-Box - Staked Only - (ON/OFF Button) */
+.main-box-button-switch-small {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  /* ---HOVER----- */
+  /* ---HOVER----- */
+  /* ---HOVER----- */
+  /* ---HOVER----- */
+}
+
+.main-box-button-switch-small .box-button-switch-small {
+  background-color: rgb(55, 47, 71);
+  padding: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 20px;
+  width: 36px;
+  border-radius: 24px;
+}
+
+.main-box-button-switch-small .box-button-switch-small .on-off-dot {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(39, 38, 44);
+  border-radius: 50%;
+  contain: content;
+  height: 100%;
+  width: 50%;
+}
+
+.main-box-button-switch-small .box-button-switch-small .on-off-dot .on-off-input-check {
+  visibility: hidden;
+  position: absolute;
+}
+
+.main-box-button-switch-small .box-button-switch-small:hover > .on-off-dot {
+  border: 1px solid rgb(172, 34, 172);
+  box-shadow: 0px 0px 0px 3px rgba(211, 108, 211, 0.4);
+}
+
+.main-box-button-switch-small .box-button-switch-small:hover > .on-off-dot {
+  border: 1px solid rgb(172, 34, 172);
+  box-shadow: 0px 0px 0px 3px rgba(211, 108, 211, 0.4);
+}
+
+.main-box-button-switch-small .box-button-switch-small:active {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgb(31, 199, 212);
+}
+
+.main-box-button-switch-small .box-button-switch-small:focus .on-off-dot {
+  border: 1px solid rgb(172, 34, 172);
+  box-shadow: 0px 0px 0px 3px rgba(211, 108, 211, 0.4);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgb(31, 199, 212);
+}
+
+.main-box-button-switch-small .box-button-switch-small-text {
+  color: white;
+  margin: 0 0 0 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* -- BOTTONE SWITCH BIG --- con effetto switch originale-- */
+.box-button-switch-big {
+  background-color: rgb(55, 47, 71);
+  border: 1px solid rgb(38, 33, 48);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.box-button-switch-big .button-switch-big {
+  background-color: rgb(184, 173, 210);
+  color: rgb(39, 38, 44);
+  border: none;
+  padding: 0 16px;
+  height: 32px;
+}
+
+.box-button-switch-big .button-switch-big:active {
+  transform: translateY(2px);
+}
+
+.box-button-switch-big .link-switch-big {
+  text-decoration: none;
+  color: rgb(39, 38, 44);
+  padding: 0 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.box-button-switch-big .link-switch-big:hover {
+  opacity: 0.65;
+}
+
+.box-button-switch-big .link-switch-big:active {
+  transform: translateY(2px);
+}
+
+.box-button-switch-big .lsb2 {
+  color: rgb(184, 173, 210);
+}
+
+/* BOTTONE SEMI TRASPARENTE-2 --- (HARVEST)
+che appare nella sezione che esce dopo che si clicca su una sezione della griglia/lista in Trade → Farm---- */
+.button-semi-trasp-dark {
+  background-color: rgb(60, 55, 66);
+  border: 1px solid rgb(60, 55, 66);
+  color: rgb(102, 97, 113);
+  cursor: not-allowed;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.button-semi-trasp-dark:hover {
+  opacity: initial;
+}
+
+/* ----Farm → POOLS---- */
+/* --Bottone per tornare in alto, all inizio della lista ------------------------- */
+.to-top-button {
+  background-color: transparent;
+  color: rgb(31, 199, 212);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  height: 48px;
+  padding: 0 24px;
+  border: none;
+}
+
+.to-top-button:hover {
+  opacity: 0.65;
+}
+
+/*WIN ..............................................*/
+/* ----WIN → TRADING COMPETITION---- */
+/*--BOTTONI ETICHETTE -------*/
+.button-label {
+  background-color: rgb(56, 50, 65);
+  color: rgb(184, 173, 210);
+  border: none;
+  border-radius: 16px 16px 0 0;
+  padding: 8px;
+}
+
+.button-label .button-label:hover {
+  opacity: unset;
+}
+
+.initial-btn-lbl {
+  background-color: rgb(184, 173, 210);
+  color: rgb(39, 38, 44);
+}
+
+/*BOTTONE DROPDOWN DETAILS TRASPARENTE*/
+.button-dropdown-trsp {
+  color: rgb(31, 199, 212);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0 24px;
+  height: 48px;
+  background-color: transparent;
+  border: none;
+}
+
+.button-dropdown-trsp:hover {
+  opacity: 0.65;
+}
+
+.button-dropdown-trsp:active {
+  transform: translateY(2px);
+}
+
+.bddt2 {
+  display: none;
+}
+
+/* ----WIN → PREDICTION (BETA)---- */
+/*ETICHETTE Sovrapposte*/
+.box-labels-overlap {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  position: relative;
+}
+
+.box-labels-overlap .button-label-overlap {
+  background-color: rgb(39, 38, 44);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 24px 24px 0 0;
+  height: 48px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.box-labels-overlap .button-label-overlap:first-child {
+  z-index: 1;
+  position: absolute;
+}
+
+.box-labels-overlap .button-label-overlap:hover {
+  opacity: inherit;
+}
+
+.box-labels-overlap .button-label-overlap .blol-icon {
+  margin-right: 10px;
+}
+
+.box-labels-overlap .blol-1 {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+}
+
+.box-labels-overlap .blol-2 {
+  position: absolute;
+  z-index: 0;
+  margin-left: 100px;
+  background-color: rgb(55, 47, 71);
+  opacity: 0.65;
+}
+
+/* ----WIN → LOTTERY---- */
+.ticket-button {
+  background: linear-gradient(#7645d9 0%, rgb(69, 42, 122) 100%);
+  border: none;
+  color: white;
+  letter-spacing: 0.05rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  width: 240px;
+}
+
+/* text color + "need help" */
+/* text input color */
+/* Text color gradient */
+/* cards background color */
+/* text color  */
+/* nav bar color */
+/* website background color */
+/* text input color */
+.win-prizes {
+  background-color: greenyellow;
+  height: 800px;
+}
+@media screen and (min-width: 1024px) and (max-width: 1247px) {
+  .win-prizes .prizes-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 90%;
+    background-color: rgba(8, 6, 11, 0.6);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    border-radius: 72px;
+    padding: 40px;
+  }
+  .win-prizes .prizes-wrapper h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  .win-prizes .prizes-wrapper h2 span {
+    color: rgb(154, 106, 255);
+  }
+  .win-prizes .prizes-wrapper p {
+    color: rgb(184, 173, 210);
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 16px;
+    margin: 0;
+  }
+  .win-prizes .prizes-wrapper p.last {
+    margin-bottom: 40px;
+  }
+  .win-prizes .prizes-wrapper .card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .win-prizes .prizes-wrapper .card-container .card {
+    margin: 0 10px;
+    width: 30%;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  .win-prizes .prizes-wrapper .card-container .card .card-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .win-prizes .prizes-wrapper .card-container .card h3 {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .win-prizes .prizes-wrapper .card-container .card h2 {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .win-prizes .prizes-wrapper .card-container .card p {
+    font-size: 12px;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .win-prizes .prizes-wrapper .card-container .card-lottery {
+    background-color: rgb(255, 178, 55);
+  }
+  .win-prizes .prizes-wrapper .card-container .card-lottery h3 {
+    color: rgb(40, 13, 95);
+  }
+  .win-prizes .prizes-wrapper .card-container .card-lottery h2 {
+    color: rgb(40, 13, 95);
+  }
+  .win-prizes .prizes-wrapper .card-container .card-lottery p {
+    color: rgb(40, 13, 95);
+  }
+  .win-prizes .prizes-wrapper .card-container .card-prediction {
+    background-color: rgb(154, 106, 255);
+  }
+  .win-prizes .prizes-wrapper .card-container .card-prediction h3 {
+    color: white;
+  }
+  .win-prizes .prizes-wrapper .card-container .card-prediction h2 {
+    color: rgb(255, 178, 55);
+  }
+  .win-prizes .prizes-wrapper .card-container .card-prediction p {
+    color: white;
+  }
+}
+
+body {
+  background-color: blue;
+  color: white;
+}
+
+@-webkit-keyframes float-NW {
+  0% {
+    transform: translatex(0px) translatey(0px);
+  }
+  50% {
+    transform: translatex(-100px) translatey(100px);
+  }
+  100% {
+    transform: translatex(0px) translatey(0px);
+  }
+}
+
+@keyframes float-NW {
+  0% {
+    transform: translatex(0px) translatey(0px);
+  }
+  50% {
+    transform: translatex(-100px) translatey(100px);
+  }
+  100% {
+    transform: translatex(0px) translatey(0px);
+  }
+}
+@-webkit-keyframes float-N {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes float-N {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Kanit, serif;
+  font-size: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blue-square {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+@media screen and (min-width: 1024px) and (max-width: 1247px) {
+  .blue-square {
+    height: 80px;
+    width: 80px;
+  }
+}/*# sourceMappingURL=main.css.map */
