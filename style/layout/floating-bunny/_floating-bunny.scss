@@ -1,0 +1,12 @@
+// Use rules
+@use "../../components/buttons/buttons";
+
+// Import rules
+@import "../../abstracts/mixins";
+@import "../../abstracts/colors";
+@import "../../abstracts/animations";
+
+.floating-bunny {
+    background-color: yellow;
+    color: $h2text-color;
+}
