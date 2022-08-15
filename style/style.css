@@ -575,7 +575,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* website background color */
 /* text input color */
 .win-prizes {
-  background-color: greenyellow;
+  background-color: linear-gradient(rgb(11, 69, 118) 0%, rgb(9, 17, 21) 100%);
   height: 800px;
   display: flex;
   flex-direction: row;
@@ -683,11 +683,16 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* website background color */
 /* text input color */
 .floating-bunny {
+<<<<<<< HEAD
+=======
+  background-color: yellow;
+>>>>>>> f20b0ceabdb2dd20e8e2890d60562e04a5095434
   color: #9A6AFF;
 }
 
 /* text color + "need help" */
 /* Inseriti da Clara, da rivedere: */
+<<<<<<< HEAD
 /* text input color */
 /* Text color gradient */
 /* cards background color */
@@ -702,6 +707,8 @@ body {
 
 /* text color + "need help" */
 /* Inseriti da Clara, da rivedere: */
+=======
+>>>>>>> f20b0ceabdb2dd20e8e2890d60562e04a5095434
 /* text input color */
 /* Text color gradient */
 /* cards background color */
@@ -1337,7 +1344,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* website background color */
 /* text input color */
 .win-prizes {
-  background-color: greenyellow;
+  background-color: linear-gradient(rgb(11, 69, 118) 0%, rgb(9, 17, 21) 100%);
   height: 800px;
   display: flex;
   flex-direction: row;
@@ -1445,6 +1452,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* website background color */
 /* text input color */
 .floating-bunny {
+<<<<<<< HEAD
   color: #9A6AFF;
 }
 
@@ -1462,6 +1470,12 @@ body {
   color: white;
 }
 
+=======
+  background-color: yellow;
+  color: #9A6AFF;
+}
+
+>>>>>>> f20b0ceabdb2dd20e8e2890d60562e04a5095434
 @-webkit-keyframes float-NW {
   0% {
     transform: translatex(0px) translatey(0px);
