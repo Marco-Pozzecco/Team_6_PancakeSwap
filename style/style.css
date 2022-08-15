@@ -683,9 +683,8 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* website background color */
 /* text input color */
 .floating-bunny {
-<<<<<<< HEAD
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
@@ -693,12 +692,6 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 .floating-bunny .wrapper {
   background-color: rgb(26, 11, 58);
-=======
-<<<<<<< HEAD
-=======
-  background-color: yellow;
->>>>>>> f20b0ceabdb2dd20e8e2890d60562e04a5095434
->>>>>>> c9a90be91bad36f8212cd10ddc20be73d1a686bc
   color: #9A6AFF;
   width: 100%;
   height: 100%;
@@ -714,26 +707,25 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 .floating-bunny .wrapper .contents-section h2 {
   font-size: 65px;
-  font-weight: 500;
-  line-height: 70px;
+  font-weight: 100;
+  line-height: 1.1;
 }
 .floating-bunny .wrapper .contents-section h3 {
   color: aliceblue;
   font-size: 20px;
 }
 .floating-bunny .wrapper .img-section {
-  background-color: red;
+  background-color: rgb(26, 11, 58);
   width: 50%;
   height: 100%;
 }
 .floating-bunny .provadiv {
+  background-color: rgb(26, 11, 58);
   width: 100%;
-  z-index: -10;
 }
 
 /* text color + "need help" */
 /* Inseriti da Clara, da rivedere: */
-<<<<<<< HEAD
 /* text input color */
 /* Text color gradient */
 /* cards background color */
@@ -748,8 +740,6 @@ body {
 
 /* text color + "need help" */
 /* Inseriti da Clara, da rivedere: */
-=======
->>>>>>> f20b0ceabdb2dd20e8e2890d60562e04a5095434
 /* text input color */
 /* Text color gradient */
 /* cards background color */
@@ -1493,9 +1483,8 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* website background color */
 /* text input color */
 .floating-bunny {
-<<<<<<< HEAD
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
@@ -1504,28 +1493,6 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 
 .floating-bunny .wrapper {
   background-color: rgb(26, 11, 58);
-=======
-<<<<<<< HEAD
-  color: #9A6AFF;
-}
-
-/* text color + "need help" */
-/* Inseriti da Clara, da rivedere: */
-/* text input color */
-/* Text color gradient */
-/* cards background color */
-/* text color  */
-/* nav bar color */
-/* website background color */
-/* text input color */
-body {
-  background-color: blue;
-  color: white;
-}
-
-=======
-  background-color: yellow;
->>>>>>> c9a90be91bad36f8212cd10ddc20be73d1a686bc
   color: #9A6AFF;
   width: 100%;
   height: 100%;
@@ -1543,8 +1510,8 @@ body {
 
 .floating-bunny .wrapper .contents-section h2 {
   font-size: 65px;
-  font-weight: 500;
-  line-height: 70px;
+  font-weight: 100;
+  line-height: 1.1;
 }
 
 .floating-bunny .wrapper .contents-section h3 {
@@ -1553,17 +1520,30 @@ body {
 }
 
 .floating-bunny .wrapper .img-section {
-  background-color: red;
+  background-color: rgb(26, 11, 58);
   width: 50%;
   height: 100%;
 }
 
 .floating-bunny .provadiv {
+  background-color: rgb(26, 11, 58);
   width: 100%;
-  z-index: -10;
 }
 
->>>>>>> f20b0ceabdb2dd20e8e2890d60562e04a5095434
+/* text color + "need help" */
+/* Inseriti da Clara, da rivedere: */
+/* text input color */
+/* Text color gradient */
+/* cards background color */
+/* text color  */
+/* nav bar color */
+/* website background color */
+/* text input color */
+body {
+  background-color: blue;
+  color: white;
+}
+
 @-webkit-keyframes float-NW {
   0% {
     transform: translatex(0px) translatey(0px);

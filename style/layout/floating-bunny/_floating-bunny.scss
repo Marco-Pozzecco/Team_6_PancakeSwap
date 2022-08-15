@@ -7,9 +7,9 @@
 @import "../../abstracts/animations";
 
 .floating-bunny {
-<<<<<<< HEAD
+
     @include mq('laptop');
-    @include flex();
+    @include flex(column);
     width: 100vw;
     height: 100vh;
 
@@ -24,12 +24,12 @@
             text-align: left;
             width: 50%;
             padding-left: 60px;
-            
+
 
             & h2 {
                 font-size: 65px;
-                font-weight: 500;
-                line-height: 70px;
+                font-weight: 100;
+                line-height: 1.1;
             }
 
             & h3 {
@@ -40,22 +40,15 @@
         }
 
         & .img-section {
-            background-color: red;
+            background-color: rgb(26, 11, 58);
             width: 50%;
             height: 100%;
         }
     }
 
+    .provadiv {
+        background-color: rgb(26, 11, 58);
+        width: 100%;
+    }
 
-.provadiv {
-    width: 100%;
-    z-index: -10;
-}
-
-
-
-
-=======
-    color: $h2text-color;
->>>>>>> c9a90be91bad36f8212cd10ddc20be73d1a686bc
 }
