@@ -8,3 +8,17 @@
 @import "../../abstracts/animations";
 
 
+// @include flex();
+
+
+
+
+.stat-section {
+    width: 100%;
+    height: auto;
+    background-color: rgba(127, 255, 212, 0.306);
+        .wrapper-stat {
+            @include flex(column);
+        }
+}
+
