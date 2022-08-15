@@ -1,20 +1,32 @@
 
+<<<<<<< HEAD
 // body {
 //     background-color: blue;
 //     color: white;
 // }
 
+=======
+>>>>>>> 192c014d2c486f632529a29cd119012107b0e9bd
 // Use rules
 @use "../../components/buttons/buttons";
 
 // Import rules
 @import "../../abstracts/mixins";
 @import "../../abstracts/colors";
-// @import "../../abstracts/animations";
+@import "../../abstracts/animations";
 
 
-body {
-    background-color: blue;
-    color: white;
+// @include flex();
+
+
+
+
+.stat-section {
+    width: 100%;
+    height: auto;
+    background-color: rgba(127, 255, 212, 0.306);
+        .wrapper-stat {
+            @include flex(column);
+        }
 }
 
