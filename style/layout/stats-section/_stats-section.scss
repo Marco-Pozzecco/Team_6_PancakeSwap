@@ -1,4 +1,9 @@
 
+// body {
+//     background-color: blue;
+//     color: white;
+// }
+
 // Use rules
 @use "../../components/buttons/buttons";
 
@@ -23,7 +28,7 @@
 
         .wrapper-stat {
             @include flex(column);
-            
+
         }
 }
 

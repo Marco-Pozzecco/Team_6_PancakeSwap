@@ -684,7 +684,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* text input color */
 .floating-bunny {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
@@ -707,17 +707,21 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 .floating-bunny .wrapper .contents-section h2 {
   font-size: 65px;
-  font-weight: 500;
-  line-height: 70px;
+  font-weight: 100;
+  line-height: 1.1;
 }
 .floating-bunny .wrapper .contents-section h3 {
   color: aliceblue;
   font-size: 20px;
 }
 .floating-bunny .wrapper .img-section {
-  background-color: red;
+  background-color: rgb(26, 11, 58);
   width: 50%;
   height: 100%;
+}
+.floating-bunny .provadiv {
+  background-color: rgb(26, 11, 58);
+  width: 100%;
 }
 .floating-bunny .provadiv {
   width: 100%;
@@ -1492,7 +1496,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* text input color */
 .floating-bunny {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
@@ -1518,8 +1522,8 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 
 .floating-bunny .wrapper .contents-section h2 {
   font-size: 65px;
-  font-weight: 500;
-  line-height: 70px;
+  font-weight: 100;
+  line-height: 1.1;
 }
 
 .floating-bunny .wrapper .contents-section h3 {
@@ -1528,9 +1532,14 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 
 .floating-bunny .wrapper .img-section {
-  background-color: red;
+  background-color: rgb(26, 11, 58);
   width: 50%;
   height: 100%;
+}
+
+.floating-bunny .provadiv {
+  background-color: rgb(26, 11, 58);
+  width: 100%;
 }
 
 .floating-bunny .provadiv {
