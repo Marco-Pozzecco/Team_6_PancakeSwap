@@ -737,6 +737,12 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* nav bar color */
 /* website background color */
 /* text input color */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .stat-section {
   width: 100%;
   height: auto;
@@ -744,10 +750,87 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   padding: 48px 0;
 }
 .stat-section .wrapper-stat {
+  background-color: rgba(163, 164, 160, 0.2);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 48px 24px;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+.stat-section .wrapper-stat svg {
+  margin: 0 0 24px;
+}
+.stat-section .wrapper-stat h2 {
+  background-color: rgba(9, 103, 151, 0.2);
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: rgb(244, 238, 255);
+}
+.stat-section .wrapper-stat .sst2 {
+  margin-bottom: 32px;
+}
+.stat-section .wrapper-stat .description-stat-sec {
+  background-color: rgba(60, 24, 130, 0.2);
+  font-size: 16px;
+  color: rgb(184, 173, 210);
+}
+.stat-section .wrapper-stat .dst1 {
+  font-weight: 400;
+}
+.stat-section .wrapper-stat .dst2 {
+  vertical-align: baseline;
+  margin-bottom: 10px;
+}
+.stat-section .wrapper-stat .dst3 {
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+.stat-section .wrapper-stat .card-container-dst {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(0, 255, 255, 0.489);
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst {
+  background-color: rgba(255, 20, 145, 0.32);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  border-radius: 24px;
+  margin-right: 16px;
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg {
+  align-self: flex-end;
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title {
+  text-align: left;
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title h2 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdta {
+  color: rgb(244, 238, 255);
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb {
+  color: rgb(154, 106, 255);
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .card-dist-last-text {
+  color: rgb(184, 173, 210);
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 /* text color + "need help" */
@@ -1556,6 +1639,12 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* nav bar color */
 /* website background color */
 /* text input color */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .stat-section {
   width: 100%;
   height: auto;
@@ -1564,10 +1653,102 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 
 .stat-section .wrapper-stat {
+  background-color: rgba(163, 164, 160, 0.2);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 48px 24px;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.stat-section .wrapper-stat svg {
+  margin: 0 0 24px;
+}
+
+.stat-section .wrapper-stat h2 {
+  background-color: rgba(9, 103, 151, 0.2);
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: rgb(244, 238, 255);
+}
+
+.stat-section .wrapper-stat .sst2 {
+  margin-bottom: 32px;
+}
+
+.stat-section .wrapper-stat .description-stat-sec {
+  background-color: rgba(60, 24, 130, 0.2);
+  font-size: 16px;
+  color: rgb(184, 173, 210);
+}
+
+.stat-section .wrapper-stat .dst1 {
+  font-weight: 400;
+}
+
+.stat-section .wrapper-stat .dst2 {
+  vertical-align: baseline;
+  margin-bottom: 10px;
+}
+
+.stat-section .wrapper-stat .dst3 {
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+
+.stat-section .wrapper-stat .card-container-dst {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(0, 255, 255, 0.489);
+}
+
+.stat-section .wrapper-stat .card-container-dst .card-dst {
+  background-color: rgba(255, 20, 145, 0.32);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  border-radius: 24px;
+  margin-right: 16px;
+}
+
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg {
+  align-self: flex-end;
+}
+
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title {
+  text-align: left;
+}
+
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title h2 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdta {
+  color: rgb(244, 238, 255);
+}
+
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb {
+  color: rgb(154, 106, 255);
+}
+
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .card-dist-last-text {
+  color: rgb(184, 173, 210);
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 @-webkit-keyframes float-NW {

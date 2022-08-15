@@ -12,6 +12,12 @@
 @import "../../abstracts/colors";
 @import "../../abstracts/animations";
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 
 
 // @include flex();
@@ -27,7 +33,101 @@
     padding: 48px 0;
 
         .wrapper-stat {
+            background-color: rgba(163, 164, 160, 0.2);
+
             @include flex(column);
+            padding: 48px 24px;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            width: 100%;
+            text-align: center;
+
+                & svg {
+                    margin: 0 0 24px;
+                }
+
+                & h2 {
+                    background-color: rgba(9, 103, 151, 0.2);
+                    font-size: 42px;
+                    font-weight: 600;
+                    line-height: 1.1;
+                    color:  rgb(244, 238, 255);
+                }
+
+                .sst2 {
+                    margin-bottom: 32px;
+                }
+
+                
+            
+                .description-stat-sec {
+                    background-color: rgba(60, 24, 130, 0.2);
+
+                    font-size: 16px;
+                    color:  rgb(184, 173, 210);
+                }
+
+                .dst1 {
+                    font-weight: 400;
+                }
+                
+                .dst2 {
+                    vertical-align: baseline;
+                    margin-bottom: 10px;
+                }
+
+                .dst3 {
+                    font-weight: 600;
+                    margin-bottom: 32px
+                }
+
+                .card-container-dst {
+                    @include flex();
+                    width: 100%;
+                    background-color: rgba(0, 255, 255, 0.489);
+
+                    .card-dst {
+                        background-color: rgba(255, 20, 145, 0.32);
+                        @include flex(column);
+                        padding: 24px;
+                        border-radius: 24px;
+                        margin-right: 16px;
+  
+                        .card-dist-svg {
+                                align-self: flex-end;
+                        }
+
+                        .card-dist-title {
+                             text-align: left; 
+                             
+                                & h2 {
+                                    font-size: 40px;
+                                    font-weight: 600;
+                                    line-height: 1.1;
+                                }
+
+                                & .cdta {
+                                    color: $card-dist-title-a;
+                                }
+
+                                & .cdtb {
+                                    color: $secondary-dk;
+                                }
+                                
+                                .card-dist-last-text {
+                                    color: $card-dist-last-text;
+                                    line-height: 1.5;
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                }
+
+                        }
+
+                    }
+                }
+
+
 
         }
 }
