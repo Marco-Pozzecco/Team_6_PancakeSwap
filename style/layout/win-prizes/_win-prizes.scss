@@ -4,21 +4,19 @@
 // Import rules
 @import "../../abstracts/mixins";
 @import "../../abstracts/colors";
-
+@import "../../abstracts/animations";
 
 .win-prizes {
-    // Rules
     background-color: greenyellow;
     height: 800px;
+    @include flex();
     @include mq('laptop') {
         .prizes-wrapper {
-            // Rules
             @include flex(column);
             height: auto;
             width: 90%;
             background-color: rgba(8, 6, 11, 0.6);
-            -webkit-backdrop-filter: blur(12px);
-            backdrop-filter: blur(12px);
+            @include css3-prefix(backdrop-filter, blur(12px));
             border-radius: 72px;
             padding: 40px;
             & h2 {

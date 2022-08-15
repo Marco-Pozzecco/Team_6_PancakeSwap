@@ -629,6 +629,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 .win-prizes {
   background-color: greenyellow;
   height: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (min-width: 1024px) and (max-width: 1247px) {
   .win-prizes .prizes-wrapper {
@@ -640,6 +644,9 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     width: 90%;
     background-color: rgba(8, 6, 11, 0.6);
     -webkit-backdrop-filter: blur(12px);
+    -moz-backdrop-filter: blur(12px);
+    -ms-backdrop-filter: blur(12px);
+    -o-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
     border-radius: 72px;
     padding: 40px;
@@ -1356,6 +1363,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 .win-prizes {
   background-color: greenyellow;
   height: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (min-width: 1024px) and (max-width: 1247px) {
   .win-prizes .prizes-wrapper {
@@ -1367,6 +1378,9 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     width: 90%;
     background-color: rgba(8, 6, 11, 0.6);
     -webkit-backdrop-filter: blur(12px);
+    -moz-backdrop-filter: blur(12px);
+    -ms-backdrop-filter: blur(12px);
+    -o-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
     border-radius: 72px;
     padding: 40px;

@@ -43,7 +43,7 @@
 
 // Radious setter
 // Setta un border-radius pari alla dimensione passata come argomento, ammette una stringa che indica quali bordi riceveranno il radius
-@mixin radious-set ($dimension, $corner: 'all-corners') {
+@mixin setRadius ($dimension, $corner: 'all-corners') {
     @if ($corner == 'all-corners') {
         border-radius: $dimension;
     } @else if ($corner == "bottom-corners") {
@@ -53,25 +53,12 @@
     }
 }
 
-// // Dimension setter
-// @mixin set-dimension ($heigth, $width) {
-//     height: $heigth;
-//     width: $width;
-// }
-
-// //  
-// @mixin box-shadow () {
-
-// }
-
-// // Gradient imposta un gradiente in relazione a due colori 
-// @mixin linear-gradient ($color1, $color2, $deg) {
-//     background-color: linear-gradient(calc($deg * 1deg), $color1, $color2);
-// }
-
-// // Prende colore da parent e lo scurisce o schiarisce
-// @mixin hover() {
-//     &::hover {
-//         color: ;
-//     }
-// }
+// CSS3-prefix mixin
+// La mixin ammette il nome della proprietà e il rispettivo valore della regola CSS
+@mixin css3-prefix($prop, $value) {
+    -webkit-#{$prop}: #{$value};
+    -moz-#{$prop}: #{$value};
+    -ms-#{$prop}: #{$value};
+    -o-#{$prop}: #{$value};
+    #{$prop}: #{$value};
+}
