@@ -1,8 +1,4 @@
 
-// body {
-//     background-color: blue;
-//     color: white;
-// }
 
 // Use rules
 @use "../../components/buttons/buttons";
@@ -19,6 +15,11 @@
 }
 
 
+// CONTROLLARE QUESTO SULLO STYLE.SCSS
+body {
+height: auto;
+width: 100%
+}
 
 // @include flex();
 
@@ -29,12 +30,11 @@
     @include mq('laptop');
     width: 100%;
     height: auto;
-    background-color: rgba(192, 234, 220, 0.2);
     padding: 48px 0;
+    background: linear-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%);;
 
         .wrapper-stat {
-            background-color: rgba(163, 164, 160, 0.2);
-
+            // background-color: rgba(163, 164, 160, 0.2);
             @include flex(column);
             padding: 48px 24px;
             justify-content: center;
@@ -48,21 +48,23 @@
                 }
 
                 & h2 {
-                    background-color: rgba(9, 103, 151, 0.2);
+                    // background-color: rgba(9, 103, 151, 0.2);
                     font-size: 42px;
                     font-weight: 600;
                     line-height: 1.1;
                     color:  rgb(244, 238, 255);
                 }
 
-                .sst2 {
-                    margin-bottom: 32px;
-                }
-
-                
+                //  &:nth-child(2){
+                //     margin-bottom: 32px;
+                // }
+// -------------↑↓↑↓↑↓↑↓↑↓↑↓↑↓↑↓↑↓↑↓↑↓↑↓↑↓↑↓-------NON MI PRENDE IL MARGIN BOTTOM--------------.
+                // & .sst2 {
+                //     margin-bottom: 32px;
+                // }
             
                 .description-stat-sec {
-                    background-color: rgba(60, 24, 130, 0.2);
+                    // background-color: rgba(60, 24, 130, 0.2);
 
                     font-size: 16px;
                     color:  rgb(184, 173, 210);
@@ -85,50 +87,82 @@
                 .card-container-dst {
                     @include flex();
                     width: 100%;
-                    background-color: rgba(0, 255, 255, 0.489);
+                    // background-color: rgba(0, 255, 255, 0.489);
 
-                    .card-dst {
-                        background-color: rgba(255, 20, 145, 0.32);
-                        @include flex(column);
-                        padding: 24px;
-                        border-radius: 24px;
-                        margin-right: 16px;
-  
-                        .card-dist-svg {
-                                align-self: flex-end;
-                        }
-
-                        .card-dist-title {
-                             text-align: left; 
-                             
-                                & h2 {
-                                    font-size: 40px;
-                                    font-weight: 600;
-                                    line-height: 1.1;
-                                }
-
-                                & .cdta {
-                                    color: $card-dist-title-a;
-                                }
-
-                                & .cdtb {
-                                    color: $secondary-dk;
-                                }
+                                .card-dst {
+                                    background-color: rgb(56, 50, 65); // veder se usare questo o no,è l originale e risulta un po chiaro.
+                                    @include flex(column);
+                                    padding: 24px;
+                                    border-radius: 24px;
+                                    margin-right: 16px;
+                                    position: relative;
+                                    border: 1px $shadow-border-stats-card;
+                                    border-bottom: 3px $shadow-border-stats-card;
                                 
-                                .card-dist-last-text {
-                                    color: $card-dist-last-text;
-                                    line-height: 1.5;
-                                    font-weight: 400;
-                                    font-size: 16px;
-                                }
+                                        .card-dist-svg {
+                                            align-self: flex-end;
+                                            position: absolute;
+                                            top: 24px;
+                                            right: 24px;
 
-                        }
+                                                .cdsvg-color1 {
+                                                    fill: $secondary-dk;
+                                                }
 
-                    }
+                                                .cdsvg-color2 {
+                                                    fill: $green;
+                                                }
+
+                                                .cdsvg-color3 {
+                                                    fill: $pink;
+                                                }
+                                                
+
+                                        }
+
+                                        .card-dist-title {
+                                            text-align: left;
+                                            margin-top: 64px;
+                                            
+                                                & h2 {
+                                                    font-size: 40px;
+                                                    font-weight: 600;
+                                                    line-height: 1.1;
+                                                }
+
+                                                & .cdta {
+                                                    color: $card-dist-title-a;
+                                                }
+
+                                                & .cdtb {
+                                                    margin-bottom: 24px;
+                                                }
+
+                                                & .cdtb1 {
+                                                    color: $secondary-dk;
+                                                }
+
+                                                & .cdtb2 {
+                                                    color: $green;
+                                                }
+
+                                                & .cdtb3 {
+                                                    color: $pink;
+                                                }
+
+                                                .card-dist-last-text {
+                                                    color: $card-dist-last-text;
+                                                    line-height: 1.5;
+                                                    font-weight: 400;
+                                                    font-size: 16px;
+                                                }
+                                        }
+                                }       
                 }
-
-
-
         }
+
 }
+
+
+
 

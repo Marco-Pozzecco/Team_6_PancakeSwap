@@ -743,14 +743,18 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   padding: 0;
 }
 
+body {
+  height: auto;
+  width: 100%;
+}
+
 .stat-section {
   width: 100%;
   height: auto;
-  background-color: rgba(192, 234, 220, 0.2);
   padding: 48px 0;
+  background: linear-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%);
 }
 .stat-section .wrapper-stat {
-  background-color: rgba(163, 164, 160, 0.2);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -766,17 +770,12 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   margin: 0 0 24px;
 }
 .stat-section .wrapper-stat h2 {
-  background-color: rgba(9, 103, 151, 0.2);
   font-size: 42px;
   font-weight: 600;
   line-height: 1.1;
   color: rgb(244, 238, 255);
 }
-.stat-section .wrapper-stat .sst2 {
-  margin-bottom: 32px;
-}
 .stat-section .wrapper-stat .description-stat-sec {
-  background-color: rgba(60, 24, 130, 0.2);
   font-size: 16px;
   color: rgb(184, 173, 210);
 }
@@ -797,10 +796,9 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: rgba(0, 255, 255, 0.489);
 }
 .stat-section .wrapper-stat .card-container-dst .card-dst {
-  background-color: rgba(255, 20, 145, 0.32);
+  background-color: rgb(56, 50, 65);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -808,12 +806,28 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   padding: 24px;
   border-radius: 24px;
   margin-right: 16px;
+  position: relative;
+  border: 1px solid rgb(75, 59, 80);
+  border-bottom: 3px solid rgb(75, 59, 80);
 }
 .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg {
   align-self: flex-end;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg .cdsvg-color1 {
+  fill: rgb(154, 106, 255);
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg .cdsvg-color2 {
+  fill: rgb(49, 208, 170);
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg .cdsvg-color3 {
+  fill: rgb(237, 75, 158);
 }
 .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title {
   text-align: left;
+  margin-top: 64px;
 }
 .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title h2 {
   font-size: 40px;
@@ -824,7 +838,16 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   color: rgb(244, 238, 255);
 }
 .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb {
+  margin-bottom: 24px;
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb1 {
   color: rgb(154, 106, 255);
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb2 {
+  color: rgb(49, 208, 170);
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb3 {
+  color: rgb(237, 75, 158);
 }
 .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .card-dist-last-text {
   color: rgb(184, 173, 210);
@@ -1645,15 +1668,19 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   padding: 0;
 }
 
+body {
+  height: auto;
+  width: 100%;
+}
+
 .stat-section {
   width: 100%;
   height: auto;
-  background-color: rgba(192, 234, 220, 0.2);
   padding: 48px 0;
+  background: linear-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%);
 }
 
 .stat-section .wrapper-stat {
-  background-color: rgba(163, 164, 160, 0.2);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1671,19 +1698,13 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 
 .stat-section .wrapper-stat h2 {
-  background-color: rgba(9, 103, 151, 0.2);
   font-size: 42px;
   font-weight: 600;
   line-height: 1.1;
   color: rgb(244, 238, 255);
 }
 
-.stat-section .wrapper-stat .sst2 {
-  margin-bottom: 32px;
-}
-
 .stat-section .wrapper-stat .description-stat-sec {
-  background-color: rgba(60, 24, 130, 0.2);
   font-size: 16px;
   color: rgb(184, 173, 210);
 }
@@ -1708,11 +1729,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: rgba(0, 255, 255, 0.489);
 }
 
 .stat-section .wrapper-stat .card-container-dst .card-dst {
-  background-color: rgba(255, 20, 145, 0.32);
+  background-color: rgb(56, 50, 65);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1720,14 +1740,33 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   padding: 24px;
   border-radius: 24px;
   margin-right: 16px;
+  position: relative;
+  border: 1px solid rgb(75, 59, 80);
+  border-bottom: 3px solid rgb(75, 59, 80);
 }
 
 .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg {
   align-self: flex-end;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg .cdsvg-color1 {
+  fill: rgb(154, 106, 255);
+}
+
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg .cdsvg-color2 {
+  fill: rgb(49, 208, 170);
+}
+
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg .cdsvg-color3 {
+  fill: rgb(237, 75, 158);
 }
 
 .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title {
   text-align: left;
+  margin-top: 64px;
 }
 
 .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title h2 {
@@ -1741,7 +1780,19 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 
 .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb {
+  margin-bottom: 24px;
+}
+
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb1 {
   color: rgb(154, 106, 255);
+}
+
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb2 {
+  color: rgb(49, 208, 170);
+}
+
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb3 {
+  color: rgb(237, 75, 158);
 }
 
 .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .card-dist-last-text {
