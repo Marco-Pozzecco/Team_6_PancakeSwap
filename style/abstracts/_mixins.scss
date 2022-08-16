@@ -41,7 +41,7 @@
     align-items: $sub-alignment;
 }
 
-// Radious setter
+// Radius setter
 // Setta un border-radius pari alla dimensione passata come argomento, ammette una stringa che indica quali bordi riceveranno il radius
 @mixin setRadius ($dimension, $corner: 'all-corners') {
     @if ($corner == 'all-corners') {
@@ -61,4 +61,12 @@
     -ms-#{$prop}: #{$value};
     -o-#{$prop}: #{$value};
     #{$prop}: #{$value};
+}
+
+//List style mixin
+@mixin list-style ($color ) {
+    text-decoration: none;
+    color: $color;
+    font-size: 16px ;
+    
 }
