@@ -790,10 +790,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   height: 100%;
   width: auto;
 }
-.floating-bunny .provadiv {
-  width: 100%;
+.floating-bunny .wrapper .img-section .thefloatingstars .star1 {
+  height: -100px;
 }
-.floating-bunny .provadiv {
+.floating-bunny .bottomgradient {
   width: 100%;
   z-index: 1;
 }
