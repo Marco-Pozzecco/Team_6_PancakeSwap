@@ -707,6 +707,19 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* nav bar color */
 /* website background color */
 /* text input color */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background: #000000;
+  color: purple;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 6px;
+  background-color: #c3b4ce;
+  border: none;
+}
+
 .floating-bunny {
   display: flex;
   flex-direction: column;
