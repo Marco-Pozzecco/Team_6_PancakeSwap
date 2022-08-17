@@ -1,0 +1,17 @@
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background: #000000;
+  color: purple;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 6px;
+  background-color: #c3b4ce;
+  border: none;
+}
+
+.scrollbar {
+  width: 98vw;
+  height: 6000px;
+}/*# sourceMappingURL=scrollbar.css.map */
