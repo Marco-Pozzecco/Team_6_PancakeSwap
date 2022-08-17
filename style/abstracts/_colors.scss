@@ -57,20 +57,22 @@ $input-color-dk:rgb(55, 47, 71);
 
 
 
-
-//Stat Section colors TEXT(Inserito da Milton)
-
-$card-dist-title-a: rgb(244, 238, 255);
-// $card-dist-title-b:rgb(154, 106, 255);
-//  ↑ uso quella alla riga: 43 ⇒  $secondary-dk
- 
-$card-dist-last-text:  rgb(184, 173, 210);
-
-
 // STATS CARDS
+//Stat Section colors TEXT(Inserito da Milton)
+//Main Background
+$background-color-stats-section: linear-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%);
 
-// $background-color-cards: rgb(35 35 42); //originale è troppochiaro rispetto al sito.
-//shadow/border sta's cards
+//Background color delle cards
+$background-color-cards: rgb(56, 50, 65);
+
+//Colore Primario Titoli
+$card-dist-title: rgb(244, 238, 255);
+
+//Colore Descrizioni
+$card-dist-text:  rgb(184, 173, 210);
+
+
+//shadow/border stats cards
 $shadow-border-stats-card: solid rgb(75 59 80);
 
 // ------------------------------------------------
