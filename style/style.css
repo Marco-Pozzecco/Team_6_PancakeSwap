@@ -618,7 +618,6 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     background-color: rgba(8, 6, 11, 0.6);
     -webkit-backdrop-filter: blur(12px);
     -moz-backdrop-filter: blur(12px);
-    -ms-backdrop-filter: blur(12px);
     -o-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
     border-radius: 72px;
@@ -769,11 +768,6 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   padding: 0;
 }
 
-body {
-  height: auto;
-  width: 100%;
-}
-
 .stat-section {
   width: 100%;
   height: auto;
@@ -800,6 +794,9 @@ body {
   font-weight: 600;
   line-height: 1.1;
   color: rgb(244, 238, 255);
+}
+.stat-section .wrapper-stat h2:nth-child(3) {
+  margin-bottom: 32px;
 }
 .stat-section .wrapper-stat .description-stat-sec {
   font-size: 16px;
@@ -891,6 +888,17 @@ body {
 /* nav bar color */
 /* website background color */
 /* text input color */
+@-webkit-keyframes float-NW {
+  0% {
+    transform: translatex(0px) translatey(0px);
+  }
+  50% {
+    transform: translatex(-100px) translatey(100px);
+  }
+  100% {
+    transform: translatex(0px) translatey(0px);
+  }
+}
 @keyframes float-NW {
   0% {
     transform: translatex(0px) translatey(0px);
@@ -900,6 +908,17 @@ body {
   }
   100% {
     transform: translatex(0px) translatey(0px);
+  }
+}
+@-webkit-keyframes float-N {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 @keyframes float-N {
@@ -915,6 +934,7 @@ body {
 }
 html, body {
   height: 100%;
+  width: 100%;
 }
 
 body {
@@ -929,15 +949,16 @@ body {
   height: 100px;
   width: 100px;
   background-color: blue;
-  animation-name: float-NW;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 @media screen and (min-width: 1024px) and (max-width: 1247px) {
   .blue-square {
     height: 80px;
     width: 80px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
