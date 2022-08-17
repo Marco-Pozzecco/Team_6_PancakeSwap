@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /* text color + "need help" */
 /* text input color */
 /* Text color gradient */
@@ -8,6 +9,8 @@
 /* website background color */
 /* text input color */
 @import url(https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,900;1,800;1,900&display=swap);
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -573,6 +576,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   width: 240px;
 }
 
+
 body {
   padding: 0%;
   margin: 0px;
@@ -719,6 +723,94 @@ li {
 
 .fa-sun {
   color: #f39c12;
+}
+
+/* text color + "need help" */
+/* text input color */
+/* Text color gradient */
+/* cards background color */
+/* text color  */
+/* nav bar color */
+/* website background color */
+/* text input color */
+
+
+.menu-nav ul, a, i, li a {
+  text-decoration: none;
+  color: rgb(122, 110, 170);
+  font-size: 16px;
+  list-style: none;
+}
+
+.menu-nav li:hover, .menu-nav li:focus {
+  background-color: rgb(233, 234, 235);
+  border-radius: 15px;
+}
+.menu-nav li ul li:hover {
+  background-color: rgb(233, 234, 235);
+  border-radius: 0%;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  height: 8vh;
+  padding: 0 8px;
+  position: fixed;
+  z-index: 100;
+  border-bottom: 1px solid rgb(233, 234, 235);
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  color: rgb(122, 110, 170);
+  font-size: 16px;
+  padding: 15px;
+  position: relative;
+}
+nav ul li:active {
+  color: rgb(118, 69, 217);
+}
+nav ul li:hover ul {
+  opacity: 1;
+  visibility: visible;
+}
+nav ul li ul {
+  position: absolute;
+  top: 3rem;
+  left: -0.25rem;
+  background-color: white;
+  border-radius: 15px;
+  border: 2px solid rgb(233, 234, 235);
+  width: 12rem;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 200ms easy-in-out;
+}
+
+.flex {
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
+}
+.flex div, .flex h2, .flex ul {
+  padding: 4%;
+  cursor: pointer;
+}
+
+.flex p {
+  color: rgb(122, 110, 170);
+  font-size: 16px;
+
 }
 
 /*# sourceMappingURL=style.css.map */

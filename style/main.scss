@@ -10,8 +10,12 @@
 @import "abstracts/variables";
 @import "abstracts/colors";
 
+
 //import layout
+@import 'layout/navbar/navbar';
 @import "layout/footer/footer";
+
+
 
 
 // Import pages
