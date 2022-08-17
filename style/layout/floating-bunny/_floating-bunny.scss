@@ -11,10 +11,18 @@
     @include mq('laptop');
     @include flex(column);
     width: 100vw;
-    height: 100vh;
+    height: auto;
+
+    & .background-gradient {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: rgb(22, 9, 49);
+        background: linear-gradient(180deg, rgba(22, 9, 49, 1) 0%, rgba(22, 9, 49, 1) 47%, rgba(19, 8, 43, 1) 65%, rgba(11, 5, 25, 1) 100%, rgba(0, 0, 0, 1) 100%);
+    }
 
     & .wrapper {
-        background-color: rgb(26, 11, 58);
         color: $h2text-color;
         width: 100%;
         height: 100%;
@@ -27,6 +35,7 @@
 
 
             & h2 {
+                padding-top: 20px;
                 font-size: 65px;
                 font-weight: 100;
                 line-height: 1.1;
@@ -34,26 +43,57 @@
 
             & h3 {
                 color: aliceblue;
-                font-size: 20px;
+                font-size: 18px;
+                padding-top: 20px;
             }
 
         }
 
         & .img-section {
-            background-color: rgb(26, 11, 58);
             width: 50%;
             height: 100%;
+
+            & .thefloatingbunny {
+                position: absolute;
+                right: 50px;
+                top: -150px;
+                width: 585px;
+                height: 590px;
+
+                & img {
+                    z-index: 2;
+                    position: absolute;
+                    height: 100%;
+                    width: auto;
+                }
+
+            }
+
+            & .thefloatingstars {
+                position: absolute;
+
+                right: 50px;
+                top: -60px;
+                height: 512px;
+                width: 512px;
+
+                img {
+
+                    position: absolute;
+                    height: 100%;
+                    width: auto;
+                }
+            }
         }
     }
 
     .provadiv {
-        background-color: rgb(26, 11, 58);
         width: 100%;
     }
 
-.provadiv {
-    width: 100%;
-    z-index: -10;
-}
+    .provadiv {
+        width: 100%;
+        z-index: 1;
+    }
 
 }
