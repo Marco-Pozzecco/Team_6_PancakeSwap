@@ -11,9 +11,9 @@
 @import "abstracts/colors";
 
 
-//import layout
-@import 'layout/navbar/navbar';
-@import "layout/footer/footer";
+// //import layout
+// @import 'layout/navbar/navbar';
+// @import "layout/footer/footer";
 
 
 
@@ -33,7 +33,7 @@ html, body {
 
 body {
     font-family: $font-stack;
-    font-size: 48px;
+    //font-size: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
