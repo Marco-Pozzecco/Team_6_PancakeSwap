@@ -621,6 +621,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     background-color: rgba(8, 6, 11, 0.6);
     -webkit-backdrop-filter: blur(12px);
     -moz-backdrop-filter: blur(12px);
+    -ms-backdrop-filter: blur(12px);
     -o-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
     border-radius: 72px;
@@ -710,24 +711,48 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* nav bar color */
 /* website background color */
 /* text input color */
+<<<<<<< HEAD
 /* -------MAIN BUTTON(aquagreen)----------- */
+=======
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background: #000000;
+  color: purple;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 6px;
+  background-color: #c3b4ce;
+  border: none;
+}
+
+>>>>>>> 67102faa31ce62fbc5e7e128a885b99708e63505
 .floating-bunny {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 100vh;
+  height: auto;
+}
+.floating-bunny .background-gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgb(22, 9, 49);
+  background: linear-gradient(180deg, rgb(22, 9, 49) 0%, rgb(22, 9, 49) 47%, rgb(19, 8, 43) 65%, rgb(11, 5, 25) 100%, rgb(0, 0, 0) 100%);
 }
 .floating-bunny .wrapper {
-  background-color: rgb(26, 11, 58);
   color: #9A6AFF;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .floating-bunny .wrapper .contents-section {
   text-align: left;
@@ -735,26 +760,47 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   padding-left: 60px;
 }
 .floating-bunny .wrapper .contents-section h2 {
+  padding-top: 20px;
   font-size: 65px;
   font-weight: 100;
   line-height: 1.1;
 }
 .floating-bunny .wrapper .contents-section h3 {
   color: aliceblue;
-  font-size: 20px;
+  font-size: 18px;
+  padding-top: 20px;
 }
 .floating-bunny .wrapper .img-section {
-  background-color: rgb(26, 11, 58);
   width: 50%;
   height: 100%;
 }
-.floating-bunny .provadiv {
-  background-color: rgb(26, 11, 58);
-  width: 100%;
+.floating-bunny .wrapper .img-section .thefloatingbunny {
+  position: absolute;
+  right: 20px;
+  top: -12px;
 }
-.floating-bunny .provadiv {
+.floating-bunny .wrapper .img-section .thefloatingbunny img {
+  height: 512px;
+  width: auto;
+}
+.floating-bunny .wrapper .img-section .thefloatingstars {
+  position: absolute;
+  right: 20px;
+  top: -12px;
+  height: 512px;
+  width: 512px;
+}
+.floating-bunny .wrapper .img-section .thefloatingstars img {
+  position: absolute;
+  height: 100%;
+  width: auto;
+}
+.floating-bunny .wrapper .img-section .thefloatingstars .star1 {
+  height: -100px;
+}
+.floating-bunny .bottomgradient {
   width: 100%;
-  z-index: -10;
+  z-index: 1;
 }
 
 /* text color + "need help" */
@@ -893,6 +939,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* nav bar color */
 /* website background color */
 /* text input color */
+<<<<<<< HEAD
 /* -------MAIN BUTTON(aquagreen)----------- */
 @-webkit-keyframes float-NW {
   0% {
@@ -905,6 +952,8 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     transform: translatex(0px) translatey(0px);
   }
 }
+=======
+>>>>>>> 67102faa31ce62fbc5e7e128a885b99708e63505
 @keyframes float-NW {
   0% {
     transform: translatex(0px) translatey(0px);
@@ -914,17 +963,6 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   }
   100% {
     transform: translatex(0px) translatey(0px);
-  }
-}
-@-webkit-keyframes float-N {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(100px);
-  }
-  100% {
-    transform: translateY(0);
   }
 }
 @keyframes float-N {
@@ -955,16 +993,15 @@ body {
   height: 100px;
   width: 100px;
   background-color: blue;
-  -webkit-animation-name: float-NW;
-          animation-name: float-NW;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-name: float-NW;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 @media screen and (min-width: 1024px) and (max-width: 1247px) {
   .blue-square {
     height: 80px;
     width: 80px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
