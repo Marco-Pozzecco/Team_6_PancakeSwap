@@ -1,4 +1,4 @@
-
+@import "buttons-variables";
 
 *{
     box-sizing: border-box;
@@ -50,12 +50,12 @@ button {
 
 /* -------BOTTONE VERDE ACQUA----------- */
 .button-aquagreen {
-    background-color: rgb(31, 199, 212);
+    background-color: $main-buttons-background-color; /* rgb(31, 199, 212)*/
     border: none;
-    color: white;
+    color: $main-buttons-color;/* white*/
     height: 48px;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: $main-buttons-font-size; /*16px*/
+    font-weight: $main-buttons-font-weigth; /*600*/
 
     &:active {
         transform: translateY(2px);
@@ -67,12 +67,12 @@ button {
 
 /* ------BOTTONE CON SOLO IN BORDO------- */
 .button-onlyborder {
-    background-color: transparent;
-    border: 2px solid  rgb(31, 199, 212);
-    color:  rgb(31, 199, 212);
-    height: 48px;
-    font-size: 16px;
-    font-weight: 600;
+    background-color: $ob-buttons-background-color; /*transparent*/
+    color: $ob-buttons-color; /* rgb(31, 199, 212)*/
+    border: $ob-buttons-border; /* 2px solid  rgb(31, 199, 212)*/
+    height: 48px; /**/
+    font-size: $ob-buttons-font-size; /*16px*/
+    font-weight: $ob-buttons-font-weigth; /*600*/
 
         &:active {
             transform: translateY(1px);
@@ -85,23 +85,22 @@ button {
 
 /* ---BOTTONE HWMY DEL GRAFICO(Hour,Week,Month,Year)---------- */
 .div-hwmy {
-    background-color:  rgb(53, 53, 71);
-    border:1px solid   rgb(82, 75, 99);
-    border-radius: 16px;
-    display: flex;
+    background-color: $hwmy-buttons-background-div-color; /*rgb(53, 53, 71)*/
+    border: $hwmy-buttons-div-border; /*1px solid   rgb(82, 75, 99)*/
+    border-radius: 16px; 
+    display: flex; /**/
     flex-direction: row;
     width: auto;
 
         .button-hwmy {
-            background-color: transparent;
-            border: none;
-            color: white;
-            border: none;
+            background-color: $hwmy-buttons-background-color; /* transparent*/
+            color: $hwmy-buttons-color; /* white*/ 
+            border: $hwmy-buttons-border; /*none*/
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 32px;
-            font-weight: 600;
+            height: 32px; 
+            font-weight: $hwmy-buttons-font-weigth; /*600*/
 
                 &:active {
                     transform: translateY(2px);
@@ -109,25 +108,25 @@ button {
         }
 
         .button-hwmy:first-child {
-            background-color: rgb(31, 199, 212);
+            background-color: rgb(31, 199, 212); /**/
         }
 }
 
 .button-1W, .button-1M, .button-1Y {
-    background-color: transparent;
-    color: white;
+    background-color: transparent; /**/
+    color: white; /**/
 }
 
 
 /* ---BOTTONE SEMI TRASPARENTE-------------------- */
 .button-semitransparent {
-    background-color: rgba(31, 200, 212, 0.65);
-    color: white;
-    border: none;
-    height: 32px;
-    font-weight: 600;
-    padding: 4px 8px;
-    border-radius: 6px;
+    background-color: $semi-transp-buttons-background-color; /*rgba(31, 200, 212, 0.65)*/
+    color: $semi-transp-buttons-color; /*white*/
+    border: $semi-stransp-buttons-border; /*none*/
+    height: 32px; /**/
+    font-weight: $semi-transp-buttons-font-weigth; /*600*/
+    padding: 4px 8px; /**/
+    border-radius: 6px; /**/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,14 +135,14 @@ button {
 
 /* --BOTTONE QUADRATO TRASPARENTE (per convertire , ampliare, etc..)--------- */
 .button-converter {
-    background-color: transparent;
-    color:  rgb(31, 199, 212);
-    border: none;
-    width: 48px;
+    background-color: $transp-converter-buttons-background-color; /* transparent*/
+    color: $transp-converter-buttons-color; /*rgb(31, 199, 212)*/
+    border: $transp-converter-buttons-border; /*none*/
+    width: 48px; /**/
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
+    font-size: $transp-converter-buttons-font-size; /*16px*/
 
         &:active {
             transform: translateY(2px);
@@ -156,11 +155,11 @@ button {
 /* --bottone in alto a sinistra sbarrato----------------- */
 
 .button-won-graph { // *WON = With Or Not (Graphic in the page)
-    background-color: transparent;
-    color: rgb(184, 173, 210);
-    border: none;
-    text-decoration: line-through;
-    width: 32px;
+    background-color: $won-graph-buttons-background-color; /* transparent*/
+    color: $won-graph-buttons-color; /*rgb(184, 173, 210)*/
+    border: $won-graph-buttons-border; /**/
+    text-decoration: line-through; /**/
+    width: 32px; /**/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -190,15 +189,15 @@ button {
     background-color: transparent;
 
         .button-sb1, .button-sb2, .button-sb3 {
-            background-color: transparent;
-            color: rgb(184, 173, 210);
-            border: none;
-            border-radius: 50%;
-            padding: 0 17px;
+            background-color: $sw-buttons-background-color; /*transparent*/
+            color: $sw-buttons-color; /* rgb(184, 173, 210)*/
+            border: $sw-buttons-border; /*none*/
+            border-radius: 50%; /**/
+            padding: 0 17px; /**/
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 32px;
+            width: 32px; /**/
             height: 32px;
             padding: 0;
         
@@ -213,16 +212,15 @@ button {
 }
 
 
-
 /* --Bottoni scelta valute BNB, CAKE, etc------------------------------------------------- */
 
 .currency-btn {
-    background-color: transparent;
-    font-size: 16px;
-    font-weight: 600;
-    height: 32px;
+    background-color: $currency-buttons-background-color; /*transparent*/
+    font-size: $currency-buttons-font-size; /*16px*/
+    font-weight: $currency-buttons-font-weigth; /*600*/
+    height: 32px; 
     padding: 0 0.5rem;
-    border: none;
+    border: $currency-buttons-border; /*none*/
 
         &:hover {
             opacity: 0.65;
@@ -240,7 +238,7 @@ button {
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            color: white;
+            color: $currency-buttons-box-color; /*white*/
         }
 }
 
@@ -248,19 +246,19 @@ button {
 /* --Bottone rotondo semi-trasparente per convertire----- */
 
 .button-converter-smt { //*SMT = SemiTransparenT
-    background-color: rgb(55, 47, 71);
-    box-shadow: rgb(0 0 0 / 10%) 0px -2px 0px inset;
-    color:  rgb(31, 199, 212);
-    border: none;
-    padding: 11px 14px;
+    background-color: $converter-smt-buttons-background-color; /*rgb(55, 47, 71)*/
+    box-shadow: $converter-smt-buttons-shadow; /*rgb(0 0 0 / 10%) 0px -2px 0px inset*/
+    color:  $converter-smt-buttons-color; /*rgb(31, 199, 212)*/
+    border: $converter-smt-buttons-border; /*none*/
+    padding: 11px 14px; 
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 
         &:hover {
-            background-color:rgb(31, 199, 212);
-            color: rgb(255, 255, 255);
+            background-color:rgb(31, 199, 212); /**/
+            color: rgb(255, 255, 255); /**/
         }
 
         &:active {
@@ -268,7 +266,7 @@ button {
         }        
 
         .hover-arrow {
-            display: none;
+            display: none; /**/
         }
 }
 
@@ -277,17 +275,17 @@ button {
 /* Bottone nel container LIMIT, il terzo, price market */
 
 .btn-limit-market {
-    background-color: transparent;
-    border: 1px solid rgb(102, 97, 113);
-    color:  rgb(102, 97, 113);
+    background-color: $lmm-buttons-background-color; /*transparent*/
+    color: $lmm-buttons-color; /*rgb(102, 97, 113)*/
+    border: $lmm-buttons-border; /* 1px solid rgb(102, 97, 113)*/
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
     height: 20px;
     cursor: not-allowed;
-    font-weight: 600;
-    font-size: 12px;
+    font-weight: 600; /**/
+    font-size: $lmm-buttons-font-size;/*12px*/
 
     & > svg {
         margin-right: 0.5rem; 
@@ -303,23 +301,23 @@ che si trova sotto al div Limit = V2 e V1(old)
 (Questo non ha l effetto switch--- */
 
  .box-button-fake-switch-big {
-    background-color: rgb(55, 47, 71);
-    border: 1px solid rgb(38, 33, 48);
-    border-radius: 16px;
+    background-color: $fake-switch-buttons-box-background-color; /* rgb(55, 47, 71)*/
+    border: $fake-switch-buttons-box-border; /*1px solid rgb(38, 33, 48)*/
+    border-radius: 16px; /**/
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: $fake-switch-buttons-box-font-size; /*16px*/
+    font-weight: $fake-switch-buttons-box-font-weigth; /*600*/
     padding: 0.2px;
 
         .button-fake-switch-big {
-            background-color: rgb(184, 173, 210);
-            color:  rgb(39, 38, 44);
-            border: none;
+            background-color: $fake-switch-buttons-background-color; /*rgb(184, 173, 210)*/
+            color:  $fake-switch-buttons-color; /*rgb(39, 38, 44)*/
+            border: $fake-switch-buttons-color; /*none*/
             padding: 0 16px;
-            font-weight: 600;
+            font-weight: $fake-switch-buttons-font-weigth; /*600*/
             height: 32px;
 
             &:active {
@@ -328,11 +326,11 @@ che si trova sotto al div Limit = V2 e V1(old)
         }
     
         .link-fake-switch-big {
-            text-decoration: none;
-            color:  rgb(184, 173, 210);
+            text-decoration: none; /**/
+            color: $fake-switch-buttons-background-color-a; /* rgb(184, 173, 210)*/
             padding: 0 16px;
-            font-size: 16px;
-            font-weight: 600;
+            font-size: $fake-switch-buttons-font-size-a; /*16px*/
+            font-weight: $fake-switch-buttons-font-weigth-a; /*600*/
 
                 &:hover {
                     opacity: 0.65;
@@ -355,9 +353,9 @@ che si trova sotto al div Limit = V2 e V1(old)
     align-items: center;
 
         .btn-grid-view {
-            background-color: transparent;
-            fill: rgb(102, 97, 113);
-            border: none;
+            background-color: $grid-buttons-background-color; /*transparent*/
+            fill: $grid-buttons-svg-fill; /* rgb(102, 97, 113)*/
+            border: $grid-buttons-border; /*none*/
             border-radius: 50%;
             display: flex;
             justify-content: center;
@@ -375,8 +373,8 @@ che si trova sotto al div Limit = V2 e V1(old)
 
         .btn-list-view {
             background-color: transparent;
-            fill: rgb(31, 199, 212); /*cambiare il colore nell svg nell HTML*/
-            border: none;
+            fill: $list-buttons-background-color; /*rgb(31, 199, 212)*/   /*cambiare il colore nell svg nell HTML*/
+            border: $list-buttons-border; /*none*/
             border-radius: 50%;
             display: flex;
             justify-content: center;
@@ -394,16 +392,17 @@ che si trova sotto al div Limit = V2 e V1(old)
 
 
 
+
 /* BUTTON SWITCH SMALL  -- Check-Box - Staked Only - (ON/OFF Button) */
 .main-box-button-switch-small {
-    background-color: transparent;
+    background-color: $bss-mainb-buttons-background-color; /*transparent*/
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: center;
 
         .box-button-switch-small {
-            background-color: rgb(55, 47, 71);
+            background-color: $bss-sub-mainb-buttons-background-color; /*rgb(55, 47, 71)*/
             padding: 2px;
             display: flex;
             flex-direction: row;
@@ -418,7 +417,7 @@ che si trova sotto al div Limit = V2 e V1(old)
                     display: flex;
                     justify-content:center;
                     align-items: center;
-                    background-color: rgb(39, 38, 44);;
+                    background-color: $bss-on-off-dot-buttons-background-color; /*rgb(39, 38, 44)*/
                     border-radius: 50%;
                     contain: content;
                     height: 100%;
@@ -433,13 +432,13 @@ che si trova sotto al div Limit = V2 e V1(old)
  
         /* ---HOVER----- */
         .box-button-switch-small:hover>.on-off-dot {
-            border: 1px solid rgb(172, 34, 172);
-            box-shadow:  0px 0px 0px 3px rgba(211, 108, 211, 0.4);    
+            border: $hover-bss-on-off-dot-btn-border;  /* 1px solid rgb(172, 34, 172)*/
+            box-shadow:  0px 0px 0px 3px rgba(211, 108, 211, 0.4); /**/
         }
         /* ---HOVER----- */
         .box-button-switch-small:hover > .on-off-dot {
-            border: 1px solid rgb(172, 34, 172);
-            box-shadow:  0px 0px 0px 3px rgba(211, 108, 211, 0.4);    
+            border: $hover-bss-on-off-dot-btn-border; /*1px solid rgb(172, 34, 172)*/
+            box-shadow:  0px 0px 0px 3px rgba(211, 108, 211, 0.4);   /**/  
         }
         /* ---HOVER----- */
         .box-button-switch-small:active {
@@ -447,24 +446,26 @@ che si trova sotto al div Limit = V2 e V1(old)
             flex-direction: row;
             justify-content: flex-end;
             align-items: center;
-            background-color: rgb(31, 199, 212);
-        }
-        /* ---HOVER----- */
-        .box-button-switch-small:focus .on-off-dot {
-            border: 1px solid rgb(172, 34, 172);
-            box-shadow:  0px 0px 0px 3px rgba(211, 108, 211, 0.4);    
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-            align-items: center;
-            background-color: rgb(31, 199, 212);
+            background-color: $active-bss-sub-mainb-buttons-background-color; /*rgb(31, 199, 212)*/
         }
 
+        // NON FUNZIONA<<<<<<<<<<<<<<<<
+        /* ---HOVER----- */
+        // .box-button-switch-small:focus .on-off-dot {
+        //     border: 1px solid rgb(172, 34, 172); /**/
+        //     box-shadow:  0px 0px 0px 3px rgba(211, 108, 211, 0.4);   /**/  
+        //     display: flex;
+        //     flex-direction: row;
+        //     justify-content: flex-end;
+        //     align-items: center;
+        //     background-color: rgb(31, 199, 212); /**/
+        // }
+
         .box-button-switch-small-text {
-            color: white;  
+            color: $text-box-bss-button-color;   /*white*/
             margin: 0 0 0 8px;
-            font-size: 16px;
-            font-weight: 600;
+            font-size: 16px; /**/
+            font-weight: 600; /**/
         } 
 }
 
@@ -474,20 +475,20 @@ che si trova sotto al div Limit = V2 e V1(old)
 //-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
 .box-button-switch-big {
-    background-color: rgb(55, 47, 71);
-    border: 1px solid rgb(38, 33, 48);
-    border-radius: 16px;
+    background-color: $bbsb-box-button-background-color; /*rgb(55, 47, 71)*/
+    border: $bbsb-box-buttons-border; /* 1px solid rgb(38, 33, 48)*/
+    border-radius: 16px; 
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: $bbsb-box-buttons-font-size; /*16px*/
+    font-weight: $bbsb-box-buttons-font-weigth; /*600*/
 
         .button-switch-big {
-            background-color: rgb(184, 173, 210);
-            color:  rgb(39, 38, 44);
-            border: none;
+            background-color: $bsb-box-button-background-color; /*rgb(184, 173, 210)*/
+            color: $bsb-box-button-color; /* rgb(39, 38, 44)*/
+            border: $bsb-box-buttons-border; /*none*/
             padding: 0 16px;
             height: 32px;
 
@@ -498,10 +499,10 @@ che si trova sotto al div Limit = V2 e V1(old)
     
         .link-switch-big {
             text-decoration: none;
-            color:  rgb(39, 38, 44);
+            color: $lsb1-box-button-color; /*rgb(39, 38, 44)*/
             padding: 0 12px;
-            font-size: 16px;
-            font-weight: 600;
+            font-size: $lsb1-box-buttons-font-size; /*16px*/
+            font-weight: $lsb1-box-buttons-font-weigth; /*600*/
 
                 &:hover {
                     opacity: 0.65;
@@ -517,7 +518,7 @@ che si trova sotto al div Limit = V2 e V1(old)
         //}
         
         .lsb2 {
-            color:  rgb(184, 173, 210);
+            color:  $lsb2-box-button-color; /*rgb(184, 173, 210)*/
         }
 }
 
@@ -525,13 +526,13 @@ che si trova sotto al div Limit = V2 e V1(old)
 /* BOTTONE SEMI TRASPARENTE-2 --- (HARVEST)
 che appare nella sezione che esce dopo che si clicca su una sezione della griglia/lista in Trade → Farm---- */
 .button-semi-trasp-dark {
-    background-color:  rgb(60, 55, 66);;
-    border: 1px solid rgb(60, 55, 66);;
-    color:  rgb(102, 97, 113);
+    background-color:  $semi-transp2-buttons-background-color; /*rgb(60, 55, 66)*/
+    border: $semi-stransp2-buttons-border; /*1px solid rgb(60, 55, 66)*/
+    color:  $semi-transp2-buttons-color; /*rgb(102, 97, 113)*/
     cursor: not-allowed;
     height: 48px;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: $semi-transp2-buttons-font-size; /*16px*/
+    font-weight: $semi-transp2-buttons-font-weigth; /*600*/
 
         &:hover {
             opacity: initial;
@@ -543,18 +544,18 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 
 /* --Bottone per tornare in alto, all inizio della lista ------------------------- */
 .to-top-button {
-    background-color: transparent;
-    color: rgb(31, 199, 212);
+    background-color: $tt-button-background-color; /*transparent*/
+    color: $tt-buttons-background-color; /*rgb(31, 199, 212)*/
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: $tt-buttons-font-size; /*16px*/
+    font-weight: $tt-buttons-font-weigth; /*600*/
     letter-spacing: 0.05rem;
     height: 48px;
     padding: 0 24px;
-    border: none;
+    border: none; /**/
 
         &:hover {
             opacity: 0.65;
@@ -568,9 +569,9 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 
 /*--BOTTONI ETICHETTE -------*/
 .button-label {
-    background-color: rgb(56, 50, 65);
-    color: rgb(184, 173, 210);
-    border: none;
+    background-color: $label-button-background-color; /*rgb(56, 50, 65)*/
+    color: $label-buttons-color; /* rgb(184, 173, 210)*/
+    border: $label-buttons-border; /*none*/
     border-radius: 16px 16px 0 0;
     padding: 8px;
 
@@ -580,20 +581,20 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 
 .initial-btn-lbl{
-    background-color: rgb(184, 173, 210);
-    color: rgb(39, 38, 44);
+    background-color: $i-label-button-background-color; /*rgb(184, 173, 210)*/
+    color: $i-label-buttons-color; /* rgb(39, 38, 44)*/
 }
 
 
 /*BOTTONE DROPDOWN DETAILS TRASPARENTE*/ 
 .button-dropdown-trsp {
-    color: rgb(31, 199, 212);
-    font-size: 16px;
-    font-weight: 600;
+    color: $transp-dropdown-buttons-color; /*rgb(31, 199, 212)*/
+    font-size: $transp-dropdown-buttons-font-size; /*16px*/
+    font-weight: $transp-dropdown-buttons-font-weigth; /*600*/
     padding: 0 24px;
     height: 48px;
-    background-color: transparent;
-    border: none;
+    background-color: transparent; /**/
+    border: none; /**/
 
         &:hover {
             opacity: 0.65;
@@ -617,7 +618,6 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 
 
 
-
 /* ----WIN → PREDICTION (BETA)---- */
 /*ETICHETTE Sovrapposte*/
 
@@ -632,15 +632,15 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     position: relative;
     
         .button-label-overlap {
-            background-color: rgb(39, 38, 44);
+            background-color: rgb(39, 38, 44); /**/
             display: flex;
             justify-content: flex-start;
             align-items: center;
             border-radius: 24px 24px 0 0 ;
             height: 48px;
-            color: white;
-            font-size: 16px;
-            font-weight: 600;
+            color: white; /**/
+            font-size: 16px; /**/
+            font-weight: 600; /**/
 
             &:first-child {
                 z-index: 1;
@@ -665,7 +665,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
             position: absolute;
             z-index: 0;
             margin-left: 100px;
-            background-color:  rgb(55, 47, 71);
+            background-color:  rgb(55, 47, 71); /**/
             opacity: 0.65;
         }
 
@@ -674,27 +674,19 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 
 
 
-
-
-
-
-
-
-
-
 /* ----WIN → LOTTERY---- */
 
 .ticket-button {
-    background: linear-gradient(#7645d9 0%, rgb(69, 42, 122) 100%); 
-    border: none;
-    color: white;
+    background: $ticket-buttons-background-color;  /*linear-gradient(#7645d9 0%, rgb(69, 42, 122) 100%)*/
+    border: $ticket-buttons-border; /*none*/
+    color: $ticket-buttons-color; /*white*/
     letter-spacing: 0.05rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: $ticket-buttons-font-size; /*16px*/
+    font-weight: $ticket-buttons-font-weigth; /*600*/
     height: 48px;
     width: 240px;
 }

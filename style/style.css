@@ -1,5 +1,17 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,900;1,800;1,900&display=swap);
+/* Bottoni nel div-SWAP(a sinistra)-- */
+/* --bottone in alto a sinistra sbarrato----------------- */
+/* blocco bottoni nel div Swap--------------------------------------------*/
+/* --Bottoni scelta valute BNB, CAKE, etc------------------------------------------------- */
+/* BUTTON SWITCH SMALL  --   >>>BSS<<<    Check-Box - Staked Only - (ON/OFF Button)-------------- */
+/* BOTTONE SEMI TRASPARENTE-2 (scuro) --- (HARVEST)------------------------------
+che appare nella sezione che esce dopo che si clicca su una sezione della griglia/lista in Trade → Farm---- */
+/* ----Farm → POOLS---- */
+/*WIN ..............................................*/
+/* ----WIN → PREDICTION (BETA)---- */
+/*ETICHETTE Sovrapposte*/
+/* ----WIN → LOTTERY---- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -31,12 +43,12 @@ button:hover {
 
 /* -------BOTTONE VERDE ACQUA----------- */
 .button-aquagreen {
-  background-color: rgb(31, 199, 212);
+  background-color: rgb(31, 199, 212); /* rgb(31, 199, 212)*/
   border: none;
-  color: white;
+  color: white; /* white*/
   height: 48px;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 16px; /*16px*/
+  font-weight: 600; /*600*/
 }
 .button-aquagreen:active {
   transform: translateY(2px);
@@ -44,12 +56,12 @@ button:hover {
 
 /* ------BOTTONE CON SOLO IN BORDO------- */
 .button-onlyborder {
-  background-color: transparent;
-  border: 2px solid rgb(31, 199, 212);
-  color: rgb(31, 199, 212);
-  height: 48px;
-  font-size: 16px;
-  font-weight: 600;
+  background-color: transparent; /*transparent*/
+  color: rgb(31, 199, 212); /* rgb(31, 199, 212)*/
+  border: 2px solid rgb(31, 199, 212); /* 2px solid  rgb(31, 199, 212)*/
+  height: 48px; /**/
+  font-size: 16px; /*16px*/
+  font-weight: 600; /*600*/
 }
 .button-onlyborder:active {
   transform: translateY(1px);
@@ -57,45 +69,44 @@ button:hover {
 
 /* ---BOTTONE HWMY DEL GRAFICO(Hour,Week,Month,Year)---------- */
 .div-hwmy {
-  background-color: rgb(53, 53, 71);
-  border: 1px solid rgb(82, 75, 99);
+  background-color: rgb(53, 53, 71); /*rgb(53, 53, 71)*/
+  border: 1px solid rgb(82, 75, 99); /*1px solid   rgb(82, 75, 99)*/
   border-radius: 16px;
-  display: flex;
+  display: flex; /**/
   flex-direction: row;
   width: auto;
 }
 .div-hwmy .button-hwmy {
-  background-color: transparent;
-  border: none;
-  color: white;
-  border: none;
+  background-color: rgb(53, 53, 71); /* transparent*/
+  color: white; /* white*/
+  border: none; /*none*/
   display: flex;
   justify-content: center;
   align-items: center;
   height: 32px;
-  font-weight: 600;
+  font-weight: 600; /*600*/
 }
 .div-hwmy .button-hwmy:active {
   transform: translateY(2px);
 }
 .div-hwmy .button-hwmy:first-child {
-  background-color: rgb(31, 199, 212);
+  background-color: rgb(31, 199, 212); /**/
 }
 
 .button-1W, .button-1M, .button-1Y {
-  background-color: transparent;
-  color: white;
+  background-color: transparent; /**/
+  color: white; /**/
 }
 
 /* ---BOTTONE SEMI TRASPARENTE-------------------- */
 .button-semitransparent {
-  background-color: rgba(31, 200, 212, 0.65);
-  color: white;
-  border: none;
-  height: 32px;
-  font-weight: 600;
-  padding: 4px 8px;
-  border-radius: 6px;
+  background-color: rgba(31, 200, 212, 0.65); /*rgba(31, 200, 212, 0.65)*/
+  color: white; /*white*/
+  border: none; /*none*/
+  height: 32px; /**/
+  font-weight: 600; /*600*/
+  padding: 4px 8px; /**/
+  border-radius: 6px; /**/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,14 +114,14 @@ button:hover {
 
 /* --BOTTONE QUADRATO TRASPARENTE (per convertire , ampliare, etc..)--------- */
 .button-converter {
-  background-color: transparent;
-  color: rgb(31, 199, 212);
-  border: none;
-  width: 48px;
+  background-color: transparent; /* transparent*/
+  color: rgb(31, 199, 212); /*rgb(31, 199, 212)*/
+  border: none; /*none*/
+  width: 48px; /**/
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
+  font-size: 16px; /*16px*/
 }
 .button-converter:active {
   transform: translateY(2px);
@@ -119,11 +130,11 @@ button:hover {
 /* Bottoni nel div-SWAP(a sinistra)-- */
 /* --bottone in alto a sinistra sbarrato----------------- */
 .button-won-graph {
-  background-color: transparent;
-  color: rgb(184, 173, 210);
-  border: none;
-  text-decoration: line-through;
-  width: 32px;
+  background-color: transparent; /* transparent*/
+  color: rgb(184, 173, 210); /*rgb(184, 173, 210)*/
+  border: none; /**/
+  text-decoration: line-through; /**/
+  width: 32px; /**/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,15 +158,15 @@ button:hover {
   background-color: transparent;
 }
 .swap-box-3b .button-sb1, .swap-box-3b .button-sb2, .swap-box-3b .button-sb3 {
-  background-color: transparent;
-  color: rgb(184, 173, 210);
-  border: none;
-  border-radius: 50%;
-  padding: 0 17px;
+  background-color: transparent; /*transparent*/
+  color: rgb(184, 173, 210); /* rgb(184, 173, 210)*/
+  border: none; /*none*/
+  border-radius: 50%; /**/
+  padding: 0 17px; /**/
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 32px;
+  width: 32px; /**/
   height: 32px;
   padding: 0;
 }
@@ -168,12 +179,12 @@ button:hover {
 
 /* --Bottoni scelta valute BNB, CAKE, etc------------------------------------------------- */
 .currency-btn {
-  background-color: transparent;
-  font-size: 16px;
-  font-weight: 600;
+  background-color: transparent; /*transparent*/
+  font-size: 16px; /*16px*/
+  font-weight: 600; /*600*/
   height: 32px;
   padding: 0 0.5rem;
-  border: none;
+  border: none; /*none*/
 }
 .currency-btn:hover {
   opacity: 0.65;
@@ -188,15 +199,15 @@ button:hover {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: white; /*white*/
 }
 
 /* --Bottone rotondo semi-trasparente per convertire----- */
 .button-converter-smt {
-  background-color: rgb(55, 47, 71);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px -2px 0px inset;
-  color: rgb(31, 199, 212);
-  border: none;
+  background-color: rgb(55, 47, 71); /*rgb(55, 47, 71)*/
+  box-shadow: rgba(0, 0, 0, 0.1) 0px -2px 0px inset; /*rgb(0 0 0 / 10%) 0px -2px 0px inset*/
+  color: rgb(31, 199, 212); /*rgb(31, 199, 212)*/
+  border: none; /*none*/
   padding: 11px 14px;
   border-radius: 50%;
   display: flex;
@@ -204,30 +215,30 @@ button:hover {
   align-items: center;
 }
 .button-converter-smt:hover {
-  background-color: rgb(31, 199, 212);
-  color: rgb(255, 255, 255);
+  background-color: rgb(31, 199, 212); /**/
+  color: rgb(255, 255, 255); /**/
 }
 .button-converter-smt:active {
   transform: translateY(2px);
 }
 .button-converter-smt .hover-arrow {
-  display: none;
+  display: none; /**/
 }
 
 /* ---BOTTONI TRADE LIMIT - MARKET......................... */
 /* Bottone nel container LIMIT, il terzo, price market */
 .btn-limit-market {
-  background-color: transparent;
-  border: 1px solid rgb(102, 97, 113);
-  color: rgb(102, 97, 113);
+  background-color: transparent; /*transparent*/
+  color: rgb(102, 97, 113); /*rgb(102, 97, 113)*/
+  border: 1px solid rgb(102, 97, 113); /* 1px solid rgb(102, 97, 113)*/
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
   height: 20px;
   cursor: not-allowed;
-  font-weight: 600;
-  font-size: 12px;
+  font-weight: 600; /**/
+  font-size: 12px; /*12px*/
 }
 .btn-limit-market > svg {
   margin-right: 0.5rem;
@@ -238,34 +249,34 @@ che si trova sotto al div Limit = V2 e V1(old)
 「 presente con un effetto diverso anche nella pagina: Earn → Farms.
 (Questo non ha l effetto switch--- */
 .box-button-fake-switch-big {
-  background-color: rgb(55, 47, 71);
-  border: 1px solid rgb(38, 33, 48);
-  border-radius: 16px;
+  background-color: rgb(55, 47, 71); /* rgb(55, 47, 71)*/
+  border: 1px solid rgb(38, 33, 48); /*1px solid rgb(38, 33, 48)*/
+  border-radius: 16px; /**/
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 16px; /*16px*/
+  font-weight: 600; /*600*/
   padding: 0.2px;
 }
 .box-button-fake-switch-big .button-fake-switch-big {
-  background-color: rgb(184, 173, 210);
-  color: rgb(39, 38, 44);
-  border: none;
+  background-color: rgb(184, 173, 210); /*rgb(184, 173, 210)*/
+  color: none; /*rgb(39, 38, 44)*/
+  border: none; /*none*/
   padding: 0 16px;
-  font-weight: 600;
+  font-weight: 600; /*600*/
   height: 32px;
 }
 .box-button-fake-switch-big .button-fake-switch-big:active {
   transform: translateY(2px);
 }
 .box-button-fake-switch-big .link-fake-switch-big {
-  text-decoration: none;
-  color: rgb(184, 173, 210);
+  text-decoration: none; /**/
+  color: rgb(184, 173, 210); /* rgb(184, 173, 210)*/
   padding: 0 16px;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 16px; /*16px*/
+  font-weight: 600; /*600*/
 }
 .box-button-fake-switch-big .link-fake-switch-big:hover {
   opacity: 0.65;
@@ -281,9 +292,9 @@ che si trova sotto al div Limit = V2 e V1(old)
   align-items: center;
 }
 .box-buttons-grid-list .btn-grid-view {
-  background-color: transparent;
-  fill: rgb(102, 97, 113);
-  border: none;
+  background-color: transparent; /*transparent*/
+  fill: rgb(102, 97, 113); /* rgb(102, 97, 113)*/
+  border: none; /*none*/
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -297,8 +308,8 @@ che si trova sotto al div Limit = V2 e V1(old)
 }
 .box-buttons-grid-list .btn-list-view {
   background-color: transparent;
-  fill: rgb(31, 199, 212); /*cambiare il colore nell svg nell HTML*/
-  border: none;
+  fill: rgb(31, 199, 212); /*rgb(31, 199, 212)*/ /*cambiare il colore nell svg nell HTML*/
+  border: none; /*none*/
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -313,7 +324,7 @@ che si trova sotto al div Limit = V2 e V1(old)
 
 /* BUTTON SWITCH SMALL  -- Check-Box - Staked Only - (ON/OFF Button) */
 .main-box-button-switch-small {
-  background-color: transparent;
+  background-color: transparent; /*transparent*/
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -324,7 +335,7 @@ che si trova sotto al div Limit = V2 e V1(old)
   /* ---HOVER----- */
 }
 .main-box-button-switch-small .box-button-switch-small {
-  background-color: rgb(55, 47, 71);
+  background-color: rgb(55, 47, 71); /*rgb(55, 47, 71)*/
   padding: 2px;
   display: flex;
   flex-direction: row;
@@ -339,7 +350,7 @@ che si trova sotto al div Limit = V2 e V1(old)
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(39, 38, 44);
+  background-color: rgb(39, 38, 44); /*rgb(39, 38, 44)*/
   border-radius: 50%;
   contain: content;
   height: 100%;
@@ -350,52 +361,43 @@ che si trova sotto al div Limit = V2 e V1(old)
   position: absolute;
 }
 .main-box-button-switch-small .box-button-switch-small:hover > .on-off-dot {
-  border: 1px solid rgb(172, 34, 172);
-  box-shadow: 0px 0px 0px 3px rgba(211, 108, 211, 0.4);
+  border: 1px solid rgb(172, 34, 172); /* 1px solid rgb(172, 34, 172)*/
+  box-shadow: 0px 0px 0px 3px rgba(211, 108, 211, 0.4); /**/
 }
 .main-box-button-switch-small .box-button-switch-small:hover > .on-off-dot {
-  border: 1px solid rgb(172, 34, 172);
-  box-shadow: 0px 0px 0px 3px rgba(211, 108, 211, 0.4);
+  border: 1px solid rgb(172, 34, 172); /*1px solid rgb(172, 34, 172)*/
+  box-shadow: 0px 0px 0px 3px rgba(211, 108, 211, 0.4); /**/
 }
 .main-box-button-switch-small .box-button-switch-small:active {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  background-color: rgb(31, 199, 212);
-}
-.main-box-button-switch-small .box-button-switch-small:focus .on-off-dot {
-  border: 1px solid rgb(172, 34, 172);
-  box-shadow: 0px 0px 0px 3px rgba(211, 108, 211, 0.4);
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: rgb(31, 199, 212);
+  background-color: rgb(31, 199, 212); /*rgb(31, 199, 212)*/
 }
 .main-box-button-switch-small .box-button-switch-small-text {
-  color: white;
+  color: white; /*white*/
   margin: 0 0 0 8px;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 16px; /**/
+  font-weight: 600; /**/
 }
 
 /* -- BOTTONE SWITCH BIG --- con effetto switch originale-- */
 .box-button-switch-big {
-  background-color: rgb(55, 47, 71);
-  border: 1px solid rgb(38, 33, 48);
+  background-color: rgb(55, 47, 71); /*rgb(55, 47, 71)*/
+  border: 1px solid rgb(38, 33, 48); /* 1px solid rgb(38, 33, 48)*/
   border-radius: 16px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 16px; /*16px*/
+  font-weight: 600; /*600*/
 }
 .box-button-switch-big .button-switch-big {
-  background-color: rgb(184, 173, 210);
-  color: rgb(39, 38, 44);
-  border: none;
+  background-color: rgb(184, 173, 210); /*rgb(184, 173, 210)*/
+  color: rgb(39, 38, 44); /* rgb(39, 38, 44)*/
+  border: none; /*none*/
   padding: 0 16px;
   height: 32px;
 }
@@ -404,10 +406,10 @@ che si trova sotto al div Limit = V2 e V1(old)
 }
 .box-button-switch-big .link-switch-big {
   text-decoration: none;
-  color: rgb(39, 38, 44);
+  color: rgb(39, 38, 44); /*rgb(39, 38, 44)*/
   padding: 0 12px;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 16px; /*16px*/
+  font-weight: 600; /*600*/
 }
 .box-button-switch-big .link-switch-big:hover {
   opacity: 0.65;
@@ -416,19 +418,19 @@ che si trova sotto al div Limit = V2 e V1(old)
   transform: translateY(2px);
 }
 .box-button-switch-big .lsb2 {
-  color: rgb(184, 173, 210);
+  color: rgb(184, 173, 210); /*rgb(184, 173, 210)*/
 }
 
 /* BOTTONE SEMI TRASPARENTE-2 --- (HARVEST)
 che appare nella sezione che esce dopo che si clicca su una sezione della griglia/lista in Trade → Farm---- */
 .button-semi-trasp-dark {
-  background-color: rgb(60, 55, 66);
-  border: 1px solid rgb(60, 55, 66);
-  color: rgb(102, 97, 113);
+  background-color: rgb(60, 55, 66); /*rgb(60, 55, 66)*/
+  border: 1px solid rgb(60, 55, 66); /*1px solid rgb(60, 55, 66)*/
+  color: rgb(102, 97, 113); /*rgb(102, 97, 113)*/
   cursor: not-allowed;
   height: 48px;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 16px; /*16px*/
+  font-weight: 600; /*600*/
 }
 .button-semi-trasp-dark:hover {
   opacity: initial;
@@ -437,18 +439,18 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* ----Farm → POOLS---- */
 /* --Bottone per tornare in alto, all inizio della lista ------------------------- */
 .to-top-button {
-  background-color: transparent;
-  color: rgb(31, 199, 212);
+  background-color: transparent; /*transparent*/
+  color: rgb(31, 199, 212); /*rgb(31, 199, 212)*/
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 16px; /*16px*/
+  font-weight: 600; /*600*/
   letter-spacing: 0.05rem;
   height: 48px;
   padding: 0 24px;
-  border: none;
+  border: none; /**/
 }
 .to-top-button:hover {
   opacity: 0.65;
@@ -458,9 +460,9 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* ----WIN → TRADING COMPETITION---- */
 /*--BOTTONI ETICHETTE -------*/
 .button-label {
-  background-color: rgb(56, 50, 65);
-  color: rgb(184, 173, 210);
-  border: none;
+  background-color: rgb(56, 50, 65); /*rgb(56, 50, 65)*/
+  color: rgb(184, 173, 210); /* rgb(184, 173, 210)*/
+  border: none; /*none*/
   border-radius: 16px 16px 0 0;
   padding: 8px;
 }
@@ -469,19 +471,19 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 
 .initial-btn-lbl {
-  background-color: rgb(184, 173, 210);
-  color: rgb(39, 38, 44);
+  background-color: rgb(56, 50, 65); /*rgb(184, 173, 210)*/
+  color: rgb(184, 173, 210); /* rgb(39, 38, 44)*/
 }
 
 /*BOTTONE DROPDOWN DETAILS TRASPARENTE*/
 .button-dropdown-trsp {
-  color: rgb(31, 199, 212);
-  font-size: 16px;
-  font-weight: 600;
+  color: rgb(31, 199, 212); /*rgb(31, 199, 212)*/
+  font-size: 16px; /*16px*/
+  font-weight: 600; /*600*/
   padding: 0 24px;
   height: 48px;
-  background-color: transparent;
-  border: none;
+  background-color: transparent; /**/
+  border: none; /**/
 }
 .button-dropdown-trsp:hover {
   opacity: 0.65;
@@ -505,15 +507,15 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   position: relative;
 }
 .box-labels-overlap .button-label-overlap {
-  background-color: rgb(39, 38, 44);
+  background-color: rgb(39, 38, 44); /**/
   display: flex;
   justify-content: flex-start;
   align-items: center;
   border-radius: 24px 24px 0 0;
   height: 48px;
-  color: white;
-  font-size: 16px;
-  font-weight: 600;
+  color: white; /**/
+  font-size: 16px; /**/
+  font-weight: 600; /**/
 }
 .box-labels-overlap .button-label-overlap:first-child {
   z-index: 1;
@@ -534,22 +536,22 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   position: absolute;
   z-index: 0;
   margin-left: 100px;
-  background-color: rgb(55, 47, 71);
+  background-color: rgb(55, 47, 71); /**/
   opacity: 0.65;
 }
 
 /* ----WIN → LOTTERY---- */
 .ticket-button {
-  background: linear-gradient(#7645d9 0%, rgb(69, 42, 122) 100%);
-  border: none;
-  color: white;
+  background: linear-gradient(#7645d9 0%, rgb(69, 42, 122) 100%); /*linear-gradient(#7645d9 0%, rgb(69, 42, 122) 100%)*/
+  border: none; /*none*/
+  color: white; /*white*/
   letter-spacing: 0.05rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 16px; /*16px*/
+  font-weight: 600; /*600*/
   height: 48px;
   width: 240px;
 }
@@ -563,6 +565,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* nav bar color */
 /* website background color */
 /* text input color */
+/* -------MAIN BUTTON(aquagreen)----------- */
 .win-prizes {
   background: linear-gradient(rgb(11, 69, 118) 0%, rgb(9, 17, 21) 100%);
   height: 800px;
@@ -707,6 +710,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* nav bar color */
 /* website background color */
 /* text input color */
+/* -------MAIN BUTTON(aquagreen)----------- */
 .floating-bunny {
   display: flex;
   flex-direction: column;
@@ -762,6 +766,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* nav bar color */
 /* website background color */
 /* text input color */
+/* -------MAIN BUTTON(aquagreen)----------- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -888,6 +893,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* nav bar color */
 /* website background color */
 /* text input color */
+/* -------MAIN BUTTON(aquagreen)----------- */
 @-webkit-keyframes float-NW {
   0% {
     transform: translatex(0px) translatey(0px);
