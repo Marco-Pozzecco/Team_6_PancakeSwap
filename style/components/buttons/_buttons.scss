@@ -17,17 +17,17 @@
     width: 50%;
     background-color: white;
 }
-
-body {
-    width: 100vw;
-    height: 400vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    background-color:rgb(48, 47, 49);
-    padding:  50px;
-}
+// Causa errori con il resto del sito web
+// body {
+//     width: 100vw;
+//     height: 400vh;
+//     display: flex;
+//     justify-content: space-evenly;
+//     align-items: center;
+//     flex-direction: column;
+//     background-color:rgb(48, 47, 49);
+//     padding:  50px;
+// }
 
 button {
     font-size: 16px;
