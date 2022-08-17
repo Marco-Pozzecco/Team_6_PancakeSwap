@@ -50,7 +50,6 @@ footer{
     height: 80vh;
     padding: 56px 80px 32px;
     background-color: $footer-background;
-    
   
 }
 .main-footer{
@@ -70,7 +69,6 @@ footer{
             a{
             color: white;
             text-decoration: none;
-            
             &:hover{
                 text-decoration: underline;
             }
@@ -84,6 +82,10 @@ footer{
 
 .flex2{
     @include flex(row, space-between, center);
+    
+}
+#hover:hover{
+        width: 54px;
 }
 
 .bottom-footer ul{
@@ -96,7 +98,6 @@ footer{
 }
 
 .bottom-footer-2{
-    // @include flex(row, space-between, center);
     padding: 40px 0px 40px 0px;
     div{
         //@include flex(row, space-between, center);

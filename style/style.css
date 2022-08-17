@@ -573,6 +573,11 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* nav bar color */
 /* website background color */
 /* text input color */
+.line-dd {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
 .icon i {
   color: rgb(118, 69, 217);
 }
@@ -637,14 +642,18 @@ nav ul li ul {
   visibility: hidden;
   transition: opacity 200ms easy-in-out;
 }
+nav ul li ul li.line-dd {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
 
-.flex {
+ul > li:nth-child(5) > ul > li.line-dd .flex {
   display: flex;
   flex-direction: center;
   justify-content: center;
   align-items: center;
 }
-.flex div, .flex h2, .flex ul {
+ul > li:nth-child(5) > ul > li.line-dd .flex div, ul > li:nth-child(5) > ul > li.line-dd .flex h2, ul > li:nth-child(5) > ul > li.line-dd .flex ul {
   padding: 4%;
   cursor: pointer;
 }
@@ -748,6 +757,10 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+#hover:hover {
+  width: 54px;
 }
 
 .bottom-footer ul {
@@ -1562,6 +1575,11 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* nav bar color */
 /* website background color */
 /* text input color */
+.line-dd {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
 .icon i {
   color: rgb(118, 69, 217);
 }
@@ -1633,14 +1651,19 @@ nav ul li ul {
   transition: opacity 200ms easy-in-out;
 }
 
-.flex {
+nav ul li ul li.line-dd {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+ul > li:nth-child(5) > ul > li.line-dd .flex {
   display: flex;
   flex-direction: center;
   justify-content: center;
   align-items: center;
 }
 
-.flex div, .flex h2, .flex ul {
+ul > li:nth-child(5) > ul > li.line-dd .flex div, ul > li:nth-child(5) > ul > li.line-dd .flex h2, ul > li:nth-child(5) > ul > li.line-dd .flex ul {
   padding: 4%;
   cursor: pointer;
 }
@@ -1750,6 +1773,10 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+#hover:hover {
+  width: 54px;
 }
 
 .bottom-footer ul {
@@ -1955,7 +1982,7 @@ li {
   }
 }
 html, body {
-  height: 100%;
+  width: 100%;
 }
 
 body {
