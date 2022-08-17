@@ -20,9 +20,6 @@
     border: none;
 };
 
-
-
-
 .floating-bunny {
 
     @include mq('laptop');
@@ -94,21 +91,21 @@
                 height: 512px;
                 width: 512px;
 
-                img {
+                & img {
 
                     position: absolute;
                     height: 100%;
                     width: auto;
                 }
+
+                & .star1 {
+                    height: -100px;
+                }
             }
         }
     }
 
-    .provadiv {
-        width: 100%;
-    }
-
-    .provadiv {
+    & .bottomgradient {
         width: 100%;
         z-index: 1;
     }
