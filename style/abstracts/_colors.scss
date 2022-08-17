@@ -3,7 +3,14 @@
 /* text color + "need help" */
 $primary-color: rgb(122, 110, 170); // #7A6EAA;
 $secondary-color: rgb(118, 69, 217); // #7645D9;
-$tertiary-color: rgb(40,13,95); // #280D5F
+$tertiary-color: rgb(40,13,95); // #280D5F;
+
+/* Inseriti da Clara, da rivedere: */
+
+$h2text-color: #9A6AFF;
+
+
+
 
 $footer-background: rgb(39, 38, 44);
 
@@ -51,3 +58,19 @@ $input-color-dk:rgb(55, 47, 71);
 
 
 
+//Stat Section colors TEXT(Inserito da Milton)
+
+$card-dist-title-a: rgb(244, 238, 255);
+// $card-dist-title-b:rgb(154, 106, 255);
+//  ↑ uso quella alla riga: 43 ⇒  $secondary-dk
+ 
+$card-dist-last-text:  rgb(184, 173, 210);
+
+
+// STATS CARDS
+
+// $background-color-cards: rgb(35 35 42); //originale è troppochiaro rispetto al sito.
+//shadow/border sta's cards
+$shadow-border-stats-card: solid rgb(75 59 80);
+
+// ------------------------------------------------

@@ -1,0 +1,59 @@
+// Use rules
+@use "../../components/buttons/buttons";
+
+// Import rules
+@import "../../abstracts/mixins";
+@import "../../abstracts/colors";
+@import "../../abstracts/animations";
+
+.floating-bunny {
+
+    @include mq('laptop');
+    @include flex(column);
+    width: 100vw;
+    height: 100vh;
+
+    & .wrapper {
+        background-color: rgb(26, 11, 58);
+        color: $h2text-color;
+        width: 100%;
+        height: 100%;
+        @include flex();
+
+        & .contents-section {
+            text-align: left;
+            width: 50%;
+            padding-left: 60px;
+
+
+            & h2 {
+                font-size: 65px;
+                font-weight: 100;
+                line-height: 1.1;
+            }
+
+            & h3 {
+                color: aliceblue;
+                font-size: 20px;
+            }
+
+        }
+
+        & .img-section {
+            background-color: rgb(26, 11, 58);
+            width: 50%;
+            height: 100%;
+        }
+    }
+
+    .provadiv {
+        background-color: rgb(26, 11, 58);
+        width: 100%;
+    }
+
+.provadiv {
+    width: 100%;
+    z-index: -10;
+}
+
+}
