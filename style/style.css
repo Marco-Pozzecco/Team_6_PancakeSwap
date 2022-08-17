@@ -1,4 +1,13 @@
 @charset "UTF-8";
+/* text color + "need help" */
+/* text input color */
+/* Text color gradient */
+/* cards background color */
+/* text color  */
+/* nav bar color */
+/* website background color */
+/* text input color */
+@import url(https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,900;1,800;1,900&display=swap);
 * {
   box-sizing: border-box;
   margin: 0;
@@ -564,29 +573,51 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   width: 240px;
 }
 
-/* text color + "need help" */
-/* text input color */
-/* Text color gradient */
-/* cards background color */
-/* text color  */
-/* nav bar color */
-/* website background color */
-/* text input color */
 body {
   padding: 0%;
   margin: 0px;
   width: 100%;
   height: 90vh;
+  font-family: Kanit, serif;
+}
+
+i {
+  color: rgb(184, 173, 210);
+}
+
+.menu-ul {
+  list-style: none;
+}
+
+.menu-nav {
+  text-decoration: none;
+}
+
+.dropdown {
+  visibility: hidden;
+  position: absolute;
+  top: 2rem;
+  background-color: white;
+  border-radius: 1%;
+  width: 12rem;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 200ms easy-in-out;
+}
+
+.fa-globe:hover {
+  color: rgba(154, 106, 255, 0.3);
+}
+.fa-globe:hover .dropdown {
+  visibility: visible;
 }
 
 footer {
   width: 100%;
-  height: 70vh;
+  height: 80vh;
   padding: 56px 80px 32px;
   background-color: rgb(39, 38, 44);
-}
-footer ul {
-  list-style: none;
 }
 
 .main-footer {
@@ -595,6 +626,9 @@ footer ul {
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 32px;
+}
+.main-footer h3 {
+  color: #fff;
 }
 .main-footer h4 {
   color: rgb(118, 69, 217);
@@ -615,6 +649,13 @@ footer ul {
   border: 1px solid rgb(122, 110, 170);
 }
 
+.flex2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .bottom-footer ul {
   display: flex;
   flex-direction: row;
@@ -624,24 +665,17 @@ footer ul {
 }
 
 li {
-  padding-right: 12px;
+  padding-right: 22px;
 }
 
 .bottom-footer-2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   padding: 40px 0px 40px 0px;
 }
-.bottom-footer-2 div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.bottom-footer-2 div input, .bottom-footer-2 div img, .bottom-footer-2 div p, .bottom-footer-2 div .label {
+.bottom-footer-2 div div, .bottom-footer-2 div p {
   padding-right: 22px;
+}
+.bottom-footer-2 div p {
+  color: rgb(184, 173, 210);
 }
 
 .checkbox {
