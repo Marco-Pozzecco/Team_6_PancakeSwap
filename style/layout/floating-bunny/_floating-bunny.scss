@@ -30,7 +30,8 @@
     @include flex(column);
     position: absolute;
     padding-top: 400px;
-    width: 100vw;
+
+    width: 100%;
     height: auto;
     background: linear-gradient(180deg, rgba(22, 9, 49, 1) 0%, rgba(22, 9, 49, 1) 47%, rgba(19, 8, 43, 1) 65%, rgba(11, 5, 25, 1) 100%, rgba(0, 0, 0, 1) 100%);
     
@@ -72,6 +73,9 @@
             .fb-thefloatingbunny {
                 margin-right: 10%;
 
+                margin-top: 10%;
+                @include float-anim(5s, "NW");
+
                 img {
                     z-index: 3;
                     height: 580px;
@@ -81,8 +85,21 @@
 
                 .fb-thefloatingstars {
                     position: absolute;
+
+                    margin-right: 10%;
                     height: 512px;
                     width: 512px;
+
+                    .fb-star1 img {
+                        @include fade-out-anim(2.5s);
+                    }
+                    .fb-star2 img {
+                        @include fade-out-anim(3.5s);
+                    }
+                    .fb-star3 img {
+                        @include fade-out-anim(5s);
+                    }
+
 
                     img {
 

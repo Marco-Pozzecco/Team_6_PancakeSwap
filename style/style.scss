@@ -14,8 +14,10 @@
 
 
 // Animations
-@include float(100px, 'NW');
+
+@include float(10px, 'NW');
 @include float(100px, 'N');
+@include fade-out;
 
 $font-stack: Kanit, serif;
 
