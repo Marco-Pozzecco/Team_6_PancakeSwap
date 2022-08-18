@@ -1,0 +1,90 @@
+// Use rules
+@use "sass:map";
+@use "sass:list";
+
+// Import rules
+@import "variables";
+
+// Mixin include float-bottom-up
+// Il mixin ammette come durata un valore in secondi, o derivati (ad. es. ms), mentre ammette come direzione un punto cardinale (N, S, O, W, NE, NW ... )
+@mixin float-anim ($duration, $direction) {
+    animation-name: unquote("float-" + $direction);
+    animation-duration: $duration;
+    animation-iteration-count: infinite;
+};
+
+// Fade mixin
+// 
+@mixin fade-out-anim($duration) {
+    animation-name: fade-out;
+    animation-duration: $duration;
+    @include css3-prefix(animation-iteration-count, infinite);
+}
+
+// Media queries mixin
+// Ammette come parametri una stringa indicante il nome del breakpoint (vedi: _variables/breakpoints)
+// Il secondo parametro è opzionale, estende la media query dal primo al secondo parametro indicato
+@mixin mq($mq1, $mq2: 0) {
+    $breakpoints-keys : map.keys($breakpoints);
+    @if ($mq2 == 0) {
+        @if ($mq1 == 'phone') {
+            @media screen and (max-width: map.get($breakpoints, $mq1)) {
+                @content;
+            } 
+        } @else if ($mq1 == 'desktop-wide') {
+            @media screen and (min-width: map.get($breakpoints, $mq1)) {
+                @content;
+            } 
+        } @else {
+            @media screen and (min-width: map.get($breakpoints, $mq1)) and (max-width: calc( map.get($breakpoints, list.nth( $breakpoints-keys, list.index($breakpoints-keys, $mq1) + 1) ) - 1px)) {
+                @content;
+            }
+        }
+    } @else {
+        @if ($mq1 == 'phone') {
+            @media screen and (max-width: map.get($breakpoints, $mq2)) {
+                @content;
+            }
+        } @else if ($mq2 == 'desktop-wide') {
+            @media screen and (min-width: map.get($breakpoints, $mq1)) {
+                @content;
+            }
+        } @else {
+            @media screen and (min-width: map.get($breakpoints, $mq1)) and (max-width: calc( map.get($breakpoints, list.nth( $breakpoints-keys, list.index($breakpoints-keys, $mq2) + 1) ) - 1px)) {
+                @content;
+            }
+        }
+    }
+    
+};
+
+// Flex mixin
+// Ammette come valori flex-direction (row, col...), l'allineamento principale ed l'allineamento rispetto l'asse secondario
+@mixin flex ($flex-direction: row, $main-alignment: center, $sub-alignment: center) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $main-alignment;
+    align-items: $sub-alignment;
+}
+
+// Radious setter
+// Setta un border-radius pari alla dimensione passata come argomento, ammette una stringa che indica quali bordi riceveranno il radius
+@mixin setRadius ($dimension, $corner: 'all-corners') {
+    @if ($corner == 'all-corners') {
+        border-radius: $dimension;
+    } @else if ($corner == "bottom-corners") {
+        border-radius: 0 0 $dimension $dimension;
+    } @else if ($corner == "top-corners") {
+        border-radius: $dimension $dimension 0 0;
+    }
+}
+
+// CSS3-prefix mixin
+// La mixin ammette il nome della proprietà e il rispettivo valore della regola CSS
+@mixin css3-prefix($prop, $value) {
+    -webkit-#{$prop}: #{$value};
+    -moz-#{$prop}: #{$value};
+    -ms-#{$prop}: #{$value};
+    -o-#{$prop}: #{$value};
+    #{$prop}: #{$value};
+}

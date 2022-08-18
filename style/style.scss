@@ -1,0 +1,48 @@
+// Built in modules
+@use "sass:map";
+@use "sass:list";
+@use "pages/home";
+
+// Dichiarazioni import
+@import url(https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,900;1,800;1,900&display=swap);
+@import "abstracts/animations";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+@import "abstracts/colors";
+
+// Import pages
+
+
+// Animations
+@include float(10px, 'NW');
+@include float(100px, 'N');
+@include fade-out;
+
+$font-stack: Kanit, serif;
+
+html, body {
+    height: 100%;
+    width: 100%
+}
+
+body {
+    font-family: $font-stack;
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blue-square {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    @include float-anim(5s, 'NW');
+    @include mq('laptop') {
+        & {
+            height: 80px;
+            width: 80px;
+        }
+    };
+}
+

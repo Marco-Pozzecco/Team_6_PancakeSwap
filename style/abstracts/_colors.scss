@@ -1,0 +1,84 @@
+//light-theme colors
+
+/* text color + "need help" */
+$primary-color: rgb(122, 110, 170); // #7A6EAA;
+$secondary-color: rgb(118, 69, 217); // #7645D9;
+$tertiary-color: rgb(40,13,95); // #280D5F;
+
+/* Inseriti da Clara, da rivedere: */
+
+$h2text-color: #9A6AFF;
+
+
+
+
+$footer-background: rgb(39, 38, 44);
+
+$btn-bg-color: rgb(31,199,212); //#1FC7D4
+
+/* text input color */ 
+$border_color: rgb(233, 234, 235);
+$input-color: rgb(189, 194, 196);
+
+/* Text color gradient */ 
+$gradient-from: rgb(255, 216, 0); // #FFD800;
+$gradient-to: rgb(253, 171, 50); // #EB8C00;
+
+/* cards background color */ 
+$linear-gradient-1: rgb(255,178,55); //Footer Contact text + card bg
+$linear-gradient-2: rgb(255,205,81); 
+$linear-gradient-3: rgb(255,231,106); 
+
+$black: rgb(0,0,0);
+$white: rgb(255,255,255);
+$green: rgb(49, 208, 170);
+$light-gray: rgb(238, 238, 238);
+$pink: rgb(237, 75, 158); // #ED4B9E;
+
+
+//dark-mode theme
+
+/* text color  */
+$primary-dk: rgb(184, 173, 210); //B8ADD2        
+$secondary-dk: rgb(154, 106, 255); //9A6AFF
+$light-gray-dk: rgb(244, 238, 255);
+$dark-violet-dk: rgb(40, 13, 95);
+$black-dk: rgb(25, 19, 38); 
+
+/* nav bar color */         
+$nav-bar-dk: rgb(39, 38, 44);  
+
+/* website background color */ 
+$background-color-dk: rgb(8, 6, 11);
+$bg-gradient: linear-gradient (139.73deg, rgb(49, 61, 92) 0%, rgb(61, 42, 84) 100%);
+
+/* text input color */ 
+$input-color-dk:rgb(55, 47, 71);
+
+
+
+// STATS CARDS
+//Stat Section colors TEXT(Inserito da Milton)
+//Main Background
+$background-color-stats-section: linear-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%);
+
+//Background color delle cards
+$background-color-cards: rgb(56, 50, 65);
+
+//Colore Primario Titoli
+$card-dist-title: rgb(244, 238, 255);
+
+//Colore Descrizioni
+$card-dist-text:  rgb(184, 173, 210);
+
+
+//shadow/border stats cards
+$shadow-border-stats-card: solid rgb(75 59 80);
+
+// ------------------------------------------------
+
+
+
+//BUTTON COLORS
+/* -------MAIN BUTTON(aquagreen)----------- */
+// $main-buttons-background-color:;
