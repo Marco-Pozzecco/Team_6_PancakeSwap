@@ -621,7 +621,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     background-color: rgba(8, 6, 11, 0.6);
     -webkit-backdrop-filter: blur(12px);
     -moz-backdrop-filter: blur(12px);
+
     -ms-backdrop-filter: blur(12px);
+
+
     -o-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
     border-radius: 72px;
@@ -733,6 +736,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   position: absolute;
   padding-top: 400px;
   width: 100%;
+
   height: auto;
   background: linear-gradient(180deg, rgb(22, 9, 49) 0%, rgb(22, 9, 49) 47%, rgb(19, 8, 43) 65%, rgb(11, 5, 25) 100%, rgb(0, 0, 0) 100%);
 }
@@ -773,10 +777,13 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 .fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingbunny {
   margin-right: 10%;
+
   margin-top: 10%;
   animation-name: float-NW;
   animation-duration: 5s;
   animation-iteration-count: infinite;
+
+
 }
 .fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingbunny img {
   z-index: 3;
@@ -785,6 +792,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 .fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingstars {
   position: absolute;
+
   margin-right: 10%;
   height: 512px;
   width: 512px;
@@ -816,6 +824,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
+
 .fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingstars img {
   position: absolute;
   height: 100%;
@@ -968,17 +977,32 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* website background color */
 /* text input color */
 /* -------MAIN BUTTON(aquagreen)----------- */
+
+@-webkit-keyframes float-NW {
+  0% {
+    transform: translatex(0px) translatey(0px);
+  }
+  50% {
+    transform: translatex(-100px) translatey(100px);
+  }
+  100% {
+    transform: translatex(0px) translatey(0px);
+  }
+}
+
 @keyframes float-NW {
   0% {
     transform: translatex(0px) translatey(0px);
   }
   50% {
+
     transform: translatex(10px) translatey(10px);
   }
   100% {
     transform: translatex(0px) translatey(0px);
   }
 }
+
 @keyframes float-N {
   0% {
     transform: translateY(0);
@@ -990,6 +1014,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     transform: translateY(0);
   }
 }
+
 @keyframes fade-out {
   0% {
     opacity: 1;
@@ -1018,6 +1043,7 @@ body {
   height: 100px;
   width: 100px;
   background-color: blue;
+
   animation-name: float-NW;
   animation-duration: 5s;
   animation-iteration-count: infinite;

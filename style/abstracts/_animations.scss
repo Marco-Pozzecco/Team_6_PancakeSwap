@@ -1,7 +1,8 @@
 // Animazione fluttuazione
 @mixin float ($distance, $direction : 'N') {
 
-    @if ($direction =="N") {
+    @if ($direction == "N" ) {
+
         @keyframes float-N {
             0% {
                 transform: translateY(0);
@@ -15,9 +16,9 @@
                 transform: translateY(0);
             }
         }
-    }
 
-    @else if ($direction =="S") {
+    } @else if ($direction == "S" ) {
+
         @keyframes float-S {
             0% {
                 transform: translateY(0);
@@ -31,9 +32,9 @@
                 transform: translateY(0);
             }
         }
-    }
 
-    @else if ($direction =="W") {
+    }  @else if ($direction == "W" ) {
+
         @keyframes float-W {
             0% {
                 transform: translateX(0);
@@ -47,9 +48,9 @@
                 transform: translateX(0);
             }
         }
-    }
 
-    @else if ($direction =="E") {
+    }  @else if ($direction == "E" ) {
+
         @keyframes float-E {
             0% {
                 transform: translateX(0);

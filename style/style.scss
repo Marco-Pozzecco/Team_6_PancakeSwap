@@ -14,6 +14,7 @@
 
 
 // Animations
+
 @include float(10px, 'NW');
 @include float(100px, 'N');
 @include fade-out;
@@ -23,6 +24,7 @@ $font-stack: Kanit, serif;
 html, body {
     height: 100%;
     width: 100%
+
 }
 
 body {
