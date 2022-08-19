@@ -42,7 +42,14 @@ button:hover {
 }
 
 /* -------BOTTONE VERDE ACQUA----------- */
-.button-aquagreen {
+.link-aquagreen {
+  text-decoration: none;
+}
+.link-aquagreen .button-aquagreen {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   background-color: rgb(31, 199, 212); /* rgb(31, 199, 212)*/
   border: none;
   color: white; /* white*/
@@ -50,7 +57,7 @@ button:hover {
   font-size: 16px; /*16px*/
   font-weight: 600; /*600*/
 }
-.button-aquagreen:active {
+.link-aquagreen .button-aquagreen:active {
   transform: translateY(2px);
 }
 
@@ -72,7 +79,7 @@ button:hover {
   background-color: rgb(53, 53, 71); /*rgb(53, 53, 71)*/
   border: 1px solid rgb(82, 75, 99); /*1px solid   rgb(82, 75, 99)*/
   border-radius: 16px;
-  display: flex; /**/
+  display: flex;
   flex-direction: row;
   width: auto;
 }
@@ -621,7 +628,6 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     background-color: rgba(8, 6, 11, 0.6);
     -webkit-backdrop-filter: blur(12px);
     -moz-backdrop-filter: blur(12px);
-    -ms-backdrop-filter: blur(12px);
     -o-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
     border-radius: 72px;
@@ -711,9 +717,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* nav bar color */
 /* website background color */
 /* text input color */
-<<<<<<< HEAD
 /* -------MAIN BUTTON(aquagreen)----------- */
-=======
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -727,7 +731,6 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   border: none;
 }
 
->>>>>>> 67102faa31ce62fbc5e7e128a885b99708e63505
 .floating-bunny {
   display: flex;
   flex-direction: column;
@@ -939,7 +942,121 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* nav bar color */
 /* website background color */
 /* text input color */
-<<<<<<< HEAD
+/* -------MAIN BUTTON(aquagreen)----------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+body .main-banner-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 90%;
+  position: relative;
+}
+body .main-banner-container .main-banner-sub-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
+  height: 100%;
+  width: 100%;
+  padding: 24px;
+  border-radius: 24px;
+  position: relative;
+}
+body .main-banner-container .main-banner-sub-container .main-banner-content-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+}
+body .main-banner-container .main-banner-sub-container .main-banner-content-container .main-banner-title {
+  color: white;
+  font-family: Kanit, sans-serif;
+}
+body .main-banner-container .main-banner-sub-container .main-banner-content-container .mbt-a {
+  font-size: 24px;
+  background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0));
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text; /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
+  margin-bottom: 8px;
+}
+body .main-banner-container .main-banner-sub-container .main-banner-content-container .mbt-b {
+  font-size: 40px;
+  margin-bottom: 16px;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px;
+}
+body .main-banner-container .main-banner-sub-container .main-banner-content-container .main-banner-button-a {
+  color: black;
+  fill: black;
+}
+body .main-banner-container .main-banner-sub-container .swiper-slide {
+  background-color: transparent;
+  width: 100px;
+  height: 8px;
+  background-color: rgba(186, 235, 74, 0.174);
+  border-radius: 10px;
+  position: absolute;
+  bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  contain: content;
+}
+body .main-banner-container .main-banner-sub-container .swiper-slide .swiper {
+  width: 50%;
+  height: 8px;
+  background-color: white;
+}
+body .main-banner-container .main-banner-sub-container .swiper-slide .swpr-a {
+  visibility: initial;
+}
+body .main-banner-container .main-banner-sub-container .swiper-slide .swpr-b {
+  visibility: hidden;
+}
+body .main-banner-container .main-banner-sub-container .bunny-container-a {
+  width: 30%;
+  height: 121%;
+  position: absolute;
+  border-radius: 24px;
+  bottom: 0;
+  right: 0;
+}
+body .main-banner-container .main-banner-sub-container .bunny-container-a img {
+  min-width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+
+/* text color + "need help" */
+/* Inseriti da Clara, da rivedere: */
+/* text input color */
+/* Text color gradient */
+/* cards background color */
+/* text color  */
+/* nav bar color */
+/* website background color */
+/* text input color */
 /* -------MAIN BUTTON(aquagreen)----------- */
 @-webkit-keyframes float-NW {
   0% {
@@ -952,8 +1069,6 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     transform: translatex(0px) translatey(0px);
   }
 }
-=======
->>>>>>> 67102faa31ce62fbc5e7e128a885b99708e63505
 @keyframes float-NW {
   0% {
     transform: translatex(0px) translatey(0px);
@@ -963,6 +1078,17 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   }
   100% {
     transform: translatex(0px) translatey(0px);
+  }
+}
+@-webkit-keyframes float-N {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 @keyframes float-N {
@@ -983,7 +1109,7 @@ html, body {
 
 body {
   font-family: Kanit, serif;
-  font-size: 48px;
+  font-size: initial;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -993,15 +1119,16 @@ body {
   height: 100px;
   width: 100px;
   background-color: blue;
-  animation-name: float-NW;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 @media screen and (min-width: 1024px) and (max-width: 1247px) {
   .blue-square {
     height: 80px;
     width: 80px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

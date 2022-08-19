@@ -27,7 +27,9 @@ html, body {
 
 body {
     font-family: $font-stack;
-    font-size: 48px;
+    // font-size: 48px;
+    font-size: initial;
+
     display: flex;
     align-items: center;
     justify-content: center;
