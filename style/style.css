@@ -732,7 +732,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   position: absolute;
   padding-top: 400px;
   width: 100%;
-  height: auto;
+  height: 1000px;
   background: linear-gradient(180deg, rgb(22, 9, 49) 0%, rgb(22, 9, 49) 47%, rgb(19, 8, 43) 65%, rgb(11, 5, 25) 100%, rgb(0, 0, 0) 100%);
 }
 .fb-floating-bunny .fb-wrapper {
@@ -761,6 +761,9 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   color: aliceblue;
   font-size: 18px;
   padding-top: 20px;
+}
+.fb-floating-bunny .fb-wrapper .fb-contents-section .link-aquagreen {
+  text-decoration: none;
 }
 .fb-floating-bunny .fb-wrapper .fb-img-section {
   width: 50%;
