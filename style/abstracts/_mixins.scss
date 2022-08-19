@@ -13,6 +13,15 @@
     animation-iteration-count: infinite;
 };
 
+
+// Fade mixin
+// 
+@mixin fade-out-anim($duration) {
+    animation-name: fade-out;
+    animation-duration: $duration;
+    @include css3-prefix(animation-iteration-count, infinite);
+}
+
 // Media queries mixin
 // Ammette come parametri una stringa indicante il nome del breakpoint (vedi: _variables/breakpoints)
 // Il secondo parametro è opzionale, estende la media query dal primo al secondo parametro indicato

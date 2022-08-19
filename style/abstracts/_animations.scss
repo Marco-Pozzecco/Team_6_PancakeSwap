@@ -1,100 +1,141 @@
 // Animazione fluttuazione
 @mixin float ($distance, $direction : 'N') {
+
     @if ($direction == "N" ) {
+
         @keyframes float-N {
             0% {
                 transform: translateY(0);
             }
+
             50% {
                 transform: translateY($distance);
             }
+
             100% {
                 transform: translateY(0);
             }
         }
+
     } @else if ($direction == "S" ) {
+
         @keyframes float-S {
             0% {
                 transform: translateY(0);
             }
+
             50% {
                 transform: translateY(-$distance);
             }
+
             100% {
                 transform: translateY(0);
             }
         }
+
     }  @else if ($direction == "W" ) {
+
         @keyframes float-W {
             0% {
                 transform: translateX(0);
             }
+
             50% {
                 transform: translateX(-$distance);
             }
+
             100% {
                 transform: translateX(0);
             }
         }
+
     }  @else if ($direction == "E" ) {
+
         @keyframes float-E {
             0% {
                 transform: translateX(0);
             }
+
             50% {
                 transform: translateX($distance);
             }
+
             100% {
                 transform: translateX(0);
             }
         }
-    } @else if ($direction == "NW") {
+    }
+
+    @else if ($direction =="NW") {
         @keyframes float-NW {
-            0% { 
-                transform: translatex(0px) translatey(0px); 
+            0% {
+                transform: translatex(0px) translatey(0px);
             }
+
             50% {
-                transform: translatex(-$distance) translatey($distance); 
+                transform: translatex($distance) translatey($distance);
             }
+
             100% {
-                transform: translatex(0px) translatey(0px); 
+                transform: translatex(0px) translatey(0px);
             }
         }
-    } @else if ($direction == "NE") {
+    }
+
+    @else if ($direction =="NE") {
         @keyframes float-NE {
-            0% { 
-                transform: translatex(0px) translatey(0px); 
+            0% {
+                transform: translatex(0px) translatey(0px);
             }
+
             50% {
-                transform: translatex($distance) translatey($distance); 
+                transform: translatex(-$distance) translatey($distance);
             }
+
             100% {
-                transform: translatex(0px) translatey(0px); 
+                transform: translatex(0px) translatey(0px);
             }
         }
-    } @else if ($direction == "SW") {
+    }
+
+    @else if ($direction =="SW") {
         @keyframes float-SW {
-            0% { 
-                transform: translatex(0px) translatey(0px); 
+            0% {
+                transform: translatex(0px) translatey(0px);
             }
+
             50% {
-                transform: translatex(-$distance) translatey(-$distance); 
+                transform: translatex(-$distance) translatey(-$distance);
             }
+
             100% {
-                transform: translatex(0px) translatey(0px); 
-            }
-        } 
-    } @else if ($direction == "SE") {
-        @keyframes float-SE {
-            0% { 
-                transform: translatex(0px) translatey(0px); 
-            }
-            50% {
-                transform: translatex($distance) translatey(-$distance); 
-            }
-            100% {
-                transform: translatex(0px) translatey(0px); 
+                transform: translatex(0px) translatey(0px);
             }
         }
+    }
+
+    @else if ($direction =="SE") {
+        @keyframes float-SE {
+            0% {
+                transform: translatex(0px) translatey(0px);
+            }
+
+            50% {
+                transform: translatex($distance) translatey(-$distance);
+            }
+
+            100% {
+                transform: translatex(0px) translatey(0px);
+            }
+        }
+    }
+}
+
+
+@mixin fade-out() {
+    @keyframes fade-out {
+        0% {opacity: 1;}
+        50% {opacity: 0.1;}
+        100% {opacity: 1;}
     }
 }
