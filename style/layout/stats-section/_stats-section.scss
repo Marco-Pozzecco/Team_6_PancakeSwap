@@ -1,0 +1,174 @@
+
+
+// Use rules
+@use "../../components/buttons/buttons";
+
+// Import rules
+@import "../../abstracts/mixins";
+@import "../../abstracts/colors";
+@import "../../abstracts/animations";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+// CONTROLLARE QUESTO SULLO STYLE.SCSS
+
+
+// @include flex();
+
+
+
+.stat-section {
+    @include mq('laptop');
+    width: 100%;
+    height: auto;
+    // padding: 48px 0;
+    background: $background-color-stats-section;
+
+        .wrapper-stat {
+            @include flex(column);
+            padding: 48px 24px;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            width: 100%;
+            text-align: center;
+
+                & svg {
+                    margin: 0 0 24px;
+                }
+
+                h2 {
+                    font-size: 42px;
+                    font-weight: 600;
+                    line-height: 1.1;
+                    color:  $card-dist-title;
+                }
+
+                h2:nth-child(3) {
+                    margin-bottom: 32px
+                }
+
+                .description-stat-sec {
+                    font-size: 16px;
+                    color: $card-dist-text;
+                }
+
+                .dst1 {
+                    font-weight: 400;
+                }
+
+                .dst2 {
+                    vertical-align: baseline;
+                    margin-bottom: 10px;
+                }
+
+                .dst3 {
+                    font-weight: 600;
+                    margin-bottom: 32px
+                }
+
+                .card-container-dst {
+                    @include flex();
+                    width: 100%;
+
+                        .card-dst {
+                            background-color: $background-color-cards; // veder se usare questo o no,è l originale e risulta un po chiaro.
+                            @include flex(column);
+                            padding: 24px;
+                            border-radius: 24px;
+                            margin-right: 16px;
+                            position: relative;
+                            border: 1px $shadow-border-stats-card;
+                            border-bottom: 3px $shadow-border-stats-card;
+
+                                .card-dist-svg {
+                                    align-self: flex-end;
+                                    position: absolute;
+                                    top: 24px;
+                                    right: 24px;
+
+                                        .cdsvg-color1 {
+                                            fill: $secondary-dk;
+                                        }
+
+                                        .cdsvg-color2 {
+                                            fill: $green;
+                                        }
+
+                                        .cdsvg-color3 {
+                                            fill: $pink;
+                                        }
+
+
+                                }
+
+                                .card-dist-title {
+                                    text-align: left;
+                                    margin-top: 64px;
+
+                                        & h2 {
+                                            font-size: 40px;
+                                            font-weight: 600;
+                                            line-height: 1.1;
+                                        }
+
+                                        & .cdta {
+                                            color: $card-dist-title;
+                                        }
+
+                                        & .cdtb {
+                                            margin-bottom: 24px;
+                                        }
+
+                                        & .cdtb1 {
+                                            color: $secondary-dk;
+                                        }
+
+                                        & .cdtb2 {
+                                            color: $green;
+                                        }
+
+                                        & .cdtb3 {
+                                            color: $pink;
+                                        }
+
+                                        .card-dist-last-text {
+                                            color: $card-dist-text;
+                                            line-height: 1.5;
+                                            font-weight: 400;
+                                            font-size: 16px;
+                                        }
+                                }
+                        }
+                }
+        }
+
+        .svg-transition-color-box {
+            background-color: black;
+
+                .svg-transition-color {
+                    fill: rgb(30, 17, 50);
+                    width: 100%;
+                    height: 100%;
+                    max-height: 48px;
+                }
+        }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

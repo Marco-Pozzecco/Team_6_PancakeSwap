@@ -3,7 +3,14 @@
 /* text color + "need help" */
 $primary-color: rgb(122, 110, 170); // #7A6EAA;
 $secondary-color: rgb(118, 69, 217); // #7645D9;
-$tertiary-color: rgb(40,13,95); // #280D5F
+$tertiary-color: rgb(40,13,95); // #280D5F;
+
+/* Inseriti da Clara, da rivedere: */
+
+$h2text-color: #9A6AFF;
+
+
+
 
 $footer-background: rgb(39, 38, 44);
 
@@ -50,4 +57,28 @@ $input-color-dk:rgb(55, 47, 71);
 
 
 
+// STATS CARDS
+//Stat Section colors TEXT(Inserito da Milton)
+//Main Background
+$background-color-stats-section: linear-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%);
 
+//Background color delle cards
+$background-color-cards: rgb(56, 50, 65);
+
+//Colore Primario Titoli
+$card-dist-title: rgb(244, 238, 255);
+
+//Colore Descrizioni
+$card-dist-text:  rgb(184, 173, 210);
+
+
+//shadow/border stats cards
+$shadow-border-stats-card: solid rgb(75 59 80);
+
+// ------------------------------------------------
+
+
+
+//BUTTON COLORS
+/* -------MAIN BUTTON(aquagreen)----------- */
+// $main-buttons-background-color:;

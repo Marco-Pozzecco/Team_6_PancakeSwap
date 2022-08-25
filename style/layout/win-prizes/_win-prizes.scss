@@ -7,11 +7,47 @@
 @import "../../abstracts/animations";
 
 .win-prizes {
-    background-color: greenyellow;
+    background: linear-gradient(rgb(11, 69, 118) 0%, rgb(9, 17, 21) 100%);
     height: 800px;
-    @include flex();
+    width: 100%;
+    padding: 48px 0;
+    position: relative;
+    overflow: hidden;
+    @include flex(column);
     @include mq('laptop') {
+        .floating-balls {
+            position: absolute;
+            z-index: 1;
+            right: 0px;
+            top: -60px;
+            height: 512px;
+            width: 512px;
+            img {
+                z-index: 2;
+                position: absolute;
+                height: 100%;
+                width: auto;
+            }
+        }
+        .floating-cards {
+            position: absolute;
+            z-index: 1;
+            height: 512px;
+            width: 512px;
+            bottom: -80px;
+            left: 0px;
+            & img {
+                z-index: 2;
+                position: absolute;
+                height: 100%;
+                width: auto;
+            }
+            #card-bottom-left {
+                z-index: -1;
+            }
+        }
         .prizes-wrapper {
+            z-index: 10;
             @include flex(column);
             height: auto;
             width: 90%;
@@ -64,9 +100,6 @@
                         font-size: 12px;
                         margin: 0;
                         margin-bottom: 30px;
-                    }
-                    & button.button-acquagreen {
-                        
                     }
                 }
                 .card-lottery {
