@@ -11,13 +11,6 @@
 @import "abstracts/colors";
 
 
-// //import layout
-// @import 'layout/navbar/navbar';
-// @import "layout/footer/footer";
-
-
-
-
 // Import pages
 
 
@@ -30,24 +23,14 @@
 $font-stack: Kanit, serif;
 
 html, body {
-<<<<<<< HEAD:style/main.scss
-    width: 100%;
-=======
     height: 100%;
     width: 100%
-
->>>>>>> develop:style/style.scss
 }
 
 body {
     font-family: $font-stack;
-<<<<<<< HEAD:style/main.scss
-    //font-size: 48px;
-=======
-    // font-size: 48px;
     font-size: initial;
 
->>>>>>> develop:style/style.scss
     display: flex;
     align-items: center;
     justify-content: center;

@@ -5,17 +5,9 @@
 @import "../../abstracts/mixins";
 @import "../../abstracts/colors";
 @import "../../abstracts/variables";
-@import "../../typography/fonts";
 
 
 
-// body{
-//     padding: 0%;
-//     margin: 0px;
-//     width: 100%;
-//     height: 90vh;
-//     font-family: Kanit, serif;
-// }
 i{
     color: $primary-dk
 }
@@ -52,6 +44,7 @@ footer{
     background-color: $footer-background;
   
 }
+
 .main-footer{
  @include flex(row, space-between, flex-start);
  margin-bottom: 32px;
