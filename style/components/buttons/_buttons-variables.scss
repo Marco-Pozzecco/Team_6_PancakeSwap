@@ -1,6 +1,6 @@
-// MAIN BUTTONS (aquagreen)
+//MAIN BUTTON - BOTTONE VERDEACQUA (aquagreen)-MAIN BUTTON---------------------
 
-$main-buttons-background-color:rgb(212, 31, 209);
+$main-buttons-background-color:rgb(31, 199, 212);
 $main-buttons-color: white;
 $main-buttons-border: none;
 // $main-buttons-shadow: ;
@@ -20,50 +20,265 @@ $ob-buttons-border: 2px solid rgb(31, 199, 212);
 $ob-buttons-font-size: 16px;
 $ob-buttons-font-weigth: 600;
 
+//HWMY BUTTONS ----------------------------
+// div-variables
+$hwmy-buttons-background-div-color:rgb(53, 53, 71);
+// $hwmy-buttons-color:;
+$hwmy-buttons-div-border: 1px solid   rgb(82, 75, 99);
+// $hwmy-buttons-shadow: ;
+// $hwmy-buttons-font: ;
+$hwmy-buttons-font-size: 16px;
+$hwmy-buttons-font-weigth: 600;
+// button-variables -- -- -- -- -- -- -- -- 
+$hwmy-buttons-background-color:rgb(53, 53, 71);
+$hwmy-buttons-color: white;
+$hwmy-buttons-border: none;
+// $hwmy-buttons-font: ;
+$hwmy-buttons-font-size: 16px;
+$hwmy-buttons-font-weigth: 600;
 
-// // SEMI-TRANSP BUTTONS 
-// $semi-transp-buttons-background-color: transparent ;
-// $main-buttons-color: white;
-// // $semi-transp-buttons-shadow: ;
-// // $semi-transp-buttons-font: ;
+
+// SEMI-TRANSP BUTTONS ----------------------------------
+$semi-transp-buttons-background-color:  rgba(31, 200, 212, 0.65);
+$semi-transp-buttons-color: white;
+$semi-stransp-buttons-border: none;
+// $semi-transp-buttons-shadow: ;
+// $semi-transp-buttons-font: ;
 // $semi-transp-buttons-font-size: 16px;
-// $semi-transp-buttons-font-weigth: 600;
+$semi-transp-buttons-font-weigth: 600;
 
-// // TRANSPARENT BUTTONS 
-// $transp-buttons-background-color: rgb(31, 199, 212);
-// $transp-buttons-color: white;
-// // $transp-buttons-shadow: ;
-// // $transp-buttons-font: ;
-// $transp-buttons-font-size: 16px;
-// $transp-buttons-font-weigth: 600;
-
-// // FAKE-SWITCH BUTTONS 
-// $transp-buttons-background-color: rgb(31, 199, 212);
-// $transp-buttons-color: white;
-// // $transp-buttons-shadow: ;
-// // $transp-buttons-font: ;
-// $transp-buttons-font-size: 16px;
-// $transp-buttons-font-weigth: 600;
+// BUTTON CONVERTER - Transparent ----------------------------------
+$transp-converter-buttons-background-color: transparent;
+$transp-converter-buttons-color:rgb(31, 199, 212);
+$transp-converter-buttons-border: none;
+// $stransp-converter-buttons-shadow: ;
+// $transp-converter-buttons-font: ;
+$transp-converter-buttons-font-size: 16px;
+// $transp-converter-buttons-font-weigth: ;
 
 
+/* Bottoni nel div-SWAP(a sinistra)-- */
+/* --bottone in alto a sinistra sbarrato----------------- */
 
-// // SWITCH-BIG BUTTONS 
-// $transp-buttons-background-color: rgb(31, 199, 212);
-// $transp-buttons-color: white;
-// // $transp-buttons-shadow: ;
-// // $transp-buttons-font: ;
-// $transp-buttons-font-size: 16px;
-// $transp-buttons-font-weigth: 600;
+// WON GRAPH BUTTON--------------------------------
+$won-graph-buttons-background-color:  transparent;
+$won-graph-buttons-color: rgb(184, 173, 210);
+$won-graph-buttons-border: none;
+// $won-graph-buttons-shadow: ;
+// $won-graph-buttons-font: ;
+// $won-graph-buttons-font-size: ;
+// $won-graph-buttons-font-weigth: ;
+
+
+/* blocco bottoni nel div Swap--------------------------------------------*/
+// DIV CON I 3 BOTTONI in alto a destra [〇〇〇]
+//Swap-box buttons
+
+$sw-buttons-background-color:  transparent;
+$sw-buttons-color: rgb(184, 173, 210);
+$sw-buttons-border: none;
+// $sw-buttons-shadow: ;
+// $sw-buttons-font: ;
+// $sw-buttons-font-size: ;
+// $sw-buttons-font-weigth: ;
+
+
+/* --Bottoni scelta valute BNB, CAKE, etc------------------------------------------------- */
+//CURRENCY BUTTON   <button>
+
+$currency-buttons-background-color: transparent;
+// $currency-buttons-color: ;
+$currency-buttons-border: none;
+// $currency-buttons-shadow: ;
+// $currency-buttons-font: ;
+$currency-buttons-font-size: 16px;
+$currency-buttons-font-weigth: 600;
+
+// -- -- -- -- -- -- -- -- -- 
+
+//Currency-button Box   <div>
+// $currency-buttons-box-background-color:;
+$currency-buttons-box-color: white;
+// 
+// $currency-buttons-box-shadow: ;
+// $currency-buttons-box-font: ;
+// $currency-buttons-box-font-size: ;
+// $currency-buttons-box-font-weigth: ;
+
+
+// // CONVERTER BUTTON (rotondo semi trasparente)-------------- 
+$converter-smt-buttons-background-color: rgb(55, 47, 71);
+$converter-smt-buttons-color: rgb(31, 199, 212);
+$converter-smt-buttons-border:none;
+$converter-smt-buttons-shadow: rgb(0 0 0 / 10%) 0px -2px 0px inset;
+// $converter-smt-buttons-font: ;
+// $converter-smt-buttons-font-size: ;
+// $converter-smt-buttons-font-weigth: ;
+
+
+// // LIMIT MARKET - BUTTON ---------------------------------------
+$lmm-buttons-background-color:transparent;
+$lmm-buttons-color: rgb(102, 97, 113);
+$lmm-buttons-border: 1px solid rgb(102, 97, 113);
+$lmm-buttons-shadow: rgb(0 0 0 / 10%) 0px -2px 0px inset;
+// $lmm-buttons-font: ;
+$lmm-buttons-font-size: 12px;
+// $lmm-buttons-font-weigth: ;
+
+
+// // FAKE SWITCH - BUTTON BOX <div> ---------------------------------------
+$fake-switch-buttons-box-background-color:  rgb(55, 47, 71);
+// $fake-switch-buttons-box-color: ;
+$fake-switch-buttons-box-border: 1px solid rgb(38, 33, 48);
+// $fake-switch-buttons-box-shadow: ;
+// $fake-switch-buttons-box-font: ;
+$fake-switch-buttons-box-font-size: 16px;
+$fake-switch-buttons-box-font-weigth: 600;
+// -- -- -- -- -- -- -- -- -- -- -- -- 
+// // FAKE SWITCH - BUTTON <button> ---------------------------------------
+$fake-switch-buttons-background-color:  rgb(184, 173, 210);
+$fake-switch-buttons-color: none;
+$fake-switch-buttons-border: 1px solid rgb(38, 33, 48);
+// $fake-switch-buttons-shadow: ;
+// $fake-switch-buttons-font: ;
+// $fake-switch-buttons-font-size: ;
+$fake-switch-buttons-font-weigth: 600;
+// -- -- -- -- -- -- -- -- -- -- -- -- 
+// // FAKE SWITCH - Link BUTTON <a> ---------------------------------------
+$fake-switch-buttons-background-color-a:   rgb(184, 173, 210);
+// $fake-switch-buttons-color-a: ;
+// $fake-switch-buttons-border-a: ;
+// $fake-switch-buttons-shadow-a: ;
+// $fake-switch-buttons-font-a: ;
+$fake-switch-buttons-font-size-a: 16px;
+$fake-switch-buttons-font-weigth-a: 600;
+
+
+// BOTTONI PER VISUALIZZAZIONE a GRIGLIA o a LISTA-------------------------
+
+// BUTTON GRID view <button>-----------
+$grid-buttons-background-color: transparent;
+$grid-buttons-svg-fill: rgb(102, 97, 113);
+// $grid-buttons-color: ;
+$grid-buttons-border: none;
+// $grid-buttons-shadow: ;
+// $grid-buttons-font: ;
+// $grid-buttons-font-size: ;
+// $grid-buttons-font-weigth: ;
+
+// BUTTON LIST view <button>-----------
+$list-buttons-background-color: rgb(31, 199, 212);
+$list-buttons-border: none;
+
+// -- -- -- -- -- -- -- -- 
+/* BUTTON SWITCH SMALL  --   >>>BSS<<<    Check-Box - Staked Only - (ON/OFF Button)-------------- */
+// Main Box switch small-------(.main-box-button-switch-small)
+$bss-mainb-buttons-background-color: transparent;
+
+//Sub Main Box  switch small-----(.box-button-switch-small)
+$bss-sub-mainb-buttons-background-color: rgb(55, 47, 71);
+
+//Sub Main Box  switch small-----(.on-off-dot)
+$bss-on-off-dot-buttons-background-color: rgb(39, 38, 44);
+
+// Button Switch Small :HOVER Variables-----------------------------------
+//  Hover sul pallino--------(.box-button-switch-small:hover>.on-off-dot)
+$hover-bss-on-off-dot-btn-border: 1px solid rgb(172, 34, 172);
+
+// Button Switch Small :ACTIVE Variables-----------------------------------
+//Active nel contenitore del pallino-----(.box-button-switch-small:active)
+$active-bss-sub-mainb-buttons-background-color:  rgb(31, 199, 212);
+
+// -- -- -- -- -- -- -- -- -- -- 
+
+//TESTO del bottone switch
+$text-box-bss-button-color: white;
+
+
+//Box BUTTON SWITCH BIG >>>BSB<<<--------------------------------------
+$bbsb-box-button-background-color: rgb(55, 47, 71);
+$bbsb-box-buttons-border: 1px solid rgb(38, 33, 48);
+$bbsb-box-buttons-font-size: 16px;
+$bbsb-box-buttons-font-weigth: 600;
+// -- -- -- -- -- -- -- -- -- -- -- 
+//Button SWITCH BIG >>>BSB<<<
+$bsb-box-button-background-color: rgb(184, 173, 210);
+$bsb-box-button-color:  rgb(39, 38, 44);
+$bsb-box-buttons-border: none;
+// -- -- -- -- -- -- -- -- -- -- -- 
+//Link1 SWITCH BIG >>>BSB<<<
+$lsb1-box-button-color:  rgb(39, 38, 44);
+$lsb1-box-buttons-font-size: 16px;
+$lsb1-box-buttons-font-weigth: 600;
+// -- -- -- -- -- -- -- -- -- -- -- 
+//Link2 SWITCH BIG >>>BSB<<<
+$lsb2-box-button-color:  rgb(184, 173, 210);
+
+/* BOTTONE SEMI TRASPARENTE-2 (scuro) --- (HARVEST)------------------------------
+che appare nella sezione che esce dopo che si clicca su una sezione della griglia/lista in Trade → Farm---- */
+// SEMI-TRANSP BUTTONS 2 "Dark" ----------------------------------
+$semi-transp2-buttons-background-color: rgb(60, 55, 66);
+$semi-transp2-buttons-color: rgb(102, 97, 113);
+$semi-stransp2-buttons-border: 1px solid rgb(60, 55, 66);
+$semi-transp2-buttons-font-size: 16px;
+$semi-transp2-buttons-font-weigth: 600;
+
+
+/* ----Farm → POOLS---- */
+
+// Bottone per tornare in alto, all inizio della lista (.to-top-button)--------------------
+$tt-button-background-color: transparent;
+$tt-buttons-background-color: rgb(31, 199, 212);
+$tt-buttons-font-size: 16px;
+$tt-buttons-font-weigth: 600;
+
+/*WIN ..............................................*/
+// ----WIN → TRADING COMPETITION-------------
+
+//--BOTTONI ETICHETTE(.label-button) ----------------------------
+$label-button-background-color:  rgb(56, 50, 65);
+$label-buttons-color:  rgb(184, 173, 210);
+$label-buttons-border: none;
+// -- -- -- -- -- -- -- -- -- -- -- -- -- --
+// label iniziale di sinistra
+$i-label-button-background-color:  rgb(56, 50, 65);
+$i-label-buttons-color:  rgb(184, 173, 210);
+
+
+//BOTTONE DROPDOWN DETAILS TRASPARENTE-----------------------------
+$transp-dropdown-buttons-color: rgb(31, 199, 212);
+$transp-dropdown-buttons-font-size: 16px;
+$transp-dropdown-buttons-font-weigth: 600;
+
+
+/* ----WIN → PREDICTION (BETA)---- */
+/*ETICHETTE Sovrapposte*/
+
+// DA RIVEDERE
+// DA RIVEDERE
+// DA RIVEDERE
+// DA RIVEDERE
+// DA RIVEDERE
+// DA RIVEDERE
+// DA RIVEDERE
+// DA RIVEDERE
+// DA RIVEDERE
+// DA RIVEDERE
+// DA RIVEDERE
 
 
 
-// // SWITCH-SMALL BUTTONS 
-// $transp-buttons-background-color: rgb(31, 199, 212);
-// $transp-buttons-color: white;
-// // $transp-buttons-shadow: ;
-// // $transp-buttons-font: ;
-// $transp-buttons-font-size: 16px;
-// $transp-buttons-font-weigth: 600;
+
+
+/* ----WIN → LOTTERY---- */
+
+//TICKET BUTTON--------------------------------------------
+$ticket-buttons-background-color: linear-gradient(#7645d9 0%, rgb(69, 42, 122) 100%);
+$ticket-buttons-color: white;
+$ticket-buttons-border: none;
+$ticket-buttons-font-size: 16px;
+$ticket-buttons-font-weigth: 600;
+
 
 
 

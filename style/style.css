@@ -1,4 +1,18 @@
 @charset "UTF-8";
+@import url(https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,900;1,800;1,900&display=swap);
+/* Bottoni nel div-SWAP(a sinistra)-- */
+/* --bottone in alto a sinistra sbarrato----------------- */
+/* blocco bottoni nel div Swap--------------------------------------------*/
+/* --Bottoni scelta valute BNB, CAKE, etc------------------------------------------------- */
+/* BUTTON SWITCH SMALL  --   >>>BSS<<<    Check-Box - Staked Only - (ON/OFF Button)-------------- */
+/* BOTTONE SEMI TRASPARENTE-2 (scuro) --- (HARVEST)------------------------------
+che appare nella sezione che esce dopo che si clicca su una sezione della griglia/lista in Trade → Farm---- */
+/* ----Farm → POOLS---- */
+/*WIN ..............................................*/
+/* ----WIN → PREDICTION (BETA)---- */
+/*ETICHETTE Sovrapposte*/
+/* ----WIN → LOTTERY---- */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -28,6 +42,7 @@ body {
   padding: 50px;
 }
 
+
 button {
   font-size: 16px;
   padding: 0 24px;
@@ -40,26 +55,34 @@ button:hover {
 }
 
 /* -------BOTTONE VERDE ACQUA----------- */
-.button-aquagreen {
-  background-color: rgb(31, 199, 212);
-  border: none;
-  color: white;
-  height: 48px;
-  font-size: 16px;
-  font-weight: 600;
+.link-aquagreen {
+  text-decoration: none;
 }
-.button-aquagreen:active {
+.link-aquagreen .button-aquagreen {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(31, 199, 212); /* rgb(31, 199, 212)*/
+  border: none;
+  color: white; /* white*/
+  height: 48px;
+  font-size: 16px; /*16px*/
+  font-weight: 600; /*600*/
+}
+
+.link-aquagreen .button-aquagreen:active {
   transform: translateY(2px);
 }
 
 /* ------BOTTONE CON SOLO IN BORDO------- */
 .button-onlyborder {
-  background-color: transparent;
-  border: 2px solid rgb(31, 199, 212);
-  color: rgb(31, 199, 212);
-  height: 48px;
-  font-size: 16px;
-  font-weight: 600;
+  background-color: transparent; /*transparent*/
+  color: rgb(31, 199, 212); /* rgb(31, 199, 212)*/
+  border: 2px solid rgb(31, 199, 212); /* 2px solid  rgb(31, 199, 212)*/
+  height: 48px; /**/
+  font-size: 16px; /*16px*/
+  font-weight: 600; /*600*/
 }
 .button-onlyborder:active {
   transform: translateY(1px);
@@ -67,45 +90,44 @@ button:hover {
 
 /* ---BOTTONE HWMY DEL GRAFICO(Hour,Week,Month,Year)---------- */
 .div-hwmy {
-  background-color: rgb(53, 53, 71);
-  border: 1px solid rgb(82, 75, 99);
+  background-color: rgb(53, 53, 71); /*rgb(53, 53, 71)*/
+  border: 1px solid rgb(82, 75, 99); /*1px solid   rgb(82, 75, 99)*/
   border-radius: 16px;
   display: flex;
   flex-direction: row;
   width: auto;
 }
 .div-hwmy .button-hwmy {
-  background-color: transparent;
-  border: none;
-  color: white;
-  border: none;
+  background-color: rgb(53, 53, 71); /* transparent*/
+  color: white; /* white*/
+  border: none; /*none*/
   display: flex;
   justify-content: center;
   align-items: center;
   height: 32px;
-  font-weight: 600;
+  font-weight: 600; /*600*/
 }
 .div-hwmy .button-hwmy:active {
   transform: translateY(2px);
 }
 .div-hwmy .button-hwmy:first-child {
-  background-color: rgb(31, 199, 212);
+  background-color: rgb(31, 199, 212); /**/
 }
 
 .button-1W, .button-1M, .button-1Y {
-  background-color: transparent;
-  color: white;
+  background-color: transparent; /**/
+  color: white; /**/
 }
 
 /* ---BOTTONE SEMI TRASPARENTE-------------------- */
 .button-semitransparent {
-  background-color: rgba(31, 200, 212, 0.65);
-  color: white;
-  border: none;
-  height: 32px;
-  font-weight: 600;
-  padding: 4px 8px;
-  border-radius: 6px;
+  background-color: rgba(31, 200, 212, 0.65); /*rgba(31, 200, 212, 0.65)*/
+  color: white; /*white*/
+  border: none; /*none*/
+  height: 32px; /**/
+  font-weight: 600; /*600*/
+  padding: 4px 8px; /**/
+  border-radius: 6px; /**/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,14 +135,14 @@ button:hover {
 
 /* --BOTTONE QUADRATO TRASPARENTE (per convertire , ampliare, etc..)--------- */
 .button-converter {
-  background-color: transparent;
-  color: rgb(31, 199, 212);
-  border: none;
-  width: 48px;
+  background-color: transparent; /* transparent*/
+  color: rgb(31, 199, 212); /*rgb(31, 199, 212)*/
+  border: none; /*none*/
+  width: 48px; /**/
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
+  font-size: 16px; /*16px*/
 }
 .button-converter:active {
   transform: translateY(2px);
@@ -129,11 +151,11 @@ button:hover {
 /* Bottoni nel div-SWAP(a sinistra)-- */
 /* --bottone in alto a sinistra sbarrato----------------- */
 .button-won-graph {
-  background-color: transparent;
-  color: rgb(184, 173, 210);
-  border: none;
-  text-decoration: line-through;
-  width: 32px;
+  background-color: transparent; /* transparent*/
+  color: rgb(184, 173, 210); /*rgb(184, 173, 210)*/
+  border: none; /**/
+  text-decoration: line-through; /**/
+  width: 32px; /**/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -157,15 +179,15 @@ button:hover {
   background-color: transparent;
 }
 .swap-box-3b .button-sb1, .swap-box-3b .button-sb2, .swap-box-3b .button-sb3 {
-  background-color: transparent;
-  color: rgb(184, 173, 210);
-  border: none;
-  border-radius: 50%;
-  padding: 0 17px;
+  background-color: transparent; /*transparent*/
+  color: rgb(184, 173, 210); /* rgb(184, 173, 210)*/
+  border: none; /*none*/
+  border-radius: 50%; /**/
+  padding: 0 17px; /**/
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 32px;
+  width: 32px; /**/
   height: 32px;
   padding: 0;
 }
@@ -178,12 +200,12 @@ button:hover {
 
 /* --Bottoni scelta valute BNB, CAKE, etc------------------------------------------------- */
 .currency-btn {
-  background-color: transparent;
-  font-size: 16px;
-  font-weight: 600;
+  background-color: transparent; /*transparent*/
+  font-size: 16px; /*16px*/
+  font-weight: 600; /*600*/
   height: 32px;
   padding: 0 0.5rem;
-  border: none;
+  border: none; /*none*/
 }
 .currency-btn:hover {
   opacity: 0.65;
@@ -198,15 +220,15 @@ button:hover {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: white; /*white*/
 }
 
 /* --Bottone rotondo semi-trasparente per convertire----- */
 .button-converter-smt {
-  background-color: rgb(55, 47, 71);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px -2px 0px inset;
-  color: rgb(31, 199, 212);
-  border: none;
+  background-color: rgb(55, 47, 71); /*rgb(55, 47, 71)*/
+  box-shadow: rgba(0, 0, 0, 0.1) 0px -2px 0px inset; /*rgb(0 0 0 / 10%) 0px -2px 0px inset*/
+  color: rgb(31, 199, 212); /*rgb(31, 199, 212)*/
+  border: none; /*none*/
   padding: 11px 14px;
   border-radius: 50%;
   display: flex;
@@ -214,30 +236,30 @@ button:hover {
   align-items: center;
 }
 .button-converter-smt:hover {
-  background-color: rgb(31, 199, 212);
-  color: rgb(255, 255, 255);
+  background-color: rgb(31, 199, 212); /**/
+  color: rgb(255, 255, 255); /**/
 }
 .button-converter-smt:active {
   transform: translateY(2px);
 }
 .button-converter-smt .hover-arrow {
-  display: none;
+  display: none; /**/
 }
 
 /* ---BOTTONI TRADE LIMIT - MARKET......................... */
 /* Bottone nel container LIMIT, il terzo, price market */
 .btn-limit-market {
-  background-color: transparent;
-  border: 1px solid rgb(102, 97, 113);
-  color: rgb(102, 97, 113);
+  background-color: transparent; /*transparent*/
+  color: rgb(102, 97, 113); /*rgb(102, 97, 113)*/
+  border: 1px solid rgb(102, 97, 113); /* 1px solid rgb(102, 97, 113)*/
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
   height: 20px;
   cursor: not-allowed;
-  font-weight: 600;
-  font-size: 12px;
+  font-weight: 600; /**/
+  font-size: 12px; /*12px*/
 }
 .btn-limit-market > svg {
   margin-right: 0.5rem;
@@ -248,34 +270,34 @@ che si trova sotto al div Limit = V2 e V1(old)
 「 presente con un effetto diverso anche nella pagina: Earn → Farms.
 (Questo non ha l effetto switch--- */
 .box-button-fake-switch-big {
-  background-color: rgb(55, 47, 71);
-  border: 1px solid rgb(38, 33, 48);
-  border-radius: 16px;
+  background-color: rgb(55, 47, 71); /* rgb(55, 47, 71)*/
+  border: 1px solid rgb(38, 33, 48); /*1px solid rgb(38, 33, 48)*/
+  border-radius: 16px; /**/
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 16px; /*16px*/
+  font-weight: 600; /*600*/
   padding: 0.2px;
 }
 .box-button-fake-switch-big .button-fake-switch-big {
-  background-color: rgb(184, 173, 210);
-  color: rgb(39, 38, 44);
-  border: none;
+  background-color: rgb(184, 173, 210); /*rgb(184, 173, 210)*/
+  color: none; /*rgb(39, 38, 44)*/
+  border: none; /*none*/
   padding: 0 16px;
-  font-weight: 600;
+  font-weight: 600; /*600*/
   height: 32px;
 }
 .box-button-fake-switch-big .button-fake-switch-big:active {
   transform: translateY(2px);
 }
 .box-button-fake-switch-big .link-fake-switch-big {
-  text-decoration: none;
-  color: rgb(184, 173, 210);
+  text-decoration: none; /**/
+  color: rgb(184, 173, 210); /* rgb(184, 173, 210)*/
   padding: 0 16px;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 16px; /*16px*/
+  font-weight: 600; /*600*/
 }
 .box-button-fake-switch-big .link-fake-switch-big:hover {
   opacity: 0.65;
@@ -291,9 +313,9 @@ che si trova sotto al div Limit = V2 e V1(old)
   align-items: center;
 }
 .box-buttons-grid-list .btn-grid-view {
-  background-color: transparent;
-  fill: rgb(102, 97, 113);
-  border: none;
+  background-color: transparent; /*transparent*/
+  fill: rgb(102, 97, 113); /* rgb(102, 97, 113)*/
+  border: none; /*none*/
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -307,8 +329,8 @@ che si trova sotto al div Limit = V2 e V1(old)
 }
 .box-buttons-grid-list .btn-list-view {
   background-color: transparent;
-  fill: rgb(31, 199, 212); /*cambiare il colore nell svg nell HTML*/
-  border: none;
+  fill: rgb(31, 199, 212); /*rgb(31, 199, 212)*/ /*cambiare il colore nell svg nell HTML*/
+  border: none; /*none*/
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -323,7 +345,7 @@ che si trova sotto al div Limit = V2 e V1(old)
 
 /* BUTTON SWITCH SMALL  -- Check-Box - Staked Only - (ON/OFF Button) */
 .main-box-button-switch-small {
-  background-color: transparent;
+  background-color: transparent; /*transparent*/
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -334,7 +356,7 @@ che si trova sotto al div Limit = V2 e V1(old)
   /* ---HOVER----- */
 }
 .main-box-button-switch-small .box-button-switch-small {
-  background-color: rgb(55, 47, 71);
+  background-color: rgb(55, 47, 71); /*rgb(55, 47, 71)*/
   padding: 2px;
   display: flex;
   flex-direction: row;
@@ -349,7 +371,7 @@ che si trova sotto al div Limit = V2 e V1(old)
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(39, 38, 44);
+  background-color: rgb(39, 38, 44); /*rgb(39, 38, 44)*/
   border-radius: 50%;
   contain: content;
   height: 100%;
@@ -360,52 +382,44 @@ che si trova sotto al div Limit = V2 e V1(old)
   position: absolute;
 }
 .main-box-button-switch-small .box-button-switch-small:hover > .on-off-dot {
-  border: 1px solid rgb(172, 34, 172);
-  box-shadow: 0px 0px 0px 3px rgba(211, 108, 211, 0.4);
+  border: 1px solid rgb(172, 34, 172); /* 1px solid rgb(172, 34, 172)*/
+  box-shadow: 0px 0px 0px 3px rgba(211, 108, 211, 0.4); /**/
 }
 .main-box-button-switch-small .box-button-switch-small:hover > .on-off-dot {
-  border: 1px solid rgb(172, 34, 172);
-  box-shadow: 0px 0px 0px 3px rgba(211, 108, 211, 0.4);
+  border: 1px solid rgb(172, 34, 172); /*1px solid rgb(172, 34, 172)*/
+  box-shadow: 0px 0px 0px 3px rgba(211, 108, 211, 0.4); /**/
 }
 .main-box-button-switch-small .box-button-switch-small:active {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  background-color: rgb(31, 199, 212);
-}
-.main-box-button-switch-small .box-button-switch-small:focus .on-off-dot {
-  border: 1px solid rgb(172, 34, 172);
-  box-shadow: 0px 0px 0px 3px rgba(211, 108, 211, 0.4);
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: rgb(31, 199, 212);
+  background-color: rgb(31, 199, 212); /*rgb(31, 199, 212)*/
+
 }
 .main-box-button-switch-small .box-button-switch-small-text {
-  color: white;
+  color: white; /*white*/
   margin: 0 0 0 8px;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 16px; /**/
+  font-weight: 600; /**/
 }
 
 /* -- BOTTONE SWITCH BIG --- con effetto switch originale-- */
 .box-button-switch-big {
-  background-color: rgb(55, 47, 71);
-  border: 1px solid rgb(38, 33, 48);
+  background-color: rgb(55, 47, 71); /*rgb(55, 47, 71)*/
+  border: 1px solid rgb(38, 33, 48); /* 1px solid rgb(38, 33, 48)*/
   border-radius: 16px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 16px; /*16px*/
+  font-weight: 600; /*600*/
 }
 .box-button-switch-big .button-switch-big {
-  background-color: rgb(184, 173, 210);
-  color: rgb(39, 38, 44);
-  border: none;
+  background-color: rgb(184, 173, 210); /*rgb(184, 173, 210)*/
+  color: rgb(39, 38, 44); /* rgb(39, 38, 44)*/
+  border: none; /*none*/
   padding: 0 16px;
   height: 32px;
 }
@@ -414,10 +428,10 @@ che si trova sotto al div Limit = V2 e V1(old)
 }
 .box-button-switch-big .link-switch-big {
   text-decoration: none;
-  color: rgb(39, 38, 44);
+  color: rgb(39, 38, 44); /*rgb(39, 38, 44)*/
   padding: 0 12px;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 16px; /*16px*/
+  font-weight: 600; /*600*/
 }
 .box-button-switch-big .link-switch-big:hover {
   opacity: 0.65;
@@ -426,19 +440,19 @@ che si trova sotto al div Limit = V2 e V1(old)
   transform: translateY(2px);
 }
 .box-button-switch-big .lsb2 {
-  color: rgb(184, 173, 210);
+  color: rgb(184, 173, 210); /*rgb(184, 173, 210)*/
 }
 
 /* BOTTONE SEMI TRASPARENTE-2 --- (HARVEST)
 che appare nella sezione che esce dopo che si clicca su una sezione della griglia/lista in Trade → Farm---- */
 .button-semi-trasp-dark {
-  background-color: rgb(60, 55, 66);
-  border: 1px solid rgb(60, 55, 66);
-  color: rgb(102, 97, 113);
+  background-color: rgb(60, 55, 66); /*rgb(60, 55, 66)*/
+  border: 1px solid rgb(60, 55, 66); /*1px solid rgb(60, 55, 66)*/
+  color: rgb(102, 97, 113); /*rgb(102, 97, 113)*/
   cursor: not-allowed;
   height: 48px;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 16px; /*16px*/
+  font-weight: 600; /*600*/
 }
 .button-semi-trasp-dark:hover {
   opacity: initial;
@@ -447,18 +461,18 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* ----Farm → POOLS---- */
 /* --Bottone per tornare in alto, all inizio della lista ------------------------- */
 .to-top-button {
-  background-color: transparent;
-  color: rgb(31, 199, 212);
+  background-color: transparent; /*transparent*/
+  color: rgb(31, 199, 212); /*rgb(31, 199, 212)*/
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 16px; /*16px*/
+  font-weight: 600; /*600*/
   letter-spacing: 0.05rem;
   height: 48px;
   padding: 0 24px;
-  border: none;
+  border: none; /**/
 }
 .to-top-button:hover {
   opacity: 0.65;
@@ -468,9 +482,9 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* ----WIN → TRADING COMPETITION---- */
 /*--BOTTONI ETICHETTE -------*/
 .button-label {
-  background-color: rgb(56, 50, 65);
-  color: rgb(184, 173, 210);
-  border: none;
+  background-color: rgb(56, 50, 65); /*rgb(56, 50, 65)*/
+  color: rgb(184, 173, 210); /* rgb(184, 173, 210)*/
+  border: none; /*none*/
   border-radius: 16px 16px 0 0;
   padding: 8px;
 }
@@ -479,19 +493,19 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 
 .initial-btn-lbl {
-  background-color: rgb(184, 173, 210);
-  color: rgb(39, 38, 44);
+  background-color: rgb(56, 50, 65); /*rgb(184, 173, 210)*/
+  color: rgb(184, 173, 210); /* rgb(39, 38, 44)*/
 }
 
 /*BOTTONE DROPDOWN DETAILS TRASPARENTE*/
 .button-dropdown-trsp {
-  color: rgb(31, 199, 212);
-  font-size: 16px;
-  font-weight: 600;
+  color: rgb(31, 199, 212); /*rgb(31, 199, 212)*/
+  font-size: 16px; /*16px*/
+  font-weight: 600; /*600*/
   padding: 0 24px;
   height: 48px;
-  background-color: transparent;
-  border: none;
+  background-color: transparent; /**/
+  border: none; /**/
 }
 .button-dropdown-trsp:hover {
   opacity: 0.65;
@@ -515,15 +529,15 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   position: relative;
 }
 .box-labels-overlap .button-label-overlap {
-  background-color: rgb(39, 38, 44);
+  background-color: rgb(39, 38, 44); /**/
   display: flex;
   justify-content: flex-start;
   align-items: center;
   border-radius: 24px 24px 0 0;
   height: 48px;
-  color: white;
-  font-size: 16px;
-  font-weight: 600;
+  color: white; /**/
+  font-size: 16px; /**/
+  font-weight: 600; /**/
 }
 .box-labels-overlap .button-label-overlap:first-child {
   z-index: 1;
@@ -544,27 +558,28 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   position: absolute;
   z-index: 0;
   margin-left: 100px;
-  background-color: rgb(55, 47, 71);
+  background-color: rgb(55, 47, 71); /**/
   opacity: 0.65;
 }
 
 /* ----WIN → LOTTERY---- */
 .ticket-button {
-  background: linear-gradient(#7645d9 0%, rgb(69, 42, 122) 100%);
-  border: none;
-  color: white;
+  background: linear-gradient(#7645d9 0%, rgb(69, 42, 122) 100%); /*linear-gradient(#7645d9 0%, rgb(69, 42, 122) 100%)*/
+  border: none; /*none*/
+  color: white; /*white*/
   letter-spacing: 0.05rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 16px; /*16px*/
+  font-weight: 600; /*600*/
   height: 48px;
   width: 240px;
 }
 
 /* text color + "need help" */
+/* Inseriti da Clara, da rivedere: */
 /* text input color */
 /* Text color gradient */
 /* cards background color */
@@ -572,6 +587,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* nav bar color */
 /* website background color */
 /* text input color */
+
 .mobile-icon {
   display: none;
 }
@@ -673,3 +689,741 @@ nav ul li ul li.line-dd {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* -------MAIN BUTTON(aquagreen)----------- */
+.win-prizes {
+  background: linear-gradient(rgb(11, 69, 118) 0%, rgb(9, 17, 21) 100%);
+  height: 800px;
+  width: 100%;
+  padding: 48px 0;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 1024px) and (max-width: 1247px) {
+  .win-prizes .floating-balls {
+    position: absolute;
+    z-index: 1;
+    right: 0px;
+    top: -60px;
+    height: 512px;
+    width: 512px;
+  }
+  .win-prizes .floating-balls img {
+    z-index: 2;
+    position: absolute;
+    height: 100%;
+    width: auto;
+  }
+  .win-prizes .floating-cards {
+    position: absolute;
+    z-index: 1;
+    height: 512px;
+    width: 512px;
+    bottom: -80px;
+    left: 0px;
+  }
+  .win-prizes .floating-cards img {
+    z-index: 2;
+    position: absolute;
+    height: 100%;
+    width: auto;
+  }
+  .win-prizes .floating-cards #card-bottom-left {
+    z-index: -1;
+  }
+  .win-prizes .prizes-wrapper {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 90%;
+    background-color: rgba(8, 6, 11, 0.6);
+    -webkit-backdrop-filter: blur(12px);
+    -moz-backdrop-filter: blur(12px);
+    -o-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    border-radius: 72px;
+    padding: 40px;
+  }
+  .win-prizes .prizes-wrapper h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  .win-prizes .prizes-wrapper h2 span {
+    color: rgb(154, 106, 255);
+  }
+  .win-prizes .prizes-wrapper p {
+    color: rgb(184, 173, 210);
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 16px;
+    margin: 0;
+  }
+  .win-prizes .prizes-wrapper p.last {
+    margin-bottom: 40px;
+  }
+  .win-prizes .prizes-wrapper .card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .win-prizes .prizes-wrapper .card-container .card {
+    margin: 0 10px;
+    width: 30%;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  .win-prizes .prizes-wrapper .card-container .card .card-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .win-prizes .prizes-wrapper .card-container .card h3 {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .win-prizes .prizes-wrapper .card-container .card h2 {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .win-prizes .prizes-wrapper .card-container .card p {
+    font-size: 12px;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .win-prizes .prizes-wrapper .card-container .card-lottery {
+    background-color: rgb(255, 178, 55);
+  }
+  .win-prizes .prizes-wrapper .card-container .card-lottery h3 {
+    color: rgb(40, 13, 95);
+  }
+  .win-prizes .prizes-wrapper .card-container .card-lottery h2 {
+    color: rgb(40, 13, 95);
+  }
+  .win-prizes .prizes-wrapper .card-container .card-lottery p {
+    color: rgb(40, 13, 95);
+  }
+  .win-prizes .prizes-wrapper .card-container .card-prediction {
+    background-color: rgb(154, 106, 255);
+  }
+  .win-prizes .prizes-wrapper .card-container .card-prediction h3 {
+    color: white;
+  }
+  .win-prizes .prizes-wrapper .card-container .card-prediction h2 {
+    color: rgb(255, 178, 55);
+  }
+  .win-prizes .prizes-wrapper .card-container .card-prediction p {
+    color: white;
+  }
+}
+
+/* text color + "need help" */
+/* Inseriti da Clara, da rivedere: */
+/* text input color */
+/* Text color gradient */
+/* cards background color */
+/* text color  */
+/* nav bar color */
+/* website background color */
+/* text input color */
+/* -------MAIN BUTTON(aquagreen)----------- */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background: #000000;
+  color: purple;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: #c3b4ce;
+  border: none;
+}
+
+.fb-floating-bunny {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  padding-top: 400px;
+  width: 100%;
+  height: 1000px;
+  background: linear-gradient(180deg, rgb(22, 9, 49) 0%, rgb(22, 9, 49) 47%, rgb(19, 8, 43) 65%, rgb(11, 5, 25) 100%, rgb(0, 0, 0) 100%);
+}
+.fb-floating-bunny .fb-wrapper {
+  color: #9A6AFF;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.fb-floating-bunny .fb-wrapper .fb-contents-section {
+  text-align: left;
+  width: 50%;
+  padding-left: 60px;
+}
+.fb-floating-bunny .fb-wrapper .fb-contents-section h2 {
+  padding-top: 20px;
+  font-size: 65px;
+  font-weight: 100;
+  line-height: 1.1;
+}
+.fb-floating-bunny .fb-wrapper .fb-contents-section h3 {
+  color: aliceblue;
+  font-size: 18px;
+  padding-top: 20px;
+}
+.fb-floating-bunny .fb-wrapper .fb-contents-section .link-aquagreen {
+  text-decoration: none;
+}
+.fb-floating-bunny .fb-wrapper .fb-img-section {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingbunny {
+  margin-right: 10%;
+  margin-top: 10%;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingbunny img {
+  z-index: 3;
+  height: 580px;
+  width: auto;
+}
+.fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingstars {
+  position: absolute;
+  margin-right: 10%;
+  height: 512px;
+  width: 512px;
+}
+.fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingstars .fb-star1 img {
+  -webkit-animation-name: fade-out;
+          animation-name: fade-out;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingstars .fb-star2 img {
+  -webkit-animation-name: fade-out;
+          animation-name: fade-out;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingstars .fb-star3 img {
+  -webkit-animation-name: fade-out;
+          animation-name: fade-out;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingstars img {
+  position: absolute;
+  height: 100%;
+  width: auto;
+}
+.fb-floating-bunny .fb-bottomgradient {
+  position: relative;
+  margin-bottom: 0;
+  bottom: 180px;
+  width: 100%;
+}
+.fb-floating-bunny .fb-bottomgradient svg {
+  z-index: 1;
+}
+
+/* text color + "need help" */
+/* Inseriti da Clara, da rivedere: */
+/* text input color */
+/* Text color gradient */
+/* cards background color */
+/* text color  */
+/* nav bar color */
+/* website background color */
+/* text input color */
+/* -------MAIN BUTTON(aquagreen)----------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.stat-section {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%);
+}
+.stat-section .wrapper-stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 24px;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+.stat-section .wrapper-stat svg {
+  margin: 0 0 24px;
+}
+.stat-section .wrapper-stat h2 {
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: rgb(244, 238, 255);
+}
+.stat-section .wrapper-stat h2:nth-child(3) {
+  margin-bottom: 32px;
+}
+.stat-section .wrapper-stat .description-stat-sec {
+  font-size: 16px;
+  color: rgb(184, 173, 210);
+}
+.stat-section .wrapper-stat .dst1 {
+  font-weight: 400;
+}
+.stat-section .wrapper-stat .dst2 {
+  vertical-align: baseline;
+  margin-bottom: 10px;
+}
+.stat-section .wrapper-stat .dst3 {
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+.stat-section .wrapper-stat .card-container-dst {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst {
+  background-color: rgb(56, 50, 65);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  border-radius: 24px;
+  margin-right: 16px;
+  position: relative;
+  border: 1px solid rgb(75, 59, 80);
+  border-bottom: 3px solid rgb(75, 59, 80);
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg {
+  align-self: flex-end;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg .cdsvg-color1 {
+  fill: rgb(154, 106, 255);
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg .cdsvg-color2 {
+  fill: rgb(49, 208, 170);
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg .cdsvg-color3 {
+  fill: rgb(237, 75, 158);
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title {
+  text-align: left;
+  margin-top: 64px;
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title h2 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdta {
+  color: rgb(244, 238, 255);
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb {
+  margin-bottom: 24px;
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb1 {
+  color: rgb(154, 106, 255);
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb2 {
+  color: rgb(49, 208, 170);
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb3 {
+  color: rgb(237, 75, 158);
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .card-dist-last-text {
+  color: rgb(184, 173, 210);
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 16px;
+}
+.stat-section .svg-transition-color-box {
+  background-color: black;
+}
+.stat-section .svg-transition-color-box .svg-transition-color {
+  fill: rgb(30, 17, 50);
+  width: 100%;
+  height: 100%;
+  max-height: 48px;
+}
+
+/* text color + "need help" */
+/* Inseriti da Clara, da rivedere: */
+/* text input color */
+/* Text color gradient */
+/* cards background color */
+/* text color  */
+/* nav bar color */
+/* website background color */
+/* text input color */
+/* -------MAIN BUTTON(aquagreen)----------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  width: 100%;
+  height: auto;
+}
+body .main-banner-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 80%;
+  background-color: rgba(0, 0, 255, 0.023);
+  position: relative;
+}
+body .main-banner-container .main-banner-sub-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
+  height: 220px;
+  width: 100%;
+  padding: 24px;
+  border-radius: 24px;
+  position: relative;
+}
+body .main-banner-container .main-banner-sub-container .main-banner-content-container {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(123, 202, 123, 0.199);
+  border: 1px solid chartreuse;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 1;
+}
+body .main-banner-container .main-banner-sub-container .main-banner-content-container .main-banner-title {
+  color: white;
+  font-family: Kanit, sans-serif;
+}
+body .main-banner-container .main-banner-sub-container .main-banner-content-container .mbt-a1 {
+  font-size: 24px;
+  background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0));
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text; /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
+  margin-bottom: 8px;
+}
+body .main-banner-container .main-banner-sub-container .main-banner-content-container .mbt-a2 {
+  font-size: 40px;
+  margin-bottom: 16px;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px;
+}
+body .main-banner-container .main-banner-sub-container .main-banner-content-container .main-banner-button-a {
+  color: black;
+  fill: black;
+}
+body .main-banner-container .main-banner-sub-container .swiper-slide {
+  background-color: transparent;
+  width: 100px;
+  height: 8px;
+  background-color: rgba(186, 235, 74, 0.174);
+  border-radius: 10px;
+  position: absolute;
+  bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  contain: content;
+}
+body .main-banner-container .main-banner-sub-container .swiper-slide .swiper {
+  width: 50%;
+  height: 8px;
+  background-color: white;
+}
+body .main-banner-container .main-banner-sub-container .swiper-slide .swpr-a {
+  visibility: initial;
+}
+body .main-banner-container .main-banner-sub-container .swiper-slide .swpr-b {
+  visibility: hidden;
+}
+body .main-banner-container .main-banner-sub-container .bunny-container-a {
+  width: 30%;
+  height: 121%;
+  background-color: rgba(5, 5, 2, 0.34);
+  position: absolute;
+  border-radius: 24px;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+body .main-banner-container .main-banner-sub-container .bunny-container-a img {
+  min-width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+
+.main-banner-sub-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
+  height: 220px;
+  width: 100%;
+  padding: 24px;
+  border-radius: 24px;
+  position: relative;
+}
+.main-banner-sub-container .main-banner-content-container {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(123, 202, 123, 0.199);
+  border: 1px solid chartreuse;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 1;
+  contain: content;
+}
+.main-banner-sub-container .main-banner-content-container .main-banner-title {
+  color: white;
+  font-family: Kanit, sans-serif;
+}
+.main-banner-sub-container .main-banner-content-container .mbt-b1 {
+  font-size: 24px;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 3px 3px;
+  margin-bottom: 8px;
+}
+.main-banner-sub-container .main-banner-content-container .mb-counter-lottery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 16px;
+  background: url(https://pancakeswap.finance/images/decorations/countdownBg.png) 0% 0%/100% 100%;
+  background-repeat: no-repeat;
+  padding: 0 7px 10px;
+}
+.main-banner-sub-container .main-banner-content-container .mb-counter-lottery .mbcl-item {
+  font-weight: 600;
+  line-height: 1.1;
+  background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0));
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.main-banner-sub-container .main-banner-content-container .mb-counter-lottery .mbcli-number {
+  font-size: 40px;
+  margin: 0px 4px -4px 0px;
+}
+.main-banner-sub-container .main-banner-content-container .mb-counter-lottery .mbcli-time {
+  font-size: 20px;
+  margin: 0px 12px 0px 0px;
+}
+.main-banner-sub-container .main-banner-content-container .main-banner-button-b {
+  color: black;
+  fill: black;
+}
+.main-banner-sub-container .swiper-slide {
+  background-color: transparent;
+  width: 100px;
+  height: 8px;
+  background-color: rgba(186, 235, 74, 0.174);
+  border-radius: 10px;
+  position: absolute;
+  bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  contain: content;
+}
+.main-banner-sub-container .swiper-slide .swiper {
+  width: 50%;
+  height: 8px;
+  background-color: white;
+}
+.main-banner-sub-container .swiper-slide .swpr-a {
+  visibility: initial;
+}
+.main-banner-sub-container .swiper-slide .swpr-b {
+  visibility: hidden;
+}
+.main-banner-sub-container .bunny-container-b {
+  width: 100%;
+  height: 120%;
+  background-color: rgba(5, 5, 2, 0.34);
+  position: absolute;
+  border-radius: 24px;
+  bottom: -2.5px;
+  right: 0px;
+  z-index: 0;
+}
+.main-banner-sub-container .bunny-container-b img {
+  min-width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+
+/* text color + "need help" */
+/* Inseriti da Clara, da rivedere: */
+/* text input color */
+/* Text color gradient */
+/* cards background color */
+/* text color  */
+/* nav bar color */
+/* website background color */
+/* text input color */
+/* -------MAIN BUTTON(aquagreen)----------- */
+@-webkit-keyframes float-NW {
+  0% {
+    transform: translatex(0px) translatey(0px);
+  }
+  50% {
+    transform: translatex(10px) translatey(10px);
+  }
+  100% {
+    transform: translatex(0px) translatey(0px);
+  }
+}
+@keyframes float-NW {
+  0% {
+    transform: translatex(0px) translatey(0px);
+  }
+  50% {
+    transform: translatex(10px) translatey(10px);
+  }
+  100% {
+    transform: translatex(0px) translatey(0px);
+  }
+}
+@-webkit-keyframes float-N {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes float-N {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: Kanit, serif;
+  font-size: initial;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blue-square {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+@media screen and (min-width: 1024px) and (max-width: 1247px) {
+  .blue-square {
+    height: 80px;
+    width: 80px;
+  }
+}/*# sourceMappingURL=style.css.map */
