@@ -232,84 +232,84 @@ body {
 //     position: relative;
 
 // // //  //  //  //  //  //  //  //  //  //  //  //  //  //  //  //  //  //  //  //  //  //  // //  //
-//         // .main-banner-content-container {
-//         //     width: 100%;
-//         //     height: 100%;
-//         //     background-color: rgba(123, 202, 123, 0.199);
-//         //     border: 1px solid chartreuse;
-//         //     @include flex(column);
-//         //     justify-content: center;
-//         //     align-items: flex-start;
-//         //     z-index: 1;
-//         //     contain: content;
+// .main-banner-content-container {
+//     width: 100%;
+//     height: 100%;
+//     background-color: rgba(123, 202, 123, 0.199);
+//     border: 1px solid chartreuse;
+//     @include flex(column);
+//     justify-content: center;
+//     align-items: flex-start;
+//     z-index: 1;
+//     contain: content;
 
 
 
-//         //         // .main-banner-title-b {
-//         //         //     color: white;
-//         //         //     font-family: Kanit, sans-serif
-//         //         // }
+// .main-banner-title-b {
+//     color: white;
+//     font-family: Kanit, sans-serif
+// }
 
-//         //         // .mbt-b1 {
-//         //         //     font-size: 24px;
-//         //         //     text-shadow: rgba(0, 0, 0,  0.35) 0px 3px 3px;
-//         //         //     margin-bottom: 8px
+// .mbt-b1 {
+//     font-size: 24px;
+//     text-shadow: rgba(0, 0, 0,  0.35) 0px 3px 3px;
+//     margin-bottom: 8px
 
-//         //         // }
-
-
-//         //         // .mb-counter-lottery {
-//         //         //     @include flex(row, center, flex-end);
-//         //         //     margin-bottom: 16px;
-//         //         //     background: url(https://pancakeswap.finance/images/decorations/countdownBg.png) 0% 0% / 100% 100%;
-//         //         //     background-repeat: no-repeat;
-//         //         //     padding: 0 7px 10px ;
-
-//         //         //         .mbcl-item {
-//         //         //             // border: 1px solid red;
-//         //         //             font-weight: 600;
-//         //         //             line-height: 1.1;
-//         //         //             background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0));
-//         //         //             -webkit-text-fill-color: transparent;
-//         //         //             background-clip: text;
-//         //         //             -webkit-background-clip: text;
-//         //         //             // -- -- -- -- -- -- --
+// }
 
 
-//         //         //         }
+// .mb-counter-lottery {
+//     @include flex(row, center, flex-end);
+//     margin-bottom: 16px;
+//     background: url(https://pancakeswap.finance/images/decorations/countdownBg.png) 0% 0% / 100% 100%;
+//     background-repeat: no-repeat;
+//     padding: 0 7px 10px ;
 
-//         //         //         .mbcli-number {
-//         //         //             // background-color: rgba(128, 255, 0, 0.485);
-//         //         //             font-size: 40px;
-//         //         //             margin: 0px 4px -4px 0px;
-
-//         //         //         }
-
-//         //         //         .mbcli-time {
-//         //         //             // background-color: rgba(235, 131, 211, 0.279);
-//         //         //             font-size: 20px;
-//         //         //             margin: 0px 12px 0px 0px;
-
-
-
-//         //         //         }
-//         //         // }
+//         .mbcl-item {
+//             // border: 1px solid red;
+//             font-weight: 600;
+//             line-height: 1.1;
+//             background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0));
+//             -webkit-text-fill-color: transparent;
+//             background-clip: text;
+//             -webkit-background-clip: text;
+//             // -- -- -- -- -- -- --
 
 
-//         //         .main-banner-button-b {
-//         //             color: black;
-//         //             fill: black;
+//         }
 
-//         //         }
-                
+//         .mbcli-number {
+//             // background-color: rgba(128, 255, 0, 0.485);
+//             font-size: 40px;
+//             margin: 0px 4px -4px 0px;
 
-              
-//         //     }
+//         }
 
-// // #####################
-//             // .banner-b, .bunny-container-b {
-//             // display: none !important;
-//             // }
+//         .mbcli-time {
+//             // background-color: rgba(235, 131, 211, 0.279);
+//             font-size: 20px;
+//             margin: 0px 12px 0px 0px;
+
+
+
+//         }
+// }
+
+
+//         .main-banner-button-b {
+//             color: black;
+//             fill: black;
+
+//         }
+
+
+
+//     }
+
+// #####################
+// .banner-b, .bunny-container-b {
+// display: none !important;
+// }
 
 //         .swiper-slide {
 //             background-color: transparent;
