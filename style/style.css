@@ -1159,6 +1159,275 @@ body .main-banner-container .main-banner-sub-container .bunny-container-b img {
 /* nav bar color */
 /* website background color */
 /* text input color */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  all: unset;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: linear-gradient(139.73deg, rgb(49, 61, 92) 0%, rgb(61, 42, 84) 100%);
+}
+body .main-section-currencty-converter {
+  margin-right: 200px;
+  height: 518px;
+  width: 25%;
+  padding: 0 40px;
+}
+body .main-section-currencty-converter .currency-converter {
+  background: rgb(39, 38, 44);
+  border: 1px solid rgba(62, 25, 25, 0.618);
+  width: 100%;
+  height: 100%; /*518px sul sito*/
+  border-radius: 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 60% 20%;
+}
+body .main-section-currencty-converter .currency-converter .cc-top-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}
+body .main-section-currencty-converter .currency-converter .cc-top-content .cct-title-box {
+  border: 1px solid red;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .main-section-currencty-converter .currency-converter .cc-top-content .cct-title-box svg {
+  fill: aliceblue;
+}
+body .main-section-currencty-converter .currency-converter .cc-top-content .cct-description {
+  border: 1px solid red;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .main-section-currencty-converter .currency-converter .cc-body-content {
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40% 10% 40% 10%;
+}
+body .main-section-currencty-converter .currency-converter .cc-body-content .currency-logo {
+  color: rgb(255, 255, 255);
+  background-color: cornflowerblue;
+  width: 100%;
+  text-align: left;
+}
+body .main-section-currencty-converter .currency-converter .cc-body-content .currency-a {
+  grid-row: 1/2;
+}
+body .main-section-currencty-converter .currency-converter .cc-body-content .cc-arrov-box {
+  grid-row: 2/3;
+  background-color: rgba(172, 255, 47, 0.218);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .main-section-currencty-converter .currency-converter .cc-body-content .currency-b {
+  grid-row: 3/4;
+}
+body .main-section-currencty-converter .currency-converter .cc-body-content .currency-x {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .main-section-currencty-converter .currency-converter .cc-body-content .currency-x .cc-input-box {
+  width: 100%;
+  height: 80%;
+  background-color: rgba(33, 231, 89, 0.249);
+  border-radius: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px 20px 10px;
+}
+body .main-section-currencty-converter .currency-converter .cc-body-content .currency-x .cc-input-box .cc-input {
+  width: 100%;
+  height: 24px;
+  direction: rtl;
+  border: none;
+  background-color: transparent;
+}
+body .main-section-currencty-converter .currency-converter .cc-body-content .currency-x .info-cc-box {
+  grid-row: 4/5;
+  background-color: rgba(172, 255, 47, 0.166);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+body .main-section-currencty-converter .currency-converter .cc-body-content .cc-foot-content {
+  background-color: rgba(255, 240, 255, 0.248);
+  border: 1px solid rgb(27, 241, 216);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(30, 21, 202);
+}
+body .bottom-section-container {
+  width: 100%;
+  height: 150px;
+  padding-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(240, 248, 255, 0.212);
+  text-align: center;
+}
+body .bottom-section-container .left-content {
+  width: 30%;
+  height: 80%;
+  color: aliceblue;
+  border: 1px solid white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgba(128, 255, 0, 0.371);
+}
+body .bottom-section-container .right-content {
+  width: 70%;
+  height: 80%;
+  color: aliceblue;
+  border: 1px solid white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgba(0, 255, 255, 0.271);
+}
+
+/* text color + "need help" */
+/* Inseriti da Clara, da rivedere: */
+/* text input color */
+/* Text color gradient */
+/* cards background color */
+/* text color  */
+/* nav bar color */
+/* website background color */
+/* text input color */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(33, 58, 219, 0.848);
+}
+body .ts-sub-nav-bar-main-container {
+  width: 100%;
+  height: 42px;
+  background-color: rgba(29, 28, 34, 0.856);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .ts-sub-nav-bar-main-container .ts-subsections-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 35%;
+}
+body .ts-sub-nav-bar-main-container .ts-subsections-nav .ts-tsp-corner {
+  height: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-right: 20px;
+}
+body .ts-sub-nav-bar-main-container .ts-subsections-nav .ts-tsp-corner .ts-title-sub-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+body .ts-sub-nav-bar-main-container .ts-subsections-nav .ts-tsp-corner .ts-title-sub-page:hover {
+  background-color: rgba(184, 173, 210, 0.2);
+}
+body .ts-sub-nav-bar-main-container .ts-subsections-nav .ts-tsp-corner .ts-title-sub-page a {
+  color: rgb(184, 173, 210);
+  font-family: Kanit, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+body .ts-sub-nav-bar-main-container .ts-subsections-nav .ts-tsp-corner .ts-title-sub-page .sight-line {
+  background-color: aqua;
+  height: 4px;
+  width: 100%;
+  align-self: center;
+  position: absolute;
+  bottom: 0;
+  border-radius: 2px 2px 0 0;
+}
+body .ts-sub-nav-bar-main-container .ts-subsections-nav .ts-tsp-corner .ts-title-sub-page .sl-1 {
+  display: block;
+}
+body .ts-sub-nav-bar-main-container .ts-subsections-nav .ts-tsp-corner .ts-title-sub-page .sl-2, body .ts-sub-nav-bar-main-container .ts-subsections-nav .ts-tsp-corner .ts-title-sub-page .sl-3 {
+  display: none;
+}
+body .ts-sub-nav-bar-main-container .ts-subsections-nav .ts-tsp-corner .ts-title-sub-page .ts-tsp-svg-box {
+  width: 20px;
+  height: 20px;
+  fill: rgb(184, 173, 210);
+  margin-left: 3px;
+}
+body .ts-sub-nav-bar-main-container .ts-subsections-nav .ts-tsp-corner .ts-title-sub-page .ts-tsp-svg-box svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* text color + "need help" */
+/* Inseriti da Clara, da rivedere: */
+/* text input color */
+/* Text color gradient */
+/* cards background color */
+/* text color  */
+/* nav bar color */
+/* website background color */
+/* text input color */
 @-webkit-keyframes float-NW {
   0% {
     transform: translatex(0px) translatey(0px);
