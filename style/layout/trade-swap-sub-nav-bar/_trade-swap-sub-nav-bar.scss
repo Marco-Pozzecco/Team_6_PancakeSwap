@@ -1,0 +1,211 @@
+
+@use "../../components/buttons/buttons";
+
+// Import rules
+@import "../../abstracts/mixins";
+@import "../../abstracts/colors";
+@import "../../abstracts/animations";
+
+
+
+
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(33, 58, 219, 0.848);
+
+        .ts-sub-nav-bar-main-container {
+            width: 100%;
+            height: 42px;
+            background-color:  rgba(29, 28, 34, 0.856);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+                .ts-subsections-nav {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    width: 35%;
+                    // background-color:rgba(128, 255, 0, 0.29);
+
+                        .ts-tsp-corner {
+                            // background-color: rgba(240, 248, 255, 0.24);
+                            height: 100%;
+                            padding-left: 4px;
+                            padding-right: 4px;
+                            margin-right: 20px;
+                                
+                            .ts-title-sub-page {
+                                width: 100%;
+                                height: 100%;
+                                // background-color: rgba(198, 39, 190, 0.401);
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                position: relative;
+
+                                &:hover {
+                                    background-color:  rgba(184, 173, 210, 0.2);
+                                }
+                                
+                                    & a {
+                                        color: rgb(184, 173, 210);
+                                        font-family: Kanit, sans-serif;
+                                        font-size: 16px;
+                                        font-weight: 400;
+                                        text-decoration: none;
+                                    }
+
+                                    .sight-line {
+                                        background-color: aqua;
+                                        height: 4px;
+                                        width: 100%;
+                                        align-self: center;
+                                        position: absolute;
+                                        bottom: 0;
+                                        border-radius: 2px 2px  0 0;
+                                        // display: none;
+                                    }
+
+                                    .sl-1 {
+                                        display: block;
+                                    }
+
+                                    .sl-2, .sl-3 {
+                                        display: none;
+                                    }
+
+                                    .ts-tsp-svg-box {
+                                        width: 20px;
+                                        height: 20px;
+                                        fill:  rgb(184, 173, 210);
+                                        margin-left: 3px;
+
+                                            & svg{
+                                                width: 100%;
+                                                height: 100%;
+                                            } 
+
+                                    }
+
+
+
+                    
+                            }
+
+
+                        }
+
+
+
+                }
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

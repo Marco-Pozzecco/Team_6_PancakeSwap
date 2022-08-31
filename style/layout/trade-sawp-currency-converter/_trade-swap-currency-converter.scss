@@ -1,0 +1,299 @@
+
+// Use rules
+@use "../../components/buttons/buttons";
+
+// Import rules
+@import "../../abstracts/mixins";
+@import "../../abstracts/colors";
+@import "../../abstracts/animations";
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: linear-gradient(139.73deg, rgb(49, 61, 92) 0%, rgb(61, 42, 84) 100%);
+    
+
+        .main-section-currencty-converter {
+            margin-right: 200px;
+            height: 518px;
+            width: 25%;
+            background-color: rgba(144, 144, 229, 0.1);
+            padding: 0 40px;
+
+                .currency-converter {
+                    width: 100%;
+                    height: 100%; /*518px sul sito*/
+                    background-color: rgb(56,50, 65);
+                    border-radius: 24px;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 20% 60% 20%;
+
+                        .cc-top-content {
+                            background-color: rgba(208, 231, 185, 0.247);
+                            border: 1px solid yellow;
+                            // -- -- -- -- -- -- -- -- -- 
+                            padding: 24px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+
+                                .cct-title-box {
+                                    background-color: aliceblue;
+                                    border: 1px solid red;
+                                    width: 100%;
+                                    height: 100%;
+                                    // -- -- -- -- 
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+
+                                }
+
+                                .cct-description {
+                                    background-color: aliceblue;
+                                    border: 1px solid red;
+                                    width: 100%;
+                                    height: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+
+                                }
+                            
+                        }
+
+                        .cc-body-content {
+                            background-color: rgba(161, 248, 219, 0.241);
+                            border: 1px solid rgb(100, 231, 34);
+                            // -- -- -- -- -- -- -- 
+                            padding: 16px;
+                            display: grid;
+                            grid-template-columns: 1fr;
+                            grid-template-rows: 40% 10% 40% 10%;
+
+                               .currency-a {
+                                grid-row: 1 / 2;
+                                background-color: rgba(0, 255, 255, 0.282);
+                                                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+
+                                    .currency-logo {
+                                        color: rgb(255, 255, 255);
+                                        background-color:cornflowerblue;
+                                        width: 100%;
+                                        text-align: center;
+
+                                    }
+
+                                    .cc-input-box {
+                                        width: 100%;
+                                        height: 80%; //provvisorio
+                                        background-color: rgba(220, 20, 60, 0.382);
+                                        border-radius: 24px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                    }
+
+
+                               }
+                               
+                               .cc-arrov-box {
+                                grid-row: 2 / 3;
+                                background-color: rgba(172, 255, 47, 0.218);
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                               }
+
+                               .currency-b {
+                                grid-row: 3 / 4;
+                                background-color: rgba(0, 255, 255, 0.29);
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+
+                                    .currency-logo {
+                                        color: rgb(255, 255, 255);
+                                        background-color:cornflowerblue;
+                                        width: 100%;
+                                    }
+
+                                    .cc-input-box {
+                                        width: 100%;
+                                        height: 80%; //provvisorio
+                                        background-color: rgba(220, 20, 60, 0.382);
+                                        border-radius: 24px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+
+                                    }
+
+
+
+                               }
+
+                               .info-cc-box {
+                                grid-row: 4 / 5;
+                                background-color: rgba(172, 255, 47, 0.166);
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                padding: 20px;
+                               }
+
+
+
+
+
+
+
+
+                        }
+
+                        .cc-foot-content {
+                            background-color: rgba(255, 240, 255, 0.248);
+                            border: 1px solid rgb(27, 241, 216);
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                        }
+
+
+
+
+                }
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

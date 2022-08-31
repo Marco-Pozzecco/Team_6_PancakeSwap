@@ -577,6 +577,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* website background color */
 /* text input color */
 
+/* Navbar */
 .menu-nav ul, a, i, li a {
   text-decoration: none;
   color: rgb(122, 110, 170);
@@ -657,6 +658,7 @@ nav ul li ul {
 /*# sourceMappingURL=style.css.map */
 
 /* -------MAIN BUTTON(aquagreen)----------- */
+
 .win-prizes {
   background: linear-gradient(rgb(11, 69, 118) 0%, rgb(9, 17, 21) 100%);
   height: 800px;
@@ -801,7 +803,6 @@ nav ul li ul {
 /* nav bar color */
 /* website background color */
 /* text input color */
-/* -------MAIN BUTTON(aquagreen)----------- */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -933,7 +934,6 @@ nav ul li ul {
 /* nav bar color */
 /* website background color */
 /* text input color */
-/* -------MAIN BUTTON(aquagreen)----------- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -1068,7 +1068,6 @@ nav ul li ul {
 /* nav bar color */
 /* website background color */
 /* text input color */
-/* -------MAIN BUTTON(aquagreen)----------- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -1091,7 +1090,6 @@ body .main-banner-container {
   align-items: center;
   padding: 20px;
   width: 80%;
-  background-color: rgba(0, 0, 255, 0.023);
   position: relative;
 }
 body .main-banner-container .main-banner-sub-container {
@@ -1099,18 +1097,19 @@ body .main-banner-container .main-banner-sub-container {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
+  background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%); /*linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%)*/
   height: 220px;
   width: 100%;
   padding: 24px;
   border-radius: 24px;
   position: relative;
 }
+body .main-banner-container .main-banner-sub-container .banner-a {
+  display: block;
+}
 body .main-banner-container .main-banner-sub-container .main-banner-content-container {
   width: 100%;
   height: 100%;
-  background-color: rgba(123, 202, 123, 0.199);
-  border: 1px solid chartreuse;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1119,13 +1118,13 @@ body .main-banner-container .main-banner-sub-container .main-banner-content-cont
   align-items: flex-start;
   z-index: 1;
 }
-body .main-banner-container .main-banner-sub-container .main-banner-content-container .main-banner-title {
+body .main-banner-container .main-banner-sub-container .main-banner-content-container .main-banner-title-a {
   color: white;
   font-family: Kanit, sans-serif;
 }
 body .main-banner-container .main-banner-sub-container .main-banner-content-container .mbt-a1 {
   font-size: 24px;
-  background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0));
+  background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0)); /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text; /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
@@ -1134,11 +1133,11 @@ body .main-banner-container .main-banner-sub-container .main-banner-content-cont
 body .main-banner-container .main-banner-sub-container .main-banner-content-container .mbt-a2 {
   font-size: 40px;
   margin-bottom: 16px;
-  text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px; /* rgba(0, 0, 0, 0.35) 0px 4px 3px*/
 }
 body .main-banner-container .main-banner-sub-container .main-banner-content-container .main-banner-button-a {
-  color: black;
-  fill: black;
+  color: rgb(0, 0, 0);
+  fill: rgb(0, 0, 0);
 }
 body .main-banner-container .main-banner-sub-container .swiper-slide {
   background-color: transparent;
@@ -1157,7 +1156,7 @@ body .main-banner-container .main-banner-sub-container .swiper-slide {
 body .main-banner-container .main-banner-sub-container .swiper-slide .swiper {
   width: 50%;
   height: 8px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 body .main-banner-container .main-banner-sub-container .swiper-slide .swpr-a {
   visibility: initial;
@@ -1168,55 +1167,34 @@ body .main-banner-container .main-banner-sub-container .swiper-slide .swpr-b {
 body .main-banner-container .main-banner-sub-container .bunny-container-a {
   width: 30%;
   height: 121%;
-  background-color: rgba(5, 5, 2, 0.34);
   position: absolute;
   border-radius: 24px;
   bottom: 0;
   right: 0;
   z-index: 0;
+  display: block;
 }
 body .main-banner-container .main-banner-sub-container .bunny-container-a img {
   min-width: 100%;
   max-width: 100%;
   height: 100%;
 }
-
-.main-banner-sub-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
-  height: 220px;
-  width: 100%;
-  padding: 24px;
-  border-radius: 24px;
-  position: relative;
+body .main-banner-container .main-banner-sub-container .bunny-container-a .banner-a, body .main-banner-container .main-banner-sub-container .bunny-container-a .bunny-container-a {
+  display: block;
 }
-.main-banner-sub-container .main-banner-content-container {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(123, 202, 123, 0.199);
-  border: 1px solid chartreuse;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  justify-content: center;
-  align-items: flex-start;
-  z-index: 1;
-  contain: content;
+body .main-banner-container .main-banner-sub-container .banner-b {
+  display: none;
 }
-.main-banner-sub-container .main-banner-content-container .main-banner-title {
-  color: white;
+body .main-banner-container .main-banner-sub-container .banner-b .main-banner-title-b {
+  color: rgb(255, 255, 255);
   font-family: Kanit, sans-serif;
 }
-.main-banner-sub-container .main-banner-content-container .mbt-b1 {
+body .main-banner-container .main-banner-sub-container .banner-b .mbt-b1 {
   font-size: 24px;
-  text-shadow: rgba(0, 0, 0, 0.35) 0px 3px 3px;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px; /*rgba(0, 0, 0,  0.35) 0px 3px 3px*/
   margin-bottom: 8px;
 }
-.main-banner-sub-container .main-banner-content-container .mb-counter-lottery {
+body .main-banner-container .main-banner-sub-container .banner-b .mb-counter-lottery {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1226,62 +1204,34 @@ body .main-banner-container .main-banner-sub-container .bunny-container-a img {
   background-repeat: no-repeat;
   padding: 0 7px 10px;
 }
-.main-banner-sub-container .main-banner-content-container .mb-counter-lottery .mbcl-item {
+body .main-banner-container .main-banner-sub-container .banner-b .mb-counter-lottery .mbcl-item {
   font-weight: 600;
   line-height: 1.1;
-  background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0));
+  background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0)); /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
 }
-.main-banner-sub-container .main-banner-content-container .mb-counter-lottery .mbcli-number {
+body .main-banner-container .main-banner-sub-container .banner-b .mb-counter-lottery .mbcli-number {
   font-size: 40px;
   margin: 0px 4px -4px 0px;
 }
-.main-banner-sub-container .main-banner-content-container .mb-counter-lottery .mbcli-time {
+body .main-banner-container .main-banner-sub-container .banner-b .mb-counter-lottery .mbcli-time {
   font-size: 20px;
   margin: 0px 12px 0px 0px;
 }
-.main-banner-sub-container .main-banner-content-container .main-banner-button-b {
-  color: black;
-  fill: black;
-}
-.main-banner-sub-container .swiper-slide {
-  background-color: transparent;
-  width: 100px;
-  height: 8px;
-  background-color: rgba(186, 235, 74, 0.174);
-  border-radius: 10px;
-  position: absolute;
-  bottom: 15px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  contain: content;
-}
-.main-banner-sub-container .swiper-slide .swiper {
-  width: 50%;
-  height: 8px;
-  background-color: white;
-}
-.main-banner-sub-container .swiper-slide .swpr-a {
-  visibility: initial;
-}
-.main-banner-sub-container .swiper-slide .swpr-b {
-  visibility: hidden;
-}
-.main-banner-sub-container .bunny-container-b {
+body .main-banner-container .main-banner-sub-container .bunny-container-b {
   width: 100%;
   height: 120%;
-  background-color: rgba(5, 5, 2, 0.34);
   position: absolute;
   border-radius: 24px;
   bottom: -2.5px;
   right: 0px;
   z-index: 0;
+  /*-- -- -- --*/
+  display: none;
 }
-.main-banner-sub-container .bunny-container-b img {
+body .main-banner-container .main-banner-sub-container .bunny-container-b img {
   min-width: 100%;
   max-width: 100%;
   height: 100%;
@@ -1296,7 +1246,6 @@ body .main-banner-container .main-banner-sub-container .bunny-container-a img {
 /* nav bar color */
 /* website background color */
 /* text input color */
-/* -------MAIN BUTTON(aquagreen)----------- */
 @-webkit-keyframes float-NW {
   0% {
     transform: translatex(0px) translatey(0px);
