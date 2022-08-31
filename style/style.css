@@ -1,5 +1,8 @@
 @charset "UTF-8";
+
 @import url(https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,900;1,800;1,900&display=swap);
+
+
 /* Bottoni nel div-SWAP(a sinistra)-- */
 /* --bottone in alto a sinistra sbarrato----------------- */
 /* blocco bottoni nel div Swap--------------------------------------------*/
@@ -58,6 +61,10 @@ button:hover {
   font-size: 16px; /*16px*/
   font-weight: 600; /*600*/
 }
+
+
+.link-aquagreen .button-aquagreen:active {}
+
 
 .link-aquagreen .button-aquagreen:active {
 
@@ -384,7 +391,6 @@ che si trova sotto al div Limit = V2 e V1(old)
   justify-content: flex-end;
   align-items: center;
   background-color: rgb(31, 199, 212); /*rgb(31, 199, 212)*/
-
 }
 .main-box-button-switch-small .box-button-switch-small-text {
   color: white; /*white*/
@@ -577,83 +583,47 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* website background color */
 /* text input color */
 
+
 /* Navbar */
 .menu-nav ul, a, i, li a {
   text-decoration: none;
   color: rgb(122, 110, 170);
   font-size: 16px;
+}
+
+/* -------MAIN BUTTON(aquagreen)----------- */
+i {
+  color: rgb(184, 173, 210);
+}
+
+.menu-ul {
   list-style: none;
 }
 
-.menu-nav li:hover, .menu-nav li:focus {
-  background-color: rgb(233, 234, 235);
-  border-radius: 15px;
-}
-.menu-nav li ul li:hover {
-  background-color: rgb(233, 234, 235);
-  border-radius: 0%;
+.menu-nav {
+  text-decoration: none;
 }
 
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-  width: 100%;
-  height: 8vh;
-  padding: 0 8px;
-  position: fixed;
-  z-index: 100;
-  border-bottom: 1px solid rgb(233, 234, 235);
-}
-nav ul {
-  display: flex;
-}
-nav ul li {
-  list-style: none;
-  color: rgb(122, 110, 170);
-  font-size: 16px;
-  padding: 15px;
-  position: relative;
-}
-nav ul li:active {
-  color: rgb(118, 69, 217);
-}
-nav ul li:hover ul {
-  opacity: 1;
-  visibility: visible;
-}
-nav ul li ul {
+.dropdown {
+  visibility: hidden;
   position: absolute;
-  top: 3rem;
-  left: -0.25rem;
+  top: 2rem;
   background-color: white;
-  border-radius: 15px;
-  border: 2px solid rgb(233, 234, 235);
+  border-radius: 1%;
   width: 12rem;
   display: flex;
   flex-direction: column;
   opacity: 0;
-  visibility: hidden;
   transition: opacity 200ms easy-in-out;
 }
 
-.flex {
-  display: flex;
-  flex-direction: center;
-  justify-content: center;
-  align-items: center;
+.fa-globe:hover {
+  color: rgba(154, 106, 255, 0.3);
 }
-.flex div, .flex h2, .flex ul {
-  padding: 4%;
-  cursor: pointer;
+.fa-globe:hover .dropdown {
+  visibility: visible;
 }
 
-.flex p {
-  color: rgb(122, 110, 170);
-  font-size: 16px;
-}
 
 /*# sourceMappingURL=style.css.map */
 
@@ -810,120 +780,41 @@ nav ul li ul {
   color: purple;
 }
 
-::-webkit-scrollbar-thumb {
-  border-radius: 6px;
-  background-color: #c3b4ce;
-  border: none;
+footer {
+  width: 100%;
+  height: 80vh;
+  padding: 56px 80px 32px;
+  background-color: rgb(39, 38, 44);
+
 }
 
-.fb-floating-bunny {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  padding-top: 400px;
-  width: 100%;
-  height: 1000px;
-  background: linear-gradient(180deg, rgb(22, 9, 49) 0%, rgb(22, 9, 49) 47%, rgb(19, 8, 43) 65%, rgb(11, 5, 25) 100%, rgb(0, 0, 0) 100%);
-}
-.fb-floating-bunny .fb-wrapper {
-  color: #9A6AFF;
-  width: 100%;
-  height: 100%;
+.main-footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  position: relative;
-  z-index: 2;
+  align-items: flex-start;
+  margin-bottom: 32px;
 }
-.fb-floating-bunny .fb-wrapper .fb-contents-section {
-  text-align: left;
-  width: 50%;
-  padding-left: 60px;
-}
-.fb-floating-bunny .fb-wrapper .fb-contents-section h2 {
-  padding-top: 20px;
-  font-size: 65px;
+.main-footer h3 {
+  color: #fff;
   font-weight: 100;
-  line-height: 1.1;
 }
-.fb-floating-bunny .fb-wrapper .fb-contents-section h3 {
-  color: aliceblue;
-  font-size: 18px;
-  padding-top: 20px;
+.main-footer h4 {
+  color: rgb(118, 69, 217);
+  text-transform: uppercase;
+  font-weight: 500;
 }
-.fb-floating-bunny .fb-wrapper .fb-contents-section .link-aquagreen {
+.main-footer li {
+  padding: 8px 0 8px 0;
+}
+.main-footer li a {
+  color: white;
   text-decoration: none;
 }
-.fb-floating-bunny .fb-wrapper .fb-img-section {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.main-footer li a:hover {
+  text-decoration: underline;
 }
-.fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingbunny {
-  margin-right: 10%;
-  margin-top: 10%;
-  -webkit-animation-name: float-NW;
-          animation-name: float-NW;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-.fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingbunny img {
-  z-index: 3;
-  height: 580px;
-  width: auto;
-}
-.fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingstars {
-  position: absolute;
-  margin-right: 10%;
-  height: 512px;
-  width: 512px;
-}
-.fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingstars .fb-star1 img {
-  -webkit-animation-name: fade-out;
-          animation-name: fade-out;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-}
-.fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingstars .fb-star2 img {
-  -webkit-animation-name: fade-out;
-          animation-name: fade-out;
-  -webkit-animation-duration: 3.5s;
-          animation-duration: 3.5s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-}
-.fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingstars .fb-star3 img {
-  -webkit-animation-name: fade-out;
-          animation-name: fade-out;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-}
-.fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingstars img {
-  position: absolute;
-  height: 100%;
-  width: auto;
-}
-.fb-floating-bunny .fb-bottomgradient {
-  position: relative;
-  margin-bottom: 0;
-  bottom: 180px;
-  width: 100%;
-}
-.fb-floating-bunny .fb-bottomgradient svg {
-  z-index: 1;
-}
+
 
 /* text color + "need help" */
 /* Inseriti da Clara, da rivedere: */
@@ -940,124 +831,18 @@ nav ul li ul {
   padding: 0;
 }
 
-.stat-section {
-  width: 100%;
-  height: auto;
-  background: linear-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%);
+.line {
+  border: 1px solid rgb(122, 110, 170);
+
 }
-.stat-section .wrapper-stat {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 48px 24px;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  width: 100%;
-  text-align: center;
-}
-.stat-section .wrapper-stat svg {
-  margin: 0 0 24px;
-}
-.stat-section .wrapper-stat h2 {
-  font-size: 42px;
-  font-weight: 600;
-  line-height: 1.1;
-  color: rgb(244, 238, 255);
-}
-.stat-section .wrapper-stat h2:nth-child(3) {
-  margin-bottom: 32px;
-}
-.stat-section .wrapper-stat .description-stat-sec {
-  font-size: 16px;
-  color: rgb(184, 173, 210);
-}
-.stat-section .wrapper-stat .dst1 {
-  font-weight: 400;
-}
-.stat-section .wrapper-stat .dst2 {
-  vertical-align: baseline;
-  margin-bottom: 10px;
-}
-.stat-section .wrapper-stat .dst3 {
-  font-weight: 600;
-  margin-bottom: 32px;
-}
-.stat-section .wrapper-stat .card-container-dst {
+
+.flex2 {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
 }
-.stat-section .wrapper-stat .card-container-dst .card-dst {
-  background-color: rgb(56, 50, 65);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 24px;
-  border-radius: 24px;
-  margin-right: 16px;
-  position: relative;
-  border: 1px solid rgb(75, 59, 80);
-  border-bottom: 3px solid rgb(75, 59, 80);
-}
-.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg {
-  align-self: flex-end;
-  position: absolute;
-  top: 24px;
-  right: 24px;
-}
-.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg .cdsvg-color1 {
-  fill: rgb(154, 106, 255);
-}
-.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg .cdsvg-color2 {
-  fill: rgb(49, 208, 170);
-}
-.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg .cdsvg-color3 {
-  fill: rgb(237, 75, 158);
-}
-.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title {
-  text-align: left;
-  margin-top: 64px;
-}
-.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title h2 {
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 1.1;
-}
-.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdta {
-  color: rgb(244, 238, 255);
-}
-.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb {
-  margin-bottom: 24px;
-}
-.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb1 {
-  color: rgb(154, 106, 255);
-}
-.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb2 {
-  color: rgb(49, 208, 170);
-}
-.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb3 {
-  color: rgb(237, 75, 158);
-}
-.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .card-dist-last-text {
-  color: rgb(184, 173, 210);
-  line-height: 1.5;
-  font-weight: 400;
-  font-size: 16px;
-}
-.stat-section .svg-transition-color-box {
-  background-color: black;
-}
-.stat-section .svg-transition-color-box .svg-transition-color {
-  fill: rgb(30, 17, 50);
-  width: 100%;
-  height: 100%;
-  max-height: 48px;
-}
+
 
 /* text color + "need help" */
 /* Inseriti da Clara, da rivedere: */
@@ -1113,11 +898,21 @@ body .main-banner-container .main-banner-sub-container .main-banner-content-cont
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  justify-content: center;
-  align-items: flex-start;
-  z-index: 1;
 }
+
+#hover:hover {
+  width: 54px;
+}
+
+.bottom-footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  align-items: center;
+  padding: 0px 0px 32px 0px;
+}
+
 body .main-banner-container .main-banner-sub-container .main-banner-content-container .main-banner-title-a {
   color: white;
   font-family: Kanit, sans-serif;
@@ -1158,12 +953,23 @@ body .main-banner-container .main-banner-sub-container .swiper-slide .swiper {
   height: 8px;
   background-color: rgb(255, 255, 255);
 }
-body .main-banner-container .main-banner-sub-container .swiper-slide .swpr-a {
-  visibility: initial;
+
+
+li {
+  padding-right: 22px;
 }
-body .main-banner-container .main-banner-sub-container .swiper-slide .swpr-b {
-  visibility: hidden;
+
+.bottom-footer-2 {
+  padding: 40px 0px 40px 0px;
+
 }
+.bottom-footer-2 div div, .bottom-footer-2 div p, .bottom-footer-2 div svg {
+  padding-right: 22px;
+}
+.bottom-footer-2 div p {
+  color: rgb(184, 173, 210);
+}
+
 body .main-banner-container .main-banner-sub-container .bunny-container-a {
   width: 30%;
   height: 121%;
@@ -1317,13 +1123,55 @@ html, body {
   width: 100%;
 }
 
-body {
-  font-family: Kanit, serif;
-  font-size: initial;
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: rgb(189, 194, 196);
+  border-radius: 50px;
+  cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 0 5px;
+  position: relative;
+  height: 22px;
+  width: 40px;
+  transform: scale(1.5);
 }
+
+.label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:hover .fa-moon {
+  color: rgb(118, 69, 217);
+}
+
+.fa-moon {
+  color: white;
+}
+
+.fa-sun {
+  color: #f39c12;
+
+}
+
+.button-aquagreen {
+  width: 137px;
+  height: 32px;
+}
+
 
 .blue-square {
   height: 100px;
@@ -1342,4 +1190,5 @@ body {
     width: 80px;
   }
 }
+
 /*# sourceMappingURL=style.css.map */

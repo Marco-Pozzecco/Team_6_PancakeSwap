@@ -1,0 +1,160 @@
+// Use rules
+@use "../../components/buttons/buttons";
+
+// Import rules
+@import "../../abstracts/mixins";
+@import "../../abstracts/colors";
+@import "../../abstracts/variables";
+
+
+
+i{
+    color: $primary-dk
+}
+.menu-ul {  //no style for list including this class
+    list-style: none;
+}
+.menu-nav{
+    text-decoration: none;
+}
+ .dropdown {
+     visibility: hidden;
+     position: absolute;
+     top: 2rem;
+     //left: -1rem;
+     background-color: white;
+     border-radius: 1%;
+     width: 12rem;
+     display: flex;
+     flex-direction: column;
+     opacity: 0;
+     transition: opacity 200ms easy-in-out;
+ }
+.fa-globe:hover{
+        color: rgb(154, 106, 255, 30%);
+    .dropdown {
+        visibility: visible;
+    }
+}
+
+footer{
+    width: 100%;
+    height: 80vh;
+    padding: 56px 80px 32px;
+    background-color: $footer-background;
+  
+}
+
+.main-footer{
+ @include flex(row, space-between, flex-start);
+ margin-bottom: 32px;
+    h3{
+        color: #fff;
+        font-weight: 100;
+    }
+    h4{
+        color: $secondary-color;
+        text-transform: uppercase;
+        font-weight: 500;
+    }  
+    li {
+         padding: 8px 0 8px 0;
+            a{
+            color: white;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+.line{
+    //color: $primary-color;
+    border: 1px solid $primary-color;
+}
+
+.flex2{
+    @include flex(row, space-between, center);
+    
+}
+#hover:hover{
+        width: 54px;
+}
+
+.bottom-footer ul{
+    @include flex(row, flex-start, center);
+    padding: 0px 0px 32px 0px;
+    
+    } 
+    li{
+    padding-right: 22px;
+}
+
+.bottom-footer-2{
+    padding: 40px 0px 40px 0px;
+    div{
+        //@include flex(row, space-between, center);
+        div, p, svg{
+            padding-right: 22px;
+        }
+        p{
+            color: $primary-dk;
+            //font-weight: 500;
+        }
+    }
+    
+
+}
+
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.label {
+	background-color: $input-color;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 5px;
+	position: relative;
+	height: 22px;
+	width: 40px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+// .checkbox:checked + .label .ball {
+// 	transform: translateX(24px);
+// }
+.checkbox:hover {
+    .fa-moon{
+        color: $secondary-color;
+    }
+}
+
+.fa-moon {
+	color: white;
+}
+.fa-sun {
+	color: #f39c12;
+}
+
+.button-aquagreen{
+     width: 137px;
+     height: 32px;
+    
+}

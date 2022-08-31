@@ -5,11 +5,22 @@
 @import "../../abstracts/mixins";
 @import "../../abstracts/colors";
 
-body{
-    margin: 0px;
-    padding: 0px;
-    height: 100vh;
-    width: 100%;
+
+
+// .line-dd{
+//     border-top: 2px solid black;
+//     border-bottom: 2px solid black;
+// }
+
+.mobile-icon{
+    display: none;
+
+}
+.icon{
+    i{
+        color: $primary-color;
+    }
+    
 }
 
 .menu-nav ul, a, i, li a{
@@ -77,16 +88,29 @@ nav {
                 opacity: 0;
                 visibility: hidden;
                 transition: opacity 200ms easy-in-out;
+                li.line-dd{
+                    border-bottom: 1px solid $input-color;
+                    border-top:    1px solid $input-color;
+                }
+                
                 
             }
         }
     }
 }
 
+// body > nav > div > 
+//ul > li:nth-child(5) > ul > li.line-dd
+
+.fa-globe:hover{
+    color: rgb(154, 106, 255, 30%);
+}
+
+
 .flex{
     @include flex(center);
     div, h2, ul{
-        padding: 4%;
+        padding: 2%;
         cursor: pointer;
     }
 }
@@ -94,4 +118,11 @@ nav {
     color: $primary-color;
     font-size: 16px ;
 
+}
+.button-aquagreen{
+    width: 167px;
+    height: 32px;
+    margin: 0px 2px;
+    padding: 0px 2px;
+   
 }
