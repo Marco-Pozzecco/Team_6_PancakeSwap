@@ -46,9 +46,9 @@
     }
 }
 
-// .menu-ul{
-//      list-style: none;
-// }
+.menu-ul{
+     list-style: none;
+}
 nav {
     @include flex(row, space-between, center);
     background-color: white;
