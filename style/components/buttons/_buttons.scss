@@ -19,6 +19,8 @@
     width: 50%;
     background-color: white;
 }
+
+
 // Causa errori con il resto del sito web
 // body {
 //     width: 100vw;
@@ -31,19 +33,16 @@
 //     padding:  50px;
 // }
 
+
 button {
     font-size: 16px;
     padding: 0 24px;
     border-radius: 16px;
     height: 1;
     cursor: pointer;
-
         &:hover {
             opacity: 0.65;
-        }
-
-       
-
+        } 
 }
 
 // -------------STILI DI BOTTONI------------------------------------------------

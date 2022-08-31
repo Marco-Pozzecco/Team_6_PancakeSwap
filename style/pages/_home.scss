@@ -1,7 +1,17 @@
 // @import "./layout/*";
 
+<<<<<<< HEAD
 @use "../layout/home-win-prizes/win-prizes";
 @use "../layout/home-floating-bunny/floating-bunny";
 @use "../layout/home-stats-section/stats-section";
 @use "../layout/home-main-banner/main-banner";
+=======
+@use "../layout/navbar/navbar";
+@use "../layout/footer/footer";
+@use "../layout/win-prizes/win-prizes";
+@use "../layout/floating-bunny/floating-bunny";
+@use "../layout/stats-section/stats-section";
+@use "../layout/main-banner/main-banner";
+>>>>>>> 2c0aa955ad519ac4df2ec7351a7c46ab8455935b
+
 
