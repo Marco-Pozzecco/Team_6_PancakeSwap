@@ -635,8 +635,9 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   }
   .win-prizes .prizes-wrapper h2 {
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 30px;
+    color: rgb(244, 238, 255);
   }
   .win-prizes .prizes-wrapper h2 span {
     color: rgb(154, 106, 255);
@@ -659,31 +660,39 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   }
   .win-prizes .prizes-wrapper .card-container .card {
     margin: 0 10px;
-    width: 30%;
+    width: 280px;
+    height: 350px;
     border-radius: 20px;
     padding: 20px;
   }
-  .win-prizes .prizes-wrapper .card-container .card .card-img {
+  .win-prizes .prizes-wrapper .card-container .card .button-aquagreen {
+    width: 100%;
+    color: rgb(25, 32, 50);
+  }
+  .win-prizes .prizes-wrapper .card-container .card .card-content .card-img {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
   }
-  .win-prizes .prizes-wrapper .card-container .card h3 {
+  .win-prizes .prizes-wrapper .card-container .card .card-content h3 {
     font-weight: 600;
-    font-size: 14px;
+    font-size: 16px;
   }
-  .win-prizes .prizes-wrapper .card-container .card h2 {
+  .win-prizes .prizes-wrapper .card-container .card .card-content h2 {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 40px;
+    margin-bottom: 5px;
   }
-  .win-prizes .prizes-wrapper .card-container .card p {
-    font-size: 12px;
+  .win-prizes .prizes-wrapper .card-container .card .card-content p {
+    font-size: 16px;
     margin: 0;
+    margin-top: 20px;
     margin-bottom: 30px;
   }
   .win-prizes .prizes-wrapper .card-container .card-lottery {
     background-color: rgb(255, 178, 55);
+    transform: rotate(-3deg);
   }
   .win-prizes .prizes-wrapper .card-container .card-lottery h3 {
     color: rgb(40, 13, 95);
@@ -695,15 +704,16 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     color: rgb(40, 13, 95);
   }
   .win-prizes .prizes-wrapper .card-container .card-prediction {
-    background-color: rgb(154, 106, 255);
+    background-color: #703fd2;
+    transform: rotate(2deg);
   }
-  .win-prizes .prizes-wrapper .card-container .card-prediction h3 {
+  .win-prizes .prizes-wrapper .card-container .card-prediction .card-content h3 {
     color: white;
   }
-  .win-prizes .prizes-wrapper .card-container .card-prediction h2 {
+  .win-prizes .prizes-wrapper .card-container .card-prediction .card-content h2 {
     color: rgb(255, 178, 55);
   }
-  .win-prizes .prizes-wrapper .card-container .card-prediction p {
+  .win-prizes .prizes-wrapper .card-container .card-prediction .card-content p {
     color: white;
   }
 }
@@ -1258,7 +1268,7 @@ nav ul li ul li.line-dd {
   font-size: 16px;
 }
 
-.button-aquagreen {
+.btn-navbar .button-aquagreen {
   width: 167px;
   height: 32px;
   margin: 0px 2px;
@@ -1420,7 +1430,7 @@ li {
   color: #f39c12;
 }
 
-.button-aquagreen {
+.btn-footer .button-aquagreen {
   width: 137px;
   height: 32px;
 }

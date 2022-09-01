@@ -58,8 +58,9 @@
             & h2 {
                 // Rules
                 font-size: 40px;
-                font-weight: 600;
+                font-weight: 500;
                 margin-bottom: 30px;
+                color: rgb(244, 238, 255);
                 & span {
                     color: $secondary-dk;
                 }
@@ -79,31 +80,45 @@
                 @include flex();
                 .card {
                     margin: 0 10px;
-                    width: 30%;
+                    width: 280px;
+                    height: 350px;
                     border-radius: 20px;
                     padding: 20px;
-                    & .card-img {
-                        @include flex(row, flex-end, center)
+                    
+                    .button-aquagreen {
+                        width: 100%;
+                        color: rgb(25, 32, 50);
                     }
-                    & img {
+                    
+                    .card-content {
                         
+                        .card-img {
+                            @include flex(row, flex-end, center);
+                        }
+                        img {
+                            
+                        }
+                        h3 {
+                            font-weight: 600;
+                            font-size: 16px;
+                        }
+                        h2 {
+                            font-weight: 600;
+                            font-size: 40px;
+                            margin-bottom: 5px;
+                        }
+                        p {
+                            font-size: 16px;
+                            margin: 0; 
+                            margin-top: 20px;
+                            margin-bottom: 30px;
+                        }
                     }
-                    & h3 {
-                        font-weight: 600;
-                        font-size: 14px;
-                    }
-                    & h2 {
-                        font-weight: 600;
-                        font-size: 20px;
-                    }
-                    & p {
-                        font-size: 12px;
-                        margin: 0;
-                        margin-bottom: 30px;
-                    }
+
                 }
                 .card-lottery {
                     background-color: rgb(255, 178, 55);
+                    transform: rotate(-3deg);
                     & h3 {
                         color: rgb(40, 13, 95);
                     }
@@ -115,15 +130,19 @@
                     }
                 }
                 .card-prediction {
-                    background-color: $secondary-dk;
-                    & h3 {
-                        color: white;
-                    }
-                    & h2 {
-                        color: rgb(255, 178, 55);
-                    }
-                    & p {
-                        color: white;
+                    background-color: #703fd2;
+                    transform: rotate(2deg);
+
+                    .card-content {
+                        & h3 {
+                            color: white;
+                        }
+                        & h2 {
+                            color: rgb(255, 178, 55);
+                        }
+                        & p {
+                            color: white;
+                        }
                     }
                 }
             }
