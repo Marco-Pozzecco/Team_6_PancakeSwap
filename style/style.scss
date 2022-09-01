@@ -2,7 +2,7 @@
 @use "sass:map";
 @use "sass:list";
 @use "pages/home";
-// @use "pages/trade-swap";
+@use "pages/trade-swap";
 
 // Dichiarazioni import
 @import url(https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,900;1,800;1,900&display=swap);
@@ -10,6 +10,11 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
 @import "abstracts/colors";
+@import "buttons-variables";
+
+
+
+
 
 
 // Import pages
