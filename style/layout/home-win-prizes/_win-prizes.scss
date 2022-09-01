@@ -80,10 +80,16 @@
                 @include flex();
                 .card {
                     margin: 0 10px;
+                    padding: 25px;
+
                     width: 280px;
                     height: 350px;
-                    border-radius: 20px;
-                    padding: 20px;
+                    
+                    border-radius: 24px;
+        
+                    
+                    
+
                     
                     .button-aquagreen {
                         width: 100%;
@@ -117,7 +123,11 @@
 
                 }
                 .card-lottery {
-                    background-color: rgb(255, 178, 55);
+                    background: linear-gradient(rgb(255, 178, 55), rgb(255, 229, 104));
+
+                    border: solid 1px rgb(255, 178, 55);
+                    border-bottom: solid 5px rgb(255, 178, 55);
+                    
                     transform: rotate(-3deg);
                     & h3 {
                         color: rgb(40, 13, 95);
@@ -131,6 +141,10 @@
                 }
                 .card-prediction {
                     background-color: #703fd2;
+
+                    border: solid 1px rgb(60, 23, 134);
+                    border-bottom: solid 5px rgb(60, 23, 134);
+
                     transform: rotate(2deg);
 
                     .card-content {
