@@ -796,6 +796,14 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   font-size: 18px;
   padding-top: 20px;
 }
+.fb-floating-bunny .fb-wrapper .fb-contents-section .fb-buttons-section {
+  margin-top: 20px;
+  display: flex;
+}
+.fb-floating-bunny .fb-wrapper .fb-contents-section .fb-buttons-section .button-aquagreen {
+  width: 170px;
+  margin-right: 10px;
+}
 .fb-floating-bunny .fb-wrapper .fb-contents-section .link-aquagreen {
   text-decoration: none;
 }
@@ -1450,6 +1458,133 @@ li {
 .btn-footer .button-aquagreen {
   width: 137px;
   height: 32px;
+}
+
+/* text color + "need help" */
+/* Inseriti da Clara, da rivedere: */
+/* text input color */
+/* Text color gradient */
+/* cards background color */
+/* text color  */
+/* nav bar color */
+/* website background color */
+/* text input color */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background: #000000;
+  color: purple;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  background-color: #c3b4ce;
+  border: none;
+}
+
+.hm-home-trade-anything {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  padding-top: 400px;
+  width: 100%;
+  height: 1000px;
+  background: black;
+}
+.hm-home-trade-anything .fb-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.hm-home-trade-anything .fb-wrapper .fb-contents-section {
+  text-align: left;
+  width: 50%;
+  padding-left: 150px;
+}
+.hm-home-trade-anything .fb-wrapper .fb-contents-section h2 {
+  color: white;
+  padding-top: 20px;
+  font-size: 45px;
+  font-weight: 100;
+  line-height: 1.1;
+}
+.hm-home-trade-anything .fb-wrapper .fb-contents-section h2 .ta-text-span {
+  color: #9A6AFF;
+}
+.hm-home-trade-anything .fb-wrapper .fb-contents-section h3 {
+  color: #B8ADD2;
+  font-size: 15px;
+  font-weight: lighter;
+  padding-top: 20px;
+}
+.hm-home-trade-anything .fb-wrapper .fb-contents-section .fb-buttons-section {
+  margin-top: 20px;
+  display: flex;
+}
+.hm-home-trade-anything .fb-wrapper .fb-contents-section .fb-buttons-section .button-aquagreen {
+  width: 170px;
+  margin-right: 10px;
+}
+.hm-home-trade-anything .fb-wrapper .fb-contents-section .link-aquagreen {
+  text-decoration: none;
+}
+.hm-home-trade-anything .fb-wrapper .fb-img-section {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.hm-home-trade-anything .fb-wrapper .fb-img-section .fb-thefloatingbunny {
+  margin-right: 20%;
+  margin-top: 10%;
+  animation-name: float-NW;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.hm-home-trade-anything .fb-wrapper .fb-img-section .fb-thefloatingbunny img {
+  z-index: 3;
+  height: 400px;
+  width: auto;
+}
+.hm-home-trade-anything .fb-wrapper .fb-img-section .fb-thefloatingstars {
+  position: absolute;
+  margin-right: 10%;
+  height: 400px;
+  width: 400px;
+}
+.hm-home-trade-anything .fb-wrapper .fb-img-section .fb-thefloatingstars .fb-star1 img {
+  animation-name: float-NW;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.hm-home-trade-anything .fb-wrapper .fb-img-section .fb-thefloatingstars .fb-star2 img {
+  animation-name: float-NW;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+.hm-home-trade-anything .fb-wrapper .fb-img-section .fb-thefloatingstars img {
+  position: absolute;
+  height: 100%;
+  width: auto;
+}
+.hm-home-trade-anything .fb-bottomgradient {
+  position: relative;
+  margin-bottom: 0;
+  bottom: 180px;
+  width: 100%;
+}
+.hm-home-trade-anything .fb-bottomgradient svg {
+  z-index: 1;
 }
 
 /* text color + "need help" */

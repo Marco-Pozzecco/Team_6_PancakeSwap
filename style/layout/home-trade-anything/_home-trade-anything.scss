@@ -26,7 +26,7 @@
 
 //end scrollbar
 
-.fb-floating-bunny {
+.hm-home-trade-anything {
 
     @include mq('laptop');
     @include flex(column);
@@ -34,11 +34,10 @@
     padding-top: 400px;
     width: 100%;
     height: 1000px;
-    background: linear-gradient(180deg, rgba(22, 9, 49, 1) 0%, rgba(22, 9, 49, 1) 47%, rgba(19, 8, 43, 1) 65%, rgba(11, 5, 25, 1) 100%, rgba(0, 0, 0, 1) 100%);
+    background: black;
     
 
     .fb-wrapper {
-        color: $h2text-color;
         width: 100%;
         height: 100%;
         @include flex(row, space-between, center);
@@ -49,18 +48,24 @@
         .fb-contents-section {
             text-align: left;
             width: 50%;
-            padding-left: 60px;
+            padding-left: 150px;
 
             h2 {
+                color: white;
                 padding-top: 20px;
-                font-size: 65px;
+                font-size: 45px;
                 font-weight: 100;
                 line-height: 1.1;
+
+                 .ta-text-span{
+                    color:#9A6AFF;
+                }
             }
 
             h3 {
-                color: aliceblue;
-                font-size: 18px;
+                color: #B8ADD2;
+                font-size: 15px;
+                font-weight: lighter;
                 padding-top: 20px;
             }
 
@@ -87,13 +92,13 @@
             @include flex();
 
             .fb-thefloatingbunny {
-                margin-right: 10%;
+                margin-right: 20%;
                 margin-top: 10%;
                 @include float-anim(5s, "NW");
                 
                 img {
                     z-index: 3;
-                    height: 580px;
+                    height: 400px;
                     width: auto;
                 }
             }
@@ -101,19 +106,16 @@
                 .fb-thefloatingstars {
                     position: absolute;
                     margin-right: 10%;
-                    height: 512px;
-                    width: 512px;
+                    height: 400px;
+                    width: 400px;
 
                     .fb-star1 img {
-                        @include fade-out-anim(2.5s);
+                        @include float-anim(3s, "NW");
                     }
                     .fb-star2 img {
-                        @include fade-out-anim(3.5s);
+                        @include float-anim(4s, "NW");
                     }
-                    .fb-star3 img {
-                        @include fade-out-anim(5s);
-                    }
-
+                   
                     img {
 
                         position: absolute;
