@@ -1,11 +1,14 @@
 @charset "UTF-8";
-@import url(https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,900;1,800;1,900&display=swap);
+/* kanit-regular - latin */
 @font-face {
-  font-family: Kanit, serif;
-  src: url(https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,900;1,800;1,900&display=swap);
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../resources/fonts/kanit-v12-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../../resources/fonts/kanit-v12-latin-regular.eot?#iefix") format("embedded-opentype"), url("../../resources/fonts/kanit-v12-latin-regular.woff2") format("woff2"), url("../../resources/fonts/kanit-v12-latin-regular.woff") format("woff"), url("../../resources/fonts/kanit-v12-latin-regular.ttf") format("truetype"), url("../../resources/fonts/kanit-v12-latin-regular.svg#Kanit") format("svg"); /* Legacy iOS */
 }
 :root {
-  font-smooth: antialiased;
+  font-family: "Kanit", "Sans serif";
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   -ms-font-smoothing: antialiased;
@@ -597,7 +600,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   justify-content: center;
   align-items: center;
 }
-@media screen and (min-width: 1024px) and (max-width: 1247px) {
+@media screen and (min-width: 1024px) {
   .win-prizes .floating-balls {
     position: absolute;
     z-index: 1;
@@ -636,7 +639,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     justify-content: center;
     align-items: center;
     height: auto;
-    width: 90%;
+    width: 920px;
     background-color: rgba(8, 6, 11, 0.6);
     -webkit-backdrop-filter: blur(12px);
     -moz-backdrop-filter: blur(12px);
@@ -689,7 +692,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     align-items: center;
   }
   .win-prizes .prizes-wrapper .card-container .card .card-content h3 {
-    font-weight: 600;
+    font-weight: 550;
     font-size: 16px;
   }
   .win-prizes .prizes-wrapper .card-container .card .card-content h2 {
@@ -1635,8 +1638,6 @@ html, body {
 }
 
 body {
-  font-family: Kanit, serif;
-  font-size: initial;
   display: flex;
   align-items: center;
   justify-content: center;
