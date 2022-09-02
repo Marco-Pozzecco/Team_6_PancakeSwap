@@ -2,6 +2,7 @@
 @use "sass:map";
 @use "sass:list";
 @use "pages/home";
+@use "pages/trade-swap-currency-converter";
 
 // Dichiarazioni import
 @import url(https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,900;1,800;1,900&display=swap);
@@ -9,6 +10,9 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
 @import "abstracts/colors";
+
+//Layout
+@import 'layout/navbar/navbar';
 
 // Import pages
 
@@ -29,7 +33,9 @@ html, body {
 
 body {
     font-family: $font-stack;
-    font-size: 48px;
+    // font-size: 48px;
+    font-size: initial;
+
     display: flex;
     align-items: center;
     justify-content: center;

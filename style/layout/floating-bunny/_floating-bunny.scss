@@ -6,6 +6,7 @@
 @import "../../abstracts/colors";
 @import "../../abstracts/animations";
 
+//scrollbar
 
 ::-webkit-scrollbar {
     width: 8px;
@@ -14,15 +15,16 @@
     color: purple;
 }
 
-;
+
 
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 6px;
+    border-radius: 6px;
     background-color: #c3b4ce;
     border: none;
 }
 
-;
+//end scrollbar
 
 .fb-floating-bunny {
 
@@ -30,9 +32,8 @@
     @include flex(column);
     position: absolute;
     padding-top: 400px;
-
     width: 100%;
-    height: auto;
+    height: 1000px;
     background: linear-gradient(180deg, rgba(22, 9, 49, 1) 0%, rgba(22, 9, 49, 1) 47%, rgba(19, 8, 43, 1) 65%, rgba(11, 5, 25, 1) 100%, rgba(0, 0, 0, 1) 100%);
     
 
@@ -63,6 +64,10 @@
                 padding-top: 20px;
             }
 
+            .link-aquagreen {
+                text-decoration: none;
+            }
+
         }
 
         .fb-img-section {
@@ -72,10 +77,9 @@
 
             .fb-thefloatingbunny {
                 margin-right: 10%;
-
                 margin-top: 10%;
                 @include float-anim(5s, "NW");
-
+                
                 img {
                     z-index: 3;
                     height: 580px;
@@ -85,7 +89,6 @@
 
                 .fb-thefloatingstars {
                     position: absolute;
-
                     margin-right: 10%;
                     height: 512px;
                     width: 512px;
@@ -99,7 +102,6 @@
                     .fb-star3 img {
                         @include fade-out-anim(5s);
                     }
-
 
                     img {
 

@@ -22,12 +22,11 @@
 
 
 
-
 .stat-section {
     @include mq('laptop');
     width: 100%;
     height: auto;
-    padding: 48px 0;
+    // padding: 48px 0;
     background: $background-color-stats-section;
 
         .wrapper-stat {
@@ -53,7 +52,7 @@
                 h2:nth-child(3) {
                     margin-bottom: 32px
                 }
-            
+
                 .description-stat-sec {
                     font-size: 16px;
                     color: $card-dist-text;
@@ -62,7 +61,7 @@
                 .dst1 {
                     font-weight: 400;
                 }
-                
+
                 .dst2 {
                     vertical-align: baseline;
                     margin-bottom: 10px;
@@ -86,7 +85,7 @@
                             position: relative;
                             border: 1px $shadow-border-stats-card;
                             border-bottom: 3px $shadow-border-stats-card;
-                        
+
                                 .card-dist-svg {
                                     align-self: flex-end;
                                     position: absolute;
@@ -104,14 +103,14 @@
                                         .cdsvg-color3 {
                                             fill: $pink;
                                         }
-                                        
+
 
                                 }
 
                                 .card-dist-title {
                                     text-align: left;
                                     margin-top: 64px;
-                                    
+
                                         & h2 {
                                             font-size: 40px;
                                             font-weight: 600;
@@ -145,11 +144,30 @@
                                             font-size: 16px;
                                         }
                                 }
-                        }  
+                        }
+                }
+        }
+
+        .svg-transition-color-box {
+            background-color: black;
+
+                .svg-transition-color {
+                    fill: rgb(30, 17, 50);
+                    width: 100%;
+                    height: 100%;
+                    max-height: 48px;
                 }
         }
 
 }
+
+
+
+
+
+
+
+
 
 
 

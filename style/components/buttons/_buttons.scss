@@ -1,4 +1,6 @@
 @import "buttons-variables";
+@import "../../abstracts/mixins";
+
 
 *{
     box-sizing: border-box;
@@ -49,17 +51,23 @@ button {
 // dalla HOME.................
 
 /* -------BOTTONE VERDE ACQUA----------- */
-.button-aquagreen {
-    background-color: $main-buttons-background-color; /* rgb(31, 199, 212)*/
-    border: none;
-    color: $main-buttons-color;/* white*/
-    height: 48px;
-    font-size: $main-buttons-font-size; /*16px*/
-    font-weight: $main-buttons-font-weigth; /*600*/
+.link-aquagreen {
+    text-decoration: none;
 
-    &:active {
-        transform: translateY(2px);
-    }
+        .button-aquagreen {
+            @include flex();
+            background-color: $main-buttons-background-color; /* rgb(31, 199, 212)*/
+            border: none;
+            color: $main-buttons-color;/* white*/
+            height: 48px;
+            font-size: $main-buttons-font-size; /*16px*/
+            font-weight: $main-buttons-font-weigth; /*600*/
+        
+            &:active {
+                transform: translateY(2px);
+            }
+        }
+    
 }
 
 
@@ -88,7 +96,7 @@ button {
     background-color: $hwmy-buttons-background-div-color; /*rgb(53, 53, 71)*/
     border: $hwmy-buttons-div-border; /*1px solid   rgb(82, 75, 99)*/
     border-radius: 16px; 
-    display: flex; /**/
+    display: flex; 
     flex-direction: row;
     width: auto;
 
