@@ -1258,7 +1258,7 @@ nav ul li ul li.line-dd {
   font-size: 16px;
 }
 
-.button-aquagreen {
+.btn-navbar .button-aquagreen {
   width: 167px;
   height: 32px;
   margin: 0px 2px;
@@ -1325,7 +1325,7 @@ footer {
   font-weight: 100;
 }
 .main-footer h4 {
-  color: rgb(118, 69, 217);
+  color: rgb(154, 106, 255);
   text-transform: uppercase;
   font-weight: 500;
 }
@@ -1420,9 +1420,86 @@ li {
   color: #f39c12;
 }
 
-.button-aquagreen {
+.btn-footer .button-aquagreen {
   width: 137px;
   height: 32px;
+}
+
+/* text color + "need help" */
+/* Inseriti da Clara, da rivedere: */
+/* text input color */
+/* Text color gradient */
+/* cards background color */
+/* text color  */
+/* nav bar color */
+/* website background color */
+/* text input color */
+.box-layout6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 48px;
+  background-color: rgb(0, 0, 0);
+}
+.box-layout6 h1 {
+  color: white;
+}
+.box-layout6 p {
+  color: rgb(122, 110, 170);
+}
+
+.flott {
+  width: 20%;
+  height: 40%;
+}
+
+.box-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 48px 24px;
+  background-color: antiquewhite;
+  height: 50vh;
+}
+
+.box-flex1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: aquamarine;
+  width: 50%;
+  padding: 3%;
+}
+.box-flex1 div {
+  padding: 2%;
+}
+.box-flex1 div h1 {
+  font-size: 48px;
+}
+
+.box-flex2 {
+  width: 100%;
+}
+
+.box-flex3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 30%;
+  padding: 10px;
+  background-color: aqua;
+}
+
+.box-flex4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-left: 3px solid black;
 }
 
 /* text color + "need help" */

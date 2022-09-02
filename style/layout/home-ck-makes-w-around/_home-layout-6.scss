@@ -7,10 +7,55 @@
 @import "../../abstracts/variables";
 
 .box-layout6{
-    padding: 48px 0px ;
-    background-color: $black-dk;
+    @include flex(column, center, center);
 
+    padding: 48px 48px ;
+    background-color: $black;
+    h1{
+        color: white;
+    }
+    p{
+        color: $primary-color;
+    }
 }
-h1{
-    color: #fff555;
+
+.flott{
+        width: 20%;
+        height: 40%;
+    }
+
+.box-flex{
+    @include flex(row, space-around, center);
+    padding: 48px 24px ;
+    background-color: antiquewhite;
+    height: 50vh;
+}
+.box-flex1{
+    @include flex(column, space-between, flex-start);
+    background-color: aquamarine;
+    width: 50%;
+    padding: 3%;
+    div{
+        padding: 2%;
+        h1{
+            font-size: 48px;
+        }
+    }
+}
+.box-flex2{
+    width: 100%;
+   
+}
+.box-flex3{
+    @include flex(row, space-between, center);
+    margin-right: 30%;
+    padding: 10px;
+    background-color: aqua
+    
+}
+.box-flex4{
+    @include flex(column, space-between, flex-start);
+    border-left: 3px solid black; 
+    //padding-bottom: 3%;
+    
 }
