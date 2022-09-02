@@ -1,0 +1,145 @@
+// Use rules
+@use "../../components/buttons/buttons";
+
+// Import rules
+@import "../../abstracts/mixins";
+@import "../../abstracts/colors";
+@import "../../abstracts/animations";
+
+//scrollbar
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background: #000000;
+    color: purple;
+}
+
+
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    background-color: #c3b4ce;
+    border: none;
+}
+
+//end scrollbar
+
+.ta-trade-anything {
+
+    @include mq('laptop');
+    @include flex(column);
+    position: absolute;
+    padding-top: 400px;
+    width: 100%;
+    height: 1000px;
+    background: black;
+    
+
+    .ta-wrapper {
+        width: 100%;
+        height: 100%;
+        @include flex(row, space-between, center);
+        position: relative;
+        z-index: 2;
+      
+
+        .ta-contents-section {
+            text-align: left;
+            width: 50%;
+            padding-left: 175px;
+
+            h2 {
+                color: white;
+                padding-top: 20px;
+                font-size: 40px;
+                font-weight: 600;
+                line-height: 1.1;
+
+                 .ta-text-span{
+                    color:#9A6AFF;
+                }
+            }
+
+            h3 {
+                color: #B8ADD2;
+                font-size: 16px;
+                font-weight: lighter;
+                padding-top: 25px;
+            }
+
+            .ta-buttons-section {
+                margin-top: 20px;
+                display: flex;
+
+                .button-aquagreen {
+                    width: 170px;
+                    margin-right: 10px;
+                }
+
+            }
+
+            .link-aquagreen {
+                text-decoration: none;
+            }
+
+        }
+
+        .ta-img-section {
+            width: 50%;
+            height: 100%;
+            @include flex();
+
+            .ta-goldencoin {
+                margin-right: 20%;
+                margin-top: 10%;
+                @include float-anim(5s, "NW");
+                
+                img {
+                    z-index: 3;
+                    height: 400px;
+                    width: auto;
+                }
+            }
+
+                .ta-img-semiwrap {
+                    position: absolute;
+                    margin-right: 10%;
+                    height: 400px;
+                    width: 400px;
+
+                    .ta-bitcoin img {
+                        @include float-anim(3s, "NW");
+                    }
+                    .ta-cakecoin img {
+                        @include float-anim(4s, "NW");
+                    }
+                   
+                    img {
+
+                        position: absolute;
+                        height: 100%;
+                        width: auto;
+                    }
+
+                }
+            
+        }
+    }
+
+    // .fb-bottomgradient {
+        
+    //     position: relative;
+    //     margin-bottom: 0;
+    //     bottom: 180px;
+    //     width: 100%;
+        
+
+    //     svg {
+    //         z-index: 1;
+    //     }
+
+    // }
+
+    }

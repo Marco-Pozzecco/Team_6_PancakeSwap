@@ -1,5 +1,21 @@
 @charset "UTF-8";
-@import url(https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,900;1,800;1,900&display=swap);
+/* kanit-regular - latin */
+@font-face {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../resources/fonts/kanit-v12-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../../resources/fonts/kanit-v12-latin-regular.eot?#iefix") format("embedded-opentype"), url("../../resources/fonts/kanit-v12-latin-regular.woff2") format("woff2"), url("../../resources/fonts/kanit-v12-latin-regular.woff") format("woff"), url("../../resources/fonts/kanit-v12-latin-regular.ttf") format("truetype"), url("../../resources/fonts/kanit-v12-latin-regular.svg#Kanit") format("svg"); /* Legacy iOS */
+}
+:root {
+  font-family: "Kanit", "Sans serif";
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
 /* Bottoni nel div-SWAP(a sinistra)-- */
 /* --bottone in alto a sinistra sbarrato----------------- */
 /* blocco bottoni nel div Swap--------------------------------------------*/
@@ -608,7 +624,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   justify-content: center;
   align-items: center;
 }
-@media screen and (min-width: 1024px) and (max-width: 1247px) {
+@media screen and (min-width: 1024px) {
   .win-prizes .floating-balls {
     position: absolute;
     z-index: 1;
@@ -647,10 +663,11 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     justify-content: center;
     align-items: center;
     height: auto;
-    width: 90%;
+    width: 920px;
     background-color: rgba(8, 6, 11, 0.6);
     -webkit-backdrop-filter: blur(12px);
     -moz-backdrop-filter: blur(12px);
+    -ms-backdrop-filter: blur(12px);
     -o-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
     border-radius: 72px;
@@ -658,8 +675,9 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   }
   .win-prizes .prizes-wrapper h2 {
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 30px;
+    color: rgb(244, 238, 255);
   }
   .win-prizes .prizes-wrapper h2 span {
     color: rgb(154, 106, 255);
@@ -682,31 +700,41 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   }
   .win-prizes .prizes-wrapper .card-container .card {
     margin: 0 10px;
-    width: 30%;
-    border-radius: 20px;
-    padding: 20px;
+    padding: 25px;
+    width: 280px;
+    height: 350px;
+    border-radius: 24px;
   }
-  .win-prizes .prizes-wrapper .card-container .card .card-img {
+  .win-prizes .prizes-wrapper .card-container .card .button-aquagreen {
+    width: 100%;
+    color: rgb(25, 32, 50);
+  }
+  .win-prizes .prizes-wrapper .card-container .card .card-content .card-img {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
   }
-  .win-prizes .prizes-wrapper .card-container .card h3 {
-    font-weight: 600;
-    font-size: 14px;
+  .win-prizes .prizes-wrapper .card-container .card .card-content h3 {
+    font-weight: 550;
+    font-size: 16px;
   }
-  .win-prizes .prizes-wrapper .card-container .card h2 {
+  .win-prizes .prizes-wrapper .card-container .card .card-content h2 {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 40px;
+    margin-bottom: 5px;
   }
-  .win-prizes .prizes-wrapper .card-container .card p {
-    font-size: 12px;
+  .win-prizes .prizes-wrapper .card-container .card .card-content p {
+    font-size: 16px;
     margin: 0;
+    margin-top: 20px;
     margin-bottom: 30px;
   }
   .win-prizes .prizes-wrapper .card-container .card-lottery {
-    background-color: rgb(255, 178, 55);
+    background: linear-gradient(rgb(255, 178, 55), rgb(255, 229, 104));
+    border: solid 1px rgb(255, 178, 55);
+    border-bottom: solid 5px rgb(255, 178, 55);
+    transform: rotate(-3deg);
   }
   .win-prizes .prizes-wrapper .card-container .card-lottery h3 {
     color: rgb(40, 13, 95);
@@ -718,15 +746,18 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     color: rgb(40, 13, 95);
   }
   .win-prizes .prizes-wrapper .card-container .card-prediction {
-    background-color: rgb(154, 106, 255);
+    background-color: #703fd2;
+    border: solid 1px rgb(60, 23, 134);
+    border-bottom: solid 5px rgb(60, 23, 134);
+    transform: rotate(2deg);
   }
-  .win-prizes .prizes-wrapper .card-container .card-prediction h3 {
+  .win-prizes .prizes-wrapper .card-container .card-prediction .card-content h3 {
     color: white;
   }
-  .win-prizes .prizes-wrapper .card-container .card-prediction h2 {
+  .win-prizes .prizes-wrapper .card-container .card-prediction .card-content h2 {
     color: rgb(255, 178, 55);
   }
-  .win-prizes .prizes-wrapper .card-container .card-prediction p {
+  .win-prizes .prizes-wrapper .card-container .card-prediction .card-content p {
     color: white;
   }
 }
@@ -760,6 +791,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 
 ::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 6px;
   border-radius: 6px;
   background-color: #c3b4ce;
   border: none;
@@ -825,12 +857,9 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 .fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingbunny {
   margin-right: 10%;
   margin-top: 10%;
-  -webkit-animation-name: float-NW;
-          animation-name: float-NW;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-name: float-NW;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 .fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingbunny img {
   z-index: 3;
@@ -844,27 +873,30 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   width: 512px;
 }
 .fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingstars .fb-star1 img {
-  -webkit-animation-name: fade-out;
-          animation-name: fade-out;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
+  animation-name: fade-out;
+  animation-duration: 2.5s;
   -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 .fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingstars .fb-star2 img {
-  -webkit-animation-name: fade-out;
-          animation-name: fade-out;
-  -webkit-animation-duration: 3.5s;
-          animation-duration: 3.5s;
+  animation-name: fade-out;
+  animation-duration: 3.5s;
   -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 .fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingstars .fb-star3 img {
-  -webkit-animation-name: fade-out;
-          animation-name: fade-out;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  animation-name: fade-out;
+  animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 .fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingstars img {
@@ -1897,17 +1929,124 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* nav bar color */
 /* website background color */
 /* text input color */
-@-webkit-keyframes float-NW {
-  0% {
-    transform: translatex(0px) translatey(0px);
-  }
-  50% {
-    transform: translatex(10px) translatey(10px);
-  }
-  100% {
-    transform: translatex(0px) translatey(0px);
-  }
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background: #000000;
+  color: purple;
 }
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  background-color: #c3b4ce;
+  border: none;
+}
+
+.ta-trade-anything {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  padding-top: 400px;
+  width: 100%;
+  height: 1000px;
+  background: black;
+}
+.ta-trade-anything .ta-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.ta-trade-anything .ta-wrapper .ta-contents-section {
+  text-align: left;
+  width: 50%;
+  padding-left: 175px;
+}
+.ta-trade-anything .ta-wrapper .ta-contents-section h2 {
+  color: white;
+  padding-top: 20px;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+.ta-trade-anything .ta-wrapper .ta-contents-section h2 .ta-text-span {
+  color: #9A6AFF;
+}
+.ta-trade-anything .ta-wrapper .ta-contents-section h3 {
+  color: #B8ADD2;
+  font-size: 16px;
+  font-weight: lighter;
+  padding-top: 25px;
+}
+.ta-trade-anything .ta-wrapper .ta-contents-section .ta-buttons-section {
+  margin-top: 20px;
+  display: flex;
+}
+.ta-trade-anything .ta-wrapper .ta-contents-section .ta-buttons-section .button-aquagreen {
+  width: 170px;
+  margin-right: 10px;
+}
+.ta-trade-anything .ta-wrapper .ta-contents-section .link-aquagreen {
+  text-decoration: none;
+}
+.ta-trade-anything .ta-wrapper .ta-img-section {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.ta-trade-anything .ta-wrapper .ta-img-section .ta-goldencoin {
+  margin-right: 20%;
+  margin-top: 10%;
+  animation-name: float-NW;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.ta-trade-anything .ta-wrapper .ta-img-section .ta-goldencoin img {
+  z-index: 3;
+  height: 400px;
+  width: auto;
+}
+.ta-trade-anything .ta-wrapper .ta-img-section .ta-img-semiwrap {
+  position: absolute;
+  margin-right: 10%;
+  height: 400px;
+  width: 400px;
+}
+.ta-trade-anything .ta-wrapper .ta-img-section .ta-img-semiwrap .ta-bitcoin img {
+  animation-name: float-NW;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.ta-trade-anything .ta-wrapper .ta-img-section .ta-img-semiwrap .ta-cakecoin img {
+  animation-name: float-NW;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+.ta-trade-anything .ta-wrapper .ta-img-section .ta-img-semiwrap img {
+  position: absolute;
+  height: 100%;
+  width: auto;
+}
+
+/* text color + "need help" */
+/* Inseriti da Clara, da rivedere: */
+/* text input color */
+/* Text color gradient */
+/* cards background color */
+/* text color  */
+/* nav bar color */
+/* website background color */
+/* text input color */
 @keyframes float-NW {
   0% {
     transform: translatex(0px) translatey(0px);
@@ -1919,17 +2058,6 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     transform: translatex(0px) translatey(0px);
   }
 }
-@-webkit-keyframes float-N {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(100px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 @keyframes float-N {
   0% {
     transform: translateY(0);
@@ -1939,17 +2067,6 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   }
   100% {
     transform: translateY(0);
-  }
-}
-@-webkit-keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 1;
   }
 }
 @keyframes fade-out {
@@ -1969,9 +2086,9 @@ html, body {
 }
 
 body {
-  font-family: Kanit, serif;
-  font-size: initial;
   display: flex;
   align-items: center;
   justify-content: center;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

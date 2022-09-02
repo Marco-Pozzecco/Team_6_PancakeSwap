@@ -1,0 +1,20 @@
+@import "../abstracts/mixins";
+
+/* kanit-regular - latin */
+@font-face {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../resources/fonts/kanit-v12-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../../resources/fonts/kanit-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../resources/fonts/kanit-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../resources/fonts/kanit-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../../resources/fonts/kanit-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../../resources/fonts/kanit-v12-latin-regular.svg#Kanit') format('svg'); /* Legacy iOS */
+  }
+
+:root {
+    font-family: 'Kanit', 'Sans serif';
+    @include css3-prefix(font-smoothing, antialiased);
+}
