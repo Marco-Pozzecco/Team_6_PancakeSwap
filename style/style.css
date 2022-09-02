@@ -1453,7 +1453,7 @@ li {
   border: none;
 }
 
-.hm-home-trade-anything {
+.ta-trade-anything {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1464,7 +1464,7 @@ li {
   height: 1000px;
   background: black;
 }
-.hm-home-trade-anything .fb-wrapper {
+.ta-trade-anything .ta-wrapper {
   width: 100%;
   height: 100%;
   display: flex;
@@ -1474,39 +1474,39 @@ li {
   position: relative;
   z-index: 2;
 }
-.hm-home-trade-anything .fb-wrapper .fb-contents-section {
+.ta-trade-anything .ta-wrapper .ta-contents-section {
   text-align: left;
   width: 50%;
-  padding-left: 150px;
+  padding-left: 175px;
 }
-.hm-home-trade-anything .fb-wrapper .fb-contents-section h2 {
+.ta-trade-anything .ta-wrapper .ta-contents-section h2 {
   color: white;
   padding-top: 20px;
-  font-size: 45px;
-  font-weight: 100;
+  font-size: 40px;
+  font-weight: 600;
   line-height: 1.1;
 }
-.hm-home-trade-anything .fb-wrapper .fb-contents-section h2 .ta-text-span {
+.ta-trade-anything .ta-wrapper .ta-contents-section h2 .ta-text-span {
   color: #9A6AFF;
 }
-.hm-home-trade-anything .fb-wrapper .fb-contents-section h3 {
+.ta-trade-anything .ta-wrapper .ta-contents-section h3 {
   color: #B8ADD2;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: lighter;
-  padding-top: 20px;
+  padding-top: 25px;
 }
-.hm-home-trade-anything .fb-wrapper .fb-contents-section .fb-buttons-section {
+.ta-trade-anything .ta-wrapper .ta-contents-section .ta-buttons-section {
   margin-top: 20px;
   display: flex;
 }
-.hm-home-trade-anything .fb-wrapper .fb-contents-section .fb-buttons-section .button-aquagreen {
+.ta-trade-anything .ta-wrapper .ta-contents-section .ta-buttons-section .button-aquagreen {
   width: 170px;
   margin-right: 10px;
 }
-.hm-home-trade-anything .fb-wrapper .fb-contents-section .link-aquagreen {
+.ta-trade-anything .ta-wrapper .ta-contents-section .link-aquagreen {
   text-decoration: none;
 }
-.hm-home-trade-anything .fb-wrapper .fb-img-section {
+.ta-trade-anything .ta-wrapper .ta-img-section {
   width: 50%;
   height: 100%;
   display: flex;
@@ -1514,7 +1514,7 @@ li {
   justify-content: center;
   align-items: center;
 }
-.hm-home-trade-anything .fb-wrapper .fb-img-section .fb-thefloatingbunny {
+.ta-trade-anything .ta-wrapper .ta-img-section .ta-goldencoin {
   margin-right: 20%;
   margin-top: 10%;
   -webkit-animation-name: float-NW;
@@ -1524,18 +1524,18 @@ li {
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
-.hm-home-trade-anything .fb-wrapper .fb-img-section .fb-thefloatingbunny img {
+.ta-trade-anything .ta-wrapper .ta-img-section .ta-goldencoin img {
   z-index: 3;
   height: 400px;
   width: auto;
 }
-.hm-home-trade-anything .fb-wrapper .fb-img-section .fb-thefloatingstars {
+.ta-trade-anything .ta-wrapper .ta-img-section .ta-img-semiwrap {
   position: absolute;
   margin-right: 10%;
   height: 400px;
   width: 400px;
 }
-.hm-home-trade-anything .fb-wrapper .fb-img-section .fb-thefloatingstars .fb-star1 img {
+.ta-trade-anything .ta-wrapper .ta-img-section .ta-img-semiwrap .ta-bitcoin img {
   -webkit-animation-name: float-NW;
           animation-name: float-NW;
   -webkit-animation-duration: 3s;
@@ -1543,7 +1543,7 @@ li {
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
-.hm-home-trade-anything .fb-wrapper .fb-img-section .fb-thefloatingstars .fb-star2 img {
+.ta-trade-anything .ta-wrapper .ta-img-section .ta-img-semiwrap .ta-cakecoin img {
   -webkit-animation-name: float-NW;
           animation-name: float-NW;
   -webkit-animation-duration: 4s;
@@ -1551,19 +1551,10 @@ li {
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
-.hm-home-trade-anything .fb-wrapper .fb-img-section .fb-thefloatingstars img {
+.ta-trade-anything .ta-wrapper .ta-img-section .ta-img-semiwrap img {
   position: absolute;
   height: 100%;
   width: auto;
-}
-.hm-home-trade-anything .fb-bottomgradient {
-  position: relative;
-  margin-bottom: 0;
-  bottom: 180px;
-  width: 100%;
-}
-.hm-home-trade-anything .fb-bottomgradient svg {
-  z-index: 1;
 }
 
 /* text color + "need help" */

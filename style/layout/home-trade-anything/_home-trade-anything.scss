@@ -26,7 +26,7 @@
 
 //end scrollbar
 
-.hm-home-trade-anything {
+.ta-trade-anything {
 
     @include mq('laptop');
     @include flex(column);
@@ -37,7 +37,7 @@
     background: black;
     
 
-    .fb-wrapper {
+    .ta-wrapper {
         width: 100%;
         height: 100%;
         @include flex(row, space-between, center);
@@ -45,16 +45,16 @@
         z-index: 2;
       
 
-        .fb-contents-section {
+        .ta-contents-section {
             text-align: left;
             width: 50%;
-            padding-left: 150px;
+            padding-left: 175px;
 
             h2 {
                 color: white;
                 padding-top: 20px;
-                font-size: 45px;
-                font-weight: 100;
+                font-size: 40px;
+                font-weight: 600;
                 line-height: 1.1;
 
                  .ta-text-span{
@@ -64,12 +64,12 @@
 
             h3 {
                 color: #B8ADD2;
-                font-size: 15px;
+                font-size: 16px;
                 font-weight: lighter;
-                padding-top: 20px;
+                padding-top: 25px;
             }
 
-            .fb-buttons-section {
+            .ta-buttons-section {
                 margin-top: 20px;
                 display: flex;
 
@@ -86,12 +86,12 @@
 
         }
 
-        .fb-img-section {
+        .ta-img-section {
             width: 50%;
             height: 100%;
             @include flex();
 
-            .fb-thefloatingbunny {
+            .ta-goldencoin {
                 margin-right: 20%;
                 margin-top: 10%;
                 @include float-anim(5s, "NW");
@@ -103,16 +103,16 @@
                 }
             }
 
-                .fb-thefloatingstars {
+                .ta-img-semiwrap {
                     position: absolute;
                     margin-right: 10%;
                     height: 400px;
                     width: 400px;
 
-                    .fb-star1 img {
+                    .ta-bitcoin img {
                         @include float-anim(3s, "NW");
                     }
-                    .fb-star2 img {
+                    .ta-cakecoin img {
                         @include float-anim(4s, "NW");
                     }
                    
@@ -128,18 +128,18 @@
         }
     }
 
-    .fb-bottomgradient {
+    // .fb-bottomgradient {
         
-        position: relative;
-        margin-bottom: 0;
-        bottom: 180px;
-        width: 100%;
+    //     position: relative;
+    //     margin-bottom: 0;
+    //     bottom: 180px;
+    //     width: 100%;
         
 
-        svg {
-            z-index: 1;
-        }
+    //     svg {
+    //         z-index: 1;
+    //     }
 
-    }
+    // }
 
     }
