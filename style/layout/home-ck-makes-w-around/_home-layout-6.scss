@@ -51,11 +51,10 @@
     margin-right: 30%;
     padding: 10px;
     background-color: aqua
-    
 }
+
 .box-flex4{
     @include flex(column, space-between, flex-start);
     border-left: 3px solid black; 
     //padding-bottom: 3%;
-    
 }

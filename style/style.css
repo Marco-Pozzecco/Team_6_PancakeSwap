@@ -1,5 +1,18 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,900;1,800;1,900&display=swap);
+@font-face {
+  font-family: Kanit, serif;
+  src: url(https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,900;1,800;1,900&display=swap);
+}
+:root {
+  font-smooth: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
 /* Bottoni nel div-SWAP(a sinistra)-- */
 /* --bottone in alto a sinistra sbarrato----------------- */
 /* blocco bottoni nel div Swap--------------------------------------------*/
@@ -635,8 +648,9 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   }
   .win-prizes .prizes-wrapper h2 {
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 30px;
+    color: rgb(244, 238, 255);
   }
   .win-prizes .prizes-wrapper h2 span {
     color: rgb(154, 106, 255);
@@ -659,31 +673,41 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   }
   .win-prizes .prizes-wrapper .card-container .card {
     margin: 0 10px;
-    width: 30%;
-    border-radius: 20px;
-    padding: 20px;
+    padding: 25px;
+    width: 280px;
+    height: 350px;
+    border-radius: 24px;
   }
-  .win-prizes .prizes-wrapper .card-container .card .card-img {
+  .win-prizes .prizes-wrapper .card-container .card .button-aquagreen {
+    width: 100%;
+    color: rgb(25, 32, 50);
+  }
+  .win-prizes .prizes-wrapper .card-container .card .card-content .card-img {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
   }
-  .win-prizes .prizes-wrapper .card-container .card h3 {
+  .win-prizes .prizes-wrapper .card-container .card .card-content h3 {
     font-weight: 600;
-    font-size: 14px;
+    font-size: 16px;
   }
-  .win-prizes .prizes-wrapper .card-container .card h2 {
+  .win-prizes .prizes-wrapper .card-container .card .card-content h2 {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 40px;
+    margin-bottom: 5px;
   }
-  .win-prizes .prizes-wrapper .card-container .card p {
-    font-size: 12px;
+  .win-prizes .prizes-wrapper .card-container .card .card-content p {
+    font-size: 16px;
     margin: 0;
+    margin-top: 20px;
     margin-bottom: 30px;
   }
   .win-prizes .prizes-wrapper .card-container .card-lottery {
-    background-color: rgb(255, 178, 55);
+    background: linear-gradient(rgb(255, 178, 55), rgb(255, 229, 104));
+    border: solid 1px rgb(255, 178, 55);
+    border-bottom: solid 5px rgb(255, 178, 55);
+    transform: rotate(-3deg);
   }
   .win-prizes .prizes-wrapper .card-container .card-lottery h3 {
     color: rgb(40, 13, 95);
@@ -695,15 +719,18 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     color: rgb(40, 13, 95);
   }
   .win-prizes .prizes-wrapper .card-container .card-prediction {
-    background-color: rgb(154, 106, 255);
+    background-color: #703fd2;
+    border: solid 1px rgb(60, 23, 134);
+    border-bottom: solid 5px rgb(60, 23, 134);
+    transform: rotate(2deg);
   }
-  .win-prizes .prizes-wrapper .card-container .card-prediction h3 {
+  .win-prizes .prizes-wrapper .card-container .card-prediction .card-content h3 {
     color: white;
   }
-  .win-prizes .prizes-wrapper .card-container .card-prediction h2 {
+  .win-prizes .prizes-wrapper .card-container .card-prediction .card-content h2 {
     color: rgb(255, 178, 55);
   }
-  .win-prizes .prizes-wrapper .card-container .card-prediction p {
+  .win-prizes .prizes-wrapper .card-container .card-prediction .card-content p {
     color: white;
   }
 }
@@ -768,6 +795,14 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   color: aliceblue;
   font-size: 18px;
   padding-top: 20px;
+}
+.fb-floating-bunny .fb-wrapper .fb-contents-section .fb-buttons-section {
+  margin-top: 20px;
+  display: flex;
+}
+.fb-floating-bunny .fb-wrapper .fb-contents-section .fb-buttons-section .button-aquagreen {
+  width: 170px;
+  margin-right: 10px;
 }
 .fb-floating-bunny .fb-wrapper .fb-contents-section .link-aquagreen {
   text-decoration: none;
@@ -1434,6 +1469,7 @@ li {
 /* nav bar color */
 /* website background color */
 /* text input color */
+
 .box-layout6 {
   display: flex;
   flex-direction: column;
@@ -1500,6 +1536,125 @@ li {
   justify-content: space-between;
   align-items: flex-start;
   border-left: 3px solid black;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background: #000000;
+  color: purple;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  background-color: #c3b4ce;
+  border: none;
+}
+
+.hm-home-trade-anything {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  padding-top: 400px;
+  width: 100%;
+  height: 1000px;
+  background: black;
+}
+.hm-home-trade-anything .fb-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.hm-home-trade-anything .fb-wrapper .fb-contents-section {
+  text-align: left;
+  width: 50%;
+  padding-left: 150px;
+}
+.hm-home-trade-anything .fb-wrapper .fb-contents-section h2 {
+  color: white;
+  padding-top: 20px;
+  font-size: 45px;
+  font-weight: 100;
+  line-height: 1.1;
+}
+.hm-home-trade-anything .fb-wrapper .fb-contents-section h2 .ta-text-span {
+  color: #9A6AFF;
+}
+.hm-home-trade-anything .fb-wrapper .fb-contents-section h3 {
+  color: #B8ADD2;
+  font-size: 15px;
+  font-weight: lighter;
+  padding-top: 20px;
+}
+.hm-home-trade-anything .fb-wrapper .fb-contents-section .fb-buttons-section {
+  margin-top: 20px;
+  display: flex;
+}
+.hm-home-trade-anything .fb-wrapper .fb-contents-section .fb-buttons-section .button-aquagreen {
+  width: 170px;
+  margin-right: 10px;
+}
+.hm-home-trade-anything .fb-wrapper .fb-contents-section .link-aquagreen {
+  text-decoration: none;
+}
+.hm-home-trade-anything .fb-wrapper .fb-img-section {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.hm-home-trade-anything .fb-wrapper .fb-img-section .fb-thefloatingbunny {
+  margin-right: 20%;
+  margin-top: 10%;
+  animation-name: float-NW;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.hm-home-trade-anything .fb-wrapper .fb-img-section .fb-thefloatingbunny img {
+  z-index: 3;
+  height: 400px;
+  width: auto;
+}
+.hm-home-trade-anything .fb-wrapper .fb-img-section .fb-thefloatingstars {
+  position: absolute;
+  margin-right: 10%;
+  height: 400px;
+  width: 400px;
+}
+.hm-home-trade-anything .fb-wrapper .fb-img-section .fb-thefloatingstars .fb-star1 img {
+  animation-name: float-NW;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.hm-home-trade-anything .fb-wrapper .fb-img-section .fb-thefloatingstars .fb-star2 img {
+  animation-name: float-NW;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+.hm-home-trade-anything .fb-wrapper .fb-img-section .fb-thefloatingstars img {
+  position: absolute;
+  height: 100%;
+  width: auto;
+}
+.hm-home-trade-anything .fb-bottomgradient {
+  position: relative;
+  margin-bottom: 0;
+  bottom: 180px;
+  width: 100%;
+}
+.hm-home-trade-anything .fb-bottomgradient svg {
+  z-index: 1;
+
 }
 
 /* text color + "need help" */
