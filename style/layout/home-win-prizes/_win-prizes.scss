@@ -28,6 +28,11 @@
                 height: 100%;
                 width: auto;
             }
+            img#ball-n2 { @include float-anim(5s, 'N');}
+            img#ball-n4 { @include float-anim(6s, 'N');}
+            img#ball-n6 { @include float-anim(4s, 'N');}
+            img#ball-n7 { @include float-anim(5s, 'N');}
+            img#ball-n9 { @include float-anim(6s, 'N');}
         }
         .floating-cards {
             position: absolute;
@@ -44,7 +49,11 @@
             }
             #card-bottom-left {
                 z-index: -1;
+                @include float-anim(6s, 'NW');
             }
+            #card-top-right {@include float-anim(5s, 'NW');}
+            #card-green {@include float-anim(5.5s, 'NW');}
+            #card-red {@include float-anim(7s, 'NW');}
         }
         .prizes-wrapper {
             z-index: 10;
@@ -58,7 +67,7 @@
             & h2 {
                 // Rules
                 font-size: 40px;
-                font-weight: 500;
+                font-weight: 600;
                 margin-bottom: 30px;
                 color: rgb(244, 238, 255);
                 & span {
@@ -97,11 +106,9 @@
                         .card-img {
                             @include flex(row, flex-end, center);
                         }
-                        img {
-                            
-                        }
+
                         h3 {
-                            font-weight: 550;
+                            font-weight: 6000;
                             font-size: 16px;
                         }
                         h2 {
@@ -137,7 +144,7 @@
                     }
                 }
                 .card-prediction {
-                    background-color: #703fd2;
+                    background: linear-gradient(rgb(112, 63, 210), rgb(82, 34, 178));
 
                     border: solid 1px rgb(60, 23, 134);
                     border-bottom: solid 5px rgb(60, 23, 134);
@@ -145,6 +152,8 @@
                     transform: rotate(2deg);
 
                     .card-content {
+
+                        
                         & h3 {
                             color: white;
                         }

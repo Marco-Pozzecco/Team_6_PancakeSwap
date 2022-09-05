@@ -5,13 +5,18 @@
 @use "../style/abstracts/typography";
 // Pages
 @use "pages/home";
-// @use "pages/trade-swap";
+@use "pages/trade-swap";
 
 // Dichiarazioni import
 @import "abstracts/animations";
 @import "abstracts/mixins";
 @import "abstracts/variables";
 @import "abstracts/colors";
+// @import "style/components/buttons/buttons-variables";
+
+
+
+
 
 // Scrollbar
 
@@ -30,9 +35,8 @@
 }
 
 // Animations
-
 @include float(10px, 'NW');
-@include float(100px, 'N');
+@include float(20px, 'N');
 @include fade-out;
 
 

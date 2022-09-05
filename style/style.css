@@ -1,4 +1,16 @@
 @charset "UTF-8";
+/* Bottoni nel div-SWAP(a sinistra)-- */
+/* --bottone in alto a sinistra sbarrato----------------- */
+/* blocco bottoni nel div Swap--------------------------------------------*/
+/* --Bottoni scelta valute BNB, CAKE, etc------------------------------------------------- */
+/* BUTTON SWITCH SMALL  --   >>>BSS<<<    Check-Box - Staked Only - (ON/OFF Button)-------------- */
+/* BOTTONE SEMI TRASPARENTE-2 (scuro) --- (HARVEST)------------------------------
+che appare nella sezione che esce dopo che si clicca su una sezione della griglia/lista in Trade → Farm---- */
+/* ----Farm → POOLS---- */
+/*WIN ..............................................*/
+/* ----WIN → PREDICTION (BETA)---- */
+/*ETICHETTE Sovrapposte*/
+/* ----WIN → LOTTERY---- */
 /* kanit-regular - latin */
 @font-face {
   font-family: "Kanit";
@@ -16,6 +28,18 @@
   font-smoothing: antialiased;
 }
 
+/* Bottoni nel div-SWAP(a sinistra)-- */
+/* --bottone in alto a sinistra sbarrato----------------- */
+/* blocco bottoni nel div Swap--------------------------------------------*/
+/* --Bottoni scelta valute BNB, CAKE, etc------------------------------------------------- */
+/* BUTTON SWITCH SMALL  --   >>>BSS<<<    Check-Box - Staked Only - (ON/OFF Button)-------------- */
+/* BOTTONE SEMI TRASPARENTE-2 (scuro) --- (HARVEST)------------------------------
+che appare nella sezione che esce dopo che si clicca su una sezione della griglia/lista in Trade → Farm---- */
+/* ----Farm → POOLS---- */
+/*WIN ..............................................*/
+/* ----WIN → PREDICTION (BETA)---- */
+/*ETICHETTE Sovrapposte*/
+/* ----WIN → LOTTERY---- */
 /* Bottoni nel div-SWAP(a sinistra)-- */
 /* --bottone in alto a sinistra sbarrato----------------- */
 /* blocco bottoni nel div Swap--------------------------------------------*/
@@ -579,6 +603,18 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   width: 240px;
 }
 
+/* Bottoni nel div-SWAP(a sinistra)-- */
+/* --bottone in alto a sinistra sbarrato----------------- */
+/* blocco bottoni nel div Swap--------------------------------------------*/
+/* --Bottoni scelta valute BNB, CAKE, etc------------------------------------------------- */
+/* BUTTON SWITCH SMALL  --   >>>BSS<<<    Check-Box - Staked Only - (ON/OFF Button)-------------- */
+/* BOTTONE SEMI TRASPARENTE-2 (scuro) --- (HARVEST)------------------------------
+che appare nella sezione che esce dopo che si clicca su una sezione della griglia/lista in Trade → Farm---- */
+/* ----Farm → POOLS---- */
+/*WIN ..............................................*/
+/* ----WIN → PREDICTION (BETA)---- */
+/*ETICHETTE Sovrapposte*/
+/* ----WIN → LOTTERY---- */
 /* text color + "need help" */
 /* Inseriti da Clara, da rivedere: */
 /* text input color */
@@ -615,6 +651,46 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     height: 100%;
     width: auto;
   }
+  .win-prizes .floating-balls img#ball-n2 {
+    -webkit-animation-name: float-N;
+            animation-name: float-N;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  .win-prizes .floating-balls img#ball-n4 {
+    -webkit-animation-name: float-N;
+            animation-name: float-N;
+    -webkit-animation-duration: 6s;
+            animation-duration: 6s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  .win-prizes .floating-balls img#ball-n6 {
+    -webkit-animation-name: float-N;
+            animation-name: float-N;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  .win-prizes .floating-balls img#ball-n7 {
+    -webkit-animation-name: float-N;
+            animation-name: float-N;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  .win-prizes .floating-balls img#ball-n9 {
+    -webkit-animation-name: float-N;
+            animation-name: float-N;
+    -webkit-animation-duration: 6s;
+            animation-duration: 6s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
   .win-prizes .floating-cards {
     position: absolute;
     z-index: 1;
@@ -631,6 +707,36 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   }
   .win-prizes .floating-cards #card-bottom-left {
     z-index: -1;
+    -webkit-animation-name: float-NW;
+            animation-name: float-NW;
+    -webkit-animation-duration: 6s;
+            animation-duration: 6s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  .win-prizes .floating-cards #card-top-right {
+    -webkit-animation-name: float-NW;
+            animation-name: float-NW;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  .win-prizes .floating-cards #card-green {
+    -webkit-animation-name: float-NW;
+            animation-name: float-NW;
+    -webkit-animation-duration: 5.5s;
+            animation-duration: 5.5s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  .win-prizes .floating-cards #card-red {
+    -webkit-animation-name: float-NW;
+            animation-name: float-NW;
+    -webkit-animation-duration: 7s;
+            animation-duration: 7s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
   }
   .win-prizes .prizes-wrapper {
     z-index: 10;
@@ -650,7 +756,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   }
   .win-prizes .prizes-wrapper h2 {
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 30px;
     color: rgb(244, 238, 255);
   }
@@ -691,7 +797,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     align-items: center;
   }
   .win-prizes .prizes-wrapper .card-container .card .card-content h3 {
-    font-weight: 550;
+    font-weight: 6000;
     font-size: 16px;
   }
   .win-prizes .prizes-wrapper .card-container .card .card-content h2 {
@@ -721,7 +827,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     color: rgb(40, 13, 95);
   }
   .win-prizes .prizes-wrapper .card-container .card-prediction {
-    background-color: #703fd2;
+    background: linear-gradient(rgb(112, 63, 210), rgb(82, 34, 178));
     border: solid 1px rgb(60, 23, 134);
     border-bottom: solid 5px rgb(60, 23, 134);
     transform: rotate(2deg);
@@ -737,6 +843,18 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   }
 }
 
+/* Bottoni nel div-SWAP(a sinistra)-- */
+/* --bottone in alto a sinistra sbarrato----------------- */
+/* blocco bottoni nel div Swap--------------------------------------------*/
+/* --Bottoni scelta valute BNB, CAKE, etc------------------------------------------------- */
+/* BUTTON SWITCH SMALL  --   >>>BSS<<<    Check-Box - Staked Only - (ON/OFF Button)-------------- */
+/* BOTTONE SEMI TRASPARENTE-2 (scuro) --- (HARVEST)------------------------------
+che appare nella sezione che esce dopo che si clicca su una sezione della griglia/lista in Trade → Farm---- */
+/* ----Farm → POOLS---- */
+/*WIN ..............................................*/
+/* ----WIN → PREDICTION (BETA)---- */
+/*ETICHETTE Sovrapposte*/
+/* ----WIN → LOTTERY---- */
 /* text color + "need help" */
 /* Inseriti da Clara, da rivedere: */
 /* text input color */
@@ -876,6 +994,18 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   z-index: 1;
 }
 
+/* Bottoni nel div-SWAP(a sinistra)-- */
+/* --bottone in alto a sinistra sbarrato----------------- */
+/* blocco bottoni nel div Swap--------------------------------------------*/
+/* --Bottoni scelta valute BNB, CAKE, etc------------------------------------------------- */
+/* BUTTON SWITCH SMALL  --   >>>BSS<<<    Check-Box - Staked Only - (ON/OFF Button)-------------- */
+/* BOTTONE SEMI TRASPARENTE-2 (scuro) --- (HARVEST)------------------------------
+che appare nella sezione che esce dopo che si clicca su una sezione della griglia/lista in Trade → Farm---- */
+/* ----Farm → POOLS---- */
+/*WIN ..............................................*/
+/* ----WIN → PREDICTION (BETA)---- */
+/*ETICHETTE Sovrapposte*/
+/* ----WIN → LOTTERY---- */
 /* text color + "need help" */
 /* Inseriti da Clara, da rivedere: */
 /* text input color */
@@ -1010,6 +1140,145 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   max-height: 48px;
 }
 
+@media screen and (max-width: 851px) {
+  .stat-section .wrapper-stat .card-container-dst {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.stat-section {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%);
+}
+.stat-section .wrapper-stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 24px;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+.stat-section .wrapper-stat svg {
+  margin: 0 0 24px;
+}
+.stat-section .wrapper-stat h2 {
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: rgb(244, 238, 255);
+}
+.stat-section .wrapper-stat h2:nth-child(3) {
+  margin-bottom: 32px;
+}
+.stat-section .wrapper-stat .description-stat-sec {
+  font-size: 16px;
+  color: rgb(184, 173, 210);
+}
+.stat-section .wrapper-stat .dst1 {
+  font-weight: 400;
+}
+.stat-section .wrapper-stat .dst2 {
+  vertical-align: baseline;
+  margin-bottom: 10px;
+}
+.stat-section .wrapper-stat .dst3 {
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+.stat-section .wrapper-stat .card-container-dst {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst {
+  background-color: rgb(56, 50, 65);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  border-radius: 24px;
+  margin-right: 16px;
+  position: relative;
+  border: 1px solid rgb(75, 59, 80);
+  border-bottom: 3px solid rgb(75, 59, 80);
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg {
+  align-self: flex-end;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg .cdsvg-color1 {
+  fill: rgb(154, 106, 255);
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg .cdsvg-color2 {
+  fill: rgb(49, 208, 170);
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg .cdsvg-color3 {
+  fill: rgb(237, 75, 158);
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title {
+  text-align: left;
+  margin-top: 64px;
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title h2 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdta {
+  color: rgb(244, 238, 255);
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb {
+  margin-bottom: 24px;
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb1 {
+  color: rgb(154, 106, 255);
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb2 {
+  color: rgb(49, 208, 170);
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb3 {
+  color: rgb(237, 75, 158);
+}
+.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .card-dist-last-text {
+  color: rgb(184, 173, 210);
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 16px;
+}
+.stat-section .svg-transition-color-box {
+  background-color: black;
+}
+.stat-section .svg-transition-color-box .svg-transition-color {
+  fill: rgb(30, 17, 50);
+  width: 100%;
+  height: 100%;
+  max-height: 48px;
+}
+
+/* Bottoni nel div-SWAP(a sinistra)-- */
+/* --bottone in alto a sinistra sbarrato----------------- */
+/* blocco bottoni nel div Swap--------------------------------------------*/
+/* --Bottoni scelta valute BNB, CAKE, etc------------------------------------------------- */
+/* BUTTON SWITCH SMALL  --   >>>BSS<<<    Check-Box - Staked Only - (ON/OFF Button)-------------- */
+/* BOTTONE SEMI TRASPARENTE-2 (scuro) --- (HARVEST)------------------------------
+che appare nella sezione che esce dopo che si clicca su una sezione della griglia/lista in Trade → Farm---- */
+/* ----Farm → POOLS---- */
+/*WIN ..............................................*/
+/* ----WIN → PREDICTION (BETA)---- */
+/*ETICHETTE Sovrapposte*/
+/* ----WIN → LOTTERY---- */
 /* text color + "need help" */
 /* Inseriti da Clara, da rivedere: */
 /* text input color */
@@ -1188,6 +1457,18 @@ body .main-banner-container .main-banner-sub-container .bunny-container-b img {
   height: 100%;
 }
 
+/* Bottoni nel div-SWAP(a sinistra)-- */
+/* --bottone in alto a sinistra sbarrato----------------- */
+/* blocco bottoni nel div Swap--------------------------------------------*/
+/* --Bottoni scelta valute BNB, CAKE, etc------------------------------------------------- */
+/* BUTTON SWITCH SMALL  --   >>>BSS<<<    Check-Box - Staked Only - (ON/OFF Button)-------------- */
+/* BOTTONE SEMI TRASPARENTE-2 (scuro) --- (HARVEST)------------------------------
+che appare nella sezione che esce dopo che si clicca su una sezione della griglia/lista in Trade → Farm---- */
+/* ----Farm → POOLS---- */
+/*WIN ..............................................*/
+/* ----WIN → PREDICTION (BETA)---- */
+/*ETICHETTE Sovrapposte*/
+/* ----WIN → LOTTERY---- */
 /* text color + "need help" */
 /* Inseriti da Clara, da rivedere: */
 /* text input color */
@@ -1301,6 +1582,18 @@ nav ul li ul li.line-dd {
   padding: 0px 2px;
 }
 
+/* Bottoni nel div-SWAP(a sinistra)-- */
+/* --bottone in alto a sinistra sbarrato----------------- */
+/* blocco bottoni nel div Swap--------------------------------------------*/
+/* --Bottoni scelta valute BNB, CAKE, etc------------------------------------------------- */
+/* BUTTON SWITCH SMALL  --   >>>BSS<<<    Check-Box - Staked Only - (ON/OFF Button)-------------- */
+/* BOTTONE SEMI TRASPARENTE-2 (scuro) --- (HARVEST)------------------------------
+che appare nella sezione che esce dopo che si clicca su una sezione della griglia/lista in Trade → Farm---- */
+/* ----Farm → POOLS---- */
+/*WIN ..............................................*/
+/* ----WIN → PREDICTION (BETA)---- */
+/*ETICHETTE Sovrapposte*/
+/* ----WIN → LOTTERY---- */
 /* text color + "need help" */
 /* Inseriti da Clara, da rivedere: */
 /* text input color */
@@ -1310,6 +1603,18 @@ nav ul li ul li.line-dd {
 /* nav bar color */
 /* website background color */
 /* text input color */
+/* Bottoni nel div-SWAP(a sinistra)-- */
+/* --bottone in alto a sinistra sbarrato----------------- */
+/* blocco bottoni nel div Swap--------------------------------------------*/
+/* --Bottoni scelta valute BNB, CAKE, etc------------------------------------------------- */
+/* BUTTON SWITCH SMALL  --   >>>BSS<<<    Check-Box - Staked Only - (ON/OFF Button)-------------- */
+/* BOTTONE SEMI TRASPARENTE-2 (scuro) --- (HARVEST)------------------------------
+che appare nella sezione che esce dopo che si clicca su una sezione della griglia/lista in Trade → Farm---- */
+/* ----Farm → POOLS---- */
+/*WIN ..............................................*/
+/* ----WIN → PREDICTION (BETA)---- */
+/*ETICHETTE Sovrapposte*/
+/* ----WIN → LOTTERY---- */
 i {
   color: rgb(184, 173, 210);
 }
@@ -1461,6 +1766,18 @@ li {
   height: 32px;
 }
 
+/* Bottoni nel div-SWAP(a sinistra)-- */
+/* --bottone in alto a sinistra sbarrato----------------- */
+/* blocco bottoni nel div Swap--------------------------------------------*/
+/* --Bottoni scelta valute BNB, CAKE, etc------------------------------------------------- */
+/* BUTTON SWITCH SMALL  --   >>>BSS<<<    Check-Box - Staked Only - (ON/OFF Button)-------------- */
+/* BOTTONE SEMI TRASPARENTE-2 (scuro) --- (HARVEST)------------------------------
+che appare nella sezione che esce dopo che si clicca su una sezione della griglia/lista in Trade → Farm---- */
+/* ----Farm → POOLS---- */
+/*WIN ..............................................*/
+/* ----WIN → PREDICTION (BETA)---- */
+/*ETICHETTE Sovrapposte*/
+/* ----WIN → LOTTERY---- */
 /* text color + "need help" */
 /* Inseriti da Clara, da rivedere: */
 /* text input color */
@@ -1587,6 +1904,18 @@ li {
   width: auto;
 }
 
+/* Bottoni nel div-SWAP(a sinistra)-- */
+/* --bottone in alto a sinistra sbarrato----------------- */
+/* blocco bottoni nel div Swap--------------------------------------------*/
+/* --Bottoni scelta valute BNB, CAKE, etc------------------------------------------------- */
+/* BUTTON SWITCH SMALL  --   >>>BSS<<<    Check-Box - Staked Only - (ON/OFF Button)-------------- */
+/* BOTTONE SEMI TRASPARENTE-2 (scuro) --- (HARVEST)------------------------------
+che appare nella sezione che esce dopo che si clicca su una sezione della griglia/lista in Trade → Farm---- */
+/* ----Farm → POOLS---- */
+/*WIN ..............................................*/
+/* ----WIN → PREDICTION (BETA)---- */
+/*ETICHETTE Sovrapposte*/
+/* ----WIN → LOTTERY---- */
 /* text color + "need help" */
 /* Inseriti da Clara, da rivedere: */
 /* text input color */
@@ -1714,6 +2043,392 @@ li {
   width: auto;
 }
 
+/* Bottoni nel div-SWAP(a sinistra)-- */
+/* --bottone in alto a sinistra sbarrato----------------- */
+/* blocco bottoni nel div Swap--------------------------------------------*/
+/* --Bottoni scelta valute BNB, CAKE, etc------------------------------------------------- */
+/* BUTTON SWITCH SMALL  --   >>>BSS<<<    Check-Box - Staked Only - (ON/OFF Button)-------------- */
+/* BOTTONE SEMI TRASPARENTE-2 (scuro) --- (HARVEST)------------------------------
+che appare nella sezione che esce dopo che si clicca su una sezione della griglia/lista in Trade → Farm---- */
+/* ----Farm → POOLS---- */
+/*WIN ..............................................*/
+/* ----WIN → PREDICTION (BETA)---- */
+/*ETICHETTE Sovrapposte*/
+/* ----WIN → LOTTERY---- */
+/* text color + "need help" */
+/* Inseriti da Clara, da rivedere: */
+/* text input color */
+/* Text color gradient */
+/* cards background color */
+/* text color  */
+/* nav bar color */
+/* website background color */
+/* text input color */
+body {
+  background-color: red;
+}
+
+/* Bottoni nel div-SWAP(a sinistra)-- */
+/* --bottone in alto a sinistra sbarrato----------------- */
+/* blocco bottoni nel div Swap--------------------------------------------*/
+/* --Bottoni scelta valute BNB, CAKE, etc------------------------------------------------- */
+/* BUTTON SWITCH SMALL  --   >>>BSS<<<    Check-Box - Staked Only - (ON/OFF Button)-------------- */
+/* BOTTONE SEMI TRASPARENTE-2 (scuro) --- (HARVEST)------------------------------
+che appare nella sezione che esce dopo che si clicca su una sezione della griglia/lista in Trade → Farm---- */
+/* ----Farm → POOLS---- */
+/*WIN ..............................................*/
+/* ----WIN → PREDICTION (BETA)---- */
+/*ETICHETTE Sovrapposte*/
+/* ----WIN → LOTTERY---- */
+/* text color + "need help" */
+/* Inseriti da Clara, da rivedere: */
+/* text input color */
+/* Text color gradient */
+/* cards background color */
+/* text color  */
+/* nav bar color */
+/* website background color */
+/* text input color */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  all: unset;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: linear-gradient(139.73deg, rgb(49, 61, 92) 0%, rgb(61, 42, 84) 100%);
+}
+body .main-section-currencty-converter {
+  margin-right: 200px;
+  height: 520px;
+  width: 25%;
+  padding: 0 40px;
+}
+body .main-section-currencty-converter .currency-converter {
+  background: rgb(39, 38, 44);
+  border: 1px solid rgba(62, 25, 25, 0.618);
+  width: 100%;
+  height: 100%; /*518px sul sito*/
+  border-radius: 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 60% 20%;
+}
+body .main-section-currencty-converter .currency-converter .cc-top-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .main-section-currencty-converter .currency-converter .cc-top-content .cct-title-box {
+  border: 1px solid red;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .main-section-currencty-converter .currency-converter .cc-top-content .cct-description {
+  border: 1px solid red;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .main-section-currencty-converter .currency-converter .cc-body-content {
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40% 18% 40% 18%;
+}
+body .main-section-currencty-converter .currency-converter .cc-body-content .currency-logo {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  width: 100%;
+  text-align: left;
+}
+body .main-section-currencty-converter .currency-converter .cc-body-content .currency-a {
+  grid-row: 1/2;
+}
+body .main-section-currencty-converter .currency-converter .cc-body-content .cc-arrov-box {
+  grid-row: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .main-section-currencty-converter .currency-converter .cc-body-content .cc-arrov-box .cc-arrov {
+  fill: aqua;
+}
+body .main-section-currencty-converter .currency-converter .cc-body-content .currency-b {
+  grid-row: 3/4;
+}
+body .main-section-currencty-converter .currency-converter .cc-body-content .currency-x {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
+body .main-section-currencty-converter .currency-converter .cc-body-content .currency-x .cc-input-box {
+  background-color: rgb(55, 47, 71);
+  border-radius: 24px;
+  width: 100%;
+  height: 80%;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px 20px 10px;
+}
+body .main-section-currencty-converter .currency-converter .cc-body-content .currency-x .cc-input-box .cc-input {
+  width: 100%;
+  height: 24px;
+  direction: rtl;
+  border: none;
+  background-color: rgb(186, 178, 178);
+}
+body .main-section-currencty-converter .currency-converter .cc-body-content .info-cc-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+body .main-section-currencty-converter .currency-converter .cc-body-content .info-cc-box .info-cc-box-invisible {
+  grid-row: 4/5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+body .main-section-currencty-converter .currency-converter .cc-body-content .info-cc-box .info-cc-box-invisible .icc-inv-content-a1 {
+  color: rgb(154, 106, 255);
+}
+body .main-section-currencty-converter .currency-converter .cc-body-content .info-cc-box .info-cc-box-invisible .icc-inv-content-a2 {
+  color: rgb(255, 255, 255);
+}
+body .main-section-currencty-converter .currency-converter .cc-body-content .info-cc-box .info-cc-box-visible {
+  grid-row: 4/5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+body .main-section-currencty-converter .currency-converter .cc-body-content .info-cc-box .info-cc-box-visible .icc-vis-content-b1 {
+  color: rgb(154, 106, 255);
+}
+body .main-section-currencty-converter .currency-converter .cc-body-content .info-cc-box .info-cc-box-visible .icc-vis-content-b2 {
+  color: rgb(31, 199, 212);
+}
+body .main-section-currencty-converter .currency-converter .cc-foot-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: yellowgreen;
+}
+
+/* Bottoni nel div-SWAP(a sinistra)-- */
+/* --bottone in alto a sinistra sbarrato----------------- */
+/* blocco bottoni nel div Swap--------------------------------------------*/
+/* --Bottoni scelta valute BNB, CAKE, etc------------------------------------------------- */
+/* BUTTON SWITCH SMALL  --   >>>BSS<<<    Check-Box - Staked Only - (ON/OFF Button)-------------- */
+/* BOTTONE SEMI TRASPARENTE-2 (scuro) --- (HARVEST)------------------------------
+che appare nella sezione che esce dopo che si clicca su una sezione della griglia/lista in Trade → Farm---- */
+/* ----Farm → POOLS---- */
+/*WIN ..............................................*/
+/* ----WIN → PREDICTION (BETA)---- */
+/*ETICHETTE Sovrapposte*/
+/* ----WIN → LOTTERY---- */
+/* text color + "need help" */
+/* Inseriti da Clara, da rivedere: */
+/* text input color */
+/* Text color gradient */
+/* cards background color */
+/* text color  */
+/* nav bar color */
+/* website background color */
+/* text input color */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(30, 21, 202);
+}
+body .bottom-section-container {
+  width: 100%;
+  height: 150px;
+  padding-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(240, 248, 255, 0.212);
+  text-align: center;
+}
+body .bottom-section-container .left-content {
+  width: 30%;
+  height: 80%;
+  color: aliceblue;
+  border: 1px solid white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgba(128, 255, 0, 0.371);
+}
+body .bottom-section-container .right-content {
+  width: 70%;
+  height: 80%;
+  color: aliceblue;
+  border: 1px solid white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgba(0, 255, 255, 0.271);
+}
+
+/* Bottoni nel div-SWAP(a sinistra)-- */
+/* --bottone in alto a sinistra sbarrato----------------- */
+/* blocco bottoni nel div Swap--------------------------------------------*/
+/* --Bottoni scelta valute BNB, CAKE, etc------------------------------------------------- */
+/* BUTTON SWITCH SMALL  --   >>>BSS<<<    Check-Box - Staked Only - (ON/OFF Button)-------------- */
+/* BOTTONE SEMI TRASPARENTE-2 (scuro) --- (HARVEST)------------------------------
+che appare nella sezione che esce dopo che si clicca su una sezione della griglia/lista in Trade → Farm---- */
+/* ----Farm → POOLS---- */
+/*WIN ..............................................*/
+/* ----WIN → PREDICTION (BETA)---- */
+/*ETICHETTE Sovrapposte*/
+/* ----WIN → LOTTERY---- */
+/* text color + "need help" */
+/* Inseriti da Clara, da rivedere: */
+/* text input color */
+/* Text color gradient */
+/* cards background color */
+/* text color  */
+/* nav bar color */
+/* website background color */
+/* text input color */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(33, 58, 219, 0.848);
+}
+body .ts-sub-nav-bar-main-container {
+  width: 100%;
+  height: 42px;
+  background-color: rgba(29, 28, 34, 0.856);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .ts-sub-nav-bar-main-container .ts-subsections-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 35%;
+}
+body .ts-sub-nav-bar-main-container .ts-subsections-nav .ts-tsp-corner {
+  height: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-right: 20px;
+}
+body .ts-sub-nav-bar-main-container .ts-subsections-nav .ts-tsp-corner .ts-title-sub-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+body .ts-sub-nav-bar-main-container .ts-subsections-nav .ts-tsp-corner .ts-title-sub-page:hover {
+  background-color: rgba(184, 173, 210, 0.2);
+}
+body .ts-sub-nav-bar-main-container .ts-subsections-nav .ts-tsp-corner .ts-title-sub-page a {
+  color: rgb(184, 173, 210);
+  font-family: Kanit, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+body .ts-sub-nav-bar-main-container .ts-subsections-nav .ts-tsp-corner .ts-title-sub-page .sight-line {
+  background-color: aqua;
+  height: 4px;
+  width: 100%;
+  align-self: center;
+  position: absolute;
+  bottom: 0;
+  border-radius: 2px 2px 0 0;
+}
+body .ts-sub-nav-bar-main-container .ts-subsections-nav .ts-tsp-corner .ts-title-sub-page .sl-1 {
+  display: block;
+}
+body .ts-sub-nav-bar-main-container .ts-subsections-nav .ts-tsp-corner .ts-title-sub-page .sl-2, body .ts-sub-nav-bar-main-container .ts-subsections-nav .ts-tsp-corner .ts-title-sub-page .sl-3 {
+  display: none;
+}
+body .ts-sub-nav-bar-main-container .ts-subsections-nav .ts-tsp-corner .ts-title-sub-page .ts-tsp-svg-box {
+  width: 20px;
+  height: 20px;
+  fill: rgb(184, 173, 210);
+  margin-left: 3px;
+}
+body .ts-sub-nav-bar-main-container .ts-subsections-nav .ts-tsp-corner .ts-title-sub-page .ts-tsp-svg-box svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Bottoni nel div-SWAP(a sinistra)-- */
+/* --bottone in alto a sinistra sbarrato----------------- */
+/* blocco bottoni nel div Swap--------------------------------------------*/
+/* --Bottoni scelta valute BNB, CAKE, etc------------------------------------------------- */
+/* BUTTON SWITCH SMALL  --   >>>BSS<<<    Check-Box - Staked Only - (ON/OFF Button)-------------- */
+/* BOTTONE SEMI TRASPARENTE-2 (scuro) --- (HARVEST)------------------------------
+che appare nella sezione che esce dopo che si clicca su una sezione della griglia/lista in Trade → Farm---- */
+/* ----Farm → POOLS---- */
+/*WIN ..............................................*/
+/* ----WIN → PREDICTION (BETA)---- */
+/*ETICHETTE Sovrapposte*/
+/* ----WIN → LOTTERY---- */
+/* Bottoni nel div-SWAP(a sinistra)-- */
+/* --bottone in alto a sinistra sbarrato----------------- */
+/* blocco bottoni nel div Swap--------------------------------------------*/
+/* --Bottoni scelta valute BNB, CAKE, etc------------------------------------------------- */
+/* BUTTON SWITCH SMALL  --   >>>BSS<<<    Check-Box - Staked Only - (ON/OFF Button)-------------- */
+/* BOTTONE SEMI TRASPARENTE-2 (scuro) --- (HARVEST)------------------------------
+che appare nella sezione che esce dopo che si clicca su una sezione della griglia/lista in Trade → Farm---- */
+/* ----Farm → POOLS---- */
+/*WIN ..............................................*/
+/* ----WIN → PREDICTION (BETA)---- */
+/*ETICHETTE Sovrapposte*/
+/* ----WIN → LOTTERY---- */
 /* text color + "need help" */
 /* Inseriti da Clara, da rivedere: */
 /* text input color */
@@ -1764,7 +2479,7 @@ li {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(100px);
+    transform: translateY(20px);
   }
   100% {
     transform: translateY(0);
@@ -1775,7 +2490,7 @@ li {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(100px);
+    transform: translateY(20px);
   }
   100% {
     transform: translateY(0);
