@@ -651,6 +651,31 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     height: 100%;
     width: auto;
   }
+  .win-prizes .floating-balls img#ball-n2 {
+    animation-name: float-N;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  .win-prizes .floating-balls img#ball-n4 {
+    animation-name: float-N;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+  .win-prizes .floating-balls img#ball-n6 {
+    animation-name: float-N;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  .win-prizes .floating-balls img#ball-n7 {
+    animation-name: float-N;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  .win-prizes .floating-balls img#ball-n9 {
+    animation-name: float-N;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
   .win-prizes .floating-cards {
     position: absolute;
     z-index: 1;
@@ -667,6 +692,24 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   }
   .win-prizes .floating-cards #card-bottom-left {
     z-index: -1;
+    animation-name: float-NW;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+  .win-prizes .floating-cards #card-top-right {
+    animation-name: float-NW;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  .win-prizes .floating-cards #card-green {
+    animation-name: float-NW;
+    animation-duration: 5.5s;
+    animation-iteration-count: infinite;
+  }
+  .win-prizes .floating-cards #card-red {
+    animation-name: float-NW;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
   }
   .win-prizes .prizes-wrapper {
     z-index: 10;
@@ -686,7 +729,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   }
   .win-prizes .prizes-wrapper h2 {
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 30px;
     color: rgb(244, 238, 255);
   }
@@ -727,7 +770,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     align-items: center;
   }
   .win-prizes .prizes-wrapper .card-container .card .card-content h3 {
-    font-weight: 550;
+    font-weight: 6000;
     font-size: 16px;
   }
   .win-prizes .prizes-wrapper .card-container .card .card-content h2 {
@@ -757,7 +800,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     color: rgb(40, 13, 95);
   }
   .win-prizes .prizes-wrapper .card-container .card-prediction {
-    background-color: #703fd2;
+    background: linear-gradient(rgb(112, 63, 210), rgb(82, 34, 178));
     border: solid 1px rgb(60, 23, 134);
     border-bottom: solid 5px rgb(60, 23, 134);
     transform: rotate(2deg);
@@ -1598,6 +1641,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 
 ::-webkit-scrollbar-thumb {
+<<<<<<< HEAD
+=======
+  -webkit-border-radius: 6px;
+>>>>>>> f92d7beaacc65812b81f287c32e4274d749488f0
   border-radius: 6px;
   background-color: #c3b4ce;
   border: none;
@@ -1667,12 +1714,18 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 .ta-trade-anything .ta-wrapper .ta-img-section .ta-goldencoin {
   margin-right: 20%;
   margin-top: 10%;
+<<<<<<< HEAD
   -webkit-animation-name: float-NW;
           animation-name: float-NW;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+=======
+  animation-name: float-NW;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+>>>>>>> f92d7beaacc65812b81f287c32e4274d749488f0
 }
 .ta-trade-anything .ta-wrapper .ta-img-section .ta-goldencoin img {
   z-index: 3;
@@ -1686,6 +1739,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   width: 400px;
 }
 .ta-trade-anything .ta-wrapper .ta-img-section .ta-img-semiwrap .ta-bitcoin img {
+<<<<<<< HEAD
   -webkit-animation-name: float-NW;
           animation-name: float-NW;
   -webkit-animation-duration: 3s;
@@ -1700,6 +1754,16 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
           animation-duration: 4s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+=======
+  animation-name: float-NW;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.ta-trade-anything .ta-wrapper .ta-img-section .ta-img-semiwrap .ta-cakecoin img {
+  animation-name: float-NW;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+>>>>>>> f92d7beaacc65812b81f287c32e4274d749488f0
 }
 .ta-trade-anything .ta-wrapper .ta-img-section .ta-img-semiwrap img {
   position: absolute;
@@ -2077,6 +2141,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* nav bar color */
 /* website background color */
 /* text input color */
+<<<<<<< HEAD
 @-webkit-keyframes float-NW {
   0% {
     transform: translatex(0px) translatey(0px);
@@ -2088,6 +2153,8 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     transform: translatex(0px) translatey(0px);
   }
 }
+=======
+>>>>>>> f92d7beaacc65812b81f287c32e4274d749488f0
 @keyframes float-NW {
   0% {
     transform: translatex(0px) translatey(0px);
@@ -2115,7 +2182,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     transform: translateY(0);
   }
   50% {
-    transform: translateY(100px);
+    transform: translateY(20px);
   }
   100% {
     transform: translateY(0);
