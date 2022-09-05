@@ -615,6 +615,31 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     height: 100%;
     width: auto;
   }
+  .win-prizes .floating-balls img#ball-n2 {
+    animation-name: float-N;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  .win-prizes .floating-balls img#ball-n4 {
+    animation-name: float-N;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+  .win-prizes .floating-balls img#ball-n6 {
+    animation-name: float-N;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  .win-prizes .floating-balls img#ball-n7 {
+    animation-name: float-N;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  .win-prizes .floating-balls img#ball-n9 {
+    animation-name: float-N;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
   .win-prizes .floating-cards {
     position: absolute;
     z-index: 1;
@@ -631,6 +656,24 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   }
   .win-prizes .floating-cards #card-bottom-left {
     z-index: -1;
+    animation-name: float-NW;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+  .win-prizes .floating-cards #card-top-right {
+    animation-name: float-NW;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  .win-prizes .floating-cards #card-green {
+    animation-name: float-NW;
+    animation-duration: 5.5s;
+    animation-iteration-count: infinite;
+  }
+  .win-prizes .floating-cards #card-red {
+    animation-name: float-NW;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
   }
   .win-prizes .prizes-wrapper {
     z-index: 10;
@@ -651,7 +694,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   }
   .win-prizes .prizes-wrapper h2 {
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 30px;
     color: rgb(244, 238, 255);
   }
@@ -692,7 +735,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     align-items: center;
   }
   .win-prizes .prizes-wrapper .card-container .card .card-content h3 {
-    font-weight: 550;
+    font-weight: 6000;
     font-size: 16px;
   }
   .win-prizes .prizes-wrapper .card-container .card .card-content h2 {
@@ -722,7 +765,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     color: rgb(40, 13, 95);
   }
   .win-prizes .prizes-wrapper .card-container .card-prediction {
-    background-color: #703fd2;
+    background: linear-gradient(rgb(112, 63, 210), rgb(82, 34, 178));
     border: solid 1px rgb(60, 23, 134);
     border-bottom: solid 5px rgb(60, 23, 134);
     transform: rotate(2deg);
@@ -1615,7 +1658,7 @@ li {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(100px);
+    transform: translateY(20px);
   }
   100% {
     transform: translateY(0);
