@@ -26,126 +26,312 @@
 
 //end scrollbar
 
-.ea-earn {
-
-    @include mq('laptop');
-    @include flex(column);
-    position: absolute;
-    padding-top: 400px;
-    width: 100%;
-    height: 1000px;
-    background: #3B3D51;
+.aaa {
+    width: 60%;
+    height: 900px;
+    @include flex();
+    padding: 30px; // provvisorio
     
-
-    .ea-wrapper {
+    .ea-earn {
+        @include mq('laptop');
+        @include flex(column);
+        position: absolute;
+        // padding-top: 400px;
         width: 100%;
+        // height: 1000px;
         height: 100%;
-        @include flex(row-reverse, space-between, center);
-        position: relative;
-        z-index: 2;
-      
-
-        .ea-contents-section {
-            text-align: left;
-            width: 53%;
-            padding-right: 15%;
-            
-
-            h2 {
-                color: white;
-                padding-top: 20px;
-                font-size: 40px;
-                font-weight: 600;
-                line-height: 1.1;
-
-                 .ea-text-span{
-                    color:#9A6AFF;
-                }
-            }
-
-            h3 {
-                color: #B8ADD2;
-                font-size: 16px;
-                font-weight: lighter;
-                padding-top: 25px;
-            }
-
-            .ea-buttons-section {
-                margin-top: 20px;
-                display: flex;
-
-                .button-aquagreen {
-                    width: 170px;
-                    margin-right: 10px;
-                }
-
-            }
-
-            .link-aquagreen {
-                text-decoration: none;
-            }
-
-        }
-
-        .ea-img-section {
-            width: 47%;
+        background: #3B3D51;
+    // ---milton---------------------------------------
+        // width: 60%;
+        // padding: 20px;// provvisorio --------------
+        // height: 900px;
+        // background-color: rgba(0, 0, 255, 0.322);
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        
+    
+        .ea-wrapper {
+            width: 100%;
             height: 100%;
-            @include flex();
-            margin-left: 15%;
-
-            .ea-goldencoin {
-                margin-right: 10px;
-                margin-top: 10%;
-                @include float-anim(5s, "NW");
+            @include flex(row-reverse, space-between, center);
+            position: relative;
+            z-index: 2;
+          
+    
+            .ea-contents-section {
+                text-align: left;
+                width: 53%;
+                padding-right: 15%;
                 
-                img {
-                    z-index: 3;
-                    height: 400px;
-                    width: auto;
+    
+                h2 {
+                    color: white;
+                    padding-top: 20px;
+                    font-size: 40px;
+                    font-weight: 600;
+                    line-height: 1.1;
+    
+                     .ea-text-span{
+                        color:#9A6AFF;
+                    }
                 }
+    
+                h3 {
+                    color: #B8ADD2;
+                    font-size: 16px;
+                    font-weight: lighter;
+                    padding-top: 25px;
+                }
+    
+                .ea-buttons-section {
+                    margin-top: 20px;
+                    display: flex;
+    
+                    .button-aquagreen {
+                        width: 170px;
+                        margin-right: 10px;
+                    }
+    
+                }
+    
+                .link-aquagreen {
+                    text-decoration: none;
+                }
+    
             }
-
-                .ea-img-semiwrap {
-                    position: absolute;
-                    margin-right: 8%;
-                    height: 400px;
-                    width: 400px;
-
-                    .ea-bitcoin img {
-                        @include float-anim(3s, "NW");
-                    }
-                    .ea-cakecoin img {
-                        @include float-anim(4s, "N");
-                    }
-                   
+    
+            .ea-img-section {
+                width: 47%;
+                height: 100%;
+                @include flex();
+                margin-left: 15%;
+    
+                .ea-goldencoin {
+                    margin-right: 10px;
+                    margin-top: 10%;
+                    @include float-anim(5s, "NW");
+                    
                     img {
-
-                        position: absolute;
-                        height: 100%;
+                        z-index: 3;
+                        height: 400px;
                         width: auto;
                     }
-
                 }
-            
+    
+                    .ea-img-semiwrap {
+                        position: absolute;
+                        margin-right: 8%;
+                        height: 400px;
+                        width: 400px;
+    
+                        .ea-bitcoin img {
+                            @include float-anim(3s, "NW");
+                        }
+                        .ea-cakecoin img {
+                            @include float-anim(4s, "N");
+                        }
+                       
+                        img {
+    
+                            position: absolute;
+                            height: 100%;
+                            width: auto;
+                        }
+    
+                    }
+                
+            }
         }
+    
+        // .fb-bottomgradient {
+            
+        //     position: relative;
+        //     margin-bottom: 0;
+        //     bottom: 180px;
+        //     width: 100%;
+            
+    
+        //     svg {
+        //         z-index: 1;
+        //     }
+    
+        // }
+    
+        }
+    
+    
+    // ########################################################################àà
+    
+    
+    .earn-bottom-banner-main-container {
+        width: 100%;
+        height: 128px; 
+        // background-color: rgba(0, 100, 0, 0.958);
+        font-family: Kanit, sans-serif;
+    
+        // TITLES--------------------------------------
+            .ebb-main-title-container {
+                height: 24px;
+                width: 100%;
+                // background-color: rgba(255, 255, 0, 0.649);
+                
+    
+                
+                    .ebb-title-container-a {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+    
+    
+                            .ebb-title-a1 {
+                                color: rgb(244, 238, 255);
+                                font-size: 20px;
+    
+                                .ebb-title-a2 {
+                                    color: rgb(154, 106, 255);
+                                }
+                            }
+    
+                            .bwg-earn-style {
+                                width: 48px;
+                                height: 24px;
+                                align-self: center;
+                                // fill: rgb(184, 173, 210);  xSVG
+    
+                                // .bwg-earn-style > svg {
+                                //         fill: rgb(184, 173, 210);  xSVG
+    
+                                //     }
+                            }
+    
+    
+                    }
+    
+                    .ebb-title-container-b {
+                        display: none;
+    
+                        .ebb-title-b1 {
+                            color: white;
+    
+                            .ebb-title-b2 {
+                                color: rgb(154, 106, 255);;
+                            }
+                        }
+    
+                    }
+    
+    
+    
+            }
+    
+        // BODY------------------------------------
+        .ebb-main-body-container {
+            width: 100%;
+            height:calc(100% - 24px);
+            
+    
+    
+                .ebb-main-body-items-container {
+                    width: 100%;
+                    height:100%;
+                    // background-color: rgba(172, 255, 47, 0.545);
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                    grid-template-rows: 1fr;
+                    flex-direction: column;
+                    
+    
+                        .ebb-item {
+                            // background-color: rgba(0, 255, 255, 0.468);
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            border-left: 1px solid grey;
+                            padding-left: 16px;
+                            
+    
+                                &:first-child {
+                                    border-left: none;
+                                }
+    
+    
+                                .ebbi-s1 {
+                                    color: rgb(154, 106, 255);
+                                    font-size: 12px;
+                                    font-weight: 600;
+                                    margin-bottom: 8px;
+                                }
+    
+                                .ebbi-s2 {
+                                    color: rgb(244, 238, 255);
+                                    font-size: 16px;
+                                    font-weight: 600;
+    
+                                }
+                                .ebbi-s3 {
+                                    color: rgb(184, 173, 210);
+                                    font-size: 16px;
+                                    font-weight: 400;
+    
+                                }
+    
+                        }
+    
+                        .ebbi-1 {
+                            // background-color: red;
+                            grid-template-columns: 1 / 2;
+    
+                        }
+    
+                        .ebbi-2 {
+                            // background-color:blue ;
+                            grid-template-columns: 2 / 3;
+    
+                        }
+    
+                        .ebbi-3 {
+                            // background-color: green;
+                            grid-template-columns: 3 / 4;
+    
+                        }
+    
+                        .ebbi-4 {
+                            // background-color: yellow;
+                            grid-template-columns: 4 / 5;
+    
+                        }
+    
+                        .ebbi-5 {
+                            // background-color: white;
+                            grid-template-columns: 5 / 6;
+    
+                        }
+    
+    
+    
+    
+                }
+    
+                // .ebb-body-a {
+                //     // display: block;
+                //     // transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s;
+                // }
+    
+                .ebb-body-b {
+                    visibility: hidden;
+                    // transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s;
+                }
+        }
+    
+    
+    
+    
+    
+    
+    
     }
-
-    // .fb-bottomgradient {
-        
-    //     position: relative;
-    //     margin-bottom: 0;
-    //     bottom: 180px;
-    //     width: 100%;
-        
-
-    //     svg {
-    //         z-index: 1;
-    //     }
-
-    // }
-
-    }
-
+}
 
 
 

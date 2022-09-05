@@ -1938,18 +1938,26 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   border: none;
 }
 
-.ea-earn {
+.aaa {
+  width: 60%;
+  height: 900px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.aaa .ea-earn {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: absolute;
-  padding-top: 400px;
   width: 100%;
-  height: 1000px;
+  height: 100%;
   background: #3B3D51;
 }
-.ea-earn .ea-wrapper {
+.aaa .ea-earn .ea-wrapper {
   width: 100%;
   height: 100%;
   display: flex;
@@ -1959,39 +1967,39 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   position: relative;
   z-index: 2;
 }
-.ea-earn .ea-wrapper .ea-contents-section {
+.aaa .ea-earn .ea-wrapper .ea-contents-section {
   text-align: left;
   width: 53%;
   padding-right: 15%;
 }
-.ea-earn .ea-wrapper .ea-contents-section h2 {
+.aaa .ea-earn .ea-wrapper .ea-contents-section h2 {
   color: white;
   padding-top: 20px;
   font-size: 40px;
   font-weight: 600;
   line-height: 1.1;
 }
-.ea-earn .ea-wrapper .ea-contents-section h2 .ea-text-span {
+.aaa .ea-earn .ea-wrapper .ea-contents-section h2 .ea-text-span {
   color: #9A6AFF;
 }
-.ea-earn .ea-wrapper .ea-contents-section h3 {
+.aaa .ea-earn .ea-wrapper .ea-contents-section h3 {
   color: #B8ADD2;
   font-size: 16px;
   font-weight: lighter;
   padding-top: 25px;
 }
-.ea-earn .ea-wrapper .ea-contents-section .ea-buttons-section {
+.aaa .ea-earn .ea-wrapper .ea-contents-section .ea-buttons-section {
   margin-top: 20px;
   display: flex;
 }
-.ea-earn .ea-wrapper .ea-contents-section .ea-buttons-section .button-aquagreen {
+.aaa .ea-earn .ea-wrapper .ea-contents-section .ea-buttons-section .button-aquagreen {
   width: 170px;
   margin-right: 10px;
 }
-.ea-earn .ea-wrapper .ea-contents-section .link-aquagreen {
+.aaa .ea-earn .ea-wrapper .ea-contents-section .link-aquagreen {
   text-decoration: none;
 }
-.ea-earn .ea-wrapper .ea-img-section {
+.aaa .ea-earn .ea-wrapper .ea-img-section {
   width: 47%;
   height: 100%;
   display: flex;
@@ -2000,7 +2008,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   align-items: center;
   margin-left: 15%;
 }
-.ea-earn .ea-wrapper .ea-img-section .ea-goldencoin {
+.aaa .ea-earn .ea-wrapper .ea-img-section .ea-goldencoin {
   margin-right: 10px;
   margin-top: 10%;
   -webkit-animation-name: float-NW;
@@ -2010,18 +2018,18 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
-.ea-earn .ea-wrapper .ea-img-section .ea-goldencoin img {
+.aaa .ea-earn .ea-wrapper .ea-img-section .ea-goldencoin img {
   z-index: 3;
   height: 400px;
   width: auto;
 }
-.ea-earn .ea-wrapper .ea-img-section .ea-img-semiwrap {
+.aaa .ea-earn .ea-wrapper .ea-img-section .ea-img-semiwrap {
   position: absolute;
   margin-right: 8%;
   height: 400px;
   width: 400px;
 }
-.ea-earn .ea-wrapper .ea-img-section .ea-img-semiwrap .ea-bitcoin img {
+.aaa .ea-earn .ea-wrapper .ea-img-section .ea-img-semiwrap .ea-bitcoin img {
   -webkit-animation-name: float-NW;
           animation-name: float-NW;
   -webkit-animation-duration: 3s;
@@ -2029,7 +2037,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
-.ea-earn .ea-wrapper .ea-img-section .ea-img-semiwrap .ea-cakecoin img {
+.aaa .ea-earn .ea-wrapper .ea-img-section .ea-img-semiwrap .ea-cakecoin img {
   -webkit-animation-name: float-N;
           animation-name: float-N;
   -webkit-animation-duration: 4s;
@@ -2037,10 +2045,101 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
-.ea-earn .ea-wrapper .ea-img-section .ea-img-semiwrap img {
+.aaa .ea-earn .ea-wrapper .ea-img-section .ea-img-semiwrap img {
   position: absolute;
   height: 100%;
   width: auto;
+}
+.aaa .earn-bottom-banner-main-container {
+  width: 100%;
+  height: 128px;
+  font-family: Kanit, sans-serif;
+}
+.aaa .earn-bottom-banner-main-container .ebb-main-title-container {
+  height: 24px;
+  width: 100%;
+}
+.aaa .earn-bottom-banner-main-container .ebb-main-title-container .ebb-title-container-a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.aaa .earn-bottom-banner-main-container .ebb-main-title-container .ebb-title-container-a .ebb-title-a1 {
+  color: rgb(244, 238, 255);
+  font-size: 20px;
+}
+.aaa .earn-bottom-banner-main-container .ebb-main-title-container .ebb-title-container-a .ebb-title-a1 .ebb-title-a2 {
+  color: rgb(154, 106, 255);
+}
+.aaa .earn-bottom-banner-main-container .ebb-main-title-container .ebb-title-container-a .bwg-earn-style {
+  width: 48px;
+  height: 24px;
+  align-self: center;
+}
+.aaa .earn-bottom-banner-main-container .ebb-main-title-container .ebb-title-container-b {
+  display: none;
+}
+.aaa .earn-bottom-banner-main-container .ebb-main-title-container .ebb-title-container-b .ebb-title-b1 {
+  color: white;
+}
+.aaa .earn-bottom-banner-main-container .ebb-main-title-container .ebb-title-container-b .ebb-title-b1 .ebb-title-b2 {
+  color: rgb(154, 106, 255);
+}
+.aaa .earn-bottom-banner-main-container .ebb-main-body-container {
+  width: 100%;
+  height: calc(100% - 24px);
+}
+.aaa .earn-bottom-banner-main-container .ebb-main-body-container .ebb-main-body-items-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  flex-direction: column;
+}
+.aaa .earn-bottom-banner-main-container .ebb-main-body-container .ebb-main-body-items-container .ebb-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 1px solid grey;
+  padding-left: 16px;
+}
+.aaa .earn-bottom-banner-main-container .ebb-main-body-container .ebb-main-body-items-container .ebb-item:first-child {
+  border-left: none;
+}
+.aaa .earn-bottom-banner-main-container .ebb-main-body-container .ebb-main-body-items-container .ebb-item .ebbi-s1 {
+  color: rgb(154, 106, 255);
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.aaa .earn-bottom-banner-main-container .ebb-main-body-container .ebb-main-body-items-container .ebb-item .ebbi-s2 {
+  color: rgb(244, 238, 255);
+  font-size: 16px;
+  font-weight: 600;
+}
+.aaa .earn-bottom-banner-main-container .ebb-main-body-container .ebb-main-body-items-container .ebb-item .ebbi-s3 {
+  color: rgb(184, 173, 210);
+  font-size: 16px;
+  font-weight: 400;
+}
+.aaa .earn-bottom-banner-main-container .ebb-main-body-container .ebb-main-body-items-container .ebbi-1 {
+  grid-template-columns: 1/2;
+}
+.aaa .earn-bottom-banner-main-container .ebb-main-body-container .ebb-main-body-items-container .ebbi-2 {
+  grid-template-columns: 2/3;
+}
+.aaa .earn-bottom-banner-main-container .ebb-main-body-container .ebb-main-body-items-container .ebbi-3 {
+  grid-template-columns: 3/4;
+}
+.aaa .earn-bottom-banner-main-container .ebb-main-body-container .ebb-main-body-items-container .ebbi-4 {
+  grid-template-columns: 4/5;
+}
+.aaa .earn-bottom-banner-main-container .ebb-main-body-container .ebb-main-body-items-container .ebbi-5 {
+  grid-template-columns: 5/6;
+}
+.aaa .earn-bottom-banner-main-container .ebb-main-body-container .ebb-body-b {
+  visibility: hidden;
 }
 
 /* Bottoni nel div-SWAP(a sinistra)-- */
