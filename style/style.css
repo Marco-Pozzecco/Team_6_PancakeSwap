@@ -643,7 +643,6 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     background-color: rgba(8, 6, 11, 0.6);
     -webkit-backdrop-filter: blur(12px);
     -moz-backdrop-filter: blur(12px);
-    -ms-backdrop-filter: blur(12px);
     -o-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
     border-radius: 72px;
@@ -755,7 +754,6 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 
 ::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 6px;
   border-radius: 6px;
   background-color: #c3b4ce;
   border: none;
@@ -821,9 +819,12 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 .fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingbunny {
   margin-right: 10%;
   margin-top: 10%;
-  animation-name: float-NW;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingbunny img {
   z-index: 3;
@@ -837,30 +838,27 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   width: 512px;
 }
 .fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingstars .fb-star1 img {
-  animation-name: fade-out;
-  animation-duration: 2.5s;
+  -webkit-animation-name: fade-out;
+          animation-name: fade-out;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
   -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  -ms-animation-iteration-count: infinite;
-  -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 .fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingstars .fb-star2 img {
-  animation-name: fade-out;
-  animation-duration: 3.5s;
+  -webkit-animation-name: fade-out;
+          animation-name: fade-out;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
   -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  -ms-animation-iteration-count: infinite;
-  -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 .fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingstars .fb-star3 img {
-  animation-name: fade-out;
-  animation-duration: 5s;
+  -webkit-animation-name: fade-out;
+          animation-name: fade-out;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  -ms-animation-iteration-count: infinite;
-  -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 .fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingstars img {
@@ -1480,7 +1478,6 @@ li {
 }
 
 ::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 6px;
   border-radius: 6px;
   background-color: #c3b4ce;
   border: none;
@@ -1550,9 +1547,12 @@ li {
 .ta-trade-anything .ta-wrapper .ta-img-section .ta-goldencoin {
   margin-right: 20%;
   margin-top: 10%;
-  animation-name: float-NW;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .ta-trade-anything .ta-wrapper .ta-img-section .ta-goldencoin img {
   z-index: 3;
@@ -1566,14 +1566,20 @@ li {
   width: 400px;
 }
 .ta-trade-anything .ta-wrapper .ta-img-section .ta-img-semiwrap .ta-bitcoin img {
-  animation-name: float-NW;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .ta-trade-anything .ta-wrapper .ta-img-section .ta-img-semiwrap .ta-cakecoin img {
-  animation-name: float-NW;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .ta-trade-anything .ta-wrapper .ta-img-section .ta-img-semiwrap img {
   position: absolute;
@@ -1590,6 +1596,158 @@ li {
 /* nav bar color */
 /* website background color */
 /* text input color */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background: #000000;
+  color: purple;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: #c3b4ce;
+  border: none;
+}
+
+.ea-earn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  padding-top: 400px;
+  width: 100%;
+  height: 1000px;
+  background: #3B3D51;
+}
+.ea-earn .ea-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.ea-earn .ea-wrapper .ea-contents-section {
+  text-align: left;
+  width: 53%;
+  padding-right: 15%;
+}
+.ea-earn .ea-wrapper .ea-contents-section h2 {
+  color: white;
+  padding-top: 20px;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+.ea-earn .ea-wrapper .ea-contents-section h2 .ea-text-span {
+  color: #9A6AFF;
+}
+.ea-earn .ea-wrapper .ea-contents-section h3 {
+  color: #B8ADD2;
+  font-size: 16px;
+  font-weight: lighter;
+  padding-top: 25px;
+}
+.ea-earn .ea-wrapper .ea-contents-section .ea-buttons-section {
+  margin-top: 20px;
+  display: flex;
+}
+.ea-earn .ea-wrapper .ea-contents-section .ea-buttons-section .button-aquagreen {
+  width: 170px;
+  margin-right: 10px;
+}
+.ea-earn .ea-wrapper .ea-contents-section .link-aquagreen {
+  text-decoration: none;
+}
+.ea-earn .ea-wrapper .ea-img-section {
+  width: 47%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15%;
+}
+.ea-earn .ea-wrapper .ea-img-section .ea-goldencoin {
+  margin-right: 10px;
+  margin-top: 10%;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.ea-earn .ea-wrapper .ea-img-section .ea-goldencoin img {
+  z-index: 3;
+  height: 400px;
+  width: auto;
+}
+.ea-earn .ea-wrapper .ea-img-section .ea-img-semiwrap {
+  position: absolute;
+  margin-right: 8%;
+  height: 400px;
+  width: 400px;
+}
+.ea-earn .ea-wrapper .ea-img-section .ea-img-semiwrap .ea-bitcoin img {
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.ea-earn .ea-wrapper .ea-img-section .ea-img-semiwrap .ea-cakecoin img {
+  -webkit-animation-name: float-N;
+          animation-name: float-N;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.ea-earn .ea-wrapper .ea-img-section .ea-img-semiwrap img {
+  position: absolute;
+  height: 100%;
+  width: auto;
+}
+
+/* text color + "need help" */
+/* Inseriti da Clara, da rivedere: */
+/* text input color */
+/* Text color gradient */
+/* cards background color */
+/* text color  */
+/* nav bar color */
+/* website background color */
+/* text input color */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background: #000000;
+  color: purple;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: #c3b4ce;
+  border: none;
+}
+
+@-webkit-keyframes float-NW {
+  0% {
+    transform: translatex(0px) translatey(0px);
+  }
+  50% {
+    transform: translatex(10px) translatey(10px);
+  }
+  100% {
+    transform: translatex(0px) translatey(0px);
+  }
+}
+
 @keyframes float-NW {
   0% {
     transform: translatex(0px) translatey(0px);
@@ -1601,6 +1759,17 @@ li {
     transform: translatex(0px) translatey(0px);
   }
 }
+@-webkit-keyframes float-N {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 @keyframes float-N {
   0% {
     transform: translateY(0);
@@ -1610,6 +1779,17 @@ li {
   }
   100% {
     transform: translateY(0);
+  }
+}
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
   }
 }
 @keyframes fade-out {
@@ -1632,6 +1812,4 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

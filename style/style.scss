@@ -13,7 +13,21 @@
 @import "abstracts/variables";
 @import "abstracts/colors";
 
+// Scrollbar
 
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background: #000000;
+    color: purple;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    background-color: #c3b4ce;
+    border: none;
+}
 
 // Animations
 

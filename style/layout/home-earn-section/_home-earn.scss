@@ -26,7 +26,7 @@
 
 //end scrollbar
 
-.ta-trade-anything {
+.ea-earn {
 
     @include mq('laptop');
     @include flex(column);
@@ -34,21 +34,22 @@
     padding-top: 400px;
     width: 100%;
     height: 1000px;
-    background: black;
+    background: #3B3D51;
     
 
-    .ta-wrapper {
+    .ea-wrapper {
         width: 100%;
         height: 100%;
-        @include flex(row, space-between, center);
+        @include flex(row-reverse, space-between, center);
         position: relative;
         z-index: 2;
       
 
-        .ta-contents-section {
+        .ea-contents-section {
             text-align: left;
-            width: 50%;
-            padding-left: 175px;
+            width: 53%;
+            padding-right: 15%;
+            
 
             h2 {
                 color: white;
@@ -57,7 +58,7 @@
                 font-weight: 600;
                 line-height: 1.1;
 
-                 .ta-text-span{
+                 .ea-text-span{
                     color:#9A6AFF;
                 }
             }
@@ -69,7 +70,7 @@
                 padding-top: 25px;
             }
 
-            .ta-buttons-section {
+            .ea-buttons-section {
                 margin-top: 20px;
                 display: flex;
 
@@ -86,13 +87,14 @@
 
         }
 
-        .ta-img-section {
-            width: 50%;
+        .ea-img-section {
+            width: 47%;
             height: 100%;
             @include flex();
+            margin-left: 15%;
 
-            .ta-goldencoin {
-                margin-right: 20%;
+            .ea-goldencoin {
+                margin-right: 10px;
                 margin-top: 10%;
                 @include float-anim(5s, "NW");
                 
@@ -103,17 +105,17 @@
                 }
             }
 
-                .ta-img-semiwrap {
+                .ea-img-semiwrap {
                     position: absolute;
-                    margin-right: 10%;
+                    margin-right: 8%;
                     height: 400px;
                     width: 400px;
 
-                    .ta-bitcoin img {
+                    .ea-bitcoin img {
                         @include float-anim(3s, "NW");
                     }
-                    .ta-cakecoin img {
-                        @include float-anim(4s, "NW");
+                    .ea-cakecoin img {
+                        @include float-anim(4s, "N");
                     }
                    
                     img {
