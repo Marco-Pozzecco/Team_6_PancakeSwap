@@ -640,7 +640,6 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     background-color: rgba(8, 6, 11, 0.6);
     -webkit-backdrop-filter: blur(12px);
     -moz-backdrop-filter: blur(12px);
-    -ms-backdrop-filter: blur(12px);
     -o-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
     border-radius: 72px;
@@ -752,7 +751,6 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 
 ::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 6px;
   border-radius: 6px;
   background-color: #c3b4ce;
   border: none;
@@ -818,9 +816,12 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 .fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingbunny {
   margin-right: 10%;
   margin-top: 10%;
-  animation-name: float-NW;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingbunny img {
   z-index: 3;
@@ -834,30 +835,27 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   width: 512px;
 }
 .fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingstars .fb-star1 img {
-  animation-name: fade-out;
-  animation-duration: 2.5s;
+  -webkit-animation-name: fade-out;
+          animation-name: fade-out;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
   -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  -ms-animation-iteration-count: infinite;
-  -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 .fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingstars .fb-star2 img {
-  animation-name: fade-out;
-  animation-duration: 3.5s;
+  -webkit-animation-name: fade-out;
+          animation-name: fade-out;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
   -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  -ms-animation-iteration-count: infinite;
-  -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 .fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingstars .fb-star3 img {
-  animation-name: fade-out;
-  animation-duration: 5s;
+  -webkit-animation-name: fade-out;
+          animation-name: fade-out;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  -ms-animation-iteration-count: infinite;
-  -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 .fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingstars img {
@@ -1469,20 +1467,141 @@ li {
 /* nav bar color */
 /* website background color */
 /* text input color */
-
 .box-layout6 {
+  padding: 48px;
+  background-color: rgb(0, 0, 0);
+}
+.box-layout6 h2 {
+  color: white;
+  font-size: 45px;
+  line-height: 1.1;
+  padding-bottom: 2%;
+}
+.box-layout6 h2 .tx-span {
+  color: #9A6AFF;
+}
+.box-layout6 .main-p {
+  color: rgb(184, 173, 210);
+}
+.box-layout6 .sec-p {
+  font-size: 24px;
+  font-weight: bolder;
+}
+.box-layout6 .box-flex {
+  display: flex;
+  justify-content: center;
+  padding: 48px 24px;
+  width: 90%;
+  height: 50vh;
+}
+.box-layout6 .box-flex .box-flex1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 48px 48px;
-  background-color: rgb(0, 0, 0);
+  align-items: flex-start;
+  width: 45%;
+  padding-left: 3%;
 }
-.box-layout6 h1 {
+.box-layout6 .box-flex .box-flex1 div {
+  padding: 2%;
+}
+.box-layout6 .box-flex .box-flex1 .buttons-buyCake {
+  margin-right: 10px;
+}
+.box-layout6 .box-flex .box-flex1 a {
+  color: rgb(31, 199, 212);
+  font-weight: bold;
+}
+.box-layout6 .box-flex .box-flex1 a:hover {
+  text-decoration: underline;
+}
+.box-layout6 .box-flex .img-wrapper {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.box-layout6 .box-flex .img-wrapper .bottom-right-pill {
+  margin-top: 10%;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.box-layout6 .box-flex .img-wrapper .bottom-right-pill img {
+  z-index: 3;
+  height: 400px;
+  width: auto;
+}
+.box-layout6 .box-flex .img-wrapper .floating-pills {
+  position: absolute;
+  margin-right: 10%;
+  height: 400px;
+  width: 400px;
+}
+.box-layout6 .box-flex .img-wrapper .floating-pills .top-left-pill img {
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.box-layout6 .box-flex .img-wrapper .floating-pills .coin img {
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.box-layout6 .box-flex .img-wrapper .floating-pills .top-right-pill img {
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.box-layout6 .box-flex .img-wrapper .floating-pills img {
+  position: absolute;
+  height: 100%;
+  width: auto;
+}
+.box-layout6 .box-flex-table {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1fr 1fr 1fr);
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+  row-gap: 32px;
+  padding: 0px 150px;
+}
+.box-layout6 .box-flex-table .box-flex-data {
   color: white;
 }
-.box-layout6 p {
-  color: rgb(122, 110, 170);
+.box-layout6 .box-flex-table .box-flex-data div {
+  padding-left: 16px;
+  margin-bottom: 16px;
+}
+.box-layout6 .box-flex-table .box-flex-data1 {
+  grid-column: 1/2;
+}
+.box-layout6 .box-flex-table .box-flex-data2 {
+  grid-column: 2/3;
+}
+.box-layout6 .box-flex-table .box-flex-data2 div {
+  border-left: 1px solid gray;
+}
+.box-layout6 .box-flex-table .box-flex-data3 {
+  grid-column: 3/4;
+}
+.box-layout6 .box-flex-table .box-flex-data3 div {
+  border-left: 1px solid gray;
 }
 
 .flott {
@@ -1490,54 +1609,20 @@ li {
   height: 40%;
 }
 
-.box-flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  padding: 48px 24px;
-  background-color: antiquewhite;
-  height: 50vh;
+.line-side {
+  border-left: 1px solid white;
+  padding-left: 6px;
 }
 
-.box-flex1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  background-color: aquamarine;
-  width: 50%;
-  padding: 3%;
-}
-.box-flex1 div {
-  padding: 2%;
-}
-.box-flex1 div h1 {
-  font-size: 48px;
-}
-
-.box-flex2 {
-  width: 100%;
-}
-
-.box-flex3 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-right: 30%;
-  padding: 10px;
-  background-color: aqua;
-}
-
-.box-flex4 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  border-left: 3px solid black;
-}
-
+/* text color + "need help" */
+/* Inseriti da Clara, da rivedere: */
+/* text input color */
+/* Text color gradient */
+/* cards background color */
+/* text color  */
+/* nav bar color */
+/* website background color */
+/* text input color */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -1546,7 +1631,6 @@ li {
 }
 
 ::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 6px;
   border-radius: 6px;
   background-color: #c3b4ce;
   border: none;
@@ -1616,9 +1700,12 @@ li {
 .hm-home-trade-anything .fb-wrapper .fb-img-section .fb-thefloatingbunny {
   margin-right: 20%;
   margin-top: 10%;
-  animation-name: float-NW;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .hm-home-trade-anything .fb-wrapper .fb-img-section .fb-thefloatingbunny img {
   z-index: 3;
@@ -1632,14 +1719,20 @@ li {
   width: 400px;
 }
 .hm-home-trade-anything .fb-wrapper .fb-img-section .fb-thefloatingstars .fb-star1 img {
-  animation-name: float-NW;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .hm-home-trade-anything .fb-wrapper .fb-img-section .fb-thefloatingstars .fb-star2 img {
-  animation-name: float-NW;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .hm-home-trade-anything .fb-wrapper .fb-img-section .fb-thefloatingstars img {
   position: absolute;
@@ -1654,7 +1747,6 @@ li {
 }
 .hm-home-trade-anything .fb-bottomgradient svg {
   z-index: 1;
-
 }
 
 /* text color + "need help" */
@@ -1666,6 +1758,17 @@ li {
 /* nav bar color */
 /* website background color */
 /* text input color */
+@-webkit-keyframes float-NW {
+  0% {
+    transform: translatex(0px) translatey(0px);
+  }
+  50% {
+    transform: translatex(10px) translatey(10px);
+  }
+  100% {
+    transform: translatex(0px) translatey(0px);
+  }
+}
 @keyframes float-NW {
   0% {
     transform: translatex(0px) translatey(0px);
@@ -1677,6 +1780,17 @@ li {
     transform: translatex(0px) translatey(0px);
   }
 }
+@-webkit-keyframes float-N {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 @keyframes float-N {
   0% {
     transform: translateY(0);
@@ -1686,6 +1800,17 @@ li {
   }
   100% {
     transform: translateY(0);
+  }
+}
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
   }
 }
 @keyframes fade-out {
@@ -1710,6 +1835,4 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
