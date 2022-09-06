@@ -14,7 +14,7 @@
     position: relative;
     overflow: hidden;
     @include flex(column);
-    @include mq('laptop') {
+    @include mq('laptop', 'desktop-wide') {
         .floating-balls {
             position: absolute;
             z-index: 1;
@@ -28,6 +28,11 @@
                 height: 100%;
                 width: auto;
             }
+            img#ball-n2 { @include float-anim(5s, 'N');}
+            img#ball-n4 { @include float-anim(6s, 'N');}
+            img#ball-n6 { @include float-anim(4s, 'N');}
+            img#ball-n7 { @include float-anim(5s, 'N');}
+            img#ball-n9 { @include float-anim(6s, 'N');}
         }
         .floating-cards {
             position: absolute;
@@ -44,13 +49,17 @@
             }
             #card-bottom-left {
                 z-index: -1;
+                @include float-anim(6s, 'NW');
             }
+            #card-top-right {@include float-anim(5s, 'NW');}
+            #card-green {@include float-anim(5.5s, 'NW');}
+            #card-red {@include float-anim(7s, 'NW');}
         }
         .prizes-wrapper {
             z-index: 10;
             @include flex(column);
             height: auto;
-            width: 90%;
+            width: 920px;
             background-color: rgba(8, 6, 11, 0.6);
             @include css3-prefix(backdrop-filter, blur(12px));
             border-radius: 72px;
@@ -58,7 +67,7 @@
             & h2 {
                 // Rules
                 font-size: 40px;
-                font-weight: 500;
+                font-weight: 600;
                 margin-bottom: 30px;
                 color: rgb(244, 238, 255);
                 & span {
@@ -87,10 +96,6 @@
                     
                     border-radius: 24px;
         
-                    
-                    
-
-                    
                     .button-aquagreen {
                         width: 100%;
                         color: rgb(25, 32, 50);
@@ -101,11 +106,9 @@
                         .card-img {
                             @include flex(row, flex-end, center);
                         }
-                        img {
-                            
-                        }
+
                         h3 {
-                            font-weight: 600;
+                            font-weight: 6000;
                             font-size: 16px;
                         }
                         h2 {
@@ -129,6 +132,7 @@
                     border-bottom: solid 5px rgb(255, 178, 55);
                     
                     transform: rotate(-3deg);
+
                     & h3 {
                         color: rgb(40, 13, 95);
                     }
@@ -140,7 +144,7 @@
                     }
                 }
                 .card-prediction {
-                    background-color: #703fd2;
+                    background: linear-gradient(rgb(112, 63, 210), rgb(82, 34, 178));
 
                     border: solid 1px rgb(60, 23, 134);
                     border-bottom: solid 5px rgb(60, 23, 134);
@@ -148,6 +152,8 @@
                     transform: rotate(2deg);
 
                     .card-content {
+
+                        
                         & h3 {
                             color: white;
                         }
