@@ -2008,7 +2008,7 @@ footer {
   font-weight: 100;
 }
 .main-footer h4 {
-  color: rgb(118, 69, 217);
+  color: rgb(154, 106, 255);
   text-transform: uppercase;
   font-weight: 500;
 }
@@ -2108,6 +2108,164 @@ li {
   height: 32px;
 }
 
+
+/* text color + "need help" */
+/* Inseriti da Clara, da rivedere: */
+/* text input color */
+/* Text color gradient */
+/* cards background color */
+/* text color  */
+/* nav bar color */
+/* website background color */
+/* text input color */
+.box-layout6 {
+  padding: 48px;
+  background-color: rgb(0, 0, 0);
+}
+.box-layout6 h2 {
+  color: white;
+  font-size: 45px;
+  line-height: 1.1;
+  padding-bottom: 2%;
+}
+.box-layout6 h2 .tx-span {
+  color: #9A6AFF;
+}
+.box-layout6 .main-p {
+  color: rgb(184, 173, 210);
+}
+.box-layout6 .sec-p {
+  font-size: 24px;
+  font-weight: bolder;
+}
+.box-layout6 .box-flex {
+  display: flex;
+  justify-content: center;
+  padding: 48px 24px;
+  width: 90%;
+  height: 50vh;
+}
+.box-layout6 .box-flex .box-flex1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 45%;
+  padding-left: 3%;
+}
+.box-layout6 .box-flex .box-flex1 div {
+  padding: 2%;
+}
+.box-layout6 .box-flex .box-flex1 .buttons-buyCake {
+  margin-right: 10px;
+}
+.box-layout6 .box-flex .box-flex1 a {
+  color: rgb(31, 199, 212);
+  font-weight: bold;
+}
+.box-layout6 .box-flex .box-flex1 a:hover {
+  text-decoration: underline;
+}
+.box-layout6 .box-flex .img-wrapper {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.box-layout6 .box-flex .img-wrapper .bottom-right-pill {
+  margin-top: 10%;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.box-layout6 .box-flex .img-wrapper .bottom-right-pill img {
+  z-index: 3;
+  height: 400px;
+  width: auto;
+}
+.box-layout6 .box-flex .img-wrapper .floating-pills {
+  position: absolute;
+  margin-right: 10%;
+  height: 400px;
+  width: 400px;
+}
+.box-layout6 .box-flex .img-wrapper .floating-pills .top-left-pill img {
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.box-layout6 .box-flex .img-wrapper .floating-pills .coin img {
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.box-layout6 .box-flex .img-wrapper .floating-pills .top-right-pill img {
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.box-layout6 .box-flex .img-wrapper .floating-pills img {
+  position: absolute;
+  height: 100%;
+  width: auto;
+}
+.box-layout6 .box-flex-table {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1fr 1fr 1fr);
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+  row-gap: 32px;
+  padding: 0px 150px;
+}
+.box-layout6 .box-flex-table .box-flex-data {
+  color: white;
+}
+.box-layout6 .box-flex-table .box-flex-data div {
+  padding-left: 16px;
+  margin-bottom: 16px;
+}
+.box-layout6 .box-flex-table .box-flex-data1 {
+  grid-column: 1/2;
+}
+.box-layout6 .box-flex-table .box-flex-data2 {
+  grid-column: 2/3;
+}
+.box-layout6 .box-flex-table .box-flex-data2 div {
+  border-left: 1px solid gray;
+}
+.box-layout6 .box-flex-table .box-flex-data3 {
+  grid-column: 3/4;
+}
+.box-layout6 .box-flex-table .box-flex-data3 div {
+  border-left: 1px solid gray;
+}
+
+.flott {
+  width: 20%;
+  height: 40%;
+}
+
+.line-side {
+  border-left: 1px solid white;
+  padding-left: 6px;
+}
+
+
 /* Bottoni nel div-SWAP(a sinistra)-- */
 /* --bottone in alto a sinistra sbarrato----------------- */
 /* blocco bottoni nel div Swap--------------------------------------------*/
@@ -2120,6 +2278,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* ----WIN → PREDICTION (BETA)---- */
 /*ETICHETTE Sovrapposte*/
 /* ----WIN → LOTTERY---- */
+
 /* text color + "need help" */
 /* Inseriti da Clara, da rivedere: */
 /* text input color */
@@ -2224,7 +2383,11 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   height: 400px;
   width: 400px;
 }
+
+.hm-home-trade-anything .fb-wrapper .fb-img-section .fb-thefloatingstars .fb-star1 img {}
+
 .ta-trade-anything .ta-wrapper .ta-img-section .ta-img-semiwrap .ta-bitcoin img {
+
   -webkit-animation-name: float-NW;
           animation-name: float-NW;
   -webkit-animation-duration: 3s;
@@ -2232,7 +2395,11 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
+
+.hm-home-trade-anything .fb-wrapper .fb-img-section .fb-thefloatingstars .fb-star2 img {
+}
 .ta-trade-anything .ta-wrapper .ta-img-section .ta-img-semiwrap .ta-cakecoin img {
+
   -webkit-animation-name: float-NW;
           animation-name: float-NW;
   -webkit-animation-duration: 4s;
@@ -2267,6 +2434,73 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* nav bar color */
 /* website background color */
 /* text input color */
+
+@-webkit-keyframes float-NW {
+  0% {
+    transform: translatex(0px) translatey(0px);
+  }
+  50% {
+    transform: translatex(10px) translatey(10px);
+  }
+  100% {
+    transform: translatex(0px) translatey(0px);
+  }
+}
+@keyframes float-NW {
+  0% {
+    transform: translatex(0px) translatey(0px);
+  }
+  50% {
+    transform: translatex(10px) translatey(10px);
+  }
+  100% {
+    transform: translatex(0px) translatey(0px);
+  }
+}
+@-webkit-keyframes float-N {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes float-N {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -2288,6 +2522,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   justify-content: center;
   align-items: center;
   padding: 30px;
+
 }
 .aaa .ea-earn {
   display: flex;
@@ -2443,6 +2678,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   border-left: 1px solid grey;
   padding-left: 16px;
 }
@@ -2968,4 +3204,5 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
 }/*# sourceMappingURL=style.css.map */
