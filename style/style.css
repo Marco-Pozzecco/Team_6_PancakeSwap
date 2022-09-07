@@ -1766,7 +1766,18 @@ li {
   height: 32px;
 }
 
-
+/* Bottoni nel div-SWAP(a sinistra)-- */
+/* --bottone in alto a sinistra sbarrato----------------- */
+/* blocco bottoni nel div Swap--------------------------------------------*/
+/* --Bottoni scelta valute BNB, CAKE, etc------------------------------------------------- */
+/* BUTTON SWITCH SMALL  --   >>>BSS<<<    Check-Box - Staked Only - (ON/OFF Button)-------------- */
+/* BOTTONE SEMI TRASPARENTE-2 (scuro) --- (HARVEST)------------------------------
+che appare nella sezione che esce dopo che si clicca su una sezione della griglia/lista in Trade → Farm---- */
+/* ----Farm → POOLS---- */
+/*WIN ..............................................*/
+/* ----WIN → PREDICTION (BETA)---- */
+/*ETICHETTE Sovrapposte*/
+/* ----WIN → LOTTERY---- */
 /* text color + "need help" */
 /* Inseriti da Clara, da rivedere: */
 /* text input color */
@@ -1776,6 +1787,18 @@ li {
 /* nav bar color */
 /* website background color */
 /* text input color */
+/* Bottoni nel div-SWAP(a sinistra)-- */
+/* --bottone in alto a sinistra sbarrato----------------- */
+/* blocco bottoni nel div Swap--------------------------------------------*/
+/* --Bottoni scelta valute BNB, CAKE, etc------------------------------------------------- */
+/* BUTTON SWITCH SMALL  --   >>>BSS<<<    Check-Box - Staked Only - (ON/OFF Button)-------------- */
+/* BOTTONE SEMI TRASPARENTE-2 (scuro) --- (HARVEST)------------------------------
+che appare nella sezione che esce dopo che si clicca su una sezione della griglia/lista in Trade → Farm---- */
+/* ----Farm → POOLS---- */
+/*WIN ..............................................*/
+/* ----WIN → PREDICTION (BETA)---- */
+/*ETICHETTE Sovrapposte*/
+/* ----WIN → LOTTERY---- */
 .box-layout6 {
   padding: 48px;
   background-color: rgb(0, 0, 0);
@@ -1923,7 +1946,6 @@ li {
   padding-left: 6px;
 }
 
-
 /* Bottoni nel div-SWAP(a sinistra)-- */
 /* --bottone in alto a sinistra sbarrato----------------- */
 /* blocco bottoni nel div Swap--------------------------------------------*/
@@ -1936,7 +1958,6 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* ----WIN → PREDICTION (BETA)---- */
 /*ETICHETTE Sovrapposte*/
 /* ----WIN → LOTTERY---- */
-
 /* text color + "need help" */
 /* Inseriti da Clara, da rivedere: */
 /* text input color */
@@ -2041,11 +2062,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   height: 400px;
   width: 400px;
 }
-
-.hm-home-trade-anything .fb-wrapper .fb-img-section .fb-thefloatingstars .fb-star1 img {}
-
 .ta-trade-anything .ta-wrapper .ta-img-section .ta-img-semiwrap .ta-bitcoin img {
-
   -webkit-animation-name: float-NW;
           animation-name: float-NW;
   -webkit-animation-duration: 3s;
@@ -2053,11 +2070,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
-
-.hm-home-trade-anything .fb-wrapper .fb-img-section .fb-thefloatingstars .fb-star2 img {
-}
 .ta-trade-anything .ta-wrapper .ta-img-section .ta-img-semiwrap .ta-cakecoin img {
-
   -webkit-animation-name: float-NW;
           animation-name: float-NW;
   -webkit-animation-duration: 4s;
@@ -2092,73 +2105,6 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* nav bar color */
 /* website background color */
 /* text input color */
-
-@-webkit-keyframes float-NW {
-  0% {
-    transform: translatex(0px) translatey(0px);
-  }
-  50% {
-    transform: translatex(10px) translatey(10px);
-  }
-  100% {
-    transform: translatex(0px) translatey(0px);
-  }
-}
-@keyframes float-NW {
-  0% {
-    transform: translatex(0px) translatey(0px);
-  }
-  50% {
-    transform: translatex(10px) translatey(10px);
-  }
-  100% {
-    transform: translatex(0px) translatey(0px);
-  }
-}
-@-webkit-keyframes float-N {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(100px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-@keyframes float-N {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(100px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-@-webkit-keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -2180,7 +2126,6 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   justify-content: center;
   align-items: center;
   padding: 30px;
-
 }
 .aaa .ea-earn {
   display: flex;
@@ -2336,7 +2281,6 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   border-left: 1px solid grey;
   padding-left: 16px;
 }
@@ -2862,5 +2806,4 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }/*# sourceMappingURL=style.css.map */
