@@ -7,7 +7,15 @@
     <link rel="stylesheet" href="../../style.css">
     <title>Layout 6</title>
 </head>
-<body class="box-layout6">
+ <body class="box-layout6" >   <!--onload="document.getElementById('data1').innerHTML = getRandomNum(1434^2 , 145978988), document.getElementById('data2').innerHTML = getRandomNum(324.456 , 345.567)"-->
+    <script type="text/javascript" src="/style/layout/home-ck-makes-w-around/layout6.js">
+        
+        // function getRandomNum(min, max) {
+        //     return Math.floor(Math.random() * (max - min + 1)) + min;
+        // }
+        
+    </script>
+
     <section class="box-flex">
         <div class="box-flex1">
             <div>
@@ -39,7 +47,7 @@
         </div>
     </section>
 
-    <section class="box-flex-table">
+    <section class="box-flex-table counters">
         <!-- <div class="box-flex-data">
             <div classe="box-flex4">
                 <p class="main-p">Circulating Supply</p>
@@ -69,22 +77,22 @@
             </div>
         </div> -->
         <div class="box-flex-data1 box-flex-data">
-            <div classe="box-flex4">
+            <div >
                 <p class="main-p">Circulating Supply</p>
-                <p class="sec-p">141,521,761</p>
+                <p class="sec-p counter" id="data1" data-target="145.978.988">140.978.988</p>
             </div>
             <div classe="box-flex4">
                 <p class="main-p">Market cap</p>
-                <p class="sec-p">$550 million</p>
+                <p class="sec-p ">$550 million</p>
             </div>
 
         </div>
         <div class="box-flex-data2 box-flex-data">
-            <div classe="box-flex4">
+            <div >
                 <p class="main-p">Total supply</p>
-                <p class="sec-p">324,521,550</p>
+                <p class="sec-p counter" id="data2" data-target="315.978.988">310.978.988</p>
             </div>
-            <div classe="box-flex4 ">
+            <div>
                 <p class="main-p">Burned to date</p>
                 <p class="sec-p">571,521,761</p>
             </div>
