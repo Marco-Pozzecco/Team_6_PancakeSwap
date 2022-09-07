@@ -663,44 +663,29 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     width: auto;
   }
   .win-prizes .floating-balls img#ball-n2 {
-    -webkit-animation-name: float-N;
-            animation-name: float-N;
-    -webkit-animation-duration: 5s;
-            animation-duration: 5s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
+    animation-name: float-N;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
   }
   .win-prizes .floating-balls img#ball-n4 {
-    -webkit-animation-name: float-N;
-            animation-name: float-N;
-    -webkit-animation-duration: 6s;
-            animation-duration: 6s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
+    animation-name: float-N;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
   }
   .win-prizes .floating-balls img#ball-n6 {
-    -webkit-animation-name: float-N;
-            animation-name: float-N;
-    -webkit-animation-duration: 4s;
-            animation-duration: 4s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
+    animation-name: float-N;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
   }
   .win-prizes .floating-balls img#ball-n7 {
-    -webkit-animation-name: float-N;
-            animation-name: float-N;
-    -webkit-animation-duration: 5s;
-            animation-duration: 5s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
+    animation-name: float-N;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
   }
   .win-prizes .floating-balls img#ball-n9 {
-    -webkit-animation-name: float-N;
-            animation-name: float-N;
-    -webkit-animation-duration: 6s;
-            animation-duration: 6s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
+    animation-name: float-N;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
   }
   .win-prizes .floating-cards {
     position: absolute;
@@ -718,36 +703,24 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   }
   .win-prizes .floating-cards #card-bottom-left {
     z-index: -1;
-    -webkit-animation-name: float-NW;
-            animation-name: float-NW;
-    -webkit-animation-duration: 6s;
-            animation-duration: 6s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
+    animation-name: float-NW;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
   }
   .win-prizes .floating-cards #card-top-right {
-    -webkit-animation-name: float-NW;
-            animation-name: float-NW;
-    -webkit-animation-duration: 5s;
-            animation-duration: 5s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
+    animation-name: float-NW;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
   }
   .win-prizes .floating-cards #card-green {
-    -webkit-animation-name: float-NW;
-            animation-name: float-NW;
-    -webkit-animation-duration: 5.5s;
-            animation-duration: 5.5s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
+    animation-name: float-NW;
+    animation-duration: 5.5s;
+    animation-iteration-count: infinite;
   }
   .win-prizes .floating-cards #card-red {
-    -webkit-animation-name: float-NW;
-            animation-name: float-NW;
-    -webkit-animation-duration: 7s;
-            animation-duration: 7s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
+    animation-name: float-NW;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
   }
   .win-prizes .prizes-wrapper {
     z-index: 10;
@@ -760,6 +733,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     background-color: rgba(8, 6, 11, 0.6);
     -webkit-backdrop-filter: blur(12px);
     -moz-backdrop-filter: blur(12px);
+    -ms-backdrop-filter: blur(12px);
     -o-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
     border-radius: 72px;
@@ -883,6 +857,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 
 ::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 6px;
   border-radius: 6px;
   background-color: #c3b4ce;
   border: none;
@@ -947,12 +922,9 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 .fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingbunny {
   margin-right: 10%;
   margin-top: 10%;
-  -webkit-animation-name: float-NW;
-          animation-name: float-NW;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-name: float-NW;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 .fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingbunny img {
   z-index: 3;
@@ -966,27 +938,30 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   width: 512px;
 }
 .fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingstars .fb-star1 img {
-  -webkit-animation-name: fade-out;
-          animation-name: fade-out;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
+  animation-name: fade-out;
+  animation-duration: 2.5s;
   -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 .fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingstars .fb-star2 img {
-  -webkit-animation-name: fade-out;
-          animation-name: fade-out;
-  -webkit-animation-duration: 3.5s;
-          animation-duration: 3.5s;
+  animation-name: fade-out;
+  animation-duration: 3.5s;
   -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 .fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingstars .fb-star3 img {
-  -webkit-animation-name: fade-out;
-          animation-name: fade-out;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  animation-name: fade-out;
+  animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 .fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingstars img {
@@ -1208,6 +1183,13 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 24px;
+    border-radius: 24px;
+    margin-right: 16px;
+    position: relative;
+    border: 1px solid rgb(75, 59, 80);
+    border-bottom: 3px solid rgb(75, 59, 80);
+    width: 280px;
   }
   .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg {
     align-self: flex-end;
@@ -1235,126 +1217,162 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   }
   .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdta {
     color: rgb(244, 238, 255);
+  }
+  .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb {
+    margin-bottom: 24px;
+  }
+  .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb1 {
+    color: rgb(154, 106, 255);
+  }
+  .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb2 {
+    color: rgb(49, 208, 170);
+  }
+  .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb3 {
+    color: rgb(237, 75, 158);
+  }
+  .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .card-dist-last-text {
+    color: rgb(184, 173, 210);
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .stat-section .svg-transition-color-box {
+    background-color: black;
+  }
+  .stat-section .svg-transition-color-box .svg-transition-color {
+    fill: rgb(30, 17, 50);
+    width: 100%;
+    height: 100%;
+    max-height: 48px;
+  }
 }
-.stat-section {
-  width: 100%;
-  height: auto;
-  background: linear-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%);
+@media screen and (max-width: 851px) {
+  .stat-section {
+    margin-top: 200px;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%);
+  }
+  .stat-section .wrapper-stat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .stat-section .wrapper-stat svg {
+    margin: 0 0 24px;
+  }
+  .stat-section .wrapper-stat h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: rgb(244, 238, 255);
+  }
+  .stat-section .wrapper-stat h2:nth-child(3) {
+    margin-bottom: 32px;
+  }
+  .stat-section .wrapper-stat .description-stat-sec {
+    font-size: 16px;
+    color: rgb(184, 173, 210);
+  }
+  .stat-section .wrapper-stat .dst1 {
+    font-weight: 400;
+  }
+  .stat-section .wrapper-stat .dst2 {
+    vertical-align: baseline;
+    margin-bottom: 20px;
+  }
+  .stat-section .wrapper-stat .dst3 {
+    font-weight: 600;
+    margin-bottom: 32px;
+  }
+  .stat-section .wrapper-stat .card-container-dst {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .stat-section .wrapper-stat .card-container-dst .card-dst {
+    background-color: rgb(56, 50, 65);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 24px;
+    border-radius: 24px;
+    position: relative;
+    border: 1px solid rgb(75, 59, 80);
+    border-bottom: 3px solid rgb(75, 59, 80);
+    margin-bottom: 15px;
+    line-height: 1;
+    width: 280px;
+  }
+  .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg {
+    align-self: flex-end;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+  }
+  .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg .cdsvg-color1 {
+    fill: rgb(154, 106, 255);
+  }
+  .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg .cdsvg-color2 {
+    fill: rgb(49, 208, 170);
+  }
+  .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg .cdsvg-color3 {
+    fill: rgb(237, 75, 158);
+  }
+  .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title {
+    text-align: left;
+    margin-top: 0px;
+  }
+  .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.1;
+  }
+  .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdta {
+    color: rgb(244, 238, 255);
+  }
+  .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb {
+    margin-bottom: 24px;
+  }
+  .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb1 {
+    color: rgb(154, 106, 255);
+  }
+  .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb2 {
+    color: rgb(49, 208, 170);
+  }
+  .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb3 {
+    color: rgb(237, 75, 158);
+  }
+  .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .card-dist-last-text {
+    color: rgb(184, 173, 210);
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .stat-section .svg-transition-color-box {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .stat-section .svg-transition-color-box .svg-transition-color {
+    fill: rgb(30, 17, 50);
+    width: 100%;
+    height: 100%;
+    max-height: 48px;
+  }
 }
-.stat-section .wrapper-stat {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 48px 24px;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  width: 100%;
-  text-align: center;
-}
-.stat-section .wrapper-stat svg {
-  margin: 0 0 24px;
-}
-.stat-section .wrapper-stat h2 {
-  font-size: 42px;
-  font-weight: 600;
-  line-height: 1.1;
-  color: rgb(244, 238, 255);
-}
-.stat-section .wrapper-stat h2:nth-child(3) {
-  margin-bottom: 32px;
-}
-.stat-section .wrapper-stat .description-stat-sec {
-  font-size: 16px;
-  color: rgb(184, 173, 210);
-}
-.stat-section .wrapper-stat .dst1 {
-  font-weight: 400;
-}
-.stat-section .wrapper-stat .dst2 {
-  vertical-align: baseline;
-  margin-bottom: 10px;
-}
-.stat-section .wrapper-stat .dst3 {
-  font-weight: 600;
-  margin-bottom: 32px;
-}
-.stat-section .wrapper-stat .card-container-dst {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.stat-section .wrapper-stat .card-container-dst .card-dst {
-  background-color: rgb(56, 50, 65);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 24px;
-  border-radius: 24px;
-  margin-right: 16px;
-  position: relative;
-  border: 1px solid rgb(75, 59, 80);
-  border-bottom: 3px solid rgb(75, 59, 80);
-}
-.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg {
-  align-self: flex-end;
-  position: absolute;
-  top: 24px;
-  right: 24px;
-}
-.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg .cdsvg-color1 {
-  fill: rgb(154, 106, 255);
-}
-.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg .cdsvg-color2 {
-  fill: rgb(49, 208, 170);
-}
-.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg .cdsvg-color3 {
-  fill: rgb(237, 75, 158);
-}
-.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title {
-  text-align: left;
-  margin-top: 64px;
-}
-.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title h2 {
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 1.1;
-}
-.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdta {
-  color: rgb(244, 238, 255);
-}
-.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb {
-  margin-bottom: 24px;
-}
-.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb1 {
-  color: rgb(154, 106, 255);
-}
-.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb2 {
-  color: rgb(49, 208, 170);
-}
-.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb3 {
-  color: rgb(237, 75, 158);
-}
-.stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .card-dist-last-text {
-  color: rgb(184, 173, 210);
-  line-height: 1.5;
-  font-weight: 400;
-  font-size: 16px;
-}
-.stat-section .svg-transition-color-box {
-  background-color: black;
-}
-.stat-section .svg-transition-color-box .svg-transition-color {
-  fill: rgb(30, 17, 50);
-  width: 100%;
-  height: 100%;
-  max-height: 48px;
-}
-
 /* Bottoni nel div-SWAP(a sinistra)-- */
 /* --bottone in alto a sinistra sbarrato----------------- */
 /* blocco bottoni nel div Swap--------------------------------------------*/
@@ -2200,7 +2218,184 @@ li {
   height: 32px;
 }
 
+/* Bottoni nel div-SWAP(a sinistra)-- */
+/* --bottone in alto a sinistra sbarrato----------------- */
+/* blocco bottoni nel div Swap--------------------------------------------*/
+/* --Bottoni scelta valute BNB, CAKE, etc------------------------------------------------- */
+/* BUTTON SWITCH SMALL  --   >>>BSS<<<    Check-Box - Staked Only - (ON/OFF Button)-------------- */
+/* BOTTONE SEMI TRASPARENTE-2 (scuro) --- (HARVEST)------------------------------
+che appare nella sezione che esce dopo che si clicca su una sezione della griglia/lista in Trade → Farm---- */
+/* ----Farm → POOLS---- */
+/*WIN ..............................................*/
+/* ----WIN → PREDICTION (BETA)---- */
+/*ETICHETTE Sovrapposte*/
+/* ----WIN → LOTTERY---- */
+/* text color + "need help" */
+/* Inseriti da Clara, da rivedere: */
+/* text input color */
+/* Text color gradient */
+/* cards background color */
+/* text color  */
+/* nav bar color */
+/* website background color */
+/* text input color */
+.cake-token {
+  background-color: #08060b;
+}
 
+@media screen and (min-width: 1024px) {
+  .cake-token {
+    padding: 48px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .cake-token .cake-wrapper {
+    width: 100%;
+    max-width: 968px;
+    padding: 48px 24px;
+  }
+  .cake-token .cake-wrapper .cake-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .cake-token .cake-wrapper .cake-content h1 {
+    color: white;
+  }
+  .cake-token .cake-wrapper .cake-content p {
+    color: white;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info {
+    width: calc(100% - 400px);
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info * {
+    width: 420px;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info h1 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: rgb(244, 238, 255);
+    margin-bottom: 24px;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info h1 span {
+    color: rgb(154, 106, 255);
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info p {
+    color: rgb(184, 173, 210);
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    font-size: 16px;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info .cake-info-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info .cake-info-buttons .link-aquagreen {
+    width: auto;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info .cake-info-buttons .button-aquagreen {
+    width: auto;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info .cake-info-buttons .learn-link {
+    margin-left: 10px;
+    width: fit-content;
+    color: rgb(31, 199, 212);
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-coins {
+    width: 400px;
+    height: 400px;
+    position: relative;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-coins img {
+    position: absolute;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-coins #pancake-bottom-right {
+    width: 100%;
+    z-index: 0;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-coins #pancake-top-left {
+    width: 100%;
+    z-index: 2;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-coins #pancake-top-right {
+    width: 100%;
+    z-index: 1;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-coins #cake-coin {
+    width: 100%;
+    z-index: 1;
+  }
+  .cake-token .cake-wrapper .cake-stats {
+    display: grid;
+    grid-template-areas: "circ-s total-s max-s" "market-cap burn current-emissions";
+    gap: 32px;
+    margin-top: 24px;
+  }
+  .cake-token .cake-wrapper .cake-stats div .text-subtle {
+    color: rgb(184, 173, 210);
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  .cake-token .cake-wrapper .cake-stats div .text-cake-stats {
+    color: rgb(244, 238, 255);
+    font-weight: 600;
+    line-height: 1.1;
+    font-size: 24px;
+  }
+  .cake-token .cake-wrapper .cake-stats .cake-circulating-supply {
+    grid-area: circ-s;
+  }
+  .cake-token .cake-wrapper .cake-stats .cake-supply {
+    grid-area: total-s;
+    border-left: 1px solid rgb(38, 33, 48);
+    padding: 0 15px;
+  }
+  .cake-token .cake-wrapper .cake-stats .cake-max-supply {
+    grid-area: max-s;
+    border-left: 1px solid rgb(38, 33, 48);
+    padding: 0 15px;
+  }
+  .cake-token .cake-wrapper .cake-stats .cake-cap {
+    grid-area: market-cap;
+  }
+  .cake-token .cake-wrapper .cake-stats .cake-burned {
+    grid-area: burn;
+    border-left: 1px solid rgb(38, 33, 48);
+    padding: 0 15px;
+  }
+  .cake-token .cake-wrapper .cake-stats .cake-emissions {
+    grid-area: current-emissions;
+    border-left: 1px solid rgb(38, 33, 48);
+    padding: 0 15px;
+  }
+  .cake-token .cake-wrapper .cake-stats p {
+    color: white;
+  }
+}
+/* Bottoni nel div-SWAP(a sinistra)-- */
+/* --bottone in alto a sinistra sbarrato----------------- */
+/* blocco bottoni nel div Swap--------------------------------------------*/
+/* --Bottoni scelta valute BNB, CAKE, etc------------------------------------------------- */
+/* BUTTON SWITCH SMALL  --   >>>BSS<<<    Check-Box - Staked Only - (ON/OFF Button)-------------- */
+/* BOTTONE SEMI TRASPARENTE-2 (scuro) --- (HARVEST)------------------------------
+che appare nella sezione che esce dopo che si clicca su una sezione della griglia/lista in Trade → Farm---- */
+/* ----Farm → POOLS---- */
+/*WIN ..............................................*/
+/* ----WIN → PREDICTION (BETA)---- */
+/*ETICHETTE Sovrapposte*/
+/* ----WIN → LOTTERY---- */
 /* text color + "need help" */
 /* Inseriti da Clara, da rivedere: */
 /* text input color */
@@ -2280,12 +2475,9 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 .box-layout6 .box-flex .img-wrapper .bottom-right-pill {
   margin-top: 10%;
-  -webkit-animation-name: float-NW;
-          animation-name: float-NW;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-name: float-NW;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 .box-layout6 .box-flex .img-wrapper .bottom-right-pill img {
   z-index: 3;
@@ -2299,28 +2491,19 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   width: 400px;
 }
 .box-layout6 .box-flex .img-wrapper .floating-pills .top-left-pill img {
-  -webkit-animation-name: float-NW;
-          animation-name: float-NW;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-name: float-NW;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 .box-layout6 .box-flex .img-wrapper .floating-pills .coin img {
-  -webkit-animation-name: float-NW;
-          animation-name: float-NW;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-name: float-NW;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 .box-layout6 .box-flex .img-wrapper .floating-pills .top-right-pill img {
-  -webkit-animation-name: float-NW;
-          animation-name: float-NW;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-name: float-NW;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 .box-layout6 .box-flex .img-wrapper .floating-pills img {
   position: absolute;
@@ -2331,8 +2514,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   width: 100%;
   display: grid;
   grid-template-columns: repeat(1fr 1fr 1fr);
-  -moz-column-gap: 32px;
-       column-gap: 32px;
+  column-gap: 32px;
   row-gap: 32px;
   padding: 0px 150px;
 }
@@ -2398,6 +2580,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 
 ::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 6px;
   border-radius: 6px;
   background-color: #c3b4ce;
   border: none;
@@ -2467,12 +2650,9 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 .ta-trade-anything .ta-wrapper .ta-img-section .ta-goldencoin {
   margin-right: 20%;
   margin-top: 10%;
-  -webkit-animation-name: float-NW;
-          animation-name: float-NW;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-name: float-NW;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 .ta-trade-anything .ta-wrapper .ta-img-section .ta-goldencoin img {
   z-index: 3;
@@ -2486,20 +2666,14 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   width: 400px;
 }
 .ta-trade-anything .ta-wrapper .ta-img-section .ta-img-semiwrap .ta-bitcoin img {
-  -webkit-animation-name: float-NW;
-          animation-name: float-NW;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-name: float-NW;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 .ta-trade-anything .ta-wrapper .ta-img-section .ta-img-semiwrap .ta-cakecoin img {
-  -webkit-animation-name: float-NW;
-          animation-name: float-NW;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-name: float-NW;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 .ta-trade-anything .ta-wrapper .ta-img-section .ta-img-semiwrap img {
   position: absolute;
@@ -2536,6 +2710,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 
 ::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 6px;
   border-radius: 6px;
   background-color: #c3b4ce;
   border: none;
@@ -2614,12 +2789,9 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 .aaa .ea-earn .ea-wrapper .ea-img-section .ea-goldencoin {
   margin-right: 10px;
   margin-top: 10%;
-  -webkit-animation-name: float-NW;
-          animation-name: float-NW;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-name: float-NW;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 .aaa .ea-earn .ea-wrapper .ea-img-section .ea-goldencoin img {
   z-index: 3;
@@ -2633,20 +2805,14 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   width: 400px;
 }
 .aaa .ea-earn .ea-wrapper .ea-img-section .ea-img-semiwrap .ea-bitcoin img {
-  -webkit-animation-name: float-NW;
-          animation-name: float-NW;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-name: float-NW;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 .aaa .ea-earn .ea-wrapper .ea-img-section .ea-img-semiwrap .ea-cakecoin img {
-  -webkit-animation-name: float-N;
-          animation-name: float-N;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-name: float-N;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 .aaa .ea-earn .ea-wrapper .ea-img-section .ea-img-semiwrap img {
   position: absolute;
@@ -3148,21 +3314,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 
 ::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 6px;
   border-radius: 6px;
   background-color: #c3b4ce;
   border: none;
-}
-
-@-webkit-keyframes float-NW {
-  0% {
-    transform: translatex(0px) translatey(0px);
-  }
-  50% {
-    transform: translatex(10px) translatey(10px);
-  }
-  100% {
-    transform: translatex(0px) translatey(0px);
-  }
 }
 
 @keyframes float-NW {
@@ -3176,17 +3331,6 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     transform: translatex(0px) translatey(0px);
   }
 }
-@-webkit-keyframes float-N {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(20px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 @keyframes float-N {
   0% {
     transform: translateY(0);
@@ -3196,17 +3340,6 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   }
   100% {
     transform: translateY(0);
-  }
-}
-@-webkit-keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 1;
   }
 }
 @keyframes fade-out {
@@ -3229,4 +3362,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
