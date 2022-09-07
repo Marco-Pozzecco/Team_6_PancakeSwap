@@ -1,13 +1,29 @@
 // Use rules
 @use "../../components/buttons/buttons";
+@use "sass:map";
 
 // Import rules
 @import "../../abstracts/mixins";
 @import "../../abstracts/colors";
 @import "../../abstracts/animations";
 
+$theme-dark: map.set($theme-dark, "win-prizes", "background-gradient", linear-gradient(rgb(11, 69, 118) 0%, rgb(9, 17, 21) 100%));
+
+.theme-dark {
+    --background-lottery: #{map.get($theme-dark, "cards", "background-lottery")};
+    --border-lottery: #{map.get($theme-dark, "cards", "border-lottery")};
+    --background-win-prizes: #{map.get($theme-dark, "win-prizes", "background-gradient")};
+}
+
+
+.theme-light {
+    --background-lottery: white;
+    --border-lottery: gray;
+}
+
+
 .win-prizes {
-    background: linear-gradient(rgb(11, 69, 118) 0%, rgb(9, 17, 21) 100%);
+    background: var(--background-win-prizes);
     height: 800px;
     width: 100%;
     padding: 48px 0;
@@ -126,10 +142,10 @@
 
                 }
                 .card-lottery {
-                    background: linear-gradient(rgb(255, 178, 55), rgb(255, 229, 104));
+                    background: var(--background-lottery);
 
-                    border: solid 1px rgb(255, 178, 55);
-                    border-bottom: solid 5px rgb(255, 178, 55);
+                    border: solid 1px var(--border-lottery);
+                    border-bottom: solid 5px var(--border-lottery);
                     
                     transform: rotate(-3deg);
 

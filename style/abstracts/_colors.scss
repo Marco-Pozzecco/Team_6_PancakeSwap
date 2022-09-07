@@ -90,7 +90,14 @@ $main-banner-titles-text-shadow:  rgba(0, 0, 0, 0.35) 0px 4px 3px;
 
 //
 
-
+$theme-dark: (
+    "cards": (
+        "background-lottery": linear-gradient(rgb(255, 178, 55), rgb(255, 229, 104)), 
+        "border-lottery": rgb(255, 178, 55),
+        "background-prediction": linear-gradient(rgb(112, 63, 210), rgb(82, 34, 178)),
+        "border-prediction": rgb(60, 23, 134)
+    )
+);
 
 
 
