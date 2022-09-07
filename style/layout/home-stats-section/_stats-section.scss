@@ -27,6 +27,7 @@
 
 
 
+@media  screen and (min-width: 851px){
 
 .stat-section {
     @include mq('laptop');
@@ -168,32 +169,32 @@
 
 }
 
+}
 
 // MEDIA -->  851px  ####################### 851px  ########################### 851px  #################################à
 
 
+// @media  screen and (max-width: 851px){
+//             .wrapper-stat {
+//                 .card-container-dst {
+//                     @include flex(column);
+//                 }
+//             }
+//     }
+
+
+
 @media  screen and (max-width: 851px){
-    .stat-section{
-            .wrapper-stat {
-                .card-container-dst {
-                    @include flex(column);
-                }
-            }
-    }
-
-}
-
-
     .stat-section {
-        @include mq('tablet');
+        // @include mq('tablet');
         width: 100%;
         height: auto;
         // padding: 48px 0;
         background: $background-color-stats-section;
     
             .wrapper-stat {
-                @include flex(column);
-                padding: 48px 24px;
+                @include flex(column,);
+                padding: 16px;
                 justify-content: center;
                 align-items: center;
                 margin: 0;
@@ -240,13 +241,17 @@
     
                             .card-dst {
                                 background-color: $background-color-cards; // veder se usare questo o no,è l originale e risulta un po chiaro.
-                                @include flex(column);
+                                @include flex(row, flex-start);
                                 padding: 24px;
                                 border-radius: 24px;
-                                margin-right: 16px;
+                                // margin-right: 16px;
                                 position: relative;
                                 border: 1px $shadow-border-stats-card;
                                 border-bottom: 3px $shadow-border-stats-card;
+                                margin-bottom: 15px;
+                                width: 42%;
+                                line-height: 1;
+                                // flex-shrink: 1;
     
                                     .card-dist-svg {
                                         align-self: flex-end;
@@ -271,10 +276,11 @@
     
                                     .card-dist-title {
                                         text-align: left;
-                                        margin-top: 64px;
+                                        margin-top: 0px;
+
     
                                             & h2 {
-                                                font-size: 40px;
+                                                font-size: 32px;
                                                 font-weight: 600;
                                                 line-height: 1.1;
                                             }
@@ -323,7 +329,7 @@
     
     }
 
-
+}
 
 
 
