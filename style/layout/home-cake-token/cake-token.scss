@@ -1,0 +1,167 @@
+// Use rules
+@use "../../components/buttons/buttons";
+@use "sass:map";
+
+// Import rules
+@import "../../abstracts/mixins";
+@import "../../abstracts/colors";
+@import "../../abstracts/animations";
+
+.cake-token {
+    background-color: #08060b;
+    
+}
+
+@include mq('laptop', 'desktop-wide') {
+    .cake-token {
+        padding: 48px 0;
+        @include flex(column);
+        width: 100%;
+
+        .cake-wrapper {
+            width: 100%;
+            max-width: 968px;
+            padding: 48px 24px;
+
+            .cake-content {
+                @include flex();
+
+                h1 {
+                    color: white;
+                }
+                p {
+                    color: white;
+                }
+                
+                .cake-info{
+                    width: calc(100% - 400px);
+
+                    & * {
+                        width: 420px;
+                    }
+                    h1 {
+                        font-size: 40px;
+                        font-weight: 600;
+                        line-height: 1.1;
+                        color: rgb(244, 238, 255);
+                        margin-bottom: 24px;
+                        span {
+                            color: rgb(154, 106, 255);
+                        }
+                    }
+
+                    p {
+                        color: rgb(184, 173, 210);
+                        font-weight: 400;
+                        line-height: 1.5;
+                        margin-bottom: 24px;
+                        font-size: 16px;
+                    }
+                
+
+                    .cake-info-buttons {
+                        @include flex(row, flex-start);
+    
+                        .link-aquagreen {
+                            width: auto;
+                        }
+                        .button-aquagreen {
+                            width: auto;
+                        }
+                        .learn-link {
+                            margin-left: 10px;
+                            width: fit-content;
+                            color: rgb(31, 199, 212);
+                            font-weight: 600;
+                            line-height: 1.5;
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .cake-coins {
+                    width: 400px;
+                    height: 400px;
+                    position: relative;
+    
+                    img {
+                        position: absolute;
+                    }
+    
+                    #pancake-bottom-right {
+                        width: 100%;
+                        z-index: 0;
+                    }
+                    #pancake-top-left {
+                        width: 100%;
+                        z-index: 2;
+                    }
+                    #pancake-top-right {
+                        width: 100%;
+                        z-index: 1;
+                    }
+                    #cake-coin {
+                        width: 100%;
+                        z-index: 1;
+                    }
+                }
+            }
+
+            .cake-stats {
+                display: grid;
+                grid-template-areas: 
+                    "circ-s total-s max-s"
+                    "market-cap burn current-emissions";
+                gap: 32px;
+                margin-top: 24px;
+                div {
+
+                    .text-subtle {
+                        color: rgb(184, 173, 210);
+                        font-weight: 400;
+                        line-height: 1.5;
+                        font-size: 16px;
+                    }
+                    .text-cake-stats {
+                        color: rgb(244, 238, 255);
+                        font-weight: 600;
+                        line-height: 1.1;
+                        font-size: 24px;
+                    }
+                }
+
+                .cake-circulating-supply {
+                    grid-area: circ-s;
+                }
+                .cake-supply {
+                    grid-area: total-s;
+                    border-left: 1px solid rgb(38, 33, 48);
+                    padding: 0 15px;
+                }
+                .cake-max-supply {
+                    grid-area: max-s;
+                    border-left: 1px solid rgb(38, 33, 48);
+                    padding: 0 15px;
+                }
+                .cake-cap {
+                    grid-area: market-cap;
+                }
+                .cake-burned {
+                    grid-area: burn;
+                    border-left: 1px solid rgb(38, 33, 48);
+                    padding: 0 15px;
+                }
+                .cake-emissions {
+                    grid-area: current-emissions;
+                    border-left: 1px solid rgb(38, 33, 48);
+                    padding: 0 15px;
+                }
+                p {
+                    color: white;
+                }
+
+            }
+               
+            
+        }
+    }
+}
