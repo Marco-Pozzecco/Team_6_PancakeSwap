@@ -2692,6 +2692,7 @@ nav {
   height: 8vh;
   padding: 0 8px;
   position: fixed;
+  top: 0;
   z-index: 100;
   border-bottom: 1px solid rgb(233, 234, 235);
 }
@@ -4142,7 +4143,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   }
 }
 html, body {
-  height: 100%;
+  height: auto;
   width: 100%;
 }
 

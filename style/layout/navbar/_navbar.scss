@@ -24,6 +24,7 @@
 }
 
 .menu-nav ul, a, i, li a{
+
     //@include list-style();
     text-decoration: none;
     color: $primary-color;
@@ -56,6 +57,7 @@ nav {
     height: 8vh;
     padding: 0 8px;
     position: fixed;
+    top: 0;
     z-index: 100;
     border-bottom: 1px solid $border_color;
     ul{
