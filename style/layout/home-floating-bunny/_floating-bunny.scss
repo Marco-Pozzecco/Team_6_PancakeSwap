@@ -19,6 +19,7 @@ body {
     width: 100%;
     height: 100vh;
 }
+
 //scrollbar
 
 ::-webkit-scrollbar {
@@ -47,6 +48,7 @@ body {
 
     padding-top: 150px;
     padding-bottom: 150px;
+<<<<<<< HEAD
 
 
     
@@ -680,6 +682,8 @@ body {
     
     }
 
+=======
+>>>>>>> 24588b29424e7e57196a78253828017f389a55a2
     @include mq('laptop');
     @include flex(column);
     position: relative;
@@ -689,232 +693,903 @@ body {
     // margin-top: 200px;
 
 
-        
-// ###########################################################################
+
+    @media screen and (min-width: 968px) {
+
+        // body {
+        // @include flex(column);
+        // gap: 100px;
+        // width: 100%;
+        // height: auto;
+
+        .main-banner-container {
+            // @include mq('laptop');
+            @include flex();
+            padding: 20px;
+            width: 80%;
+            // background-color: rgba(0, 0, 255, 0.023);
+            position: relative;
+
+            .main-banner-sub-container {
+                @include flex();
+                background: $main-banner-background-gradient;
+                /*linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%)*/
+                height: 220px;
+                width: 100%;
+                padding: 24px;
+                border-radius: 24px;
+                position: relative;
+
+                // ---Banner che cambia-------------BANNER A--------------------------------------------------------
+
+                .banner-a {
+                    // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    // display: block;
+                    display: none;
+                }
+
+                .main-banner-content-container {
+                    width: 100%;
+                    height: 100%;
+                    // background-color: rgba(123, 202, 123, 0.199);
+                    // border: 1px solid chartreuse;
+                    @include flex(column);
+                    justify-content: center;
+                    align-items: flex-start;
+                    z-index: 1;
+
+                    .main-banner-title-a {
+                        color: white;
+                        font-family: Kanit, sans-serif
+                    }
+
+                    .mbt-a1 {
+                        font-size: 24px;
+                        background: $main-banner-orange-gradient-titles;
+                        /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
+                        margin-bottom: 8px;
+                    }
+
+                    .mbt-a2 {
+                        font-size: 40px;
+                        margin-bottom: 16px;
+                        text-shadow: $main-banner-titles-text-shadow;
+                        /* rgba(0, 0, 0, 0.35) 0px 4px 3px*/
+
+                    }
+
+                    .main-banner-button-a {
+                        color: $black;
+                        fill: $black;
+
+                    }
+
+                }
+
+                .swiper-slide {
+                    background-color: transparent;
+                    width: 100px;
+                    height: 8px;
+                    background-color: rgba(186, 235, 74, 0.174);
+                    border-radius: 10px;
+                    position: absolute;
+                    bottom: 15px;
+                    @include flex();
+                    contain: content;
+
+                    .swiper {
+                        width: 50%;
+                        height: 8px;
+                        background-color: $white;
+                    }
+
+                    .swpr-a {
+                        visibility: initial;
+                    }
+
+                    .swpr-b {
+                        visibility: hidden;
+                    }
+                }
+
+                .bunny-container-a {
+                    width: 40%;
+                    height: 121%;
+                    // background-color: rgba(5, 5, 2, 0.34);
+                    position: absolute;
+                    border-radius: 24px;
+                    bottom: 0;
+                    right: 0;
+                    z-index: 0;
+                    // display: block;
+                    display: none;
+                    flex-shrink: 1.5;
+
+                    & img {
+                        min-width: 100%;
+                        max-width: 100%;
+                        height: 100%;
+                    }
+
+
+                    .banner-a,
+                    .bunny-container-a {
+                        // display: block; //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                        display: none;
+                    }
+
+                }
+
+                // ---Banner che cambia-------------BANNER B--------------------------------------------------------
+
+                .banner-b {
+                    // display: none; // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    display: block;
+
+
+                    .main-banner-title-b {
+                        color: $white;
+                        font-family: Kanit, sans-serif
+                    }
+
+                    .mbt-b1 {
+                        font-size: 24px;
+                        text-shadow: $main-banner-titles-text-shadow;
+                        /*rgba(0, 0, 0,  0.35) 0px 3px 3px*/
+                        margin-bottom: 8px
+                    }
+
+
+                    .mb-counter-lottery {
+                        @include flex(row, center, flex-end);
+                        margin-bottom: 16px;
+                        background: url(https://pancakeswap.finance/images/decorations/countdownBg.png) 0% 0% / 100% 100%;
+                        background-repeat: no-repeat;
+                        padding: 0 7px 10px;
+
+                        .mbcl-item {
+                            // border: 1px solid red;
+                            font-weight: 600;
+                            line-height: 1.1;
+                            background: $main-banner-orange-gradient-titles;
+                            /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+                            -webkit-text-fill-color: transparent;
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                            // -- -- -- -- -- -- --
+
+
+                        }
+
+                        .mbcli-number {
+                            // background-color: rgba(128, 255, 0, 0.485);
+                            font-size: 40px;
+                            margin: 0px 4px -4px 0px;
+
+                        }
+
+                        .mbcli-time {
+                            // background-color: rgba(235, 131, 211, 0.279);
+                            font-size: 20px;
+                            margin: 0px 12px 0px 0px;
 
 
 
-@media screen and (min-width: 968px){
+                        }
+                    }
+                }
 
-    // body {
-    //     @include flex(column);
-    //     gap: 100px;
-    //     width: 100%;
-    //     height: auto;
-    
+                .bunny-container-b {
+                    width: 100%;
+                    height: 120%;
+                    // background-color: rgba(5, 5, 2, 0.34);
+                    position: absolute;
+                    border-radius: 24px;
+                    bottom: -2.5px;
+                    right: 0px;
+                    z-index: 0;
+                    /*-- -- -- --*/
+                    // display: none;  // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    display: block;
+
+
+                    & img {
+                        min-width: 100%;
+                        max-width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    // }
+
+
+
+    // MEDIA---> MAX 968PX <---##################---> MAX 576PX <---###################
+
+    @media screen and (max-width: 968px) and (min-width: 575px) {
+
+        body {
+            @include flex(column);
+            gap: 100px;
+            width: 100%;
+            height: auto;
+
             .main-banner-container {
                 // @include mq('laptop');
                 @include flex();
                 padding: 20px;
-                width: 1152px;
+                width: 80%;
                 // background-color: rgba(0, 0, 255, 0.023);
                 position: relative;
-    
-                    .main-banner-sub-container {
-                        @include flex();
-                        background: $main-banner-background-gradient; /*linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%)*/
-                        height: 220px;
-                        width: 90%;
-                        padding: 24px;
-                        border-radius: 24px;
-                        position: relative;
-    
-    // ---Banner che cambia-------------BANNER A--------------------------------------------------------
-    
-                            .banner-a {   // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-                                display: block;
-                                // display: none;
-                            }
-    
-                            .main-banner-content-container {
-                                width: 100%;
-                                height: 100%;
-                                // background-color: rgba(123, 202, 123, 0.199);
-                                // border: 1px solid chartreuse;
-                                @include flex(column);
-                                justify-content: center;
-                                align-items: flex-start;
-                                z-index: 1;
-    
-                                    .main-banner-title-a {
-                                        color: white;
-                                        font-family: Kanit, sans-serif
-                                    }
-    
-                                    .mbt-a1 {
-                                        font-size: 24px;
-                                        background: $main-banner-orange-gradient-titles; /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
-                                        -webkit-text-fill-color: transparent;
-                                        background-clip: text;
-                                        -webkit-background-clip: text;  /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
-                                        margin-bottom: 8px;
-                                    }
-    
-                                    .mbt-a2 {
-                                        font-size: 40px;
-                                        margin-bottom: 16px;
-                                        text-shadow: $main-banner-titles-text-shadow; /* rgba(0, 0, 0, 0.35) 0px 4px 3px*/
-    
-                                    }
-    
-                                    .main-banner-button-a {
-                                        color: $black;
-                                        fill: $black;
-    
-                                    }
-    
-                            }
-                            .swiper-slide {
-                                background-color: transparent;
-                                width: 100px;
-                                height: 8px;
-                                background-color: rgba(186, 235, 74, 0.174);
-                                border-radius: 10px;
-                                position: absolute;
-                                bottom: 15px;
-                                @include flex();
-                                contain: content;
-    
-                                    .swiper {
-                                        width: 50%;
-                                        height: 8px;
-                                        background-color: $white;
-                                    }
-                                    .swpr-a {
-                                        visibility:initial;
-                                    }
-                                    .swpr-b {
-                                        visibility: hidden;
-                                    }
-                            }
-    
-                            .bunny-container-a {
-                                width: 40%;
-                                height: 121%;
-                                // background-color: rgba(5, 5, 2, 0.34);
-                                position: absolute;
-                                border-radius: 24px;
-                                bottom: 0;
-                                right: 0;
-                                z-index: 0;
-                                display: block;
-                                flex-shrink: 1.5;
-    
-                                    & img {
-                                        min-width: 100%;
-                                        max-width: 100%;
-                                        height: 100%;
-                                    }
-    
-    
-                                    .banner-a, .bunny-container-a {
-                                        display: block; //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-                                        // display: none;
-                                        }
-                            
-                            }
-    
-    // ---Banner che cambia-------------BANNER B--------------------------------------------------------
-    
-                            .banner-b{
-                                display: none; // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-                                // display: block;
-    
-    
-                                .main-banner-title-b {
-                                    color: $white;
-                                    font-family: Kanit, sans-serif
-                                }
-                
-                                .mbt-b1 {
-                                    font-size: 24px;
-                                    text-shadow: $main-banner-titles-text-shadow; /*rgba(0, 0, 0,  0.35) 0px 3px 3px*/
-                                    margin-bottom: 8px
-                
-                                }
-                
-                
-                                .mb-counter-lottery {
-                                    @include flex(row, center, flex-end);
-                                    margin-bottom: 16px;
-                                    background: url(https://pancakeswap.finance/images/decorations/countdownBg.png) 0% 0% / 100% 100%;
-                                    background-repeat: no-repeat;
-                                    padding: 0 7px 10px ;
-                
-                                        .mbcl-item {
-                                            // border: 1px solid red;
-                                            font-weight: 600;
-                                            line-height: 1.1;
-                                            background: $main-banner-orange-gradient-titles; /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
-                                            -webkit-text-fill-color: transparent;
-                                            background-clip: text;
-                                            -webkit-background-clip: text;
-                                            // -- -- -- -- -- -- --
-                
-                
-                                        }
-                
-                                        .mbcli-number {
-                                            // background-color: rgba(128, 255, 0, 0.485);
-                                            font-size: 40px;
-                                            margin: 0px 4px -4px 0px;
-                
-                                        }
-                
-                                        .mbcli-time {
-                                            // background-color: rgba(235, 131, 211, 0.279);
-                                            font-size: 20px;
-                                            margin: 0px 12px 0px 0px;
-                
-                
-                
-                                        }
-                                }  
-                            }
-    
-                            .bunny-container-b {
-                                width: 100%;
-                                height: 120%;
-                                // background-color: rgba(5, 5, 2, 0.34);
-                                position: absolute;
-                                border-radius: 24px;
-                                bottom: -2.5px;
-                                right: 0px;
-                                z-index: 0;
-                                /*-- -- -- --*/
-                                display: none;  // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-                                // display: block;
-    
-                    
-                                    & img {
-                                        min-width: 100%;
-                                        max-width: 100%;
-                                        height: 100%;
-                                    }
-                            }
+
+                .main-banner-sub-container {
+                    @include flex();
+                    background: $main-banner-background-gradient;
+                    /*linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%)*/
+                    height: 220px;
+                    width: 100%;
+                    padding: 24px;
+                    border-radius: 24px;
+                    position: relative;
+
+                    // ---Banner che cambia-------------BANNER A--------------------------------------------------------
+
+                    .banner-a {
+                        display: block;
                     }
+
+                    .main-banner-content-container {
+                        width: 100%;
+                        height: 100%;
+                        // background-color: rgba(123, 202, 123, 0.199);
+                        // border: 1px solid chartreuse;
+                        @include flex(column);
+                        justify-content: center;
+                        align-items: flex-start;
+                        z-index: 1;
+
+                        .main-banner-title-a {
+                            color: white;
+                            font-family: Kanit, sans-serif
+                        }
+
+                        .mbt-a1 {
+                            font-size: 24px;
+                            background: $main-banner-orange-gradient-titles;
+                            /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+                            -webkit-text-fill-color: transparent;
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                            /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
+                            margin-bottom: 8px;
+                            line-height: 1;
+                        }
+
+                        .mbt-a2 {
+                            font-size: 40px;
+                            margin-bottom: 16px;
+                            text-shadow: $main-banner-titles-text-shadow;
+                            /* rgba(0, 0, 0, 0.35) 0px 4px 3px*/
+                            line-height: 1;
+
+                        }
+
+                        .main-banner-button-a {
+                            color: $black;
+                            fill: $black;
+                            width: auto;
+
+                        }
+
+                    }
+
+                    .swiper-slide {
+                        background-color: transparent;
+                        width: 100px;
+                        height: 8px;
+                        background-color: rgba(186, 235, 74, 0.174);
+                        border-radius: 10px;
+                        position: absolute;
+                        bottom: 15px;
+                        @include flex();
+                        contain: content;
+
+                        .swiper {
+                            width: 50%;
+                            height: 8px;
+                            background-color: $white;
+                        }
+
+                        .swpr-a {
+                            visibility: initial;
+                        }
+
+                        .swpr-b {
+                            visibility: hidden;
+                        }
+                    }
+
+                    .bunny-container-a {
+                        width: 30%;
+                        height: 121%;
+                        // background-color: rgba(5, 5, 2, 0.34);
+                        position: absolute;
+                        border-radius: 24px;
+                        bottom: 0px;
+                        right: 0px;
+                        z-index: 0;
+                        display: block;
+                        flex-shrink: 1.5;
+
+
+                        & img {
+                            min-width: 100%;
+                            max-width: 100%;
+                            height: 99%;
+                            align-items: center;
+                            transform: translateY(11.5px);
+                            border-radius: 0px;
+                        }
+
+
+                        .banner-a,
+                        .bunny-container-a {
+                            display: block;
+                        }
+
+                    }
+
+                    // ---Banner che cambia-------------BANNER B--------------------------------------------------------
+
+                    .banner-b {
+                        display: none;
+
+                        .main-banner-title-b {
+                            color: $white;
+                            font-family: Kanit, sans-serif
+                        }
+
+                        .mbt-b1 {
+                            font-size: 24px;
+                            text-shadow: $main-banner-titles-text-shadow;
+                            /*rgba(0, 0, 0,  0.35) 0px 3px 3px*/
+                            margin-bottom: 8px
+                        }
+
+
+                        .mb-counter-lottery {
+                            @include flex(row, center, flex-end);
+                            margin-bottom: 16px;
+                            background: url(https://pancakeswap.finance/images/decorations/countdownBg.png) 0% 0% / 100% 100%;
+                            background-repeat: no-repeat;
+                            padding: 0 7px 10px;
+
+                            .mbcl-item {
+                                // border: 1px solid red;
+                                font-weight: 600;
+                                line-height: 1.1;
+                                background: $main-banner-orange-gradient-titles;
+                                /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+                                -webkit-text-fill-color: transparent;
+                                background-clip: text;
+                                -webkit-background-clip: text;
+                                // -- -- -- -- -- -- --
+
+
+                            }
+
+                            .mbcli-number {
+                                // background-color: rgba(128, 255, 0, 0.485);
+                                font-size: 40px;
+                                margin: 0px 4px -4px 0px;
+
+                            }
+
+                            .mbcli-time {
+                                // background-color: rgba(235, 131, 211, 0.279);
+                                font-size: 20px;
+                                margin: 0px 12px 0px 0px;
+
+
+
+                            }
+                        }
+                    }
+
+                    .bunny-container-b {
+                        width: 100%;
+                        height: 120%;
+                        // background-color: rgba(5, 5, 2, 0.34);
+                        position: absolute;
+                        border-radius: 24px;
+                        bottom: -2.5px;
+                        right: 0px;
+                        z-index: 0;
+                        /*-- -- -- --*/
+                        display: none;
+
+                        & img {
+                            min-width: 100%;
+                            max-width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
             }
-    
-    
-    // }
-    
+        }
+
+
+
     }
+
+
+    // MEDIA---> MAX 575PX <---##################---> Min ???PX <---###################
+
+    @media screen and (max-width: 590px) {
+
+        body {
+            @include flex(column);
+            gap: 100px;
+            width: 100%;
+            height: auto;
+
+            .main-banner-container {
+                // @include mq('laptop');
+                @include flex();
+                padding: 20px;
+                width: 100%;
+                // background-color: rgba(0, 0, 255, 0.023);
+                position: relative;
+
+                .main-banner-sub-container {
+                    @include flex();
+                    background: $main-banner-background-gradient;
+                    /*linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%)*/
+                    height: 220px;
+                    width: 100%;
+                    padding: 24px;
+                    border-radius: 24px;
+                    position: relative;
+
+                    // ---Banner che cambia-------------BANNER A--------------------------------------------------------
+
+                    .banner-a {
+                        display: block;
+                    }
+
+                    .main-banner-content-container {
+                        width: 100%;
+                        height: 100%;
+                        // background-color: rgba(123, 202, 123, 0.199);
+                        // border: 1px solid chartreuse;
+                        @include flex(column);
+                        justify-content: center;
+                        align-items: flex-start;
+                        z-index: 1;
+
+                        .main-banner-title-a {
+                            color: white;
+                            font-family: Kanit, sans-serif
+                        }
+
+                        .mbt-a1 {
+                            font-size: 22px;
+                            background: $main-banner-orange-gradient-titles;
+                            /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+                            -webkit-text-fill-color: transparent;
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                            /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
+                            margin-bottom: 8px;
+                            line-height: 1;
+                        }
+
+                        .mbt-a2 {
+                            font-size: 20px;
+                            margin-bottom: 8px;
+                            text-shadow: $main-banner-titles-text-shadow;
+                            /* rgba(0, 0, 0, 0.35) 0px 4px 3px*/
+                            word-wrap: break-word;
+                            line-height: 1;
+                            width: 150px;
+
+                        }
+
+                        .main-banner-button-a {
+                            color: $black;
+                            fill: $black;
+                            line-height: 1;
+
+
+                        }
+
+                    }
+
+                    .swiper-slide {
+                        background-color: transparent;
+                        width: 100px;
+                        height: 8px;
+                        background-color: rgba(186, 235, 74, 0.174);
+                        border-radius: 10px;
+                        position: absolute;
+                        bottom: 15px;
+                        @include flex();
+                        contain: content;
+
+                        .swiper {
+                            width: 50%;
+                            height: 8px;
+                            background-color: $white;
+                        }
+
+                        .swpr-a {
+                            visibility: initial;
+                        }
+
+                        .swpr-b {
+                            visibility: hidden;
+                        }
+                    }
+
+                    .bunny-container-a {
+                        width: 70%;
+                        height: 121%;
+                        // background-color: rgba(5, 5, 2, 0.34);
+                        position: absolute;
+                        border-radius: 24px;
+                        bottom: 0px;
+                        right: 0px;
+                        z-index: 0;
+                        display: block;
+                        flex-shrink: 1.5;
+
+
+                        & img {
+                            min-width: 100%;
+                            max-width: 100%;
+                            height: 99%;
+                            align-items: center;
+                            transform: translateY(11.5px);
+                            border-radius: 0px;
+                        }
+
+
+                        .banner-a,
+                        .bunny-container-a {
+                            display: block;
+                        }
+
+                    }
+
+                    // ---Banner che cambia-------------BANNER B--------------------------------------------------------
+
+                    .banner-b {
+                        display: none;
+
+                        .main-banner-title-b {
+                            color: $white;
+                            font-family: Kanit, sans-serif
+                        }
+
+                        .mbt-b1 {
+                            font-size: 24px;
+                            text-shadow: $main-banner-titles-text-shadow;
+                            /*rgba(0, 0, 0,  0.35) 0px 3px 3px*/
+                            margin-bottom: 8px
+                        }
+
+
+                        .mb-counter-lottery {
+                            @include flex(row, center, flex-end);
+                            margin-bottom: 16px;
+                            background: url(https://pancakeswap.finance/images/decorations/countdownBg.png) 0% 0% / 100% 100%;
+                            background-repeat: no-repeat;
+                            padding: 0 7px 10px;
+
+                            .mbcl-item {
+                                // border: 1px solid red;
+                                font-weight: 600;
+                                line-height: 1.1;
+                                background: $main-banner-orange-gradient-titles;
+                                /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+                                -webkit-text-fill-color: transparent;
+                                background-clip: text;
+                                -webkit-background-clip: text;
+                                // -- -- -- -- -- -- --
+
+
+                            }
+
+                            .mbcli-number {
+                                // background-color: rgba(128, 255, 0, 0.485);
+                                font-size: 40px;
+                                margin: 0px 4px -4px 0px;
+
+                            }
+
+                            .mbcli-time {
+                                // background-color: rgba(235, 131, 211, 0.279);
+                                font-size: 20px;
+                                margin: 0px 12px 0px 0px;
+
+
+
+                            }
+                        }
+                    }
+
+                    .bunny-container-b {
+                        width: 100%;
+                        height: 120%;
+                        // background-color: rgba(5, 5, 2, 0.34);
+                        position: absolute;
+                        border-radius: 24px;
+                        bottom: -2.5px;
+                        right: 0px;
+                        z-index: 0;
+                        /*-- -- -- --*/
+                        display: none;
+
+                        & img {
+                            min-width: 100%;
+                            max-width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+    }
+
     
-    
+
+    // ###########################################################################
+
+
+
+    @media screen and (min-width: 968px) {
+
+        // body {
+        //     @include flex(column);
+        //     gap: 100px;
+        //     width: 100%;
+        //     height: auto;
+
+        .main-banner-container {
+            // @include mq('laptop');
+            @include flex();
+            padding: 20px;
+            width: 1152px;
+            // background-color: rgba(0, 0, 255, 0.023);
+            position: relative;
+
+            .main-banner-sub-container {
+                @include flex();
+                background: $main-banner-background-gradient;
+                /*linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%)*/
+                height: 185px;
+                width: 90%;
+                padding: 30px;
+                border-radius: 24px;
+                position: relative;
+
+                // ---Banner che cambia-------------BANNER A--------------------------------------------------------
+
+                .banner-a {
+                    // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    display: block;
+                    // display: none;
+                }
+
+                .main-banner-content-container {
+                    width: 100%;
+                    height: 100%;
+                    // background-color: rgba(123, 202, 123, 0.199);
+                    // border: 1px solid chartreuse;
+                    @include flex(column);
+                    justify-content: center;
+                    align-items: flex-start;
+                    z-index: 1;
+
+                    .main-banner-title-a {
+                        color: white;
+                        font-family: Kanit, sans-serif
+                    }
+
+                    .mbt-a1 {
+                        font-size: 24px;
+                        background: $main-banner-orange-gradient-titles;
+                        /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
+                        margin-bottom: 8px;
+                    }
+
+                    .mbt-a2 {
+                        font-size: 40px;
+                        margin-bottom: 16px;
+                        text-shadow: $main-banner-titles-text-shadow;
+                        /* rgba(0, 0, 0, 0.35) 0px 4px 3px*/
+
+                    }
+
+                    .main-banner-button-a {
+                        color: $black;
+                        fill: $black;
+
+                    }
+
+                }
+
+                .swiper-slide {
+                    background-color: transparent;
+                    width: 100px;
+                    height: 8px;
+                    background-color: rgba(186, 235, 74, 0.174);
+                    border-radius: 10px;
+                    position: absolute;
+                    bottom: 15px;
+                    @include flex();
+                    contain: content;
+
+                    .swiper {
+                        width: 50%;
+                        height: 8px;
+                        background-color: $white;
+                    }
+
+                    .swpr-a {
+                        visibility: initial;
+                    }
+
+                    .swpr-b {
+                        visibility: hidden;
+                    }
+                }
+
+                .bunny-container-a {
+                    width: 40%;
+                    height: 121%;
+                    // background-color: rgba(5, 5, 2, 0.34);
+                    position: absolute;
+                    border-radius: 24px;
+                    bottom: 0;
+                    right: 0;
+                    z-index: 0;
+                    display: block;
+                    flex-shrink: 1.5;
+
+                    & img {
+                        min-width: 100%;
+                        max-width: 100%;
+                        height: 100%;
+                    }
+
+
+                    .banner-a,
+                    .bunny-container-a {
+                        display: block; //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                        // display: none;
+                    }
+
+                }
+
+                // ---Banner che cambia-------------BANNER B--------------------------------------------------------
+
+                .banner-b {
+                    display: none; // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    // display: block;
+
+
+                    .main-banner-title-b {
+                        color: $white;
+                        font-family: Kanit, sans-serif
+                    }
+
+                    .mbt-b1 {
+                        font-size: 24px;
+                        text-shadow: $main-banner-titles-text-shadow;
+                        /*rgba(0, 0, 0,  0.35) 0px 3px 3px*/
+                        margin-bottom: 8px
+                    }
+
+
+                    .mb-counter-lottery {
+                        @include flex(row, center, flex-end);
+                        margin-bottom: 16px;
+                        background: url(https://pancakeswap.finance/images/decorations/countdownBg.png) 0% 0% / 100% 100%;
+                        background-repeat: no-repeat;
+                        padding: 0 7px 10px;
+
+                        .mbcl-item {
+                            // border: 1px solid red;
+                            font-weight: 600;
+                            line-height: 1.1;
+                            background: $main-banner-orange-gradient-titles;
+                            /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+                            -webkit-text-fill-color: transparent;
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                            // -- -- -- -- -- -- --
+
+
+                        }
+
+                        .mbcli-number {
+                            // background-color: rgba(128, 255, 0, 0.485);
+                            font-size: 40px;
+                            margin: 0px 4px -4px 0px;
+
+                        }
+
+                        .mbcli-time {
+                            // background-color: rgba(235, 131, 211, 0.279);
+                            font-size: 20px;
+                            margin: 0px 12px 0px 0px;
+
+
+
+                        }
+                    }
+                }
+
+                .bunny-container-b {
+                    width: 100%;
+                    height: 120%;
+                    // background-color: rgba(5, 5, 2, 0.34);
+                    position: absolute;
+                    border-radius: 24px;
+                    bottom: -2.5px;
+                    right: 0px;
+                    z-index: 0;
+                    /*-- -- -- --*/
+                    display: none; // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    // display: block;
+
+
+                    & img {
+                        min-width: 100%;
+                        max-width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+
+        // }
+
+    }
+
+
     // DA NON CANCELLARE
 
 
-    
+
     // // MEDIA---> MAX 968PX <---##################---> MAX 576PX <---###################
-    
+
     // @media screen and (max-width: 968px) and (min-width: 575px) {
-        
+
     //     body {
     //         @include flex(column);
     //         gap: 100px;
     //         width: 100%;
     //         height: auto;
-        
+
     //             .main-banner-container {
     //                 // @include mq('laptop');
     //                 @include flex();
@@ -922,7 +1597,7 @@ body {
     //                 width: 80%;
     //                 // background-color: rgba(0, 0, 255, 0.023);
     //                 position: relative;
-        
+
     //                     .main-banner-sub-container {
     //                         @include flex();
     //                         background: $main-banner-background-gradient; /*linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%)*/
@@ -931,13 +1606,13 @@ body {
     //                         padding: 24px;
     //                         border-radius: 24px;
     //                         position: relative;
-        
+
     //     // ---Banner che cambia-------------BANNER A--------------------------------------------------------
-        
+
     //                             .banner-a {
     //                                 display: block;
     //                             }
-        
+
     //                             .main-banner-content-container {
     //                                 width: 100%;
     //                                 height: 100%;
@@ -947,12 +1622,12 @@ body {
     //                                 justify-content: center;
     //                                 align-items: flex-start;
     //                                 z-index: 1;
-        
+
     //                                     .main-banner-title-a {
     //                                         color: white;
     //                                         font-family: Kanit, sans-serif
     //                                     }
-        
+
     //                                     .mbt-a1 {
     //                                         font-size: 24px;
     //                                         background: $main-banner-orange-gradient-titles; /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
@@ -962,22 +1637,22 @@ body {
     //                                         margin-bottom: 8px;
     //                                         line-height: 1;
     //                                     }
-        
+
     //                                     .mbt-a2 {
     //                                         font-size: 40px;
     //                                         margin-bottom: 16px;
     //                                         text-shadow: $main-banner-titles-text-shadow; /* rgba(0, 0, 0, 0.35) 0px 4px 3px*/
     //                                         line-height: 1;
-        
+
     //                                     }
-        
+
     //                                     .main-banner-button-a {
     //                                         color: $black;
     //                                         fill: $black;
     //                                         width: auto;
-        
+
     //                                     }
-        
+
     //                             }
     //                             .swiper-slide {
     //                                 background-color: transparent;
@@ -989,7 +1664,7 @@ body {
     //                                 bottom: 15px;
     //                                 @include flex();
     //                                 contain: content;
-        
+
     //                                     .swiper {
     //                                         width: 50%;
     //                                         height: 8px;
@@ -1002,7 +1677,7 @@ body {
     //                                         visibility: hidden;
     //                                     }
     //                             }
-        
+
     //                             .bunny-container-a {
     //                                 width: 30%;
     //                                 height: 121%;
@@ -1014,8 +1689,8 @@ body {
     //                                 z-index: 0;
     //                                 display: block;
     //                                 flex-shrink: 1.5;
-    
-        
+
+
     //                                     & img {
     //                                         min-width: 100%;
     //                                         max-width: 100%;
@@ -1024,39 +1699,39 @@ body {
     //                                         transform: translateY(11.5px);
     //                                         border-radius: 0px;
     //                                     }
-        
-        
+
+
     //                                     .banner-a, .bunny-container-a {
     //                                         display: block;
     //                                         }
-                                
+
     //                             }
-        
+
     //     // ---Banner che cambia-------------BANNER B--------------------------------------------------------
-        
+
     //                             .banner-b{
     //                                 display: none;
-        
+
     //                                 .main-banner-title-b {
     //                                     color: $white;
     //                                     font-family: Kanit, sans-serif
     //                                 }
-                    
+
     //                                 .mbt-b1 {
     //                                     font-size: 24px;
     //                                     text-shadow: $main-banner-titles-text-shadow; /*rgba(0, 0, 0,  0.35) 0px 3px 3px*/
     //                                     margin-bottom: 8px
-                    
+
     //                                 }
-                    
-                    
+
+
     //                                 .mb-counter-lottery {
     //                                     @include flex(row, center, flex-end);
     //                                     margin-bottom: 16px;
     //                                     background: url(https://pancakeswap.finance/images/decorations/countdownBg.png) 0% 0% / 100% 100%;
     //                                     background-repeat: no-repeat;
     //                                     padding: 0 7px 10px ;
-                    
+
     //                                         .mbcl-item {
     //                                             // border: 1px solid red;
     //                                             font-weight: 600;
@@ -1066,28 +1741,28 @@ body {
     //                                             background-clip: text;
     //                                             -webkit-background-clip: text;
     //                                             // -- -- -- -- -- -- --
-                    
-                    
+
+
     //                                         }
-                    
+
     //                                         .mbcli-number {
     //                                             // background-color: rgba(128, 255, 0, 0.485);
     //                                             font-size: 40px;
     //                                             margin: 0px 4px -4px 0px;
-                    
+
     //                                         }
-                    
+
     //                                         .mbcli-time {
     //                                             // background-color: rgba(235, 131, 211, 0.279);
     //                                             font-size: 20px;
     //                                             margin: 0px 12px 0px 0px;
-                    
-                    
-                    
+
+
+
     //                                         }
     //                                 }  
     //                             }
-        
+
     //                             .bunny-container-b {
     //                                 width: 100%;
     //                                 height: 120%;
@@ -1099,7 +1774,7 @@ body {
     //                                 z-index: 0;
     //                                 /*-- -- -- --*/
     //                                 display: none;
-                        
+
     //                                     & img {
     //                                         min-width: 100%;
     //                                         max-width: 100%;
@@ -1109,22 +1784,22 @@ body {
     //                     }
     //             }
     //     }
-    
-    
-    
+
+
+
     // }
-    
-    
+
+
     // // MEDIA---> MAX 575PX <---##################---> Min ???PX <---###################
-    
+
     // @media screen and (max-width: 590px) {
-        
+
     //     body {
     //         @include flex(column);
     //         gap: 100px;
     //         width: 100%;
     //         height: auto;
-        
+
     //             .main-banner-container {
     //                 // @include mq('laptop');
     //                 @include flex();
@@ -1132,7 +1807,7 @@ body {
     //                 width: 100%;
     //                 // background-color: rgba(0, 0, 255, 0.023);
     //                 position: relative;
-        
+
     //                     .main-banner-sub-container {
     //                         @include flex();
     //                         background: $main-banner-background-gradient; /*linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%)*/
@@ -1141,13 +1816,13 @@ body {
     //                         padding: 24px;
     //                         border-radius: 24px;
     //                         position: relative;
-        
+
     //     // ---Banner che cambia-------------BANNER A--------------------------------------------------------
-        
+
     //                             .banner-a {
     //                                 display: block;
     //                             }
-        
+
     //                             .main-banner-content-container {
     //                                 width: 100%;
     //                                 height: 100%;
@@ -1157,12 +1832,12 @@ body {
     //                                 justify-content: center;
     //                                 align-items: flex-start;
     //                                 z-index: 1;
-        
+
     //                                     .main-banner-title-a {
     //                                         color: white;
     //                                         font-family: Kanit, sans-serif
     //                                     }
-        
+
     //                                     .mbt-a1 {
     //                                         font-size: 22px;
     //                                         background: $main-banner-orange-gradient-titles; /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
@@ -1172,7 +1847,7 @@ body {
     //                                         margin-bottom: 8px;
     //                                         line-height: 1;
     //                                     }
-        
+
     //                                     .mbt-a2 {
     //                                         font-size: 20px;
     //                                         margin-bottom: 8px;
@@ -1180,17 +1855,17 @@ body {
     //                                         word-wrap: break-word;
     //                                         line-height: 1;
     //                                         width: 150px;
-    
+
     //                                     }
-        
+
     //                                     .main-banner-button-a {
     //                                         color: $black;
     //                                         fill: $black;
     //                                         line-height: 1;
-    
-        
+
+
     //                                     }
-        
+
     //                             }
     //                             .swiper-slide {
     //                                 background-color: transparent;
@@ -1202,7 +1877,7 @@ body {
     //                                 bottom: 15px;
     //                                 @include flex();
     //                                 contain: content;
-        
+
     //                                     .swiper {
     //                                         width: 50%;
     //                                         height: 8px;
@@ -1215,7 +1890,7 @@ body {
     //                                         visibility: hidden;
     //                                     }
     //                             }
-        
+
     //                             .bunny-container-a {
     //                                 width: 70%;
     //                                 height: 121%;
@@ -1227,8 +1902,8 @@ body {
     //                                 z-index: 0;
     //                                 display: block;
     //                                 flex-shrink: 1.5;
-    
-        
+
+
     //                                     & img {
     //                                         min-width: 100%;
     //                                         max-width: 100%;
@@ -1237,39 +1912,39 @@ body {
     //                                         transform: translateY(11.5px);
     //                                         border-radius: 0px;
     //                                     }
-        
-        
+
+
     //                                     .banner-a, .bunny-container-a {
     //                                         display: block;
     //                                         }
-                                
+
     //                             }
-        
+
     //     // ---Banner che cambia-------------BANNER B--------------------------------------------------------
-        
+
     //                             .banner-b{
     //                                 display: none;
-        
+
     //                                 .main-banner-title-b {
     //                                     color: $white;
     //                                     font-family: Kanit, sans-serif
     //                                 }
-                    
+
     //                                 .mbt-b1 {
     //                                     font-size: 24px;
     //                                     text-shadow: $main-banner-titles-text-shadow; /*rgba(0, 0, 0,  0.35) 0px 3px 3px*/
     //                                     margin-bottom: 8px
-                    
+
     //                                 }
-                    
-                    
+
+
     //                                 .mb-counter-lottery {
     //                                     @include flex(row, center, flex-end);
     //                                     margin-bottom: 16px;
     //                                     background: url(https://pancakeswap.finance/images/decorations/countdownBg.png) 0% 0% / 100% 100%;
     //                                     background-repeat: no-repeat;
     //                                     padding: 0 7px 10px ;
-                    
+
     //                                         .mbcl-item {
     //                                             // border: 1px solid red;
     //                                             font-weight: 600;
@@ -1279,28 +1954,28 @@ body {
     //                                             background-clip: text;
     //                                             -webkit-background-clip: text;
     //                                             // -- -- -- -- -- -- --
-                    
-                    
+
+
     //                                         }
-                    
+
     //                                         .mbcli-number {
     //                                             // background-color: rgba(128, 255, 0, 0.485);
     //                                             font-size: 40px;
     //                                             margin: 0px 4px -4px 0px;
-                    
+
     //                                         }
-                    
+
     //                                         .mbcli-time {
     //                                             // background-color: rgba(235, 131, 211, 0.279);
     //                                             font-size: 20px;
     //                                             margin: 0px 12px 0px 0px;
-                    
-                    
-                    
+
+
+
     //                                         }
     //                                 }  
     //                             }
-        
+
     //                             .bunny-container-b {
     //                                 width: 100%;
     //                                 height: 120%;
@@ -1312,7 +1987,7 @@ body {
     //                                 z-index: 0;
     //                                 /*-- -- -- --*/
     //                                 display: none;
-                        
+
     //                                     & img {
     //                                         min-width: 100%;
     //                                         max-width: 100%;
@@ -1322,17 +1997,17 @@ body {
     //                     }
     //             }
     //     }
-    
-    
-    
+
+
+
     // }
-    
 
 
 
 
 
-// #####################################################################
+
+    // #####################################################################
 
 
     .fb-wrapper {
@@ -1343,7 +2018,7 @@ body {
         @include flex(row, center);
         position: relative;
         z-index: 2;
-      
+
 
         .fb-contents-section {
             text-align: left;
@@ -1351,7 +2026,7 @@ body {
             width: 100%;
             flex-shrink: 1;
             padding-left: 60px;
-          
+
 
             h2 {
                 padding-top: 20px;
@@ -1394,7 +2069,7 @@ body {
                 margin-right: 10%;
                 margin-top: 10%;
                 @include float-anim(5s, "NW");
-                
+
                 img {
                     z-index: 3;
                     height: 580px;
@@ -1402,40 +2077,42 @@ body {
                 }
             }
 
-                .fb-thefloatingstars {
-                    position: absolute;
-                    margin-right: 10%;
-                    height: 512px;
-                    width: 512px;
+            .fb-thefloatingstars {
+                position: absolute;
+                margin-right: 10%;
+                height: 512px;
+                width: 512px;
 
-                    .fb-star1 img {
-                        @include fade-out-anim(2.5s);
-                    }
-                    .fb-star2 img {
-                        @include fade-out-anim(3.5s);
-                    }
-                    .fb-star3 img {
-                        @include fade-out-anim(5s);
-                    }
-
-                    img {
-
-                        position: absolute;
-                        height: 100%;
-                        width: auto;
-                    }
-
+                .fb-star1 img {
+                    @include fade-out-anim(2.5s);
                 }
-            
+
+                .fb-star2 img {
+                    @include fade-out-anim(3.5s);
+                }
+
+                .fb-star3 img {
+                    @include fade-out-anim(5s);
+                }
+
+                img {
+
+                    position: absolute;
+                    height: 100%;
+                    width: auto;
+                }
+
+            }
+
         }
     }
 
     .fb-bottomgradient {
-        
+
         position: absolute;
         bottom: 0px;
         width: 100%;
-        
+
 
         svg {
             z-index: 1;
@@ -1443,4 +2120,4 @@ body {
 
     }
 
-    }
+}
