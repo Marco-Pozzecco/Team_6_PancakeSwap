@@ -900,7 +900,8 @@ body {
 }
 
 .fb-floating-bunny {
-  padding-top: 300px;
+  padding-top: 150px;
+  padding-bottom: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -911,16 +912,7 @@ body {
   background: linear-gradient(180deg, rgb(22, 9, 49) 0%, rgb(22, 9, 49) 47%, rgb(19, 8, 43) 65%, rgb(11, 5, 25) 100%, rgb(0, 0, 0) 100%);
 }
 @media screen and (min-width: 968px) {
-  .fb-floating-bunny body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-    width: 100%;
-    height: auto;
-  }
-  .fb-floating-bunny body .main-banner-container {
+  .fb-floating-bunny .main-banner-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -929,22 +921,23 @@ body {
     width: 80%;
     position: relative;
   }
-  .fb-floating-bunny body .main-banner-container .main-banner-sub-container {
+  .fb-floating-bunny .main-banner-container .main-banner-sub-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%); /*linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%)*/
+    background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
+    /*linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%)*/
     height: 220px;
     width: 100%;
     padding: 24px;
     border-radius: 24px;
     position: relative;
   }
-  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-a {
+  .fb-floating-bunny .main-banner-container .main-banner-sub-container .banner-a {
     display: none;
   }
-  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .main-banner-content-container {
+  .fb-floating-bunny .main-banner-container .main-banner-sub-container .main-banner-content-container {
     width: 100%;
     height: 100%;
     display: flex;
@@ -955,28 +948,31 @@ body {
     align-items: flex-start;
     z-index: 1;
   }
-  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .main-banner-content-container .main-banner-title-a {
+  .fb-floating-bunny .main-banner-container .main-banner-sub-container .main-banner-content-container .main-banner-title-a {
     color: white;
     font-family: Kanit, sans-serif;
   }
-  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .main-banner-content-container .mbt-a1 {
+  .fb-floating-bunny .main-banner-container .main-banner-sub-container .main-banner-content-container .mbt-a1 {
     font-size: 24px;
-    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0)); /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0));
+    /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    -webkit-background-clip: text; /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
+    -webkit-background-clip: text;
+    /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
     margin-bottom: 8px;
   }
-  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .main-banner-content-container .mbt-a2 {
+  .fb-floating-bunny .main-banner-container .main-banner-sub-container .main-banner-content-container .mbt-a2 {
     font-size: 40px;
     margin-bottom: 16px;
-    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px; /* rgba(0, 0, 0, 0.35) 0px 4px 3px*/
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px;
+    /* rgba(0, 0, 0, 0.35) 0px 4px 3px*/
   }
-  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .main-banner-content-container .main-banner-button-a {
+  .fb-floating-bunny .main-banner-container .main-banner-sub-container .main-banner-content-container .main-banner-button-a {
     color: rgb(0, 0, 0);
     fill: rgb(0, 0, 0);
   }
-  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .swiper-slide {
+  .fb-floating-bunny .main-banner-container .main-banner-sub-container .swiper-slide {
     background-color: transparent;
     width: 100px;
     height: 8px;
@@ -990,18 +986,18 @@ body {
     align-items: center;
     contain: content;
   }
-  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .swiper-slide .swiper {
+  .fb-floating-bunny .main-banner-container .main-banner-sub-container .swiper-slide .swiper {
     width: 50%;
     height: 8px;
     background-color: rgb(255, 255, 255);
   }
-  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .swiper-slide .swpr-a {
+  .fb-floating-bunny .main-banner-container .main-banner-sub-container .swiper-slide .swpr-a {
     visibility: initial;
   }
-  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .swiper-slide .swpr-b {
+  .fb-floating-bunny .main-banner-container .main-banner-sub-container .swiper-slide .swpr-b {
     visibility: hidden;
   }
-  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .bunny-container-a {
+  .fb-floating-bunny .main-banner-container .main-banner-sub-container .bunny-container-a {
     width: 40%;
     height: 121%;
     position: absolute;
@@ -1009,30 +1005,32 @@ body {
     bottom: 0;
     right: 0;
     z-index: 0;
-    display: block;
+    display: none;
     flex-shrink: 1.5;
   }
-  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .bunny-container-a img {
+  .fb-floating-bunny .main-banner-container .main-banner-sub-container .bunny-container-a img {
     min-width: 100%;
     max-width: 100%;
     height: 100%;
   }
-  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .bunny-container-a .banner-a, .fb-floating-bunny body .main-banner-container .main-banner-sub-container .bunny-container-a .bunny-container-a {
+  .fb-floating-bunny .main-banner-container .main-banner-sub-container .bunny-container-a .banner-a,
+.fb-floating-bunny .main-banner-container .main-banner-sub-container .bunny-container-a .bunny-container-a {
     display: none;
   }
-  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-b {
+  .fb-floating-bunny .main-banner-container .main-banner-sub-container .banner-b {
     display: block;
   }
-  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-b .main-banner-title-b {
+  .fb-floating-bunny .main-banner-container .main-banner-sub-container .banner-b .main-banner-title-b {
     color: rgb(255, 255, 255);
     font-family: Kanit, sans-serif;
   }
-  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-b .mbt-b1 {
+  .fb-floating-bunny .main-banner-container .main-banner-sub-container .banner-b .mbt-b1 {
     font-size: 24px;
-    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px; /*rgba(0, 0, 0,  0.35) 0px 3px 3px*/
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px;
+    /*rgba(0, 0, 0,  0.35) 0px 3px 3px*/
     margin-bottom: 8px;
   }
-  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-b .mb-counter-lottery {
+  .fb-floating-bunny .main-banner-container .main-banner-sub-container .banner-b .mb-counter-lottery {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1042,23 +1040,24 @@ body {
     background-repeat: no-repeat;
     padding: 0 7px 10px;
   }
-  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-b .mb-counter-lottery .mbcl-item {
+  .fb-floating-bunny .main-banner-container .main-banner-sub-container .banner-b .mb-counter-lottery .mbcl-item {
     font-weight: 600;
     line-height: 1.1;
-    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0)); /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0));
+    /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
   }
-  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-b .mb-counter-lottery .mbcli-number {
+  .fb-floating-bunny .main-banner-container .main-banner-sub-container .banner-b .mb-counter-lottery .mbcli-number {
     font-size: 40px;
     margin: 0px 4px -4px 0px;
   }
-  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-b .mb-counter-lottery .mbcli-time {
+  .fb-floating-bunny .main-banner-container .main-banner-sub-container .banner-b .mb-counter-lottery .mbcli-time {
     font-size: 20px;
     margin: 0px 12px 0px 0px;
   }
-  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .bunny-container-b {
+  .fb-floating-bunny .main-banner-container .main-banner-sub-container .bunny-container-b {
     width: 100%;
     height: 120%;
     position: absolute;
@@ -1069,7 +1068,7 @@ body {
     /*-- -- -- --*/
     display: block;
   }
-  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .bunny-container-b img {
+  .fb-floating-bunny .main-banner-container .main-banner-sub-container .bunny-container-b img {
     min-width: 100%;
     max-width: 100%;
     height: 100%;
@@ -1099,7 +1098,8 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%); /*linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%)*/
+    background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
+    /*linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%)*/
     height: 220px;
     width: 100%;
     padding: 24px;
@@ -1126,17 +1126,20 @@ body {
   }
   .fb-floating-bunny body .main-banner-container .main-banner-sub-container .main-banner-content-container .mbt-a1 {
     font-size: 24px;
-    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0)); /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0));
+    /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    -webkit-background-clip: text; /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
+    -webkit-background-clip: text;
+    /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
     margin-bottom: 8px;
     line-height: 1;
   }
   .fb-floating-bunny body .main-banner-container .main-banner-sub-container .main-banner-content-container .mbt-a2 {
     font-size: 40px;
     margin-bottom: 16px;
-    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px; /* rgba(0, 0, 0, 0.35) 0px 4px 3px*/
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px;
+    /* rgba(0, 0, 0, 0.35) 0px 4px 3px*/
     line-height: 1;
   }
   .fb-floating-bunny body .main-banner-container .main-banner-sub-container .main-banner-content-container .main-banner-button-a {
@@ -1188,7 +1191,8 @@ body {
     transform: translateY(11.5px);
     border-radius: 0px;
   }
-  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .bunny-container-a .banner-a, .fb-floating-bunny body .main-banner-container .main-banner-sub-container .bunny-container-a .bunny-container-a {
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .bunny-container-a .banner-a,
+.fb-floating-bunny body .main-banner-container .main-banner-sub-container .bunny-container-a .bunny-container-a {
     display: block;
   }
   .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-b {
@@ -1200,7 +1204,8 @@ body {
   }
   .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-b .mbt-b1 {
     font-size: 24px;
-    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px; /*rgba(0, 0, 0,  0.35) 0px 3px 3px*/
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px;
+    /*rgba(0, 0, 0,  0.35) 0px 3px 3px*/
     margin-bottom: 8px;
   }
   .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-b .mb-counter-lottery {
@@ -1216,7 +1221,8 @@ body {
   .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-b .mb-counter-lottery .mbcl-item {
     font-weight: 600;
     line-height: 1.1;
-    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0)); /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0));
+    /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
@@ -1270,7 +1276,8 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%); /*linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%)*/
+    background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
+    /*linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%)*/
     height: 220px;
     width: 100%;
     padding: 24px;
@@ -1297,17 +1304,20 @@ body {
   }
   .fb-floating-bunny body .main-banner-container .main-banner-sub-container .main-banner-content-container .mbt-a1 {
     font-size: 22px;
-    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0)); /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0));
+    /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    -webkit-background-clip: text; /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
+    -webkit-background-clip: text;
+    /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
     margin-bottom: 8px;
     line-height: 1;
   }
   .fb-floating-bunny body .main-banner-container .main-banner-sub-container .main-banner-content-container .mbt-a2 {
     font-size: 20px;
     margin-bottom: 8px;
-    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px; /* rgba(0, 0, 0, 0.35) 0px 4px 3px*/
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px;
+    /* rgba(0, 0, 0, 0.35) 0px 4px 3px*/
     word-wrap: break-word;
     line-height: 1;
     width: 150px;
@@ -1361,7 +1371,8 @@ body {
     transform: translateY(11.5px);
     border-radius: 0px;
   }
-  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .bunny-container-a .banner-a, .fb-floating-bunny body .main-banner-container .main-banner-sub-container .bunny-container-a .bunny-container-a {
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .bunny-container-a .banner-a,
+.fb-floating-bunny body .main-banner-container .main-banner-sub-container .bunny-container-a .bunny-container-a {
     display: block;
   }
   .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-b {
@@ -1373,7 +1384,8 @@ body {
   }
   .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-b .mbt-b1 {
     font-size: 24px;
-    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px; /*rgba(0, 0, 0,  0.35) 0px 3px 3px*/
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px;
+    /*rgba(0, 0, 0,  0.35) 0px 3px 3px*/
     margin-bottom: 8px;
   }
   .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-b .mb-counter-lottery {
@@ -1389,7 +1401,8 @@ body {
   .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-b .mb-counter-lottery .mbcl-item {
     font-weight: 600;
     line-height: 1.1;
-    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0)); /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0));
+    /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
@@ -1434,10 +1447,11 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%); /*linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%)*/
-    height: 220px;
+    background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
+    /*linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%)*/
+    height: 185px;
     width: 90%;
-    padding: 24px;
+    padding: 30px;
     border-radius: 24px;
     position: relative;
   }
@@ -1461,16 +1475,19 @@ body {
   }
   .fb-floating-bunny .main-banner-container .main-banner-sub-container .main-banner-content-container .mbt-a1 {
     font-size: 24px;
-    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0)); /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0));
+    /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    -webkit-background-clip: text; /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
+    -webkit-background-clip: text;
+    /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
     margin-bottom: 8px;
   }
   .fb-floating-bunny .main-banner-container .main-banner-sub-container .main-banner-content-container .mbt-a2 {
     font-size: 40px;
     margin-bottom: 16px;
-    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px; /* rgba(0, 0, 0, 0.35) 0px 4px 3px*/
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px;
+    /* rgba(0, 0, 0, 0.35) 0px 4px 3px*/
   }
   .fb-floating-bunny .main-banner-container .main-banner-sub-container .main-banner-content-container .main-banner-button-a {
     color: rgb(0, 0, 0);
@@ -1517,7 +1534,8 @@ body {
     max-width: 100%;
     height: 100%;
   }
-  .fb-floating-bunny .main-banner-container .main-banner-sub-container .bunny-container-a .banner-a, .fb-floating-bunny .main-banner-container .main-banner-sub-container .bunny-container-a .bunny-container-a {
+  .fb-floating-bunny .main-banner-container .main-banner-sub-container .bunny-container-a .banner-a,
+.fb-floating-bunny .main-banner-container .main-banner-sub-container .bunny-container-a .bunny-container-a {
     display: block;
   }
   .fb-floating-bunny .main-banner-container .main-banner-sub-container .banner-b {
@@ -1529,7 +1547,8 @@ body {
   }
   .fb-floating-bunny .main-banner-container .main-banner-sub-container .banner-b .mbt-b1 {
     font-size: 24px;
-    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px; /*rgba(0, 0, 0,  0.35) 0px 3px 3px*/
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px;
+    /*rgba(0, 0, 0,  0.35) 0px 3px 3px*/
     margin-bottom: 8px;
   }
   .fb-floating-bunny .main-banner-container .main-banner-sub-container .banner-b .mb-counter-lottery {
@@ -1545,7 +1564,8 @@ body {
   .fb-floating-bunny .main-banner-container .main-banner-sub-container .banner-b .mb-counter-lottery .mbcl-item {
     font-weight: 600;
     line-height: 1.1;
-    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0)); /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0));
+    /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
@@ -1761,7 +1781,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     align-items: center;
   }
   .stat-section .wrapper-stat .card-container-dst .card-dst {
-    background-color: rgb(56, 50, 65);
+    background-color: #27262c;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1882,7 +1902,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     align-items: center;
   }
   .stat-section .wrapper-stat .card-container-dst .card-dst {
-    background-color: rgb(56, 50, 65);
+    background-color: #27262c;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2004,7 +2024,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     width: 100%;
   }
   .stat-section .wrapper-stat .card-container-dst .card-dst {
-    background-color: rgb(56, 50, 65);
+    background-color: #27262c;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -3310,13 +3330,13 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   justify-content: center;
   align-items: center;
   position: absolute;
-  padding-top: 400px;
+  padding-top: 100px;
   width: 100%;
   height: 1000px;
   background: black;
 }
 .ta-trade-anything .ta-wrapper {
-  width: 100%;
+  width: 1200px;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -3462,7 +3482,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   background: #3B3D51;
 }
 .aaa .ea-earn .ea-wrapper {
-  width: 100%;
+  width: 1200px;
   height: 100%;
   display: flex;
   flex-direction: row-reverse;
