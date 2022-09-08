@@ -31,14 +31,14 @@
     @include mq('laptop');
     @include flex(column);
     position: absolute;
-    padding-top: 400px;
+    padding-top: 100px;
     width: 100%;
     height: 1000px;
     background: black;
     
 
     .ta-wrapper {
-        width: 100%;
+        width: 1200px;
         height: 100%;
         @include flex(row, space-between, center);
         position: relative;
