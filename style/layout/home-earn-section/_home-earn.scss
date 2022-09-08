@@ -33,7 +33,7 @@
         @include mq('laptop');
         @include flex(column);
         // padding-top: 400px;
-        width: 1200px;
+        width: 100%;
         // height: 1000px;
         height: 100%;
         background: #3B3D51;
@@ -48,7 +48,7 @@
         
     
         .ea-wrapper {
-            width: 100%;
+            width: 1200px;
             height: 100%;
             @include flex(row-reverse, space-between, center);
             position: relative;
@@ -161,7 +161,7 @@
     
     
     .earn-bottom-banner-main-container {
-        width: 100%;
+        width: 1200px;
         height: 128px; 
         // background-color: rgba(0, 100, 0, 0.958);
         font-family: Kanit, sans-serif;
