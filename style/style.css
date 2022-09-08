@@ -900,7 +900,8 @@ body {
 }
 
 .fb-floating-bunny {
-  padding-top: 300px;
+  padding-top: 150px;
+  padding-bottom: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
