@@ -30,7 +30,6 @@
 
     @include mq('laptop');
     @include flex(column);
-    position: absolute;
     padding-top: 100px;
     width: 100%;
     height: 1000px;

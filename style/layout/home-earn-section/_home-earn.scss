@@ -26,18 +26,14 @@
 
 //end scrollbar
 
-.aaa {
-    width: 60%;
-    height: 900px;
-    @include flex();
-    padding: 30px; // provvisorio
+
+
     
     .ea-earn {
         @include mq('laptop');
         @include flex(column);
-        position: absolute;
         // padding-top: 400px;
-        width: 100%;
+        width: 1200px;
         // height: 1000px;
         height: 100%;
         background: #3B3D51;
@@ -52,7 +48,7 @@
         
     
         .ea-wrapper {
-            width: 1200px;
+            width: 100%;
             height: 100%;
             @include flex(row-reverse, space-between, center);
             position: relative;
@@ -331,7 +327,6 @@
     
     
     }
-}
 
 
 
