@@ -912,6 +912,515 @@ body {
   background: linear-gradient(180deg, rgb(22, 9, 49) 0%, rgb(22, 9, 49) 47%, rgb(19, 8, 43) 65%, rgb(11, 5, 25) 100%, rgb(0, 0, 0) 100%);
 }
 @media screen and (min-width: 968px) {
+  .fb-floating-bunny body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    width: 100%;
+    height: auto;
+  }
+  .fb-floating-bunny body .main-banner-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 80%;
+    position: relative;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%); /*linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%)*/
+    height: 220px;
+    width: 100%;
+    padding: 24px;
+    border-radius: 24px;
+    position: relative;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-a {
+    display: none;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .main-banner-content-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 1;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .main-banner-content-container .main-banner-title-a {
+    color: white;
+    font-family: Kanit, sans-serif;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .main-banner-content-container .mbt-a1 {
+    font-size: 24px;
+    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0)); /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text; /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
+    margin-bottom: 8px;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .main-banner-content-container .mbt-a2 {
+    font-size: 40px;
+    margin-bottom: 16px;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px; /* rgba(0, 0, 0, 0.35) 0px 4px 3px*/
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .main-banner-content-container .main-banner-button-a {
+    color: rgb(0, 0, 0);
+    fill: rgb(0, 0, 0);
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .swiper-slide {
+    background-color: transparent;
+    width: 100px;
+    height: 8px;
+    background-color: rgba(186, 235, 74, 0.174);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    contain: content;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .swiper-slide .swiper {
+    width: 50%;
+    height: 8px;
+    background-color: rgb(255, 255, 255);
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .swiper-slide .swpr-a {
+    visibility: initial;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .swiper-slide .swpr-b {
+    visibility: hidden;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .bunny-container-a {
+    width: 40%;
+    height: 121%;
+    position: absolute;
+    border-radius: 24px;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    display: block;
+    flex-shrink: 1.5;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .bunny-container-a img {
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .bunny-container-a .banner-a, .fb-floating-bunny body .main-banner-container .main-banner-sub-container .bunny-container-a .bunny-container-a {
+    display: none;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-b {
+    display: block;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-b .main-banner-title-b {
+    color: rgb(255, 255, 255);
+    font-family: Kanit, sans-serif;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-b .mbt-b1 {
+    font-size: 24px;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px; /*rgba(0, 0, 0,  0.35) 0px 3px 3px*/
+    margin-bottom: 8px;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-b .mb-counter-lottery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 16px;
+    background: url(https://pancakeswap.finance/images/decorations/countdownBg.png) 0% 0%/100% 100%;
+    background-repeat: no-repeat;
+    padding: 0 7px 10px;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-b .mb-counter-lottery .mbcl-item {
+    font-weight: 600;
+    line-height: 1.1;
+    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0)); /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-b .mb-counter-lottery .mbcli-number {
+    font-size: 40px;
+    margin: 0px 4px -4px 0px;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-b .mb-counter-lottery .mbcli-time {
+    font-size: 20px;
+    margin: 0px 12px 0px 0px;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .bunny-container-b {
+    width: 100%;
+    height: 120%;
+    position: absolute;
+    border-radius: 24px;
+    bottom: -2.5px;
+    right: 0px;
+    z-index: 0;
+    /*-- -- -- --*/
+    display: block;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .bunny-container-b img {
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 968px) and (min-width: 575px) {
+  .fb-floating-bunny body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    width: 100%;
+    height: auto;
+  }
+  .fb-floating-bunny body .main-banner-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 80%;
+    position: relative;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%); /*linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%)*/
+    height: 220px;
+    width: 100%;
+    padding: 24px;
+    border-radius: 24px;
+    position: relative;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-a {
+    display: block;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .main-banner-content-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 1;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .main-banner-content-container .main-banner-title-a {
+    color: white;
+    font-family: Kanit, sans-serif;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .main-banner-content-container .mbt-a1 {
+    font-size: 24px;
+    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0)); /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text; /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
+    margin-bottom: 8px;
+    line-height: 1;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .main-banner-content-container .mbt-a2 {
+    font-size: 40px;
+    margin-bottom: 16px;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px; /* rgba(0, 0, 0, 0.35) 0px 4px 3px*/
+    line-height: 1;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .main-banner-content-container .main-banner-button-a {
+    color: rgb(0, 0, 0);
+    fill: rgb(0, 0, 0);
+    width: auto;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .swiper-slide {
+    background-color: transparent;
+    width: 100px;
+    height: 8px;
+    background-color: rgba(186, 235, 74, 0.174);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    contain: content;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .swiper-slide .swiper {
+    width: 50%;
+    height: 8px;
+    background-color: rgb(255, 255, 255);
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .swiper-slide .swpr-a {
+    visibility: initial;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .swiper-slide .swpr-b {
+    visibility: hidden;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .bunny-container-a {
+    width: 30%;
+    height: 121%;
+    position: absolute;
+    border-radius: 24px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 0;
+    display: block;
+    flex-shrink: 1.5;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .bunny-container-a img {
+    min-width: 100%;
+    max-width: 100%;
+    height: 99%;
+    align-items: center;
+    transform: translateY(11.5px);
+    border-radius: 0px;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .bunny-container-a .banner-a, .fb-floating-bunny body .main-banner-container .main-banner-sub-container .bunny-container-a .bunny-container-a {
+    display: block;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-b {
+    display: none;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-b .main-banner-title-b {
+    color: rgb(255, 255, 255);
+    font-family: Kanit, sans-serif;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-b .mbt-b1 {
+    font-size: 24px;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px; /*rgba(0, 0, 0,  0.35) 0px 3px 3px*/
+    margin-bottom: 8px;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-b .mb-counter-lottery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 16px;
+    background: url(https://pancakeswap.finance/images/decorations/countdownBg.png) 0% 0%/100% 100%;
+    background-repeat: no-repeat;
+    padding: 0 7px 10px;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-b .mb-counter-lottery .mbcl-item {
+    font-weight: 600;
+    line-height: 1.1;
+    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0)); /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-b .mb-counter-lottery .mbcli-number {
+    font-size: 40px;
+    margin: 0px 4px -4px 0px;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-b .mb-counter-lottery .mbcli-time {
+    font-size: 20px;
+    margin: 0px 12px 0px 0px;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .bunny-container-b {
+    width: 100%;
+    height: 120%;
+    position: absolute;
+    border-radius: 24px;
+    bottom: -2.5px;
+    right: 0px;
+    z-index: 0;
+    /*-- -- -- --*/
+    display: none;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .bunny-container-b img {
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 590px) {
+  .fb-floating-bunny body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    width: 100%;
+    height: auto;
+  }
+  .fb-floating-bunny body .main-banner-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%); /*linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%)*/
+    height: 220px;
+    width: 100%;
+    padding: 24px;
+    border-radius: 24px;
+    position: relative;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-a {
+    display: block;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .main-banner-content-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 1;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .main-banner-content-container .main-banner-title-a {
+    color: white;
+    font-family: Kanit, sans-serif;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .main-banner-content-container .mbt-a1 {
+    font-size: 22px;
+    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0)); /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text; /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
+    margin-bottom: 8px;
+    line-height: 1;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .main-banner-content-container .mbt-a2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px; /* rgba(0, 0, 0, 0.35) 0px 4px 3px*/
+    word-wrap: break-word;
+    line-height: 1;
+    width: 150px;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .main-banner-content-container .main-banner-button-a {
+    color: rgb(0, 0, 0);
+    fill: rgb(0, 0, 0);
+    line-height: 1;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .swiper-slide {
+    background-color: transparent;
+    width: 100px;
+    height: 8px;
+    background-color: rgba(186, 235, 74, 0.174);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    contain: content;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .swiper-slide .swiper {
+    width: 50%;
+    height: 8px;
+    background-color: rgb(255, 255, 255);
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .swiper-slide .swpr-a {
+    visibility: initial;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .swiper-slide .swpr-b {
+    visibility: hidden;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .bunny-container-a {
+    width: 70%;
+    height: 121%;
+    position: absolute;
+    border-radius: 24px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 0;
+    display: block;
+    flex-shrink: 1.5;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .bunny-container-a img {
+    min-width: 100%;
+    max-width: 100%;
+    height: 99%;
+    align-items: center;
+    transform: translateY(11.5px);
+    border-radius: 0px;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .bunny-container-a .banner-a, .fb-floating-bunny body .main-banner-container .main-banner-sub-container .bunny-container-a .bunny-container-a {
+    display: block;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-b {
+    display: none;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-b .main-banner-title-b {
+    color: rgb(255, 255, 255);
+    font-family: Kanit, sans-serif;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-b .mbt-b1 {
+    font-size: 24px;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px; /*rgba(0, 0, 0,  0.35) 0px 3px 3px*/
+    margin-bottom: 8px;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-b .mb-counter-lottery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 16px;
+    background: url(https://pancakeswap.finance/images/decorations/countdownBg.png) 0% 0%/100% 100%;
+    background-repeat: no-repeat;
+    padding: 0 7px 10px;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-b .mb-counter-lottery .mbcl-item {
+    font-weight: 600;
+    line-height: 1.1;
+    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0)); /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-b .mb-counter-lottery .mbcli-number {
+    font-size: 40px;
+    margin: 0px 4px -4px 0px;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .banner-b .mb-counter-lottery .mbcli-time {
+    font-size: 20px;
+    margin: 0px 12px 0px 0px;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .bunny-container-b {
+    width: 100%;
+    height: 120%;
+    position: absolute;
+    border-radius: 24px;
+    bottom: -2.5px;
+    right: 0px;
+    z-index: 0;
+    /*-- -- -- --*/
+    display: none;
+  }
+  .fb-floating-bunny body .main-banner-container .main-banner-sub-container .bunny-container-b img {
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 968px) {
   .fb-floating-bunny .main-banner-container {
     display: flex;
     flex-direction: row;
@@ -3330,7 +3839,6 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
   padding-top: 100px;
   width: 100%;
   height: 1000px;
@@ -3463,27 +3971,17 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   border: none;
 }
 
-.aaa {
-  width: 60%;
-  height: 900px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
-}
-.aaa .ea-earn {
+.ea-earn {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  width: 100%;
+  width: 1200px;
   height: 100%;
   background: #3B3D51;
 }
-.aaa .ea-earn .ea-wrapper {
-  width: 1200px;
+.ea-earn .ea-wrapper {
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: row-reverse;
@@ -3492,39 +3990,39 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   position: relative;
   z-index: 2;
 }
-.aaa .ea-earn .ea-wrapper .ea-contents-section {
+.ea-earn .ea-wrapper .ea-contents-section {
   text-align: left;
   width: 53%;
   padding-right: 15%;
 }
-.aaa .ea-earn .ea-wrapper .ea-contents-section h2 {
+.ea-earn .ea-wrapper .ea-contents-section h2 {
   color: white;
   padding-top: 20px;
   font-size: 40px;
   font-weight: 600;
   line-height: 1.1;
 }
-.aaa .ea-earn .ea-wrapper .ea-contents-section h2 .ea-text-span {
+.ea-earn .ea-wrapper .ea-contents-section h2 .ea-text-span {
   color: #9A6AFF;
 }
-.aaa .ea-earn .ea-wrapper .ea-contents-section h3 {
+.ea-earn .ea-wrapper .ea-contents-section h3 {
   color: #B8ADD2;
   font-size: 16px;
   font-weight: lighter;
   padding-top: 25px;
 }
-.aaa .ea-earn .ea-wrapper .ea-contents-section .ea-buttons-section {
+.ea-earn .ea-wrapper .ea-contents-section .ea-buttons-section {
   margin-top: 20px;
   display: flex;
 }
-.aaa .ea-earn .ea-wrapper .ea-contents-section .ea-buttons-section .button-aquagreen {
+.ea-earn .ea-wrapper .ea-contents-section .ea-buttons-section .button-aquagreen {
   width: 170px;
   margin-right: 10px;
 }
-.aaa .ea-earn .ea-wrapper .ea-contents-section .link-aquagreen {
+.ea-earn .ea-wrapper .ea-contents-section .link-aquagreen {
   text-decoration: none;
 }
-.aaa .ea-earn .ea-wrapper .ea-img-section {
+.ea-earn .ea-wrapper .ea-img-section {
   width: 47%;
   height: 100%;
   display: flex;
@@ -3533,7 +4031,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   align-items: center;
   margin-left: 15%;
 }
-.aaa .ea-earn .ea-wrapper .ea-img-section .ea-goldencoin {
+.ea-earn .ea-wrapper .ea-img-section .ea-goldencoin {
   margin-right: 10px;
   margin-top: 10%;
   -webkit-animation-name: float-NW;
@@ -3543,18 +4041,18 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
-.aaa .ea-earn .ea-wrapper .ea-img-section .ea-goldencoin img {
+.ea-earn .ea-wrapper .ea-img-section .ea-goldencoin img {
   z-index: 3;
   height: 400px;
   width: auto;
 }
-.aaa .ea-earn .ea-wrapper .ea-img-section .ea-img-semiwrap {
+.ea-earn .ea-wrapper .ea-img-section .ea-img-semiwrap {
   position: absolute;
   margin-right: 8%;
   height: 400px;
   width: 400px;
 }
-.aaa .ea-earn .ea-wrapper .ea-img-section .ea-img-semiwrap .ea-bitcoin img {
+.ea-earn .ea-wrapper .ea-img-section .ea-img-semiwrap .ea-bitcoin img {
   -webkit-animation-name: float-NW;
           animation-name: float-NW;
   -webkit-animation-duration: 3s;
@@ -3562,7 +4060,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
-.aaa .ea-earn .ea-wrapper .ea-img-section .ea-img-semiwrap .ea-cakecoin img {
+.ea-earn .ea-wrapper .ea-img-section .ea-img-semiwrap .ea-cakecoin img {
   -webkit-animation-name: float-N;
           animation-name: float-N;
   -webkit-animation-duration: 4s;
@@ -3570,51 +4068,52 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
-.aaa .ea-earn .ea-wrapper .ea-img-section .ea-img-semiwrap img {
+.ea-earn .ea-wrapper .ea-img-section .ea-img-semiwrap img {
   position: absolute;
   height: 100%;
   width: auto;
 }
-.aaa .earn-bottom-banner-main-container {
+
+.earn-bottom-banner-main-container {
   width: 100%;
   height: 128px;
   font-family: Kanit, sans-serif;
 }
-.aaa .earn-bottom-banner-main-container .ebb-main-title-container {
+.earn-bottom-banner-main-container .ebb-main-title-container {
   height: 24px;
   width: 100%;
 }
-.aaa .earn-bottom-banner-main-container .ebb-main-title-container .ebb-title-container-a {
+.earn-bottom-banner-main-container .ebb-main-title-container .ebb-title-container-a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.aaa .earn-bottom-banner-main-container .ebb-main-title-container .ebb-title-container-a .ebb-title-a1 {
+.earn-bottom-banner-main-container .ebb-main-title-container .ebb-title-container-a .ebb-title-a1 {
   color: rgb(244, 238, 255);
   font-size: 20px;
 }
-.aaa .earn-bottom-banner-main-container .ebb-main-title-container .ebb-title-container-a .ebb-title-a1 .ebb-title-a2 {
+.earn-bottom-banner-main-container .ebb-main-title-container .ebb-title-container-a .ebb-title-a1 .ebb-title-a2 {
   color: rgb(154, 106, 255);
 }
-.aaa .earn-bottom-banner-main-container .ebb-main-title-container .ebb-title-container-a .bwg-earn-style {
+.earn-bottom-banner-main-container .ebb-main-title-container .ebb-title-container-a .bwg-earn-style {
   width: 48px;
   height: 24px;
   align-self: center;
 }
-.aaa .earn-bottom-banner-main-container .ebb-main-title-container .ebb-title-container-b {
+.earn-bottom-banner-main-container .ebb-main-title-container .ebb-title-container-b {
   display: none;
 }
-.aaa .earn-bottom-banner-main-container .ebb-main-title-container .ebb-title-container-b .ebb-title-b1 {
+.earn-bottom-banner-main-container .ebb-main-title-container .ebb-title-container-b .ebb-title-b1 {
   color: white;
 }
-.aaa .earn-bottom-banner-main-container .ebb-main-title-container .ebb-title-container-b .ebb-title-b1 .ebb-title-b2 {
+.earn-bottom-banner-main-container .ebb-main-title-container .ebb-title-container-b .ebb-title-b1 .ebb-title-b2 {
   color: rgb(154, 106, 255);
 }
-.aaa .earn-bottom-banner-main-container .ebb-main-body-container {
+.earn-bottom-banner-main-container .ebb-main-body-container {
   width: 100%;
   height: calc(100% - 24px);
 }
-.aaa .earn-bottom-banner-main-container .ebb-main-body-container .ebb-main-body-items-container {
+.earn-bottom-banner-main-container .ebb-main-body-container .ebb-main-body-items-container {
   width: 100%;
   height: 100%;
   display: grid;
@@ -3622,48 +4121,48 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   grid-template-rows: 1fr;
   flex-direction: column;
 }
-.aaa .earn-bottom-banner-main-container .ebb-main-body-container .ebb-main-body-items-container .ebb-item {
+.earn-bottom-banner-main-container .ebb-main-body-container .ebb-main-body-items-container .ebb-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
   border-left: 1px solid grey;
   padding-left: 16px;
 }
-.aaa .earn-bottom-banner-main-container .ebb-main-body-container .ebb-main-body-items-container .ebb-item:first-child {
+.earn-bottom-banner-main-container .ebb-main-body-container .ebb-main-body-items-container .ebb-item:first-child {
   border-left: none;
 }
-.aaa .earn-bottom-banner-main-container .ebb-main-body-container .ebb-main-body-items-container .ebb-item .ebbi-s1 {
+.earn-bottom-banner-main-container .ebb-main-body-container .ebb-main-body-items-container .ebb-item .ebbi-s1 {
   color: rgb(154, 106, 255);
   font-size: 12px;
   font-weight: 600;
   margin-bottom: 8px;
 }
-.aaa .earn-bottom-banner-main-container .ebb-main-body-container .ebb-main-body-items-container .ebb-item .ebbi-s2 {
+.earn-bottom-banner-main-container .ebb-main-body-container .ebb-main-body-items-container .ebb-item .ebbi-s2 {
   color: rgb(244, 238, 255);
   font-size: 16px;
   font-weight: 600;
 }
-.aaa .earn-bottom-banner-main-container .ebb-main-body-container .ebb-main-body-items-container .ebb-item .ebbi-s3 {
+.earn-bottom-banner-main-container .ebb-main-body-container .ebb-main-body-items-container .ebb-item .ebbi-s3 {
   color: rgb(184, 173, 210);
   font-size: 16px;
   font-weight: 400;
 }
-.aaa .earn-bottom-banner-main-container .ebb-main-body-container .ebb-main-body-items-container .ebbi-1 {
+.earn-bottom-banner-main-container .ebb-main-body-container .ebb-main-body-items-container .ebbi-1 {
   grid-template-columns: 1/2;
 }
-.aaa .earn-bottom-banner-main-container .ebb-main-body-container .ebb-main-body-items-container .ebbi-2 {
+.earn-bottom-banner-main-container .ebb-main-body-container .ebb-main-body-items-container .ebbi-2 {
   grid-template-columns: 2/3;
 }
-.aaa .earn-bottom-banner-main-container .ebb-main-body-container .ebb-main-body-items-container .ebbi-3 {
+.earn-bottom-banner-main-container .ebb-main-body-container .ebb-main-body-items-container .ebbi-3 {
   grid-template-columns: 3/4;
 }
-.aaa .earn-bottom-banner-main-container .ebb-main-body-container .ebb-main-body-items-container .ebbi-4 {
+.earn-bottom-banner-main-container .ebb-main-body-container .ebb-main-body-items-container .ebbi-4 {
   grid-template-columns: 4/5;
 }
-.aaa .earn-bottom-banner-main-container .ebb-main-body-container .ebb-main-body-items-container .ebbi-5 {
+.earn-bottom-banner-main-container .ebb-main-body-container .ebb-main-body-items-container .ebbi-5 {
   grid-template-columns: 5/6;
 }
-.aaa .earn-bottom-banner-main-container .ebb-main-body-container .ebb-body-b {
+.earn-bottom-banner-main-container .ebb-main-body-container .ebb-body-b {
   visibility: hidden;
 }
 
@@ -4151,4 +4650,5 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 0;
 }/*# sourceMappingURL=style.css.map */
