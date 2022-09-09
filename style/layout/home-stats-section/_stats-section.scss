@@ -201,7 +201,7 @@
     
                     .description-stat-sec {
                         font-size: 16px;
-                        color: $card-dist-text;
+                        color: $dist-text;
                     }
     
                     .dst1 {
@@ -242,15 +242,15 @@
                                         right: 24px;
     
                                             .cdsvg-color1 {
-                                                fill: $secondary-dk;
+                                                fill: $card-dist-title-2a;
                                             }
     
                                             .cdsvg-color2 {
-                                                fill: $green;
+                                                fill: $card-dist-title-2b;
                                             }
     
                                             .cdsvg-color3 {
-                                                fill: $pink;
+                                                fill: $card-dist-title-2c;
                                             }
     
     
@@ -259,6 +259,7 @@
                                     .card-dist-title {
                                         text-align: left;
                                         margin-top: 64px;
+                                        align-self: flex-start;
     
                                             & h2 {
                                                 font-size: 40px;
@@ -275,19 +276,19 @@
                                             }
     
                                             & .cdtb1 {
-                                                color: $secondary-dk;
+                                                color: $card-dist-title-2a;
                                             }
     
                                             & .cdtb2 {
-                                                color: $green;
+                                                color: $card-dist-title-2b;
                                             }
     
                                             & .cdtb3 {
-                                                color: $pink;
+                                                color: $card-dist-title-2c;
                                             }
     
                                             .card-dist-last-text {
-                                                color: $card-dist-text;
+                                                color: $dist-texts;
                                                 line-height: 1.5;
                                                 font-weight: 400;
                                                 font-size: 16px;
