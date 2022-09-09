@@ -3305,6 +3305,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* ----WIN → PREDICTION (BETA)---- */
 /*ETICHETTE Sovrapposte*/
 /* ----WIN → LOTTERY---- */
+.footer-box {
+  width: 1200px;
+}
+
 i {
   color: rgb(184, 173, 210);
 }
@@ -3980,12 +3984,14 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 1200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 100%;
   height: 100%;
   background: #3B3D51;
 }
 .ea-earn .ea-wrapper {
-  width: 100%;
+  width: 1200px;
   height: 100%;
   display: flex;
   flex-direction: row-reverse;
@@ -4079,7 +4085,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 
 .earn-bottom-banner-main-container {
-  width: 100%;
+  width: 1200px;
   height: 128px;
   font-family: Kanit, sans-serif;
 }
