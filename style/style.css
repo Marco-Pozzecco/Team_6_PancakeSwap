@@ -16,8 +16,8 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   font-family: "Kanit";
   font-style: normal;
   font-weight: 400;
-  src: url("../../resources/fonts/kanit-v12-latin-regular.eot"); /* IE9 Compat Modes */
-  src: local(""), url("../../resources/fonts/kanit-v12-latin-regular.eot?#iefix") format("embedded-opentype"), url("../../resources/fonts/kanit-v12-latin-regular.woff2") format("woff2"), url("../../resources/fonts/kanit-v12-latin-regular.woff") format("woff"), url("../../resources/fonts/kanit-v12-latin-regular.ttf") format("truetype"), url("../../resources/fonts/kanit-v12-latin-regular.svg#Kanit") format("svg"); /* Legacy iOS */
+  src: url("../resources/fonts/kanit-v12-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../resources/fonts/kanit-v12-latin-regular.eot?#iefix") format("embedded-opentype"), url("../resources/fonts/kanit-v12-latin-regular.woff2") format("woff2"), url("../resources/fonts/kanit-v12-latin-regular.woff") format("woff"), url("../resources/fonts/kanit-v12-latin-regular.ttf") format("truetype"), url("../resources/fonts/kanit-v12-latin-regular.svg#Kanit") format("svg"); /* Legacy iOS */
 }
 :root {
   font-family: "Kanit", "Sans serif";
