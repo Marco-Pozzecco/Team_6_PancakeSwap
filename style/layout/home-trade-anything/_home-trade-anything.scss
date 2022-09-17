@@ -30,24 +30,22 @@
 
     @include mq('laptop');
     @include flex(column);
-    padding-top: 100px;
+    align-items: center;
+    padding-top: 50px;
     width: 100%;
-    height: 1000px;
     background: black;
-    
+
 
     .ta-wrapper {
-        width: 1200px;
+        max-width: 1200px;
         height: 100%;
         @include flex(row, space-between, center);
-        position: relative;
         z-index: 2;
-      
+
 
         .ta-contents-section {
             text-align: left;
             width: 50%;
-            padding-left: 175px;
 
             h2 {
                 color: white;
@@ -56,8 +54,8 @@
                 font-weight: 600;
                 line-height: 1.1;
 
-                 .ta-text-span{
-                    color:#9A6AFF;
+                .ta-text-span {
+                    color: #9A6AFF;
                 }
             }
 
@@ -71,9 +69,11 @@
             .ta-buttons-section {
                 margin-top: 20px;
                 display: flex;
+
                 .ta-button-no-border {
                     border: none;
                 }
+
                 .button-aquagreen {
                     width: 170px;
                     margin-right: 10px;
@@ -88,54 +88,50 @@
         }
 
         .ta-img-section {
-            width: 50%;
+            position: relative;
             height: 100%;
-            @include flex();
+            width: 50%;
 
             .ta-goldencoin {
-                margin-right: 20%;
-                margin-top: 10%;
+                position: absolute;
+                bottom: -160px;
+                right: 0px;
                 @include float-anim(5s, "NW");
-                
                 img {
-                    z-index: 3;
-                    height: 400px;
-                    width: auto;
+                    width: 90%;
                 }
             }
 
-                .ta-img-semiwrap {
-                    position: absolute;
-                    margin-right: 10%;
-                    height: 400px;
-                    width: 400px;
-
-                    .ta-bitcoin img {
-                        @include float-anim(3s, "NW");
-                    }
-                    .ta-cakecoin img {
-                        @include float-anim(4s, "NW");
-                    }
-                   
-                    img {
-
-                        position: absolute;
-                        height: 100%;
-                        width: auto;
-                    }
-
+            .ta-bitcoin {
+                position: absolute;
+                bottom: -160px;
+                right: 0px;
+                @include float-anim(3s, "NW");
+                img {
+                    width: 90%;
                 }
-            
+            }
+
+            .ta-cakecoin {
+                position: absolute;
+                bottom: -160px;
+                right: 0px;
+                @include float-anim(4s, "NW");
+                img {
+                    width: 90%;
+                }
+            }
+
         }
     }
 
     // .fb-bottomgradient {
-        
+
     //     position: relative;
     //     margin-bottom: 0;
     //     bottom: 180px;
     //     width: 100%;
-        
+
 
     //     svg {
     //         z-index: 1;
@@ -143,4 +139,4 @@
 
     // }
 
-    }
+}

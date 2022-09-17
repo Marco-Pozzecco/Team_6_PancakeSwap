@@ -1602,7 +1602,7 @@ body {
 }
 .fb-floating-bunny .fb-wrapper .fb-contents-section {
   text-align: left;
-  width: 60%;
+  width: 50%;
   flex-shrink: 1;
   padding-left: 60px;
 }
@@ -1629,7 +1629,7 @@ body {
   text-decoration: none;
 }
 .fb-floating-bunny .fb-wrapper .fb-img-section {
-  width: 40%;
+  width: 50%;
   flex-shrink: 1;
   position: relative;
 }
@@ -3014,25 +3014,23 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 100px;
+  align-items: center;
+  padding-top: 50px;
   width: 100%;
-  height: 1000px;
   background: black;
 }
 .ta-trade-anything .ta-wrapper {
-  width: 1200px;
+  max-width: 1200px;
   height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  position: relative;
   z-index: 2;
 }
 .ta-trade-anything .ta-wrapper .ta-contents-section {
   text-align: left;
   width: 50%;
-  padding-left: 175px;
 }
 .ta-trade-anything .ta-wrapper .ta-contents-section h2 {
   color: white;
@@ -3065,16 +3063,14 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   text-decoration: none;
 }
 .ta-trade-anything .ta-wrapper .ta-img-section {
-  width: 50%;
+  position: relative;
   height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  width: 50%;
 }
 .ta-trade-anything .ta-wrapper .ta-img-section .ta-goldencoin {
-  margin-right: 20%;
-  margin-top: 10%;
+  position: absolute;
+  bottom: -160px;
+  right: 0px;
   -webkit-animation-name: float-NW;
           animation-name: float-NW;
   -webkit-animation-duration: 5s;
@@ -3083,17 +3079,12 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
           animation-iteration-count: infinite;
 }
 .ta-trade-anything .ta-wrapper .ta-img-section .ta-goldencoin img {
-  z-index: 3;
-  height: 400px;
-  width: auto;
+  width: 90%;
 }
-.ta-trade-anything .ta-wrapper .ta-img-section .ta-img-semiwrap {
+.ta-trade-anything .ta-wrapper .ta-img-section .ta-bitcoin {
   position: absolute;
-  margin-right: 10%;
-  height: 400px;
-  width: 400px;
-}
-.ta-trade-anything .ta-wrapper .ta-img-section .ta-img-semiwrap .ta-bitcoin img {
+  bottom: -160px;
+  right: 0px;
   -webkit-animation-name: float-NW;
           animation-name: float-NW;
   -webkit-animation-duration: 3s;
@@ -3101,7 +3092,13 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
-.ta-trade-anything .ta-wrapper .ta-img-section .ta-img-semiwrap .ta-cakecoin img {
+.ta-trade-anything .ta-wrapper .ta-img-section .ta-bitcoin img {
+  width: 90%;
+}
+.ta-trade-anything .ta-wrapper .ta-img-section .ta-cakecoin {
+  position: absolute;
+  bottom: -160px;
+  right: 0px;
   -webkit-animation-name: float-NW;
           animation-name: float-NW;
   -webkit-animation-duration: 4s;
@@ -3109,10 +3106,8 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
-.ta-trade-anything .ta-wrapper .ta-img-section .ta-img-semiwrap img {
-  position: absolute;
-  height: 100%;
-  width: auto;
+.ta-trade-anything .ta-wrapper .ta-img-section .ta-cakecoin img {
+  width: 90%;
 }
 
 /* Bottoni nel div-SWAP(a sinistra)-- */
