@@ -684,7 +684,7 @@ body {
 
         .fb-contents-section {
             text-align: left;
-            width: 100%;
+            width: 60%;
             flex-shrink: 1;
             padding-left: 60px;
 
@@ -720,11 +720,11 @@ body {
         }
 
         .fb-img-section {
-            // position: relative;
-            width: 100%;
+            width: 40%;
             flex-shrink: 1;
+            position: relative;
             // height: 100%;
-            @include flex();
+            // @include flex();
 
             .fb-thefloatingbunny {
                 // position: absolute;
@@ -740,27 +740,33 @@ body {
             }
 
             .fb-thefloatingstars {
-                // position: relative;
-                height: 512px;
+                height: auto;
+                position: absolute;
+                width: 100%;
+                top: 0px;
+                right: 50px;
+                z-index: 2;
                 // width: 100%;
 
                 .fb-star1 img {
                     @include fade-out-anim(2.5s);
+                    z-index: 5;
+                    left: 30px;
                 }
 
                 .fb-star2 img {
                     @include fade-out-anim(3.5s);
+                    z-index: 5;
                 }
 
                 .fb-star3 img {
                     @include fade-out-anim(5s);
+                    z-index: 5;
                 }
 
                 img {
-
                     position: absolute;
-                    height: 80%;
-                    // width: auto;
+                    width: 100%;
                 }
 
             }
