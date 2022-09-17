@@ -650,14 +650,196 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   justify-content: center;
   align-items: center;
 }
-@media screen and (min-width: 1024px) {
+.win-prizes .floating-balls {
+  position: absolute;
+  z-index: 1;
+  right: 0px;
+  top: -60px;
+  height: 512px;
+  width: 512px;
+}
+.win-prizes .floating-balls img {
+  z-index: 2;
+  position: absolute;
+  height: 100%;
+  width: auto;
+}
+.win-prizes .floating-balls img#ball-n2 {
+  animation-name: float-N;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.win-prizes .floating-balls img#ball-n4 {
+  animation-name: float-N;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+.win-prizes .floating-balls img#ball-n6 {
+  animation-name: float-N;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+.win-prizes .floating-balls img#ball-n7 {
+  animation-name: float-N;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.win-prizes .floating-balls img#ball-n9 {
+  animation-name: float-N;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+.win-prizes .floating-cards {
+  position: absolute;
+  z-index: 1;
+  height: 512px;
+  width: 512px;
+  bottom: -80px;
+  left: 0px;
+}
+.win-prizes .floating-cards img {
+  z-index: 2;
+  position: absolute;
+  height: 100%;
+  width: auto;
+}
+.win-prizes .floating-cards #card-bottom-left {
+  z-index: -1;
+  animation-name: float-NW;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+.win-prizes .floating-cards #card-top-right {
+  animation-name: float-NW;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.win-prizes .floating-cards #card-green {
+  animation-name: float-NW;
+  animation-duration: 5.5s;
+  animation-iteration-count: infinite;
+}
+.win-prizes .floating-cards #card-red {
+  animation-name: float-NW;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+.win-prizes .prizes-wrapper {
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 920px;
+  background-color: var(--background-win-wrapper);
+  -webkit-backdrop-filter: blur(12px);
+  -moz-backdrop-filter: blur(12px);
+  -ms-backdrop-filter: blur(12px);
+  -o-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border-radius: 72px;
+  padding: 40px;
+}
+.win-prizes .prizes-wrapper h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: var(--heading-2);
+}
+.win-prizes .prizes-wrapper h2 span {
+  color: rgb(154, 106, 255);
+}
+.win-prizes .prizes-wrapper p {
+  color: var(--text-paragraph);
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 16px;
+  margin: 0;
+}
+.win-prizes .prizes-wrapper p.last {
+  margin-bottom: 40px;
+}
+.win-prizes .prizes-wrapper .card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.win-prizes .prizes-wrapper .card-container .card {
+  margin: 0 10px;
+  padding: 25px;
+  width: 280px;
+  height: 350px;
+  border-radius: 24px;
+}
+.win-prizes .prizes-wrapper .card-container .card .button-aquagreen {
+  width: 100%;
+  color: rgb(25, 32, 50);
+}
+.win-prizes .prizes-wrapper .card-container .card .card-content .card-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.win-prizes .prizes-wrapper .card-container .card .card-content h3 {
+  font-weight: 6000;
+  font-size: 16px;
+}
+.win-prizes .prizes-wrapper .card-container .card .card-content h2 {
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+.win-prizes .prizes-wrapper .card-container .card .card-content p {
+  font-size: 16px;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.win-prizes .prizes-wrapper .card-container .card-prediction {
+  background: linear-gradient(rgb(255, 178, 55), rgb(255, 229, 104));
+  border: solid 1px rgb(255, 178, 55);
+  border-bottom: solid rgb(255, 178, 55);
+  transform: rotate(-3deg);
+}
+.win-prizes .prizes-wrapper .card-container .card-prediction h3 {
+  color: rgb(40, 13, 95);
+}
+.win-prizes .prizes-wrapper .card-container .card-prediction h2 {
+  color: rgb(40, 13, 95);
+}
+.win-prizes .prizes-wrapper .card-container .card-prediction p {
+  color: rgb(40, 13, 95);
+}
+.win-prizes .prizes-wrapper .card-container .card-lottery {
+  background: linear-gradient(rgb(112, 63, 210), rgb(82, 34, 178));
+  border: solid 1px rgb(60, 23, 134);
+  border-bottom: solid 5px rgb(60, 23, 134);
+  transform: rotate(2deg);
+}
+.win-prizes .prizes-wrapper .card-container .card-lottery .card-content h3 {
+  color: white;
+}
+.win-prizes .prizes-wrapper .card-container .card-lottery .card-content h2 {
+  color: rgb(255, 178, 55);
+}
+.win-prizes .prizes-wrapper .card-container .card-lottery .card-content p {
+  color: white;
+}
+
+.win-prizes {
+  height: auto;
+}
+@media screen and (min-width: 640px) and (max-width: 1023px) {
   .win-prizes .floating-balls {
     position: absolute;
     z-index: 1;
     right: 0px;
     top: -60px;
-    height: 512px;
-    width: 512px;
+    height: 200px;
+    width: 200px;
   }
   .win-prizes .floating-balls img {
     z-index: 2;
@@ -665,65 +847,13 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     height: 100%;
     width: auto;
   }
-  .win-prizes .floating-balls img#ball-n2 {
-    animation-name: float-N;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-  }
-  .win-prizes .floating-balls img#ball-n4 {
-    animation-name: float-N;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-  }
-  .win-prizes .floating-balls img#ball-n6 {
-    animation-name: float-N;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-  }
-  .win-prizes .floating-balls img#ball-n7 {
-    animation-name: float-N;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-  }
-  .win-prizes .floating-balls img#ball-n9 {
-    animation-name: float-N;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-  }
   .win-prizes .floating-cards {
     position: absolute;
     z-index: 1;
-    height: 512px;
-    width: 512px;
-    bottom: -80px;
+    height: 200px;
+    width: 200px;
+    bottom: -60px;
     left: 0px;
-  }
-  .win-prizes .floating-cards img {
-    z-index: 2;
-    position: absolute;
-    height: 100%;
-    width: auto;
-  }
-  .win-prizes .floating-cards #card-bottom-left {
-    z-index: -1;
-    animation-name: float-NW;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-  }
-  .win-prizes .floating-cards #card-top-right {
-    animation-name: float-NW;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-  }
-  .win-prizes .floating-cards #card-green {
-    animation-name: float-NW;
-    animation-duration: 5.5s;
-    animation-iteration-count: infinite;
-  }
-  .win-prizes .floating-cards #card-red {
-    animation-name: float-NW;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
   }
   .win-prizes .prizes-wrapper {
     z-index: 10;
@@ -732,56 +862,19 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     justify-content: center;
     align-items: center;
     height: auto;
-    width: 920px;
-    background-color: var(--background-win-wrapper);
-    -webkit-backdrop-filter: blur(12px);
-    -moz-backdrop-filter: blur(12px);
-    -ms-backdrop-filter: blur(12px);
-    -o-backdrop-filter: blur(12px);
-    backdrop-filter: blur(12px);
-    border-radius: 72px;
-    padding: 40px;
+    width: 95%;
+    padding: 15px;
   }
   .win-prizes .prizes-wrapper h2 {
-    font-size: 40px;
-    font-weight: 600;
-    margin-bottom: 30px;
-    color: var(--heading-2);
-  }
-  .win-prizes .prizes-wrapper h2 span {
-    color: rgb(154, 106, 255);
-  }
-  .win-prizes .prizes-wrapper p {
-    color: var(--text-paragraph);
-    font-weight: 400;
-    line-height: 1.5;
-    font-size: 16px;
-    margin: 0;
+    font-size: 32px;
   }
   .win-prizes .prizes-wrapper p.last {
     margin-bottom: 40px;
   }
   .win-prizes .prizes-wrapper .card-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-  }
-  .win-prizes .prizes-wrapper .card-container .card {
-    margin: 0 10px;
-    padding: 25px;
-    width: 280px;
-    height: 350px;
-    border-radius: 24px;
-  }
-  .win-prizes .prizes-wrapper .card-container .card .button-aquagreen {
-    width: 100%;
-    color: rgb(25, 32, 50);
-  }
-  .win-prizes .prizes-wrapper .card-container .card .card-content .card-img {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
     align-items: center;
   }
   .win-prizes .prizes-wrapper .card-container .card .card-content h3 {
@@ -790,7 +883,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   }
   .win-prizes .prizes-wrapper .card-container .card .card-content h2 {
     font-weight: 600;
-    font-size: 40px;
+    font-size: 32px;
     margin-bottom: 5px;
   }
   .win-prizes .prizes-wrapper .card-container .card .card-content p {
@@ -799,34 +892,132 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     margin-top: 20px;
     margin-bottom: 30px;
   }
-  .win-prizes .prizes-wrapper .card-container .card-lottery {
+  .win-prizes .prizes-wrapper .card-container .card-prediction {
     background: linear-gradient(rgb(255, 178, 55), rgb(255, 229, 104));
     border: solid 1px rgb(255, 178, 55);
     border-bottom: solid rgb(255, 178, 55);
-    transform: rotate(-3deg);
+    transform: none;
+    margin-bottom: 30px;
   }
-  .win-prizes .prizes-wrapper .card-container .card-lottery h3 {
+  .win-prizes .prizes-wrapper .card-container .card-prediction h3 {
     color: rgb(40, 13, 95);
   }
-  .win-prizes .prizes-wrapper .card-container .card-lottery h2 {
+  .win-prizes .prizes-wrapper .card-container .card-prediction h2 {
     color: rgb(40, 13, 95);
   }
-  .win-prizes .prizes-wrapper .card-container .card-lottery p {
+  .win-prizes .prizes-wrapper .card-container .card-prediction p {
     color: rgb(40, 13, 95);
   }
-  .win-prizes .prizes-wrapper .card-container .card-prediction {
+  .win-prizes .prizes-wrapper .card-container .card-lottery {
     background: linear-gradient(rgb(112, 63, 210), rgb(82, 34, 178));
     border: solid 1px rgb(60, 23, 134);
     border-bottom: solid 5px rgb(60, 23, 134);
-    transform: rotate(2deg);
+    transform: none;
   }
-  .win-prizes .prizes-wrapper .card-container .card-prediction .card-content h3 {
+  .win-prizes .prizes-wrapper .card-container .card-lottery .card-content h3 {
     color: white;
   }
-  .win-prizes .prizes-wrapper .card-container .card-prediction .card-content h2 {
+  .win-prizes .prizes-wrapper .card-container .card-lottery .card-content h2 {
     color: rgb(255, 178, 55);
   }
-  .win-prizes .prizes-wrapper .card-container .card-prediction .card-content p {
+  .win-prizes .prizes-wrapper .card-container .card-lottery .card-content p {
+    color: white;
+  }
+}
+
+.win-prizes {
+  height: auto;
+}
+@media screen and (max-width: 640px) {
+  .win-prizes .floating-balls {
+    position: absolute;
+    z-index: 1;
+    right: 0px;
+    top: -60px;
+    height: 200px;
+    width: 200px;
+  }
+  .win-prizes .floating-balls img {
+    z-index: 2;
+    position: absolute;
+    height: 100%;
+    width: auto;
+  }
+  .win-prizes .floating-cards {
+    position: absolute;
+    z-index: 1;
+    height: 200px;
+    width: 200px;
+    bottom: -60px;
+    left: 0px;
+  }
+  .win-prizes .prizes-wrapper {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 95%;
+    padding: 15px;
+  }
+  .win-prizes .prizes-wrapper > h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+  .win-prizes .prizes-wrapper p.last {
+    margin-bottom: 40px;
+  }
+  .win-prizes .prizes-wrapper .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .win-prizes .prizes-wrapper .card-container .card .card-content h3 {
+    font-weight: 6000;
+    font-size: 16px;
+  }
+  .win-prizes .prizes-wrapper .card-container .card .card-content h2 {
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 5px;
+  }
+  .win-prizes .prizes-wrapper .card-container .card .card-content p {
+    font-size: 16px;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .win-prizes .prizes-wrapper .card-container .card-prediction {
+    background: linear-gradient(rgb(255, 178, 55), rgb(255, 229, 104));
+    border: solid 1px rgb(255, 178, 55);
+    border-bottom: solid rgb(255, 178, 55);
+    transform: none;
+    margin-bottom: 30px;
+  }
+  .win-prizes .prizes-wrapper .card-container .card-prediction h3 {
+    color: rgb(40, 13, 95);
+  }
+  .win-prizes .prizes-wrapper .card-container .card-prediction h2 {
+    color: rgb(40, 13, 95);
+  }
+  .win-prizes .prizes-wrapper .card-container .card-prediction p {
+    color: rgb(40, 13, 95);
+  }
+  .win-prizes .prizes-wrapper .card-container .card-lottery {
+    background: linear-gradient(rgb(112, 63, 210), rgb(82, 34, 178));
+    border: solid 1px rgb(60, 23, 134);
+    border-bottom: solid 5px rgb(60, 23, 134);
+    transform: none;
+  }
+  .win-prizes .prizes-wrapper .card-container .card-lottery .card-content h3 {
+    color: white;
+  }
+  .win-prizes .prizes-wrapper .card-container .card-lottery .card-content h2 {
+    color: rgb(255, 178, 55);
+  }
+  .win-prizes .prizes-wrapper .card-container .card-lottery .card-content p {
     color: white;
   }
 }
