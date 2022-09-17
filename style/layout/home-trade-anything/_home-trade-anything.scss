@@ -71,7 +71,9 @@
             .ta-buttons-section {
                 margin-top: 20px;
                 display: flex;
-
+                .ta-button-no-border {
+                    border: none;
+                }
                 .button-aquagreen {
                     width: 170px;
                     margin-right: 10px;
