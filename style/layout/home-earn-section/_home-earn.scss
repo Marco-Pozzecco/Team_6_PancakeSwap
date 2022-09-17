@@ -84,6 +84,10 @@
                 .ea-buttons-section {
                     margin-top: 20px;
                     display: flex;
+
+                    .ea-button-no-border {
+                        border: none;
+                    }
     
                     .button-aquagreen {
                         width: 170px;
