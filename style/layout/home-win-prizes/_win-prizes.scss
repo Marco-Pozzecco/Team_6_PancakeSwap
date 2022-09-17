@@ -43,7 +43,7 @@ $theme-light: map.set($theme-light, "text", "header2-text", rgb(40, 13, 95));
     position: relative;
     overflow: hidden;
     @include flex(column);
-    @include mq('laptop', 'desktop-wide') {
+    // @include mq('laptop', 'desktop-wide') {
         .floating-balls {
             position: absolute;
             z-index: 1;
@@ -154,7 +154,7 @@ $theme-light: map.set($theme-light, "text", "header2-text", rgb(40, 13, 95));
                     }
 
                 }
-                .card-lottery {
+                .card-prediction {
                     background: linear-gradient(rgb(255, 178, 55), rgb(255, 229, 104));
 
                     border: solid 1px rgb(255, 178, 55);
@@ -172,7 +172,7 @@ $theme-light: map.set($theme-light, "text", "header2-text", rgb(40, 13, 95));
                         color: rgb(40, 13, 95);
                     }
                 }
-                .card-prediction {
+                .card-lottery {
                     background: linear-gradient(rgb(112, 63, 210), rgb(82, 34, 178));
 
                     border: solid 1px rgb(60, 23, 134);
@@ -183,6 +183,224 @@ $theme-light: map.set($theme-light, "text", "header2-text", rgb(40, 13, 95));
                     .card-content {
 
                         
+                        & h3 {
+                            color: white;
+                        }
+                        & h2 {
+                            color: rgb(255, 178, 55);
+                        }
+                        & p {
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+// }
+// Tablet media query
+.win-prizes {
+    height: auto;
+    @include mq('tablet-small', 'tablet') {
+        .floating-balls {
+            position: absolute;
+            z-index: 1;
+            right: 0px;
+            top: -60px;
+            height: 200px;
+            width: 200px;
+            img {
+                z-index: 2;
+                position: absolute;
+                height: 100%;
+                width: auto;
+            }
+        }
+        .floating-cards {
+            position: absolute;
+            z-index: 1;
+            height: 200px;
+            width: 200px;
+            bottom: -60px;
+            left: 0px;
+        }
+        .prizes-wrapper {
+            z-index: 10;
+            @include flex(column);
+            height: auto;
+            width: 95%;
+            padding: 15px;
+            & h2 {
+                font-size: 32px;
+            }
+            & p.last {
+                margin-bottom: 40px;
+            }
+            .card-container {
+                @include flex(column);
+                .card {
+                                        
+                    .card-content {
+
+                        h3 {
+                            font-weight: 6000;
+                            font-size: 16px;
+                        }
+                        h2 {
+                            font-weight: 600;
+                            font-size: 32px;
+                            margin-bottom: 5px;
+                        }
+                        p {
+                            font-size: 16px;
+                            margin: 0; 
+                            margin-top: 20px;
+                            margin-bottom: 30px;
+                        }
+                    }
+
+                }
+                .card-prediction {
+                    background: linear-gradient(rgb(255, 178, 55), rgb(255, 229, 104));
+
+                    border: solid 1px rgb(255, 178, 55);
+                    border-bottom: solid rgb(255, 178, 55);
+                    
+                    transform: none;
+
+                    margin-bottom: 30px;
+
+                    & h3 {
+                        color: rgb(40, 13, 95);
+                    }
+                    & h2 {
+                        color: rgb(40, 13, 95);
+                    }
+                    & p {
+                        color: rgb(40, 13, 95);
+                    }
+                }
+                .card-lottery {
+                    background: linear-gradient(rgb(112, 63, 210), rgb(82, 34, 178));
+
+                    border: solid 1px rgb(60, 23, 134);
+                    border-bottom: solid 5px rgb(60, 23, 134);
+
+                    transform: none;
+
+                    .card-content {
+
+                        & h3 {
+                            color: white;
+                        }
+                        & h2 {
+                            color: rgb(255, 178, 55);
+                        }
+                        & p {
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// Mobile media query
+.win-prizes {
+    height: auto;
+    @include mq('phone', 'phablet') {
+        .floating-balls {
+            position: absolute;
+            z-index: 1;
+            right: 0px;
+            top: -60px;
+            height: 200px;
+            width: 200px;
+            img {
+                z-index: 2;
+                position: absolute;
+                height: 100%;
+                width: auto;
+            }
+        }
+        .floating-cards {
+            position: absolute;
+            z-index: 1;
+            height: 200px;
+            width: 200px;
+            bottom: -60px;
+            left: 0px;
+        }
+        .prizes-wrapper {
+            z-index: 10;
+            @include flex(column);
+            height: auto;
+            width: 95%;
+            padding: 15px;
+            & > h2 {
+                font-size: 32px;
+                text-align: center;
+            }
+            & p.last {
+                margin-bottom: 40px;
+            }
+            .card-container {
+                @include flex(column);
+                .card {
+                                    
+                    .card-content {
+
+                        h3 {
+                            font-weight: 6000;
+                            font-size: 16px;
+                        }
+                        h2 {
+                            font-weight: 600;
+                            font-size: 32px;
+                            margin-bottom: 5px;
+                        }
+                        p {
+                            font-size: 16px;
+                            margin: 0; 
+                            margin-top: 20px;
+                            margin-bottom: 30px;
+                        }
+                    }
+
+                }
+                .card-prediction {
+                    background: linear-gradient(rgb(255, 178, 55), rgb(255, 229, 104));
+
+                    border: solid 1px rgb(255, 178, 55);
+                    border-bottom: solid rgb(255, 178, 55);
+                    
+                    transform: none;
+
+                    margin-bottom: 30px;
+
+                    & h3 {
+                        color: rgb(40, 13, 95);
+                    }
+                    & h2 {
+                        color: rgb(40, 13, 95);
+                    }
+                    & p {
+                        color: rgb(40, 13, 95);
+                    }
+                }
+                .card-lottery {
+                    background: linear-gradient(rgb(112, 63, 210), rgb(82, 34, 178));
+
+                    border: solid 1px rgb(60, 23, 134);
+                    border-bottom: solid 5px rgb(60, 23, 134);
+
+                    transform: none;
+
+                    .card-content {
+
                         & h3 {
                             color: white;
                         }

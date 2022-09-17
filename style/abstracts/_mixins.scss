@@ -43,7 +43,7 @@
         }
     } @else {
         @if ($mq1 == 'phone') {
-            @media screen and (max-width: map.get($breakpoints, $mq2)) {
+            @media screen and (max-width: map.get($breakpoints, list.nth( $breakpoints-keys, list.index($breakpoints-keys, $mq2) + 1) )) {
                 @content;
             }
         } @else if ($mq2 == 'desktop-wide') {
