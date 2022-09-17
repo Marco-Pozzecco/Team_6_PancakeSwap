@@ -1962,6 +1962,7 @@ body .main-banner-container .main-banner-sub-container {
 }
 body .main-banner-container .main-banner-sub-container .banner-a {
   background-color: rgb(255, 0, 43);
+  opacity: 0;
 }
 body .main-banner-container .main-banner-sub-container .main-banner-content-container {
   width: 100%;
@@ -2038,6 +2039,9 @@ body .main-banner-container .main-banner-sub-container .bunny-container-a img {
   max-width: 100%;
   height: 100%;
 }
+body .main-banner-container .main-banner-sub-container .banner-b {
+  opacity: 0.5;
+}
 body .main-banner-container .main-banner-sub-container .banner-b .main-banner-title-b {
   color: rgb(255, 255, 255);
   font-family: Kanit, sans-serif;
@@ -2082,6 +2086,7 @@ body .main-banner-container .main-banner-sub-container .bunny-container-b {
   right: 0px;
   z-index: 0;
   /*-- -- -- --*/
+  background-color: blue;
 }
 body .main-banner-container .main-banner-sub-container .bunny-container-b img {
   min-width: 100%;
