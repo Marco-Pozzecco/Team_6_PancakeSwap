@@ -3149,26 +3149,24 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  align-items: center;
+  padding-top: 50px;
   width: 100%;
-  height: 100%;
   background: #3B3D51;
 }
 .ea-earn .ea-wrapper {
-  width: 1200px;
+  padding-bottom: 50px;
+  max-width: 1200px;
   height: 100%;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
-  position: relative;
   z-index: 2;
 }
 .ea-earn .ea-wrapper .ea-contents-section {
   text-align: left;
-  width: 53%;
-  padding-right: 15%;
+  width: 50%;
 }
 .ea-earn .ea-wrapper .ea-contents-section h2 {
   color: white;
@@ -3201,17 +3199,14 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   text-decoration: none;
 }
 .ea-earn .ea-wrapper .ea-img-section {
-  width: 47%;
+  position: relative;
   height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-left: 15%;
+  width: 50%;
 }
 .ea-earn .ea-wrapper .ea-img-section .ea-goldencoin {
-  margin-right: 10px;
-  margin-top: 10%;
+  position: absolute;
+  bottom: -160px;
+  right: 0px;
   -webkit-animation-name: float-NW;
           animation-name: float-NW;
   -webkit-animation-duration: 5s;
@@ -3220,17 +3215,12 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
           animation-iteration-count: infinite;
 }
 .ea-earn .ea-wrapper .ea-img-section .ea-goldencoin img {
-  z-index: 3;
-  height: 400px;
-  width: auto;
+  width: 90%;
 }
-.ea-earn .ea-wrapper .ea-img-section .ea-img-semiwrap {
+.ea-earn .ea-wrapper .ea-img-section .ea-bitcoin {
   position: absolute;
-  margin-right: 8%;
-  height: 400px;
-  width: 400px;
-}
-.ea-earn .ea-wrapper .ea-img-section .ea-img-semiwrap .ea-bitcoin img {
+  bottom: -160px;
+  right: 0px;
   -webkit-animation-name: float-NW;
           animation-name: float-NW;
   -webkit-animation-duration: 3s;
@@ -3238,18 +3228,22 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
-.ea-earn .ea-wrapper .ea-img-section .ea-img-semiwrap .ea-cakecoin img {
-  -webkit-animation-name: float-N;
-          animation-name: float-N;
+.ea-earn .ea-wrapper .ea-img-section .ea-bitcoin img {
+  width: 90%;
+}
+.ea-earn .ea-wrapper .ea-img-section .ea-cakecoin {
+  position: absolute;
+  bottom: -160px;
+  right: 0px;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
-.ea-earn .ea-wrapper .ea-img-section .ea-img-semiwrap img {
-  position: absolute;
-  height: 100%;
-  width: auto;
+.ea-earn .ea-wrapper .ea-img-section .ea-cakecoin img {
+  width: 90%;
 }
 
 .earn-bottom-banner-main-container {
