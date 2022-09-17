@@ -676,8 +676,7 @@ body {
 
     .fb-wrapper {
         color: $h2text-color;
-        width: 1200px;
-        // height: 578.667px;
+        max-width: 1200px;
         padding: 24px;
         @include flex(row, center);
         position: relative;
@@ -686,7 +685,6 @@ body {
 
         .fb-contents-section {
             text-align: left;
-            // width: 50%;
             width: 100%;
             flex-shrink: 1;
             padding-left: 60px;
@@ -700,7 +698,7 @@ body {
             }
 
             h3 {
-                color: aliceblue;
+                color: white;
                 font-size: 18px;
                 padding-top: 20px;
             }
@@ -723,7 +721,7 @@ body {
         }
 
         .fb-img-section {
-            // width: 50%;
+            position: absolute;
             width: 100%;
             flex-shrink: 1;
             height: 100%;
