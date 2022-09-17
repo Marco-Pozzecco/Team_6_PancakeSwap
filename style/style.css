@@ -16,8 +16,8 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   font-family: "Kanit";
   font-style: normal;
   font-weight: 400;
-  src: url("../../resources/fonts/kanit-v12-latin-regular.eot"); /* IE9 Compat Modes */
-  src: local(""), url("../../resources/fonts/kanit-v12-latin-regular.eot?#iefix") format("embedded-opentype"), url("../../resources/fonts/kanit-v12-latin-regular.woff2") format("woff2"), url("../../resources/fonts/kanit-v12-latin-regular.woff") format("woff"), url("../../resources/fonts/kanit-v12-latin-regular.ttf") format("truetype"), url("../../resources/fonts/kanit-v12-latin-regular.svg#Kanit") format("svg"); /* Legacy iOS */
+  src: url("../resources/fonts/kanit-v12-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../resources/fonts/kanit-v12-latin-regular.eot?#iefix") format("embedded-opentype"), url("../resources/fonts/kanit-v12-latin-regular.woff2") format("woff2"), url("../resources/fonts/kanit-v12-latin-regular.woff") format("woff"), url("../resources/fonts/kanit-v12-latin-regular.ttf") format("truetype"), url("../resources/fonts/kanit-v12-latin-regular.svg#Kanit") format("svg"); /* Legacy iOS */
 }
 :root {
   font-family: "Kanit", "Sans serif";
@@ -2302,8 +2302,8 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     margin-right: 16px;
     border-radius: 24px;
     position: relative;
-    border: 1px solid rgb(75, 59, 80);
-    border-bottom: 3px solid rgb(75, 59, 80);
+    border: 1px solid rgb(56, 50, 65);
+    border-bottom: 3px solid rgb(56, 50, 65);
     width: 280px;
     height: 280px;
   }
@@ -2314,10 +2314,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     right: 24px;
   }
   .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg .cdsvg-color1 {
-    fill: rgb(154, 106, 255);
+    fill: rgb(147, 108, 247);
   }
   .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg .cdsvg-color2 {
-    fill: rgb(49, 208, 170);
+    fill: rgb(94, 196, 209);
   }
   .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg .cdsvg-color3 {
     fill: rgb(237, 75, 158);
@@ -2325,6 +2325,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title {
     text-align: left;
     margin-top: 64px;
+    align-self: flex-start;
   }
   .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title h2 {
     font-size: 40px;
@@ -2338,10 +2339,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     margin-bottom: 24px;
   }
   .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb1 {
-    color: rgb(154, 106, 255);
+    color: rgb(147, 108, 247);
   }
   .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb2 {
-    color: rgb(49, 208, 170);
+    color: rgb(94, 196, 209);
   }
   .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb3 {
     color: rgb(237, 75, 158);
@@ -2423,8 +2424,8 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     border-radius: 24px;
     margin-right: 16px;
     position: relative;
-    border: 1px solid rgb(75, 59, 80);
-    border-bottom: 3px solid rgb(75, 59, 80);
+    border: 1px solid rgb(56, 50, 65);
+    border-bottom: 3px solid rgb(56, 50, 65);
     width: 280px;
   }
   .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg {
@@ -2544,8 +2545,8 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     padding: 24px;
     border-radius: 24px;
     position: relative;
-    border: 1px solid rgb(75, 59, 80);
-    border-bottom: 3px solid rgb(75, 59, 80);
+    border: 1px solid rgb(56, 50, 65);
+    border-bottom: 3px solid rgb(56, 50, 65);
     margin-bottom: 15px;
     line-height: 1;
     width: 280px;
