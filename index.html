@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< Updated upstream
     <link rel="shortcut icon" href="resources/icons/favicon.ico">
     <title>Home | PancakeSwap - $4.574</title>
     <link rel="stylesheet" href="style/style.css">
@@ -807,3 +808,41 @@
 </body>
 
 </html>
+=======
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+/* Example in Node.js */
+const axios = require('axios');
+
+let response = null;
+new Promise(async (resolve, reject) => {
+  try {
+    response = await axios.get('https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/listings/latest', {
+      headers: {
+        'X-CMC_PRO_API_KEY': '2a6acbbc-2e84-44df-860f-fe98e99e84a1',
+      },
+    });
+  } catch(ex) {
+    response = null;
+    // error
+    console.log(ex);
+    reject(ex);
+  }
+  if (response) {
+    // success
+    const json = response.data;
+    console.log(json);
+    resolve(json);
+  }
+});
+
+
+</script>
+</html>
+>>>>>>> Stashed changes
