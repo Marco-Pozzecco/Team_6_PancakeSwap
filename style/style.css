@@ -669,6 +669,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
           animation-name: float-N;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -677,6 +681,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
           animation-name: float-N;
   -webkit-animation-duration: 6s;
           animation-duration: 6s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -685,6 +693,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
           animation-name: float-N;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -693,6 +705,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
           animation-name: float-N;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -701,6 +717,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
           animation-name: float-N;
   -webkit-animation-duration: 6s;
           animation-duration: 6s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -724,6 +744,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
           animation-name: float-NW;
   -webkit-animation-duration: 6s;
           animation-duration: 6s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -732,6 +756,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
           animation-name: float-NW;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -740,6 +768,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
           animation-name: float-NW;
   -webkit-animation-duration: 5.5s;
           animation-duration: 5.5s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -748,6 +780,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
           animation-name: float-NW;
   -webkit-animation-duration: 7s;
           animation-duration: 7s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -1278,7 +1314,8 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%); /*linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%)*/
+    background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
+    /*linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%)*/
     height: 220px;
     width: 100%;
     padding: 24px;
@@ -1305,17 +1342,20 @@ body {
   }
   .fb-floating-bunny .main-banner-container .main-banner-sub-container .main-banner-content-container .mbt-a1 {
     font-size: 24px;
-    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0)); /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0));
+    /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    -webkit-background-clip: text; /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
+    -webkit-background-clip: text;
+    /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
     margin-bottom: 8px;
     line-height: 1;
   }
   .fb-floating-bunny .main-banner-container .main-banner-sub-container .main-banner-content-container .mbt-a2 {
     font-size: 40px;
     margin-bottom: 16px;
-    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px; /* rgba(0, 0, 0, 0.35) 0px 4px 3px*/
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px;
+    /* rgba(0, 0, 0, 0.35) 0px 4px 3px*/
     line-height: 1;
   }
   .fb-floating-bunny .main-banner-container .main-banner-sub-container .main-banner-content-container .main-banner-button-a {
@@ -1367,7 +1407,8 @@ body {
     transform: translateY(11.5px);
     border-radius: 0px;
   }
-  .fb-floating-bunny .main-banner-container .main-banner-sub-container .bunny-container-a .banner-a, .fb-floating-bunny .main-banner-container .main-banner-sub-container .bunny-container-a .bunny-container-a {
+  .fb-floating-bunny .main-banner-container .main-banner-sub-container .bunny-container-a .banner-a,
+.fb-floating-bunny .main-banner-container .main-banner-sub-container .bunny-container-a .bunny-container-a {
     display: block;
   }
   .fb-floating-bunny .main-banner-container .main-banner-sub-container .banner-b {
@@ -1379,7 +1420,8 @@ body {
   }
   .fb-floating-bunny .main-banner-container .main-banner-sub-container .banner-b .mbt-b1 {
     font-size: 24px;
-    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px; /*rgba(0, 0, 0,  0.35) 0px 3px 3px*/
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px;
+    /*rgba(0, 0, 0,  0.35) 0px 3px 3px*/
     margin-bottom: 8px;
   }
   .fb-floating-bunny .main-banner-container .main-banner-sub-container .banner-b .mb-counter-lottery {
@@ -1395,7 +1437,8 @@ body {
   .fb-floating-bunny .main-banner-container .main-banner-sub-container .banner-b .mb-counter-lottery .mbcl-item {
     font-weight: 600;
     line-height: 1.1;
-    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0)); /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0));
+    /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
@@ -1440,7 +1483,8 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%); /*linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%)*/
+    background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
+    /*linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%)*/
     height: 220px;
     width: 100%;
     padding: 24px;
@@ -1467,17 +1511,20 @@ body {
   }
   .fb-floating-bunny .main-banner-container .main-banner-sub-container .main-banner-content-container .mbt-a1 {
     font-size: 22px;
-    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0)); /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0));
+    /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    -webkit-background-clip: text; /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
+    -webkit-background-clip: text;
+    /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
     margin-bottom: 8px;
     line-height: 1;
   }
   .fb-floating-bunny .main-banner-container .main-banner-sub-container .main-banner-content-container .mbt-a2 {
     font-size: 20px;
     margin-bottom: 8px;
-    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px; /* rgba(0, 0, 0, 0.35) 0px 4px 3px*/
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px;
+    /* rgba(0, 0, 0, 0.35) 0px 4px 3px*/
     word-wrap: break-word;
     line-height: 1;
     width: 150px;
@@ -1531,7 +1578,8 @@ body {
     transform: translateY(11.5px);
     border-radius: 0px;
   }
-  .fb-floating-bunny .main-banner-container .main-banner-sub-container .bunny-container-a .banner-a, .fb-floating-bunny .main-banner-container .main-banner-sub-container .bunny-container-a .bunny-container-a {
+  .fb-floating-bunny .main-banner-container .main-banner-sub-container .bunny-container-a .banner-a,
+.fb-floating-bunny .main-banner-container .main-banner-sub-container .bunny-container-a .bunny-container-a {
     display: block;
   }
   .fb-floating-bunny .main-banner-container .main-banner-sub-container .banner-b {
@@ -1543,7 +1591,8 @@ body {
   }
   .fb-floating-bunny .main-banner-container .main-banner-sub-container .banner-b .mbt-b1 {
     font-size: 24px;
-    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px; /*rgba(0, 0, 0,  0.35) 0px 3px 3px*/
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px;
+    /*rgba(0, 0, 0,  0.35) 0px 3px 3px*/
     margin-bottom: 8px;
   }
   .fb-floating-bunny .main-banner-container .main-banner-sub-container .banner-b .mb-counter-lottery {
@@ -1559,7 +1608,8 @@ body {
   .fb-floating-bunny .main-banner-container .main-banner-sub-container .banner-b .mb-counter-lottery .mbcl-item {
     font-weight: 600;
     line-height: 1.1;
-    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0)); /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0));
+    /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
@@ -1592,7 +1642,7 @@ body {
 .fb-floating-bunny .fb-wrapper {
   color: #9A6AFF;
   max-width: 1200px;
-  padding: 24px;
+  padding-top: 24px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1608,8 +1658,8 @@ body {
 }
 .fb-floating-bunny .fb-wrapper .fb-contents-section h2 {
   padding-top: 20px;
-  font-size: 65px;
-  font-weight: 100;
+  font-size: 64px;
+  font-weight: 600;
   line-height: 1.1;
 }
 .fb-floating-bunny .fb-wrapper .fb-contents-section h3 {
@@ -1640,6 +1690,10 @@ body {
           animation-name: float-NW;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -1697,33 +1751,129 @@ body {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1247px) {
-  .fb-wrapper {
-    flex-direction: column;
+  .fb-floating-bunny .fb-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .fb-floating-bunny .fb-wrapper .fb-contents-section {
+    width: 100%;
+  }
+  .fb-floating-bunny .fb-wrapper .fb-img-section {
+    align-self: flex-end;
+    right: 0;
+    min-width: 10px;
+    max-width: 150px;
+  }
+  .fb-floating-bunny .fb-wrapper .fb-img-section img {
+    padding-bottom: 130px;
+    width: 20%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .fb-wrapper {
-    flex-direction: column;
+  .fb-floating-bunny .fb-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .fb-floating-bunny .fb-wrapper .fb-contents-section {
+    width: 100%;
+  }
+  .fb-floating-bunny .fb-wrapper .fb-img-section {
+    align-self: flex-end;
+    right: 0;
+    min-width: 10px;
+    max-width: 150px;
+  }
+  .fb-floating-bunny .fb-wrapper .fb-img-section img {
+    padding-bottom: 80px;
+    width: 20%;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 767px) {
-  .fb-wrapper {
-    flex-direction: column;
+  .fb-floating-bunny .fb-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .fb-floating-bunny .fb-wrapper .fb-contents-section {
+    width: 100%;
+  }
+  .fb-floating-bunny .fb-wrapper .fb-img-section {
+    align-self: flex-end;
+    right: 0;
+    min-width: 10px;
+    max-width: 150px;
+  }
+  .fb-floating-bunny .fb-wrapper .fb-img-section img {
+    padding-bottom: 80px;
+    width: 20%;
   }
 }
 @media screen and (min-width: 560px) and (max-width: 639px) {
-  .fb-wrapper {
-    flex-direction: column;
+  .fb-floating-bunny .fb-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .fb-floating-bunny .fb-wrapper .fb-contents-section {
+    width: 100%;
+  }
+  .fb-floating-bunny .fb-wrapper .fb-img-section {
+    align-self: flex-end;
+    right: 0;
+    min-width: 10px;
+    max-width: 150px;
+  }
+  .fb-floating-bunny .fb-wrapper .fb-img-section img {
+    padding-bottom: 80px;
+    width: 20%;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 559px) {
-  .fb-wrapper {
-    flex-direction: column;
+  .fb-floating-bunny .fb-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .fb-floating-bunny .fb-wrapper .fb-contents-section {
+    width: 100%;
+  }
+  .fb-floating-bunny .fb-wrapper .fb-img-section {
+    align-self: flex-end;
+    right: 0;
+    min-width: 10px;
+    max-width: 150px;
+  }
+  .fb-floating-bunny .fb-wrapper .fb-img-section img {
+    padding-bottom: 80px;
+    width: 20%;
   }
 }
 @media screen and (max-width: 376px) {
-  .fb-wrapper {
-    flex-direction: column;
+  .fb-floating-bunny .fb-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .fb-floating-bunny .fb-wrapper .fb-contents-section {
+    width: 100%;
+  }
+  .fb-floating-bunny .fb-wrapper .fb-img-section {
+    align-self: flex-end;
+    right: 0;
+    min-width: 10px;
+    max-width: 150px;
+  }
+  .fb-floating-bunny .fb-wrapper .fb-img-section img {
+    padding-bottom: 80px;
+    width: 20%;
   }
 }
 /* Bottoni nel div-SWAP(a sinistra)-- */
@@ -2652,148 +2802,13 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   background-color: #08060b;
 }
 
-@media screen and (min-width: 1024px) {
-  .cake-token {
-    padding: 48px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  .cake-token .cake-wrapper {
-    width: 100%;
-    max-width: 968px;
-    padding: 48px 24px;
-  }
-  .cake-token .cake-wrapper .cake-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .cake-token .cake-wrapper .cake-content h1 {
-    color: white;
-  }
-  .cake-token .cake-wrapper .cake-content p {
-    color: white;
-  }
-  .cake-token .cake-wrapper .cake-content .cake-info {
-    width: calc(100% - 400px);
-  }
-  .cake-token .cake-wrapper .cake-content .cake-info * {
-    width: 420px;
-  }
-  .cake-token .cake-wrapper .cake-content .cake-info h1 {
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 1.1;
-    color: rgb(244, 238, 255);
-    margin-bottom: 24px;
-  }
-  .cake-token .cake-wrapper .cake-content .cake-info h1 span {
-    color: rgb(154, 106, 255);
-  }
-  .cake-token .cake-wrapper .cake-content .cake-info p {
-    color: rgb(184, 173, 210);
-    font-weight: 400;
-    line-height: 1.5;
-    margin-bottom: 24px;
-    font-size: 16px;
-  }
-  .cake-token .cake-wrapper .cake-content .cake-info .cake-info-buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .cake-token .cake-wrapper .cake-content .cake-info .cake-info-buttons .link-aquagreen {
-    width: auto;
-  }
-  .cake-token .cake-wrapper .cake-content .cake-info .cake-info-buttons .button-aquagreen {
-    width: auto;
-  }
-  .cake-token .cake-wrapper .cake-content .cake-info .cake-info-buttons .learn-link {
-    margin-left: 10px;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    color: rgb(31, 199, 212);
-    font-weight: 600;
-    line-height: 1.5;
-    font-size: 16px;
-  }
-  .cake-token .cake-wrapper .cake-content .cake-coins {
-    width: 400px;
-    height: 400px;
-    position: relative;
-  }
-  .cake-token .cake-wrapper .cake-content .cake-coins img {
-    position: absolute;
-  }
-  .cake-token .cake-wrapper .cake-content .cake-coins #pancake-bottom-right {
-    width: 100%;
-    z-index: 0;
-  }
-  .cake-token .cake-wrapper .cake-content .cake-coins #pancake-top-left {
-    width: 100%;
-    z-index: 2;
-  }
-  .cake-token .cake-wrapper .cake-content .cake-coins #pancake-top-right {
-    width: 100%;
-    z-index: 1;
-  }
-  .cake-token .cake-wrapper .cake-content .cake-coins #cake-coin {
-    width: 100%;
-    z-index: 1;
-  }
-  .cake-token .cake-wrapper .cake-stats {
-    display: grid;
-    grid-template-areas: "circ-s total-s max-s" "market-cap burn current-emissions";
-    gap: 32px;
-    margin-top: 24px;
-  }
-  .cake-token .cake-wrapper .cake-stats div .text-subtle {
-    color: rgb(184, 173, 210);
-    font-weight: 400;
-    line-height: 1.5;
-    font-size: 16px;
-  }
-  .cake-token .cake-wrapper .cake-stats div .text-cake-stats {
-    color: rgb(244, 238, 255);
-    font-weight: 600;
-    line-height: 1.1;
-    font-size: 24px;
-  }
-  .cake-token .cake-wrapper .cake-stats .cake-circulating-supply {
-    grid-area: circ-s;
-  }
-  .cake-token .cake-wrapper .cake-stats .cake-supply {
-    grid-area: total-s;
-    border-left: 1px solid rgb(38, 33, 48);
-    padding: 0 15px;
-  }
-  .cake-token .cake-wrapper .cake-stats .cake-max-supply {
-    grid-area: max-s;
-    border-left: 1px solid rgb(38, 33, 48);
-    padding: 0 15px;
-  }
-  .cake-token .cake-wrapper .cake-stats .cake-cap {
-    grid-area: market-cap;
-  }
-  .cake-token .cake-wrapper .cake-stats .cake-burned {
-    grid-area: burn;
-    border-left: 1px solid rgb(38, 33, 48);
-    padding: 0 15px;
-  }
-  .cake-token .cake-wrapper .cake-stats .cake-emissions {
-    grid-area: current-emissions;
-    border-left: 1px solid rgb(38, 33, 48);
-    padding: 0 15px;
-  }
-  .cake-token .cake-wrapper .cake-stats p {
-    color: white;
-  }
+.cake-token {
+  padding: 48px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 .cake-token .cake-wrapper {
   width: 100%;
@@ -2849,6 +2864,8 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 .cake-token .cake-wrapper .cake-content .cake-info .cake-info-buttons .learn-link {
   margin-left: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   color: rgb(31, 199, 212);
   font-weight: 600;
@@ -2866,38 +2883,58 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 .cake-token .cake-wrapper .cake-content .cake-coins #pancake-bottom-right {
   width: 100%;
   z-index: 0;
-  animation-name: float-Nw;
-  animation-duration: 5s;
-  animation-delay: 0s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: float-Nw;
+          animation-name: float-Nw;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .cake-token .cake-wrapper .cake-content .cake-coins #pancake-top-left {
   width: 100%;
   z-index: 2;
-  animation-name: float-NW;
-  animation-duration: 5s;
-  animation-delay: 0.2s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .cake-token .cake-wrapper .cake-content .cake-coins #pancake-top-right {
   width: 100%;
   z-index: 1;
-  animation-name: float-NW;
-  animation-duration: 5s;
-  animation-delay: 0.3s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .cake-token .cake-wrapper .cake-content .cake-coins #cake-coin {
   width: 100%;
   z-index: 1;
-  animation-name: float-NW;
-  animation-duration: 5s;
-  animation-delay: 1s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .cake-token .cake-wrapper .cake-stats {
   display: grid;
@@ -3042,6 +3079,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
           animation-name: float-NW;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -3061,6 +3102,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
           animation-name: float-NW;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -3069,6 +3114,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
           animation-name: float-NW;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -3077,6 +3126,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
           animation-name: float-NW;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -3170,19 +3223,24 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   padding-top: 50px;
   width: 100%;
   background: black;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .ta-trade-anything .ta-wrapper {
+  width: 50%;
   max-width: 1200px;
   height: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   z-index: 2;
 }
 .ta-trade-anything .ta-wrapper .ta-contents-section {
   text-align: left;
-  width: 50%;
+  width: 55%;
+  flex: 1 1 50%;
+  max-width: 500px;
 }
 .ta-trade-anything .ta-wrapper .ta-contents-section h2 {
   color: white;
@@ -3217,7 +3275,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 .ta-trade-anything .ta-wrapper .ta-img-section {
   position: relative;
   height: 100%;
-  width: 50%;
+  width: 45%;
+  flex: 1 1 50%;
+  max-width: 380px;
+  min-width: 300px;
 }
 .ta-trade-anything .ta-wrapper .ta-img-section .ta-goldencoin {
   position: absolute;
@@ -3227,6 +3288,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
           animation-name: float-NW;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -3241,6 +3306,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
           animation-name: float-NW;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -3255,6 +3324,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
           animation-name: float-NW;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -3262,6 +3335,132 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   width: 90%;
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1247px) {
+  .ta-trade-anything .ta-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .ta-trade-anything .ta-wrapper .ta-contents-section {
+    width: 100%;
+  }
+  .ta-trade-anything .ta-wrapper .ta-img-section {
+    align-self: flex-end;
+    right: 0;
+    min-width: 10px;
+    max-width: 150px;
+  }
+  .ta-trade-anything .ta-wrapper .ta-img-section img {
+    padding-bottom: 130px;
+    width: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .ta-trade-anything .ta-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .ta-trade-anything .ta-wrapper .ta-contents-section {
+    width: 100%;
+  }
+  .ta-trade-anything .ta-wrapper .ta-img-section {
+    align-self: flex-end;
+    right: 0;
+    min-width: 10px;
+    max-width: 150px;
+  }
+  .ta-trade-anything .ta-wrapper .ta-img-section img {
+    padding-bottom: 130px;
+    width: 20px;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 767px) {
+  .ta-trade-anything .ta-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .ta-trade-anything .ta-wrapper .ta-contents-section {
+    width: 100%;
+  }
+  .ta-trade-anything .ta-wrapper .ta-img-section {
+    align-self: flex-end;
+    right: 0;
+    min-width: 10px;
+    max-width: 150px;
+  }
+  .ta-trade-anything .ta-wrapper .ta-img-section img {
+    padding-bottom: 130px;
+    width: 20px;
+  }
+}
+@media screen and (min-width: 560px) and (max-width: 639px) {
+  .ta-trade-anything .ta-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .ta-trade-anything .ta-wrapper .ta-contents-section {
+    width: 100%;
+  }
+  .ta-trade-anything .ta-wrapper .ta-img-section {
+    align-self: flex-end;
+    right: 0;
+    min-width: 10px;
+    max-width: 150px;
+  }
+  .ta-trade-anything .ta-wrapper .ta-img-section img {
+    padding-bottom: 130px;
+    width: 20px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 559px) {
+  .ta-trade-anything .ta-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .ta-trade-anything .ta-wrapper .ta-contents-section {
+    width: 100%;
+  }
+  .ta-trade-anything .ta-wrapper .ta-img-section {
+    align-self: flex-end;
+    right: 0;
+    min-width: 10px;
+    max-width: 150px;
+  }
+  .ta-trade-anything .ta-wrapper .ta-img-section img {
+    padding-bottom: 130px;
+    width: 20px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .ta-trade-anything .ta-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .ta-trade-anything .ta-wrapper .ta-contents-section {
+    width: 100%;
+  }
+  .ta-trade-anything .ta-wrapper .ta-img-section {
+    align-self: flex-end;
+    right: 0;
+    min-width: 10px;
+    max-width: 150px;
+  }
+  .ta-trade-anything .ta-wrapper .ta-img-section img {
+    padding-bottom: 130px;
+    width: 20px;
+  }
+}
 /* Bottoni nel div-SWAP(a sinistra)-- */
 /* --bottone in alto a sinistra sbarrato----------------- */
 /* blocco bottoni nel div Swap--------------------------------------------*/
@@ -3302,23 +3501,27 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   justify-content: center;
   align-items: center;
   align-items: center;
-  padding-top: 50px;
   width: 100%;
-  background: #3B3D51;
+  background: #3a364a;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .ea-earn .ea-wrapper {
-  padding-bottom: 50px;
+  width: 50%;
+  padding-bottom: 100px;
   max-width: 1200px;
   height: 100%;
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   z-index: 2;
 }
 .ea-earn .ea-wrapper .ea-contents-section {
   text-align: left;
-  width: 50%;
+  width: 55%;
+  flex: 1 1 50%;
+  max-width: 500px;
 }
 .ea-earn .ea-wrapper .ea-contents-section h2 {
   color: white;
@@ -3353,7 +3556,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 .ea-earn .ea-wrapper .ea-img-section {
   position: relative;
   height: 100%;
-  width: 50%;
+  width: 45%;
+  flex: 1 1 50%;
+  max-width: 380px;
+  min-width: 300px;
 }
 .ea-earn .ea-wrapper .ea-img-section .ea-goldencoin {
   position: absolute;
@@ -3363,6 +3569,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
           animation-name: float-NW;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -3377,6 +3587,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
           animation-name: float-NW;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -3391,6 +3605,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
           animation-name: float-NW;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -3490,6 +3708,132 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   visibility: hidden;
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1247px) {
+  .ea-earn .ea-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .ea-earn .ea-wrapper .ea-contents-section {
+    width: 100%;
+  }
+  .ea-earn .ea-wrapper .ea-img-section {
+    align-self: flex-end;
+    right: 0;
+    min-width: 10px;
+    max-width: 150px;
+  }
+  .ea-earn .ea-wrapper .ea-img-section img {
+    padding-bottom: 130px;
+    width: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .ea-earn .ea-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .ea-earn .ea-wrapper .ea-contents-section {
+    width: 100%;
+  }
+  .ea-earn .ea-wrapper .ea-img-section {
+    align-self: flex-end;
+    right: 0;
+    min-width: 10px;
+    max-width: 150px;
+  }
+  .ea-earn .ea-wrapper .ea-img-section img {
+    padding-bottom: 130px;
+    width: 20px;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 767px) {
+  .ea-earn .ea-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .ea-earn .ea-wrapper .ea-contents-section {
+    width: 100%;
+  }
+  .ea-earn .ea-wrapper .ea-img-section {
+    align-self: flex-end;
+    right: 0;
+    min-width: 10px;
+    max-width: 150px;
+  }
+  .ea-earn .ea-wrapper .ea-img-section img {
+    padding-bottom: 130px;
+    width: 20px;
+  }
+}
+@media screen and (min-width: 560px) and (max-width: 639px) {
+  .ea-earn .ea-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .ea-earn .ea-wrapper .ea-contents-section {
+    width: 100%;
+  }
+  .ea-earn .ea-wrapper .ea-img-section {
+    align-self: flex-end;
+    right: 0;
+    min-width: 10px;
+    max-width: 150px;
+  }
+  .ea-earn .ea-wrapper .ea-img-section img {
+    padding-bottom: 130px;
+    width: 20px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 559px) {
+  .ea-earn .ea-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .ea-earn .ea-wrapper .ea-contents-section {
+    width: 100%;
+  }
+  .ea-earn .ea-wrapper .ea-img-section {
+    align-self: flex-end;
+    right: 0;
+    min-width: 10px;
+    max-width: 150px;
+  }
+  .ea-earn .ea-wrapper .ea-img-section img {
+    padding-bottom: 130px;
+    width: 20px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .ea-earn .ea-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .ea-earn .ea-wrapper .ea-contents-section {
+    width: 100%;
+  }
+  .ea-earn .ea-wrapper .ea-img-section {
+    align-self: flex-end;
+    right: 0;
+    min-width: 10px;
+    max-width: 150px;
+  }
+  .ea-earn .ea-wrapper .ea-img-section img {
+    padding-bottom: 130px;
+    width: 20%;
+  }
+}
 /* Bottoni nel div-SWAP(a sinistra)-- */
 /* --bottone in alto a sinistra sbarrato----------------- */
 /* blocco bottoni nel div Swap--------------------------------------------*/
