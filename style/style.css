@@ -667,26 +667,36 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 .win-prizes .floating-balls img#ball-n2 {
   animation-name: float-N;
   animation-duration: 5s;
+  animation-delay: none;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
 .win-prizes .floating-balls img#ball-n4 {
   animation-name: float-N;
   animation-duration: 6s;
+  animation-delay: none;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
 .win-prizes .floating-balls img#ball-n6 {
   animation-name: float-N;
   animation-duration: 4s;
+  animation-delay: none;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
 .win-prizes .floating-balls img#ball-n7 {
   animation-name: float-N;
   animation-duration: 5s;
+  animation-delay: none;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
 .win-prizes .floating-balls img#ball-n9 {
   animation-name: float-N;
   animation-duration: 6s;
+  animation-delay: none;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
 .win-prizes .floating-cards {
@@ -707,21 +717,29 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   z-index: -1;
   animation-name: float-NW;
   animation-duration: 6s;
+  animation-delay: none;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
 .win-prizes .floating-cards #card-top-right {
   animation-name: float-NW;
   animation-duration: 5s;
+  animation-delay: none;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
 .win-prizes .floating-cards #card-green {
   animation-name: float-NW;
   animation-duration: 5.5s;
+  animation-delay: none;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
 .win-prizes .floating-cards #card-red {
   animation-name: float-NW;
   animation-duration: 7s;
+  animation-delay: none;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
 .win-prizes .prizes-wrapper {
@@ -1619,6 +1637,8 @@ body {
   margin-top: 10%;
   animation-name: float-NW;
   animation-duration: 5s;
+  animation-delay: none;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
 .fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingbunny img {
@@ -2944,147 +2964,166 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   background-color: #08060b;
 }
 
-@media screen and (min-width: 1024px) {
-  .cake-token {
-    padding: 48px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  .cake-token .cake-wrapper {
-    width: 100%;
-    max-width: 968px;
-    padding: 48px 24px;
-  }
-  .cake-token .cake-wrapper .cake-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .cake-token .cake-wrapper .cake-content h1 {
-    color: white;
-  }
-  .cake-token .cake-wrapper .cake-content p {
-    color: white;
-  }
-  .cake-token .cake-wrapper .cake-content .cake-info {
-    width: calc(100% - 400px);
-  }
-  .cake-token .cake-wrapper .cake-content .cake-info * {
-    width: 420px;
-  }
-  .cake-token .cake-wrapper .cake-content .cake-info h1 {
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 1.1;
-    color: rgb(244, 238, 255);
-    margin-bottom: 24px;
-  }
-  .cake-token .cake-wrapper .cake-content .cake-info h1 span {
-    color: rgb(154, 106, 255);
-  }
-  .cake-token .cake-wrapper .cake-content .cake-info p {
-    color: rgb(184, 173, 210);
-    font-weight: 400;
-    line-height: 1.5;
-    margin-bottom: 24px;
-    font-size: 16px;
-  }
-  .cake-token .cake-wrapper .cake-content .cake-info .cake-info-buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .cake-token .cake-wrapper .cake-content .cake-info .cake-info-buttons .link-aquagreen {
-    width: auto;
-  }
-  .cake-token .cake-wrapper .cake-content .cake-info .cake-info-buttons .button-aquagreen {
-    width: auto;
-  }
-  .cake-token .cake-wrapper .cake-content .cake-info .cake-info-buttons .learn-link {
-    margin-left: 10px;
-    width: fit-content;
-    color: rgb(31, 199, 212);
-    font-weight: 600;
-    line-height: 1.5;
-    font-size: 16px;
-  }
-  .cake-token .cake-wrapper .cake-content .cake-coins {
-    width: 400px;
-    height: 400px;
-    position: relative;
-  }
-  .cake-token .cake-wrapper .cake-content .cake-coins img {
-    position: absolute;
-  }
-  .cake-token .cake-wrapper .cake-content .cake-coins #pancake-bottom-right {
-    width: 100%;
-    z-index: 0;
-  }
-  .cake-token .cake-wrapper .cake-content .cake-coins #pancake-top-left {
-    width: 100%;
-    z-index: 2;
-  }
-  .cake-token .cake-wrapper .cake-content .cake-coins #pancake-top-right {
-    width: 100%;
-    z-index: 1;
-  }
-  .cake-token .cake-wrapper .cake-content .cake-coins #cake-coin {
-    width: 100%;
-    z-index: 1;
-  }
-  .cake-token .cake-wrapper .cake-stats {
-    display: grid;
-    grid-template-areas: "circ-s total-s max-s" "market-cap burn current-emissions";
-    gap: 32px;
-    margin-top: 24px;
-  }
-  .cake-token .cake-wrapper .cake-stats div .text-subtle {
-    color: rgb(184, 173, 210);
-    font-weight: 400;
-    line-height: 1.5;
-    font-size: 16px;
-  }
-  .cake-token .cake-wrapper .cake-stats div .text-cake-stats {
-    color: rgb(244, 238, 255);
-    font-weight: 600;
-    line-height: 1.1;
-    font-size: 24px;
-  }
-  .cake-token .cake-wrapper .cake-stats .cake-circulating-supply {
-    grid-area: circ-s;
-  }
-  .cake-token .cake-wrapper .cake-stats .cake-supply {
-    grid-area: total-s;
-    border-left: 1px solid rgb(38, 33, 48);
-    padding: 0 15px;
-  }
-  .cake-token .cake-wrapper .cake-stats .cake-max-supply {
-    grid-area: max-s;
-    border-left: 1px solid rgb(38, 33, 48);
-    padding: 0 15px;
-  }
-  .cake-token .cake-wrapper .cake-stats .cake-cap {
-    grid-area: market-cap;
-  }
-  .cake-token .cake-wrapper .cake-stats .cake-burned {
-    grid-area: burn;
-    border-left: 1px solid rgb(38, 33, 48);
-    padding: 0 15px;
-  }
-  .cake-token .cake-wrapper .cake-stats .cake-emissions {
-    grid-area: current-emissions;
-    border-left: 1px solid rgb(38, 33, 48);
-    padding: 0 15px;
-  }
-  .cake-token .cake-wrapper .cake-stats p {
-    color: white;
-  }
+.cake-token {
+  padding: 48px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
+.cake-token .cake-wrapper {
+  width: 100%;
+  max-width: 968px;
+  padding: 48px 24px;
+}
+.cake-token .cake-wrapper .cake-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.cake-token .cake-wrapper .cake-content h1 {
+  color: white;
+}
+.cake-token .cake-wrapper .cake-content p {
+  color: white;
+}
+.cake-token .cake-wrapper .cake-content .cake-info {
+  width: calc(100% - 400px);
+}
+.cake-token .cake-wrapper .cake-content .cake-info * {
+  width: 420px;
+}
+.cake-token .cake-wrapper .cake-content .cake-info h1 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: rgb(244, 238, 255);
+  margin-bottom: 24px;
+}
+.cake-token .cake-wrapper .cake-content .cake-info h1 span {
+  color: rgb(154, 106, 255);
+}
+.cake-token .cake-wrapper .cake-content .cake-info p {
+  color: rgb(184, 173, 210);
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  font-size: 16px;
+}
+.cake-token .cake-wrapper .cake-content .cake-info .cake-info-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.cake-token .cake-wrapper .cake-content .cake-info .cake-info-buttons .link-aquagreen {
+  width: auto;
+}
+.cake-token .cake-wrapper .cake-content .cake-info .cake-info-buttons .button-aquagreen {
+  width: auto;
+}
+.cake-token .cake-wrapper .cake-content .cake-info .cake-info-buttons .learn-link {
+  margin-left: 10px;
+  width: fit-content;
+  color: rgb(31, 199, 212);
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 16px;
+}
+.cake-token .cake-wrapper .cake-content .cake-coins {
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+.cake-token .cake-wrapper .cake-content .cake-coins img {
+  position: absolute;
+}
+.cake-token .cake-wrapper .cake-content .cake-coins #pancake-bottom-right {
+  width: 100%;
+  z-index: 0;
+  animation-name: float-Nw;
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.cake-token .cake-wrapper .cake-content .cake-coins #pancake-top-left {
+  width: 100%;
+  z-index: 2;
+  animation-name: float-NW;
+  animation-duration: 5s;
+  animation-delay: 0.2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.cake-token .cake-wrapper .cake-content .cake-coins #pancake-top-right {
+  width: 100%;
+  z-index: 1;
+  animation-name: float-NW;
+  animation-duration: 5s;
+  animation-delay: 0.3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.cake-token .cake-wrapper .cake-content .cake-coins #cake-coin {
+  width: 100%;
+  z-index: 1;
+  animation-name: float-NW;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.cake-token .cake-wrapper .cake-stats {
+  display: grid;
+  grid-template-areas: "circ-s total-s max-s" "market-cap burn current-emissions";
+  gap: 32px;
+  margin-top: 24px;
+}
+.cake-token .cake-wrapper .cake-stats div .text-subtle {
+  color: rgb(184, 173, 210);
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 16px;
+}
+.cake-token .cake-wrapper .cake-stats div .text-cake-stats {
+  color: rgb(244, 238, 255);
+  font-weight: 600;
+  line-height: 1.1;
+  font-size: 24px;
+}
+.cake-token .cake-wrapper .cake-stats .cake-circulating-supply {
+  grid-area: circ-s;
+}
+.cake-token .cake-wrapper .cake-stats .cake-supply {
+  grid-area: total-s;
+  border-left: 1px solid rgb(38, 33, 48);
+  padding: 0 15px;
+}
+.cake-token .cake-wrapper .cake-stats .cake-max-supply {
+  grid-area: max-s;
+  border-left: 1px solid rgb(38, 33, 48);
+  padding: 0 15px;
+}
+.cake-token .cake-wrapper .cake-stats .cake-cap {
+  grid-area: market-cap;
+}
+.cake-token .cake-wrapper .cake-stats .cake-burned {
+  grid-area: burn;
+  border-left: 1px solid rgb(38, 33, 48);
+  padding: 0 15px;
+}
+.cake-token .cake-wrapper .cake-stats .cake-emissions {
+  grid-area: current-emissions;
+  border-left: 1px solid rgb(38, 33, 48);
+  padding: 0 15px;
+}
+.cake-token .cake-wrapper .cake-stats p {
+  color: white;
+}
+
 /* Bottoni nel div-SWAP(a sinistra)-- */
 /* --bottone in alto a sinistra sbarrato----------------- */
 /* blocco bottoni nel div Swap--------------------------------------------*/
@@ -3178,6 +3217,8 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   margin-top: 10%;
   animation-name: float-NW;
   animation-duration: 5s;
+  animation-delay: none;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
 .box-layout6 .box-flex .img-wrapper .bottom-right-pill img {
@@ -3194,16 +3235,22 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 .box-layout6 .box-flex .img-wrapper .floating-pills .top-left-pill img {
   animation-name: float-NW;
   animation-duration: 3s;
+  animation-delay: none;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
 .box-layout6 .box-flex .img-wrapper .floating-pills .coin img {
   animation-name: float-NW;
   animation-duration: 4s;
+  animation-delay: none;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
 .box-layout6 .box-flex .img-wrapper .floating-pills .top-right-pill img {
   animation-name: float-NW;
   animation-duration: 4s;
+  animation-delay: none;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
 .box-layout6 .box-flex .img-wrapper .floating-pills img {
@@ -3352,6 +3399,8 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   margin-top: 10%;
   animation-name: float-NW;
   animation-duration: 5s;
+  animation-delay: none;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
 .ta-trade-anything .ta-wrapper .ta-img-section .ta-goldencoin img {
@@ -3368,11 +3417,15 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 .ta-trade-anything .ta-wrapper .ta-img-section .ta-img-semiwrap .ta-bitcoin img {
   animation-name: float-NW;
   animation-duration: 3s;
+  animation-delay: none;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
 .ta-trade-anything .ta-wrapper .ta-img-section .ta-img-semiwrap .ta-cakecoin img {
   animation-name: float-NW;
   animation-duration: 4s;
+  animation-delay: none;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
 .ta-trade-anything .ta-wrapper .ta-img-section .ta-img-semiwrap img {
@@ -3483,6 +3536,8 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   margin-top: 10%;
   animation-name: float-NW;
   animation-duration: 5s;
+  animation-delay: none;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
 .ea-earn .ea-wrapper .ea-img-section .ea-goldencoin img {
@@ -3499,11 +3554,15 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 .ea-earn .ea-wrapper .ea-img-section .ea-img-semiwrap .ea-bitcoin img {
   animation-name: float-NW;
   animation-duration: 3s;
+  animation-delay: none;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
 .ea-earn .ea-wrapper .ea-img-section .ea-img-semiwrap .ea-cakecoin img {
   animation-name: float-N;
   animation-duration: 4s;
+  animation-delay: none;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
 .ea-earn .ea-wrapper .ea-img-section .ea-img-semiwrap img {

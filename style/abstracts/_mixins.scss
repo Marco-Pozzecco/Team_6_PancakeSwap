@@ -7,9 +7,11 @@
 
 // Mixin include float-bottom-up
 // Il mixin ammette come durata un valore in secondi, o derivati (ad. es. ms), mentre ammette come direzione un punto cardinale (N, S, O, W, NE, NW ... )
-@mixin float-anim ($duration, $direction) {
+@mixin float-anim ($duration, $direction, $delay: none) {
     animation-name: unquote("float-" + $direction);
     animation-duration: $duration;
+    animation-delay: $delay;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 };
 
