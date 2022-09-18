@@ -1,16 +1,31 @@
 // Use rules
 @use "../../components/buttons/buttons";
+@use "sass:map";
 
 // Import rules
 @import "../../abstracts/mixins";
 @import "../../abstracts/colors";
 
+//da fare
+//footer larghezza 
 
+// Set colori tema scuro
+$theme-dark: map.set($theme-dark, "fa-moon", $footer-background);
+$theme-dark: map.set($theme-dark, "nav-bkground", #000);
+// Set colori tema chiaro
+$theme-light: map.set($theme-light, "fa-moon", $secondary-dk);
+$theme-light: map.set($theme-light, "nav-bkground", #fff); 
 
-// .line-dd{
-//     border-top: 2px solid black;
-//     border-bottom: 2px solid black;
-// }
+.theme-dark{
+    --fa-moon: #{map-get($theme-dark , "fa-moon")};
+    --nav-bkground: #{map-get($theme-dark , "nav-bkground")};
+
+}
+.theme-light{ 
+    --fa-moon: #{map-get($theme-light , "fa-moon")};
+    --nav-bkground: #{map-get($theme-light , "nav-bkground")};
+
+}
 
 .mobile-icon{
     display: none;
@@ -20,20 +35,22 @@
     i{
         color: $primary-color;
     }
-    
 }
-
+ 
 .menu-nav ul, a, i, li a{
-
     //@include list-style();
     text-decoration: none;
     color: $primary-color;
     font-size: 16px ;
     list-style: none;
-    // &:hover, &:focus{
-    //     background-color: $border_color;
-    //     border-radius: 15px;
-    // }
+    li {
+        display: flex;
+        justify-content: space-between;
+        i{
+            color: $tertiary-color;
+        }
+    }
+    
 }
 .menu-nav li{
     &:hover, &:focus{
@@ -53,80 +70,238 @@
 nav {
     @include flex(row, space-between, center);
     background-color: white;
+    //background-color: var(--nav-bkground);
     width: 100%;
     height: 8vh;
     padding: 0 8px;
     position: fixed;
     top: 0;
-    z-index: 100;
+    z-index: 1;
     border-bottom: 1px solid $border_color;
-    ul{
-        display: flex;
-        li{
-            list-style: none;
+    .flex{
+        @include flex(center);
+        div, h2, ul{
+            padding: 2%;
+            cursor: pointer;
+        }
+        p{
             color: $primary-color;
-            font-size: 16px ;
-            padding: 15px;
-            position: relative;
-            &:active{
-                color: $secondary-color;
-            }
-            &:hover ul{
-                opacity: 1;
-                visibility: visible;
-            }
-           
-            ul{
-                position: absolute;
-                top: 3rem;
-                left: -0.25rem;
-                //box-shadow: 0 0 3px gray;
-                background-color: white;
-                @include setRadius (15px);
-                border: 2px solid $border_color;
-                width: 12rem;
-                display: flex;
-                flex-direction: column;
-                opacity: 0;
-                visibility: hidden;
-                transition: opacity 200ms easy-in-out;
-                li.line-dd{
-                    border-bottom: 1px solid $input-color;
-                    border-top:    1px solid $input-color;
+            font-size: 16px ;   
+        }
+        ul{
+            display: flex;
+            li{
+                list-style: none;
+                color: $primary-color;
+                font-size: 16px ;
+                padding: 15px;
+                position: relative;
+                &:active{
+                    color: $secondary-color;
                 }
-                
-                
+                &:hover ul{
+                    opacity: 1;
+                    visibility: visible;
+                }
+               
+                ul{
+                    position: absolute;
+                    top: 3rem;
+                    left: -0.25rem;
+                    //box-shadow: 0 0 3px gray;
+                    background-color: white;
+                    @include setRadius (15px);
+                    border: 2px solid $border_color;
+                    width: 12rem;
+                    display: flex;
+                    flex-direction: column;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: opacity 200ms easy-in-out;
+                    li.line-dd{
+                        border-bottom: 1px solid $input-color;
+                        border-top:    1px solid $input-color;
+                    }
+                }
             }
         }
-    }
+        .btn-gear {
+            border: none;
+            background-color: transparent;
+            i{
+               color: $primary-color;
+            }
+            &:hover {
+                color: rgb(154, 106, 255, 30%);
+            }
+        }
+        .btn-navbar{
+            .button-aquagreen{
+                // width: 127px;
+                // height: 32px;
+                margin: 2px 4px 4px 0px;
+                padding: 0px 16px;
+            }
+        }
+        .modal{
+            position: fixed;
+            width: 400px;
+            height: 400px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(1);
+            transition: 200ms ease-in-out;
+            background-color: white;
+            border-radius: 0 0 30px 30px;
+            padding: 3% 2% 2% 2%;
+            display: flex;   
+            flex-direction: column;
+            justify-content: space-around;
+            z-index: 1000;
+            
+            .active{
+                transform: translate(-50%, -50%) scale(1);
+                z-index: 1000;
+            
+            }p{
+                color: $background-color-dk;
+            }
+            .modal1{
+                position: fixed;
+                width: 400px;
+                height: 70px;
+                top: 3%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: #eeeeee;
+                border-radius: 30px 30px 0px 0px ;
+                padding: 2% 2% 2% 6%;
+                border-bottom: 1px solid #d9d9d9;
+                .close-btn{
+                    cursor: pointer;
+                    border: none;
+                    outline: none;
+                    background: none;
+                    color: $btn-bg-color;
+                    font-size: 1.55rem;
+                }
+            }
+            .header{
+                color: $background-color-dk;
+            }
+            h4{
+                color: rgb(118, 69, 217);
+            }
+        }
+        
+        .checkbox {
+            opacity: 0;
+            position: absolute;
+        }
+        
+        .label {
+            background-color: gray;
+            border-radius: 50px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px;
+            position: relative;
+            height: 26px;
+            width: 50px;
+            transform: scale(1);
+        }
+        
+        .label .ball {
+            background-color: #fff;
+            border-radius: 50%;
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            height: 22px;
+            width: 22px;
+            transform: translateX(0px);
+            transition: transform 0.2s linear;
+            
+        }
+        .checkbox:checked + .label .ball {
+            transform: translateX(24px);
+        }
+        .checkbox1 {
+            opacity: 0;
+            position: absolute;
+        }
+        .label1 {
+            background-color: gray;
+            border-radius: 50px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px;
+            position: relative;
+            height: 26px;
+            width: 50px;
+            transform: scale(1);
+            
+        }
+        .label1 .ball1 {
+            background-color: #fff;
+            border-radius: 50%;
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            height: 22px;
+            width: 22px;
+            transform: translateX(0px);
+            transition: transform 0.2s linear;
+            
+        }
+        .checkbox1:checked + .label1 .ball1 {
+            transform: translateX(24px);
+        }
+        .fa-moon {
+            color: #f39c12;
+        }
+        .fa-sun {
+            color: white;
+        }
+        
+        .flex-switch{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        
+        }
+        .flex-inline{
+            display: flex;
+        }
+        #overlay{
+            position: fixed;
+            opacity: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,.5);
+            pointer-events: none;
+            transition: 200ms ease-in-out;
+            z-index: 2;
+        }
+        #overlay.active{
+            opacity: 1;
+            pointer-events: all;
+        }
+    } 
 }
-
-// body > nav > div > 
-//ul > li:nth-child(5) > ul > li.line-dd
 
 .fa-globe:hover{
     color: rgb(154, 106, 255, 30%);
 }
+//update untill now
 
 
-.flex{
-    @include flex(center);
-    div, h2, ul{
-        padding: 2%;
-        cursor: pointer;
-    }
-}
-.flex p{
-    color: $primary-color;
-    font-size: 16px ;
 
-}
-.btn-navbar{
-    .button-aquagreen{
-        width: 167px;
-        height: 32px;
-        margin: 0px 2px;
-        padding: 0px 2px;
-    }
-}
+
 
