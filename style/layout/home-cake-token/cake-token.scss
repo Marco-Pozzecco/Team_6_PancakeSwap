@@ -24,6 +24,7 @@
         padding: 48px 24px;
 
         .cake-content {
+            position: relative;
             @include flex();
 
             h1 {
@@ -35,7 +36,8 @@
             }
 
             .cake-info {
-                width: calc(100% - 400px);
+                width: 60%;
+                
 
                 & * {
                     width: 420px;
@@ -85,9 +87,11 @@
             }
 
             .cake-coins {
-                width: 400px;
-                height: 400px;
+                flex-basis: 40%;
+                flex-shrink: 1;
+                flex-grow: 1;
                 position: relative;
+                top: 0;
 
                 img {
                     position: absolute;
@@ -176,9 +180,7 @@
                 padding: 0 15px;
             }
 
-            p {
-                color: white;
-            }
+            
 
         }
 
