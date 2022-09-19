@@ -2963,7 +2963,6 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   padding: 48px 24px;
 }
 .cake-token .cake-wrapper .cake-content {
-  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -2976,10 +2975,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   color: white;
 }
 .cake-token .cake-wrapper .cake-content .cake-info {
-  width: 60%;
+  width: calc(100% - 400px);
 }
 .cake-token .cake-wrapper .cake-content .cake-info * {
-  width: 420px;
+  width: 100%;
 }
 .cake-token .cake-wrapper .cake-content .cake-info h1 {
   font-size: 40px;
@@ -3019,11 +3018,9 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   font-size: 16px;
 }
 .cake-token .cake-wrapper .cake-content .cake-coins {
-  flex-basis: 40%;
-  flex-shrink: 1;
-  flex-grow: 1;
+  width: 400px;
   position: relative;
-  top: 0;
+  bottom: 220px;
 }
 .cake-token .cake-wrapper .cake-content .cake-coins img {
   position: absolute;
@@ -3109,6 +3106,333 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   padding: 0 15px;
 }
 
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+  .cake-token {
+    padding: 48px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .cake-token .cake-wrapper {
+    width: 100%;
+    max-width: 968px;
+    padding: 48px 24px;
+    padding-top: 200px;
+  }
+  .cake-token .cake-wrapper .cake-content {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .cake-token .cake-wrapper .cake-content h1 {
+    color: white;
+  }
+  .cake-token .cake-wrapper .cake-content p {
+    color: white;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info {
+    width: 100%;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info * {
+    width: 100%;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info h1 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: rgb(244, 238, 255);
+    margin-bottom: 24px;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info h1 span {
+    color: rgb(154, 106, 255);
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info p {
+    color: rgb(184, 173, 210);
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    font-size: 16px;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info .cake-info-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info .cake-info-buttons .link-aquagreen {
+    width: auto;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info .cake-info-buttons .button-aquagreen {
+    width: auto;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info .cake-info-buttons .learn-link {
+    margin-left: 10px;
+    width: fit-content;
+    color: rgb(31, 199, 212);
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-coins {
+    width: 200px;
+    height: auto;
+    align-self: flex-end;
+    position: relative;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-coins img {
+    position: absolute;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-coins #pancake-bottom-right {
+    width: 100%;
+    z-index: 0;
+    animation-name: float-Nw;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-coins #pancake-top-left {
+    width: 100%;
+    z-index: 2;
+    animation-name: float-NW;
+    animation-duration: 5s;
+    animation-delay: 0.2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-coins #pancake-top-right {
+    width: 100%;
+    z-index: 1;
+    animation-name: float-NW;
+    animation-duration: 5s;
+    animation-delay: 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-coins #cake-coin {
+    width: 100%;
+    z-index: 1;
+    animation-name: float-NW;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  .cake-token .cake-wrapper .cake-stats {
+    display: grid;
+    grid-template-areas: "circ-s total-s max-s" "market-cap burn current-emissions";
+    gap: 32px;
+    margin-top: 24px;
+  }
+  .cake-token .cake-wrapper .cake-stats div .text-subtle {
+    color: rgb(184, 173, 210);
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  .cake-token .cake-wrapper .cake-stats div .text-cake-stats {
+    color: rgb(244, 238, 255);
+    font-weight: 600;
+    line-height: 1.1;
+    font-size: 24px;
+  }
+  .cake-token .cake-wrapper .cake-stats .cake-circulating-supply {
+    grid-area: circ-s;
+  }
+  .cake-token .cake-wrapper .cake-stats .cake-supply {
+    grid-area: total-s;
+    border-left: 1px solid rgb(38, 33, 48);
+    padding: 0 15px;
+  }
+  .cake-token .cake-wrapper .cake-stats .cake-max-supply {
+    grid-area: max-s;
+    border-left: 1px solid rgb(38, 33, 48);
+    padding: 0 15px;
+  }
+  .cake-token .cake-wrapper .cake-stats .cake-cap {
+    grid-area: market-cap;
+  }
+  .cake-token .cake-wrapper .cake-stats .cake-burned {
+    grid-area: burn;
+    border-left: 1px solid rgb(38, 33, 48);
+    padding: 0 15px;
+  }
+  .cake-token .cake-wrapper .cake-stats .cake-emissions {
+    grid-area: current-emissions;
+    border-left: 1px solid rgb(38, 33, 48);
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .cake-token {
+    padding: 48px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .cake-token .cake-wrapper {
+    width: 100%;
+    max-width: 968px;
+    padding: 48px 24px;
+    padding-top: 200px;
+  }
+  .cake-token .cake-wrapper .cake-content {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .cake-token .cake-wrapper .cake-content h1 {
+    color: white;
+  }
+  .cake-token .cake-wrapper .cake-content p {
+    color: white;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info {
+    width: 100%;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info * {
+    width: 100%;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info h1 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: rgb(244, 238, 255);
+    margin-bottom: 24px;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info h1 span {
+    color: rgb(154, 106, 255);
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info p {
+    color: rgb(184, 173, 210);
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    font-size: 16px;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info .cake-info-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info .cake-info-buttons .link-aquagreen {
+    width: auto;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info .cake-info-buttons .button-aquagreen {
+    width: auto;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info .cake-info-buttons .learn-link {
+    margin-left: 10px;
+    width: fit-content;
+    color: rgb(31, 199, 212);
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-coins {
+    width: 200px;
+    height: auto;
+    align-self: flex-end;
+    position: relative;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-coins img {
+    position: absolute;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-coins #pancake-bottom-right {
+    width: 100%;
+    z-index: 0;
+    animation-name: float-Nw;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-coins #pancake-top-left {
+    width: 100%;
+    z-index: 2;
+    animation-name: float-NW;
+    animation-duration: 5s;
+    animation-delay: 0.2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-coins #pancake-top-right {
+    width: 100%;
+    z-index: 1;
+    animation-name: float-NW;
+    animation-duration: 5s;
+    animation-delay: 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-coins #cake-coin {
+    width: 100%;
+    z-index: 1;
+    animation-name: float-NW;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  .cake-token .cake-wrapper .cake-stats {
+    display: grid;
+    grid-template-areas: "circ-s total-s " "max-s market-cap" "burn current-emissions";
+    gap: 10%;
+    margin-top: 24px;
+  }
+  .cake-token .cake-wrapper .cake-stats div {
+    font-size: 100%;
+  }
+  .cake-token .cake-wrapper .cake-stats div .text-subtle {
+    color: rgb(184, 173, 210);
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 14px;
+  }
+  .cake-token .cake-wrapper .cake-stats div .text-cake-stats {
+    color: rgb(244, 238, 255);
+    font-weight: 600;
+    line-height: 1.1;
+    font-size: 20px;
+  }
+  .cake-token .cake-wrapper .cake-stats .cake-circulating-supply {
+    grid-area: circ-s;
+  }
+  .cake-token .cake-wrapper .cake-stats .cake-supply {
+    grid-area: total-s;
+    border-left: 1px solid rgb(38, 33, 48);
+    padding: 0 15px;
+  }
+  .cake-token .cake-wrapper .cake-stats .cake-max-supply {
+    grid-area: max-s;
+    border: none;
+    padding: 0;
+  }
+  .cake-token .cake-wrapper .cake-stats .cake-cap {
+    grid-area: market-cap;
+    border-left: 1px solid rgb(38, 33, 48);
+    padding: 0 15px;
+  }
+  .cake-token .cake-wrapper .cake-stats .cake-burned {
+    grid-area: burn;
+    border: none;
+    padding: 0;
+  }
+  .cake-token .cake-wrapper .cake-stats .cake-emissions {
+    grid-area: current-emissions;
+    border-left: 1px solid rgb(38, 33, 48);
+    padding: 0 15px;
+  }
+}
 /* Bottoni nel div-SWAP(a sinistra)-- */
 /* --bottone in alto a sinistra sbarrato----------------- */
 /* blocco bottoni nel div Swap--------------------------------------------*/
