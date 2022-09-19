@@ -1,10 +1,40 @@
 // Use rules
 @use "../../components/buttons/buttons";
+@use "sass:map";
 
 // Import rules
 @import "../../abstracts/mixins";
 @import "../../abstracts/colors";
 @import "../../abstracts/animations";
+
+
+// Set colori tema scuro
+$theme-dark: map.set($theme-dark, "earn", "background-gradient", #3a364a);
+$theme-dark: map.set($theme-dark, "text", "paragraph-dark", rgb(154, 106, 255));
+$theme-dark: map.set($theme-dark, "text", "header2-text", rgb(244, 238, 255));
+$theme-dark: map.set($theme-dark, "text", "header3-text", rgb(184, 173, 210));
+
+// Set colori tema chiaro
+$theme-light: map.set($theme-light, "earn", "background-gradient", linear-gradient(102deg, rgba(241,237,243,1) 100%, rgba(233,242,246,1) 100%));
+$theme-light: map.set($theme-light, "text", "paragraph-light", rgb(118, 69, 217));
+$theme-light: map.set($theme-light, "text", "header2-text", rgb(40, 13, 95));
+$theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
+
+.theme-dark {
+    --background-earn: #{map.get($theme-dark, "earn", "background-gradient")};
+    --text-paragraph: #{map.get($theme-dark, "text", "paragraph-dark")};
+    --heading-2: #{map.get($theme-dark, "text", "header2-text")};
+    --heading-3: #{map.get($theme-dark, "text", "header3-text")};
+}
+
+
+.theme-light {
+    --background-earn: #{map.get($theme-light, "earn", "background-gradient")};
+    --text-paragraph: #{map.get($theme-light, "text", "paragraph-light")};
+    --heading-2: #{map.get($theme-light, "text", "header2-text")};
+    --heading-3: #{map.get($theme-light, "text", "header3-text")};
+}
+
 
 //scrollbar
 
@@ -15,8 +45,6 @@
     color: purple;
 }
 
-
-
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 6px;
     border-radius: 6px;
@@ -26,14 +54,11 @@
 
 //end scrollbar
 
-
-
-
 .ea-earn {
     @include flex(column);
     align-items: center;
     width: 100%;
-    background: #3a364a;
+    background: var(--background-earn);
     padding-top: 120px;
     padding-bottom: 120px;
 
@@ -56,19 +81,19 @@
 
 
             h2 {
-                color: white;
+                color: var(--heading-2);
                 padding-top: 20px;
                 font-size: 40px;
                 font-weight: 600;
                 line-height: 1.1;
 
                 .ea-text-span {
-                    color: #9A6AFF;
+                    color: var(--text-paragraph);
                 }
             }
 
             h3 {
-                color: #B8ADD2;
+                color: var(--heading-3);
                 font-size: 16px;
                 font-weight: lighter;
                 padding-top: 25px;
