@@ -21,11 +21,6 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 :root {
   font-family: "Kanit", "Sans serif";
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -ms-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
-  font-smoothing: antialiased;
 }
 
 /* Bottoni nel div-SWAP(a sinistra)-- */
@@ -2528,14 +2523,24 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* text input color */
 .theme-dark {
   --fa-moon: rgb(39, 38, 44);
+  --fa-sun: rgb(39, 38, 44);
   --nav-bkground: rgb(39, 38, 44);
   --popup-bg: rgb(39, 38, 44);
+  --text-color: white;
+  --popup-modal1-bg: linear-gradient(166.77deg, rgb(59, 65, 85), rgb(58, 48, 69));
+  --label-toggle-bg: rgb(102, 97, 112);
+  --border-bottom-pp: rgb(56, 50, 65);
 }
 
 .theme-light {
-  --fa-moon: rgb(154, 111, 251);
+  --fa-moon: white;
+  --fa-sun: #f39c12;
   --nav-bkground: #fff;
   --popup-bg: #fff;
+  --text-color: rgb(8, 6, 11);
+  --popup-modal1-bg: #eeeeee;
+  --label-toggle-bg: rgb(189, 194, 196);
+  --border-bottom-pp: #d9d9d9;
 }
 
 .mobile-icon {
@@ -2673,7 +2678,7 @@ nav .flex .modal .active {
   z-index: 100;
 }
 nav .flex .modal p {
-  color: rgb(8, 6, 11);
+  color: var(--text-color);
 }
 nav .flex .modal .modal1 {
   position: fixed;
@@ -2682,10 +2687,11 @@ nav .flex .modal .modal1 {
   top: 3%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #eeeeee;
+  background-image: var(--popup-modal1-bg);
+  background-color: var(--popup-modal1-bg);
   border-radius: 30px 30px 0px 0px;
   padding: 2% 2% 2% 6%;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid --border-bottom-pp;
 }
 nav .flex .modal .modal1 .close-btn {
   cursor: pointer;
@@ -2706,7 +2712,7 @@ nav .flex .checkbox {
   position: absolute;
 }
 nav .flex .label {
-  background-color: gray;
+  background-color: var(--label-toggle-bg);
   border-radius: 50px;
   cursor: pointer;
   display: flex;
@@ -2737,7 +2743,7 @@ nav .flex .checkbox1 {
   position: absolute;
 }
 nav .flex .label1 {
-  background-color: gray;
+  background-color: var(--label-toggle-bg);
   border-radius: 50px;
   cursor: pointer;
   display: flex;
@@ -2764,10 +2770,10 @@ nav .flex .checkbox1:checked + .label1 .ball1 {
   transform: translateX(24px);
 }
 nav .flex .fa-moon {
-  color: #f39c12;
+  color: var(--fa-moon);
 }
 nav .flex .fa-sun {
-  color: white;
+  color: var(--fa-sun);
 }
 nav .flex .flex-switch {
   display: flex;
@@ -2977,6 +2983,8 @@ li {
 
 .label3 .ball3 {
   border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
   position: absolute;
   top: 2px;
   left: 2px;

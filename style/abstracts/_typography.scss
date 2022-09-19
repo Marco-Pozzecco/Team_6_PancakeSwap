@@ -16,5 +16,5 @@
 
 :root {
     font-family: 'Kanit', 'Sans serif';
-    @include css3-prefix(font-smoothing, antialiased);
+    //@include css3-prefix(font-smoothing, antialiased);
 }

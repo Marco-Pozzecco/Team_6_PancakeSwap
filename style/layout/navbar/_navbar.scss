@@ -9,23 +9,45 @@
 
 // Set colori tema scuro
 $theme-dark: map.set($theme-dark, "fa-moon", $footer-background);
+$theme-dark: map.set($theme-dark, "fa-sun", $footer-background);
 $theme-dark: map.set($theme-dark, "nav-bkground", $footer-background);
 $theme-dark: map.set($theme-dark, "popup-bg", $footer-background);
+$theme-dark: map.set($theme-dark, "text-color", white);
+$theme-dark: map.set($theme-dark, "popup-modal1-bg", $popup-gradient);
+$theme-dark: map.set($theme-dark, "label-bg", $label-toggle-bg-dk);
+$theme-dark: map.set($theme-dark, "border-bottom-pp",rgb(56,50,65));
+
 // Set colori tema chiaro
-$theme-light: map.set($theme-light, "fa-moon", $secondary-dk);
+$theme-light: map.set($theme-light, "fa-moon", white);
+$theme-light: map.set($theme-light, "fa-sun", #f39c12);
 $theme-light: map.set($theme-light, "nav-bkground", #fff); 
 $theme-light: map.set($theme-light, "popup-bg", #fff); 
+$theme-light: map.set($theme-light, "text-color", $background-color-dk);
+$theme-light: map.set($theme-light, "popup-modal1-bg", #eeeeee);
+$theme-light: map.set($theme-light, "label-bg", $label-toggle-bg);
+$theme-light: map.set($theme-light, "border-bottom-pp", #d9d9d9 );
 
 .theme-dark{
     --fa-moon: #{map-get($theme-dark , "fa-moon")};
+    --fa-sun: #{map-get($theme-dark , "fa-sun" )};
     --nav-bkground: #{map-get($theme-dark , "nav-bkground")}; 
     --popup-bg: #{map-get($theme-dark , "popup-bg")}; 
+    --text-color: #{map-get($theme-dark , "text-color")};
+    --popup-modal1-bg: #{map-get($theme-dark , "popup-modal1-bg")};
+    --label-toggle-bg: #{map-get($theme-dark , "label-bg")};
+    --border-bottom-pp: #{map-get($theme-dark , "border-bottom-pp")};
+    
 
 }
 .theme-light{ 
     --fa-moon: #{map-get($theme-light , "fa-moon")};
+    --fa-sun: #{map-get($theme-light , "fa-sun" )};
     --nav-bkground: #{map-get($theme-light , "nav-bkground")};
     --popup-bg: #{map-get($theme-light , "popup-bg")}; 
+    --text-color: #{map-get($theme-light , "text-color")};
+    --popup-modal1-bg: #{map-get($theme-light , "popup-modal1-bg")};
+    --label-toggle-bg: #{map-get($theme-light , "label-bg")};
+    --border-bottom-pp: #{map-get($theme-light , "border-bottom-pp")};
 
 }
 
@@ -163,7 +185,7 @@ nav {
                 z-index: 100;
             
             }p{
-                color: $background-color-dk;
+                color: var(--text-color);
             }
             .modal1{
                 position: fixed;
@@ -172,10 +194,11 @@ nav {
                 top: 3%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                background-color: #eeeeee;
+                background-image: var(--popup-modal1-bg);
+                background-color: var(--popup-modal1-bg);
                 border-radius: 30px 30px 0px 0px ;
                 padding: 2% 2% 2% 6%;
-                border-bottom: 1px solid #d9d9d9;
+                border-bottom: 1px solid --border-bottom-pp;
                 .close-btn{
                     cursor: pointer;
                     border: none;
@@ -199,7 +222,7 @@ nav {
         }
         
         .label {
-            background-color: gray;
+            background-color: var(--label-toggle-bg);
             border-radius: 50px;
             cursor: pointer;
             display: flex;
@@ -232,7 +255,7 @@ nav {
             position: absolute;
         }
         .label1 {
-            background-color: gray;
+            background-color: var(--label-toggle-bg);
             border-radius: 50px;
             cursor: pointer;
             display: flex;
@@ -261,10 +284,10 @@ nav {
             transform: translateX(24px);
         }
         .fa-moon {
-            color: #f39c12;
+            color: var(--fa-moon);
         }
         .fa-sun {
-            color: white;
+            color: var(--fa-sun);
         }
         
         .flex-switch{

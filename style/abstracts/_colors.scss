@@ -9,12 +9,11 @@ $tertiary-color: rgb(40,13,95); // #280D5F;
 
 $h2text-color: #9A6AFF;
 
-
-
-
 $footer-background: rgb(39, 38, 44);
 
 $btn-bg-color: rgb(31,199,212); //#1FC7D4
+
+$label-toggle-bg: rgb(189,194,196);
 
 /* text input color */ 
 $border_color: rgb(233, 234, 235);
@@ -45,15 +44,19 @@ $light-gray-dk: rgb(244, 238, 255);
 $dark-violet-dk: rgb(40, 13, 95);
 $black-dk: rgb(25, 19, 38); 
 
+$popup-gradient: linear-gradient(166.77deg, rgb(59, 65, 85), rgb(58, 48, 69));
+
 /* nav bar color */         
 $nav-bar-dk: rgb(39, 38, 44);  
 
 /* website background color */ 
 $background-color-dk: rgb(8, 6, 11);
-$bg-gradient: linear-gradient (139.73deg, rgb(49, 61, 92) 0%, rgb(61, 42, 84) 100%);
+$bg-gradient: linear-gradient(139.73deg, rgb(49, 61, 92) 0%, rgb(61, 42, 84) 100%);
 
 /* text input color */ 
 $input-color-dk:rgb(55, 47, 71);
+
+$label-toggle-bg-dk: rgb(102,97,112);
 
 
 
