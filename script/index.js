@@ -4,7 +4,9 @@ const openModalBtn = document.querySelectorAll('[data-modal-target]');
     const closeModalBtn = document.querySelectorAll('[data-close-btn]');
     const overlay = document.getElementById('overlay');
     const logo = document.getElementsByClassName('logo-section');
-    const url = "resources/svgs/logo_white.svg";
+    // const url = "/resources/svgs/logo_white.svg";
+    // const url = "../../resources/svgs/logo_white.svg";
+    const url = document.getElementById('logo1');
 
     openModalBtn.forEach(button => {
         button.addEventListener('click', () => {
@@ -41,7 +43,7 @@ const openModalBtn = document.querySelectorAll('[data-modal-target]');
 
     chk3.addEventListener("change", () => {
       document.body.classList.toggle("theme-light");
-      logo.setAttribute('img', url);
+      url.setAttribute('src', '/resources/svgs/logo_black.svg');
     });
 
     const chk = document.getElementById("chk");
