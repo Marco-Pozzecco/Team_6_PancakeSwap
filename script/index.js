@@ -1,5 +1,5 @@
 // Import statements
-import {Utilities} from 'utilities';
+// import {Utilities} from 'utilities';
 
 //open modal popup menu from navbar
 
@@ -8,8 +8,8 @@ const openModalBtn = document.querySelectorAll('[data-modal-target]');
     const overlay = document.getElementById('overlay');
     
     const url = document.getElementById('logo1');
-    let path = url.attributes[2].textContent;
-    console.log(url.attributes[2].textContent);
+    let path = url.attributes.src.value;
+    
 
     openModalBtn.forEach(button => {
         button.addEventListener('click', () => {
@@ -46,10 +46,18 @@ const openModalBtn = document.querySelectorAll('[data-modal-target]');
 
     chk3.addEventListener("change", () => {
       document.body.classList.toggle("theme-light");
-      if(path == '/resources/svgs/logo_black.svg'){
-        url.setAttribute('src', '/resources/svgs/logo_white.svg');
-      }else if(path == '/resources/svgs/logo_white.svg'){
-        url.setAttribute('src', '/resources/svgs/logo_black.svg');
+      path = '/resources/svgs/logo_black.svg';
+      
+      
+      if(path == '/resources/svgs/logo_white.svg'){
+        //url.setAttribute('src', '/resources/svgs/logo_black.svg');
+        path = '/resources/svgs/logo_black.svg';
+        console.log(path);
+        
+      }else {
+        //url.setAttribute('src', '/resources/svgs/logo_white.svg');
+        path = '/resources/svgs/logo_white.svg';
+        console.log(url.attributes.src.value);
       }
       
     });

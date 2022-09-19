@@ -329,6 +329,30 @@ nav {
 }
 //update untill now
 
+@include mq('tablet-small', 'tablet') {
+    nav{
+        .flex{
+            #money, .igZcUN{
+                display: none;
+            }
+            
+        }
+        
+    }
+    
+
+}
+
+@include mq('phone', 'phablet'){
+    nav{
+        .flex{
+            #money, .igZcUN, ul {
+                display: none;
+            }
+        }    
+    }
+}
+
 
 
 

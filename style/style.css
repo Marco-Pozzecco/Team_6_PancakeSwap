@@ -2909,6 +2909,16 @@ nav .flex #overlay.active {
   color: rgba(154, 106, 255, 0.3);
 }
 
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+  nav .flex #money, nav .flex .igZcUN {
+    display: none;
+  }
+}
+@media screen and (max-width: 640px) {
+  nav .flex #money, nav .flex .igZcUN, nav .flex ul {
+    display: none;
+  }
+}
 /* Bottoni nel div-SWAP(a sinistra)-- */
 /* --bottone in alto a sinistra sbarrato----------------- */
 /* blocco bottoni nel div Swap--------------------------------------------*/
