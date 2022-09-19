@@ -1832,6 +1832,792 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* nav bar color */
 /* website background color */
 /* text input color */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 968px) {
+  .main-banner-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+  }
+  .main-banner-container .main-banner-sub-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%); /*linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%)*/
+    height: 220px;
+    width: 100%;
+    border-radius: 24px;
+    position: relative;
+  }
+  .main-banner-container .main-banner-sub-container .mbssc { /*TITOLI + IMMAGINE*/
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+    position: absolute;
+    left: 0;
+  }
+  .main-banner-container .main-banner-sub-container .mbssc .main-banner-content-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .main-banner-container .main-banner-sub-container .banner-a {
+    z-index: 1;
+    opacity: 1;
+  }
+  .main-banner-container .main-banner-sub-container .banner-a .main-banner-content-container.banner-a1 {
+    background-color: transparent;
+  }
+  .main-banner-container .main-banner-sub-container .banner-a .main-banner-title-a {
+    color: white;
+    font-family: Kanit, sans-serif;
+  }
+  .main-banner-container .main-banner-sub-container .banner-a .mbt-a1 {
+    font-size: 24px;
+    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0)); /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text; /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
+    margin-bottom: 8px;
+  }
+  .main-banner-container .main-banner-sub-container .banner-a .mbt-a2 {
+    font-size: 40px;
+    margin-bottom: 16px;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px; /* rgba(0, 0, 0, 0.35) 0px 4px 3px*/
+  }
+  .main-banner-container .main-banner-sub-container .banner-a .main-banner-button-a {
+    color: rgb(0, 0, 0);
+    fill: rgb(0, 0, 0);
+  }
+  .main-banner-container .main-banner-sub-container .banner-a .main-banner-button-a svg {
+    width: 20px;
+  }
+  .main-banner-container .main-banner-sub-container .banner-a .bunny-container-a {
+    width: 45%;
+    height: 121.5%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 24px;
+    contain: content;
+  }
+  .main-banner-container .main-banner-sub-container .banner-a .bunny-container-a img {
+    width: 100%;
+    height: 100%;
+  }
+  .main-banner-container .main-banner-sub-container .banner-b {
+    z-index: 1;
+    opacity: 0;
+  }
+  .main-banner-container .main-banner-sub-container .banner-b .main-banner-content-container.banner-b2 {
+    background-color: transparent;
+    line-height: 1;
+  }
+  .main-banner-container .main-banner-sub-container .banner-b .main-banner-content-container.banner-b2 .main-banner-title-b {
+    color: rgb(255, 255, 255);
+    font-family: Kanit, sans-serif;
+  }
+  .main-banner-container .main-banner-sub-container .banner-b .main-banner-content-container.banner-b2 .mbt-b1 {
+    font-size: 24px;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px; /*rgba(0, 0, 0,  0.35) 0px 3px 3px*/
+    margin-bottom: 8px;
+  }
+  .main-banner-container .main-banner-sub-container .banner-b .main-banner-content-container.banner-b2 .mb-counter-lottery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 16px;
+    background: url(https://pancakeswap.finance/images/decorations/countdownBg.png) 0% 0%/100% 100%;
+    background-repeat: no-repeat;
+    padding: 0 7px 10px;
+  }
+  .main-banner-container .main-banner-sub-container .banner-b .main-banner-content-container.banner-b2 .mb-counter-lottery .mbcl-item {
+    font-weight: 600;
+    line-height: 1.1;
+    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0)); /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  .main-banner-container .main-banner-sub-container .banner-b .main-banner-content-container.banner-b2 .mb-counter-lottery .mbcli-number {
+    font-size: 40px;
+    margin: 0px 4px -4px 0px;
+  }
+  .main-banner-container .main-banner-sub-container .banner-b .main-banner-content-container.banner-b2 .mb-counter-lottery .mbcli-time {
+    font-size: 20px;
+    margin: 0px 12px 0px 0px;
+  }
+  .main-banner-container .main-banner-sub-container .banner-b .main-banner-content-container.banner-b2 .main-banner-button-b {
+    color: rgb(0, 0, 0);
+    fill: rgb(0, 0, 0);
+  }
+  .main-banner-container .main-banner-sub-container .banner-b .main-banner-content-container.banner-b2 .main-banner-button-b svg {
+    width: 20px;
+  }
+  .main-banner-container .main-banner-sub-container .banner-b .bunny-container-b {
+    width: 100%;
+    height: 120%;
+    border-radius: 24px;
+    contain: content;
+    position: absolute;
+    bottom: -2.5px;
+    right: 0;
+  }
+  .main-banner-container .main-banner-sub-container .banner-b .bunny-container-b img {
+    width: 100%;
+    height: 100%;
+  }
+  .main-banner-container .main-banner-sub-container .banner-c {
+    z-index: 1;
+    opacity: 0;
+  }
+  .main-banner-container .main-banner-sub-container .banner-c .main-banner-content-container.banner-c1 {
+    background-color: transparent;
+    line-height: 1;
+  }
+  .main-banner-container .main-banner-sub-container .banner-c .main-banner-title-c {
+    color: white;
+    font-family: Kanit, sans-serif;
+  }
+  .main-banner-container .main-banner-sub-container .banner-c .mbt-c1 {
+    font-size: 24px;
+    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0)); /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text; /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
+    margin-bottom: 8px;
+  }
+  .main-banner-container .main-banner-sub-container .banner-c .mbt-c2 {
+    font-size: 40px;
+    margin-bottom: 16px;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px; /* rgba(0, 0, 0, 0.35) 0px 4px 3px*/
+  }
+  .main-banner-container .main-banner-sub-container .banner-c .main-banner-button-c {
+    color: rgb(0, 0, 0);
+    fill: rgb(0, 0, 0);
+  }
+  .main-banner-container .main-banner-sub-container .banner-c .main-banner-button-c svg {
+    width: 20px;
+  }
+  .main-banner-container .main-banner-sub-container .banner-c .bunny-container-c {
+    height: 110%;
+    width: 25%;
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    min-width: 290px;
+  }
+  .main-banner-container .main-banner-sub-container .banner-c .bunny-container-c .bc-internalwrapper-c {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .main-banner-container .main-banner-sub-container .banner-c .bunny-container-c .bc-internalwrapper-c .bunny-container-c1 {
+    width: 100%;
+    height: 110%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 24px;
+    contain: content;
+  }
+  .main-banner-container .main-banner-sub-container .banner-c .bunny-container-c .bc-internalwrapper-c .bunny-container-c1 img {
+    width: 100%;
+    height: 100%;
+  }
+  .main-banner-container .main-banner-sub-container .banner-c .bunny-container-c .bc-internalwrapper-c .bunny-container-c2 {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 11%;
+    bottom: 13%;
+    border-radius: 24px;
+    contain: content;
+  }
+  .main-banner-container .main-banner-sub-container .banner-c .bunny-container-c .bc-internalwrapper-c .bunny-container-c2 img {
+    width: 100%;
+    height: 100%;
+  }
+  .main-banner-container .swiper-slide {
+    width: 100px;
+    height: 8px;
+    background-color: rgba(186, 235, 74, 0.174);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    contain: content;
+  }
+  .main-banner-container .swiper-slide .swiper {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+  }
+  .main-banner-container .swiper-slide .swpr-a {
+    opacity: 1;
+  }
+  .main-banner-container .swiper-slide .swpr-b {
+    opacity: 0;
+  }
+  .main-banner-container .swiper-slide .swpr-c {
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 968px) and (min-width: 576px) {
+  .main-banner-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+  }
+  .main-banner-container .main-banner-sub-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%); /*linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%)*/
+    height: 220px;
+    width: 100%;
+    border-radius: 24px;
+    position: relative;
+  }
+  .main-banner-container .main-banner-sub-container .mbssc {
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+    position: absolute;
+    left: 0;
+  }
+  .main-banner-container .main-banner-sub-container .mbssc .main-banner-content-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .main-banner-container .main-banner-sub-container .banner-a {
+    z-index: 1;
+    opacity: 1;
+  }
+  .main-banner-container .main-banner-sub-container .banner-a .main-banner-content-container.banner-a1 {
+    background-color: transparent;
+  }
+  .main-banner-container .main-banner-sub-container .banner-a .main-banner-title-a {
+    color: white;
+    font-family: Kanit, sans-serif;
+  }
+  .main-banner-container .main-banner-sub-container .banner-a .mbt-a1 {
+    font-size: 24px;
+    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0)); /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text; /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
+    margin-bottom: 8px;
+  }
+  .main-banner-container .main-banner-sub-container .banner-a .mbt-a2 {
+    font-size: 40px;
+    margin-bottom: 16px;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px; /* rgba(0, 0, 0, 0.35) 0px 4px 3px*/
+  }
+  .main-banner-container .main-banner-sub-container .banner-a .main-banner-button-a {
+    color: rgb(0, 0, 0);
+    fill: rgb(0, 0, 0);
+  }
+  .main-banner-container .main-banner-sub-container .banner-a .main-banner-button-a svg {
+    width: 20px;
+  }
+  .main-banner-container .main-banner-sub-container .banner-a .bunny-container-a {
+    width: 30%;
+    height: 120%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 24px;
+    contain: content;
+    z-index: -1;
+    flex-shrink: 1;
+  }
+  .main-banner-container .main-banner-sub-container .banner-a .bunny-container-a img {
+    width: 100%;
+    height: 100%;
+    -o-object-position: 0 8px;
+       object-position: 0 8px;
+  }
+  .main-banner-container .main-banner-sub-container .banner-b {
+    z-index: 1;
+    opacity: 0;
+  }
+  .main-banner-container .main-banner-sub-container .banner-b .main-banner-content-container.banner-b2 {
+    background-color: transparent;
+  }
+  .main-banner-container .main-banner-sub-container .banner-b .main-banner-content-container.banner-b2 .main-banner-title-b {
+    color: rgb(255, 255, 255);
+    font-family: Kanit, sans-serif;
+  }
+  .main-banner-container .main-banner-sub-container .banner-b .main-banner-content-container.banner-b2 .mbt-b1 {
+    font-size: 24px;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px; /*rgba(0, 0, 0,  0.35) 0px 3px 3px*/
+    margin-bottom: 8px;
+  }
+  .main-banner-container .main-banner-sub-container .banner-b .main-banner-content-container.banner-b2 .mb-counter-lottery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 16px;
+    background: url(https://pancakeswap.finance/images/decorations/countdownBg.png) 0% 0%/100% 100%;
+    background-repeat: no-repeat;
+    padding: 0 7px 10px;
+  }
+  .main-banner-container .main-banner-sub-container .banner-b .main-banner-content-container.banner-b2 .mb-counter-lottery .mbcl-item {
+    font-weight: 600;
+    line-height: 1.1;
+    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0)); /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  .main-banner-container .main-banner-sub-container .banner-b .main-banner-content-container.banner-b2 .mb-counter-lottery .mbcli-number {
+    font-size: 40px;
+    margin: 0px 4px -4px 0px;
+  }
+  .main-banner-container .main-banner-sub-container .banner-b .main-banner-content-container.banner-b2 .mb-counter-lottery .mbcli-time {
+    font-size: 20px;
+    margin: 0px 12px 0px 0px;
+  }
+  .main-banner-container .main-banner-sub-container .banner-b .main-banner-content-container.banner-b2 .main-banner-button-b {
+    color: rgb(0, 0, 0);
+    fill: rgb(0, 0, 0);
+  }
+  .main-banner-container .main-banner-sub-container .banner-b .main-banner-content-container.banner-b2 .main-banner-button-b svg {
+    width: 20px;
+  }
+  .main-banner-container .main-banner-sub-container .banner-b .bunny-container-b {
+    width: 27%;
+    height: 65%;
+    border-radius: 24px;
+    contain: content;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    min-width: 190px;
+  }
+  .main-banner-container .main-banner-sub-container .banner-b .bunny-container-b img {
+    width: 100%;
+    height: 100%;
+  }
+  .main-banner-container .main-banner-sub-container .banner-c {
+    z-index: 1;
+    opacity: 0;
+  }
+  .main-banner-container .main-banner-sub-container .banner-c .main-banner-content-container.banner-c1 {
+    background-color: transparent;
+  }
+  .main-banner-container .main-banner-sub-container .banner-c .main-banner-title-c {
+    color: white;
+    font-family: Kanit, sans-serif;
+    flex-shrink: 1.5;
+  }
+  .main-banner-container .main-banner-sub-container .banner-c .mbt-c1 {
+    font-size: 24px;
+    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0)); /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text; /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
+    margin-bottom: 8px;
+  }
+  .main-banner-container .main-banner-sub-container .banner-c .mbt-c2 {
+    font-size: 40px;
+    margin-bottom: 16px;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px; /* rgba(0, 0, 0, 0.35) 0px 4px 3px*/
+  }
+  .main-banner-container .main-banner-sub-container .banner-c .main-banner-button-c {
+    color: rgb(0, 0, 0);
+    fill: rgb(0, 0, 0);
+  }
+  .main-banner-container .main-banner-sub-container .banner-c .main-banner-button-c svg {
+    width: 20px;
+  }
+  .main-banner-container .main-banner-sub-container .banner-c .bunny-container-c {
+    height: 110%;
+    width: 25%;
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    min-width: 290px;
+  }
+  .main-banner-container .main-banner-sub-container .banner-c .bunny-container-c .bc-internalwrapper-c {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .main-banner-container .main-banner-sub-container .banner-c .bunny-container-c .bc-internalwrapper-c .bunny-container-c1 {
+    width: 100%;
+    height: 110%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 24px;
+    contain: content;
+  }
+  .main-banner-container .main-banner-sub-container .banner-c .bunny-container-c .bc-internalwrapper-c .bunny-container-c1 img {
+    width: 100%;
+    height: 100%;
+  }
+  .main-banner-container .main-banner-sub-container .banner-c .bunny-container-c .bc-internalwrapper-c .bunny-container-c2 {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 11%;
+    bottom: 13%;
+    border-radius: 24px;
+    contain: content;
+  }
+  .main-banner-container .main-banner-sub-container .banner-c .bunny-container-c .bc-internalwrapper-c .bunny-container-c2 img {
+    width: 100%;
+    height: 100%;
+  }
+  .main-banner-container .swiper-slide {
+    width: 100px;
+    height: 8px;
+    background-color: rgba(186, 235, 74, 0.174);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    contain: content;
+    z-index: 1;
+  }
+  .main-banner-container .swiper-slide .swiper {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+  }
+  .main-banner-container .swiper-slide .swpr-a {
+    opacity: 1;
+  }
+  .main-banner-container .swiper-slide .swpr-b {
+    opacity: 0.3;
+  }
+  .main-banner-container .swiper-slide .swpr-c {
+    opacity: 0.3;
+  }
+}
+@media screen and (max-width: 576px) {
+  .main-banner-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+  }
+  .main-banner-container .main-banner-sub-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%); /*linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%)*/
+    height: 220px;
+    width: 100%;
+    border-radius: 24px;
+    position: relative;
+  }
+  .main-banner-container .main-banner-sub-container .mbssc {
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+    position: absolute;
+    left: 0;
+  }
+  .main-banner-container .main-banner-sub-container .mbssc .main-banner-content-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .main-banner-container .main-banner-sub-container .banner-a {
+    z-index: 1;
+    opacity: 1;
+  }
+  .main-banner-container .main-banner-sub-container .banner-a .main-banner-content-container.banner-a1 {
+    background-color: transparent;
+  }
+  .main-banner-container .main-banner-sub-container .banner-a .main-banner-title-a {
+    color: white;
+    font-family: Kanit, sans-serif;
+  }
+  .main-banner-container .main-banner-sub-container .banner-a .mbt-a1 {
+    font-size: 24px;
+    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0)); /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text; /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
+    margin-bottom: 8px;
+  }
+  .main-banner-container .main-banner-sub-container .banner-a .mbt-a2 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px; /* rgba(0, 0, 0, 0.35) 0px 4px 3px*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 30%;
+    line-height: 1;
+  }
+  .main-banner-container .main-banner-sub-container .banner-a .main-banner-button-a {
+    color: rgb(0, 0, 0);
+    fill: rgb(0, 0, 0);
+  }
+  .main-banner-container .main-banner-sub-container .banner-a .main-banner-button-a svg {
+    width: 20px;
+  }
+  .main-banner-container .main-banner-sub-container .banner-a .bunny-container-a {
+    width: 40%;
+    min-width: 208px;
+    height: 120%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 24px;
+    contain: content;
+    z-index: -1;
+    flex-shrink: 1;
+  }
+  .main-banner-container .main-banner-sub-container .banner-a .bunny-container-a img {
+    width: 100%;
+    height: 100%;
+    -o-object-position: 0 8px;
+       object-position: 0 8px;
+  }
+  .main-banner-container .main-banner-sub-container .banner-b {
+    z-index: 1;
+    opacity: 0;
+  }
+  .main-banner-container .main-banner-sub-container .banner-b .main-banner-content-container.banner-b2 {
+    background-color: transparent;
+  }
+  .main-banner-container .main-banner-sub-container .banner-b .main-banner-content-container.banner-b2 .main-banner-title-b {
+    color: rgb(255, 255, 255);
+    font-family: Kanit, sans-serif;
+  }
+  .main-banner-container .main-banner-sub-container .banner-b .main-banner-content-container.banner-b2 .mbt-b1 {
+    font-size: 24px;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px; /*rgba(0, 0, 0,  0.35) 0px 3px 3px*/
+    margin-bottom: 8px;
+  }
+  .main-banner-container .main-banner-sub-container .banner-b .main-banner-content-container.banner-b2 .mb-counter-lottery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 16px;
+    background: url(https://pancakeswap.finance/images/decorations/countdownBg.png) 0% 0%/100% 100%;
+    background-repeat: no-repeat;
+    padding: 0 7px 10px;
+  }
+  .main-banner-container .main-banner-sub-container .banner-b .main-banner-content-container.banner-b2 .mb-counter-lottery .mbcl-item {
+    font-weight: 600;
+    line-height: 1.1;
+    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0)); /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  .main-banner-container .main-banner-sub-container .banner-b .main-banner-content-container.banner-b2 .mb-counter-lottery .mbcli-number {
+    font-size: 40px;
+    margin: 0px 4px -4px 0px;
+  }
+  .main-banner-container .main-banner-sub-container .banner-b .main-banner-content-container.banner-b2 .mb-counter-lottery .mbcli-time {
+    font-size: 20px;
+    margin: 0px 12px 0px 0px;
+  }
+  .main-banner-container .main-banner-sub-container .banner-b .main-banner-content-container.banner-b2 .main-banner-button-b {
+    color: rgb(0, 0, 0);
+    fill: rgb(0, 0, 0);
+  }
+  .main-banner-container .main-banner-sub-container .banner-b .main-banner-content-container.banner-b2 .main-banner-button-b svg {
+    width: 20px;
+  }
+  .main-banner-container .main-banner-sub-container .banner-b .bunny-container-b {
+    width: 27%;
+    height: 65%;
+    border-radius: 24px;
+    contain: content;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    min-width: 190px;
+  }
+  .main-banner-container .main-banner-sub-container .banner-b .bunny-container-b img {
+    width: 100%;
+    height: 100%;
+  }
+  .main-banner-container .main-banner-sub-container .banner-c {
+    z-index: 1;
+    opacity: 0;
+    contain: content;
+  }
+  .main-banner-container .main-banner-sub-container .banner-c .main-banner-content-container.banner-c1 {
+    background-color: transparent;
+  }
+  .main-banner-container .main-banner-sub-container .banner-c .main-banner-title-c {
+    color: white;
+    font-family: Kanit, sans-serif;
+    flex-shrink: 1.5;
+    line-height: 1;
+  }
+  .main-banner-container .main-banner-sub-container .banner-c .mbt-c1 {
+    font-size: 24px;
+    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0)); /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text; /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
+    margin-bottom: 8px;
+  }
+  .main-banner-container .main-banner-sub-container .banner-c .mbt-c2 {
+    font-size: 32px;
+    margin-bottom: 16px;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px; /* rgba(0, 0, 0, 0.35) 0px 4px 3px*/
+  }
+  .main-banner-container .main-banner-sub-container .banner-c .main-banner-button-c {
+    color: rgb(0, 0, 0);
+    fill: rgb(0, 0, 0);
+  }
+  .main-banner-container .main-banner-sub-container .banner-c .main-banner-button-c svg {
+    width: 20px;
+  }
+  .main-banner-container .main-banner-sub-container .banner-c .bunny-container-c {
+    height: 65%;
+    width: 40%;
+    min-width: 150px;
+    position: absolute;
+    bottom: 25%;
+    right: -15px;
+    z-index: -1;
+  }
+  .main-banner-container .main-banner-sub-container .banner-c .bunny-container-c .bc-internalwrapper-c {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .main-banner-container .main-banner-sub-container .banner-c .bunny-container-c .bc-internalwrapper-c .bunny-container-c1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 24px;
+    contain: content;
+  }
+  .main-banner-container .main-banner-sub-container .banner-c .bunny-container-c .bc-internalwrapper-c .bunny-container-c1 img {
+    width: 100%;
+    height: 100%;
+  }
+  .main-banner-container .main-banner-sub-container .banner-c .bunny-container-c .bc-internalwrapper-c .bunny-container-c2 {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 14%;
+    bottom: 20%;
+    border-radius: 24px;
+    contain: content;
+    flex-shrink: 5;
+  }
+  .main-banner-container .main-banner-sub-container .banner-c .bunny-container-c .bc-internalwrapper-c .bunny-container-c2 img {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 5;
+  }
+  .main-banner-container .swiper-slide {
+    width: 100px;
+    height: 8px;
+    background-color: rgba(186, 235, 74, 0.174);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    contain: content;
+    z-index: 1;
+  }
+  .main-banner-container .swiper-slide .swiper {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+  }
+  .main-banner-container .swiper-slide .swpr-a {
+    opacity: 1;
+  }
+  .main-banner-container .swiper-slide .swpr-b {
+    opacity: 0.3;
+  }
+  .main-banner-container .swiper-slide .swpr-c {
+    opacity: 0.3;
+  }
+}
+/* Bottoni nel div-SWAP(a sinistra)-- */
+/* --bottone in alto a sinistra sbarrato----------------- */
+/* blocco bottoni nel div Swap--------------------------------------------*/
+/* --Bottoni scelta valute BNB, CAKE, etc------------------------------------------------- */
+/* BUTTON SWITCH SMALL  --   >>>BSS<<<    Check-Box - Staked Only - (ON/OFF Button)-------------- */
+/* BOTTONE SEMI TRASPARENTE-2 (scuro) --- (HARVEST)------------------------------
+che appare nella sezione che esce dopo che si clicca su una sezione della griglia/lista in Trade → Farm---- */
+/* ----Farm → POOLS---- */
+/*WIN ..............................................*/
+/* ----WIN → PREDICTION (BETA)---- */
+/*ETICHETTE Sovrapposte*/
+/* ----WIN → LOTTERY---- */
+/* text color + "need help" */
+/* Inseriti da Clara, da rivedere: */
+/* text input color */
+/* Text color gradient */
+/* cards background color */
+/* text color  */
+/* nav bar color */
+/* website background color */
+/* text input color */
 .theme-dark {
   --fa-moon: rgb(39, 38, 44);
   --fa-sun: rgb(39, 38, 44);
