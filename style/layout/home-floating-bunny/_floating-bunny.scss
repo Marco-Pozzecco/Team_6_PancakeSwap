@@ -40,15 +40,10 @@ body {
 
 //end scrollbar
 
-
-
-
-
 .fb-floating-bunny {
 
     padding-top: 150px;
     padding-bottom: 150px;
-    // -- -- -- -- -- -- --
     @include mq('desktop');
     @include flex(column);
     position: relative;
@@ -56,627 +51,639 @@ body {
     height: auto;
     background: linear-gradient(180deg, rgba(22, 9, 49, 1) 0%, rgba(22, 9, 49, 1) 47%, rgba(19, 8, 43, 1) 65%, rgba(11, 5, 25, 1) 100%, rgba(0, 0, 0, 1) 100%);
 
-// ###########################################################################
+    // ###########################################################################
 
+    // MEDIA---> MIN 968PX <---###########################################################################
+    @media screen and (min-width: 968px) {
 
-
-
-// MEDIA---> MIN 968PX <---###########################################################################
-@media screen and (min-width: 968px) {
-
-    .main-banner-container {
-        // @include mq('laptop');
-        @include flex();
-        padding: 20px;
-        width: 1152px;
-        // background-color: rgba(0, 0, 255, 0.023);
-
-        .main-banner-sub-container {
+        .main-banner-container {
+            // @include mq('laptop');
             @include flex();
-            background: $main-banner-background-gradient;
-            /*linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%)*/
-            height: 185px;
-            width: 90%;
-            padding: 30px;
-            border-radius: 24px;
-            position: relative;
+            padding: 20px;
+            width: 1152px;
+            // background-color: rgba(0, 0, 255, 0.023);
 
-            // ---Banner che cambia-------------BANNER A--------------------------------------------------------
-
-            // .banner-a {
-            //     // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-            //     display: block;
-            //     // display: none;
-            // }
-
-            .main-banner-content-container {
-                width: 100%;
-                height: 100%;
-                // background-color: rgba(123, 202, 123, 0.199);
-                // border: 1px solid chartreuse;
-                @include flex(column);
-                justify-content: center;
-                align-items: flex-start;
-                z-index: 1;
-
-                .main-banner-title-a {
-                    color: white;
-                    font-family: Kanit, sans-serif
-                }
-
-                .mbt-a1 {
-                    font-size: 24px;
-                    background: $main-banner-orange-gradient-titles;
-                    /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
-                    -webkit-text-fill-color: transparent;
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
-                    margin-bottom: 8px;
-                }
-
-                .mbt-a2 {
-                    font-size: 40px;
-                    margin-bottom: 16px;
-                    text-shadow: $main-banner-titles-text-shadow;
-                    /* rgba(0, 0, 0, 0.35) 0px 4px 3px*/
-
-                }
-
-                .main-banner-button-a {
-                    color: $black;
-                    fill: $black;
-
-                }
-
-            }
-
-            .swiper-slide {
-                background-color: transparent;
-                width: 100px;
-                height: 8px;
-                background-color: rgba(186, 235, 74, 0.174);
-                border-radius: 10px;
-                position: absolute;
-                bottom: 15px;
+            .main-banner-sub-container {
                 @include flex();
-                contain: content;
-
-                .swiper {
-                    width: 50%;
-                    height: 8px;
-                    background-color: $white;
-                }
-
-                .swpr-a {
-                    visibility: initial;
-                }
-
-                .swpr-b {
-                    visibility: hidden;
-                }
-            }
-
-            .bunny-container-a {
-                width: 40%;
-                height: 121%;
-                // background-color: rgba(5, 5, 2, 0.34);
-                position: absolute;
+                background: $main-banner-background-gradient;
+                /*linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%)*/
+                height: 185px;
+                width: 90%;
+                padding: 30px;
                 border-radius: 24px;
-                bottom: 0;
-                right: 0;
-                z-index: 0;
-                // display: block;
-                flex-shrink: 1.5;
+                position: relative;
 
-                & img {
-                    min-width: 100%;
-                    max-width: 100%;
+                // ---Banner che cambia-------------BANNER A--------------------------------------------------------
+
+                // .banner-a {
+                //     // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                //     display: block;
+                //     // display: none;
+                // }
+
+                .main-banner-content-container {
+                    width: 100%;
                     height: 100%;
-                }
+                    // background-color: rgba(123, 202, 123, 0.199);
+                    // border: 1px solid chartreuse;
+                    @include flex(column);
+                    justify-content: center;
+                    align-items: flex-start;
+                    z-index: 1;
 
+                    .main-banner-title-a {
+                        color: white;
+                        font-family: Kanit, sans-serif
+                    }
 
-                .banner-a,
-                .bunny-container-a {
-                    display: block; //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-                    // display: none;
-                }
-
-            }
-
-            // ---Banner che cambia-------------BANNER B--------------------------------------------------------
-
-            .banner-b {
-                display: none; // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-                // display: block;
-
-
-                .main-banner-title-b {
-                    color: $white;
-                    font-family: Kanit, sans-serif
-                }
-
-                .mbt-b1 {
-                    font-size: 24px;
-                    text-shadow: $main-banner-titles-text-shadow;
-                    /*rgba(0, 0, 0,  0.35) 0px 3px 3px*/
-                    margin-bottom: 8px
-                }
-
-
-                .mb-counter-lottery {
-                    @include flex(row, center, flex-end);
-                    margin-bottom: 16px;
-                    background: url(https://pancakeswap.finance/images/decorations/countdownBg.png) 0% 0% / 100% 100%;
-                    background-repeat: no-repeat;
-                    padding: 0 7px 10px;
-
-                    .mbcl-item {
-                        // border: 1px solid red;
-                        font-weight: 600;
-                        line-height: 1.1;
+                    .mbt-a1 {
+                        font-size: 24px;
                         background: $main-banner-orange-gradient-titles;
                         /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
                         -webkit-text-fill-color: transparent;
                         background-clip: text;
                         -webkit-background-clip: text;
-                        // -- -- -- -- -- -- --
-
-
+                        /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
+                        margin-bottom: 8px;
                     }
 
-                    .mbcli-number {
-                        // background-color: rgba(128, 255, 0, 0.485);
+                    .mbt-a2 {
                         font-size: 40px;
-                        margin: 0px 4px -4px 0px;
+                        margin-bottom: 16px;
+                        text-shadow: $main-banner-titles-text-shadow;
+                        /* rgba(0, 0, 0, 0.35) 0px 4px 3px*/
 
                     }
 
-                    .mbcli-time {
-                        // background-color: rgba(235, 131, 211, 0.279);
-                        font-size: 20px;
-                        margin: 0px 12px 0px 0px;
+                    .main-banner-button-a {
+                        color: $black;
+                        fill: $black;
 
+                    }
 
+                }
 
+                .swiper-slide {
+                    background-color: transparent;
+                    width: 100px;
+                    height: 8px;
+                    background-color: rgba(186, 235, 74, 0.174);
+                    border-radius: 10px;
+                    position: absolute;
+                    bottom: 15px;
+                    @include flex();
+                    contain: content;
+
+                    .swiper {
+                        width: 50%;
+                        height: 8px;
+                        background-color: $white;
+                    }
+
+                    .swpr-a {
+                        visibility: initial;
+                    }
+
+                    .swpr-b {
+                        visibility: hidden;
                     }
                 }
-            }
 
-            .bunny-container-b {
-                width: 100%;
-                height: 120%;
-                // background-color: rgba(5, 5, 2, 0.34);
-                position: absolute;
-                border-radius: 24px;
-                bottom: -2.5px;
-                right: 0px;
-                z-index: 0;
-                /*-- -- -- --*/
-                display: none; // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-                // display: block;
+                .bunny-container-a {
+                    width: 40%;
+                    height: 121%;
+                    // background-color: rgba(5, 5, 2, 0.34);
+                    position: absolute;
+                    border-radius: 24px;
+                    bottom: 0;
+                    right: 0;
+                    z-index: 0;
+                    // display: block;
+                    flex-shrink: 1.5;
+
+                    & img {
+                        min-width: 100%;
+                        max-width: 100%;
+                        height: 100%;
+                    }
 
 
-                & img {
-                    min-width: 100%;
-                    max-width: 100%;
-                    height: 100%;
+                    .banner-a,
+                    .bunny-container-a {
+                        display: block; //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                        // display: none;
+                    }
+
+                }
+
+                // ---Banner che cambia-------------BANNER B--------------------------------------------------------
+
+                .banner-b {
+                    display: none; // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    // display: block;
+
+
+                    .main-banner-title-b {
+                        color: $white;
+                        font-family: Kanit, sans-serif
+                    }
+
+                    .mbt-b1 {
+                        font-size: 24px;
+                        text-shadow: $main-banner-titles-text-shadow;
+                        /*rgba(0, 0, 0,  0.35) 0px 3px 3px*/
+                        margin-bottom: 8px
+                    }
+
+
+                    .mb-counter-lottery {
+                        @include flex(row, center, flex-end);
+                        margin-bottom: 16px;
+                        background: url(https://pancakeswap.finance/images/decorations/countdownBg.png) 0% 0% / 100% 100%;
+                        background-repeat: no-repeat;
+                        padding: 0 7px 10px;
+
+                        .mbcl-item {
+                            // border: 1px solid red;
+                            font-weight: 600;
+                            line-height: 1.1;
+                            background: $main-banner-orange-gradient-titles;
+                            /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+                            -webkit-text-fill-color: transparent;
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                            // -- -- -- -- -- -- --
+
+
+                        }
+
+                        .mbcli-number {
+                            // background-color: rgba(128, 255, 0, 0.485);
+                            font-size: 40px;
+                            margin: 0px 4px -4px 0px;
+
+                        }
+
+                        .mbcli-time {
+                            // background-color: rgba(235, 131, 211, 0.279);
+                            font-size: 20px;
+                            margin: 0px 12px 0px 0px;
+
+
+
+                        }
+                    }
+                }
+
+                .bunny-container-b {
+                    width: 100%;
+                    height: 120%;
+                    // background-color: rgba(5, 5, 2, 0.34);
+                    position: absolute;
+                    border-radius: 24px;
+                    bottom: -2.5px;
+                    right: 0px;
+                    z-index: 0;
+                    /*-- -- -- --*/
+                    display: none; // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    // display: block;
+
+
+                    & img {
+                        min-width: 100%;
+                        max-width: 100%;
+                        height: 100%;
+                    }
                 }
             }
         }
     }
-}
 
-// MEDIA---> MAX 968PX <---##################---> MIN 576PX <---###################
+    // MEDIA---> MAX 968PX <---##################---> MIN 576PX <---###################
     @media screen and (max-width: 968px) and (min-width: 575px) {
 
-                .main-banner-container {
-                    // @include mq('laptop');
-                    @include flex();
-                    padding: 20px;
-                    width: 80%;
-                    // background-color: rgba(0, 0, 255, 0.023);
-                    position: relative;
+        .main-banner-container {
+            // @include mq('laptop');
+            @include flex();
+            padding: 20px;
+            width: 80%;
+            // background-color: rgba(0, 0, 255, 0.023);
+            position: relative;
 
-                        .main-banner-sub-container {
-                            @include flex();
-                            background: $main-banner-background-gradient; /*linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%)*/
-                            height: 220px;
-                            width: 100%;
-                            padding: 24px;
-                            border-radius: 24px;
-                            position: relative;
+            .main-banner-sub-container {
+                @include flex();
+                background: $main-banner-background-gradient;
+                /*linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%)*/
+                height: 220px;
+                width: 100%;
+                padding: 24px;
+                border-radius: 24px;
+                position: relative;
 
-        // ---Banner che cambia-------------BANNER A--------------------------------------------------------
+                // ---Banner che cambia-------------BANNER A--------------------------------------------------------
 
-                                .banner-a {
-                                    display: block;
-                                }
-
-                                .main-banner-content-container {
-                                    width: 100%;
-                                    height: 100%;
-                                    // background-color: rgba(123, 202, 123, 0.199);
-                                    // border: 1px solid chartreuse;
-                                    @include flex(column);
-                                    justify-content: center;
-                                    align-items: flex-start;
-                                    z-index: 1;
-
-                                        .main-banner-title-a {
-                                            color: white;
-                                            font-family: Kanit, sans-serif
-                                        }
-
-                                        .mbt-a1 {
-                                            font-size: 24px;
-                                            background: $main-banner-orange-gradient-titles; /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
-                                            -webkit-text-fill-color: transparent;
-                                            background-clip: text;
-                                            -webkit-background-clip: text;  /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
-                                            margin-bottom: 8px;
-                                            line-height: 1;
-                                        }
-
-                                        .mbt-a2 {
-                                            font-size: 40px;
-                                            margin-bottom: 16px;
-                                            text-shadow: $main-banner-titles-text-shadow; /* rgba(0, 0, 0, 0.35) 0px 4px 3px*/
-                                            line-height: 1;
-
-                                        }
-
-                                        .main-banner-button-a {
-                                            color: $black;
-                                            fill: $black;
-                                            width: auto;
-
-                                        }
-
-                                }
-                                .swiper-slide {
-                                    background-color: transparent;
-                                    width: 100px;
-                                    height: 8px;
-                                    background-color: rgba(186, 235, 74, 0.174);
-                                    border-radius: 10px;
-                                    position: absolute;
-                                    bottom: 15px;
-                                    @include flex();
-                                    contain: content;
-
-                                        .swiper {
-                                            width: 50%;
-                                            height: 8px;
-                                            background-color: $white;
-                                        }
-                                        .swpr-a {
-                                            visibility:initial;
-                                        }
-                                        .swpr-b {
-                                            visibility: hidden;
-                                        }
-                                }
-
-                                .bunny-container-a {
-                                    width: 30%;
-                                    height: 121%;
-                                    // background-color: rgba(5, 5, 2, 0.34);
-                                    position: absolute;
-                                    border-radius: 24px;
-                                    bottom: 0px;
-                                    right: 0px;
-                                    z-index: 0;
-                                    display: block;
-                                    flex-shrink: 1.5;
-
-
-                                        & img {
-                                            min-width: 100%;
-                                            max-width: 100%;
-                                            height: 99%;
-                                            align-items:center;
-                                            transform: translateY(11.5px);
-                                            border-radius: 0px;
-                                        }
-
-
-                                        .banner-a, .bunny-container-a {
-                                            display: block;
-                                            }
-
-                                }
-
-        // ---Banner che cambia-------------BANNER B--------------------------------------------------------
-
-                                .banner-b{
-                                    display: none;
-
-                                    .main-banner-title-b {
-                                        color: $white;
-                                        font-family: Kanit, sans-serif
-                                    }
-
-                                    .mbt-b1 {
-                                        font-size: 24px;
-                                        text-shadow: $main-banner-titles-text-shadow; /*rgba(0, 0, 0,  0.35) 0px 3px 3px*/
-                                        margin-bottom: 8px
-
-                                    }
-
-
-                                    .mb-counter-lottery {
-                                        @include flex(row, center, flex-end);
-                                        margin-bottom: 16px;
-                                        background: url(https://pancakeswap.finance/images/decorations/countdownBg.png) 0% 0% / 100% 100%;
-                                        background-repeat: no-repeat;
-                                        padding: 0 7px 10px ;
-
-                                            .mbcl-item {
-                                                // border: 1px solid red;
-                                                font-weight: 600;
-                                                line-height: 1.1;
-                                                background: $main-banner-orange-gradient-titles; /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
-                                                -webkit-text-fill-color: transparent;
-                                                background-clip: text;
-                                                -webkit-background-clip: text;
-                                                // -- -- -- -- -- -- --
-
-
-                                            }
-
-                                            .mbcli-number {
-                                                // background-color: rgba(128, 255, 0, 0.485);
-                                                font-size: 40px;
-                                                margin: 0px 4px -4px 0px;
-
-                                            }
-
-                                            .mbcli-time {
-                                                // background-color: rgba(235, 131, 211, 0.279);
-                                                font-size: 20px;
-                                                margin: 0px 12px 0px 0px;
-
-
-
-                                            }
-                                    }
-                                }
-
-                                .bunny-container-b {
-                                    width: 100%;
-                                    height: 120%;
-                                    // background-color: rgba(5, 5, 2, 0.34);
-                                    position: absolute;
-                                    border-radius: 24px;
-                                    bottom: -2.5px;
-                                    right: 0px;
-                                    z-index: 0;
-                                    /*-- -- -- --*/
-                                    display: none;
-
-                                        & img {
-                                            min-width: 100%;
-                                            max-width: 100%;
-                                            height: 100%;
-                                        }
-                                }
-                        }
+                .banner-a {
+                    display: block;
                 }
+
+                .main-banner-content-container {
+                    width: 100%;
+                    height: 100%;
+                    // background-color: rgba(123, 202, 123, 0.199);
+                    // border: 1px solid chartreuse;
+                    @include flex(column);
+                    justify-content: center;
+                    align-items: flex-start;
+                    z-index: 1;
+
+                    .main-banner-title-a {
+                        color: white;
+                        font-family: Kanit, sans-serif
+                    }
+
+                    .mbt-a1 {
+                        font-size: 24px;
+                        background: $main-banner-orange-gradient-titles;
+                        /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
+                        margin-bottom: 8px;
+                        line-height: 1;
+                    }
+
+                    .mbt-a2 {
+                        font-size: 40px;
+                        margin-bottom: 16px;
+                        text-shadow: $main-banner-titles-text-shadow;
+                        /* rgba(0, 0, 0, 0.35) 0px 4px 3px*/
+                        line-height: 1;
+
+                    }
+
+                    .main-banner-button-a {
+                        color: $black;
+                        fill: $black;
+                        width: auto;
+
+                    }
+
+                }
+
+                .swiper-slide {
+                    background-color: transparent;
+                    width: 100px;
+                    height: 8px;
+                    background-color: rgba(186, 235, 74, 0.174);
+                    border-radius: 10px;
+                    position: absolute;
+                    bottom: 15px;
+                    @include flex();
+                    contain: content;
+
+                    .swiper {
+                        width: 50%;
+                        height: 8px;
+                        background-color: $white;
+                    }
+
+                    .swpr-a {
+                        visibility: initial;
+                    }
+
+                    .swpr-b {
+                        visibility: hidden;
+                    }
+                }
+
+                .bunny-container-a {
+                    width: 30%;
+                    height: 121%;
+                    // background-color: rgba(5, 5, 2, 0.34);
+                    position: absolute;
+                    border-radius: 24px;
+                    bottom: 0px;
+                    right: 0px;
+                    z-index: 0;
+                    display: block;
+                    flex-shrink: 1.5;
+
+
+                    & img {
+                        min-width: 100%;
+                        max-width: 100%;
+                        height: 99%;
+                        align-items: center;
+                        transform: translateY(11.5px);
+                        border-radius: 0px;
+                    }
+
+
+                    .banner-a,
+                    .bunny-container-a {
+                        display: block;
+                    }
+
+                }
+
+                // ---Banner che cambia-------------BANNER B--------------------------------------------------------
+
+                .banner-b {
+                    display: none;
+
+                    .main-banner-title-b {
+                        color: $white;
+                        font-family: Kanit, sans-serif
+                    }
+
+                    .mbt-b1 {
+                        font-size: 24px;
+                        text-shadow: $main-banner-titles-text-shadow;
+                        /*rgba(0, 0, 0,  0.35) 0px 3px 3px*/
+                        margin-bottom: 8px
+                    }
+
+
+                    .mb-counter-lottery {
+                        @include flex(row, center, flex-end);
+                        margin-bottom: 16px;
+                        background: url(https://pancakeswap.finance/images/decorations/countdownBg.png) 0% 0% / 100% 100%;
+                        background-repeat: no-repeat;
+                        padding: 0 7px 10px;
+
+                        .mbcl-item {
+                            // border: 1px solid red;
+                            font-weight: 600;
+                            line-height: 1.1;
+                            background: $main-banner-orange-gradient-titles;
+                            /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+                            -webkit-text-fill-color: transparent;
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                            // -- -- -- -- -- -- --
+
+
+                        }
+
+                        .mbcli-number {
+                            // background-color: rgba(128, 255, 0, 0.485);
+                            font-size: 40px;
+                            margin: 0px 4px -4px 0px;
+
+                        }
+
+                        .mbcli-time {
+                            // background-color: rgba(235, 131, 211, 0.279);
+                            font-size: 20px;
+                            margin: 0px 12px 0px 0px;
+
+
+
+                        }
+                    }
+                }
+
+                .bunny-container-b {
+                    width: 100%;
+                    height: 120%;
+                    // background-color: rgba(5, 5, 2, 0.34);
+                    position: absolute;
+                    border-radius: 24px;
+                    bottom: -2.5px;
+                    right: 0px;
+                    z-index: 0;
+                    /*-- -- -- --*/
+                    display: none;
+
+                    & img {
+                        min-width: 100%;
+                        max-width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
 
     }
 
-// MEDIA---> MAX 590PX <---#####################################
+    // MEDIA---> MAX 590PX <---#####################################
     @media screen and (max-width: 590px) {
 
-                .main-banner-container {
-                    // @include mq('laptop');
-                    @include flex();
-                    padding: 20px;
-                    width: 100%;
-                    // background-color: rgba(0, 0, 255, 0.023);
-                    position: relative;
+        .main-banner-container {
+            // @include mq('laptop');
+            @include flex();
+            padding: 20px;
+            width: 100%;
+            // background-color: rgba(0, 0, 255, 0.023);
+            position: relative;
 
-                        .main-banner-sub-container {
-                            @include flex();
-                            background: $main-banner-background-gradient; /*linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%)*/
-                            height: 220px;
-                            width: 100%;
-                            padding: 24px;
-                            border-radius: 24px;
-                            position: relative;
+            .main-banner-sub-container {
+                @include flex();
+                background: $main-banner-background-gradient;
+                /*linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%)*/
+                height: 220px;
+                width: 100%;
+                padding: 24px;
+                border-radius: 24px;
+                position: relative;
 
-        // ---Banner che cambia-------------BANNER A--------------------------------------------------------
+                // ---Banner che cambia-------------BANNER A--------------------------------------------------------
 
-                                .banner-a {
-                                    display: block;
-                                }
-
-                                .main-banner-content-container {
-                                    width: 100%;
-                                    height: 100%;
-                                    // background-color: rgba(123, 202, 123, 0.199);
-                                    // border: 1px solid chartreuse;
-                                    @include flex(column);
-                                    justify-content: center;
-                                    align-items: flex-start;
-                                    z-index: 1;
-
-                                        .main-banner-title-a {
-                                            color: white;
-                                            font-family: Kanit, sans-serif
-                                        }
-
-                                        .mbt-a1 {
-                                            font-size: 22px;
-                                            background: $main-banner-orange-gradient-titles; /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
-                                            -webkit-text-fill-color: transparent;
-                                            background-clip: text;
-                                            -webkit-background-clip: text;  /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
-                                            margin-bottom: 8px;
-                                            line-height: 1;
-                                        }
-
-                                        .mbt-a2 {
-                                            font-size: 20px;
-                                            margin-bottom: 8px;
-                                            text-shadow: $main-banner-titles-text-shadow; /* rgba(0, 0, 0, 0.35) 0px 4px 3px*/
-                                            word-wrap: break-word;
-                                            line-height: 1;
-                                            width: 150px;
-
-                                        }
-
-                                        .main-banner-button-a {
-                                            color: $black;
-                                            fill: $black;
-                                            line-height: 1;
-
-
-                                        }
-
-                                }
-                                .swiper-slide {
-                                    background-color: transparent;
-                                    width: 100px;
-                                    height: 8px;
-                                    background-color: rgba(186, 235, 74, 0.174);
-                                    border-radius: 10px;
-                                    position: absolute;
-                                    bottom: 15px;
-                                    @include flex();
-                                    contain: content;
-
-                                        .swiper {
-                                            width: 50%;
-                                            height: 8px;
-                                            background-color: $white;
-                                        }
-                                        .swpr-a {
-                                            visibility:initial;
-                                        }
-                                        .swpr-b {
-                                            visibility: hidden;
-                                        }
-                                }
-
-                                .bunny-container-a {
-                                    width: 70%;
-                                    height: 121%;
-                                    // background-color: rgba(5, 5, 2, 0.34);
-                                    position: absolute;
-                                    border-radius: 24px;
-                                    bottom: 0px;
-                                    right: 0px;
-                                    z-index: 0;
-                                    display: block;
-                                    flex-shrink: 1.5;
-
-
-                                        & img {
-                                            min-width: 100%;
-                                            max-width: 100%;
-                                            height: 99%;
-                                            align-items:center;
-                                            transform: translateY(11.5px);
-                                            border-radius: 0px;
-                                        }
-
-
-                                        .banner-a, .bunny-container-a {
-                                            display: block;
-                                            }
-
-                                }
-
-        // ---Banner che cambia-------------BANNER B--------------------------------------------------------
-
-                                .banner-b{
-                                    display: none;
-
-                                    .main-banner-title-b {
-                                        color: $white;
-                                        font-family: Kanit, sans-serif
-                                    }
-
-                                    .mbt-b1 {
-                                        font-size: 24px;
-                                        text-shadow: $main-banner-titles-text-shadow; /*rgba(0, 0, 0,  0.35) 0px 3px 3px*/
-                                        margin-bottom: 8px
-
-                                    }
-
-
-                                    .mb-counter-lottery {
-                                        @include flex(row, center, flex-end);
-                                        margin-bottom: 16px;
-                                        background: url(https://pancakeswap.finance/images/decorations/countdownBg.png) 0% 0% / 100% 100%;
-                                        background-repeat: no-repeat;
-                                        padding: 0 7px 10px ;
-
-                                            .mbcl-item {
-                                                // border: 1px solid red;
-                                                font-weight: 600;
-                                                line-height: 1.1;
-                                                background: $main-banner-orange-gradient-titles; /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
-                                                -webkit-text-fill-color: transparent;
-                                                background-clip: text;
-                                                -webkit-background-clip: text;
-                                                // -- -- -- -- -- -- --
-
-
-                                            }
-
-                                            .mbcli-number {
-                                                // background-color: rgba(128, 255, 0, 0.485);
-                                                font-size: 40px;
-                                                margin: 0px 4px -4px 0px;
-
-                                            }
-
-                                            .mbcli-time {
-                                                // background-color: rgba(235, 131, 211, 0.279);
-                                                font-size: 20px;
-                                                margin: 0px 12px 0px 0px;
-
-
-
-                                            }
-                                    }
-                                }
-
-                                .bunny-container-b {
-                                    width: 100%;
-                                    height: 120%;
-                                    // background-color: rgba(5, 5, 2, 0.34);
-                                    position: absolute;
-                                    border-radius: 24px;
-                                    bottom: -2.5px;
-                                    right: 0px;
-                                    z-index: 0;
-                                    /*-- -- -- --*/
-                                    display: none;
-
-                                        & img {
-                                            min-width: 100%;
-                                            max-width: 100%;
-                                            height: 100%;
-                                        }
-                                }
-                        }
+                .banner-a {
+                    display: block;
                 }
+
+                .main-banner-content-container {
+                    width: 100%;
+                    height: 100%;
+                    // background-color: rgba(123, 202, 123, 0.199);
+                    // border: 1px solid chartreuse;
+                    @include flex(column);
+                    justify-content: center;
+                    align-items: flex-start;
+                    z-index: 1;
+
+                    .main-banner-title-a {
+                        color: white;
+                        font-family: Kanit, sans-serif
+                    }
+
+                    .mbt-a1 {
+                        font-size: 22px;
+                        background: $main-banner-orange-gradient-titles;
+                        /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
+                        margin-bottom: 8px;
+                        line-height: 1;
+                    }
+
+                    .mbt-a2 {
+                        font-size: 20px;
+                        margin-bottom: 8px;
+                        text-shadow: $main-banner-titles-text-shadow;
+                        /* rgba(0, 0, 0, 0.35) 0px 4px 3px*/
+                        word-wrap: break-word;
+                        line-height: 1;
+                        width: 150px;
+
+                    }
+
+                    .main-banner-button-a {
+                        color: $black;
+                        fill: $black;
+                        line-height: 1;
+
+
+                    }
+
+                }
+
+                .swiper-slide {
+                    background-color: transparent;
+                    width: 100px;
+                    height: 8px;
+                    background-color: rgba(186, 235, 74, 0.174);
+                    border-radius: 10px;
+                    position: absolute;
+                    bottom: 15px;
+                    @include flex();
+                    contain: content;
+
+                    .swiper {
+                        width: 50%;
+                        height: 8px;
+                        background-color: $white;
+                    }
+
+                    .swpr-a {
+                        visibility: initial;
+                    }
+
+                    .swpr-b {
+                        visibility: hidden;
+                    }
+                }
+
+                .bunny-container-a {
+                    width: 70%;
+                    height: 121%;
+                    // background-color: rgba(5, 5, 2, 0.34);
+                    position: absolute;
+                    border-radius: 24px;
+                    bottom: 0px;
+                    right: 0px;
+                    z-index: 0;
+                    display: block;
+                    flex-shrink: 1.5;
+
+
+                    & img {
+                        min-width: 100%;
+                        max-width: 100%;
+                        height: 99%;
+                        align-items: center;
+                        transform: translateY(11.5px);
+                        border-radius: 0px;
+                    }
+
+
+                    .banner-a,
+                    .bunny-container-a {
+                        display: block;
+                    }
+
+                }
+
+                // ---Banner che cambia-------------BANNER B--------------------------------------------------------
+
+                .banner-b {
+                    display: none;
+
+                    .main-banner-title-b {
+                        color: $white;
+                        font-family: Kanit, sans-serif
+                    }
+
+                    .mbt-b1 {
+                        font-size: 24px;
+                        text-shadow: $main-banner-titles-text-shadow;
+                        /*rgba(0, 0, 0,  0.35) 0px 3px 3px*/
+                        margin-bottom: 8px
+                    }
+
+
+                    .mb-counter-lottery {
+                        @include flex(row, center, flex-end);
+                        margin-bottom: 16px;
+                        background: url(https://pancakeswap.finance/images/decorations/countdownBg.png) 0% 0% / 100% 100%;
+                        background-repeat: no-repeat;
+                        padding: 0 7px 10px;
+
+                        .mbcl-item {
+                            // border: 1px solid red;
+                            font-weight: 600;
+                            line-height: 1.1;
+                            background: $main-banner-orange-gradient-titles;
+                            /*linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0))*/
+                            -webkit-text-fill-color: transparent;
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                            // -- -- -- -- -- -- --
+
+
+                        }
+
+                        .mbcli-number {
+                            // background-color: rgba(128, 255, 0, 0.485);
+                            font-size: 40px;
+                            margin: 0px 4px -4px 0px;
+
+                        }
+
+                        .mbcli-time {
+                            // background-color: rgba(235, 131, 211, 0.279);
+                            font-size: 20px;
+                            margin: 0px 12px 0px 0px;
+
+
+
+                        }
+                    }
+                }
+
+                .bunny-container-b {
+                    width: 100%;
+                    height: 120%;
+                    // background-color: rgba(5, 5, 2, 0.34);
+                    position: absolute;
+                    border-radius: 24px;
+                    bottom: -2.5px;
+                    right: 0px;
+                    z-index: 0;
+                    /*-- -- -- --*/
+                    display: none;
+
+                    & img {
+                        min-width: 100%;
+                        max-width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
 
     }
 
-
-
-// #####################################################################
-
+    // #####################################################################
 
     .fb-wrapper {
         color: $h2text-color;
         max-width: 1200px;
-        padding: 24px;
+        padding-top: 24px;
         @include flex(row, center);
         position: relative;
         z-index: 2;
@@ -691,8 +698,8 @@ body {
 
             h2 {
                 padding-top: 20px;
-                font-size: 65px;
-                font-weight: 100;
+                font-size: 64px;
+                font-weight: 600;
                 line-height: 1.1;
             }
 
@@ -784,33 +791,147 @@ body {
 
 }
 
-@include mq("laptop"){
-    .fb-wrapper{
-        flex-direction: column;
+@include mq("laptop") {
+    .fb-floating-bunny {
+        .fb-wrapper {
+            @include flex(column-reverse, center);
+
+            .fb-contents-section {
+                width: 100%;
+            }
+
+            .fb-img-section {
+                align-self: flex-end;
+                right: 0;
+                min-width: 10px;
+                max-width: 150px;
+
+                img {
+                    padding-bottom: 130px;
+                    width: 20%;
+                }
+            }
+        }
+    }
 }
+
+@include mq("tablet") {
+    .fb-floating-bunny {
+        .fb-wrapper {
+            @include flex(column-reverse, center);
+
+            .fb-contents-section {
+                width: 100%;
+            }
+
+            .fb-img-section {
+                align-self: flex-end;
+                right: 0;
+                min-width: 10px;
+                max-width: 150px;
+
+                img {
+                    padding-bottom: 80px;
+                    width: 20%;
+                }
+            }
+        }
+    }
 }
-@include mq("tablet"){
-    .fb-wrapper{
-        flex-direction: column;
-}
-}
-@include mq("tablet-small"){
-    .fb-wrapper{
-        flex-direction: column;
-}
-}
-@include mq("phablet"){
-    .fb-wrapper{
-        flex-direction: column;
-}
-}
-@include mq("phone-wide"){
-    .fb-wrapper{
-        flex-direction: column;
-}
-}
-@include mq("phone"){
-    .fb-wrapper{
-        flex-direction: column;
-}
-}
+
+    @include mq("tablet-small") {
+        .fb-floating-bunny {
+            .fb-wrapper {
+                @include flex(column-reverse, center);
+
+                .fb-contents-section {
+                    width: 100%;
+                }
+
+                .fb-img-section {
+                    align-self: flex-end;
+                    right: 0;
+                    min-width: 10px;
+                    max-width: 150px;
+
+                    img {
+                        padding-bottom: 80px;
+                        width: 20%;
+                    }
+                }
+            }
+        }
+    }
+
+        @include mq("phablet") {
+            .fb-floating-bunny {
+                .fb-wrapper {
+                    @include flex(column-reverse, center);
+
+                    .fb-contents-section {
+                        width: 100%;
+                    }
+
+                    .fb-img-section {
+                        align-self: flex-end;
+                        right: 0;
+                        min-width: 10px;
+                        max-width: 150px;
+
+                        img {
+                            padding-bottom: 80px;
+                            width: 20%;
+                        }
+                    }
+                }
+            }
+        }
+
+            @include mq("phone-wide") {
+                .fb-floating-bunny {
+                    .fb-wrapper {
+                        @include flex(column-reverse, center);
+
+                        .fb-contents-section {
+                            width: 100%;
+                        }
+
+                        .fb-img-section {
+                            align-self: flex-end;
+                            right: 0;
+                            min-width: 10px;
+                            max-width: 150px;
+
+                            img {
+                                padding-bottom: 80px;
+                                width: 20%;
+                            }
+                        }
+                    }
+                }
+            }
+
+                @include mq("phone") {
+                    .fb-floating-bunny {
+                        .fb-wrapper {
+                            @include flex(column-reverse, center);
+
+                            .fb-contents-section {
+                                width: 100%;
+                            }
+
+                            .fb-img-section {
+                                align-self: flex-end;
+                                right: 0;
+                                min-width: 10px;
+                                max-width: 150px;
+
+                                img {
+                                    padding-bottom: 80px;
+                                    width: 20%;
+                                }
+                            }
+                        }
+                    }
+                }
+                
