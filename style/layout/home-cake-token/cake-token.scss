@@ -7,8 +7,40 @@
 @import "../../abstracts/colors";
 @import "../../abstracts/animations";
 
+// Set colori tema scuro
+$theme-dark: map.set($theme-dark, 'cake-coin', 'background', rgb(8, 6, 11));
+$theme-dark: map.set($theme-dark, "text", "paragraph-title", rgb(184, 173, 210));
+$theme-dark: map.set($theme-dark, 'text', 'paragraph-text', rgb(244, 238, 255));
+$theme-dark: map.set($theme-dark, "text", "header2-text", rgb(244, 238, 255));
+$theme-dark: map.set($theme-dark, "text", "span-text", rgb(118, 69, 217));
+
+
+// Set colori tema chiaro
+$theme-light: map.set($theme-light, 'cake-coin', 'background', rgb(250, 249, 250));
+$theme-light: map.set($theme-light, "text", "paragraph-title", rgb(122, 110, 170));
+$theme-light: map.set($theme-light, 'text', 'paragraph-text', rgb(40, 13, 95));
+$theme-light: map.set($theme-light, "text", "header2-text", rgb(40, 13, 95));
+$theme-light: map.set($theme-light, "text", "span-text", rgb(154, 106, 255));
+
+.theme-dark {
+    --background-color: #{map.get($theme-dark, 'cake-coin', 'background')};
+    --text-subtle-color: #{map.get($theme-dark, "text", "paragraph-title")};
+    --text-cake-stats-color: #{map.get($theme-dark, "text", "paragraph-text")};
+    --heading-2: #{map.get($theme-dark, "text", "header2-text")};
+    --span-text: #{map.get($theme-dark, "text", "span-text")};
+}
+
+
+.theme-light {
+    --background-color: #{map.get($theme-light, 'cake-coin', 'background')};
+    --text-subtle-color: #{map.get($theme-light, "text", "paragraph-title")};
+    --text-cake-stats-color: #{map.get($theme-light, "text", "paragraph-text")};
+    --heading-2: #{map.get($theme-light, "text", "header2-text")};
+    --span-text: #{map.get($theme-light, "text", "span-text")};
+}
+
 .cake-token {
-    background-color: #08060b;
+    background-color: var(--background-color);
 }
 
 
@@ -27,11 +59,11 @@
             @include flex();
 
             h1 {
-                color: white;
+                color: var(--heading-2);
             }
 
             p {
-                color: white;
+                color: var(--heading-2);
             }
 
             .cake-info {
@@ -46,16 +78,16 @@
                     font-size: 40px;
                     font-weight: 600;
                     line-height: 1.1;
-                    color: rgb(244, 238, 255);
+                    color: var(--heading-2);
                     margin-bottom: 24px;
 
                     span {
-                        color: rgb(154, 106, 255);
+                        color: var(--span-text);
                     }
                 }
 
                 p {
-                    color: rgb(184, 173, 210);
+                    color: var(--text-subtle-color);
                     font-weight: 400;
                     line-height: 1.5;
                     margin-bottom: 24px;
@@ -131,14 +163,14 @@
             div {
 
                 .text-subtle {
-                    color: rgb(184, 173, 210);
+                    color: var(--text-subtle-color);
                     font-weight: 400;
                     line-height: 1.5;
                     font-size: 16px;
                 }
 
                 .text-cake-stats {
-                    color: rgb(244, 238, 255);
+                    color: var(--text-cake-stats-color);
                     font-weight: 600;
                     line-height: 1.1;
                     font-size: 24px;
@@ -201,14 +233,6 @@
                 position: relative;
                 @include flex(column-reverse);
     
-                h1 {
-                    color: white;
-                }
-    
-                p {
-                    color: white;
-                }
-    
                 .cake-info {
                     width: 100%;
                     
@@ -221,16 +245,13 @@
                         font-size: 40px;
                         font-weight: 600;
                         line-height: 1.1;
-                        color: rgb(244, 238, 255);
+
                         margin-bottom: 24px;
-    
-                        span {
-                            color: rgb(154, 106, 255);
-                        }
+
                     }
     
                     p {
-                        color: rgb(184, 173, 210);
+
                         font-weight: 400;
                         line-height: 1.5;
                         margin-bottom: 24px;
@@ -307,14 +328,14 @@
                 div {
     
                     .text-subtle {
-                        color: rgb(184, 173, 210);
+
                         font-weight: 400;
                         line-height: 1.5;
                         font-size: 16px;
                     }
     
                     .text-cake-stats {
-                        color: rgb(244, 238, 255);
+
                         font-weight: 600;
                         line-height: 1.1;
                         font-size: 24px;
@@ -378,14 +399,6 @@
                 position: relative;
                 @include flex(column-reverse);
     
-                h1 {
-                    color: white;
-                }
-    
-                p {
-                    color: white;
-                }
-    
                 .cake-info {
                     width: 100%;
                     
@@ -398,16 +411,13 @@
                         font-size: 32px;
                         font-weight: 600;
                         line-height: 1.1;
-                        color: rgb(244, 238, 255);
+
                         margin-bottom: 24px;
-    
-                        span {
-                            color: rgb(154, 106, 255);
-                        }
+
                     }
     
                     p {
-                        color: rgb(184, 173, 210);
+
                         font-weight: 400;
                         line-height: 1.5;
                         margin-bottom: 24px;
@@ -486,14 +496,14 @@
                     font-size: 100%;
 
                     .text-subtle {
-                        color: rgb(184, 173, 210);
+
                         font-weight: 400;
                         line-height: 1.5;
                         font-size: 14px;
                     }
     
                     .text-cake-stats {
-                        color: rgb(244, 238, 255);
+
                         font-weight: 600;
                         line-height: 1.1;
                         font-size: 20px;
