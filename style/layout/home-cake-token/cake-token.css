@@ -23,6 +23,15 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* ----WIN → PREDICTION (BETA)---- */
 /*ETICHETTE Sovrapposte*/
 /* ----WIN → LOTTERY---- */
+/* text color + "need help" */
+/* Inseriti da Clara, da rivedere: */
+/* text input color */
+/* Text color gradient */
+/* cards background color */
+/* text color  */
+/* nav bar color */
+/* website background color */
+/* text input color */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -45,7 +54,7 @@ button {
   font-size: 16px;
   padding: 0 24px;
   border-radius: 16px;
-  height: 1;
+  line-height: 1;
   cursor: pointer;
 }
 button:hover {
@@ -69,6 +78,26 @@ button:hover {
   font-weight: 600; /*600*/
 }
 .link-aquagreen .button-aquagreen:active {
+  transform: translateY(2px);
+}
+
+/* -------BOTTONE POPUP NAVBAR----------- */
+.link-popup-navbar {
+  text-decoration: none;
+}
+.link-popup-navbar .btn-popup-navbar-unselected {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: rgb(239, 244, 245);
+  color: rgb(31, 199, 212);
+  height: 32px;
+  font-size: 16px; /*16px*/
+  font-weight: 600; /*600*/
+}
+.link-popup-navbar .btn-popup-navbar-unselected:active {
   transform: translateY(2px);
 }
 
@@ -613,6 +642,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   padding: 48px 24px;
 }
 .cake-token .cake-wrapper .cake-content {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -625,7 +655,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   color: white;
 }
 .cake-token .cake-wrapper .cake-content .cake-info {
-  width: calc(100% - 400px);
+  width: 60%;
 }
 .cake-token .cake-wrapper .cake-content .cake-info * {
   width: 420px;
@@ -670,9 +700,11 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   font-size: 16px;
 }
 .cake-token .cake-wrapper .cake-content .cake-coins {
-  width: 400px;
-  height: 400px;
+  flex-basis: 40%;
+  flex-shrink: 1;
+  flex-grow: 1;
   position: relative;
+  top: 0;
 }
 .cake-token .cake-wrapper .cake-content .cake-coins img {
   position: absolute;
@@ -776,7 +808,4 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   grid-area: current-emissions;
   border-left: 1px solid rgb(38, 33, 48);
   padding: 0 15px;
-}
-.cake-token .cake-wrapper .cake-stats p {
-  color: white;
 }/*# sourceMappingURL=cake-token.css.map */
