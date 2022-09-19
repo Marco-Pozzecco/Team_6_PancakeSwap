@@ -1,10 +1,35 @@
 // Use rules
 @use "../../components/buttons/buttons";
+@use "sass:map";
 
 // Import rules
 @import "../../abstracts/mixins";
 @import "../../abstracts/colors";
 @import "../../abstracts/animations";
+
+// Set colori tema scuro
+$theme-dark: map.set($theme-dark, "floating-bunny", "background-gradient", linear-gradient(180deg, rgba(22, 9, 49, 1) 0%, rgba(22, 9, 49, 1) 47%, rgba(19, 8, 43, 1) 65%, rgba(11, 5, 25, 1) 100%, rgba(0, 0, 0, 1) 100%));
+$theme-dark: map.set($theme-dark, "text", "paragraph-dark", rgb(154, 106, 255));
+$theme-dark: map.set($theme-dark, "text", "header2-text", rgb(244, 238, 255));
+
+// Set colori tema chiaro
+$theme-light: map.set($theme-light, "floating-bunny", "background-gradient", linear-gradient(102deg, rgba(231,252,255,1) 100%, rgba(240,243,255,1) 100%));
+$theme-light: map.set($theme-light, "text", "paragraph-light", rgb(122, 110, 170));
+$theme-light: map.set($theme-light, "text", "header2-text", rgb(40, 13, 95));
+
+.theme-dark {
+    --background-floating-bunny: #{map.get($theme-dark, "floating-bunny", "background-gradient")};
+    --text-paragraph: #{map.get($theme-dark, "text", "paragraph-dark")};
+    --heading-2: #{map.get($theme-dark, "text", "header2-text")};
+}
+
+
+.theme-light {
+    --background-floating-bunny: #{map.get($theme-light, "floating-bunny", "background-gradient")};
+    --text-paragraph: #{map.get($theme-light, "text", "paragraph-light")};
+    --heading-2: #{map.get($theme-light, "text", "header2-text")};
+}
+
 
 
 * {
@@ -12,8 +37,6 @@
     margin: 0;
     padding: 0;
 }
-
-
 
 body {
     width: 100%;
@@ -28,8 +51,6 @@ body {
     background: #000000;
     color: purple;
 }
-
-
 
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 6px;
@@ -49,7 +70,7 @@ body {
     position: relative;
     width: 100%;
     height: auto;
-    background: linear-gradient(180deg, rgba(22, 9, 49, 1) 0%, rgba(22, 9, 49, 1) 47%, rgba(19, 8, 43, 1) 65%, rgba(11, 5, 25, 1) 100%, rgba(0, 0, 0, 1) 100%);
+    background: var(--background-floating-bunny);
 
 // #########################################################################################################################
 
@@ -58,7 +79,7 @@ body {
 
 
     .fb-wrapper {
-        color: $h2text-color;
+        color: var(--text-paragraph);
         max-width: 1200px;
         padding-top: 24px;
         @include flex(row, center);
@@ -81,7 +102,7 @@ body {
             }
 
             h3 {
-                color: white;
+                color: var(--heading-2);
                 font-size: 18px;
                 padding-top: 20px;
             }

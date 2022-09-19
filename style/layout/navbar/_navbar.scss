@@ -6,8 +6,6 @@
 @import "../../abstracts/mixins";
 @import "../../abstracts/colors";
 
-//da fare
-//footer larghezza 
 
 // Set colori tema scuro
 $theme-dark: map.set($theme-dark, "fa-moon", $footer-background);
@@ -18,7 +16,7 @@ $theme-light: map.set($theme-light, "nav-bkground", #fff);
 
 .theme-dark{
     --fa-moon: #{map-get($theme-dark , "fa-moon")};
-    --nav-bkground: #{map-get($theme-dark , "nav-bkground")};
+    --nav-bkground: #{map-get($theme-dark , "nav-bkground")}; 
 
 }
 .theme-light{ 
@@ -69,14 +67,13 @@ $theme-light: map.set($theme-light, "nav-bkground", #fff);
 }
 nav {
     @include flex(row, space-between, center);
-    background-color: white;
-    //background-color: var(--nav-bkground);
+    background-color: var(--nav-bkground);
     width: 100%;
     height: 8vh;
     padding: 0 8px;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 99;
     border-bottom: 1px solid $border_color;
     .flex{
         @include flex(center);
@@ -135,13 +132,11 @@ nav {
                 color: rgb(154, 106, 255, 30%);
             }
         }
-        .btn-navbar{
-            .button-aquagreen{
-                // width: 127px;
-                // height: 32px;
-                margin: 2px 4px 4px 0px;
-                padding: 0px 16px;
-            }
+        .button-aquagreen{
+            width: 149px;
+            height: 32px;
+            margin: 2px 4px 4px 0px;
+            padding: 0px 16px;
         }
         .modal{
             position: fixed;

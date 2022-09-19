@@ -33,3 +33,17 @@ const openModalBtn = document.querySelectorAll('[data-modal-target]');
         modal.classList.remove('active')
         overlay.classList.remove('active')
     }
+
+    //change theme color
+    const chk3 = document.getElementById("chk3");
+
+    chk3.addEventListener("change", () => {
+      document.body.classList.toggle("theme-light");
+    });
+
+    const chk = document.getElementById("chk");
+
+    chk.addEventListener("change", () => {
+      document.body.classList.toggle("theme-light");
+        
+    });
