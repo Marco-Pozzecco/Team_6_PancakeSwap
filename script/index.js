@@ -50,6 +50,8 @@ const openModalBtn = document.querySelectorAll('[data-modal-target]');
 
     //change bg toggle color
     const chk1 = document.getElementById("chk1");
+    //const label1 = document.getElementsByClassName('label1');
     chk1.addEventListener("change", ()=> {
-        
+        document.getElementsByClassName('label1').style.backgroundColor = "green";
+
     })
