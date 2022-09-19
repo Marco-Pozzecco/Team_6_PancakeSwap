@@ -6,8 +6,6 @@
 @import "../../abstracts/mixins";
 @import "../../abstracts/colors";
 
-//da fare
-//footer larghezza 
 
 // Set colori tema scuro
 $theme-dark: map.set($theme-dark, "fa-moon", $footer-background);
@@ -76,7 +74,7 @@ nav {
     padding: 0 8px;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 99;
     border-bottom: 1px solid $border_color;
     .flex{
         @include flex(center);

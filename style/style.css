@@ -105,6 +105,7 @@ button:hover {
   height: 48px;
   font-size: 16px; /*16px*/
   font-weight: 600; /*600*/
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
 }
 .link-aquagreen .button-aquagreen:active {
   transform: translateY(2px);
@@ -2470,7 +2471,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* text input color */
 .theme-dark {
   --fa-moon: rgb(39, 38, 44);
-  --nav-bkground: #000;
+  --nav-bkground: rgb(39, 38, 44);
 }
 
 .theme-light {
@@ -2519,6 +2520,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: white;
+  /* background-color: var(--nav-bkground); */
   width: 100%;
   height: 8vh;
   padding: 0 8px;
@@ -2586,9 +2588,11 @@ nav .flex .btn-gear i {
 nav .flex .btn-gear:hover {
   color: rgba(154, 106, 255, 0.3);
 }
-nav .flex .btn-navbar .button-aquagreen {
+nav .flex .button-aquagreen {
+  width: 149px;
+  height: 32px;
   margin: 2px 4px 4px 0px;
-  padding: 0px 16px;
+  padding: 0px 17px;
 }
 nav .flex .modal {
   position: fixed;
@@ -2882,17 +2886,17 @@ li {
 }
 
 .label3 {
-  background-color: rgb(189, 194, 196);
-  border-radius: 50px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 5px;
-  position: relative;
-  height: 22px;
-  width: 40px;
-  transform: scale(1.5);
+  background-color: gray;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1); 
 }
 
 .label3 .ball3 {
@@ -2919,8 +2923,8 @@ li {
   color: #f39c12;
 }
 
-.btn-footer .button-aquagreen {
-  width: 137px;
+.bottom-footer-2 .button-aquagreen {
+  width: 149px;
   height: 32px;
 }
 
