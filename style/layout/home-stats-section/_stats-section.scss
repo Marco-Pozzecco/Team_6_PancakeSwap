@@ -2,11 +2,61 @@
 
 // Use rules
 @use "../../components/buttons/buttons";
+@use "sass:map";
+
 
 // Import rules
 @import "../../abstracts/mixins";
 @import "../../abstracts/colors";
 @import "../../abstracts/animations";
+
+// rgb(39, 38, 44)
+
+// Set colori tema scuro
+$theme-dark: map.set($theme-dark, "stat-section", "background-gradient",  background linear-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%));
+$theme-dark: map.set($theme-dark, "stat-section-card", "background-color", rgb(255, 255, 255));
+$theme-dark: map.set($theme-dark, "text", "paragraph-dark", rgb(154, 106, 255));
+$theme-dark: map.set($theme-dark, "text", "header2-text", rgb(244, 238, 255));
+$theme-dark: map.set($theme-dark, "text", "header3-text", rgb(184, 173, 210));
+
+
+// Set colori tema chiaro
+$theme-light: map.set($theme-light, "stat-section", "background-gradient", linear-gradient(180deg,#fff 22% , #d7caec 100%));
+$theme-light: map.set($theme-light, "stat-section-card", "background-color",  rgb(39, 38, 44));
+$theme-light: map.set($theme-light, "text", "paragraph-light", rgb(122, 110, 170));
+$theme-light: map.set($theme-light, "text", "header2-text", rgb(40, 13, 95));
+$theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
+
+
+.theme-dark {
+    --background-stat-section: #{map.get($theme-dark, "stat-section", "background-gradient")};
+    --background-stat-section: #{map.get($theme-dark,  "stat-section-card", "background-color")};
+
+    --text-paragraph: #{map.get($theme-dark, "text", "paragraph-dark")};
+    --heading-2: #{map.get($theme-dark, "text", "header2-text")};
+    --heading-3: #{map.get($theme-dark, "text", "header3-text")};
+
+}
+
+
+.theme-light {
+    --background-stat-section: #{map.get($theme-light, "stat-section", "background-gradient")};
+    --background-stat-section: #{map.get($theme-light, "stat-section", "background-gradient")};
+
+    --text-paragraph: #{map.get($theme-light, "text", "paragraph-light")};
+    --heading-2: #{map.get($theme-light, "text", "header2-text")};
+    --heading-3: #{map.get($theme-light, "text", "header3-text")};
+
+    
+}
+
+
+
+
+
+
+
+
 
 * {
     box-sizing: border-box;
@@ -173,7 +223,7 @@
         width: 100%;
         height: auto;
         // padding: 48px 0;
-        background: $background-color-stats-section;
+        background: var(--background-stat-section);
     
             .wrapper-stat {
                 @include flex(column);
@@ -188,34 +238,39 @@
                         margin: 0 0 24px;
                     }
     
-                    h2 {
+                    & h2 {
                         font-size: 40px;
                         font-weight: 600;
                         line-height: 1.1;
-                        color:  $card-dist-title;
+                        color:  var(--heading-2);
                     }
     
-                    h2:nth-child(3) {
-                        margin-bottom: 32px
+                    & h2:nth-child(3) {
+                        margin-bottom: 32px;
+                        color:  var(--heading-2);
+
                     }
     
                     .description-stat-sec {
                         font-size: 16px;
-                        color: $dist-texts;
+
                     }
     
                     .dst1 {
                         font-weight: 400;
+                        color: var(--heading-3);
                     }
     
                     .dst2 {
                         vertical-align: baseline;
                         margin-bottom: 10px;
+                        color: var(--heading-3);
                     }
     
                     .dst3 {
                         font-weight: 600;
-                        margin-bottom: 32px
+                        margin-bottom: 32px;
+                        color: var(--heading-3);
                     }
     
                     .card-container-dst {
@@ -224,7 +279,9 @@
                         // flex-wrap: wrap;
     
                             .card-dst {
-                                background-color: $background-color-cards; // veder se usare questo o no,è l originale e risulta un po chiaro.
+                                // background-color: $background-color-cards; // veder se usare questo o no,è l originale e risulta un po chiaro.
+                                background: var(--background-stat-section);
+
                                 @include flex(column);
                                 padding: 24px;
                                 margin-right: 16px;
@@ -265,10 +322,12 @@
                                                 font-size: 40px;
                                                 font-weight: 600;
                                                 line-height: 1.1;
+                                                color:  var(--heading-2);
                                             }
     
-                                            & .cdta {
-                                                color: $card-dist-title;
+                                            .cdta {
+                                                color: var(--heading-2);
+
                                             }
     
                                             & .cdtb {

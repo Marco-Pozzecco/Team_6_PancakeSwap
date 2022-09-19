@@ -1436,6 +1436,22 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* nav bar color */
 /* website background color */
 /* text input color */
+.theme-dark {
+  --background-stat-section: background linear-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%);
+  --background-stat-section: rgb(255, 255, 255);
+  --text-paragraph: rgb(154, 106, 255);
+  --heading-2: rgb(244, 238, 255);
+  --heading-3: rgb(184, 173, 210);
+}
+
+.theme-light {
+  --background-stat-section: linear-gradient(180deg, #fff 22%, #d7caec 100%);
+  --background-stat-section: linear-gradient(180deg, #fff 22%, #d7caec 100%);
+  --text-paragraph: rgb(122, 110, 170);
+  --heading-2: rgb(40, 13, 95);
+  --heading-3: rgb(122, 110, 170);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -1446,7 +1462,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   .stat-section {
     width: 100%;
     height: auto;
-    background: linear-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%);
+    background: var(--background-stat-section);
   }
   .stat-section .wrapper-stat {
     display: flex;
@@ -1467,25 +1483,28 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     font-size: 40px;
     font-weight: 600;
     line-height: 1.1;
-    color: rgb(244, 238, 255);
+    color: var(--heading-2);
   }
   .stat-section .wrapper-stat h2:nth-child(3) {
     margin-bottom: 32px;
+    color: var(--heading-2);
   }
   .stat-section .wrapper-stat .description-stat-sec {
     font-size: 16px;
-    color: rgb(184, 173, 210);
   }
   .stat-section .wrapper-stat .dst1 {
     font-weight: 400;
+    color: var(--heading-3);
   }
   .stat-section .wrapper-stat .dst2 {
     vertical-align: baseline;
     margin-bottom: 10px;
+    color: var(--heading-3);
   }
   .stat-section .wrapper-stat .dst3 {
     font-weight: 600;
     margin-bottom: 32px;
+    color: var(--heading-3);
   }
   .stat-section .wrapper-stat .card-container-dst {
     display: flex;
@@ -1494,7 +1513,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     align-items: center;
   }
   .stat-section .wrapper-stat .card-container-dst .card-dst {
-    background-color: #27262c;
+    background: var(--background-stat-section);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1532,9 +1551,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     font-size: 40px;
     font-weight: 600;
     line-height: 1.1;
+    color: var(--heading-2);
   }
   .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdta {
-    color: rgb(244, 238, 255);
+    color: var(--heading-2);
   }
   .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb {
     margin-bottom: 24px;
@@ -4226,7 +4246,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   padding-bottom: 120px;
 }
 .ea-earn .ea-wrapper {
-  width: 50%;
+  width: 56%;
   padding-bottom: 100px;
   max-width: 1200px;
   height: 100%;
@@ -4238,8 +4258,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 .ea-earn .ea-wrapper .ea-contents-section {
   text-align: left;
-  width: 55%;
-  flex: 1 1 50%;
+  width: 100%;
   max-width: 500px;
 }
 .ea-earn .ea-wrapper .ea-contents-section h2 {
@@ -4275,10 +4294,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 .ea-earn .ea-wrapper .ea-img-section {
   position: relative;
   height: 100%;
-  width: 45%;
-  flex: 1 1 50%;
+  width: 100%;
   max-width: 380px;
   min-width: 300px;
+  flex-shrink: 2;
 }
 .ea-earn .ea-wrapper .ea-img-section .ea-goldencoin {
   position: absolute;
@@ -4336,7 +4355,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 
 .earn-bottom-banner-main-container {
-  width: 1200px;
+  max-width: 1200px;
   height: 128px;
   font-family: Kanit, sans-serif;
 }
@@ -4553,31 +4572,6 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     width: 20%;
   }
 }
-/* Bottoni nel div-SWAP(a sinistra)-- */
-/* --bottone in alto a sinistra sbarrato----------------- */
-/* blocco bottoni nel div Swap--------------------------------------------*/
-/* --Bottoni scelta valute BNB, CAKE, etc------------------------------------------------- */
-/* BUTTON SWITCH SMALL  --   >>>BSS<<<    Check-Box - Staked Only - (ON/OFF Button)-------------- */
-/* BOTTONE SEMI TRASPARENTE-2 (scuro) --- (HARVEST)------------------------------
-che appare nella sezione che esce dopo che si clicca su una sezione della griglia/lista in Trade → Farm---- */
-/* ----Farm → POOLS---- */
-/*WIN ..............................................*/
-/* ----WIN → PREDICTION (BETA)---- */
-/*ETICHETTE Sovrapposte*/
-/* ----WIN → LOTTERY---- */
-/* text color + "need help" */
-/* Inseriti da Clara, da rivedere: */
-/* text input color */
-/* Text color gradient */
-/* cards background color */
-/* text color  */
-/* nav bar color */
-/* website background color */
-/* text input color */
-body {
-  background-color: red;
-}
-
 /* Bottoni nel div-SWAP(a sinistra)-- */
 /* --bottone in alto a sinistra sbarrato----------------- */
 /* blocco bottoni nel div Swap--------------------------------------------*/
