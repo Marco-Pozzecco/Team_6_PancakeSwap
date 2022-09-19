@@ -3,6 +3,8 @@
 const openModalBtn = document.querySelectorAll('[data-modal-target]');
     const closeModalBtn = document.querySelectorAll('[data-close-btn]');
     const overlay = document.getElementById('overlay');
+    const logo = document.getElementsByClassName('logo-section');
+    const url = "resources/svgs/logo_white.svg";
 
     openModalBtn.forEach(button => {
         button.addEventListener('click', () => {
@@ -39,6 +41,7 @@ const openModalBtn = document.querySelectorAll('[data-modal-target]');
 
     chk3.addEventListener("change", () => {
       document.body.classList.toggle("theme-light");
+      logo.setAttribute('img', url);
     });
 
     const chk = document.getElementById("chk");
@@ -48,10 +51,4 @@ const openModalBtn = document.querySelectorAll('[data-modal-target]');
         
     });
 
-    //change bg toggle color
-    const chk1 = document.getElementById("chk1");
-    //const label1 = document.getElementsByClassName('label1');
-    chk1.addEventListener("change", ()=> {
-        document.getElementsByClassName('label1').style.backgroundColor = "green";
-
-    })
+    

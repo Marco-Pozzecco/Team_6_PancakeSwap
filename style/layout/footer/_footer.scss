@@ -156,21 +156,24 @@ footer{
 }
 
 .label3 .ball3 {
-	//background-color: #fff;
+	background-color: #fff;
 	border-radius: 50%;
-    -moz-border-radius:50%;
-    -webkit-border-radius:50%;
+    // -moz-border-radius:50%;
+    // -webkit-border-radius:50%;
 	position: absolute;
+    height: 22px;
+    width: 22px;
+    top: 2px;
 	left: 2px;
 	transform: translateX(0px);
 	transition: transform 0.2s linear;
 }
-.circle-toggle{
-    border: 2px solid white;
-    height: 26px;
-    width: 26px;
+// .circle-toggle{
+//     border: 2px solid white;
+//     height: 26px;
+//     width: 26px;
 
- }
+//  }
 
 .checkbx3:checked + .label3 .ball3 {
 	transform: translateX(24px);
