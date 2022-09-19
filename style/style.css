@@ -1969,12 +1969,12 @@ nav .flex .button-aquagreen {
   padding: 0px 16px;
 }
 nav .flex .modal {
-  position: fixed;
+  position: absolute;
   width: 400px;
   height: 400px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%);
   transition: 200ms ease-in-out;
   background-color: var(--popup-bg);
   border-radius: 0 0 30px 30px;
@@ -1982,11 +1982,13 @@ nav .flex .modal {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  z-index: 100;
+  z-index: 999;
+  opacity: 0;
 }
 nav .flex .modal .active {
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%);
   z-index: 100;
+  opacity: 1;
 }
 nav .flex .modal p {
   color: var(--text-color);
@@ -2076,6 +2078,9 @@ nav .flex .label1 .ball1 {
   width: 22px;
   transform: translateX(0px);
   transition: transform 0.2s linear;
+}
+nav .flex .checkbox1:checked + .label1 {
+  background-color: rgb(60, 207, 170);
 }
 nav .flex .checkbox1:checked + .label1 .ball1 {
   transform: translateX(24px);
@@ -2293,19 +2298,15 @@ li {
 }
 
 .label3 .ball3 {
+  background-color: #fff;
   border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
   position: absolute;
+  height: 22px;
+  width: 22px;
+  top: 2px;
   left: 2px;
   transform: translateX(0px);
   transition: transform 0.2s linear;
-}
-
-.circle-toggle {
-  border: 2px solid white;
-  height: 26px;
-  width: 26px;
 }
 
 .checkbx3:checked + .label3 .ball3 {

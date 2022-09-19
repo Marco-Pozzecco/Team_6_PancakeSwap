@@ -165,12 +165,12 @@ nav {
             padding: 0px 16px;
         }
         .modal{
-            position: fixed;
+            position: absolute;
             width: 400px;
             height: 400px;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%);
             transition: 200ms ease-in-out;
             background-color: var(--popup-bg);
             border-radius: 0 0 30px 30px;
@@ -178,11 +178,13 @@ nav {
             display: flex;   
             flex-direction: column;
             justify-content: space-around;
-            z-index: 100;
+            z-index: 999;
+            opacity: 0;
             
             .active{
-                transform: translate(-50%, -50%) scale(1);
+                transform: translate(-50%, -50%);
                 z-index: 100;
+                opacity: 1;
             
             }p{
                 color: var(--text-color);
@@ -249,7 +251,8 @@ nav {
         }
         .checkbox:checked + .label .ball {
             transform: translateX(24px);
-        }
+         }
+
         .checkbox1 {
             opacity: 0;
             position: absolute;
@@ -280,8 +283,11 @@ nav {
             transition: transform 0.2s linear;
             
         }
-        .checkbox1:checked + .label1 .ball1 {
-            transform: translateX(24px);
+        .checkbox1:checked + .label1 {
+            background-color: rgb(60, 207, 170);
+            .ball1 {
+                transform: translateX(24px);   
+            }
         }
         .fa-moon {
             color: var(--fa-moon);
