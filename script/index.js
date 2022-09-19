@@ -1,3 +1,6 @@
+// Import statements
+import {Utilities} from 'utilities';
+
 //open modal popup menu from navbar
 
 const openModalBtn = document.querySelectorAll('[data-modal-target]');
