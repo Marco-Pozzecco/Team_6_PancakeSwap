@@ -7,7 +7,7 @@
 @import "../../abstracts/variables";
 
 //set dark theme colors
-$theme-dark: map.set($theme-dark, "fa-moon", $secondary-dk);
+$theme-dark: map.set($theme-dark, "fa-moon", $secondary-dk); 
 $theme-dark: map.set($theme-dark, "fa-sun", $footer-background);
 // Set colori tema chiaro
 $theme-light: map.set($theme-light, "fa-moon", $footer-background);
@@ -59,14 +59,14 @@ i{
 
 footer{
     width: 100%;
-    height: 80vh;
-    padding: 56px 80px 32px;
+    height: 411px;
+    padding: 56px 40px 32px 40px;
     background-color: $footer-background;
   
 }
 
 .main-footer{
- @include flex(row, space-between, flex-start);
+ @include flex(row, space-around, flex-start);
  margin-bottom: 32px;
     h3{
         color: #fff;
@@ -94,14 +94,14 @@ footer{
 }
 
 .flex2{
-    @include flex(row, space-between, center);
+    @include flex(row, space-around, center);
     
 }
 #hover:hover{
         width: 54px;
 }
 
-.bottom-footer ul{
+.bottom-footer ul{ 
     @include flex(row, flex-start, center);
     padding: 0px 0px 32px 0px;
     
@@ -144,7 +144,7 @@ footer{
     position: relative;
     height: 26px;
     width: 50px;
-    transform: scale(1);
+    transform: scale(1); 
 }
 
 .label3 .ball3 {
@@ -164,10 +164,10 @@ footer{
 }
 
 .fa-moon {
-	color: white;
+	color: var(--fa-moon);
 }
 .fa-sun {
-	color: #f39c12;
+	color: var(--fa-sun);
 }
 
 

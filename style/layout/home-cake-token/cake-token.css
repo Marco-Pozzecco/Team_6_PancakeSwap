@@ -643,6 +643,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   padding: 48px 24px;
 }
 .cake-token .cake-wrapper .cake-content {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -655,7 +656,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   color: white;
 }
 .cake-token .cake-wrapper .cake-content .cake-info {
-  width: calc(100% - 400px);
+  width: 60%;
 }
 .cake-token .cake-wrapper .cake-content .cake-info * {
   width: 420px;
@@ -700,9 +701,11 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   font-size: 16px;
 }
 .cake-token .cake-wrapper .cake-content .cake-coins {
-  width: 400px;
-  height: 400px;
+  flex-basis: 40%;
+  flex-shrink: 1;
+  flex-grow: 1;
   position: relative;
+  top: 0;
 }
 .cake-token .cake-wrapper .cake-content .cake-coins img {
   position: absolute;
@@ -806,9 +809,4 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   grid-area: current-emissions;
   border-left: 1px solid rgb(38, 33, 48);
   padding: 0 15px;
-
-}
-.cake-token .cake-wrapper .cake-stats p {
-  color: white;
-
 }/*# sourceMappingURL=cake-token.css.map */

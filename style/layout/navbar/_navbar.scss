@@ -18,7 +18,7 @@ $theme-light: map.set($theme-light, "nav-bkground", #fff);
 
 .theme-dark{
     --fa-moon: #{map-get($theme-dark , "fa-moon")};
-    --nav-bkground: #{map-get($theme-dark , "nav-bkground")};
+    --nav-bkground: #{map-get($theme-dark , "nav-bkground")}; 
 
 }
 .theme-light{ 
