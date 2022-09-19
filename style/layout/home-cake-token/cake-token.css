@@ -1,0 +1,1171 @@
+@charset "UTF-8";
+/* Bottoni nel div-SWAP(a sinistra)-- */
+/* --bottone in alto a sinistra sbarrato----------------- */
+/* blocco bottoni nel div Swap--------------------------------------------*/
+/* --Bottoni scelta valute BNB, CAKE, etc------------------------------------------------- */
+/* BUTTON SWITCH SMALL  --   >>>BSS<<<    Check-Box - Staked Only - (ON/OFF Button)-------------- */
+/* BOTTONE SEMI TRASPARENTE-2 (scuro) --- (HARVEST)------------------------------
+che appare nella sezione che esce dopo che si clicca su una sezione della griglia/lista in Trade → Farm---- */
+/* ----Farm → POOLS---- */
+/*WIN ..............................................*/
+/* ----WIN → PREDICTION (BETA)---- */
+/*ETICHETTE Sovrapposte*/
+/* ----WIN → LOTTERY---- */
+/* Bottoni nel div-SWAP(a sinistra)-- */
+/* --bottone in alto a sinistra sbarrato----------------- */
+/* blocco bottoni nel div Swap--------------------------------------------*/
+/* --Bottoni scelta valute BNB, CAKE, etc------------------------------------------------- */
+/* BUTTON SWITCH SMALL  --   >>>BSS<<<    Check-Box - Staked Only - (ON/OFF Button)-------------- */
+/* BOTTONE SEMI TRASPARENTE-2 (scuro) --- (HARVEST)------------------------------
+che appare nella sezione che esce dopo che si clicca su una sezione della griglia/lista in Trade → Farm---- */
+/* ----Farm → POOLS---- */
+/*WIN ..............................................*/
+/* ----WIN → PREDICTION (BETA)---- */
+/*ETICHETTE Sovrapposte*/
+/* ----WIN → LOTTERY---- */
+/* text color + "need help" */
+/* Inseriti da Clara, da rivedere: */
+/* text input color */
+/* Text color gradient */
+/* cards background color */
+/* text color  */
+/* nav bar color */
+/* website background color */
+/* text input color */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.linea {
+  height: 1px;
+  width: 90%;
+  background-color: white;
+}
+
+.linea-corta {
+  height: 1px;
+  width: 50%;
+  background-color: white;
+}
+
+button {
+  font-size: 16px;
+  padding: 0 24px;
+  border-radius: 16px;
+  line-height: 1;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.65;
+}
+
+/* -------BOTTONE VERDE ACQUA----------- */
+.link-aquagreen {
+  text-decoration: none;
+}
+.link-aquagreen .button-aquagreen {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(31, 199, 212); /* rgb(31, 199, 212)*/
+  border: none;
+  color: white; /* white*/
+  height: 48px;
+  font-size: 16px; /*16px*/
+  font-weight: 600; /*600*/
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+}
+.link-aquagreen .button-aquagreen:active {
+  transform: translateY(2px);
+}
+
+/* -------BOTTONE POPUP NAVBAR----------- */
+.link-popup-navbar {
+  text-decoration: none;
+}
+.link-popup-navbar .btn-popup-navbar-unselected {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: rgb(239, 244, 245);
+  color: rgb(31, 199, 212);
+  height: 32px;
+  font-size: 16px; /*16px*/
+  font-weight: 600; /*600*/
+}
+.link-popup-navbar:active {
+  transform: translateY(2px);
+}
+
+/* ------BOTTONE CON SOLO IN BORDO------- */
+.button-onlyborder {
+  background-color: transparent; /*transparent*/
+  color: rgb(31, 199, 212); /* rgb(31, 199, 212)*/
+  border: 2px solid rgb(31, 199, 212); /* 2px solid  rgb(31, 199, 212)*/
+  height: 48px; /**/
+  font-size: 16px; /*16px*/
+  font-weight: 600; /*600*/
+}
+.button-onlyborder:active {
+  transform: translateY(1px);
+}
+
+/* ---BOTTONE HWMY DEL GRAFICO(Hour,Week,Month,Year)---------- */
+.div-hwmy {
+  background-color: rgb(53, 53, 71); /*rgb(53, 53, 71)*/
+  border: 1px solid rgb(82, 75, 99); /*1px solid   rgb(82, 75, 99)*/
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+}
+.div-hwmy .button-hwmy {
+  background-color: rgb(53, 53, 71); /* transparent*/
+  color: white; /* white*/
+  border: none; /*none*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  font-weight: 600; /*600*/
+}
+.div-hwmy .button-hwmy:active {
+  transform: translateY(2px);
+}
+.div-hwmy .button-hwmy:first-child {
+  background-color: rgb(31, 199, 212); /**/
+}
+
+.button-1W, .button-1M, .button-1Y {
+  background-color: transparent; /**/
+  color: white; /**/
+}
+
+/* ---BOTTONE SEMI TRASPARENTE-------------------- */
+.button-semitransparent {
+  background-color: rgba(31, 200, 212, 0.65); /*rgba(31, 200, 212, 0.65)*/
+  color: white; /*white*/
+  border: none; /*none*/
+  height: 32px; /**/
+  font-weight: 600; /*600*/
+  padding: 4px 8px; /**/
+  border-radius: 6px; /**/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --BOTTONE QUADRATO TRASPARENTE (per convertire , ampliare, etc..)--------- */
+.button-converter {
+  background-color: transparent; /* transparent*/
+  color: rgb(31, 199, 212); /*rgb(31, 199, 212)*/
+  border: none; /*none*/
+  width: 48px; /**/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px; /*16px*/
+}
+.button-converter:active {
+  transform: translateY(2px);
+}
+
+/* Bottoni nel div-SWAP(a sinistra)-- */
+/* --bottone in alto a sinistra sbarrato----------------- */
+.button-won-graph {
+  background-color: transparent; /* transparent*/
+  color: rgb(184, 173, 210); /*rgb(184, 173, 210)*/
+  border: none; /**/
+  text-decoration: line-through; /**/
+  width: 32px; /**/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.button-won-graph:hover {
+  opacity: 0.65;
+}
+.button-won-graph:active {
+  transform: translateY(2px);
+}
+
+/* blocco bottoni nel div Swap--------------------------------------------*/
+/* "DIV" dei 3 bottoni  in alto a destara[〇〇〇] */
+.swap-box-3b {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+.swap-box-3b .button-sb1, .swap-box-3b .button-sb2, .swap-box-3b .button-sb3 {
+  background-color: transparent; /*transparent*/
+  color: rgb(184, 173, 210); /* rgb(184, 173, 210)*/
+  border: none; /*none*/
+  border-radius: 50%; /**/
+  padding: 0 17px; /**/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px; /**/
+  height: 32px;
+  padding: 0;
+}
+.swap-box-3b .button-sb1:hover, .swap-box-3b .button-sb1:hover, .swap-box-3b .button-sb1:hover, .swap-box-3b .button-sb2:hover, .swap-box-3b .button-sb2:hover, .swap-box-3b .button-sb2:hover, .swap-box-3b .button-sb3:hover, .swap-box-3b .button-sb3:hover, .swap-box-3b .button-sb3:hover {
+  opacity: 0.65;
+}
+.swap-box-3b .button-sb1:active, .swap-box-3b .button-sb2:active, .swap-box-3b .button-sb3:active {
+  transform: translateY(2px);
+}
+
+/* --Bottoni scelta valute BNB, CAKE, etc------------------------------------------------- */
+.currency-btn {
+  background-color: transparent; /*transparent*/
+  font-size: 16px; /*16px*/
+  font-weight: 600; /*600*/
+  height: 32px;
+  padding: 0 0.5rem;
+  border: none; /*none*/
+}
+.currency-btn:hover {
+  opacity: 0.65;
+}
+.currency-btn:active {
+  transform: translateY(2px);
+}
+.currency-btn .currency-btn-content-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white; /*white*/
+}
+
+/* --Bottone rotondo semi-trasparente per convertire----- */
+.button-converter-smt {
+  background-color: rgb(55, 47, 71); /*rgb(55, 47, 71)*/
+  box-shadow: rgba(0, 0, 0, 0.1) 0px -2px 0px inset; /*rgb(0 0 0 / 10%) 0px -2px 0px inset*/
+  color: rgb(31, 199, 212); /*rgb(31, 199, 212)*/
+  border: none; /*none*/
+  padding: 11px 14px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-converter-smt:hover {
+  background-color: rgb(31, 199, 212); /**/
+  color: rgb(255, 255, 255); /**/
+}
+.button-converter-smt:active {
+  transform: translateY(2px);
+}
+.button-converter-smt .hover-arrow {
+  display: none; /**/
+}
+
+/* ---BOTTONI TRADE LIMIT - MARKET......................... */
+/* Bottone nel container LIMIT, il terzo, price market */
+.btn-limit-market {
+  background-color: transparent; /*transparent*/
+  color: rgb(102, 97, 113); /*rgb(102, 97, 113)*/
+  border: 1px solid rgb(102, 97, 113); /* 1px solid rgb(102, 97, 113)*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: 20px;
+  cursor: not-allowed;
+  font-weight: 600; /**/
+  font-size: 12px; /*12px*/
+}
+.btn-limit-market > svg {
+  margin-right: 0.5rem;
+}
+
+/*Bottone: FAKE SWITCH. -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+che si trova sotto al div Limit = V2 e V1(old)
+「 presente con un effetto diverso anche nella pagina: Earn → Farms.
+(Questo non ha l effetto switch--- */
+.box-button-fake-switch-big {
+  background-color: rgb(55, 47, 71); /* rgb(55, 47, 71)*/
+  border: 1px solid rgb(38, 33, 48); /*1px solid rgb(38, 33, 48)*/
+  border-radius: 16px; /**/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px; /*16px*/
+  font-weight: 600; /*600*/
+  padding: 0.2px;
+}
+.box-button-fake-switch-big .button-fake-switch-big {
+  background-color: rgb(184, 173, 210); /*rgb(184, 173, 210)*/
+  color: none; /*rgb(39, 38, 44)*/
+  border: none; /*none*/
+  padding: 0 16px;
+  font-weight: 600; /*600*/
+  height: 32px;
+}
+.box-button-fake-switch-big .button-fake-switch-big:active {
+  transform: translateY(2px);
+}
+.box-button-fake-switch-big .link-fake-switch-big {
+  text-decoration: none; /**/
+  color: rgb(184, 173, 210); /* rgb(184, 173, 210)*/
+  padding: 0 16px;
+  font-size: 16px; /*16px*/
+  font-weight: 600; /*600*/
+}
+.box-button-fake-switch-big .link-fake-switch-big:hover {
+  opacity: 0.65;
+}
+.box-button-fake-switch-big .link-fake-switch-big:active {
+  transform: translateY(2px);
+}
+
+/* ---Bottoni scelta per visualizzazione a Griglia o a Lista-------------- */
+.box-buttons-grid-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-buttons-grid-list .btn-grid-view {
+  background-color: transparent; /*transparent*/
+  fill: rgb(102, 97, 113); /* rgb(102, 97, 113)*/
+  border: none; /*none*/
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+}
+.box-buttons-grid-list .btn-grid-view:active {
+  transform: translateY(2px);
+}
+.box-buttons-grid-list .btn-list-view {
+  background-color: transparent;
+  fill: rgb(31, 199, 212); /*rgb(31, 199, 212)*/ /*cambiare il colore nell svg nell HTML*/
+  border: none; /*none*/
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+}
+.box-buttons-grid-list .btn-list-view:active {
+  transform: translateY(2px);
+}
+
+/* BUTTON SWITCH SMALL  -- Check-Box - Staked Only - (ON/OFF Button) */
+.main-box-button-switch-small {
+  background-color: transparent; /*transparent*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  /* ---HOVER----- */
+  /* ---HOVER----- */
+  /* ---HOVER----- */
+  /* ---HOVER----- */
+}
+.main-box-button-switch-small .box-button-switch-small {
+  background-color: rgb(55, 47, 71); /*rgb(55, 47, 71)*/
+  padding: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 20px;
+  width: 36px;
+  border-radius: 24px;
+}
+.main-box-button-switch-small .box-button-switch-small .on-off-dot {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(39, 38, 44); /*rgb(39, 38, 44)*/
+  border-radius: 50%;
+  contain: content;
+  height: 100%;
+  width: 50%;
+}
+.main-box-button-switch-small .box-button-switch-small .on-off-dot .on-off-input-check {
+  visibility: hidden;
+  position: absolute;
+}
+.main-box-button-switch-small .box-button-switch-small:hover > .on-off-dot {
+  border: 1px solid rgb(172, 34, 172); /* 1px solid rgb(172, 34, 172)*/
+  box-shadow: 0px 0px 0px 3px rgba(211, 108, 211, 0.4); /**/
+}
+.main-box-button-switch-small .box-button-switch-small:hover > .on-off-dot {
+  border: 1px solid rgb(172, 34, 172); /*1px solid rgb(172, 34, 172)*/
+  box-shadow: 0px 0px 0px 3px rgba(211, 108, 211, 0.4); /**/
+}
+.main-box-button-switch-small .box-button-switch-small:active {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgb(31, 199, 212); /*rgb(31, 199, 212)*/
+}
+.main-box-button-switch-small .box-button-switch-small-text {
+  color: white; /*white*/
+  margin: 0 0 0 8px;
+  font-size: 16px; /**/
+  font-weight: 600; /**/
+}
+
+/* -- BOTTONE SWITCH BIG --- con effetto switch originale-- */
+.box-button-switch-big {
+  background-color: rgb(55, 47, 71); /*rgb(55, 47, 71)*/
+  border: 1px solid rgb(38, 33, 48); /* 1px solid rgb(38, 33, 48)*/
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px; /*16px*/
+  font-weight: 600; /*600*/
+}
+.box-button-switch-big .button-switch-big {
+  background-color: rgb(184, 173, 210); /*rgb(184, 173, 210)*/
+  color: rgb(39, 38, 44); /* rgb(39, 38, 44)*/
+  border: none; /*none*/
+  padding: 0 16px;
+  height: 32px;
+}
+.box-button-switch-big .button-switch-big:active {
+  transform: translateY(2px);
+}
+.box-button-switch-big .link-switch-big {
+  text-decoration: none;
+  color: rgb(39, 38, 44); /*rgb(39, 38, 44)*/
+  padding: 0 12px;
+  font-size: 16px; /*16px*/
+  font-weight: 600; /*600*/
+}
+.box-button-switch-big .link-switch-big:hover {
+  opacity: 0.65;
+}
+.box-button-switch-big .link-switch-big:active {
+  transform: translateY(2px);
+}
+.box-button-switch-big .lsb2 {
+  color: rgb(184, 173, 210); /*rgb(184, 173, 210)*/
+}
+
+/* BOTTONE SEMI TRASPARENTE-2 --- (HARVEST)
+che appare nella sezione che esce dopo che si clicca su una sezione della griglia/lista in Trade → Farm---- */
+.button-semi-trasp-dark {
+  background-color: rgb(60, 55, 66); /*rgb(60, 55, 66)*/
+  border: 1px solid rgb(60, 55, 66); /*1px solid rgb(60, 55, 66)*/
+  color: rgb(102, 97, 113); /*rgb(102, 97, 113)*/
+  cursor: not-allowed;
+  height: 48px;
+  font-size: 16px; /*16px*/
+  font-weight: 600; /*600*/
+}
+.button-semi-trasp-dark:hover {
+  opacity: initial;
+}
+
+/* ----Farm → POOLS---- */
+/* --Bottone per tornare in alto, all inizio della lista ------------------------- */
+.to-top-button {
+  background-color: transparent; /*transparent*/
+  color: rgb(31, 199, 212); /*rgb(31, 199, 212)*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px; /*16px*/
+  font-weight: 600; /*600*/
+  letter-spacing: 0.05rem;
+  height: 48px;
+  padding: 0 24px;
+  border: none; /**/
+}
+.to-top-button:hover {
+  opacity: 0.65;
+}
+
+/*WIN ..............................................*/
+/* ----WIN → TRADING COMPETITION---- */
+/*--BOTTONI ETICHETTE -------*/
+.button-label {
+  background-color: rgb(56, 50, 65); /*rgb(56, 50, 65)*/
+  color: rgb(184, 173, 210); /* rgb(184, 173, 210)*/
+  border: none; /*none*/
+  border-radius: 16px 16px 0 0;
+  padding: 8px;
+}
+.button-label .button-label:hover {
+  opacity: unset;
+}
+
+.initial-btn-lbl {
+  background-color: rgb(56, 50, 65); /*rgb(184, 173, 210)*/
+  color: rgb(184, 173, 210); /* rgb(39, 38, 44)*/
+}
+
+/*BOTTONE DROPDOWN DETAILS TRASPARENTE*/
+.button-dropdown-trsp {
+  color: rgb(31, 199, 212); /*rgb(31, 199, 212)*/
+  font-size: 16px; /*16px*/
+  font-weight: 600; /*600*/
+  padding: 0 24px;
+  height: 48px;
+  background-color: transparent; /**/
+  border: none; /**/
+}
+.button-dropdown-trsp:hover {
+  opacity: 0.65;
+}
+.button-dropdown-trsp:active {
+  transform: translateY(2px);
+}
+
+.bddt2 {
+  display: none;
+}
+
+/* ----WIN → PREDICTION (BETA)---- */
+/*ETICHETTE Sovrapposte*/
+.box-labels-overlap {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  position: relative;
+}
+.box-labels-overlap .button-label-overlap {
+  background-color: rgb(39, 38, 44); /**/
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 24px 24px 0 0;
+  height: 48px;
+  color: white; /**/
+  font-size: 16px; /**/
+  font-weight: 600; /**/
+}
+.box-labels-overlap .button-label-overlap:first-child {
+  z-index: 1;
+  position: absolute;
+}
+.box-labels-overlap .button-label-overlap:hover {
+  opacity: inherit;
+}
+.box-labels-overlap .button-label-overlap .blol-icon {
+  margin-right: 10px;
+}
+.box-labels-overlap .blol-1 {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+}
+.box-labels-overlap .blol-2 {
+  position: absolute;
+  z-index: 0;
+  margin-left: 100px;
+  background-color: rgb(55, 47, 71); /**/
+  opacity: 0.65;
+}
+
+/* ----WIN → LOTTERY---- */
+.ticket-button {
+  background: linear-gradient(#7645d9 0%, rgb(69, 42, 122) 100%); /*linear-gradient(#7645d9 0%, rgb(69, 42, 122) 100%)*/
+  border: none; /*none*/
+  color: white; /*white*/
+  letter-spacing: 0.05rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px; /*16px*/
+  font-weight: 600; /*600*/
+  height: 48px;
+  width: 240px;
+}
+
+/* Bottoni nel div-SWAP(a sinistra)-- */
+/* --bottone in alto a sinistra sbarrato----------------- */
+/* blocco bottoni nel div Swap--------------------------------------------*/
+/* --Bottoni scelta valute BNB, CAKE, etc------------------------------------------------- */
+/* BUTTON SWITCH SMALL  --   >>>BSS<<<    Check-Box - Staked Only - (ON/OFF Button)-------------- */
+/* BOTTONE SEMI TRASPARENTE-2 (scuro) --- (HARVEST)------------------------------
+che appare nella sezione che esce dopo che si clicca su una sezione della griglia/lista in Trade → Farm---- */
+/* ----Farm → POOLS---- */
+/*WIN ..............................................*/
+/* ----WIN → PREDICTION (BETA)---- */
+/*ETICHETTE Sovrapposte*/
+/* ----WIN → LOTTERY---- */
+/* text color + "need help" */
+/* Inseriti da Clara, da rivedere: */
+/* text input color */
+/* Text color gradient */
+/* cards background color */
+/* text color  */
+/* nav bar color */
+/* website background color */
+/* text input color */
+.theme-dark {
+  --background-color: rgb(8, 6, 11);
+  --text-subtle-color: rgb(184, 173, 210);
+  --text-cake-stats-color: rgb(244, 238, 255);
+  --heading-2: rgb(244, 238, 255);
+  --span-text: rgb(118, 69, 217);
+}
+
+.theme-light {
+  --background-color: rgb(250, 249, 250);
+  --text-subtle-color: rgb(122, 110, 170);
+  --text-cake-stats-color: rgb(40, 13, 95);
+  --heading-2: rgb(40, 13, 95);
+  --span-text: rgb(154, 106, 255);
+}
+
+.cake-token {
+  background-color: var(--background-color);
+}
+
+.cake-token {
+  padding: 48px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.cake-token .cake-wrapper {
+  width: 100%;
+  max-width: 968px;
+  padding: 48px 24px;
+}
+.cake-token .cake-wrapper .cake-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.cake-token .cake-wrapper .cake-content h1 {
+  color: var(--heading-2);
+}
+.cake-token .cake-wrapper .cake-content p {
+  color: var(--heading-2);
+}
+.cake-token .cake-wrapper .cake-content .cake-info {
+  width: calc(100% - 400px);
+}
+.cake-token .cake-wrapper .cake-content .cake-info * {
+  width: 100%;
+}
+.cake-token .cake-wrapper .cake-content .cake-info h1 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--heading-2);
+  margin-bottom: 24px;
+}
+.cake-token .cake-wrapper .cake-content .cake-info h1 span {
+  color: var(--span-text);
+}
+.cake-token .cake-wrapper .cake-content .cake-info p {
+  color: var(--text-subtle-color);
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  font-size: 16px;
+}
+.cake-token .cake-wrapper .cake-content .cake-info .cake-info-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.cake-token .cake-wrapper .cake-content .cake-info .cake-info-buttons .link-aquagreen {
+  width: auto;
+}
+.cake-token .cake-wrapper .cake-content .cake-info .cake-info-buttons .button-aquagreen {
+  width: auto;
+}
+.cake-token .cake-wrapper .cake-content .cake-info .cake-info-buttons .learn-link {
+  margin-left: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: rgb(31, 199, 212);
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 16px;
+}
+.cake-token .cake-wrapper .cake-content .cake-coins {
+  width: 400px;
+  position: relative;
+  bottom: 220px;
+}
+.cake-token .cake-wrapper .cake-content .cake-coins img {
+  position: absolute;
+}
+.cake-token .cake-wrapper .cake-content .cake-coins #pancake-bottom-right {
+  width: 100%;
+  z-index: 0;
+  -webkit-animation-name: float-Nw;
+          animation-name: float-Nw;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.cake-token .cake-wrapper .cake-content .cake-coins #pancake-top-left {
+  width: 100%;
+  z-index: 2;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.cake-token .cake-wrapper .cake-content .cake-coins #pancake-top-right {
+  width: 100%;
+  z-index: 1;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.cake-token .cake-wrapper .cake-content .cake-coins #cake-coin {
+  width: 100%;
+  z-index: 1;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.cake-token .cake-wrapper .cake-stats {
+  display: grid;
+  grid-template-areas: "circ-s total-s max-s" "market-cap burn current-emissions";
+  gap: 32px;
+  margin-top: 24px;
+}
+.cake-token .cake-wrapper .cake-stats div .text-subtle {
+  color: var(--text-subtle-color);
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 16px;
+}
+.cake-token .cake-wrapper .cake-stats div .text-cake-stats {
+  color: var(--text-cake-stats-color);
+  font-weight: 600;
+  line-height: 1.1;
+  font-size: 24px;
+}
+.cake-token .cake-wrapper .cake-stats .cake-circulating-supply {
+  grid-area: circ-s;
+}
+.cake-token .cake-wrapper .cake-stats .cake-supply {
+  grid-area: total-s;
+  border-left: 1px solid rgb(38, 33, 48);
+  padding: 0 15px;
+}
+.cake-token .cake-wrapper .cake-stats .cake-max-supply {
+  grid-area: max-s;
+  border-left: 1px solid rgb(38, 33, 48);
+  padding: 0 15px;
+}
+.cake-token .cake-wrapper .cake-stats .cake-cap {
+  grid-area: market-cap;
+}
+.cake-token .cake-wrapper .cake-stats .cake-burned {
+  grid-area: burn;
+  border-left: 1px solid rgb(38, 33, 48);
+  padding: 0 15px;
+}
+.cake-token .cake-wrapper .cake-stats .cake-emissions {
+  grid-area: current-emissions;
+  border-left: 1px solid rgb(38, 33, 48);
+  padding: 0 15px;
+}
+
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+  .cake-token {
+    padding: 48px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .cake-token .cake-wrapper {
+    width: 100%;
+    max-width: 968px;
+    padding: 48px 24px;
+    padding-top: 200px;
+  }
+  .cake-token .cake-wrapper .cake-content {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info {
+    width: 100%;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info * {
+    width: 100%;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info h1 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 24px;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info p {
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    font-size: 16px;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info .cake-info-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info .cake-info-buttons .link-aquagreen {
+    width: auto;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info .cake-info-buttons .button-aquagreen {
+    width: auto;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info .cake-info-buttons .learn-link {
+    margin-left: 10px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    color: rgb(31, 199, 212);
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-coins {
+    width: 200px;
+    height: auto;
+    align-self: flex-end;
+    position: relative;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-coins img {
+    position: absolute;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-coins #pancake-bottom-right {
+    width: 100%;
+    z-index: 0;
+    -webkit-animation-name: float-Nw;
+            animation-name: float-Nw;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-coins #pancake-top-left {
+    width: 100%;
+    z-index: 2;
+    -webkit-animation-name: float-NW;
+            animation-name: float-NW;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-coins #pancake-top-right {
+    width: 100%;
+    z-index: 1;
+    -webkit-animation-name: float-NW;
+            animation-name: float-NW;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-coins #cake-coin {
+    width: 100%;
+    z-index: 1;
+    -webkit-animation-name: float-NW;
+            animation-name: float-NW;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  .cake-token .cake-wrapper .cake-stats {
+    display: grid;
+    grid-template-areas: "circ-s total-s max-s" "market-cap burn current-emissions";
+    gap: 32px;
+    margin-top: 24px;
+  }
+  .cake-token .cake-wrapper .cake-stats div .text-subtle {
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  .cake-token .cake-wrapper .cake-stats div .text-cake-stats {
+    font-weight: 600;
+    line-height: 1.1;
+    font-size: 24px;
+  }
+  .cake-token .cake-wrapper .cake-stats .cake-circulating-supply {
+    grid-area: circ-s;
+  }
+  .cake-token .cake-wrapper .cake-stats .cake-supply {
+    grid-area: total-s;
+    border-left: 1px solid rgb(38, 33, 48);
+    padding: 0 15px;
+  }
+  .cake-token .cake-wrapper .cake-stats .cake-max-supply {
+    grid-area: max-s;
+    border-left: 1px solid rgb(38, 33, 48);
+    padding: 0 15px;
+  }
+  .cake-token .cake-wrapper .cake-stats .cake-cap {
+    grid-area: market-cap;
+  }
+  .cake-token .cake-wrapper .cake-stats .cake-burned {
+    grid-area: burn;
+    border-left: 1px solid rgb(38, 33, 48);
+    padding: 0 15px;
+  }
+  .cake-token .cake-wrapper .cake-stats .cake-emissions {
+    grid-area: current-emissions;
+    border-left: 1px solid rgb(38, 33, 48);
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .cake-token {
+    padding: 48px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .cake-token .cake-wrapper {
+    width: 100%;
+    max-width: 968px;
+    padding: 48px 24px;
+    padding-top: 200px;
+  }
+  .cake-token .cake-wrapper .cake-content {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info {
+    width: 100%;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info * {
+    width: 100%;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info h1 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 24px;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info p {
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    font-size: 16px;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info .cake-info-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info .cake-info-buttons .link-aquagreen {
+    width: auto;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info .cake-info-buttons .button-aquagreen {
+    width: auto;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-info .cake-info-buttons .learn-link {
+    margin-left: 10px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    color: rgb(31, 199, 212);
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-coins {
+    width: 200px;
+    height: auto;
+    align-self: flex-end;
+    position: relative;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-coins img {
+    position: absolute;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-coins #pancake-bottom-right {
+    width: 100%;
+    z-index: 0;
+    -webkit-animation-name: float-Nw;
+            animation-name: float-Nw;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-coins #pancake-top-left {
+    width: 100%;
+    z-index: 2;
+    -webkit-animation-name: float-NW;
+            animation-name: float-NW;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-coins #pancake-top-right {
+    width: 100%;
+    z-index: 1;
+    -webkit-animation-name: float-NW;
+            animation-name: float-NW;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  .cake-token .cake-wrapper .cake-content .cake-coins #cake-coin {
+    width: 100%;
+    z-index: 1;
+    -webkit-animation-name: float-NW;
+            animation-name: float-NW;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  .cake-token .cake-wrapper .cake-stats {
+    display: grid;
+    grid-template-areas: "circ-s total-s " "max-s market-cap" "burn current-emissions";
+    gap: 10%;
+    margin-top: 24px;
+  }
+  .cake-token .cake-wrapper .cake-stats div {
+    font-size: 100%;
+  }
+  .cake-token .cake-wrapper .cake-stats div .text-subtle {
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 14px;
+  }
+  .cake-token .cake-wrapper .cake-stats div .text-cake-stats {
+    font-weight: 600;
+    line-height: 1.1;
+    font-size: 20px;
+  }
+  .cake-token .cake-wrapper .cake-stats .cake-circulating-supply {
+    grid-area: circ-s;
+  }
+  .cake-token .cake-wrapper .cake-stats .cake-supply {
+    grid-area: total-s;
+    border-left: 1px solid rgb(38, 33, 48);
+    padding: 0 15px;
+  }
+  .cake-token .cake-wrapper .cake-stats .cake-max-supply {
+    grid-area: max-s;
+    border: none;
+    padding: 0;
+  }
+  .cake-token .cake-wrapper .cake-stats .cake-cap {
+    grid-area: market-cap;
+    border-left: 1px solid rgb(38, 33, 48);
+    padding: 0 15px;
+  }
+  .cake-token .cake-wrapper .cake-stats .cake-burned {
+    grid-area: burn;
+    border: none;
+    padding: 0;
+  }
+  .cake-token .cake-wrapper .cake-stats .cake-emissions {
+    grid-area: current-emissions;
+    border-left: 1px solid rgb(38, 33, 48);
+    padding: 0 15px;
+  }
+}/*# sourceMappingURL=cake-token.css.map */
