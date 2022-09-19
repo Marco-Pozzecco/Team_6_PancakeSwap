@@ -1845,7 +1845,8 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     justify-content: center;
     align-items: center;
     padding: 20px;
-    width: 100%;
+    width: 90%;
+    max-width: 1200px;
     position: relative;
   }
   .main-banner-container .main-banner-sub-container {
@@ -2089,7 +2090,8 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     justify-content: center;
     align-items: center;
     padding: 20px;
-    width: 100%;
+    width: 90%;
+    max-width: 1200px;
     position: relative;
   }
   .main-banner-container .main-banner-sub-container {
@@ -2340,7 +2342,8 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     justify-content: center;
     align-items: center;
     padding: 20px;
-    width: 100%;
+    width: 90%;
+    max-width: 1200px;
     position: relative;
   }
   .main-banner-container .main-banner-sub-container {
