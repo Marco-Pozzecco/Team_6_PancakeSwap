@@ -7,9 +7,40 @@
 @import "../../abstracts/colors";
 @import "../../abstracts/animations";
 
-.cake-token {
-    background-color: #08060b;
+// Set colori tema scuro
+$theme-dark: map.set($theme-dark, 'cake-coin', 'background', rgb(8, 6, 11));
+$theme-dark: map.set($theme-dark, "text", "paragraph-title", rgb(184, 173, 210));
+$theme-dark: map.set($theme-dark, 'text', 'paragraph-text', rgb(244, 238, 255));
+$theme-dark: map.set($theme-dark, "text", "header2-text", rgb(244, 238, 255));
+$theme-dark: map.set($theme-dark, "text", "span-text", rgb(118, 69, 217));
 
+
+// Set colori tema chiaro
+$theme-light: map.set($theme-light, 'cake-coin', 'background', rgb(250, 249, 250));
+$theme-light: map.set($theme-light, "text", "paragraph-title", rgb(122, 110, 170));
+$theme-light: map.set($theme-light, 'text', 'paragraph-text', rgb(40, 13, 95));
+$theme-light: map.set($theme-light, "text", "header2-text", rgb(40, 13, 95));
+$theme-light: map.set($theme-light, "text", "span-text", rgb(154, 106, 255));
+
+.theme-dark {
+    --background-color: #{map.get($theme-dark, 'cake-coin', 'background')};
+    --text-subtle-color: #{map.get($theme-dark, "text", "paragraph-title")};
+    --text-cake-stats-color: #{map.get($theme-dark, "text", "paragraph-text")};
+    --heading-2: #{map.get($theme-dark, "text", "header2-text")};
+    --span-text: #{map.get($theme-dark, "text", "span-text")};
+}
+
+
+.theme-light {
+    --background-color: #{map.get($theme-light, 'cake-coin', 'background')};
+    --text-subtle-color: #{map.get($theme-light, "text", "paragraph-title")};
+    --text-cake-stats-color: #{map.get($theme-light, "text", "paragraph-text")};
+    --heading-2: #{map.get($theme-light, "text", "header2-text")};
+    --span-text: #{map.get($theme-light, "text", "span-text")};
+}
+
+.cake-token {
+    background-color: var(--background-color);
 }
 
 
@@ -24,39 +55,39 @@
         padding: 48px 24px;
 
         .cake-content {
-            position: relative;
+            
             @include flex();
 
             h1 {
-                color: white;
+                color: var(--heading-2);
             }
 
             p {
-                color: white;
+                color: var(--heading-2);
             }
 
             .cake-info {
-                width: 60%;
+                width: calc(100% - 400px);
                 
 
                 & * {
-                    width: 420px;
+                    width: 100%;
                 }
 
                 h1 {
                     font-size: 40px;
                     font-weight: 600;
                     line-height: 1.1;
-                    color: rgb(244, 238, 255);
+                    color: var(--heading-2);
                     margin-bottom: 24px;
 
                     span {
-                        color: rgb(154, 106, 255);
+                        color: var(--span-text);
                     }
                 }
 
                 p {
-                    color: rgb(184, 173, 210);
+                    color: var(--text-subtle-color);
                     font-weight: 400;
                     line-height: 1.5;
                     margin-bottom: 24px;
@@ -87,11 +118,9 @@
             }
 
             .cake-coins {
-                flex-basis: 40%;
-                flex-shrink: 1;
-                flex-grow: 1;
+                width: 400px;
                 position: relative;
-                top: 0;
+                bottom: 220px;
 
                 img {
                     position: absolute;
@@ -134,14 +163,14 @@
             div {
 
                 .text-subtle {
-                    color: rgb(184, 173, 210);
+                    color: var(--text-subtle-color);
                     font-weight: 400;
                     line-height: 1.5;
                     font-size: 16px;
                 }
 
                 .text-cake-stats {
-                    color: rgb(244, 238, 255);
+                    color: var(--text-cake-stats-color);
                     font-weight: 600;
                     line-height: 1.1;
                     font-size: 24px;
@@ -185,5 +214,341 @@
         }
 
 
+    }
+}
+
+@include mq('tablet-small', 'tablet') {
+    .cake-token {
+        padding: 48px 0;
+        @include flex(column);
+        width: 100%;
+    
+        .cake-wrapper {
+            width: 100%;
+            max-width: 968px;
+            padding: 48px 24px;
+            padding-top: 200px;
+    
+            .cake-content {
+                position: relative;
+                @include flex(column-reverse);
+    
+                .cake-info {
+                    width: 100%;
+                    
+    
+                    & * {
+                        width: 100%;
+                    }
+    
+                    h1 {
+                        font-size: 40px;
+                        font-weight: 600;
+                        line-height: 1.1;
+
+                        margin-bottom: 24px;
+
+                    }
+    
+                    p {
+
+                        font-weight: 400;
+                        line-height: 1.5;
+                        margin-bottom: 24px;
+                        font-size: 16px;
+                    }
+    
+    
+                    .cake-info-buttons {
+                        @include flex(row, flex-start);
+    
+                        .link-aquagreen {
+                            width: auto;
+                        }
+    
+                        .button-aquagreen {
+                            width: auto;
+                        }
+    
+                        .learn-link {
+                            margin-left: 10px;
+                            width: fit-content;
+                            color: rgb(31, 199, 212);
+                            font-weight: 600;
+                            line-height: 1.5;
+                            font-size: 16px;
+                        }
+                    }
+                }
+    
+                .cake-coins {
+                    width: 200px;   
+                    height: auto;
+                    align-self: flex-end;
+                    position: relative;
+
+                    img {
+                        position: absolute;
+                    }
+    
+                    #pancake-bottom-right {
+                        width: 100%;
+                        z-index: 0;
+                        @include float-anim(5s, 'Nw', 0s);
+                    }
+    
+                    #pancake-top-left {
+                        width: 100%;
+                        z-index: 2;
+                        @include float-anim(5s, 'NW', 0.2s);
+                    }
+    
+                    #pancake-top-right {
+                        width: 100%;
+                        z-index: 1;
+                        @include float-anim(5s, 'NW', 0.3s);
+                    }
+    
+                    #cake-coin {
+                        width: 100%;
+                        z-index: 1;
+                        @include float-anim(5s, 'NW', 1s);
+                    }
+                }
+            }
+    
+            .cake-stats {
+                display: grid;
+                grid-template-areas:
+                    "circ-s total-s max-s"
+                    "market-cap burn current-emissions";
+                gap: 32px;
+                margin-top: 24px;
+    
+                div {
+    
+                    .text-subtle {
+
+                        font-weight: 400;
+                        line-height: 1.5;
+                        font-size: 16px;
+                    }
+    
+                    .text-cake-stats {
+
+                        font-weight: 600;
+                        line-height: 1.1;
+                        font-size: 24px;
+                    }
+                }
+    
+                .cake-circulating-supply {
+                    grid-area: circ-s;
+                }
+    
+                .cake-supply {
+                    grid-area: total-s;
+                    border-left: 1px solid rgb(38, 33, 48);
+                    padding: 0 15px;
+                }
+    
+                .cake-max-supply {
+                    grid-area: max-s;
+                    border-left: 1px solid rgb(38, 33, 48);
+                    padding: 0 15px;
+                }
+    
+                .cake-cap {
+                    grid-area: market-cap;
+                }
+    
+                .cake-burned {
+                    grid-area: burn;
+                    border-left: 1px solid rgb(38, 33, 48);
+                    padding: 0 15px;
+                }
+    
+                .cake-emissions {
+                    grid-area: current-emissions;
+                    border-left: 1px solid rgb(38, 33, 48);
+                    padding: 0 15px;
+                }
+    
+                
+    
+            }
+    
+    
+        }
+    }
+}
+
+@include mq('phone', 'phablet') {
+    .cake-token {
+        padding: 48px 0;
+        @include flex(column);
+        width: 100%;
+    
+        .cake-wrapper {
+            width: 100%;
+            max-width: 968px;
+            padding: 48px 24px;
+            padding-top: 200px;
+
+            .cake-content {
+                position: relative;
+                @include flex(column-reverse);
+    
+                .cake-info {
+                    width: 100%;
+                    
+    
+                    & * {
+                        width: 100%;
+                    }
+    
+                    h1 {
+                        font-size: 32px;
+                        font-weight: 600;
+                        line-height: 1.1;
+
+                        margin-bottom: 24px;
+
+                    }
+    
+                    p {
+
+                        font-weight: 400;
+                        line-height: 1.5;
+                        margin-bottom: 24px;
+                        font-size: 16px;
+                    }
+    
+    
+                    .cake-info-buttons {
+                        @include flex(row, flex-start);
+    
+                        .link-aquagreen {
+                            width: auto;
+                        }
+    
+                        .button-aquagreen {
+                            width: auto;
+                        }
+    
+                        .learn-link {
+                            margin-left: 10px;
+                            width: fit-content;
+                            color: rgb(31, 199, 212);
+                            font-weight: 600;
+                            line-height: 1.5;
+                            font-size: 16px;
+                        }
+                    }
+                }
+    
+                .cake-coins {
+                    width: 200px;   
+                    height: auto;
+                    align-self: flex-end;
+                    position: relative;
+    
+                    img {
+                        position: absolute;
+                    }
+    
+                    #pancake-bottom-right {
+                        width: 100%;
+                        z-index: 0;
+                        @include float-anim(5s, 'Nw', 0s);
+                    }
+    
+                    #pancake-top-left {
+                        width: 100%;
+                        z-index: 2;
+                        @include float-anim(5s, 'NW', 0.2s);
+                    }
+    
+                    #pancake-top-right {
+                        width: 100%;
+                        z-index: 1;
+                        @include float-anim(5s, 'NW', 0.3s);
+                    }
+    
+                    #cake-coin {
+                        width: 100%;
+                        z-index: 1;
+                        @include float-anim(5s, 'NW', 1s);
+                    }
+                }
+            }
+    
+            .cake-stats {
+                display: grid;
+                grid-template-areas:
+                    "circ-s total-s "
+                    "max-s market-cap"
+                    "burn current-emissions";
+                gap: 10%;
+                margin-top: 24px;
+    
+                div {
+                    font-size: 100%;
+
+                    .text-subtle {
+
+                        font-weight: 400;
+                        line-height: 1.5;
+                        font-size: 14px;
+                    }
+    
+                    .text-cake-stats {
+
+                        font-weight: 600;
+                        line-height: 1.1;
+                        font-size: 20px;
+                    }
+                }
+    
+                .cake-circulating-supply {
+                    grid-area: circ-s;
+                }
+    
+                .cake-supply {
+                    grid-area: total-s;
+                    border-left: 1px solid rgb(38, 33, 48);
+                    padding: 0 15px;
+                }
+    
+                .cake-max-supply {
+                    grid-area: max-s;
+                    border: none;
+                    padding: 0;
+                }
+    
+                .cake-cap {
+                    grid-area: market-cap;
+                    border-left: 1px solid rgb(38, 33, 48);
+                    padding: 0 15px;
+                }
+    
+                .cake-burned {
+                    grid-area: burn;
+                    border: none;
+                    padding: 0;
+                }
+    
+                .cake-emissions {
+                    grid-area: current-emissions;
+                    border-left: 1px solid rgb(38, 33, 48);
+                    padding: 0 15px;
+                }
+    
+                
+    
+            }
+    
+    
+        }
     }
 }
