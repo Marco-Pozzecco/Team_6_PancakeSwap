@@ -14,7 +14,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* kanit-regular - latin */
 @font-face {
   font-family: "Kanit";
-  font-style: normal; 
+  font-style: normal;
   font-weight: 400;
   src: url("../../resources/fonts/kanit-v12-latin-regular.eot"); /* IE9 Compat Modes */
   src: local(""), url("../../resources/fonts/kanit-v12-latin-regular.eot?#iefix") format("embedded-opentype"), url("../../resources/fonts/kanit-v12-latin-regular.woff2") format("woff2"), url("../../resources/fonts/kanit-v12-latin-regular.woff") format("woff"), url("../../resources/fonts/kanit-v12-latin-regular.ttf") format("truetype"), url("../../resources/fonts/kanit-v12-latin-regular.svg#Kanit") format("svg"); /* Legacy iOS */
@@ -127,7 +127,7 @@ button:hover {
   font-size: 16px; /*16px*/
   font-weight: 600; /*600*/
 }
-.link-popup-navbar .btn-popup-navbar-unselected:active {
+.link-popup-navbar:active {
   transform: translateY(2px);
 }
 
@@ -2526,8 +2526,6 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* nav bar color */
 /* website background color */
 /* text input color */
-
-/* ----NAVBAR SECTION---- */
 .theme-dark {
   --fa-moon: rgb(39, 38, 44);
   --nav-bkground: #000;
@@ -2831,8 +2829,6 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* ----WIN → PREDICTION (BETA)---- */
 /*ETICHETTE Sovrapposte*/
 /* ----WIN → LOTTERY---- */
-
-/* ----FOOTER SECTION---- */
 .theme-dark {
   --fa-moon: rgb(154, 106, 255);
   --fa-sun: rgb(39, 38, 44);
@@ -2939,6 +2935,7 @@ footer {
 
 li {
   padding-right: 22px;
+  cursor: pointer;
 }
 
 .bottom-footer-2 {

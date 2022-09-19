@@ -83,7 +83,6 @@ button:hover {
 }
 
 /* -------BOTTONE POPUP NAVBAR----------- */
-
 .link-popup-navbar {
   text-decoration: none;
 }
@@ -99,8 +98,7 @@ button:hover {
   font-size: 16px; /*16px*/
   font-weight: 600; /*600*/
 }
-
-.link-popup-navbar .btn-popup-navbar-unselected:active {
+.link-popup-navbar:active {
   transform: translateY(2px);
 }
 

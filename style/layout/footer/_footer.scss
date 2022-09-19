@@ -109,10 +109,10 @@ footer{
 .bottom-footer ul{ 
     @include flex(row, flex-start, center);
     padding: 0px 0px 32px 0px;
-    
     } 
     li{
     padding-right: 22px;
+    cursor: pointer;
 }
 
 .bottom-footer-2{
