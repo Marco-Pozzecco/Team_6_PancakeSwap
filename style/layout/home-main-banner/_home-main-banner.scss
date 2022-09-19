@@ -25,7 +25,8 @@
             .main-banner-container {
                 @include flex();
                 padding: 20px;
-                width: 100%;
+                width: 90%;
+                max-width: 1200px;
                 position: relative;
 
                     .main-banner-sub-container {
@@ -351,7 +352,8 @@
             .main-banner-container {
                 @include flex();
                 padding: 20px;
-                width: 100%;
+                width: 90%;
+                max-width: 1200px;
                 position: relative;
 
                     .main-banner-sub-container {
@@ -693,7 +695,8 @@
                 // @include mq('laptop');
                 @include flex();
                 padding: 20px;
-                width: 100%;
+                width: 90%;
+                max-width: 1200px;
                 position: relative;
     
                     .main-banner-sub-container {
