@@ -47,3 +47,9 @@ const openModalBtn = document.querySelectorAll('[data-modal-target]');
       document.body.classList.toggle("theme-light");
         
     });
+
+    //change bg toggle color
+    const chk1 = document.getElementById("chk1");
+    chk1.addEventListener("change", ()=> {
+        
+    })

@@ -25,7 +25,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   -moz-font-smoothing: antialiased;
   -ms-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
-  
+  font-smoothing: antialiased;
 }
 
 /* Bottoni nel div-SWAP(a sinistra)-- */
@@ -840,7 +840,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   color: var(--heading-2);
 }
 .win-prizes .prizes-wrapper h2 span {
-  color: rgb(154, 106, 255);
+  color: rgb(154, 111, 251);
 }
 .win-prizes .prizes-wrapper p {
   color: var(--text-paragraph);
@@ -2139,7 +2139,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     right: 24px;
   }
   .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg .cdsvg-color1 {
-    fill: rgb(154, 106, 255);
+    fill: rgb(154, 111, 251);
   }
   .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg .cdsvg-color2 {
     fill: rgb(49, 208, 170);
@@ -2163,7 +2163,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     margin-bottom: 24px;
   }
   .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb1 {
-    color: rgb(154, 106, 255);
+    color: rgb(154, 111, 251);
   }
   .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb2 {
     color: rgb(49, 208, 170);
@@ -2262,7 +2262,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     right: 24px;
   }
   .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg .cdsvg-color1 {
-    fill: rgb(154, 106, 255);
+    fill: rgb(154, 111, 251);
   }
   .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg .cdsvg-color2 {
     fill: rgb(49, 208, 170);
@@ -2286,7 +2286,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     margin-bottom: 24px;
   }
   .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb1 {
-    color: rgb(154, 106, 255);
+    color: rgb(154, 111, 251);
   }
   .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb2 {
     color: rgb(49, 208, 170);
@@ -2528,12 +2528,14 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* text input color */
 .theme-dark {
   --fa-moon: rgb(39, 38, 44);
-  --nav-bkground: #000;
+  --nav-bkground: rgb(39, 38, 44);
+  --popup-bg: rgb(39, 38, 44);
 }
 
 .theme-light {
-  --fa-moon: rgb(154, 106, 255);
+  --fa-moon: rgb(154, 111, 251);
   --nav-bkground: #fff;
+  --popup-bg: #fff;
 }
 
 .mobile-icon {
@@ -2658,17 +2660,17 @@ nav .flex .modal {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: 200ms ease-in-out;
-  background-color: white;
+  background-color: var(--popup-bg);
   border-radius: 0 0 30px 30px;
   padding: 3% 2% 2% 2%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  z-index: 1000;
+  z-index: 100;
 }
 nav .flex .modal .active {
   transform: translate(-50%, -50%) scale(1);
-  z-index: 1000;
+  z-index: 100;
 }
 nav .flex .modal p {
   color: rgb(8, 6, 11);
@@ -2830,7 +2832,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /*ETICHETTE Sovrapposte*/
 /* ----WIN → LOTTERY---- */
 .theme-dark {
-  --fa-moon: rgb(154, 106, 255);
+  --fa-moon: rgb(154, 111, 251);
   --fa-sun: rgb(39, 38, 44);
 }
 
@@ -2894,7 +2896,7 @@ footer {
   font-weight: 100;
 }
 .main-footer h4 {
-  color: rgb(154, 106, 255);
+  color: rgb(154, 111, 251);
   text-transform: uppercase;
   font-weight: 500;
   margin-bottom: 8px;
@@ -2974,15 +2976,17 @@ li {
 }
 
 .label3 .ball3 {
-  background-color: #fff;
   border-radius: 50%;
   position: absolute;
   top: 2px;
   left: 2px;
-  height: 22px;
-  width: 22px;
   transform: translateX(0px);
   transition: transform 0.2s linear;
+}
+.label3 .ball3 .circle-toggle {
+  border: 2px solid white;
+  height: 22px;
+  width: 22px;
 }
 
 .checkbx3:checked + .label3 .ball3 {

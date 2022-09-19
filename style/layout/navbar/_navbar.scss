@@ -9,19 +9,23 @@
 
 // Set colori tema scuro
 $theme-dark: map.set($theme-dark, "fa-moon", $footer-background);
-$theme-dark: map.set($theme-dark, "nav-bkground", #000);
+$theme-dark: map.set($theme-dark, "nav-bkground", $footer-background);
+$theme-dark: map.set($theme-dark, "popup-bg", $footer-background);
 // Set colori tema chiaro
 $theme-light: map.set($theme-light, "fa-moon", $secondary-dk);
 $theme-light: map.set($theme-light, "nav-bkground", #fff); 
+$theme-light: map.set($theme-light, "popup-bg", #fff); 
 
 .theme-dark{
     --fa-moon: #{map-get($theme-dark , "fa-moon")};
     --nav-bkground: #{map-get($theme-dark , "nav-bkground")}; 
+    --popup-bg: #{map-get($theme-dark , "popup-bg")}; 
 
 }
 .theme-light{ 
     --fa-moon: #{map-get($theme-light , "fa-moon")};
     --nav-bkground: #{map-get($theme-light , "nav-bkground")};
+    --popup-bg: #{map-get($theme-light , "popup-bg")}; 
 
 }
 
@@ -146,17 +150,17 @@ nav {
             left: 50%;
             transform: translate(-50%, -50%) scale(1);
             transition: 200ms ease-in-out;
-            background-color: white;
+            background-color: var(--popup-bg);
             border-radius: 0 0 30px 30px;
             padding: 3% 2% 2% 2%;
             display: flex;   
             flex-direction: column;
             justify-content: space-around;
-            z-index: 1000;
+            z-index: 100;
             
             .active{
                 transform: translate(-50%, -50%) scale(1);
-                z-index: 1000;
+                z-index: 100;
             
             }p{
                 color: $background-color-dk;
