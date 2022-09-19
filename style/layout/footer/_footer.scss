@@ -1,10 +1,12 @@
 // Use rules
 @use "../../components/buttons/buttons";
+@use "sass:map";
 
 // Import rules
 @import "../../abstracts/mixins";
 @import "../../abstracts/colors";
 @import "../../abstracts/variables";
+
 
 //set dark theme colors
 $theme-dark: map.set($theme-dark, "fa-moon", $secondary-dk); 
@@ -26,6 +28,7 @@ $theme-light: map.set($theme-light, "fa-sun", #f39c12);
 
 .footer-box{
     width: 1200px;
+    //height: auto;
 }
 
 i{
@@ -59,14 +62,14 @@ i{
 
 footer{
     width: 100%;
-    height: 411px;
+    height: auto;
     padding: 56px 40px 32px 40px;
     background-color: $footer-background;
   
 }
 
 .main-footer{
- @include flex(row, space-around, flex-start);
+ @include flex(row, space-between, flex-start);
  margin-bottom: 32px;
     h3{
         color: #fff;
@@ -76,9 +79,11 @@ footer{
         color: $secondary-dk;
         text-transform: uppercase;
         font-weight: 500;
+        margin-bottom: 8px;
     }  
     li {
-         padding: 8px 0 8px 0;
+         //padding: 8px 0 8px 0;
+         margin-bottom: 8px;
             a{
             color: white;
             text-decoration: none;
@@ -94,7 +99,7 @@ footer{
 }
 
 .flex2{
-    @include flex(row, space-around, center);
+    @include flex(row, space-between, center);
     
 }
 #hover:hover{
@@ -121,11 +126,13 @@ footer{
             color: $primary-dk;
             //font-weight: 500;
         }
+        .button-aquagreen{
+            width: 149px;
+            height: 32px;
+            margin: 2px 4px 4px 0px;
+            padding: 0px 16px;
+       }
     }
-    .button-aquagreen{
-        width: 149px;
-        height: 32px;
-   }
 }
 
 .checkbx3 {
@@ -145,23 +152,25 @@ footer{
     height: 26px;
     width: 50px;
     transform: scale(1); 
+
 }
 
 .label3 .ball3 {
-    background-color: #fff;
-    border-radius: 50%;
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    height: 22px;
-    width: 22px;
-    transform: translateX(0px);
-    transition: transform 0.2s linear;
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
 }
 
 .checkbx3:checked + .label3 .ball3 {
 	transform: translateX(24px);
 }
+
 
 .fa-moon {
 	color: var(--fa-moon);
@@ -169,6 +178,7 @@ footer{
 .fa-sun {
 	color: var(--fa-sun);
 }
+
 
 
 

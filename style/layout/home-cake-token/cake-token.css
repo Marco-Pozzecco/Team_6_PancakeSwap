@@ -83,10 +83,10 @@ button:hover {
 }
 
 /* -------BOTTONE POPUP NAVBAR----------- */
-.link-btn-popup {
+.link-aquagreen {
   text-decoration: none;
 }
-.link-btn-popup .btn-popup-navbar-unselected {
+.link-aquagreen .btn-popup-navbar-unselected {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -98,7 +98,7 @@ button:hover {
   font-size: 16px; /*16px*/
   font-weight: 600; /*600*/
 }
-.link-btn-popup .btn-popup-navbar-unselected:active {
+.link-aquagreen .btn-popup-navbar-unselected:active {
   transform: translateY(2px);
 }
 
