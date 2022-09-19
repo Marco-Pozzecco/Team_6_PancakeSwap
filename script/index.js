@@ -1,10 +1,15 @@
+// Import statements
+// import {Utilities} from 'utilities';
+
 //open modal popup menu from navbar
 
 const openModalBtn = document.querySelectorAll('[data-modal-target]');
     const closeModalBtn = document.querySelectorAll('[data-close-btn]');
     const overlay = document.getElementById('overlay');
-    const logo = document.getElementsByClassName('logo-section');
-    const url = "resources/svgs/logo_white.svg";
+    
+    const url = document.getElementById('logo1');
+    let path = url.attributes[2].textContent;
+    console.log(url.attributes[2].textContent);
 
     openModalBtn.forEach(button => {
         button.addEventListener('click', () => {
@@ -38,10 +43,18 @@ const openModalBtn = document.querySelectorAll('[data-modal-target]');
 
     //change theme color
     const chk3 = document.getElementById("chk3");
+    const bunnyBottomGradient = document.getElementById("bottomGradient");
 
     chk3.addEventListener("change", () => {
       document.body.classList.toggle("theme-light");
-      logo.setAttribute('img', url);
+      if(path == '/resources/svgs/logo_black.svg'){
+        url.setAttribute('src', '/resources/svgs/logo_white.svg');
+        bunnyBottomGradient.attributes.fill.value = "url(#paint0_linear_dark)";
+      }else if(path == '/resources/svgs/logo_white.svg'){
+        url.setAttribute('src', '/resources/svgs/logo_black.svg');
+        bunnyBottomGradient.attributes.fill.value = "url(#paint0_linear_light)";
+      }
+      
     });
 
     const chk = document.getElementById("chk");

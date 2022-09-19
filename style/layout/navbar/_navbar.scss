@@ -165,7 +165,7 @@ nav {
             padding: 0px 16px;
         }
         .modal{
-            position: absolute;
+            position: fixed;
             width: 400px;
             height: 400px;
             top: 50%;
@@ -183,7 +183,7 @@ nav {
             
             .active{
                 transform: translate(-50%, -50%);
-                z-index: 100;
+                z-index: 999;
                 opacity: 1;
             
             }p{
