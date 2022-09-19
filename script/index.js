@@ -1,5 +1,5 @@
 // Import statements
-import {Utilities} from 'utilities';
+// import {Utilities} from 'utilities';
 
 //open modal popup menu from navbar
 
@@ -43,13 +43,16 @@ const openModalBtn = document.querySelectorAll('[data-modal-target]');
 
     //change theme color
     const chk3 = document.getElementById("chk3");
+    const bunnyBottomGradient = document.getElementById("bottomGradient");
 
     chk3.addEventListener("change", () => {
       document.body.classList.toggle("theme-light");
       if(path == '/resources/svgs/logo_black.svg'){
         url.setAttribute('src', '/resources/svgs/logo_white.svg');
+        bunnyBottomGradient.attributes.fill.value = "url(#paint0_linear_dark)";
       }else if(path == '/resources/svgs/logo_white.svg'){
         url.setAttribute('src', '/resources/svgs/logo_black.svg');
+        bunnyBottomGradient.attributes.fill.value = "url(#paint0_linear_light)";
       }
       
     });

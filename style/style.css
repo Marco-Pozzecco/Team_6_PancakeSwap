@@ -1137,7 +1137,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 
 .theme-light {
-  --background-floating-bunny: linear-gradient(102deg, rgb(231, 252, 255) 100%, rgb(240, 243, 255) 100%);
+  --background-floating-bunny: linear-gradient(102deg, rgb(231, 252, 255) 100%, rgb(239, 244, 255) 100%);
   --text-paragraph: rgb(122, 110, 170);
   --heading-2: rgb(40, 13, 95);
 }
