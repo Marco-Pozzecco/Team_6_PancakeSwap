@@ -2758,7 +2758,7 @@ nav .flex .button-aquagreen {
   padding: 0px 16px;
 }
 nav .flex .modal {
-  position: absolute;
+  position: fixed;
   width: 400px;
   height: 400px;
   top: 50%;
@@ -2776,7 +2776,7 @@ nav .flex .modal {
 }
 nav .flex .modal .active {
   transform: translate(-50%, -50%);
-  z-index: 100;
+  z-index: 999;
   opacity: 1;
 }
 nav .flex .modal p {

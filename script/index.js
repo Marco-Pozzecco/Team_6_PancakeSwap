@@ -3,10 +3,10 @@
 const openModalBtn = document.querySelectorAll('[data-modal-target]');
     const closeModalBtn = document.querySelectorAll('[data-close-btn]');
     const overlay = document.getElementById('overlay');
-    const logo = document.getElementsByClassName('logo-section');
-    // const url = "/resources/svgs/logo_white.svg";
-    // const url = "../../resources/svgs/logo_white.svg";
+    
     const url = document.getElementById('logo1');
+    let path = url.attributes[2].textContent;
+    console.log(url.attributes[2].textContent);
 
     openModalBtn.forEach(button => {
         button.addEventListener('click', () => {
@@ -43,7 +43,12 @@ const openModalBtn = document.querySelectorAll('[data-modal-target]');
 
     chk3.addEventListener("change", () => {
       document.body.classList.toggle("theme-light");
-      url.setAttribute('src', '/resources/svgs/logo_black.svg');
+      if(path == '/resources/svgs/logo_black.svg'){
+        url.setAttribute('src', '/resources/svgs/logo_white.svg');
+      }else if(path == '/resources/svgs/logo_white.svg'){
+        url.setAttribute('src', '/resources/svgs/logo_black.svg');
+      }
+      
     });
 
     const chk = document.getElementById("chk");
