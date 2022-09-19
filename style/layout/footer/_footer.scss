@@ -6,6 +6,24 @@
 @import "../../abstracts/colors";
 @import "../../abstracts/variables";
 
+//set dark theme colors
+$theme-dark: map.set($theme-dark, "fa-moon", $secondary-dk);
+$theme-dark: map.set($theme-dark, "fa-sun", $footer-background);
+// Set colori tema chiaro
+$theme-light: map.set($theme-light, "fa-moon", $footer-background);
+$theme-light: map.set($theme-light, "fa-sun", #f39c12);
+
+.theme-dark{
+    --fa-moon: #{map-get($theme-dark , "fa-moon")};
+    --fa-sun: #{map-get($theme-dark , "fa-sun" )};
+
+}
+.theme-light{
+    --fa-moon: #{map-get($theme-light , "fa-moon")};
+    --fa-sun: #{map-get($theme-light , "fa-sun" )};
+
+}
+
 .footer-box{
     width: 1200px;
 }
@@ -104,6 +122,10 @@ footer{
             //font-weight: 500;
         }
     }
+    .button-aquagreen{
+        width: 149px;
+        height: 32px;
+   }
 }
 
 .checkbx3 {
@@ -112,39 +134,34 @@ footer{
 }
 
 .label3 {
-	background-color: $input-color;
-	border-radius: 50px;
-	cursor: pointer;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 0 5px;
-	position: relative;
-	height: 22px;
-	width: 40px;
-	transform: scale(1.5);
+    background-color: gray;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1);
 }
 
 .label3 .ball3 {
-	background-color: #fff;
-	border-radius: 50%;
-	position: absolute;
-	top: 2px;
-	left: 2px;
-	height: 22px;
-	width: 22px;
-	transform: translateX(0px);
-	transition: transform 0.2s linear;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
 }
 
 .checkbx3:checked + .label3 .ball3 {
 	transform: translateX(24px);
 }
-// .checkbx3:hover {
-//     .fa-moon{
-//         color: $secondary-color;
-//     }
-// }
 
 .fa-moon {
 	color: white;
@@ -153,11 +170,5 @@ footer{
 	color: #f39c12;
 }
 
-.btn-footer{
-    .button-aquagreen{
-        width: 137px;
-        height: 32px;
-   }
-}
 
 

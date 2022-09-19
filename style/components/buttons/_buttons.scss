@@ -62,6 +62,7 @@ button {
             height: 48px;
             font-size: $main-buttons-font-size; /*16px*/
             font-weight: $main-buttons-font-weigth; /*600*/
+            box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
         
             &:active {
                 transform: translateY(2px);
@@ -70,7 +71,7 @@ button {
     
 }
 /* -------BOTTONE POPUP NAVBAR----------- */
-.link-popup-navbar {
+.link-btn-popup {
     text-decoration: none;
 
         .btn-popup-navbar-unselected {

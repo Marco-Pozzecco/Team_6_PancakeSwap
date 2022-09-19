@@ -105,16 +105,17 @@ button:hover {
   height: 48px;
   font-size: 16px; /*16px*/
   font-weight: 600; /*600*/
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
 }
 .link-aquagreen .button-aquagreen:active {
   transform: translateY(2px);
 }
 
 /* -------BOTTONE POPUP NAVBAR----------- */
-.link-popup-navbar {
+.link-btn-popup {
   text-decoration: none;
 }
-.link-popup-navbar .btn-popup-navbar-unselected {
+.link-btn-popup .btn-popup-navbar-unselected {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -126,7 +127,7 @@ button:hover {
   font-size: 16px; /*16px*/
   font-weight: 600; /*600*/
 }
-.link-popup-navbar .btn-popup-navbar-unselected:active {
+.link-btn-popup .btn-popup-navbar-unselected:active {
   transform: translateY(2px);
 }
 
@@ -694,39 +695,64 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   width: auto;
 }
 .win-prizes .floating-balls img#ball-n2 {
-  animation-name: float-N;
-  animation-duration: 5s;
-  animation-delay: none;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: float-N;
+          animation-name: float-N;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .win-prizes .floating-balls img#ball-n4 {
-  animation-name: float-N;
-  animation-duration: 6s;
-  animation-delay: none;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: float-N;
+          animation-name: float-N;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .win-prizes .floating-balls img#ball-n6 {
-  animation-name: float-N;
-  animation-duration: 4s;
-  animation-delay: none;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: float-N;
+          animation-name: float-N;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .win-prizes .floating-balls img#ball-n7 {
-  animation-name: float-N;
-  animation-duration: 5s;
-  animation-delay: none;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: float-N;
+          animation-name: float-N;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .win-prizes .floating-balls img#ball-n9 {
-  animation-name: float-N;
-  animation-duration: 6s;
-  animation-delay: none;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: float-N;
+          animation-name: float-N;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .win-prizes .floating-cards {
   position: absolute;
@@ -744,32 +770,52 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 .win-prizes .floating-cards #card-bottom-left {
   z-index: -1;
-  animation-name: float-NW;
-  animation-duration: 6s;
-  animation-delay: none;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .win-prizes .floating-cards #card-top-right {
-  animation-name: float-NW;
-  animation-duration: 5s;
-  animation-delay: none;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .win-prizes .floating-cards #card-green {
-  animation-name: float-NW;
-  animation-duration: 5.5s;
-  animation-delay: none;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 5.5s;
+          animation-duration: 5.5s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .win-prizes .floating-cards #card-red {
-  animation-name: float-NW;
-  animation-duration: 7s;
-  animation-delay: none;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .win-prizes .prizes-wrapper {
   z-index: 10;
@@ -782,7 +828,6 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   background-color: var(--background-win-wrapper);
   -webkit-backdrop-filter: blur(12px);
   -moz-backdrop-filter: blur(12px);
-  -ms-backdrop-filter: blur(12px);
   -o-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   border-radius: 72px;
@@ -1109,7 +1154,6 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 6px;
   border-radius: 6px;
   background-color: #c3b4ce;
   border: none;
@@ -1658,11 +1702,16 @@ body {
 .fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingbunny {
   margin-right: 10%;
   margin-top: 10%;
-  animation-name: float-NW;
-  animation-duration: 5s;
-  animation-delay: none;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingbunny img {
   z-index: 3;
@@ -1677,33 +1726,30 @@ body {
   z-index: 2;
 }
 .fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingstars .fb-star1 img {
-  animation-name: fade-out;
-  animation-duration: 2.5s;
+  -webkit-animation-name: fade-out;
+          animation-name: fade-out;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
   -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  -ms-animation-iteration-count: infinite;
-  -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   z-index: 5;
   left: 30px;
 }
 .fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingstars .fb-star2 img {
-  animation-name: fade-out;
-  animation-duration: 3.5s;
+  -webkit-animation-name: fade-out;
+          animation-name: fade-out;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
   -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  -ms-animation-iteration-count: infinite;
-  -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   z-index: 5;
 }
 .fb-floating-bunny .fb-wrapper .fb-img-section .fb-thefloatingstars .fb-star3 img {
-  animation-name: fade-out;
-  animation-duration: 5s;
+  -webkit-animation-name: fade-out;
+          animation-name: fade-out;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  -ms-animation-iteration-count: infinite;
-  -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   z-index: 5;
 }
@@ -2360,7 +2406,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* text input color */
 .theme-dark {
   --fa-moon: rgb(39, 38, 44);
-  --nav-bkground: #000;
+  --nav-bkground: rgb(39, 38, 44);
 }
 
 .theme-light {
@@ -2408,7 +2454,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
+  background-color: var(--nav-bkground);
   width: 100%;
   height: 8vh;
   padding: 0 8px;
@@ -2476,9 +2522,11 @@ nav .flex .btn-gear i {
 nav .flex .btn-gear:hover {
   color: rgba(154, 106, 255, 0.3);
 }
-nav .flex .btn-navbar .button-aquagreen {
+nav .flex .button-aquagreen {
+  width: 149px;
+  height: 32px;
   margin: 2px 4px 4px 0px;
-  padding: 0px 16px;
+  padding: 0px 17px;
 }
 nav .flex .modal {
   position: fixed;
@@ -2494,11 +2542,9 @@ nav .flex .modal {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  z-index: 1000;
 }
 nav .flex .modal .active {
   transform: translate(-50%, -50%) scale(1);
-  z-index: 1000;
 }
 nav .flex .modal p {
   color: rgb(8, 6, 11);
@@ -2615,15 +2661,27 @@ nav .flex #overlay {
   background-color: rgba(0, 0, 0, 0.5);
   pointer-events: none;
   transition: 200ms ease-in-out;
-  z-index: 2;
+  z-index: -1;
 }
 nav .flex #overlay.active {
   opacity: 1;
   pointer-events: all;
 }
+nav .flex .btn-popup-navbar-unselected {
+  width: auto;
+}
 
 .fa-globe:hover {
   color: rgba(154, 106, 255, 0.3);
+}
+
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+  nav .mq-display {
+    display: none;
+  }
+  nav .menu-ul {
+    display: none;
+  }
 }
 
 /* Bottoni nel div-SWAP(a sinistra)-- */
@@ -2765,6 +2823,10 @@ li {
 .bottom-footer-2 div p {
   color: rgb(184, 173, 210);
 }
+.bottom-footer-2 .button-aquagreen {
+  width: 149px;
+  height: 32px;
+}
 
 .checkbx3 {
   opacity: 0;
@@ -2772,17 +2834,17 @@ li {
 }
 
 .label3 {
-  background-color: rgb(189, 194, 196);
+  background-color: gray;
   border-radius: 50px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 5px;
+  padding: 5px;
   position: relative;
-  height: 22px;
-  width: 40px;
-  transform: scale(1.5);
+  height: 26px;
+  width: 50px;
+  transform: scale(1);
 }
 
 .label3 .ball3 {
@@ -2807,11 +2869,6 @@ li {
 
 .fa-sun {
   color: #f39c12;
-}
-
-.btn-footer .button-aquagreen {
-  width: 137px;
-  height: 32px;
 }
 
 /* Bottoni nel div-SWAP(a sinistra)-- */
@@ -2901,6 +2958,8 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 .cake-token .cake-wrapper .cake-content .cake-info .cake-info-buttons .learn-link {
   margin-left: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   color: rgb(31, 199, 212);
   font-weight: 600;
@@ -2918,38 +2977,58 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 .cake-token .cake-wrapper .cake-content .cake-coins #pancake-bottom-right {
   width: 100%;
   z-index: 0;
-  animation-name: float-Nw;
-  animation-duration: 5s;
-  animation-delay: 0s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: float-Nw;
+          animation-name: float-Nw;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .cake-token .cake-wrapper .cake-content .cake-coins #pancake-top-left {
   width: 100%;
   z-index: 2;
-  animation-name: float-NW;
-  animation-duration: 5s;
-  animation-delay: 0.2s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .cake-token .cake-wrapper .cake-content .cake-coins #pancake-top-right {
   width: 100%;
   z-index: 1;
-  animation-name: float-NW;
-  animation-duration: 5s;
-  animation-delay: 0.3s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .cake-token .cake-wrapper .cake-content .cake-coins #cake-coin {
   width: 100%;
   z-index: 1;
-  animation-name: float-NW;
-  animation-duration: 5s;
-  animation-delay: 1s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .cake-token .cake-wrapper .cake-stats {
   display: grid;
@@ -3087,11 +3166,16 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 .box-layout6 .box-flex .img-wrapper .bottom-right-pill {
   margin-top: 10%;
-  animation-name: float-NW;
-  animation-duration: 5s;
-  animation-delay: none;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .box-layout6 .box-flex .img-wrapper .bottom-right-pill img {
   z-index: 3;
@@ -3105,25 +3189,40 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   width: 400px;
 }
 .box-layout6 .box-flex .img-wrapper .floating-pills .top-left-pill img {
-  animation-name: float-NW;
-  animation-duration: 3s;
-  animation-delay: none;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .box-layout6 .box-flex .img-wrapper .floating-pills .coin img {
-  animation-name: float-NW;
-  animation-duration: 4s;
-  animation-delay: none;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .box-layout6 .box-flex .img-wrapper .floating-pills .top-right-pill img {
-  animation-name: float-NW;
-  animation-duration: 4s;
-  animation-delay: none;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .box-layout6 .box-flex .img-wrapper .floating-pills img {
   position: absolute;
@@ -3134,7 +3233,8 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   width: 100%;
   display: grid;
   grid-template-columns: repeat(1fr 1fr 1fr);
-  column-gap: 32px;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
   row-gap: 32px;
   padding: 0px 150px;
 }
@@ -3200,7 +3300,6 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 
 ::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 6px;
   border-radius: 6px;
   background-color: #c3b4ce;
   border: none;
@@ -3268,11 +3367,16 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   position: absolute;
   bottom: -160px;
   right: 0px;
-  animation-name: float-NW;
-  animation-duration: 5s;
-  animation-delay: none;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .ta-trade-anything .ta-wrapper .ta-img-section .ta-goldencoin img {
   width: 90%;
@@ -3281,11 +3385,16 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   position: absolute;
   bottom: -160px;
   right: 0px;
-  animation-name: float-NW;
-  animation-duration: 3s;
-  animation-delay: none;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .ta-trade-anything .ta-wrapper .ta-img-section .ta-bitcoin img {
   width: 90%;
@@ -3294,11 +3403,16 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   position: absolute;
   bottom: -160px;
   right: 0px;
-  animation-name: float-NW;
-  animation-duration: 4s;
-  animation-delay: none;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .ta-trade-anything .ta-wrapper .ta-img-section .ta-cakecoin img {
   width: 90%;
@@ -3333,7 +3447,6 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 
 ::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 6px;
   border-radius: 6px;
   background-color: #c3b4ce;
   border: none;
@@ -3402,11 +3515,16 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   position: absolute;
   bottom: -160px;
   right: 0px;
-  animation-name: float-NW;
-  animation-duration: 5s;
-  animation-delay: none;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .ea-earn .ea-wrapper .ea-img-section .ea-goldencoin img {
   width: 90%;
@@ -3415,11 +3533,16 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   position: absolute;
   bottom: -160px;
   right: 0px;
-  animation-name: float-NW;
-  animation-duration: 3s;
-  animation-delay: none;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .ea-earn .ea-wrapper .ea-img-section .ea-bitcoin img {
   width: 90%;
@@ -3428,11 +3551,16 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   position: absolute;
   bottom: -160px;
   right: 0px;
-  animation-name: float-NW;
-  animation-duration: 4s;
-  animation-delay: none;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: float-NW;
+          animation-name: float-NW;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: none;
+          animation-delay: none;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .ea-earn .ea-wrapper .ea-img-section .ea-cakecoin img {
   width: 90%;
@@ -3941,10 +4069,21 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 
 ::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 6px;
   border-radius: 6px;
   background-color: #c3b4ce;
   border: none;
+}
+
+@-webkit-keyframes float-NW {
+  0% {
+    transform: translatex(0px) translatey(0px);
+  }
+  50% {
+    transform: translatex(10px) translatey(10px);
+  }
+  100% {
+    transform: translatex(0px) translatey(0px);
+  }
 }
 
 @keyframes float-NW {
@@ -3958,6 +4097,17 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     transform: translatex(0px) translatey(0px);
   }
 }
+@-webkit-keyframes float-N {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 @keyframes float-N {
   0% {
     transform: translateY(0);
@@ -3967,6 +4117,17 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   }
   100% {
     transform: translateY(0);
+  }
+}
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
   }
 }
 @keyframes fade-out {
@@ -3990,6 +4151,4 @@ body {
   align-items: center;
   justify-content: center;
   gap: 0;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

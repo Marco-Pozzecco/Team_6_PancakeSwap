@@ -11,7 +11,7 @@
 
 // Set colori tema scuro
 $theme-dark: map.set($theme-dark, "fa-moon", $footer-background);
-$theme-dark: map.set($theme-dark, "nav-bkground", #000);
+$theme-dark: map.set($theme-dark, "nav-bkground", $footer-background);
 // Set colori tema chiaro
 $theme-light: map.set($theme-light, "fa-moon", $secondary-dk);
 $theme-light: map.set($theme-light, "nav-bkground", #fff); 
@@ -69,8 +69,8 @@ $theme-light: map.set($theme-light, "nav-bkground", #fff);
 }
 nav {
     @include flex(row, space-between, center);
-    background-color: white;
-    //background-color: var(--nav-bkground);
+    //background-color: white;
+    background-color: var(--nav-bkground);
     width: 100%;
     height: 8vh;
     padding: 0 8px;
@@ -135,13 +135,13 @@ nav {
                 color: rgb(154, 106, 255, 30%);
             }
         }
-        .btn-navbar{
-            .button-aquagreen{
-                // width: 127px;
-                // height: 32px;
-                margin: 2px 4px 4px 0px;
-                padding: 0px 16px;
-            }
+        .button-aquagreen{
+             width: 149px;
+             height: 32px;
+            margin: 2px 4px 4px 0px;
+            padding: 0px 17px;
+            
+            
         }
         .modal{
             position: fixed;
@@ -157,11 +157,11 @@ nav {
             display: flex;   
             flex-direction: column;
             justify-content: space-around;
-            z-index: 1000;
+            //z-index: 1000;
             
             .active{
                 transform: translate(-50%, -50%) scale(1);
-                z-index: 1000;
+                
             
             }p{
                 color: $background-color-dk;
@@ -287,11 +287,14 @@ nav {
             background-color: rgba(0,0,0,.5);
             pointer-events: none;
             transition: 200ms ease-in-out;
-            z-index: 2;
+            z-index: -1;
         }
         #overlay.active{
             opacity: 1;
             pointer-events: all;
+        }
+        .btn-popup-navbar-unselected{
+            width: auto;
         }
     } 
 }
@@ -304,4 +307,16 @@ nav {
 
 
 
+// Tablet media query
+nav {
+    //height: auto;
+    @include mq('tablet-small', 'tablet') {
+        .mq-display{
+            display: none;
+        }
+        .menu-ul{
+            display: none;
+        }
 
+    }
+}
