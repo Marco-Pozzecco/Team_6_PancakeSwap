@@ -65,12 +65,24 @@ footer{
     height: auto;
     padding: 56px 40px 32px 40px;
     background-color: $footer-background;
+    // ------
+    display: flex;
+    justify-content: center;
+    align-items: center;
   
+}
+
+.foot-in-wrap {
+    width: 1000px;
+    height: 1000px;
+    background-color: #f39c12
 }
 
 .main-footer{
  @include flex(row, space-between, flex-start);
  margin-bottom: 32px;
+ width: 1000%;
+ max-width: 1200px;
     h3{
         color: #fff;
         font-weight: 100;
