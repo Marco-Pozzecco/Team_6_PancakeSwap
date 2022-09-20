@@ -41,6 +41,8 @@ $theme-light: map.set($theme-light, "hover-nav-ul", $border_color);
     --popup-modal1-bg: #{map.get($theme-dark , "popup-modal1-bg")};
     --label-toggle-bg: #{map.get($theme-dark , "label-bg")};
     --border-bottom-pp: #{map.get($theme-dark , "border-bottom-pp")};
+    --icon-text-color: #{map.get($theme-dark , "icon-text-color")};
+    --hover-nav-ul: #{map.get($theme-dark , "hover-nav-ul")};
     
 
 }
@@ -53,6 +55,8 @@ $theme-light: map.set($theme-light, "hover-nav-ul", $border_color);
     --popup-modal1-bg: #{map.get($theme-light , "popup-modal1-bg")};
     --label-toggle-bg: #{map.get($theme-light , "label-bg")};
     --border-bottom-pp: #{map.get($theme-light , "border-bottom-pp")};
+    --icon-text-color: #{map.get($theme-light , "icon-text-color")};
+    --hover-nav-ul: #{map.get($theme-light , "hover-nav-ul")};
 
 }
 

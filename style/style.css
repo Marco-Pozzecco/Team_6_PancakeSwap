@@ -2702,6 +2702,8 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   --popup-modal1-bg: linear-gradient(166.77deg, rgb(59, 65, 85), rgb(58, 48, 69));
   --label-toggle-bg: rgb(102, 97, 112);
   --border-bottom-pp: rgb(56, 50, 65);
+  --icon-text-color: rgb(184, 173, 210);
+  --hover-nav-ul: rgb(53, 53, 70);
 }
 
 .theme-light {
@@ -2713,6 +2715,8 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   --popup-modal1-bg: linear-gradient(111.68deg, rgb(242, 236, 242), rgb(232, 242, 246));
   --label-toggle-bg: rgb(189, 194, 196);
   --border-bottom-pp: #d9d9d9;
+  --icon-text-color: rgb(122, 110, 170);
+  --hover-nav-ul: rgb(233, 234, 235);
 }
 
 .mobile-icon {
@@ -3078,13 +3082,6 @@ i {
   transition: opacity 200ms easy-in-out;
 }
 
-.fa-globe:hover {
-  color: rgba(154, 106, 255, 0.3);
-}
-.fa-globe:hover .dropdown {
-  visibility: visible;
-}
-
 footer {
   width: 100%;
   height: auto;
@@ -3208,6 +3205,11 @@ li {
 .fa-sun {
   color: var(--fa-sun);
   z-index: 2;
+}
+
+.fa-globe:hover {
+  color: rgba(154, 106, 255, 0.3);
+  cursor: pointer;
 }
 
 /* Bottoni nel div-SWAP(a sinistra)-- */

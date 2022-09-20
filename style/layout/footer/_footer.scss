@@ -54,12 +54,12 @@ i{
      opacity: 0;
      transition: opacity 200ms easy-in-out;
  }
-.fa-globe:hover{
-        color: rgb(154, 106, 255, 30%);
-    .dropdown {
-        visibility: visible;
-    }
-}
+// .fa-globe:hover{
+//         color: rgb(154, 106, 255, 30%);
+//     .dropdown {
+//         visibility: visible;
+//     }
+// }
 
 footer{
     width: 100%;
@@ -190,7 +190,15 @@ footer{
 	color: var(--fa-sun);
     z-index: 2;
 }
+.fa-globe{
+    // fill: $secondary-color;
+    &:hover{
+        color: rgb(154, 106, 255, 30%);
+        cursor: pointer;
 
+    }
+    
+}
 
 
 
