@@ -101,7 +101,7 @@ nav {
     position: fixed;
     top: 0;
     z-index: 98;
-    border-bottom: 1px solid $border_color;
+    border-bottom: 1px solid var(--border-bottom-pp);
     .flex{
         @include flex(center);
         div, h2, ul{
