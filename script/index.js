@@ -59,7 +59,6 @@ const openModalBtn = document.querySelectorAll('[data-modal-target]');
     //   }
     getValue();
 
-
       
     });
     function getValue() {
@@ -68,11 +67,13 @@ const openModalBtn = document.querySelectorAll('[data-modal-target]');
          
         if(isChecked3){
             logo.setAttribute('src' , '/resources/svgs/logo_black.svg');
+            bunnyBottomGradient.attributes.fill.value = "url(#paint0_linear_light)";
             console.log("Input is checked");
             chk.checked = true;
 
         } else {
             logo.setAttribute('src', '/resources/svgs/logo_white.svg');
+            bunnyBottomGradient.attributes.fill.value = "url(#paint0_linear_dark)";
             console.log("is not checked");
             chk.checked = false;
         }
