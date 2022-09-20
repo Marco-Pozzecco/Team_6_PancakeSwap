@@ -3986,6 +3986,14 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 .ta-trade-anything .ta-wrapper .ta-img-section .ta-cakecoin img {
   width: 90%;
 }
+.ta-trade-anything .ta-bottom-gradient {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+.ta-trade-anything .ta-bottom-gradient svg {
+  z-index: 5;
+}
 
 @media screen and (min-width: 1024px) and (max-width: 1247px) {
   .ta-trade-anything .ta-wrapper {

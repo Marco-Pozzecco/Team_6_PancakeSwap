@@ -95,12 +95,14 @@ const openModalBtn = document.querySelectorAll('[data-modal-target]');
          
         if(chk){
             logo.setAttribute('src' , '/resources/svgs/logo_black.svg');
+            bunnyBottomGradient.attributes.fill.value = "url(#paint0_linear_light)";
             console.log("chk is checked");
             isChecked3.checked = true;
             overlay.style.backgroundColor = '#280D5F'; //#280D5F    rgba(40,13,95,0.6)
 
         } else {
             logo.setAttribute('src', '/resources/svgs/logo_white.svg');
+            bunnyBottomGradient.attributes.fill.value = "url(#paint0_linear_dark)";
             console.log("is not checked");
             isChecked3.checked = false;
             overlay.style.backgroundColor = '#F4EEFF'; //#F4EEFF    rgba(244, 238, 255, 0.6)

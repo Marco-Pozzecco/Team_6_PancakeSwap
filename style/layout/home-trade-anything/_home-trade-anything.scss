@@ -158,20 +158,32 @@ $theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
         }
     }
 
+    .ta-bottom-gradient {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+
+        svg {
+            z-index: 5;
+        }
+    }
 }
 
 @include mq("laptop") {
     .ta-trade-anything {
         .ta-wrapper {
             @include flex(column-reverse, center);
+
             .ta-contents-section {
                 width: 100%;
             }
+
             .ta-img-section {
                 align-self: flex-end;
                 right: 0;
                 min-width: 10px;
                 max-width: 150px;
+
                 img {
                     padding-bottom: 130px;
                     width: 20px;
@@ -185,14 +197,17 @@ $theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
     .ta-trade-anything {
         .ta-wrapper {
             @include flex(column-reverse, center);
+
             .ta-contents-section {
                 width: 100%;
             }
+
             .ta-img-section {
                 align-self: flex-end;
                 right: 0;
                 min-width: 10px;
                 max-width: 150px;
+
                 img {
                     padding-bottom: 130px;
                     width: 20px;
@@ -206,14 +221,17 @@ $theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
     .ta-trade-anything {
         .ta-wrapper {
             @include flex(column-reverse, center);
+
             .ta-contents-section {
                 width: 100%;
             }
+
             .ta-img-section {
                 align-self: flex-end;
                 right: 0;
                 min-width: 10px;
                 max-width: 150px;
+
                 img {
                     padding-bottom: 130px;
                     width: 20px;
@@ -227,14 +245,17 @@ $theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
     .ta-trade-anything {
         .ta-wrapper {
             @include flex(column-reverse, center);
+
             .ta-contents-section {
                 width: 100%;
             }
+
             .ta-img-section {
                 align-self: flex-end;
                 right: 0;
                 min-width: 10px;
                 max-width: 150px;
+
                 img {
                     padding-bottom: 130px;
                     width: 20px;
@@ -248,14 +269,17 @@ $theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
     .ta-trade-anything {
         .ta-wrapper {
             @include flex(column-reverse, center);
+
             .ta-contents-section {
                 width: 100%;
             }
+
             .ta-img-section {
                 align-self: flex-end;
                 right: 0;
                 min-width: 10px;
                 max-width: 150px;
+
                 img {
                     padding-bottom: 130px;
                     width: 20px;
@@ -269,14 +293,17 @@ $theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
     .ta-trade-anything {
         .ta-wrapper {
             @include flex(column-reverse, center);
+
             .ta-contents-section {
                 width: 100%;
             }
+
             .ta-img-section {
                 align-self: flex-end;
                 right: 0;
                 min-width: 10px;
                 max-width: 150px;
+
                 img {
                     padding-bottom: 130px;
                     width: 20px;
