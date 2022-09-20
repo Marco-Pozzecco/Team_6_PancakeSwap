@@ -2884,7 +2884,7 @@ nav .flex .modal .modal1 .close-btn {
   font-size: 1.55rem;
 }
 nav .flex .modal .header {
-  color: rgb(8, 6, 11);
+  color: var(--text-color);
 }
 nav .flex .modal h4 {
   color: rgb(118, 69, 217);
