@@ -7,10 +7,8 @@ const openModalBtn = document.querySelectorAll('[data-modal-target]');
     const closeModalBtn = document.querySelectorAll('[data-close-btn]');
     const overlay = document.getElementById('overlay');
     
-    const url = document.getElementById('logo1');
-    let path = url.attributes.src.value;
+    const logo = document.getElementById('logo1');
     
-
     openModalBtn.forEach(button => {
         button.addEventListener('click', () => {
             const modal = document.querySelector(button.dataset.modalTarget)
@@ -46,21 +44,35 @@ const openModalBtn = document.querySelectorAll('[data-modal-target]');
 
     chk3.addEventListener("change", () => {
       document.body.classList.toggle("theme-light");
-      path = '/resources/svgs/logo_black.svg';
       
-      
-      if(path == '/resources/svgs/logo_white.svg'){
-        //url.setAttribute('src', '/resources/svgs/logo_black.svg');
-        path = '/resources/svgs/logo_black.svg';
-        console.log(path);
+    //   if(path == '/resources/svgs/logo_white.svg'){
+    //     //url.setAttribute('src', '/resources/svgs/logo_black.svg');
+    //     path = '/resources/svgs/logo_black.svg';
+    //     console.log(path);
         
-      }else {
-        //url.setAttribute('src', '/resources/svgs/logo_white.svg');
-        path = '/resources/svgs/logo_white.svg';
-        console.log(url.attributes.src.value);
-      }
+    //   }else {
+    //     //url.setAttribute('src', '/resources/svgs/logo_white.svg');
+    //     path = '/resources/svgs/logo_white.svg';
+    //     console.log(url.attributes.src.value);
+    //   }
+    getValue();
       
     });
+    function getValue() {
+        var isChecked3 = document.getElementById("chk3").checked;
+        var chk = document.getElementById("chk");
+         
+        if(isChecked3){
+            logo.setAttribute('src' , '/resources/svgs/logo_black.svg');
+            console.log("Input is checked");
+            chk.checked = true;
+
+        } else {
+            logo.setAttribute('src', '/resources/svgs/logo_white.svg');
+            console.log("is not checked");
+            chk.checked = false;
+        }
+    }
 
     const chk = document.getElementById("chk");
 
