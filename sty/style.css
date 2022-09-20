@@ -811,7 +811,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 .win-prizes .prizes-wrapper .card-container .card {
   margin: 0 10px;
-  padding: 20px;
+  padding: 25px;
   width: 280px;
   height: 350px;
   border-radius: 24px;
@@ -1397,16 +1397,12 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /*D*/
 /*E*/
 /*F*/
-/*G*/
-/*H*/
 /*A*/
 /*B*/
 /*C*/
 /*D*/
 /*E*/
 /*F*/
-/*G*/
-/*H*/
 .theme-dark {
   /*A*/
   --background-stat-section: background linear-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%);
@@ -1418,12 +1414,8 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   --heading-2: rgb(244, 238, 255);
   /*E*/
   --heading-3: rgb(184, 173, 210);
-  /*F*/
-  --border-stat-card-color: rgb(55, 50, 64);
-  /*G*/
-  --svg-card-fill-color: rgb(28, 18, 48);
-  /*H*/
-  --svg-card-bgc-color: rgb(8, 6, 11);
+  /*f*/
+  --border-stat-card-color: rgb(230, 227, 234);
 }
 
 .theme-light {
@@ -1437,12 +1429,8 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   --heading-2: rgb(40, 13, 95);
   /*E*/
   --heading-3: rgb(122, 110, 170);
-  /*F*/
-  --border-stat-card-color: rgb(230, 227, 234);
-  /*G*/
-  --svg-card-fill-color: rgb(217, 207, 235);
-  /*H*/
-  --svg-card-bgc-color: rgb(250, 249, 250);
+  /*f*/
+  --border-stat-card-color: ;
 }
 
 * {
@@ -1515,8 +1503,8 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     margin-right: 16px;
     border-radius: 24px;
     position: relative;
-    border: 1px solid var(--border-stat-card-color);
-    border-bottom: 3px solid var(--border-stat-card-color);
+    border: 1px var(--border-stat-card-color);
+    border-bottom: 3px var(--border-stat-card-color);
     width: 280px;
     height: 280px;
   }
@@ -1568,10 +1556,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     font-size: 16px;
   }
   .stat-section .svg-transition-color-box {
-    background-color: var(--svg-card-bgc-color);
+    background-color: black;
   }
   .stat-section .svg-transition-color-box .svg-transition-color {
-    fill: var(--svg-card-fill-color);
+    fill: rgb(30, 17, 50);
     width: 100%;
     height: 100%;
     max-height: 48px;
@@ -1581,7 +1569,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   .stat-section {
     width: 100%;
     height: auto;
-    background: var(--background-stat-section);
+    background: linear-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%);
   }
   .stat-section .wrapper-stat {
     display: flex;
@@ -1602,11 +1590,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     font-size: 32px;
     font-weight: 600;
     line-height: 1.1;
-    color: var(--heading-2);
+    color: rgb(244, 238, 255);
   }
   .stat-section .wrapper-stat h2:nth-child(3) {
     margin-bottom: 32px;
-    color: var(--heading-2);
   }
   .stat-section .wrapper-stat .description-stat-sec {
     font-size: 16px;
@@ -1614,17 +1601,14 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   }
   .stat-section .wrapper-stat .dst1 {
     font-weight: 400;
-    color: var(--heading-3);
   }
   .stat-section .wrapper-stat .dst2 {
     vertical-align: baseline;
     margin-bottom: 10px;
-    color: var(--heading-3);
   }
   .stat-section .wrapper-stat .dst3 {
     font-weight: 600;
     margin-bottom: 32px;
-    color: var(--heading-3);
   }
   .stat-section .wrapper-stat .card-container-dst {
     display: flex;
@@ -1633,7 +1617,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     align-items: center;
   }
   .stat-section .wrapper-stat .card-container-dst .card-dst {
-    background: var(--background-stat-card);
+    background-color: #27262c;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1642,8 +1626,8 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     border-radius: 24px;
     margin-right: 16px;
     position: relative;
-    border: 1px solid var(--border-stat-card-color);
-    border-bottom: 3px solid var(--border-stat-card-color);
+    border: 1px solid rgb(56, 50, 65);
+    border-bottom: 3px solid rgb(56, 50, 65);
     width: 280px;
   }
   .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg {
@@ -1692,10 +1676,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     font-size: 16px;
   }
   .stat-section .svg-transition-color-box {
-    background-color: var(--svg-card-bgc-color);
+    background-color: black;
   }
   .stat-section .svg-transition-color-box .svg-transition-color {
-    fill: var(--svg-card-fill-color);
+    fill: rgb(30, 17, 50);
     width: 100%;
     height: 100%;
     max-height: 48px;
@@ -1706,7 +1690,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     margin-top: 200px;
     width: 100%;
     height: auto;
-    background: var(--background-stat-section);
+    background: linear-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%);
   }
   .stat-section .wrapper-stat {
     display: flex;
@@ -1727,11 +1711,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     font-size: 32px;
     font-weight: 600;
     line-height: 1.1;
-    color: var(--heading-2);
+    color: rgb(244, 238, 255);
   }
   .stat-section .wrapper-stat h2:nth-child(3) {
     margin-bottom: 32px;
-    color: var(--heading-2);
   }
   .stat-section .wrapper-stat .description-stat-sec {
     font-size: 16px;
@@ -1739,17 +1722,14 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   }
   .stat-section .wrapper-stat .dst1 {
     font-weight: 400;
-    color: var(--heading-3);
   }
   .stat-section .wrapper-stat .dst2 {
     vertical-align: baseline;
     margin-bottom: 20px;
-    color: var(--heading-3);
   }
   .stat-section .wrapper-stat .dst3 {
     font-weight: 600;
     margin-bottom: 32px;
-    color: var(--heading-3);
   }
   .stat-section .wrapper-stat .card-container-dst {
     display: flex;
@@ -1759,7 +1739,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     width: 100%;
   }
   .stat-section .wrapper-stat .card-container-dst .card-dst {
-    background: var(--background-stat-card);
+    background-color: #27262c;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -1767,8 +1747,8 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     padding: 24px;
     border-radius: 24px;
     position: relative;
-    border: 1px solid var(--border-stat-card-color);
-    border-bottom: 3px solid var(--border-stat-card-color);
+    border: 1px solid rgb(56, 50, 65);
+    border-bottom: 3px solid rgb(56, 50, 65);
     margin-bottom: 15px;
     line-height: 1;
     width: 280px;
@@ -1819,14 +1799,14 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     font-size: 16px;
   }
   .stat-section .svg-transition-color-box {
-    background-color: var(--svg-card-bgc-color);
+    background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   .stat-section .svg-transition-color-box .svg-transition-color {
-    fill: var(--svg-card-fill-color);
+    fill: rgb(30, 17, 50);
     width: 100%;
     height: 100%;
     max-height: 48px;
@@ -2657,7 +2637,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   --nav-bkground: #fff;
   --popup-bg: #fff;
   --text-color: rgb(8, 6, 11);
-  --popup-modal1-bg: linear-gradient(111.68deg, rgb(242, 236, 242), rgb(232, 242, 246));
+  --popup-modal1-bg: #eeeeee;
   --label-toggle-bg: rgb(189, 194, 196);
   --border-bottom-pp: #d9d9d9;
 }
@@ -2708,7 +2688,7 @@ nav {
   padding: 0 8px;
   position: fixed;
   top: 0;
-  z-index: 98;
+  z-index: 99;
   border-bottom: 1px solid rgb(233, 234, 235);
 }
 nav .flex {
@@ -2793,16 +2773,13 @@ nav .flex .modal {
   z-index: 999;
   opacity: 0;
 }
-nav .flex .modal.active {
+nav .flex .modal .active {
   transform: translate(-50%, -50%);
   z-index: 999;
   opacity: 1;
 }
-nav .flex .modal p, nav .flex .modal sub svg {
+nav .flex .modal p {
   color: var(--text-color);
-}
-nav .flex .modal sub svg {
-  background-image: var(--text-color);
 }
 nav .flex .modal .modal1 {
   position: fixed;
@@ -2839,26 +2816,25 @@ nav .flex .label {
   background-color: var(--label-toggle-bg);
   border-radius: 50px;
   cursor: pointer;
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 5px;
   position: relative;
-  height: 32px;
-  width: 56px;
+  height: 26px;
+  width: 50px;
   transform: scale(1);
 }
 nav .flex .label .ball {
   background-color: #fff;
   border-radius: 50%;
   position: absolute;
-  top: 3px;
-  left: 3px;
-  height: 26px;
-  width: 26px;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
   transform: translateX(0px);
   transition: transform 0.2s linear;
-  z-index: 1;
 }
 nav .flex .checkbox:checked + .label .ball {
   transform: translateX(24px);
@@ -2876,21 +2852,20 @@ nav .flex .label1 {
   justify-content: space-between;
   padding: 5px;
   position: relative;
-  height: 32px;
-  width: 56px;
+  height: 26px;
+  width: 50px;
   transform: scale(1);
 }
 nav .flex .label1 .ball1 {
   background-color: #fff;
   border-radius: 50%;
   position: absolute;
-  top: 3px;
-  left: 3px;
-  height: 26px;
-  width: 26px;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
   transform: translateX(0px);
   transition: transform 0.2s linear;
-  align-items: center;
 }
 nav .flex .checkbox1:checked + .label1 {
   background-color: rgb(60, 207, 170);
@@ -2900,13 +2875,9 @@ nav .flex .checkbox1:checked + .label1 .ball1 {
 }
 nav .flex .fa-moon {
   color: var(--fa-moon);
-  z-index: 2;
-  align-self: center;
 }
 nav .flex .fa-sun {
   color: var(--fa-sun);
-  z-index: 2;
-  align-self: center;
 }
 nav .flex .flex-switch {
   display: flex;
@@ -2923,31 +2894,20 @@ nav .flex #overlay {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(244, 238, 255, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
   pointer-events: none;
   transition: 200ms ease-in-out;
-  z-index: 99;
+  z-index: 2;
 }
 nav .flex #overlay.active {
-  opacity: 0.6;
+  opacity: 1;
   pointer-events: all;
-  transition: 350ms ease;
 }
 
 .fa-globe:hover {
   color: rgba(154, 106, 255, 0.3);
 }
 
-@media screen and (min-width: 640px) and (max-width: 1023px) {
-  nav .flex #money, nav .flex .igZcUN {
-    display: none;
-  }
-}
-@media screen and (max-width: 640px) {
-  nav .flex #money, nav .flex .igZcUN, nav .flex ul {
-    display: none;
-  }
-}
 /* Bottoni nel div-SWAP(a sinistra)-- */
 /* --bottone in alto a sinistra sbarrato----------------- */
 /* blocco bottoni nel div Swap--------------------------------------------*/
@@ -3123,7 +3083,6 @@ li {
   height: 26px;
   width: 50px;
   transform: scale(1);
-  z-index: 1;
 }
 
 .label3 .ball3 {
@@ -3144,12 +3103,10 @@ li {
 
 .fa-moon {
   color: var(--fa-moon);
-  z-index: 2;
 }
 
 .fa-sun {
   color: var(--fa-sun);
-  z-index: 2;
 }
 
 /* Bottoni nel div-SWAP(a sinistra)-- */
@@ -3979,14 +3936,6 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 .ta-trade-anything .ta-wrapper .ta-img-section .ta-cakecoin img {
   width: 90%;
-}
-.ta-trade-anything .ta-bottom-gradient {
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-}
-.ta-trade-anything .ta-bottom-gradient svg {
-  z-index: 5;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1247px) {
