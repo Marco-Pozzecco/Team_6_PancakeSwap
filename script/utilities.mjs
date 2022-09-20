@@ -9,4 +9,5 @@ export default class Utilities {
         return document.querySelector(str);
     }
 
+
 }
