@@ -10,28 +10,28 @@
 // Set colori tema scuro
 $theme-dark: map.set($theme-dark, "win-prizes", "background-gradient", linear-gradient(rgb(11, 69, 118) 0%, rgb(9, 17, 21) 100%));
 $theme-dark: map.set($theme-dark, "win-prizes", "background-wrapper", rgba(8, 6, 11, 0.6));
-$theme-dark: map.set($theme-dark, "text", "paragraph-dark", rgb(184, 173, 210));
-$theme-dark: map.set($theme-dark, "text", "header2-text", rgb(244, 238, 255));
+$theme-dark: map.set($theme-dark, "win-text", "paragraph-dark", rgb(184, 173, 210));
+$theme-dark: map.set($theme-dark, "win-text", "header2-text", rgb(244, 238, 255));
 
 // Set colori tema chiaro
 $theme-light: map.set($theme-light, "win-prizes", "background-gradient", linear-gradient(rgb(111, 182, 241) 0%, rgb(234, 242, 246) 100%));
 $theme-light: map.set($theme-light, "win-prizes", "background-wrapper", rgba(255, 255, 255, 0.6));
-$theme-light: map.set($theme-light, "text", "paragraph-light", rgb(122, 110, 170));
-$theme-light: map.set($theme-light, "text", "header2-text", rgb(40, 13, 95));
+$theme-light: map.set($theme-light, "win-text", "paragraph-light", rgb(122, 110, 170));
+$theme-light: map.set($theme-light, "win-text", "header2-text", rgb(40, 13, 95));
 
 .theme-dark {
     --background-win-prizes: #{map.get($theme-dark, "win-prizes", "background-gradient")};
     --background-win-wrapper: #{map.get($theme-dark, "win-prizes", "background-wrapper")};
-    --text-paragraph: #{map.get($theme-dark, "text", "paragraph-dark")};
-    --heading-2: #{map.get($theme-dark, "text", "header2-text")};
+    --text-paragraph: #{map.get($theme-dark, "win-text", "paragraph-dark")};
+    --heading-2: #{map.get($theme-dark, "win-text", "header2-text")};
 }
 
 
 .theme-light {
     --background-win-prizes: #{map.get($theme-light, "win-prizes", "background-gradient")};
     --background-win-wrapper: #{map.get($theme-light, "win-prizes", "background-wrapper")};
-    --text-paragraph: #{map.get($theme-light, "text", "paragraph-light")};
-    --heading-2: #{map.get($theme-light, "text", "header2-text")};
+    --text-paragraph: #{map.get($theme-light, "win-text", "paragraph-light")};
+    --heading-2: #{map.get($theme-light, "win-text", "header2-text")};
 }
 
 
@@ -118,7 +118,7 @@ $theme-light: map.set($theme-light, "text", "header2-text", rgb(40, 13, 95));
                 @include flex();
                 .card {
                     margin: 0 10px;
-                    padding: 25px;
+                    padding: 20px;
 
                     width: 280px;
                     height: 350px;

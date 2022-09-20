@@ -8,10 +8,10 @@
 
 
 // Set colori tema scuro
-$theme-dark: map.set($theme-dark, "fa-moon", $footer-background);
-$theme-dark: map.set($theme-dark, "fa-sun", $footer-background);
-$theme-dark: map.set($theme-dark, "nav-bkground", $footer-background);
-$theme-dark: map.set($theme-dark, "popup-bg", $footer-background);
+$theme-dark: map.set($theme-dark, "fa-moon","nav-bkground", "fa-sun", "popup-bg", $footer-background);
+// $theme-dark: map.set($theme-dark, "fa-sun", $footer-background);
+// $theme-dark: map.set($theme-dark, "nav-bkground", $footer-background);
+// $theme-dark: map.set($theme-dark, "popup-bg", $footer-background);
 $theme-dark: map.set($theme-dark, "text-color", white);
 $theme-dark: map.set($theme-dark, "popup-modal1-bg", $popup-gradient);
 $theme-dark: map.set($theme-dark, "label-bg", $label-toggle-bg-dk);
@@ -23,7 +23,7 @@ $theme-light: map.set($theme-light, "fa-sun", #f39c12);
 $theme-light: map.set($theme-light, "nav-bkground", #fff); 
 $theme-light: map.set($theme-light, "popup-bg", #fff); 
 $theme-light: map.set($theme-light, "text-color", $background-color-dk);
-$theme-light: map.set($theme-light, "popup-modal1-bg", #eeeeee);
+$theme-light: map.set($theme-light, "popup-modal1-bg", $header-popup-gradient);
 $theme-light: map.set($theme-light, "label-bg", $label-toggle-bg);
 $theme-light: map.set($theme-light, "border-bottom-pp", #d9d9d9 );
 
@@ -185,8 +185,11 @@ nav {
                 z-index: 999;
                 opacity: 1;
             
-            }p{
+            }p, sub svg{
                 color: var(--text-color);
+            }
+            sub svg{
+                background-image: var(--text-color);
             }
             .modal1{
                 position: fixed;
@@ -226,26 +229,32 @@ nav {
             background-color: var(--label-toggle-bg);
             border-radius: 50px;
             cursor: pointer;
-            display: flex;
+            display: inline-flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: space-around;
             padding: 5px;
             position: relative;
-            height: 26px;
-            width: 50px;
+            height: 32px;
+            width: 56px;
             transform: scale(1);
+           
         }
         
         .label .ball {
             background-color: #fff;
             border-radius: 50%;
             position: absolute;
-            top: 2px;
-            left: 2px;
-            height: 22px;
-            width: 22px;
+            top: 3px;
+            left: 3px;
+            height: 26px;
+            width: 26px;
             transform: translateX(0px);
             transition: transform 0.2s linear;
+            z-index: 1;
+            // &:hover{
+            //     border: 2px solid rgb(118, 69, 217);
+                
+            // }
             
         }
         .checkbox:checked + .label .ball {
@@ -265,8 +274,8 @@ nav {
             justify-content: space-between;
             padding: 5px;
             position: relative;
-            height: 26px;
-            width: 50px;
+            height: 32px;
+            width: 56px;
             transform: scale(1);
             
         }
@@ -274,12 +283,13 @@ nav {
             background-color: #fff;
             border-radius: 50%;
             position: absolute;
-            top: 2px;
-            left: 2px;
-            height: 22px;
-            width: 22px;
+            top: 3px;
+            left: 3px;
+            height: 26px;
+            width: 26px;
             transform: translateX(0px);
             transition: transform 0.2s linear;
+            align-items: center;
             
         }
         .checkbox1:checked + .label1 {
@@ -290,9 +300,21 @@ nav {
         }
         .fa-moon {
             color: var(--fa-moon);
+            // width: 20px;
+            // height: 20px;
+            z-index: 2;
+            align-self: center;
         }
         .fa-sun {
             color: var(--fa-sun);
+            // width: 20px;
+            // height: 20px;
+            z-index: 2;
+            align-self: center;
+            // display: block;
+            // flex-shrink: 0;
+            // overflow-y: hidden;
+            // overflow-x: hidden;
         }
         
         .flex-switch{
@@ -311,14 +333,15 @@ nav {
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: rgba(0,0,0,.5);
+            background-color: rgba(244, 238, 255, 0.6);
             pointer-events: none;
             transition: 200ms ease-in-out;
             z-index: 99;
         }
         #overlay.active{
-            opacity: 1;
+            opacity: 0.6;
             pointer-events: all;
+            transition: 350ms ease;
         }
     } 
 }

@@ -152,6 +152,7 @@ footer{
     height: 26px;
     width: 50px;
     transform: scale(1); 
+    z-index: 1;
 
 }
 
@@ -182,9 +183,11 @@ footer{
 
 .fa-moon {
 	color: var(--fa-moon);
+    z-index: 2;
 }
 .fa-sun {
 	color: var(--fa-sun);
+    z-index: 2;
 }
 
 
