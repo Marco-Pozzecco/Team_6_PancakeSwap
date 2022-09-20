@@ -13,7 +13,7 @@ $theme-dark: map.set($theme-dark, "text", "paragraph-dark", rgb(154, 106, 255));
 $theme-dark: map.set($theme-dark, "text", "header2-text", rgb(244, 238, 255));
 
 // Set colori tema chiaro
-$theme-light: map.set($theme-light, "floating-bunny", "background-gradient", linear-gradient(102deg, rgba(231,252,255,1) 100%, rgba(240,243,255,1) 100%));
+$theme-light: map.set($theme-light, "floating-bunny", "background-gradient", linear-gradient(102deg, rgba(231,252,255,1) 100%, rgb(239, 244, 255) 100%));
 $theme-light: map.set($theme-light, "text", "paragraph-light", rgb(122, 110, 170));
 $theme-light: map.set($theme-light, "text", "header2-text", rgb(40, 13, 95));
 

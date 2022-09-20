@@ -1,3 +1,4 @@
+
 // export default class Utilities {
 //     // Accetta una stringa che rappresenta un selettore CSS, ritorna tutti gli elementi che soddisfano quel selettore
 //     getAllElements(str) {
@@ -8,5 +9,6 @@
 //     getElement(str) {
 //         return document.querySelector(str);
 //     }
+
 
 // }
