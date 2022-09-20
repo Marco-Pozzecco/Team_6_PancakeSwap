@@ -197,6 +197,7 @@ $theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
     .ebb-main-title-container {
         height: 24px;
         width: 100%;
+        padding-bottom: 50px;
         // background-color: rgba(255, 255, 0, 0.649);
 
 
@@ -206,9 +207,8 @@ $theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
             justify-content: flex-start;
             align-items: center;
 
-
             .ebb-title-a1 {
-                color: rgb(244, 238, 255);
+                color: var(--heading-2);
                 font-size: 20px;
 
                 .ebb-title-a2 {
@@ -288,7 +288,7 @@ $theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
                 }
 
                 .ebbi-s2 {
-                    color: rgb(244, 238, 255);
+                    color: var(--heading-2);
                     font-size: 16px;
                     font-weight: 600;
 
