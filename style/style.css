@@ -2820,25 +2820,26 @@ nav .flex .label {
   background-color: var(--label-toggle-bg);
   border-radius: 50px;
   cursor: pointer;
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 5px;
   position: relative;
-  height: 26px;
-  width: 50px;
+  height: 32px;
+  width: 56px;
   transform: scale(1);
 }
 nav .flex .label .ball {
   background-color: #fff;
   border-radius: 50%;
   position: absolute;
-  top: 2px;
-  left: 2px;
-  height: 22px;
-  width: 22px;
+  top: 3px;
+  left: 3px;
+  height: 26px;
+  width: 26px;
   transform: translateX(0px);
   transition: transform 0.2s linear;
+  z-index: 1;
 }
 nav .flex .checkbox:checked + .label .ball {
   transform: translateX(24px);
@@ -2856,20 +2857,21 @@ nav .flex .label1 {
   justify-content: space-between;
   padding: 5px;
   position: relative;
-  height: 26px;
-  width: 50px;
+  height: 32px;
+  width: 56px;
   transform: scale(1);
 }
 nav .flex .label1 .ball1 {
   background-color: #fff;
   border-radius: 50%;
   position: absolute;
-  top: 2px;
-  left: 2px;
-  height: 22px;
-  width: 22px;
+  top: 3px;
+  left: 3px;
+  height: 26px;
+  width: 26px;
   transform: translateX(0px);
   transition: transform 0.2s linear;
+  align-items: center;
 }
 nav .flex .checkbox1:checked + .label1 {
   background-color: rgb(60, 207, 170);
@@ -2879,9 +2881,13 @@ nav .flex .checkbox1:checked + .label1 .ball1 {
 }
 nav .flex .fa-moon {
   color: var(--fa-moon);
+  z-index: 2;
+  align-self: center;
 }
 nav .flex .fa-sun {
   color: var(--fa-sun);
+  z-index: 2;
+  align-self: center;
 }
 nav .flex .flex-switch {
   display: flex;
@@ -3098,6 +3104,7 @@ li {
   height: 26px;
   width: 50px;
   transform: scale(1);
+  z-index: 1;
 }
 
 .label3 .ball3 {
@@ -3118,10 +3125,12 @@ li {
 
 .fa-moon {
   color: var(--fa-moon);
+  z-index: 2;
 }
 
 .fa-sun {
   color: var(--fa-sun);
+  z-index: 2;
 }
 
 /* Bottoni nel div-SWAP(a sinistra)-- */
