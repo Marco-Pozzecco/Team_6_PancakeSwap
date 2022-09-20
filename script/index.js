@@ -9,6 +9,11 @@ const openModalBtn = document.querySelectorAll('[data-modal-target]');
     const overlay = document.getElementById('overlay');
     
     const logo = document.getElementById('logo1');
+
+    // const buttonAquaGreen = document.getElementsByClassName('aqua-green');
+    // buttonAquaGreen.addEventListener('click',() => {
+    //     document.body.classList('link-aqua-green');
+    // })
     
     openModalBtn.forEach(button => {
         button.addEventListener('click', () => {

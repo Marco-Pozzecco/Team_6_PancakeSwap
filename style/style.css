@@ -2738,7 +2738,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   justify-content: space-between;
 }
 .menu-nav ul li i, a li i, i li i, li a li i {
-  color: rgb(40, 13, 95);
+  color: var(--icon-text-color);
 }
 
 .menu-nav li:hover, .menu-nav li:focus {
@@ -3007,6 +3007,12 @@ nav .flex #overlay.active {
 }
 @media screen and (max-width: 640px) {
   nav .flex #money, nav .flex .igZcUN, nav .flex ul {
+    display: none;
+  }
+  nav .flex .mobile-icon {
+    display: inline;
+  }
+  nav .flex #logo1 {
     display: none;
   }
 }
