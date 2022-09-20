@@ -208,7 +208,7 @@ $theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
 
 
             .ebb-title-a1 {
-                color: rgb(244, 238, 255);
+                color: var(--heading-2);
                 font-size: 20px;
 
                 .ebb-title-a2 {
@@ -288,7 +288,7 @@ $theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
                 }
 
                 .ebbi-s2 {
-                    color: rgb(244, 238, 255);
+                    color: var(--heading-2);
                     font-size: 16px;
                     font-weight: 600;
 

@@ -8,18 +8,21 @@
 @import "../../abstracts/animations";
 
 // Set colori tema scuro
+$theme-dark: map.set($theme-dark, "earn", "background-gradient", #3a364a);
 $theme-dark: map.set($theme-dark, "trade", "background-gradient", rgb(8, 6, 11));
 $theme-dark: map.set($theme-dark, "text", "paragraph-dark", rgb(154, 106, 255));
 $theme-dark: map.set($theme-dark, "text", "header2-text", rgb(244, 238, 255));
 $theme-dark: map.set($theme-dark, "text", "header3-text", rgb(184, 173, 210));
 
 // Set colori tema chiaro
+$theme-light: map.set($theme-light, "earn", "background-gradient", linear-gradient(102deg, rgba(241,237,243,1) 100%, rgba(233,242,246,1) 100%));
 $theme-light: map.set($theme-light, "trade", "background-gradient", rgb(250, 249, 250));
 $theme-light: map.set($theme-light, "text", "paragraph-light", rgb(118, 69, 217));
 $theme-light: map.set($theme-light, "text", "header2-text", rgb(40, 13, 95));
 $theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
 
 .theme-dark {
+    --background-earn: #{map.get($theme-dark, "earn", "background-gradient")};
     --background-trade: #{map.get($theme-dark, "trade", "background-gradient")};
     --text-paragraph: #{map.get($theme-dark, "text", "paragraph-dark")};
     --heading-2: #{map.get($theme-dark, "text", "header2-text")};
@@ -28,6 +31,7 @@ $theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
 
 
 .theme-light {
+    --background-earn: #{map.get($theme-light, "earn", "background-gradient")};
     --background-trade: #{map.get($theme-light, "trade", "background-gradient")};
     --text-paragraph: #{map.get($theme-light, "text", "paragraph-light")};
     --heading-2: #{map.get($theme-light, "text", "header2-text")};
@@ -54,6 +58,7 @@ $theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
 //end scrollbar
 
 .ta-trade-anything {
+    position: relative;
     @include flex(column);
     align-items: center;
     padding-top: 50px;
@@ -158,15 +163,19 @@ $theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
         }
     }
 
-    .ta-bottom-gradient {
-        position: absolute;
-        bottom: 0px;
-        width: 100%;
+    // .ta-bottom-gradient {
+    //     position: absolute;
+    //     bottom: 0px;
+    //     width: 100%;
+    //     background-color: var(--background-earn);
+        
 
-        svg {
-            z-index: 5;
-        }
-    }
+    //     svg {
+    //         width: 100%;
+    //         z-index: 5;
+    //         fill: var(--background-trade);
+    //     }
+    // }
 }
 
 @include mq("laptop") {
