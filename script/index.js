@@ -1,5 +1,6 @@
 // Import statements
-// import {Utilities} from 'utilities';
+import Utilities from "./utilities.mjs";
+import Randomize from "./randomize.mjs";
 
 //open modal popup menu from navbar
 
@@ -64,4 +65,45 @@ const openModalBtn = document.querySelectorAll('[data-modal-target]');
         
     });
 
+// Win prizes random DOM injection
+const winPrizesPrediction = Utilities.getElement('#value-prediction');
+const winPrizesLottery = Utilities.getElement('#value-lottery');
+
+function randomPredictionValue() {
+    // DOM manipulation
+    let value = Number(winPrizesPrediction.textContent);
+    let amount = Randomize.randomNumInRange(1, 10);
     
+    // Addizione o sottrazione casuale
+    if (Math.random() >= 0.49) {
+        return winPrizesPrediction.textContent = (value + amount);
+    } else {
+        return winPrizesPrediction.textContent = (value - amount);
+    }
+}
+
+function randomLotteryValue() {
+    // DOM manipulation
+    let value = Number(winPrizesLottery.textContent);
+    let amount = Randomize.randomNumInRange(1000, 10000);
+    
+    // Addizione o sottrazione casuale
+    if (Math.random() >= 0.49) {
+        return winPrizesLottery.textContent = (value + amount);
+    } else {
+        return winPrizesLottery.textContent = (value - amount);
+    }
+
+}
+
+function changePredictionValueAtRandomInterval() {
+    Randomize.callFuncAtInterval(randomPredictionValue, 30000, 60000); // Intervallo tra 5min e 10min
+} 
+
+function changeLotteryValueAtRandomInterval() {
+    Randomize.callFuncAtInterval(randomLotteryValue, 10000, 20000); // Intervallo tra 2min e 5min
+}
+
+// Call function on DOM load
+document.addEventListener('DOMContentLoaded', changePredictionValueAtRandomInterval);
+document.addEventListener('DOMContentLoaded', changeLotteryValueAtRandomInterval);
