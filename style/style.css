@@ -3045,7 +3045,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 
 .footer-box {
-  width: 1200px;
+  width: 100%;
 }
 
 i {
@@ -3085,15 +3085,6 @@ footer {
   height: auto;
   padding: 56px 40px 32px 40px;
   background-color: rgb(39, 38, 44);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.foot-in-wrap {
-  width: 1000px;
-  height: 1000px;
-  background-color: #f39c12;
 }
 
 .main-footer {
@@ -3102,8 +3093,6 @@ footer {
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 32px;
-  width: 1000%;
-  max-width: 1200px;
 }
 .main-footer h3 {
   color: #fff;
