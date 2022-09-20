@@ -99,7 +99,7 @@ nav {
     padding: 0 8px;
     position: fixed;
     top: 0;
-    z-index: 99;
+    z-index: 98;
     border-bottom: 1px solid $border_color;
     .flex{
         @include flex(center);
@@ -180,8 +180,7 @@ nav {
             justify-content: space-around;
             z-index: 999;
             opacity: 0;
-            
-            .active{
+            &.active{
                 transform: translate(-50%, -50%);
                 z-index: 999;
                 opacity: 1;
@@ -315,7 +314,7 @@ nav {
             background-color: rgba(0,0,0,.5);
             pointer-events: none;
             transition: 200ms ease-in-out;
-            z-index: 2;
+            z-index: 99;
         }
         #overlay.active{
             opacity: 1;
@@ -328,6 +327,30 @@ nav {
     color: rgb(154, 106, 255, 30%);
 }
 //update untill now
+
+@include mq('tablet-small', 'tablet') {
+    nav{
+        .flex{
+            #money, .igZcUN{
+                display: none;
+            }
+            
+        }
+        
+    }
+    
+
+}
+
+@include mq('phone', 'phablet'){
+    nav{
+        .flex{
+            #money, .igZcUN, ul {
+                display: none;
+            }
+        }    
+    }
+}
 
 
 

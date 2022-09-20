@@ -2689,7 +2689,7 @@ nav {
   padding: 0 8px;
   position: fixed;
   top: 0;
-  z-index: 99;
+  z-index: 98;
   border-bottom: 1px solid rgb(233, 234, 235);
 }
 nav .flex {
@@ -2774,7 +2774,7 @@ nav .flex .modal {
   z-index: 999;
   opacity: 0;
 }
-nav .flex .modal .active {
+nav .flex .modal.active {
   transform: translate(-50%, -50%);
   z-index: 999;
   opacity: 1;
@@ -2898,7 +2898,7 @@ nav .flex #overlay {
   background-color: rgba(0, 0, 0, 0.5);
   pointer-events: none;
   transition: 200ms ease-in-out;
-  z-index: 2;
+  z-index: 99;
 }
 nav .flex #overlay.active {
   opacity: 1;
@@ -2909,6 +2909,16 @@ nav .flex #overlay.active {
   color: rgba(154, 106, 255, 0.3);
 }
 
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+  nav .flex #money, nav .flex .igZcUN {
+    display: none;
+  }
+}
+@media screen and (max-width: 640px) {
+  nav .flex #money, nav .flex .igZcUN, nav .flex ul {
+    display: none;
+  }
+}
 /* Bottoni nel div-SWAP(a sinistra)-- */
 /* --bottone in alto a sinistra sbarrato----------------- */
 /* blocco bottoni nel div Swap--------------------------------------------*/
