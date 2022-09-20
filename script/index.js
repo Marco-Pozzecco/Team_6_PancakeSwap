@@ -58,13 +58,13 @@ const openModalBtn = document.querySelectorAll('[data-modal-target]');
     //   }
     getValue();
 
-      if(path == '/resources/svgs/logo_black.svg'){
-        url.setAttribute('src', '/resources/svgs/logo_white.svg');
-        bunnyBottomGradient.attributes.fill.value = "url(#paint0_linear_dark)";
-      }else if(path == '/resources/svgs/logo_white.svg'){
-        url.setAttribute('src', '/resources/svgs/logo_black.svg');
-        bunnyBottomGradient.attributes.fill.value = "url(#paint0_linear_light)";
-      }
+    //   if(path == '/resources/svgs/logo_black.svg'){
+    //     url.setAttribute('src', '/resources/svgs/logo_white.svg');
+    //     bunnyBottomGradient.attributes.fill.value = "url(#paint0_linear_dark)";
+    //   }else if(path == '/resources/svgs/logo_white.svg'){
+    //     url.setAttribute('src', '/resources/svgs/logo_black.svg');
+    //     bunnyBottomGradient.attributes.fill.value = "url(#paint0_linear_light)";
+    //   }
 
       
     });
@@ -74,11 +74,13 @@ const openModalBtn = document.querySelectorAll('[data-modal-target]');
          
         if(isChecked3){
             logo.setAttribute('src' , '/resources/svgs/logo_black.svg');
+            bunnyBottomGradient.attributes.fill.value = "url(#paint0_linear_light)";
             console.log("Input is checked");
             chk.checked = true;
 
         } else {
             logo.setAttribute('src', '/resources/svgs/logo_white.svg');
+            bunnyBottomGradient.attributes.fill.value = "url(#paint0_linear_dark)";
             console.log("is not checked");
             chk.checked = false;
         }
