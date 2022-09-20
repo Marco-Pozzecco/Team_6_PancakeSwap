@@ -32,6 +32,7 @@ const openModalBtn = document.querySelectorAll('[data-modal-target]');
         if (modal == null) return
         modal.classList.add('active')
         overlay.classList.add('active')
+        
     }
     function closeModal(modal){
         if (modal == null) return
@@ -58,13 +59,6 @@ const openModalBtn = document.querySelectorAll('[data-modal-target]');
     //   }
     getValue();
 
-      if(path == '/resources/svgs/logo_black.svg'){
-        url.setAttribute('src', '/resources/svgs/logo_white.svg');
-        bunnyBottomGradient.attributes.fill.value = "url(#paint0_linear_dark)";
-      }else if(path == '/resources/svgs/logo_white.svg'){
-        url.setAttribute('src', '/resources/svgs/logo_black.svg');
-        bunnyBottomGradient.attributes.fill.value = "url(#paint0_linear_light)";
-      }
 
       
     });
@@ -88,7 +82,23 @@ const openModalBtn = document.querySelectorAll('[data-modal-target]');
 
     chk.addEventListener("change", () => {
       document.body.classList.toggle("theme-light");
+      getValue2();
         
     });
+    function getValue2() {
+        var isChecked3 = document.getElementById("chk3");
+        var chk = document.getElementById("chk").checked;
+         
+        if(chk){
+            logo.setAttribute('src' , '/resources/svgs/logo_black.svg');
+            console.log("chk is checked");
+            isChecked3.checked = true;
+
+        } else {
+            logo.setAttribute('src', '/resources/svgs/logo_white.svg');
+            console.log("is not checked");
+            isChecked3.checked = false;
+        }
+    }
 
     
