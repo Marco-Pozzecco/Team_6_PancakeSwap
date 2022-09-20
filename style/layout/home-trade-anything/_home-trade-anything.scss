@@ -156,19 +156,17 @@ $theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
                 }
             }
         }
-
-        .ta-bottom-gradient {
-            position: absolute;
-            bottom: 0px;
-            width: 100%;
-
-            svg {
-                z-index: 2;
-            }
-        }
-
     }
 
+    .ta-bottom-gradient {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+
+        svg {
+            z-index: 5;
+        }
+    }
 }
 
 @include mq("laptop") {

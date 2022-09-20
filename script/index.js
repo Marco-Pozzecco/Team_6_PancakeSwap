@@ -92,11 +92,13 @@ const openModalBtn = document.querySelectorAll('[data-modal-target]');
          
         if(chk){
             logo.setAttribute('src' , '/resources/svgs/logo_black.svg');
+            bunnyBottomGradient.attributes.fill.value = "url(#paint0_linear_light)";
             console.log("chk is checked");
             isChecked3.checked = true;
 
         } else {
             logo.setAttribute('src', '/resources/svgs/logo_white.svg');
+            bunnyBottomGradient.attributes.fill.value = "url(#paint0_linear_dark)";
             console.log("is not checked");
             isChecked3.checked = false;
         }
