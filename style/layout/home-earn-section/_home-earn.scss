@@ -62,10 +62,8 @@ $theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
     padding-top: 120px;
     padding-bottom: 120px;
 
-
-
     .ea-wrapper {
-        width: 50%;
+        width: 56%;
         padding-bottom: 100px;
         max-width: 1200px;
         height: 100%;
@@ -75,8 +73,8 @@ $theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
 
         .ea-contents-section {
             text-align: left;
-            width: 55%;
-            flex: 1 1 50%;
+            width: 100%;
+            // flex: 1 1 50%;
             max-width: 500px;
 
 
@@ -124,10 +122,12 @@ $theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
         .ea-img-section {
             position: relative;
             height: 100%;
-            width: 45%;
+            width: 100%;
             flex: 1 1 50%;
             max-width: 380px;
             min-width: 300px;
+            flex-shrink: 2;
+
 
             .ea-goldencoin {
                 position: absolute;
@@ -187,7 +187,8 @@ $theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
 
 
 .earn-bottom-banner-main-container {
-    width: 1200px;
+    // width: 100%;
+    max-width: 1200px;
     height: 128px;
     // background-color: rgba(0, 100, 0, 0.958);
     font-family: Kanit, sans-serif;
@@ -196,6 +197,7 @@ $theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
     .ebb-main-title-container {
         height: 24px;
         width: 100%;
+        padding-bottom: 50px;
         // background-color: rgba(255, 255, 0, 0.649);
 
 
@@ -205,9 +207,8 @@ $theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
             justify-content: flex-start;
             align-items: center;
 
-
             .ebb-title-a1 {
-                color: rgb(244, 238, 255);
+                color: var(--heading-2);
                 font-size: 20px;
 
                 .ebb-title-a2 {
@@ -287,7 +288,7 @@ $theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
                 }
 
                 .ebbi-s2 {
-                    color: rgb(244, 238, 255);
+                    color: var(--heading-2);
                     font-size: 16px;
                     font-weight: 600;
 

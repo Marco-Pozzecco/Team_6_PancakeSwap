@@ -95,12 +95,14 @@ const openModalBtn = document.querySelectorAll('[data-modal-target]');
          
         if(chk){
             logo.setAttribute('src' , '/resources/svgs/logo_black.svg');
+            bunnyBottomGradient.attributes.fill.value = "url(#paint0_linear_light)";
             console.log("chk is checked");
             isChecked3.checked = true;
             overlay.style.backgroundColor = '#280D5F'; //#280D5F    rgba(40,13,95,0.6)
 
         } else {
             logo.setAttribute('src', '/resources/svgs/logo_white.svg');
+            bunnyBottomGradient.attributes.fill.value = "url(#paint0_linear_dark)";
             console.log("is not checked");
             isChecked3.checked = false;
             overlay.style.backgroundColor = '#F4EEFF'; //#F4EEFF    rgba(244, 238, 255, 0.6)
@@ -149,3 +151,48 @@ function changeLotteryValueAtRandomInterval() {
 // Call function on DOM load
 document.addEventListener('DOMContentLoaded', changePredictionValueAtRandomInterval);
 document.addEventListener('DOMContentLoaded', changeLotteryValueAtRandomInterval);
+
+// Cake-toke DOM manipulation
+const circulatingSupply = Utilities.getElement('#circulating-supply');
+const supply = Utilities.getElement('#total-supply');
+
+// 
+function randomCirculatingSupply() {
+    // DOM manipulation
+    let value = Number(circulatingSupply.textContent.replace(/,/gm,""));
+    let amount = Randomize.randomNumInRange(1, 1000);
+
+    // Addizione o sottrazione casuale
+    if (Math.random() >= 0.49) {
+        circulatingSupply.textContent = (value + amount).toLocaleString('en-US');
+    } else {
+        circulatingSupply.textContent = (value - amount).toLocaleString('en-US');
+    }
+
+
+}
+
+function randomTotalSupply() {
+    // DOM manipulation
+    let amount = Randomize.randomNumInRange(100, 10000);
+    let value = Number(supply.textContent.replace(/,/gm,""));
+
+     // Addizione o sottrazione casuale
+     if (Math.random() >= 0.49) {
+        circulatingSupply.textContent = (value + amount).toLocaleString('en-US');
+    } else {
+        circulatingSupply.textContent = (value - amount).toLocaleString('en-US');
+    }
+}
+
+function changeCirculatingSupplyAtRandomInterval() {
+    Randomize.callFuncAtInterval(randomCirculatingSupply, 2000, 4000); // Intervallo tra 2s e 4s
+} 
+
+function changeTotalSupplyAtRandomInterval() {
+    Randomize.callFuncAtInterval(randomTotalSupply, 300000, 600000); // Intervallo tra 5min e 10min
+}
+
+// Call function on DOM load
+document.addEventListener('DOMContentLoaded', changeCirculatingSupplyAtRandomInterval);
+document.addEventListener('DOMContentLoaded', changeTotalSupplyAtRandomInterval);

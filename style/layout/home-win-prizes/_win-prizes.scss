@@ -22,16 +22,16 @@ $theme-light: map.set($theme-light, "win-text", "header2-text", rgb(40, 13, 95))
 .theme-dark {
     --background-win-prizes: #{map.get($theme-dark, "win-prizes", "background-gradient")};
     --background-win-wrapper: #{map.get($theme-dark, "win-prizes", "background-wrapper")};
-    --text-paragraph: #{map.get($theme-dark, "win-text", "paragraph-dark")};
-    --heading-2: #{map.get($theme-dark, "win-text", "header2-text")};
+    --win-text-paragraph: #{map.get($theme-dark, "win-text", "paragraph-dark")};
+    --win-heading-2: #{map.get($theme-dark, "win-text", "header2-text")};
 }
 
 
 .theme-light {
     --background-win-prizes: #{map.get($theme-light, "win-prizes", "background-gradient")};
     --background-win-wrapper: #{map.get($theme-light, "win-prizes", "background-wrapper")};
-    --text-paragraph: #{map.get($theme-light, "win-text", "paragraph-light")};
-    --heading-2: #{map.get($theme-light, "win-text", "header2-text")};
+    --win-text-paragraph: #{map.get($theme-light, "win-text", "paragraph-light")};
+    --win-heading-2: #{map.get($theme-light, "win-text", "header2-text")};
 }
 
 
@@ -98,14 +98,22 @@ $theme-light: map.set($theme-light, "win-text", "header2-text", rgb(40, 13, 95))
                 font-size: 40px;
                 font-weight: 600;
                 margin-bottom: 30px;
-                color: var(--heading-2);
+                color: var(--win-heading-2);
                 & span {
                     color: $secondary-dk;
+                }
+
+                #value-prediction {
+                    color: rgb(40, 13, 95);
+                }
+
+                #value-lottery {
+                    color: rgb(255, 178, 55);
                 }
             }
             & p {
                 // Rules
-                color: var(--text-paragraph);
+                color: var(--win-text-paragraph);
                 font-weight: 400;
                 line-height: 1.5;
                 font-size: 16px;

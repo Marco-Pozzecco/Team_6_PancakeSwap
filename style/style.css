@@ -652,15 +652,15 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 .theme-dark {
   --background-win-prizes: linear-gradient(rgb(11, 69, 118) 0%, rgb(9, 17, 21) 100%);
   --background-win-wrapper: rgba(8, 6, 11, 0.6);
-  --text-paragraph: rgb(184, 173, 210);
-  --heading-2: rgb(244, 238, 255);
+  --win-text-paragraph: rgb(184, 173, 210);
+  --win-heading-2: rgb(244, 238, 255);
 }
 
 .theme-light {
   --background-win-prizes: linear-gradient(rgb(111, 182, 241) 0%, rgb(234, 242, 246) 100%);
   --background-win-wrapper: rgba(255, 255, 255, 0.6);
-  --text-paragraph: rgb(122, 110, 170);
-  --heading-2: rgb(40, 13, 95);
+  --win-text-paragraph: rgb(122, 110, 170);
+  --win-heading-2: rgb(40, 13, 95);
 }
 
 .win-prizes {
@@ -832,13 +832,19 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   font-size: 40px;
   font-weight: 600;
   margin-bottom: 30px;
-  color: var(--heading-2);
+  color: var(--win-heading-2);
 }
 .win-prizes .prizes-wrapper h2 span {
   color: rgb(154, 111, 251);
 }
+.win-prizes .prizes-wrapper h2 #value-prediction {
+  color: rgb(40, 13, 95);
+}
+.win-prizes .prizes-wrapper h2 #value-lottery {
+  color: rgb(255, 178, 55);
+}
 .win-prizes .prizes-wrapper p {
-  color: var(--text-paragraph);
+  color: var(--win-text-paragraph);
   font-weight: 400;
   line-height: 1.5;
   font-size: 16px;
@@ -1282,7 +1288,7 @@ body {
 }
 .fb-floating-bunny .fb-bottomgradient {
   position: absolute;
-  bottom: 0px;
+  bottom: -8px;
   width: 100%;
 }
 .fb-floating-bunny .fb-bottomgradient svg {
@@ -1436,6 +1442,60 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* nav bar color */
 /* website background color */
 /* text input color */
+/*A*/
+/*B*/
+/*C*/
+/*D*/
+/*E*/
+/*F*/
+/*G*/
+/*H*/
+/*A*/
+/*B*/
+/*C*/
+/*D*/
+/*E*/
+/*F*/
+/*G*/
+/*H*/
+.theme-dark {
+  /*A*/
+  --background-stat-section: background linear-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%);
+  /*B*/
+  --background-stat-card: rgb(39, 38, 44);
+  /*C*/
+  --text-paragraph: rgb(154, 106, 255);
+  /*D*/
+  --heading-2: rgb(244, 238, 255);
+  /*E*/
+  --heading-3: rgb(184, 173, 210);
+  /*F*/
+  --border-stat-card-color: rgb(55, 50, 64);
+  /*G*/
+  --svg-card-fill-color: rgb(28, 18, 48);
+  /*H*/
+  --svg-card-bgc-color: rgb(8, 6, 11);
+}
+
+.theme-light {
+  /*A*/
+  --background-stat-section: linear-gradient(180deg, #fff 22%, #d7caec 100%);
+  /*B*/
+  --background-stat-card: rgb(255, 255, 255);
+  /*C*/
+  --text-paragraph: rgb(122, 110, 170);
+  /*D*/
+  --heading-2: rgb(40, 13, 95);
+  /*E*/
+  --heading-3: rgb(122, 110, 170);
+  /*F*/
+  --border-stat-card-color: rgb(230, 227, 234);
+  /*G*/
+  --svg-card-fill-color: rgb(217, 207, 235);
+  /*H*/
+  --svg-card-bgc-color: rgb(250, 249, 250);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -1446,7 +1506,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   .stat-section {
     width: 100%;
     height: auto;
-    background: linear-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%);
+    background: var(--background-stat-section);
   }
   .stat-section .wrapper-stat {
     display: flex;
@@ -1467,25 +1527,28 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     font-size: 40px;
     font-weight: 600;
     line-height: 1.1;
-    color: rgb(244, 238, 255);
+    color: var(--heading-2);
   }
   .stat-section .wrapper-stat h2:nth-child(3) {
     margin-bottom: 32px;
+    color: var(--heading-2);
   }
   .stat-section .wrapper-stat .description-stat-sec {
     font-size: 16px;
-    color: rgb(184, 173, 210);
   }
   .stat-section .wrapper-stat .dst1 {
     font-weight: 400;
+    color: var(--heading-3);
   }
   .stat-section .wrapper-stat .dst2 {
     vertical-align: baseline;
     margin-bottom: 10px;
+    color: var(--heading-3);
   }
   .stat-section .wrapper-stat .dst3 {
     font-weight: 600;
     margin-bottom: 32px;
+    color: var(--heading-3);
   }
   .stat-section .wrapper-stat .card-container-dst {
     display: flex;
@@ -1494,7 +1557,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     align-items: center;
   }
   .stat-section .wrapper-stat .card-container-dst .card-dst {
-    background-color: #27262c;
+    background: var(--background-stat-card);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1503,8 +1566,8 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     margin-right: 16px;
     border-radius: 24px;
     position: relative;
-    border: 1px solid rgb(56, 50, 65);
-    border-bottom: 3px solid rgb(56, 50, 65);
+    border: 1px solid var(--border-stat-card-color);
+    border-bottom: 3px solid var(--border-stat-card-color);
     width: 280px;
     height: 280px;
   }
@@ -1532,9 +1595,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     font-size: 40px;
     font-weight: 600;
     line-height: 1.1;
+    color: var(--heading-2);
   }
   .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdta {
-    color: rgb(244, 238, 255);
+    color: var(--heading-2);
   }
   .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-title .cdtb {
     margin-bottom: 24px;
@@ -1555,10 +1619,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     font-size: 16px;
   }
   .stat-section .svg-transition-color-box {
-    background-color: black;
+    background-color: var(--svg-card-bgc-color);
   }
   .stat-section .svg-transition-color-box .svg-transition-color {
-    fill: rgb(30, 17, 50);
+    fill: var(--svg-card-fill-color);
     width: 100%;
     height: 100%;
     max-height: 48px;
@@ -1568,7 +1632,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   .stat-section {
     width: 100%;
     height: auto;
-    background: linear-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%);
+    background: var(--background-stat-section);
   }
   .stat-section .wrapper-stat {
     display: flex;
@@ -1589,10 +1653,11 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     font-size: 32px;
     font-weight: 600;
     line-height: 1.1;
-    color: rgb(244, 238, 255);
+    color: var(--heading-2);
   }
   .stat-section .wrapper-stat h2:nth-child(3) {
     margin-bottom: 32px;
+    color: var(--heading-2);
   }
   .stat-section .wrapper-stat .description-stat-sec {
     font-size: 16px;
@@ -1600,14 +1665,17 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   }
   .stat-section .wrapper-stat .dst1 {
     font-weight: 400;
+    color: var(--heading-3);
   }
   .stat-section .wrapper-stat .dst2 {
     vertical-align: baseline;
     margin-bottom: 10px;
+    color: var(--heading-3);
   }
   .stat-section .wrapper-stat .dst3 {
     font-weight: 600;
     margin-bottom: 32px;
+    color: var(--heading-3);
   }
   .stat-section .wrapper-stat .card-container-dst {
     display: flex;
@@ -1616,7 +1684,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     align-items: center;
   }
   .stat-section .wrapper-stat .card-container-dst .card-dst {
-    background-color: #27262c;
+    background: var(--background-stat-card);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1625,8 +1693,8 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     border-radius: 24px;
     margin-right: 16px;
     position: relative;
-    border: 1px solid rgb(56, 50, 65);
-    border-bottom: 3px solid rgb(56, 50, 65);
+    border: 1px solid var(--border-stat-card-color);
+    border-bottom: 3px solid var(--border-stat-card-color);
     width: 280px;
   }
   .stat-section .wrapper-stat .card-container-dst .card-dst .card-dist-svg {
@@ -1675,10 +1743,10 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     font-size: 16px;
   }
   .stat-section .svg-transition-color-box {
-    background-color: black;
+    background-color: var(--svg-card-bgc-color);
   }
   .stat-section .svg-transition-color-box .svg-transition-color {
-    fill: rgb(30, 17, 50);
+    fill: var(--svg-card-fill-color);
     width: 100%;
     height: 100%;
     max-height: 48px;
@@ -1689,7 +1757,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     margin-top: 200px;
     width: 100%;
     height: auto;
-    background: linear-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%);
+    background: var(--background-stat-section);
   }
   .stat-section .wrapper-stat {
     display: flex;
@@ -1710,10 +1778,11 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     font-size: 32px;
     font-weight: 600;
     line-height: 1.1;
-    color: rgb(244, 238, 255);
+    color: var(--heading-2);
   }
   .stat-section .wrapper-stat h2:nth-child(3) {
     margin-bottom: 32px;
+    color: var(--heading-2);
   }
   .stat-section .wrapper-stat .description-stat-sec {
     font-size: 16px;
@@ -1721,14 +1790,17 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   }
   .stat-section .wrapper-stat .dst1 {
     font-weight: 400;
+    color: var(--heading-3);
   }
   .stat-section .wrapper-stat .dst2 {
     vertical-align: baseline;
     margin-bottom: 20px;
+    color: var(--heading-3);
   }
   .stat-section .wrapper-stat .dst3 {
     font-weight: 600;
     margin-bottom: 32px;
+    color: var(--heading-3);
   }
   .stat-section .wrapper-stat .card-container-dst {
     display: flex;
@@ -1738,7 +1810,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     width: 100%;
   }
   .stat-section .wrapper-stat .card-container-dst .card-dst {
-    background-color: #27262c;
+    background: var(--background-stat-card);
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -1746,8 +1818,8 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     padding: 24px;
     border-radius: 24px;
     position: relative;
-    border: 1px solid rgb(56, 50, 65);
-    border-bottom: 3px solid rgb(56, 50, 65);
+    border: 1px solid var(--border-stat-card-color);
+    border-bottom: 3px solid var(--border-stat-card-color);
     margin-bottom: 15px;
     line-height: 1;
     width: 280px;
@@ -1798,14 +1870,14 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     font-size: 16px;
   }
   .stat-section .svg-transition-color-box {
-    background-color: black;
+    background-color: var(--svg-card-bgc-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   .stat-section .svg-transition-color-box .svg-transition-color {
-    fill: rgb(30, 17, 50);
+    fill: var(--svg-card-fill-color);
     width: 100%;
     height: 100%;
     max-height: 48px;
@@ -2630,8 +2702,6 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   --popup-modal1-bg: linear-gradient(166.77deg, rgb(59, 65, 85), rgb(58, 48, 69));
   --label-toggle-bg: rgb(102, 97, 112);
   --border-bottom-pp: rgb(56, 50, 65);
-  --icon-text-color: rgb(184, 173, 210);
-  --hover-nav-ul: rgb(53, 53, 70);
 }
 
 .theme-light {
@@ -2643,8 +2713,6 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   --popup-modal1-bg: linear-gradient(111.68deg, rgb(242, 236, 242), rgb(232, 242, 246));
   --label-toggle-bg: rgb(189, 194, 196);
   --border-bottom-pp: #d9d9d9;
-  --icon-text-color: rgb(122, 110, 170);
-  --hover-nav-ul: rgb(233, 234, 235);
 }
 
 .mobile-icon {
@@ -2689,12 +2757,13 @@ nav {
   align-items: center;
   background-color: var(--nav-bkground);
   width: 100%;
-  height: 8vh;
-  padding: 0 8px;
+  height: 50px;
+  padding: 0 30px;
+  padding-left: 25px;
   position: fixed;
   top: 0;
   z-index: 98;
-  border-bottom: 1px solid --border-bottom-pp;
+  border-bottom: 1px solid var(--border-bottom-pp);
 }
 nav .flex {
   display: flex;
@@ -2981,7 +3050,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 
 .footer-box {
-  width: 1200px;
+  width: 100%;
 }
 
 i {
@@ -3924,6 +3993,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 /* website background color */
 /* text input color */
 .theme-dark {
+  --background-earn: #3a364a;
   --background-trade: rgb(8, 6, 11);
   --text-paragraph: rgb(154, 106, 255);
   --heading-2: rgb(244, 238, 255);
@@ -3931,6 +4001,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 
 .theme-light {
+  --background-earn: linear-gradient(102deg, rgb(241, 237, 243) 100%, rgb(233, 242, 246) 100%);
   --background-trade: rgb(250, 249, 250);
   --text-paragraph: rgb(118, 69, 217);
   --heading-2: rgb(40, 13, 95);
@@ -3951,6 +4022,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 
 .ta-trade-anything {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -4257,7 +4329,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   padding-bottom: 120px;
 }
 .ea-earn .ea-wrapper {
-  width: 50%;
+  width: 56%;
   padding-bottom: 100px;
   max-width: 1200px;
   height: 100%;
@@ -4269,8 +4341,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 .ea-earn .ea-wrapper .ea-contents-section {
   text-align: left;
-  width: 55%;
-  flex: 1 1 50%;
+  width: 100%;
   max-width: 500px;
 }
 .ea-earn .ea-wrapper .ea-contents-section h2 {
@@ -4306,10 +4377,11 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 .ea-earn .ea-wrapper .ea-img-section {
   position: relative;
   height: 100%;
-  width: 45%;
+  width: 100%;
   flex: 1 1 50%;
   max-width: 380px;
   min-width: 300px;
+  flex-shrink: 2;
 }
 .ea-earn .ea-wrapper .ea-img-section .ea-goldencoin {
   position: absolute;
@@ -4367,13 +4439,14 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 }
 
 .earn-bottom-banner-main-container {
-  width: 1200px;
+  max-width: 1200px;
   height: 128px;
   font-family: Kanit, sans-serif;
 }
 .earn-bottom-banner-main-container .ebb-main-title-container {
   height: 24px;
   width: 100%;
+  padding-bottom: 50px;
 }
 .earn-bottom-banner-main-container .ebb-main-title-container .ebb-title-container-a {
   display: flex;
@@ -4381,7 +4454,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   align-items: center;
 }
 .earn-bottom-banner-main-container .ebb-main-title-container .ebb-title-container-a .ebb-title-a1 {
-  color: rgb(244, 238, 255);
+  color: var(--heading-2);
   font-size: 20px;
 }
 .earn-bottom-banner-main-container .ebb-main-title-container .ebb-title-container-a .ebb-title-a1 .ebb-title-a2 {
@@ -4430,7 +4503,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   margin-bottom: 8px;
 }
 .earn-bottom-banner-main-container .ebb-main-body-container .ebb-main-body-items-container .ebb-item .ebbi-s2 {
-  color: rgb(244, 238, 255);
+  color: var(--heading-2);
   font-size: 16px;
   font-weight: 600;
 }
@@ -4584,31 +4657,6 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
     width: 20%;
   }
 }
-/* Bottoni nel div-SWAP(a sinistra)-- */
-/* --bottone in alto a sinistra sbarrato----------------- */
-/* blocco bottoni nel div Swap--------------------------------------------*/
-/* --Bottoni scelta valute BNB, CAKE, etc------------------------------------------------- */
-/* BUTTON SWITCH SMALL  --   >>>BSS<<<    Check-Box - Staked Only - (ON/OFF Button)-------------- */
-/* BOTTONE SEMI TRASPARENTE-2 (scuro) --- (HARVEST)------------------------------
-che appare nella sezione che esce dopo che si clicca su una sezione della griglia/lista in Trade → Farm---- */
-/* ----Farm → POOLS---- */
-/*WIN ..............................................*/
-/* ----WIN → PREDICTION (BETA)---- */
-/*ETICHETTE Sovrapposte*/
-/* ----WIN → LOTTERY---- */
-/* text color + "need help" */
-/* Inseriti da Clara, da rivedere: */
-/* text input color */
-/* Text color gradient */
-/* cards background color */
-/* text color  */
-/* nav bar color */
-/* website background color */
-/* text input color */
-body {
-  background-color: red;
-}
-
 /* Bottoni nel div-SWAP(a sinistra)-- */
 /* --bottone in alto a sinistra sbarrato----------------- */
 /* blocco bottoni nel div Swap--------------------------------------------*/
