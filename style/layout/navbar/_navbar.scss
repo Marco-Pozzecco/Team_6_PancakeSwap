@@ -16,6 +16,7 @@ $theme-dark: map.set($theme-dark, "text-color", white);
 $theme-dark: map.set($theme-dark, "popup-modal1-bg", $popup-gradient);
 $theme-dark: map.set($theme-dark, "label-bg", $label-toggle-bg-dk);
 $theme-dark: map.set($theme-dark, "border-bottom-pp",rgb(56,50,65));
+$theme-dark: map.set($theme-dark, "icon-text-color", $primary-dk);
 
 // Set colori tema chiaro
 $theme-light: map.set($theme-light, "fa-moon", white);
@@ -26,6 +27,7 @@ $theme-light: map.set($theme-light, "text-color", $background-color-dk);
 $theme-light: map.set($theme-light, "popup-modal1-bg", $header-popup-gradient);
 $theme-light: map.set($theme-light, "label-bg", $label-toggle-bg);
 $theme-light: map.set($theme-light, "border-bottom-pp", #d9d9d9 );
+$theme-light: map.set($theme-light, "icon-text-color", $primary-color);
 
 .theme-dark{
     --fa-moon: #{map-get($theme-dark , "fa-moon")};
@@ -36,6 +38,7 @@ $theme-light: map.set($theme-light, "border-bottom-pp", #d9d9d9 );
     --popup-modal1-bg: #{map-get($theme-dark , "popup-modal1-bg")};
     --label-toggle-bg: #{map-get($theme-dark , "label-bg")};
     --border-bottom-pp: #{map-get($theme-dark , "border-bottom-pp")};
+    --icon-text-color: #{map-get($theme-dark , "icon-text-color")};
     
 
 }
@@ -48,6 +51,7 @@ $theme-light: map.set($theme-light, "border-bottom-pp", #d9d9d9 );
     --popup-modal1-bg: #{map-get($theme-light , "popup-modal1-bg")};
     --label-toggle-bg: #{map-get($theme-light , "label-bg")};
     --border-bottom-pp: #{map-get($theme-light , "border-bottom-pp")};
+    --icon-text-color: #{map-get($theme-light , "icon-text-color")};
 
 }
 
@@ -64,7 +68,7 @@ $theme-light: map.set($theme-light, "border-bottom-pp", #d9d9d9 );
 .menu-nav ul, a, i, li a{
     //@include list-style();
     text-decoration: none;
-    color: $primary-color;
+    color: var(--icon-text-color);
     font-size: 16px ;
     list-style: none;
     li {
@@ -108,14 +112,14 @@ nav {
             cursor: pointer;
         }
         p{
-            color: $primary-color;
+            color: var(--icon-text-color);
             font-size: 16px ;   
         }
         ul{
             display: flex;
             li{
                 list-style: none;
-                color: $primary-color;
+                color: var(--icon-text-color);
                 font-size: 16px ;
                 padding: 15px;
                 position: relative;
@@ -218,6 +222,11 @@ nav {
             h4{
                 color: rgb(118, 69, 217);
             }
+           a{
+            .margine {
+                margin: 2px;
+            }
+           }
         }
         
         .checkbox {
@@ -346,8 +355,18 @@ nav {
     } 
 }
 
-.fa-globe:hover{
-    color: rgb(154, 106, 255, 30%);
+// .fa-globe:hover{
+//     color: rgb(154, 106, 255, 30%);
+//     cursor: pointer;
+// }
+.fa-globe{
+    // fill: $secondary-color;
+    &:hover{
+        color: rgb(154, 106, 255, 30%);
+        cursor: pointer;
+
+    }
+    
 }
 //update untill now
 
