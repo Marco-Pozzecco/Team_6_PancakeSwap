@@ -652,15 +652,15 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 .theme-dark {
   --background-win-prizes: linear-gradient(rgb(11, 69, 118) 0%, rgb(9, 17, 21) 100%);
   --background-win-wrapper: rgba(8, 6, 11, 0.6);
-  --text-paragraph: rgb(184, 173, 210);
-  --heading-2: rgb(244, 238, 255);
+  --win-text-paragraph: rgb(184, 173, 210);
+  --win-heading-2: rgb(244, 238, 255);
 }
 
 .theme-light {
   --background-win-prizes: linear-gradient(rgb(111, 182, 241) 0%, rgb(234, 242, 246) 100%);
   --background-win-wrapper: rgba(255, 255, 255, 0.6);
-  --text-paragraph: rgb(122, 110, 170);
-  --heading-2: rgb(40, 13, 95);
+  --win-text-paragraph: rgb(122, 110, 170);
+  --win-heading-2: rgb(40, 13, 95);
 }
 
 .win-prizes {
@@ -788,13 +788,19 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
   font-size: 40px;
   font-weight: 600;
   margin-bottom: 30px;
-  color: var(--heading-2);
+  color: var(--win-heading-2);
 }
 .win-prizes .prizes-wrapper h2 span {
   color: rgb(154, 111, 251);
 }
+.win-prizes .prizes-wrapper h2 #value-prediction {
+  color: rgb(40, 13, 95);
+}
+.win-prizes .prizes-wrapper h2 #value-lottery {
+  color: rgb(255, 178, 55);
+}
 .win-prizes .prizes-wrapper p {
-  color: var(--text-paragraph);
+  color: var(--win-text-paragraph);
   font-weight: 400;
   line-height: 1.5;
   font-size: 16px;
