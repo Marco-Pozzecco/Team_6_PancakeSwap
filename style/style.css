@@ -2836,8 +2836,8 @@ nav .flex .button-aquagreen {
 }
 nav .flex .modal {
   position: fixed;
-  width: 400px;
-  height: 400px;
+  width: 420px;
+  height: 440px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -2862,9 +2862,12 @@ nav .flex .modal p, nav .flex .modal sub svg {
 nav .flex .modal sub svg {
   background-image: var(--text-color);
 }
+nav .flex .modal h4 {
+  padding-top: 5%;
+}
 nav .flex .modal .modal1 {
   position: fixed;
-  width: 400px;
+  width: 420px;
   height: 70px;
   top: 3%;
   left: 50%;
@@ -3000,6 +3003,27 @@ nav .flex #overlay.active {
   cursor: pointer;
 }
 
+#hover2:hover {
+  width: 30px;
+}
+
+.btt-a-g {
+  background-color: rgb(31, 199, 212);
+  /* rgb(31, 199, 212)*/
+  border: none;
+  color: white;
+  /* white*/
+  height: 48px;
+  font-size: 16px;
+  /*16px*/
+  font-weight: 600;
+  /*600*/
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+}
+.btt-a-g:active {
+  transform: translateY(2px);
+}
+
 @media screen and (min-width: 640px) and (max-width: 1023px) {
   nav .flex #money, nav .flex .igZcUN {
     display: none;
@@ -3014,6 +3038,13 @@ nav .flex #overlay.active {
   }
   nav .flex #logo1 {
     display: none;
+  }
+  nav .flex .modal {
+    top: 79%;
+    width: 100%;
+  }
+  nav .flex .modal .modal1 {
+    width: 100%;
   }
 }
 /* Bottoni nel div-SWAP(a sinistra)-- */
@@ -3218,6 +3249,17 @@ li {
   cursor: pointer;
 }
 
+@media screen and (max-width: 640px) {
+  .main-footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .bottom-footer .menu-ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+}
 /* Bottoni nel div-SWAP(a sinistra)-- */
 /* --bottone in alto a sinistra sbarrato----------------- */
 /* blocco bottoni nel div Swap--------------------------------------------*/

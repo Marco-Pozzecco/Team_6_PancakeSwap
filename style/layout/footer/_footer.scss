@@ -199,6 +199,29 @@ footer{
     }
     
 }
+@include mq('phone', 'phablet'){
+    .main-footer{
+        display: flex;
+        flex-direction: column;
+        // .logo-footer{
+        //     order: 1;
+        //     display: block;
+        // }
+        // .menu-ul{
+        //     order: 2;
+        // }
+    }
+    .bottom-footer{
+        .menu-ul{
+            
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            
+        }
+    }
+
+}
 
 
 
