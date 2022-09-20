@@ -10,42 +10,57 @@
 @import "../../abstracts/colors";
 @import "../../abstracts/animations";
 
-// rgb(39, 38, 44)
+//chiaro  
+//scuro   
 
 // Set colori tema scuro
-$theme-dark: map.set($theme-dark, "stat-section", "background-gradient",  background linear-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%));
-$theme-dark: map.set($theme-dark, "stat-section-card", "background-color", rgb(255, 255, 255));
-$theme-dark: map.set($theme-dark, "text", "paragraph-dark", rgb(154, 106, 255));
-$theme-dark: map.set($theme-dark, "text", "header2-text", rgb(244, 238, 255));
-$theme-dark: map.set($theme-dark, "text", "header3-text", rgb(184, 173, 210));
+/*A*/ $theme-dark: map.set($theme-dark, "stat-section", "background-gradient",  background linear-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%));
+/*B*/ $theme-dark: map.set($theme-dark, "stat-section-card", "background-color-card", rgb(39, 38, 44));
+/*C*/ $theme-dark: map.set($theme-dark, "text", "paragraph-dark", rgb(154, 106, 255));
+/*D*/ $theme-dark: map.set($theme-dark, "text", "header2-text", rgb(244, 238, 255));
+/*E*/ $theme-dark: map.set($theme-dark, "text", "header3-text", rgb(184, 173, 210));
+/*F*/ $theme-dark: map.set($theme-dark, "border-card", "border-stat-card", rgb(55, 50, 64));
+/*G*/ $theme-dark: map.set($theme-dark, "svg-colors", "fill-svg-stat", rgb(28, 18, 48));
+/*H*/ $theme-dark: map.set($theme-dark, "svg-colors", "bgc-svg-stat", rgb(8, 6, 11));
+
 
 
 // Set colori tema chiaro
-$theme-light: map.set($theme-light, "stat-section", "background-gradient", linear-gradient(180deg,#fff 22% , #d7caec 100%));
-$theme-light: map.set($theme-light, "stat-section-card", "background-color",  rgb(39, 38, 44));
-$theme-light: map.set($theme-light, "text", "paragraph-light", rgb(122, 110, 170));
-$theme-light: map.set($theme-light, "text", "header2-text", rgb(40, 13, 95));
-$theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
+/*A*/ $theme-light: map.set($theme-light, "stat-section", "background-gradient", linear-gradient(180deg,#fff 22% , #d7caec 100%));
+/*B*/ $theme-light: map.set($theme-light, "stat-section-card", "background-color-card",  rgb(255, 255, 255));
+/*C*/ $theme-light: map.set($theme-light, "text", "paragraph-light", rgb(122, 110, 170));
+/*D*/ $theme-light: map.set($theme-light, "text", "header2-text", rgb(40, 13, 95));
+/*E*/ $theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
+
+/*F*/ $theme-light: map.set($theme-light, "border-card", "border-stat-card", rgb(230, 227, 234));
+
+/*G*/ $theme-light: map.set($theme-light, "svg-colors", "fill-svg-stat", rgb(217, 207, 235));
+/*H*/ $theme-light: map.set($theme-light, "svg-colors", "bgc-svg-stat", rgb(250, 249, 250));
 
 
 .theme-dark {
-    --background-stat-section: #{map.get($theme-dark, "stat-section", "background-gradient")};
-    --background-stat-section: #{map.get($theme-dark,  "stat-section-card", "background-color")};
+ /*A*/ --background-stat-section: #{map.get($theme-dark, "stat-section", "background-gradient")};
+ /*B*/ --background-stat-card: #{map.get($theme-dark,  "stat-section-card", "background-color-card")};
+ /*C*/ --text-paragraph: #{map.get($theme-dark, "text", "paragraph-dark")};
+ /*D*/ --heading-2: #{map.get($theme-dark, "text", "header2-text")};
+ /*E*/ --heading-3: #{map.get($theme-dark, "text", "header3-text")};
+ /*F*/ --border-stat-card-color: #{map.get($theme-dark, "border-card", "border-stat-card")};
+ /*G*/ --svg-card-fill-color: #{map.get($theme-dark, "svg-colors", "fill-svg-stat")};
+ /*H*/ --svg-card-bgc-color: #{map.get($theme-dark, "svg-colors", "bgc-svg-stat")};
 
-    --text-paragraph: #{map.get($theme-dark, "text", "paragraph-dark")};
-    --heading-2: #{map.get($theme-dark, "text", "header2-text")};
-    --heading-3: #{map.get($theme-dark, "text", "header3-text")};
 
 }
 
 
 .theme-light {
-    --background-stat-section: #{map.get($theme-light, "stat-section", "background-gradient")};
-    --background-stat-section: #{map.get($theme-light, "stat-section", "background-gradient")};
-
-    --text-paragraph: #{map.get($theme-light, "text", "paragraph-light")};
-    --heading-2: #{map.get($theme-light, "text", "header2-text")};
-    --heading-3: #{map.get($theme-light, "text", "header3-text")};
+ /*A*/ --background-stat-section: #{map.get($theme-light, "stat-section", "background-gradient")};
+ /*B*/ --background-stat-card: #{map.get($theme-light, "stat-section-card", "background-color-card")};
+ /*C*/ --text-paragraph: #{map.get($theme-light, "text", "paragraph-light")};
+ /*D*/ --heading-2: #{map.get($theme-light, "text", "header2-text")};
+ /*E*/ --heading-3: #{map.get($theme-light, "text", "header3-text")};
+ /*F*/ --border-stat-card-color: #{map.get($theme-light, "border-card", "border-stat-card")};
+ /*G*/ --svg-card-fill-color: #{map.get($theme-light, "svg-colors", "fill-svg-stat")};
+ /*H*/ --svg-card-bgc-color: #{map.get($theme-light, "svg-colors", "bgc-svg-stat")};
 
     
 }
@@ -279,16 +294,14 @@ $theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
                         // flex-wrap: wrap;
     
                             .card-dst {
-                                // background-color: $background-color-cards; // veder se usare questo o no,è l originale e risulta un po chiaro.
-                                background: var(--background-stat-section);
-
+                                background: var(--background-stat-card);
                                 @include flex(column);
                                 padding: 24px;
                                 margin-right: 16px;
                                 border-radius: 24px;
                                 position: relative;
-                                border: 1px $shadow-border-stats-card;
-                                border-bottom: 3px $shadow-border-stats-card;
+                                border: 1px solid var(--border-stat-card-color);
+                                border-bottom: 3px solid var(--border-stat-card-color);
                                 width: 280px;
                                 height: 280px;
     
@@ -358,10 +371,10 @@ $theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
             }
     
             .svg-transition-color-box {
-                background-color: black;
+                background-color: var(--svg-card-bgc-color);
     
                     .svg-transition-color {
-                        fill: rgb(30, 17, 50);
+                        fill: var(--svg-card-fill-color);
                         width: 100%;
                         height: 100%;
                         max-height: 48px;
@@ -381,7 +394,7 @@ $theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
     width: 100%;
     height: auto;
     // padding: 48px 0;
-    background: $background-color-stats-section;
+    background: var(--background-stat-section);
 
         .wrapper-stat {
             @include flex(column);
@@ -400,11 +413,13 @@ $theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
                     font-size: 32px;
                     font-weight: 600;
                     line-height: 1.1;
-                    color:  $card-dist-title;
+                    color:  var(--heading-2);
                 }
 
                 h2:nth-child(3) {
-                    margin-bottom: 32px
+                    margin-bottom: 32px;
+                    color:  var(--heading-2);
+
                 }
 
                 .description-stat-sec {
@@ -414,16 +429,22 @@ $theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
 
                 .dst1 {
                     font-weight: 400;
+                    color: var(--heading-3);
+
                 }
 
                 .dst2 {
                     vertical-align: baseline;
                     margin-bottom: 10px;
+                    color: var(--heading-3);
+
                 }
 
                 .dst3 {
                     font-weight: 600;
-                    margin-bottom: 32px
+                    margin-bottom: 32px;
+                    color: var(--heading-3);
+
                 }
 
                 .card-container-dst {
@@ -432,14 +453,14 @@ $theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
                     // flex-wrap: wrap;
 
                         .card-dst {
-                            background-color: $background-color-cards; // veder se usare questo o no,è l originale e risulta un po chiaro.
+                            background: var(--background-stat-card);
                             @include flex(column);
                             padding: 24px;
                             border-radius: 24px;
                             margin-right: 16px;
                             position: relative;
-                            border: 1px $shadow-border-stats-card;
-                            border-bottom: 3px $shadow-border-stats-card;
+                            border: 1px solid var(--border-stat-card-color);
+                            border-bottom: 3px solid var(--border-stat-card-color);
                             width: 280px;
 
 
@@ -506,10 +527,10 @@ $theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
         }
 
         .svg-transition-color-box {
-            background-color: black;
+            background-color: var(--svg-card-bgc-color);
 
                 .svg-transition-color {
-                    fill: rgb(30, 17, 50);
+                    fill: var(--svg-card-fill-color);
                     width: 100%;
                     height: 100%;
                     max-height: 48px;
@@ -526,11 +547,9 @@ $theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
 @media  screen and (max-width: 851px){
     .stat-section {
         margin-top: 200px;
-        // @include mq('tablet');
         width: 100%;
         height: auto;
-        // padding: 48px 0;
-        background: $background-color-stats-section;
+        background: var(--background-stat-section);
     
             .wrapper-stat {
                 @include flex(column,);
@@ -549,11 +568,13 @@ $theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
                         font-size: 32px;
                         font-weight: 600;
                         line-height: 1.1;
-                        color:  $card-dist-title;
+                        color:  var(--heading-2);
                     }
     
                     h2:nth-child(3) {
-                        margin-bottom: 32px
+                        margin-bottom: 32px;
+                        color:  var(--heading-2);
+
                     }
     
                     .description-stat-sec {
@@ -563,16 +584,22 @@ $theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
     
                     .dst1 {
                         font-weight: 400;
+                        color: var(--heading-3);
+
                     }
     
                     .dst2 {
                         vertical-align: baseline;
                         margin-bottom: 20px;
+                        color: var(--heading-3);
+
                     }
     
                     .dst3 {
                         font-weight: 600;
-                        margin-bottom: 32px
+                        margin-bottom: 32px;
+                        color: var(--heading-3);
+
                     }
     
                     .card-container-dst {
@@ -580,14 +607,13 @@ $theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
                         width: 100%;
     
                             .card-dst {
-                                background-color: $background-color-cards; // veder se usare questo o no,è l originale e risulta un po chiaro.
+                                background: var(--background-stat-card);
                                 @include flex(row, flex-start);
                                 padding: 24px;
                                 border-radius: 24px;
-                                // margin-right: 16px;
                                 position: relative;
-                                border: 1px $shadow-border-stats-card;
-                                border-bottom: 3px $shadow-border-stats-card;
+                                border: 1px solid var(--border-stat-card-color);
+                                border-bottom: 3px solid var(--border-stat-card-color);
                                 margin-bottom: 15px;
                                 line-height: 1;
                                 width: 280px;
@@ -656,11 +682,11 @@ $theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
             }
     
             .svg-transition-color-box {
-                background-color: black;
+                background-color: var(--svg-card-bgc-color);
                 @include flex(column);
     
                     .svg-transition-color {
-                        fill: rgb(30, 17, 50);
+                        fill: var(--svg-card-fill-color);
                         width: 100%;
                         height: 100%;
                         max-height: 48px;

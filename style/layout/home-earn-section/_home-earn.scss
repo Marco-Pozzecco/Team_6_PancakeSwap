@@ -125,7 +125,7 @@ $theme-light: map.set($theme-light, "text", "header3-text", rgb(122, 110, 170));
             position: relative;
             height: 100%;
             width: 100%;
-            // flex: 1 1 50%;
+            flex: 1 1 50%;
             max-width: 380px;
             min-width: 300px;
             flex-shrink: 2;
