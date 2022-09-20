@@ -8,15 +8,16 @@
 
 
 // Set colori tema scuro
-$theme-dark: map.set($theme-dark, "fa-moon","nav-bkground", "fa-sun", "popup-bg", $footer-background);
-// $theme-dark: map.set($theme-dark, "fa-sun", $footer-background);
-// $theme-dark: map.set($theme-dark, "nav-bkground", $footer-background);
-// $theme-dark: map.set($theme-dark, "popup-bg", $footer-background);
+$theme-dark: map.set($theme-dark, "fa-moon", $footer-background);
+$theme-dark: map.set($theme-dark, "fa-sun", $footer-background);
+$theme-dark: map.set($theme-dark, "nav-bkground", $footer-background);
+$theme-dark: map.set($theme-dark, "popup-bg", $footer-background);
 $theme-dark: map.set($theme-dark, "text-color", white);
 $theme-dark: map.set($theme-dark, "popup-modal1-bg", $popup-gradient);
 $theme-dark: map.set($theme-dark, "label-bg", $label-toggle-bg-dk);
 $theme-dark: map.set($theme-dark, "border-bottom-pp",rgb(56,50,65));
 $theme-dark: map.set($theme-dark, "icon-text-color", $primary-dk);
+$theme-dark: map.set($theme-dark, "hover-nav-ul", $hover-navbar-ul);
 
 // Set colori tema chiaro
 $theme-light: map.set($theme-light, "fa-moon", white);
@@ -28,6 +29,8 @@ $theme-light: map.set($theme-light, "popup-modal1-bg", $header-popup-gradient);
 $theme-light: map.set($theme-light, "label-bg", $label-toggle-bg);
 $theme-light: map.set($theme-light, "border-bottom-pp", #d9d9d9 );
 $theme-light: map.set($theme-light, "icon-text-color", $primary-color);
+$theme-light: map.set($theme-light, "hover-nav-ul", $border_color);
+
 
 .theme-dark{
     --fa-moon: #{map-get($theme-dark , "fa-moon")};
@@ -39,6 +42,7 @@ $theme-light: map.set($theme-light, "icon-text-color", $primary-color);
     --label-toggle-bg: #{map-get($theme-dark , "label-bg")};
     --border-bottom-pp: #{map-get($theme-dark , "border-bottom-pp")};
     --icon-text-color: #{map-get($theme-dark , "icon-text-color")};
+    --hover-nav-ul: #{map-get($theme-dark , "hover-nav-ul")};
     
 
 }
@@ -52,6 +56,7 @@ $theme-light: map.set($theme-light, "icon-text-color", $primary-color);
     --label-toggle-bg: #{map-get($theme-light , "label-bg")};
     --border-bottom-pp: #{map-get($theme-light , "border-bottom-pp")};
     --icon-text-color: #{map-get($theme-light , "icon-text-color")};
+    --hover-nav-ul: #{map-get($theme-light , "hover-nav-ul")};
 
 }
 
@@ -82,11 +87,11 @@ $theme-light: map.set($theme-light, "icon-text-color", $primary-color);
 }
 .menu-nav li{
     &:hover, &:focus{
-        background-color: $border_color;
+        background-color: var(--hover-nav-ul);
         border-radius: 15px;
     }
     ul li:hover{
-        background-color: $border_color;
+        background-color: var(--hover-nav-ul);
         border-radius: 0%;
 
     }
@@ -104,7 +109,7 @@ nav {
     position: fixed;
     top: 0;
     z-index: 98;
-    border-bottom: 1px solid $border_color;
+    border-bottom: 1px solid --border-bottom-pp;
     .flex{
         @include flex(center);
         div, h2, ul{
@@ -136,9 +141,9 @@ nav {
                     top: 3rem;
                     left: -0.25rem;
                     //box-shadow: 0 0 3px gray;
-                    background-color: white;
+                    background-color: var(--nav-bkground);
                     @include setRadius (15px);
-                    border: 2px solid $border_color;
+                    border: 1px solid --border-bottom-pp;
                     width: 12rem;
                     display: flex;
                     flex-direction: column;
