@@ -1288,7 +1288,7 @@ body {
 }
 .fb-floating-bunny .fb-bottomgradient {
   position: absolute;
-  bottom: 0px;
+  bottom: -8px;
   width: 100%;
 }
 .fb-floating-bunny .fb-bottomgradient svg {
@@ -4440,6 +4440,7 @@ che appare nella sezione che esce dopo che si clicca su una sezione della grigli
 .earn-bottom-banner-main-container .ebb-main-title-container {
   height: 24px;
   width: 100%;
+  padding-bottom: 50px;
 }
 .earn-bottom-banner-main-container .ebb-main-title-container .ebb-title-container-a {
   display: flex;
