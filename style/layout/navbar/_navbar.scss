@@ -15,7 +15,7 @@ $theme-dark: map.set($theme-dark, "popup-bg", $footer-background);
 $theme-dark: map.set($theme-dark, "text-color", white);
 $theme-dark: map.set($theme-dark, "popup-modal1-bg", $popup-gradient);
 $theme-dark: map.set($theme-dark, "label-bg", $label-toggle-bg-dk);
-$theme-dark: map.set($theme-dark, "border-bottom-pp",rgb(56,50,65));
+$theme-dark: map.set($theme-dark, "border-bottom-pp", $light-divider-dk);
 $theme-dark: map.set($theme-dark, "icon-text-color", $primary-dk);
 $theme-dark: map.set($theme-dark, "hover-nav-ul", $hover-navbar-ul);
 
@@ -106,7 +106,6 @@ nav {
     width: 100%;
     height: 50px;
     padding: 0 30px;
-    padding-left: 25px;
     position: fixed;
     top: 0;
     z-index: 98;
